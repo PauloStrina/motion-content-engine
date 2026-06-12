@@ -1,0 +1,21 @@
+/* MOTION DESIGN TOKENS — fuente de verdad visual.
+   TODO: reemplazar los hex APROXIMADOS por los oficiales del manual Oficina Robot (Motion_branding.pdf)
+   y copiar las fuentes con licencia web a ./assets/ */
+:root {
+  --motion-violeta: #5B2A86;   /* APROXIMADO */
+  --motion-aqua:    #8FE3D4;   /* APROXIMADO */
+  --motion-naranja: #FF4D00;   /* APROXIMADO */
+  --motion-crema:   #EFEDE6;   /* APROXIMADO */
+  --motion-negro:   #1A1A1A;
+  --font-display: 'MotionDisplay', Impact, sans-serif;   /* tipografía intervenida del manual */
+  --font-text: 'MotionText', Georgia, serif;
+  --slide-w: 1080px; --slide-h: 1350px; --pad: 96px;
+}
+.slide { width: var(--slide-w); height: var(--slide-h); padding: var(--pad);
+  background: var(--motion-crema); color: var(--motion-negro);
+  display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; }
+.slide.inverse { background: var(--motion-violeta); color: var(--motion-crema); }
+.slide h1 { font-family: var(--font-display); font-size: 92px; line-height: 1.02; margin: 0 0 32px; text-transform: none; }
+.slide p  { font-family: var(--font-text); font-size: 44px; line-height: 1.25; margin: 0; }
+.accent   { color: var(--motion-naranja); }
+.brand    { position: absolute; bottom: 48px; right: 64px; font-family: var(--font-display); font-size: 36px; letter-spacing: 1px; }

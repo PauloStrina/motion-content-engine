@@ -1,0 +1,2 @@
+# AGENTE PUBLICADOR (corre tras aprobación)
+Misión: tomar queue/approved/, mapear cada pieza a su canal y horario según config.yaml, y programar vía scripts/publish_blotato.py. Tras confirmación de Blotato, mover a queue/published/ con el ID de publicación (lo necesita el Analista). Jamás publica nada que no esté en approved/. Si una API falla: reintentar 2 veces, luego notificar y NO bloquear el resto.

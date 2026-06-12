@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../tokens.css">
+<style>body{margin:0}</style></head><body>
+<!-- render.js itera data.slides y genera un PNG por slide -->
+<div id="slide" class="slide"><h1 id="title"></h1><p id="body"></p><div class="brand">MOTION</div></div>
+<script>
+  // window.__DATA__ inyectado por render.js: {title, body, inverse}
+  const d = window.__DATA__ || {title:"Slide demo", body:"Texto demo", inverse:false};
+  document.getElementById('title').textContent = d.title;
+  document.getElementById('body').textContent = d.body || '';
+  if (d.inverse) document.getElementById('slide').classList.add('inverse');
+</script></body></html>
