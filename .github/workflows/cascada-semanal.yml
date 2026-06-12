@@ -2,6 +2,9 @@ name: cascada-semanal
 on:
   schedule: [{cron: "0 10 * * 1"}]   # lunes 07:00 ART (10:00 UTC)
   workflow_dispatch: {}
+permissions:
+  contents: write
+  id-token: write
 jobs:
   generar:
     runs-on: ubuntu-latest
