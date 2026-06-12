@@ -16,19 +16,20 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: "--allowedTools Read,Write,Edit,Glob,Grep,Bash"
           prompt: |
-            Tu tarea OBLIGATORIA es crear un archivo nuevo en este repositorio. Pasos:
-            1. Leé estos archivos: skills/00-contexto-comun.md, skills/01-estratega.md,
-               skills/02-redactor.md, strategy/tesis.md, strategy/voz-motion.md,
-               strategy/buyer-persona.md y queue/approved/ (para saber el último episodio hecho).
+            Tu tarea OBLIGATORIA es crear un archivo nuevo usando la herramienta Write.
+            1. Leé: skills/00-contexto-comun.md, skills/01-estratega.md, skills/02-redactor.md,
+               strategy/tesis.md, strategy/voz-motion.md, strategy/buyer-persona.md y el
+               archivo que está dentro de queue/approved/ (último episodio producido).
             2. Determiná el PRÓXIMO episodio de la serie activa según strategy/tesis.md.
-            3. Generá la cascada completa de ese episodio (formato idéntico al archivo
-               que está en queue/approved/: post Paulo con 2 variantes, post Motion,
-               newsletter, guion de motion graphic, carrusel, quote card, plan de
-               publicación y checklist de aprobación).
-            4. CREÁ el directorio queue/pending si no existe y ESCRIBÍ el resultado en:
+            3. Generá la cascada completa de ese episodio con el mismo formato del archivo
+               de queue/approved/: post Paulo (2 variantes), post Motion, newsletter,
+               guion de motion graphic, carrusel, quote card, plan de publicación, checklist.
+            4. Usá la herramienta Write para guardar el resultado en la ruta:
                queue/pending/cascada_proximo_episodio.md
-            No termines sin haber creado ese archivo. No modifiques ningún otro archivo.
+            El éxito de tu tarea se mide por UNA sola cosa: que ese archivo exista al final.
+            No modifiques ningún otro archivo.
       - name: Commit de borradores
         run: |
           git config user.name "motion-engine"; git config user.email "engine@motion.local"
