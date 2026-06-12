@@ -17,6 +17,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           claude_args: "--allowedTools Read,Write,Edit,Glob,Grep,Bash"
+          show_full_output: true
           prompt: |
             Tu tarea OBLIGATORIA es crear un archivo nuevo usando la herramienta Write.
             1. Leé: skills/00-contexto-comun.md, skills/01-estratega.md, skills/02-redactor.md,
@@ -32,6 +33,9 @@ jobs:
             No modifiques ningún otro archivo.
       - name: Commit de borradores
         run: |
-          git config user.name "motion-engine"; git config user.email "engine@motion.local"
+          git config user.name "motion-engine"
+          git config user.email "engine@motion.local"
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           git add -A queue/
-          git commit -m "cascada semanal (pendiente de aprobación)" && git push || echo "ATENCION: no se generaron archivos"
+          git commit -m "cascada semanal (pendiente de aprobación)" || { echo "sin cambios para commitear"; exit 0; }
+          git push origin HEAD:main
