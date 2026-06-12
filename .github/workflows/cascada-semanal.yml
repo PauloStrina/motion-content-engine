@@ -12,13 +12,25 @@ jobs:
       - uses: actions/checkout@v4
       - name: Estratega + Redactor (Claude Code headless)
         uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
-            Leé skills/00-contexto-comun.md, skills/01-estratega.md y skills/02-redactor.md
-            y ejecutá el ciclo completo: plan semanal + cascada de texto del próximo episodio.
-            Escribí los outputs en queue/pending/ y NO toques ninguna otra carpeta.
+            Tu tarea OBLIGATORIA es crear un archivo nuevo en este repositorio. Pasos:
+            1. Leé estos archivos: skills/00-contexto-comun.md, skills/01-estratega.md,
+               skills/02-redactor.md, strategy/tesis.md, strategy/voz-motion.md,
+               strategy/buyer-persona.md y queue/approved/ (para saber el último episodio hecho).
+            2. Determiná el PRÓXIMO episodio de la serie activa según strategy/tesis.md.
+            3. Generá la cascada completa de ese episodio (formato idéntico al archivo
+               que está en queue/approved/: post Paulo con 2 variantes, post Motion,
+               newsletter, guion de motion graphic, carrusel, quote card, plan de
+               publicación y checklist de aprobación).
+            4. CREÁ el directorio queue/pending si no existe y ESCRIBÍ el resultado en:
+               queue/pending/cascada_proximo_episodio.md
+            No termines sin haber creado ese archivo. No modifiques ningún otro archivo.
       - name: Commit de borradores
         run: |
           git config user.name "motion-engine"; git config user.email "engine@motion.local"
-          git add queue/pending && git commit -m "cascada semanal (pendiente de aprobación)" && git push || echo "sin cambios"
+          git add -A queue/
+          git commit -m "cascada semanal (pendiente de aprobación)" && git push || echo "ATENCION: no se generaron archivos"
