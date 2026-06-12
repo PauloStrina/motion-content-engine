@@ -1,0 +1,21 @@
+name: cascada-semanal
+on:
+  schedule: [{cron: "0 10 * * 1"}]   # lunes 07:00 ART (10:00 UTC)
+  workflow_dispatch: {}
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Estratega + Redactor (Claude Code headless)
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Leé skills/00-contexto-comun.md, skills/01-estratega.md y skills/02-redactor.md
+            y ejecutá el ciclo completo: plan semanal + cascada de texto del próximo episodio.
+            Escribí los outputs en queue/pending/ y NO toques ninguna otra carpeta.
+      - name: Commit de borradores
+        run: |
+          git config user.name "motion-engine"; git config user.email "engine@motion.local"
+          git add queue/pending && git commit -m "cascada semanal (pendiente de aprobación)" && git push || echo "sin cambios"
