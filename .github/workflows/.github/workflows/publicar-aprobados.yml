@@ -1,0 +1,11 @@
+name: publicar-aprobados
+on:
+  push: {paths: ["queue/approved/**"]}
+  workflow_dispatch: {}
+jobs:
+  render-y-programar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Placeholder Etapas B y C
+        run: echo "Render de visuales y publicación Blotato se activan en las Etapas B y C"
