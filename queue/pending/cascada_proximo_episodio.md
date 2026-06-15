@@ -1,6 +1,7 @@
 # CASCADA — EPISODIO 1.2 · "El archipiélago digital"
 **Serie:** "La diferencia que lo define todo" (Tesis 1 — Cambio ≠ Transformación) · **Episodio 1.2** · **Tipo:** Problema
 **Estado:** PENDIENTE DE APROBACIÓN HUMANA · Plan de publicación: PROPUESTO
+**Episodio anterior producido:** 1.1 "Las dos palabras que las organizaciones confunden" (en queue/approved/)
 **Evidencia usada:** E3 (validada) · E2 (validada) · *teaser* al caso del tablero (E1) para el ep. 1.4
 **Lente principal:** Negocio (integridad estratégica vs. archipiélago de compras aisladas)
 
@@ -44,7 +45,7 @@ Más software no une islas. Un método, sí.
 
 #LoComplejoSimple
 
-> **Recomendación del Redactor:** elegir **Variante A** (escena concreta primero, cumple la regla "la acción supera a la reflexión"; la antítesis cambio/transformación queda adentro, no en el gancho). Variante B disponible si se prefiere abrir con la antítesis pura.
+> **Recomendación del Redactor:** elegir **Variante A** (escena concreta primero, cumple la regla "la acción supera a la reflexión"; la antítesis cambio/transformación queda adentro del cuerpo, no en el gancho). Variante B disponible si se prefiere abrir con la antítesis pura.
 
 ---
 
