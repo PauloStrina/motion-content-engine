@@ -1,22 +1,5 @@
-# MOTION CONTENT ENGINE — configuración central. Modificar = editar acá + commit.
-
-strategy_pack: motor-de-tesis
-serie_activa: "serie-1-diferencia"
-mezcla_semanal: {problema: 1, metodo_o_resultados: 1, conexion: 1}
-regla_70_30: true
-
-# ── CANALES (account = ID de Blotato · platform = nombre Blotato) ──
 canales:
-  linkedin_paulo:  {account: 25264, platform: linkedin, emisor: paulo,  activo: true,  pieza: post,  hora: "09:00", dias: [mar, jue]}
-  x_paulo:         {account: 20492, platform: twitter,  emisor: paulo,  activo: true,  pieza: hilo,  hora: "08:30", dias: [mar, vie]}
-  linkedin_motion: {account: 105691334, platform: linkedin, emisor: motion, activo: true,  pieza: post,  hora: "11:00", dias: [mie]}
-  instagram_motion:{account: 53650, platform: instagram, emisor: motion, activo: false, pieza: quote, hora: "12:00", dias: [vie]}
-
-aprobacion:
-  modo: programar_futuro
-  revision: blotato_calendar
-
-publicacion:
-  proveedor: blotato
-  timezone: America/Argentina/Buenos_Aires
-  buffer_horas: 48
+  linkedin_paulo:  {account: 25264, platform: linkedin}
+  x_paulo:         {account: 20492, platform: twitter}
+  linkedin_motion: {account: 105691334, platform: linkedin}
+  instagram:       {account: 53650, platform: instagram}
