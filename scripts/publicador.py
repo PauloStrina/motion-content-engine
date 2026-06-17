@@ -38,8 +38,8 @@ def load_cfg(cfg="config.yaml"):
     chans={}
     if not os.path.exists(cfg): return chans
     for ln in open(cfg):
-        m=re.match(r'\s*(\w+):\s*\{account:\s*(\w+),\s*platform:\s*(\w+)', ln)
-        if m: chans[m.group(1)]={"account":m.group(2),"platform":m.group(3)}
+        m=re.match(r'\s*(\w+):\s*\{account:\s*(\w+),\s*platform:\s*(\w+)(?:.*?pageid:\s*(\w+))?', ln)
+        if m: chans[m.group(1)]={"account":m.group(2),"platform":m.group(3),"pageid":m.group(4)}
     return chans
 
 DOW={"lun":0,"mar":1,"mie":2,"jue":3,"vie":4,"sab":5,"dom":6}
@@ -50,10 +50,12 @@ def fecha(dia, hhmm, buf=48):
         d+=dt.timedelta(days=1)
     return d.replace(hour=h,minute=mm,second=0,microsecond=0).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-def _programar_raw(account, platform, text, when, media=None, hilo=None):
+def _programar_raw(account, platform, text, when, media=None, hilo=None, page_id=None):
+    target={"targetType":platform}
+    if page_id: target["pageId"]=str(page_id)   # LinkedIn página de empresa
     post={"accountId":str(account),
           "content":{"text":text,"mediaUrls":media or [],"platform":platform},
-          "target":{"targetType":platform}}
+          "target":target}
     if hilo: post["additionalPosts"]=[{"text":t,"mediaUrls":[]} for t in hilo]
     return _post("/posts", {"post":post,"scheduledTime":when})
 
@@ -79,22 +81,15 @@ def publicar(m, cfg, png_dir, solo=None):
         try:
             if fmt=="post":
                 print(f"  texto: {p['texto'][:70]}...")
-                _programar_raw(acc, plat, p["texto"], when)
+                _programar_raw(acc, plat, p["texto"], when, page_id=cfg[canal].get("pageid"))
             elif fmt=="hilo":
                 print(f"  hilo de {len(p['hilo'])} tweets")
                 _programar_raw(acc, plat, p["hilo"][0], when, hilo=p["hilo"][1:])
             elif fmt=="carrusel":
                 n=p["carrusel_slides"]; base=p["carrusel"]
-                print(f"  carrusel {base}: {n} slides → subiendo imágenes...")
-                urls=[]
-                ok=True
-                for i in range(1,n+1):
-                    png=os.path.join(png_dir, f"{base}-{i}.png")
-                    if not os.path.exists(png):
-                        print(f"  ⚠ falta {png} — abortando carrusel"); ok=False; break
-                    urls.append(subir_imagen(png))
-                if not ok:
-                    fallos.append(canal); continue
+                media_base=os.environ.get("MEDIA_BASE","https://ops-motionco.github.io/motion-media/carruseles")
+                urls=[f"{media_base}/{base}-{i}.png" for i in range(1,n+1)]
+                print(f"  carrusel {base}: {n} slides (URLs públicas de motion-media)")
                 print(f"  caption: {p['caption'][:60]}...")
                 _programar_raw(acc, plat, p["caption"], when, media=urls)
             print("  ✓ programado (editable en calendario Blotato)")
