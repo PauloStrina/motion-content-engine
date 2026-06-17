@@ -17,7 +17,12 @@ def _post(path, body):
         return {"id":"dry"}
     req = urllib.request.Request(API+path, data=json.dumps(body).encode(),
         headers={"blotato-api-key":key(),"Content-Type":"application/json"})
-    with urllib.request.urlopen(req) as r: return json.load(r)
+    try:
+        with urllib.request.urlopen(req) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        detalle = e.read().decode(errors="replace")[:300]
+        raise RuntimeError(f"Blotato HTTP {e.code}: {detalle}")
 
 def subir_imagen(path_png):
     """Sube un PNG local a Blotato y devuelve la URL validada. Endpoint /v2/media con base64."""
@@ -45,7 +50,7 @@ def fecha(dia, hhmm, buf=48):
         d+=dt.timedelta(days=1)
     return d.replace(hour=h,minute=mm,second=0,microsecond=0).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-def programar(account, platform, text, when, media=None, hilo=None):
+def _programar_raw(account, platform, text, when, media=None, hilo=None):
     post={"accountId":str(account),
           "content":{"text":text,"mediaUrls":media or [],"platform":platform},
           "target":{"targetType":platform}}
@@ -57,6 +62,7 @@ HORARIOS={"linkedin_paulo":("jue","09:00"),"linkedin_motion":("mie","11:00"),
           "x_paulo":("mar","08:30"),"instagram":("vie","12:00")}
 
 def publicar(m, cfg, png_dir, solo=None):
+    fallos = []
     for canal in M.CANALES:
         if solo and canal!=solo: continue
         p = M.pieza(m, canal)
@@ -70,25 +76,32 @@ def publicar(m, cfg, png_dir, solo=None):
         when = fecha(dia, hora)
         fmt = p["formato"]
         print(f"\n▶ {canal} ({plat}, acc {acc}) → {when}")
-        if fmt=="post":
-            print(f"  texto: {p['texto'][:70]}...")
-            programar(acc, plat, p["texto"], when)
-        elif fmt=="hilo":
-            print(f"  hilo de {len(p['hilo'])} tweets")
-            programar(acc, plat, p["hilo"][0], when, hilo=p["hilo"][1:])
-        elif fmt=="carrusel":
-            n=p["carrusel_slides"]; base=p["carrusel"]
-            print(f"  carrusel {base}: {n} slides → subiendo imágenes...")
-            urls=[]
-            for i in range(1,n+1):
-                png=os.path.join(png_dir, f"{base}-{i}.png")
-                if not os.path.exists(png):
-                    print(f"  ⚠ falta {png} — abortando carrusel"); break
-                urls.append(subir_imagen(png))
-            else:
+        try:
+            if fmt=="post":
+                print(f"  texto: {p['texto'][:70]}...")
+                _programar_raw(acc, plat, p["texto"], when)
+            elif fmt=="hilo":
+                print(f"  hilo de {len(p['hilo'])} tweets")
+                _programar_raw(acc, plat, p["hilo"][0], when, hilo=p["hilo"][1:])
+            elif fmt=="carrusel":
+                n=p["carrusel_slides"]; base=p["carrusel"]
+                print(f"  carrusel {base}: {n} slides → subiendo imágenes...")
+                urls=[]
+                ok=True
+                for i in range(1,n+1):
+                    png=os.path.join(png_dir, f"{base}-{i}.png")
+                    if not os.path.exists(png):
+                        print(f"  ⚠ falta {png} — abortando carrusel"); ok=False; break
+                    urls.append(subir_imagen(png))
+                if not ok:
+                    fallos.append(canal); continue
                 print(f"  caption: {p['caption'][:60]}...")
-                programar(acc, plat, p["caption"], when, media=urls)
-        print("  ✓ programado (editable en calendario Blotato)")
+                _programar_raw(acc, plat, p["caption"], when, media=urls)
+            print("  ✓ programado (editable en calendario Blotato)")
+        except Exception as e:
+            print(f"  ✗ ERROR en {canal}: {e}")
+            fallos.append(canal)
+    return fallos
 
 if __name__=="__main__":
     solo=None
@@ -101,4 +114,9 @@ if __name__=="__main__":
     png_dir=os.environ.get("PNG_DIR","media_out")
     print(f"Publicador — {'DRY' if DRY else 'LIVE'} — episodio {m['episodio']}")
     print(f"Modo revisión: todo queda PROGRAMADO y editable en https://my.blotato.com/queue/calendar")
-    publicar(m, cfg, png_dir, solo)
+    fallos = publicar(m, cfg, png_dir, solo)
+    if fallos:
+        print(f"\n⚠ {len(fallos)} canal(es) con error: {fallos}")
+        print("Los demás se programaron OK. Revisá esos canales en Blotato.")
+    else:
+        print("\n✓ Todos los canales activos se programaron sin errores.")
