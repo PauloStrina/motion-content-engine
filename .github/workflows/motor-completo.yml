@@ -1,0 +1,35 @@
+name: motor-completo
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  id-token: write
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq libpango-1.0-0 libpangoft2-1.0-0 poppler-utils
+          pip install weasyprint --quiet
+      - name: Renderizar carrusel del manifiesto (nombre dinámico)
+        run: |
+          RP=$(find . -name render.py -path "*design-system*" | head -1)
+          RD=$(dirname "$RP")
+          # leer el nombre del carrusel del manifiesto más reciente
+          CARR=$(python3 -c "import sys,json,glob,os; f=sorted(glob.glob('manifiestos/manifiesto_*.json'),key=os.path.getmtime)[-1]; m=json.load(open(f)); print(m['canales']['instagram']['carrusel'])")
+          echo "Carrusel a renderizar: $CARR"
+          mkdir -p media_out
+          # el JSON de slides lo genera el Diseñador; si no existe aún, usamos el ejemplo con el nombre correcto
+          JSON="$RD/slides/${CARR}_carrusel.json"
+          if [ ! -f "$JSON" ]; then JSON="$RD/slides/ejemplo_ep1-1.json"; echo "Aviso: usando spec de ejemplo (el Diseñador aún no generó $CARR)"; fi
+          python "$RP" "$JSON" "media_out/$CARR" --png || true
+          # renombrar los PNG al nombre del carrusel si hizo falta
+          ls media_out/ | head
+      - name: Publicar (DRY-RUN — no toca Blotato todavía)
+        env:
+          BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
+          PNG_DIR: media_out
+        run: |
+          python scripts/publicador.py --dry
