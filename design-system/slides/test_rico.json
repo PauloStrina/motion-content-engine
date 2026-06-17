@@ -1,0 +1,23 @@
+{
+  "scenes": [
+    {"bg":"negro","bg_sweep":"violeta","seconds":2.5,
+     "shapes":[
+       {"kind":"bar","x":84,"y":300,"w":40,"h":280,"color":"naranja","delay":0.2,"dur":0.6,"ease":"back"},
+       {"kind":"bar","x":140,"y":300,"w":40,"h":420,"color":"aqua","delay":0.35,"dur":0.6,"ease":"back"},
+       {"kind":"bar","x":196,"y":300,"w":40,"h":340,"color":"violeta","delay":0.5,"dur":0.6,"ease":"back"}
+     ],
+     "elements":[
+       {"text":"CAMBIO","size":210,"color":"blanco","ease":"back","delay":0.0,"dur":0.5,"scale_from":0.5,"rise":0,"mb":10},
+       {"text":"≠ TRANSFORMACIÓN","size":104,"color":"naranja","ease":"expo","delay":0.6,"dur":0.5,"rise":60}
+     ]},
+    {"bg":"aqua","seconds":2.5,"logo":"negro",
+     "shapes":[
+       {"kind":"line","x":84,"y":1180,"w":900,"th":14,"color":"violeta","delay":0.5,"dur":0.7,"ease":"expo"},
+       {"kind":"block","x":700,"y":400,"w":280,"h":280,"color":"naranja","from_x":400,"delay":0.3,"dur":0.7,"ease":"expo"}
+     ],
+     "elements":[
+       {"text":"Te falta","size":78,"color":"negro","font":"lyon","ease":"cubic","delay":0.1,"dur":0.4,"rise":40,"mb":6},
+       {"text":"EL CÓMO","size":230,"color":"violeta","ease":"back","delay":0.4,"dur":0.6,"scale_from":0.4}
+     ]}
+  ]
+}

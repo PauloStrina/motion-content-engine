@@ -1,0 +1,13 @@
+{
+  "scenes": [
+    {"bg":"negro","seconds":2.0,"elements":[
+      {"text":"CAMBIO","size":220,"color":"blanco","font":"futura","delay":0.0,"dur":0.5,"rise":60},
+      {"text":"≠","size":160,"color":"naranja","font":"futura","delay":0.4,"dur":0.4,"scale_from":0.3,"mb":20},
+      {"text":"TRANSFORMACIÓN","size":120,"color":"naranja","font":"futura","delay":0.6,"dur":0.5,"rise":40}
+    ]},
+    {"bg":"aqua","seconds":2.0,"logo":"negro","elements":[
+      {"text":"Te falta","size":80,"color":"negro","font":"lyon","delay":0.1,"dur":0.4,"rise":30,"mb":10},
+      {"text":"EL CÓMO","size":200,"color":"violeta","font":"futura","delay":0.4,"dur":0.5,"scale_from":0.6}
+    ]}
+  ]
+}
