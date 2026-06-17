@@ -3,12 +3,14 @@
 Hosting de imágenes: subida directa a Blotato (POST /v2/media con archivo). Sin hosting externo.
 Modos: --dry (no toca Blotato) · --solo <canal> (un canal) · (sin flags) todos los activos.
 Requiere: BLOTATO_API_KEY. accountId/platform desde config.yaml."""
-import os, sys, json, re, base64, urllib.request, datetime as dt
+import os, sys, json, re, base64, urllib.request, datetime as dt, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import manifiesto as M
 
 API = "https://backend.blotato.com/v2"
 DRY = "--dry" in sys.argv
+BLOTATO_DELAY_SECONDS = 5
+
 def key(): return os.environ["BLOTATO_API_KEY"]
 
 def _post(path, body):
@@ -19,7 +21,9 @@ def _post(path, body):
         headers={"blotato-api-key":key(),"Content-Type":"application/json"})
     try:
         with urllib.request.urlopen(req) as r:
-            return json.load(r)
+            response = json.load(r)
+        time.sleep(BLOTATO_DELAY_SECONDS)
+        return response
     except urllib.error.HTTPError as e:
         detalle = e.read().decode(errors="replace")[:300]
         raise RuntimeError(f"Blotato HTTP {e.code}: {detalle}")
