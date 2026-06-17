@@ -56,4 +56,4 @@ jobs:
           BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
           PNG_DIR: media_out
         run: |
-          python scripts/publicador.py --dry
+          python scripts/publicador.py
