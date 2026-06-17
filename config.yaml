@@ -1,25 +1,22 @@
-# MOTION CONTENT ENGINE — configuración central
-# Modificar el sistema = editar este archivo + commit.
+# MOTION CONTENT ENGINE — configuración central. Modificar = editar acá + commit.
 
-strategy_pack: motor-de-tesis        # switchable: motor-de-tesis | vender-sin-perseguir | waterfall
-serie_activa: "serie-1-diferencia"   # ver strategy/tesis.md
+strategy_pack: motor-de-tesis
+serie_activa: "serie-1-diferencia"
 mezcla_semanal: {problema: 1, metodo_o_resultados: 1, conexion: 1}
-regla_70_30: true                    # 70% autoridad / 30% producto
+regla_70_30: true
 
+# ── CANALES (account = ID de Blotato · platform = nombre Blotato) ──
 canales:
-  linkedin_paulo:   {emisor: paulo,  formato: post+newsletter+carrusel, dias: [mar, jue]}
-  linkedin_motion:  {emisor: motion, formato: post+quote,               dias: [mie, vie]}
-  showcase_talent:  {emisor: talent, formato: post,                     activo: false}  # activar en F3
-  instagram_motion: {emisor: motion, formato: reel+quote,               dias: [vie, lun]}
-  x_paulo:          {emisor: paulo,  formato: hilo,                     activo: false}  # activar tras retro mes 2
+  linkedin_paulo:  {account: 25264, platform: linkedin, emisor: paulo,  activo: true,  pieza: post,      hora: "09:00", dias: [mar, jue]}
+  x_paulo:         {account: 20492, platform: twitter,  emisor: paulo,  activo: true,  pieza: hilo,      hora: "08:30", dias: [mar, vie]}
+  linkedin_motion: {account: PENDIENTE, platform: linkedin, emisor: motion, activo: false, pieza: post,  hora: "11:00", dias: [mie]}
+  instagram_motion:{account: PENDIENTE, platform: instagram, emisor: motion, activo: false, pieza: quote, hora: "12:00", dias: [vie]}
 
 aprobacion:
-  modo: humano_obligatorio           # NUNCA cambiar a auto
-  carpeta_pendientes: queue/pending
-  carpeta_aprobados: queue/approved
-  notificacion: email                # TODO: configurar destinatario en secrets
+  modo: programar_futuro     # las piezas quedan PROGRAMADAS y editables en el calendario de Blotato; nada sale sin tu OK final
+  revision: blotato_calendar # https://my.blotato.com/queue/calendar
 
 publicacion:
   proveedor: blotato
-  horarios: {mar: "09:00", mie: "11:00", jue: "10:00", vie: "12:00", lun: "09:00"}
   timezone: America/Argentina/Buenos_Aires
+  buffer_horas: 48           # programa con 48hs de anticipación para dar margen de revisión
