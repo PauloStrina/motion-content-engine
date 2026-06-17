@@ -13,7 +13,7 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq libpango-1.0-0 libpangoft2-1.0-0
           pip install weasyprint --quiet
-      - name: Agente Diseñador (escribe el JSON de slides)
+      - name: Agente Diseñador (escribe los JSON de slides)
         uses: anthropics/claude-code-action@v1
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -22,24 +22,38 @@ jobs:
           claude_args: "--allowedTools Read,Write,Edit,Glob,Grep,Bash"
           show_full_output: true
           prompt: |
-            Sos el Agente Diseñador de Motion. Tu tarea OBLIGATORIA:
-            1. Leé design-system/README-kit.md y design-system/slides/ejemplo_ep1-1.json.
-            2. Leé la cascada más reciente de queue/approved/ que NO tenga aún su JSON en design-system/slides/.
-            3. Convertí la sección CARRUSEL de esa cascada en un JSON con EXACTAMENTE el mismo
-               formato y kit del ejemplo (lam monocolor, eco, lyon, narrativa cromática por tipo).
-            4. Guardalo con Write en design-system/slides/<nombre-del-episodio>.json
-            El éxito se mide por una sola cosa: que ese archivo JSON exista al final.
-      - name: Render de PDFs
+            Sos el Agente Diseñador de Motion. Localizá la carpeta del design system
+            (donde están render.py, render_static.py y README-kit.md). Leé README-kit.md
+            y los ejemplos: slides/ejemplo_ep1-1.json y slides/piezas_demo.json.
+            Tomá la cascada más reciente de queue/approved/ que NO tenga aún sus JSON en slides/.
+            Generá DOS archivos JSON en la carpeta slides/, respetando exactamente el kit
+            (lam monocolor, eco, lyon, narrativa cromática por tipo de episodio):
+            1. <episodio>_carrusel.json  → la sección CARRUSEL de la cascada (formato ejemplo_ep1-1).
+            2. <episodio>_estaticas.json → la QUOTE CARD + cualquier número del Banco de Evidencias
+               (pieza "data") + cualquier lista de pasos/principios (pieza "list"), formato piezas_demo.
+            Usá Write para crear ambos archivos. El éxito se mide por que los dos JSON existan.
+            No inventes números: si un dato no está en evidencias/banco.md, no crees pieza "data".
+      - name: Render de PDFs (carruseles + estáticas)
         run: |
-          cd design-system
-          for j in slides/*.json; do
+          RP=$(find . -name render.py -path "*design-system*" | head -1)
+          RS=$(find . -name render_static.py -path "*design-system*" | head -1)
+          RD=$(dirname "$RP")
+          echo "Design system en: $RD"
+          mkdir -p queue/approved
+          for j in "$RD"/slides/*_carrusel.json; do
+            [ -e "$j" ] || continue
             n=$(basename "${j%.json}")
-            python render.py "$j" "../queue/approved/${n}_carrusel.pdf"
+            python "$RP" "$j" "queue/approved/${n}.pdf"
+          done
+          for j in "$RD"/slides/*_estaticas.json; do
+            [ -e "$j" ] || continue
+            n=$(basename "${j%.json}")
+            python "$RS" "$j" "queue/approved/${n}.pdf"
           done
       - name: Commit
         run: |
           git config user.name "motion-engine"; git config user.email "engine@motion.local"
           git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
-          git add -A queue/ design-system/slides/
-          git commit -m "carrusel renderizado por el Agente Diseñador" || exit 0
+          git add -A queue/ design-system/
+          git commit -m "visuales renderizados (carrusel + estáticas)" || exit 0
           git push origin HEAD:main
