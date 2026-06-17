@@ -1,0 +1,76 @@
+{
+  "episodio": "1.2 — El archipiélago digital",
+  "slides": [
+    {
+      "bg": "negro", "eyebrow": "Serie · La diferencia que lo define todo", "eyebrow_color": "aqua", "pager": "01 — 08",
+      "blocks": [
+        {"type": "futura", "text": "¿CADA ÁREA COMPRÓ", "size": 108, "lh": 104, "color": "blanco"},
+        {"type": "lam", "text": "LA SUYA?", "size": 150, "color": "naranja"},
+        {"type": "spacer", "h": 46},
+        {"type": "lyon", "text": "Casi todas lo hicieron<br>sin darse cuenta.", "size": 44, "color": "aqua"}
+      ]
+    },
+    {
+      "bg": "negro", "eyebrow": "El archipiélago", "eyebrow_color": "naranja", "pager": "02 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "Cada área compró la suya:", "size": 50, "color": "blanco", "mb": 32},
+        {"type": "futura", "text": "MARKETING", "size": 106, "lh": 100, "color": "blanco"},
+        {"type": "futura", "text": "VENTAS", "size": 106, "lh": 100, "color": "blanco"},
+        {"type": "futura", "text": "RRHH", "size": 106, "lh": 100, "color": "blanco"},
+        {"type": "lam", "text": "OPERACIONES", "size": 106, "color": "naranja"},
+        {"type": "lyont", "text": "Cuatro decisiones razonables,<br>tomadas en soledad.", "size": 40, "color": "aqua", "mt": 46}
+      ]
+    },
+    {
+      "bg": "negro", "eyebrow": "El archipiélago", "eyebrow_color": "naranja", "pager": "03 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "El resultado tiene nombre:", "size": 52, "color": "blanco", "mb": 36},
+        {"type": "eco", "text": "ARCHIPIÉLAGO", "size": 132, "color": "naranja"},
+        {"type": "lyont", "text": "Islas que funcionan,<br>pero no se hablan.", "size": 40, "color": "aqua", "mt": 48}
+      ]
+    },
+    {
+      "bg": "negro", "eyebrow": "El diagnóstico", "eyebrow_color": "naranja", "pager": "04 — 08",
+      "blocks": [
+        {"type": "futura", "text": "EL PROBLEMA NO ES", "size": 92, "lh": 88, "color": "blanco", "mb": 6},
+        {"type": "lam", "text": "NINGUNA ISLA.", "size": 118, "color": "naranja"},
+        {"type": "lyon", "text": "Cada compra resolvió<br>un dolor real.", "size": 44, "color": "aqua", "mt": 50}
+      ]
+    },
+    {
+      "bg": "negro", "eyebrow": "El diagnóstico", "eyebrow_color": "naranja", "pager": "05 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "El problema es que<br>nadie diseñó el", "size": 52, "color": "blanco", "mb": 28},
+        {"type": "lam", "text": "CONTINENTE", "size": 150, "color": "naranja"},
+        {"type": "lyont", "text": "Falta integridad estratégica,<br>no tecnología.", "size": 40, "color": "aqua", "mt": 50}
+      ]
+    },
+    {
+      "bg": "negro", "eyebrow": "La señal", "eyebrow_color": "naranja", "pager": "06 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "La señal más común:", "size": 52, "color": "blanco", "mb": 40},
+        {"type": "futura", "text": "STACK EN GOOGLE.", "size": 86, "lh": 82, "color": "blanco"},
+        {"type": "lam", "text": "POWER BI APARTE.", "size": 86, "color": "naranja"},
+        {"type": "lyont", "text": "Decisiones sin una sola<br>cabeza estratégica detrás.", "size": 40, "color": "aqua", "mt": 50}
+      ]
+    },
+    {
+      "bg": "aqua", "eyebrow": "La transformación", "eyebrow_color": "violeta", "pager": "07 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "Comprar área por área<br>es sumar cambios.", "size": 52, "color": "negro", "mb": 36},
+        {"type": "futura", "text": "TRANSFORMAR ES", "size": 92, "lh": 88, "color": "negro"},
+        {"type": "lam", "text": "DISEÑAR EL SISTEMA.", "size": 92, "color": "violeta"},
+        {"type": "lyont", "text": "Una sola visión del negocio<br>detrás de cada pieza.", "size": 40, "color": "negro", "mt": 50}
+      ]
+    },
+    {
+      "bg": "negro", "pager": "08 — 08", "foot": "#LoComplejoSimple", "foot_color": "naranja",
+      "blocks": [
+        {"type": "futura", "text": "UN ARCHIPIÉLAGO NO SE", "size": 80, "lh": 76, "color": "blanco"},
+        {"type": "futura", "text": "ARREGLA COMPRANDO", "size": 80, "lh": 84, "color": "blanco", "mb": 32},
+        {"type": "eco", "text": "OTRA ISLA", "size": 150, "color": "naranja"},
+        {"type": "lyon", "text": "Transformación Continua® — seguí la serie.", "size": 42, "color": "aqua", "mb": 0, "mt": 54}
+      ]
+    }
+  ]
+}
