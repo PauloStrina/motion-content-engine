@@ -1,0 +1,46 @@
+name: publicar-instagram
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  id-token: write
+jobs:
+  carrusel-instagram:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq libpango-1.0-0 libpangoft2-1.0-0 poppler-utils
+          pip install weasyprint --quiet
+      - name: Generar PNGs del carrusel
+        run: |
+          RP=$(find . -name render.py -path "*design-system*" | head -1)
+          RD=$(dirname "$RP")
+          mkdir -p media_out
+          # toma el primer JSON de carrusel disponible
+          J=$(ls "$RD"/slides/*_carrusel.json 2>/dev/null | head -1)
+          if [ -z "$J" ]; then J="$RD/slides/ejemplo_ep1-1.json"; fi
+          echo "Usando spec: $J"
+          python "$RP" "$J" media_out --png
+          ls -la media_out/
+      - name: Empujar PNGs al repo motion-media
+        env:
+          TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}
+        run: |
+          git clone "https://x-access-token:${TOKEN}@github.com/ops-motionco/motion-media.git" media_repo
+          mkdir -p media_repo/carruseles
+          cp media_out/*.png media_repo/carruseles/
+          cd media_repo
+          git config user.name "motion-engine"
+          git config user.email "engine@motion.local"
+          git add -A
+          git commit -m "carrusel actualizado desde el motor" || echo "sin cambios"
+          git push
+          echo "PNGs publicados en https://ops-motionco.github.io/motion-media/carruseles/"
+      - name: Programar carrusel en Blotato (Instagram, modo revisión)
+        env:
+          BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
+          PAGES_BASE: "https://ops-motionco.github.io/motion-media"
+        run: |
+          python scripts/publish_blotato.py --carrusel-instagram
