@@ -7,16 +7,17 @@ regla_70_30: true
 
 # ── CANALES (account = ID de Blotato · platform = nombre Blotato) ──
 canales:
-  linkedin_paulo:  {account: 25264, platform: linkedin, emisor: paulo,  activo: true,  pieza: post,      hora: "09:00", dias: [mar, jue]}
-  x_paulo:         {account: 20492, platform: twitter,  emisor: paulo,  activo: true,  pieza: hilo,      hora: "08:30", dias: [mar, vie]}
-  linkedin_motion: {account: PENDIENTE, platform: linkedin, emisor: motion, activo: false, pieza: post,  hora: "11:00", dias: [mie]}
-  instagram_motion:{account: PENDIENTE, platform: instagram, emisor: motion, activo: false, pieza: quote, hora: "12:00", dias: [vie]}
+  linkedin_paulo:  {account: 25264, platform: linkedin, emisor: paulo,  activo: true,  pieza: post,  hora: "09:00", dias: [mar, jue]}
+  x_paulo:         {account: 20492, platform: twitter,  emisor: paulo,  activo: true,  pieza: hilo,  hora: "08:30", dias: [mar, vie]}
+  linkedin_motion: {account: 105691334, platform: linkedin, emisor: motion, activo: true,  pieza: post,  hora: "11:00", dias: [mie]}
+  instagram_motion:{account: 53650, platform: instagram, emisor: motion, activo: false, pieza: quote, hora: "12:00", dias: [vie]}
 
 aprobacion:
-  modo: programar_futuro     # las piezas quedan PROGRAMADAS y editables en el calendario de Blotato; nada sale sin tu OK final
-  revision: blotato_calendar # https://my.blotato.com/queue/calendar
+  modo: programar_futuro
+  revision: blotato_calendar
 
 publicacion:
   proveedor: blotato
   timezone: America/Argentina/Buenos_Aires
-  buffer_horas: 48           # programa con 48hs de anticipación para dar margen de revisión
+  buffer_horas: 48
+EOF
