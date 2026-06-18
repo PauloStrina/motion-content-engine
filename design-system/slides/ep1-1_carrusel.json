@@ -1,0 +1,76 @@
+{
+  "episodio": "ep1-1 — Cambio vs Transformación",
+  "slides": [
+    {
+      "bg": "negro", "eyebrow": "Serie · La diferencia que lo define todo", "eyebrow_color": "aqua", "pager": "01 — 08",
+      "blocks": [
+        {"type": "futura", "text": "¿TU ORGANIZACIÓN", "size": 120, "lh": 112, "color": "blanco"},
+        {"type": "futura", "text": "BUSCA UN CAMBIO", "size": 120, "lh": 112, "color": "blanco"},
+        {"type": "lam", "text": "O UNA TRANSFORMACIÓN?", "size": 92, "color": "naranja"},
+        {"type": "spacer", "h": 46},
+        {"type": "lyon", "text": "Casi nadie tiene respondida<br>esta pregunta.", "size": 44, "color": "aqua"}
+      ]
+    },
+    {
+      "bg": "negro", "eyebrow": "El cambio", "eyebrow_color": "naranja", "pager": "02 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "El cambio surge de un", "size": 52, "color": "blanco", "mb": 36},
+        {"type": "eco", "text": "DOLOR", "size": 250, "color": "naranja"},
+        {"type": "lyont", "text": "Una necesidad puntual. Una urgencia.", "size": 40, "color": "aqua", "mt": 48}
+      ]
+    },
+    {
+      "bg": "negro", "eyebrow": "El cambio", "eyebrow_color": "naranja", "pager": "03 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "Es transaccional:", "size": 52, "color": "blanco", "mb": 40},
+        {"type": "rows", "html": "<span class='futura' style='font-size:88px;color:#FFFFFF'>PROBLEMA</span><span class='futura' style='font-size:88px;color:#FF5000'> → </span><span class='futura' style='font-size:88px;color:#FFFFFF'>SOLUCIÓN</span>", "ops": [1.0, 0.55, 0.25], "gap": 18},
+        {"type": "lyon", "text": "Corto plazo.", "size": 48, "color": "aqua", "mt": 56}
+      ]
+    },
+    {
+      "bg": "aqua", "eyebrow": "La transformación", "eyebrow_color": "violeta", "pager": "04 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "La transformación surge de una", "size": 52, "color": "negro", "mb": 34},
+        {"type": "lam", "text": "VISIÓN", "size": 250, "color": "violeta"},
+        {"type": "lyont", "text": "Del entendimiento<br>profundo del contexto.", "size": 40, "color": "negro", "mt": 50}
+      ]
+    },
+    {
+      "bg": "aqua", "eyebrow": "La transformación", "eyebrow_color": "violeta", "pager": "05 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "Y atraviesa todo:", "size": 52, "color": "negro", "mb": 40},
+        {"type": "futura", "text": "PROCESOS", "size": 135, "lh": 124, "color": "violeta"},
+        {"type": "futura", "text": "LIDERAZGO", "size": 135, "lh": 124, "color": "negro"},
+        {"type": "lam", "text": "CULTURA", "size": 135, "color": "naranja"},
+        {"type": "lyont", "text": "Mediano y largo plazo.", "size": 40, "color": "negro", "mt": 52}
+      ]
+    },
+    {
+      "bg": "violeta", "eyebrow": "El motor", "eyebrow_color": "aqua", "pager": "06 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "Su motor no es la urgencia.", "size": 52, "color": "blanco", "mb": 8},
+        {"type": "lyon", "text": "Es el", "size": 52, "color": "blanco", "mb": 40},
+        {"type": "eco", "text": "ENTUSIASMO", "size": 168, "color": "aqua"},
+        {"type": "lyont", "text": "Saber que la visión puede<br>convertirse en resultados.", "size": 40, "color": "blanco", "mt": 52}
+      ]
+    },
+    {
+      "bg": "naranja", "eyebrow": "El error costoso", "eyebrow_color": "negro", "pager": "07 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "Comprar tecnología esperando transformarte es como cambiar el auto para escapar del tráfico.", "size": 66, "lh2": 1.22, "color": "negro", "maxw": 900, "mb": 70},
+        {"type": "futura", "text": "EL PROBLEMA NO ES", "size": 88, "lh": 84, "color": "blanco"},
+        {"type": "futura", "text": "EL VEHÍCULO.", "size": 88, "lh": 92, "color": "blanco"},
+        {"type": "lam", "text": "ES EL SISTEMA.", "size": 88, "color": "blanco"}
+      ]
+    },
+    {
+      "bg": "negro", "pager": "08 — 08", "foot": "#LoComplejoSimple", "foot_color": "naranja",
+      "blocks": [
+        {"type": "futura", "text": "SI YA TENÉS LA VISIÓN,", "size": 92, "lh": 88, "color": "blanco"},
+        {"type": "futura", "text": "TE FALTA UNA SOLA COSA:", "size": 92, "lh": 96, "color": "blanco", "mb": 38},
+        {"type": "eco", "text": "EL CÓMO", "size": 155, "color": "naranja"},
+        {"type": "lyon", "text": "Transformación Continua® — seguí la serie.", "size": 42, "color": "aqua", "mb": 0, "mt": 54}
+      ]
+    }
+  ]
+}
