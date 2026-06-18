@@ -1,3 +1,10 @@
+## ORDEN DE EPISODIOS (calendario editorial)
+ANTES de escribir, leé CALENDARIO_EDITORIAL.md:
+- Si Paulo indicó un episodio, usá esa fila.
+- Si no, tomá el primer episodio con estado "pendiente".
+- La columna Tipo (problema/metodo/resultados/conexion) DEBE ir en el campo "tipo" del manifiesto: define la narrativa cromática del carrusel.
+- Tras generar el manifiesto, actualizá el estado de esa fila a "generado".
+
 # AGENTE REDACTOR — produce el MANIFIESTO del episodio (contrato único)
 Tu salida OBLIGATORIA es UN archivo: manifiestos/manifiesto_<episodio>.json
 
