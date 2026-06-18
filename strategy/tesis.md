@@ -69,12 +69,28 @@ Vive en `/strategy/tesis.md`. Revisión trimestral.
 
 ## La matriz de planificación (tesis × tipo de contenido)
 
-| Tipo | Función | Ejemplo con Tesis 2 |
-|---|---|---|
-| **Problema** | "Entienden mi situación mejor que yo" | "Invierten millones y nada cambia: la causa que nadie nombra" |
-| **Método** | "Saben resolverlo distinto" | "Cómo el Diseño de Comportamientos crea hábitos de adopción" |
-| **Resultados** | "Ya lo resolvieron antes" | El caso "sucedió alguna magia", con números |
-| **Conexión** | "Comparto su filosofía" | "Por qué creemos en organizaciones más conscientes" + Heladeros |
+> **Principio rector de todo el contenido (gobierna por encima del tipo):**
+> Motion despierta conciencia y siembra preguntas — no acusa, no presiona, no
+> empuja respuestas. El lector ideal no es alguien a quien hay que corregir: es
+> alguien lúcido que todavía no se hizo la pregunta correcta. Cada pieza lo deja
+> pensando, nunca presionado ni señalado. (Coherente con D11 "Vender sin
+> perseguir" y con el insight #0 del Buyer Persona: el contenido EQUIPA, no persuade.)
+
+El campo `tipo` NO es solo el color del carrusel: define la **intención retórica**
+de la pieza — el trabajo que hace sobre la cabeza del lector. El color es
+consecuencia de la intención, no al revés. El Redactor escribe DESDE la intención.
+
+| Tipo | Intención (qué instala) | HACE | NO HACE | El lector termina… | Foco / Anti-foco |
+|---|---|---|---|---|---|
+| **Problema** (negro) | Instalar una pregunta que el lector nunca se hizo | Nombra una distinción o tensión que el lector vive pero no articuló. En presente y experiencial ("las organizaciones que nos escriben…") | No acusa ("gastaste mal"), no resuelve (eso es Método), no se va al síntoma | Sintiendo que Motion entiende su situación mejor que él mismo — y haciéndose la pregunta que no se había hecho | Foco: el EJE del contraste (dolor/visión). Anti-foco: la consecuencia (la plata gastada, la compra, el proveedor) |
+| **Método** (violeta) | Mostrar que hay un camino y que tiene método | Muestra un artefacto o principio del método aplicado, el movimiento concreto | No vende, no promete resultados sin evidencia | Viendo que existe un marco y que se puede | Foco: el movimiento del método. Anti-foco: la herramienta como tema |
+| **Resultados** (naranja) | Probar que ya pasó: credibilidad | Un caso o número real del Banco de Evidencias, con la transformación concreta | No inventa ni redondea números, no hace autobombo | Pensando "esto es real, lo hicieron" | Foco: la transformación lograda. Anti-foco: el elogio vacío a Motion |
+| **Conexión** (aqua) | Identificación filosófica: pertenencia | Comparte una creencia o valor, lo humano, lo que Motion defiende | No hace terrorismo ni sermón abstracto | Pensando "comparto su forma de ver" | Foco: el propósito anclado en algo concreto. Anti-foco: la abstracción sin aterrizaje |
+
+**Cómo lo usa el Redactor:** antes de escribir, identifica el `tipo` del episodio,
+lee su fila, y escribe la pieza para cumplir esa intención. El test final por tipo:
+*Problema* → ¿el lector cierra el post y se hace la pregunta? *Método* → ¿ve que hay
+un camino? *Resultados* → ¿cree que es real? *Conexión* → ¿se siente parte?
 
 Mezcla semanal default: 1 problema + 1 método o resultados + 1 conexión, dentro de la serie activa. El 30% de producto (D1) se intercala como episodios-resultados con lente específica. La Premisa de Contexto abre cada serie nueva.
 
