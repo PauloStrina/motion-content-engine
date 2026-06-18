@@ -1,74 +1,72 @@
 {
-  "episodio": "1.2 — El archipiélago digital",
+  "episodio": "1.2 — El diagnóstico: cómo saber cuál buscás",
   "slides": [
     {
-      "bg": "negro", "eyebrow": "Serie · La diferencia que lo define todo", "eyebrow_color": "aqua", "pager": "01 — 08",
+      "bg": "violeta", "eyebrow": "Serie · La diferencia que lo define todo", "eyebrow_color": "aqua", "pager": "01 — 08",
       "blocks": [
-        {"type": "futura", "text": "¿CADA ÁREA COMPRÓ", "size": 108, "lh": 104, "color": "blanco"},
-        {"type": "lam", "text": "LA SUYA?", "size": 150, "color": "naranja"},
+        {"type": "futura", "text": "ANTES DE INVERTIR,", "size": 110, "lh": 104, "color": "blanco"},
+        {"type": "lam", "text": "DIAGNOSTICÁ.", "size": 132, "color": "aqua"},
         {"type": "spacer", "h": 46},
-        {"type": "lyon", "text": "Casi todas lo hicieron<br>sin darse cuenta.", "size": 44, "color": "aqua"}
+        {"type": "lyon", "text": "Cómo saber si buscás un cambio<br>o una transformación.", "size": 44, "color": "aqua"}
       ]
     },
     {
-      "bg": "negro", "eyebrow": "El archipiélago", "eyebrow_color": "naranja", "pager": "02 — 08",
+      "bg": "negro", "eyebrow": "El error de origen", "eyebrow_color": "aqua", "pager": "02 — 08",
       "blocks": [
-        {"type": "lyon", "text": "Cada área compró la suya:", "size": 50, "color": "blanco", "mb": 32},
-        {"type": "futura", "text": "MARKETING", "size": 106, "lh": 100, "color": "blanco"},
-        {"type": "futura", "text": "VENTAS", "size": 106, "lh": 100, "color": "blanco"},
-        {"type": "futura", "text": "RRHH", "size": 106, "lh": 100, "color": "blanco"},
-        {"type": "lam", "text": "OPERACIONES", "size": 106, "color": "naranja"},
-        {"type": "lyont", "text": "Cuatro decisiones razonables,<br>tomadas en soledad.", "size": 40, "color": "aqua", "mt": 46}
+        {"type": "lyon", "text": "Casi nadie empieza<br>preguntándose:", "size": 52, "color": "blanco", "mb": 36},
+        {"type": "eco", "text": "¿QUÉ BUSCO?", "size": 150, "color": "violeta"},
+        {"type": "lyont", "text": "Empiezan eligiendo herramienta.<br>Ahí ya se perdieron.", "size": 40, "color": "aqua", "mt": 48}
       ]
     },
     {
-      "bg": "negro", "eyebrow": "El archipiélago", "eyebrow_color": "naranja", "pager": "03 — 08",
+      "bg": "negro", "eyebrow": "El cambio de foco", "eyebrow_color": "aqua", "pager": "03 — 08",
       "blocks": [
-        {"type": "lyon", "text": "El resultado tiene nombre:", "size": 52, "color": "blanco", "mb": 36},
-        {"type": "eco", "text": "ARCHIPIÉLAGO", "size": 132, "color": "naranja"},
-        {"type": "lyont", "text": "Islas que funcionan,<br>pero no se hablan.", "size": 40, "color": "aqua", "mt": 48}
+        {"type": "futura", "text": "NO EMPIEZA EN LA", "size": 96, "lh": 90, "color": "blanco"},
+        {"type": "futura", "text": "HERRAMIENTA.", "size": 96, "lh": 96, "color": "blanco", "mb": 30},
+        {"type": "lam", "text": "EMPIEZA EN EL MÉTODO.", "size": 84, "color": "violeta"},
+        {"type": "lyont", "text": "Un Diagnóstico de cuatro semanas.", "size": 40, "color": "aqua", "mt": 48}
       ]
     },
     {
-      "bg": "negro", "eyebrow": "El diagnóstico", "eyebrow_color": "naranja", "pager": "04 — 08",
+      "bg": "violeta", "eyebrow": "Semana 1 · El método", "eyebrow_color": "aqua", "pager": "04 — 08",
       "blocks": [
-        {"type": "futura", "text": "EL PROBLEMA NO ES", "size": 92, "lh": 88, "color": "blanco", "mb": 6},
-        {"type": "lam", "text": "NINGUNA ISLA.", "size": 118, "color": "naranja"},
-        {"type": "lyon", "text": "Cada compra resolvió<br>un dolor real.", "size": 44, "color": "aqua", "mt": 50}
+        {"type": "lyon", "text": "Primero, dónde estás hoy:", "size": 52, "color": "blanco", "mb": 30},
+        {"type": "futura", "text": "CHEQUEO DE MADUREZ", "size": 84, "lh": 80, "color": "blanco"},
+        {"type": "lam", "text": "DIGITAL.", "size": 132, "color": "aqua"},
+        {"type": "lyont", "text": "Tu punto de partida real,<br>sin suposiciones.", "size": 40, "color": "aqua", "mt": 46}
       ]
     },
     {
-      "bg": "negro", "eyebrow": "El diagnóstico", "eyebrow_color": "naranja", "pager": "05 — 08",
+      "bg": "negro", "eyebrow": "Semana 2 · El método", "eyebrow_color": "aqua", "pager": "05 — 08",
       "blocks": [
-        {"type": "lyon", "text": "El problema es que<br>nadie diseñó el", "size": 52, "color": "blanco", "mb": 28},
-        {"type": "lam", "text": "CONTINENTE", "size": 150, "color": "naranja"},
-        {"type": "lyont", "text": "Falta integridad estratégica,<br>no tecnología.", "size": 40, "color": "aqua", "mt": 50}
+        {"type": "lyon", "text": "Después, cómo operás:", "size": 52, "color": "blanco", "mb": 32},
+        {"type": "lam", "text": "MAPEO DE PROCESOS.", "size": 96, "color": "violeta"},
+        {"type": "lyont", "text": "Dónde se pierde valor<br>entre las áreas.", "size": 40, "color": "aqua", "mt": 50}
       ]
     },
     {
-      "bg": "negro", "eyebrow": "La señal", "eyebrow_color": "naranja", "pager": "06 — 08",
+      "bg": "negro", "eyebrow": "Semana 3 · El método", "eyebrow_color": "aqua", "pager": "06 — 08",
       "blocks": [
-        {"type": "lyon", "text": "La señal más común:", "size": 52, "color": "blanco", "mb": 40},
-        {"type": "futura", "text": "STACK EN GOOGLE.", "size": 86, "lh": 82, "color": "blanco"},
-        {"type": "lam", "text": "POWER BI APARTE.", "size": 86, "color": "naranja"},
-        {"type": "lyont", "text": "Decisiones sin una sola<br>cabeza estratégica detrás.", "size": 40, "color": "aqua", "mt": 50}
+        {"type": "lyon", "text": "Luego, hacia dónde vas:", "size": 52, "color": "blanco", "mb": 30},
+        {"type": "futura", "text": "WORKSHOP DE", "size": 96, "lh": 90, "color": "blanco"},
+        {"type": "lam", "text": "ESTRATEGIA DIGITAL.", "size": 90, "color": "violeta"},
+        {"type": "lyont", "text": "Tu visión, traducida<br>a decisiones.", "size": 40, "color": "aqua", "mt": 46}
       ]
     },
     {
-      "bg": "aqua", "eyebrow": "La transformación", "eyebrow_color": "violeta", "pager": "07 — 08",
+      "bg": "aqua", "eyebrow": "Semana 4 · El entregable", "eyebrow_color": "violeta", "pager": "07 — 08",
       "blocks": [
-        {"type": "lyon", "text": "Comprar área por área<br>es sumar cambios.", "size": 52, "color": "negro", "mb": 36},
-        {"type": "futura", "text": "TRANSFORMAR ES", "size": 92, "lh": 88, "color": "negro"},
-        {"type": "lam", "text": "DISEÑAR EL SISTEMA.", "size": 92, "color": "violeta"},
-        {"type": "lyont", "text": "Una sola visión del negocio<br>detrás de cada pieza.", "size": 40, "color": "negro", "mt": 50}
+        {"type": "lyon", "text": "Y al final, lo que lo<br>cambia todo:", "size": 52, "color": "negro", "mb": 30},
+        {"type": "lam", "text": "LA HOJA DE RUTA.", "size": 122, "color": "violeta"},
+        {"type": "lyont", "text": "El camino concreto de la<br>visión a los resultados.", "size": 40, "color": "negro", "mt": 48}
       ]
     },
     {
-      "bg": "negro", "pager": "08 — 08", "foot": "#LoComplejoSimple", "foot_color": "naranja",
+      "bg": "violeta", "pager": "08 — 08", "foot": "#LoComplejoSimple", "foot_color": "aqua",
       "blocks": [
-        {"type": "futura", "text": "UN ARCHIPIÉLAGO NO SE", "size": 80, "lh": 76, "color": "blanco"},
-        {"type": "futura", "text": "ARREGLA COMPRANDO", "size": 80, "lh": 84, "color": "blanco", "mb": 32},
-        {"type": "eco", "text": "OTRA ISLA", "size": 150, "color": "naranja"},
+        {"type": "futura", "text": "UNA TRANSFORMACIÓN", "size": 84, "lh": 80, "color": "blanco"},
+        {"type": "futura", "text": "NO SE COMPRA.", "size": 84, "lh": 88, "color": "blanco", "mb": 34},
+        {"type": "eco", "text": "SE DIAGNOSTICA", "size": 120, "color": "aqua"},
         {"type": "lyon", "text": "Transformación Continua® — seguí la serie.", "size": 42, "color": "aqua", "mb": 0, "mt": 54}
       ]
     }

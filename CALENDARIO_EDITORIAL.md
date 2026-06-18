@@ -8,7 +8,7 @@
 | Episodio | Tesis | Tipo | Estado |
 |----------|-------|------|--------|
 | ep1-1 | Cambio ≠ Transformación | problema | pendiente |
-| ep1-2 | Cambio ≠ Transformación | metodo | pendiente |
+| ep1-2 | Cambio ≠ Transformación | metodo | generado |
 | ep1-3 | Cambio ≠ Transformación | resultados | pendiente |
 | ep1-4 | Cambio ≠ Transformación | conexion | pendiente |
 | ep2-1 | La cultura es el sistema operativo | problema | pendiente |
