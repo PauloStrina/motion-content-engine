@@ -56,4 +56,5 @@ jobs:
           BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
           PNG_DIR: media_out
         run: |
+          touch manifiestos/manifiesto_ep1-1.json
           python scripts/publicador.py
