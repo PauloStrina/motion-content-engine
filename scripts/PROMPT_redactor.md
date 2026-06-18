@@ -4,7 +4,7 @@
 ANTES de escribir, leé CALENDARIO_EDITORIAL.md:
 - Si Paulo indicó un episodio, usá esa fila.
 - Si no, tomá el primer episodio con estado "pendiente".
-- La columna Tipo (problema/metodo/resultados/conexion) DEBE ir en el campo "tipo" del manifiesto: define la narrativa cromática del carrusel.
+- La columna Tipo (problema/metodo/resultados/conexion) DEBE ir en el campo "tipo" del manifiesto. El tipo define DOS cosas, en este orden de prioridad: (1) la INTENCIÓN RETÓRICA de la pieza —qué trabajo hace sobre el lector— según la matriz de `strategy/tesis.md` ("La matriz de planificación"); (2) la narrativa cromática del carrusel. La intención manda sobre el contenido; el color es consecuencia.
 - Tras generar el manifiesto, actualizá el estado de esa fila a "generado".
 
 ## CÓMO ESCRIBIR (la voz — leer SIEMPRE antes de redactar)
@@ -20,7 +20,7 @@ y gobernanza; `VOZ_corpus.md` manda en todo lo que sea voz, tono y escritura.
 Tu salida OBLIGATORIA es UN archivo: manifiestos/manifiesto_<ep>.json
 
 Proceso:
-1. Leé `strategy/VOZ_corpus.md` (voz), strategy/tesis.md, strategy/voz-motion.md, strategy/buyer-persona.md, evidencias/banco.md.
+1. Leé `strategy/VOZ_corpus.md` (voz), strategy/tesis.md, strategy/voz-motion.md, strategy/buyer-persona.md, evidencias/banco.md. En `tesis.md`, leé con atención el principio rector y la matriz de intención por tipo: definen QUÉ trabajo hace la pieza, no solo de qué habla.
 2. Leé el plan del Estratega (qué episodio toca) o, si no hay, tomá el siguiente de la serie activa.
 3. Generá el manifiesto con esta estructura EXACTA, una pieza por canal, cada una con SU voz:
 
@@ -34,3 +34,4 @@ REGLAS DURAS:
 - "carrusel" usa el MISMO nombre que el episodio. "carrusel_slides" = cantidad real de slides que pediste al Diseñador.
 - Números solo del Banco de Evidencias. Respetá el Playbook al pie.
 - Antes de cerrar cada pieza de voz Paulo, aplicá la auto-crítica de `VOZ_corpus.md` §5: ¿suena a Paulo o a IA imitándolo? Si hay olor a IA, reescribí.
+- Verificá que cada pieza cumpla la INTENCIÓN de su tipo (matriz en tesis.md). Para "problema": ¿el lector cierra pensando y se hace la pregunta, o lo acusaste / le diste la respuesta? Si no siembra la pregunta, no está lista.
