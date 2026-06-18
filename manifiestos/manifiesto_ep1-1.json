@@ -1,0 +1,37 @@
+{
+  "episodio": "ep1-1",
+  "serie": "La diferencia que lo define todo",
+  "tesis": "Cambio ≠ Transformación",
+  "tipo": "problema",
+  "estado": "borrador_para_aprobacion",
+
+  "canales": {
+    "linkedin_paulo": {
+      "activo": true,
+      "formato": "post",
+      "texto": "«Invertimos en tecnología, pero en el fondo seguimos operando igual.»\n\nEs algo que escuchamos seguido cuando una organización nos escribe por primera vez. Y casi nunca es un problema de tecnología: es que se buscó un cambio cuando lo que hacía falta era una transformación.\n\nNo son lo mismo. Un cambio arranca de un dolor puntual: algo molesta, se resuelve, listo. Es transaccional, de corto plazo, y muchas veces está perfecto así. Una transformación arranca de una visión, no de una urgencia, y atraviesa los procesos, el liderazgo y la cultura. Confundirlas es la causa número uno de inversiones digitales que no mueven la aguja.\n\nComprar tecnología esperando transformarte es como cambiar el auto para escapar del tráfico: el problema no es el vehículo, es el sistema en el que te movés. Cambiás la herramienta y la organización sigue funcionando igual, porque lo que había que mover nunca fue la herramienta.\n\nEntonces, antes de la próxima inversión, vale frenar en una pregunta que casi nadie se hizo al arrancar: lo que buscás, ¿es un cambio o una transformación?\n\n#LoComplejoSimple"
+    },
+    "linkedin_motion": {
+      "activo": true,
+      "formato": "post",
+      "texto": "«Invertimos y nada cambió» es una de las primeras frases que escuchamos cuando una organización nos contacta. Casi siempre, atrás hay una confusión de origen: se buscó un cambio creyendo que era una transformación.\n\nUn cambio resuelve un dolor puntual con una herramienta. Una transformación modifica de raíz cómo opera la organización: procesos, liderazgo y cultura. Lo vemos seguido en los diagnósticos: cada área contrató su propia solución, con proveedores distintos y sin una estrategia que las integrara. Queda un archipiélago de herramientas que no se hablan entre sí, y una organización que, por debajo, sigue operando igual que antes.\n\nPor eso, antes de proponer una sola solución, distinguimos con método qué busca cada organización. Es el primer paso de la Transformación Continua®: entender el sistema antes de tocarlo.\n\n#TransformaciónContinua #TransformaciónDigital #LoComplejoSimple"
+    },
+    "x_paulo": {
+      "activo": true,
+      "formato": "hilo",
+      "hilo": [
+        "«Invertimos en tecnología y en el fondo seguimos igual.» Escuchamos esa frase todo el tiempo, y casi nunca es un problema de tecnología: se buscó un cambio cuando hacía falta una transformación. 🧵",
+        "Un cambio arranca de un dolor puntual: algo molesta, se resuelve, listo. Corto plazo, transaccional, y muchas veces está perfecto. Una transformación arranca de una visión y atraviesa procesos, liderazgo y cultura.",
+        "Comprar tecnología esperando transformarte es como cambiar el auto para escapar del tráfico. El problema no es el vehículo: es el sistema en el que te movés.",
+        "Antes de la próxima inversión, una pregunta que casi nadie se hizo al arrancar: lo que buscás, ¿es un cambio o una transformación?"
+      ]
+    },
+    "instagram": {
+      "activo": true,
+      "formato": "carrusel",
+      "caption": "¿Cambio o transformación? 🧭\n\nLa diferencia que explica por qué tanta inversión digital no mueve la aguja.\n\nDeslizá. →\n\n#LoComplejoSimple #TransformaciónContinua #TransformaciónDigital",
+      "carrusel": "ep1-1",
+      "carrusel_slides": 8
+    }
+  }
+}
