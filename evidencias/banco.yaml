@@ -1,0 +1,222 @@
+# BANCO DE EVIDENCIAS — MOTION
+# Uso interno. El agente usa SIEMPRE el alias_publico, nunca el cliente_real.
+# Estado: "validado" = el agente puede usarlo. "pendiente" = no usar hasta validar.
+# numero_validado: true = dato confirmado por Paulo. false = no usar en contenido.
+
+casos:
+
+  - id: ev-001
+    nombre: "Tracking de activos (IBCs)"
+    cliente_real: "BASF"
+    alias_publico: "empresa multinacional"
+    sector: "Manufactura"
+    tesis: [1, 2]
+    que_hicimos: "App mobile y sistema de tracking de contenedores IBC. Proceso 100% trackeado, visibilidad en tiempo real, excedente vendido."
+    numero: "$40.000 USD/año de ahorro"
+    numero_validado: true
+    estado: validado
+    usado_en: []
+
+  - id: ev-002
+    nombre: "Tableros BI — análisis y predicción"
+    cliente_real: "BASF"
+    alias_publico: "empresa multinacional"
+    sector: "Manufactura"
+    tesis: [1, 2]
+    que_hicimos: "Tableros Power BI de ventas, clientes y predicción de precios. Visibilidad estratégica del negocio."
+    numero: ""
+    numero_validado: false
+    estado: pendiente
+    usado_en: []
+
+  - id: ev-003
+    nombre: "IA para precificación dinámica"
+    cliente_real: "BASF"
+    alias_publico: "empresa multinacional"
+    sector: "Manufactura"
+    tesis: [2]
+    que_hicimos: "Motor de IA para estrategia comercial dinámica según tasa de conversión de visitas."
+    numero: ""
+    numero_validado: false
+    estado: pendiente
+    usado_en: []
+
+  - id: ev-004
+    nombre: "Automatización de cotizaciones masivas"
+    cliente_real: "BASF"
+    alias_publico: "empresa multinacional"
+    sector: "Manufactura"
+    tesis: [2]
+    que_hicimos: "Flujo automatizado Excel → Power Automate → PDF → SharePoint → Outlook. Proceso end-to-end sin intervención manual."
+    numero: ""
+    numero_validado: false
+    estado: pendiente
+    usado_en: []
+
+  - id: ev-005
+    nombre: "Tableros de gestión agrícola"
+    cliente_real: "Aceitera Colibrí"
+    alias_publico: "empresa industrial argentina"
+    sector: "Agroindustria"
+    tesis: [1, 2]
+    que_hicimos: "Tableros Power BI de siembra, embolsado, extracción y cosecha. Visibilidad completa de campaña en tiempo real."
+    numero: ""
+    numero_validado: false
+    estado: pendiente
+    usado_en: []
+
+  - id: ev-006
+    nombre: "App de gestión agrícola"
+    cliente_real: "Aceitera Colibrí"
+    alias_publico: "empresa industrial argentina"
+    sector: "Agroindustria"
+    tesis: [2]
+    que_hicimos: "App lowcode de gestión de campañas y órdenes de trabajo. Digitalización de operaciones de campo."
+    numero: ""
+    numero_validado: false
+    estado: pendiente
+    usado_en: []
+
+  - id: ev-007
+    nombre: "Tableros de gestión de obras"
+    cliente_real: "Proyección Electrolux"
+    alias_publico: "empresa industrial argentina"
+    sector: "Construcción"
+    tesis: [1, 2]
+    que_hicimos: "Tableros de control de obras y proyectos."
+    numero: ""
+    numero_validado: false
+    estado: pendiente
+    usado_en: []
+
+  - id: ev-008
+    nombre: "El caso del tablero (efecto cebolla)"
+    cliente_real: "Unión Agrícola Avellaneda"
+    alias_publico: "empresa industrial argentina"
+    sector: "Agroindustria"
+    tesis: [1]
+    que_hicimos: "Pedido de tablero BI que derivó en programa de transformación digital integral. De un cambio puntual a una transformación completa."
+    numero: ""
+    numero_validado: false
+    estado: pendiente
+    usado_en: []
+
+  - id: ev-009
+    nombre: "Comunidad digital BASF"
+    cliente_real: "BASF"
+    alias_publico: "empresa multinacional"
+    sector: "Manufactura"
+    tesis: [3]
+    que_hicimos: "35 personas conectadas en red autogestionada como líderes de innovación, traccionando mentalidad digital más allá de sus responsabilidades cotidianas y acelerando soluciones digitales en sus propias áreas."
+    numero: "35 personas en red autogestionada"
+    numero_validado: true
+    estado: validado
+    usado_en: []
+
+  - id: ev-010
+    nombre: "Laboratorio de IA BASF"
+    cliente_real: "BASF"
+    alias_publico: "empresa multinacional"
+    sector: "Manufactura"
+    tesis: [3]
+    que_hicimos: "100 personas de 6 países entrenadas con desafíos reales de la compañía. Equipos multidisciplinarios que desarrollaron soluciones reales, aprendieron a ver oportunidades en su propio trabajo y presentaron sus proyectos ante el liderazgo."
+    numero: "100 personas / 6 países / 4 soluciones reales"
+    numero_validado: true
+    estado: validado
+    usado_en: []
+
+  - id: ev-011
+    nombre: "Diagnóstico CCU"
+    cliente_real: "CCU"
+    alias_publico: "empresa multinacional"
+    sector: "Manufactura"
+    tesis: [1]
+    que_hicimos: "Diagnóstico de 6 semanas: 65 oportunidades de mejora detectadas, 4 implementadas durante el propio diagnóstico. Roadmap de 2 años de trabajo identificado."
+    numero: "65 oportunidades / 4 implementadas durante el diagnóstico / roadmap 2 años"
+    numero_validado: true
+    estado: validado
+    usado_en: []
+
+  - id: ev-012
+    nombre: "Curso Power BI Techint"
+    cliente_real: "Techint"
+    alias_publico: "empresa multinacional"
+    sector: "Manufactura"
+    tesis: [3]
+    que_hicimos: "Curso técnico de 3 días convertido en experiencia con gamificación. Las personas respondieron preguntas de negocio reales y presentaron casos ante el liderazgo, generando empoderamiento y sentido de pertenencia."
+    numero: "3 días / formato gamificado / presentación ante liderazgo"
+    numero_validado: true
+    estado: validado
+    usado_en: []
+
+  - id: ev-013
+    nombre: "Workshop Adopción IA — Pitágoras Switch"
+    cliente_real: "CCU"
+    alias_publico: "empresa multinacional"
+    sector: "Manufactura"
+    tesis: [3]
+    que_hicimos: "Workshop de adopción de IA con metodología Pitágoras Switch."
+    numero: ""
+    numero_validado: false
+    estado: pendiente
+    usado_en: []
+
+  - id: ev-014
+    nombre: "WhatsApp como canal transaccional"
+    cliente_real: "Múltiples"
+    alias_publico: "en muchos clientes"
+    sector: "Varios"
+    tesis: [2]
+    que_hicimos: "WhatsApp como canal de transacciones, consultas al sistema de gestión y firma digital — no como asistente virtual."
+    numero: ""
+    numero_validado: false
+    estado: pendiente
+    usado_en: []
+
+  - id: ev-015
+    nombre: "Sistema de gestión personalizado (SaaS)"
+    cliente_real: "Múltiples"
+    alias_publico: "en muchos proyectos"
+    sector: "Varios"
+    tesis: [2]
+    que_hicimos: "Reemplazo de múltiples herramientas satélite por un sistema orquestado a medida con enfoque Service as a Software. Implementación en 3 meses."
+    numero: "3 meses de implementación"
+    numero_validado: true
+    estado: validado
+    usado_en: []
+
+  - id: ev-016
+    nombre: "Sistema de gestión agrícola (Finnegans)"
+    cliente_real: "Múltiples"
+    alias_publico: "en muchas empresas del agro"
+    sector: "Agroindustria"
+    tesis: [2]
+    que_hicimos: "Implementación de Finnegans —plataforma líder para el agro— coordinando comercialización, producción y distribución de granos."
+    numero: ""
+    numero_validado: false
+    estado: pendiente
+    usado_en: []
+
+  - id: ev-017
+    nombre: "Procesamiento de documentos masivos con IA"
+    cliente_real: "Múltiples"
+    alias_publico: "en muchos casos"
+    sector: "Varios"
+    tesis: [2]
+    que_hicimos: "Flujo de trabajo con IA lo suficientemente versátil para procesar cualquier formato de documento e insertar datos en sistemas de gestión, sin necesidad de entrenar un modelo por formato."
+    numero: ""
+    numero_validado: false
+    estado: pendiente
+    usado_en: []
+
+  - id: ev-018
+    nombre: "Agente Comprador Autónomo"
+    cliente_real: "Múltiples"
+    alias_publico: "en muchos proyectos"
+    sector: "Varios"
+    tesis: [2]
+    que_hicimos: "Agente conectado a wallet con memoria e identidad que explora tiendas virtuales, compara productos y ejecuta compras en nombre del usuario."
+    numero: ""
+    numero_validado: false
+    estado: pendiente
+    usado_en: []
