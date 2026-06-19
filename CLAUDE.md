@@ -57,6 +57,14 @@ Colores: naranja #FF5000 · violeta #50235A · aqua #9DEDE3 · negro #1A1A1A.
 ### Narrativa cromática por tipo de mensaje
 La portada lleva el color del tipo: **problema=negro · método=violeta · resultados=naranja · conexión=aqua**. El interior gira de fondo cuando el argumento gira.
 
+### Plantilla estructural por tipo (arquitectura, no solo color)
+Cada tipo hereda un tratamiento dominante del kit + arquitectura de slides propia:
+- problema → eco vertical · contraste binario dolor↔visión · cierre = pregunta sola.
+- metodo → laminado + lista numerada · pasos 1→2→3 · cierre = principio.
+- resultados → plantilla dato · una métrica/slide antes→después · cierre = transformación.
+- conexion → serif Lyon editorial · analogía cultural · cierre = creencia anclada.
+Recombina lo existente: cero código nuevo. El detalle operativo vive en PROMPT_disenador.md.
+
 ### Plantillas estáticas (render_static.py, 1080×1080)
 quote card · dato (número con sombra laminada) · lista numerada. (Quote card: calidad pendiente de pulir.)
 
@@ -120,8 +128,8 @@ Cadencia recomendada: 1 episodio/semana. Combustible: Paulo alimenta Banco de Ev
 ## 7. PENDIENTES
 **Inmediato**: subir sistema-final + calendario al repo; borrar obsoletos (ver §8); probar flujo en dry; OK final ep1-2 en Blotato.
 **Corto**: crear Banco de Evidencias (evidencias/banco.md); validar dato "x4 ROI" antes de uso público; generar ep siguiente de punta a punta; pulir quote card; alinear 8→7 slides del ejemplo; limpieza de PNG huérfanos al regenerar.
-**Mediano**: motion graphics conceptuales (líneas+pelotitas, estilo referencias del usuario); editor de reels desde grabación; plantilla estructural por tipo de mensaje (hoy solo varía el color, no el layout); newsletter LinkedIn (verificar si Blotato lo soporta — probable que quede manual).
-**Estratégico**: Capa 4 — métricas y aprendizaje; salto a Claude Code con este CLAUDE.md.
+**Mediano**: motion graphics conceptuales (líneas+pelotitas, estilo referencias del usuario); editor de reels desde grabación; newsletter LinkedIn (verificar si Blotato lo soporta — probable que quede manual).
+**Estratégico**: Capa 4 — métricas y aprendizaje; salto a Claude Code con este CLAUDE.md; Armar el embudo de low to high ticket.
 
 ---
 
