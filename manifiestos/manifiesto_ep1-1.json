@@ -1,0 +1,38 @@
+{
+  "episodio": "ep1-1",
+  "serie": "La diferencia que lo define todo",
+  "tesis": "Cambio ≠ Transformación",
+  "tipo": "problema",
+  "estado": "borrador_para_aprobacion",
+  "canales": {
+    "linkedin_paulo": {
+      "activo": true,
+      "formato": "post",
+      "texto": "Hay una pregunta que casi ningún directorio tiene respondida, y define todo lo que viene después: ¿tu organización busca un cambio o una transformación?\n\nParecen sinónimos. No lo son.\n\nEl cambio responde a una urgencia puntual: aparece un dolor, se contrata una solución y el tema se cierra. Es transaccional, de corto plazo. La transformación es otra cosa: nace de una visión, y desde ahí atraviesa los procesos, el liderazgo y la cultura hasta cambiar la forma en que la organización opera.\n\nLo que más escuchamos en Motion son líderes que hicieron todos los cambios posibles —compraron, implementaron, capacitaron— y todavía sienten que en el fondo nada se transformó. No les faltó decisión ni inversión. Pasa que estaban comprando cambios mientras buscaban una transformación, y son cosas distintas.\n\nComprar tecnología esperando transformarte es como cambiar el auto para escapar del tráfico: el problema no es el vehículo, es el sistema.\n\nEntonces la pregunta no es cuánto vas a invertir. Es qué estás buscando realmente.\n\n#LoComplejoSimple"
+    },
+    "linkedin_motion": {
+      "activo": true,
+      "formato": "post",
+      "texto": "En Motion empezamos siempre por la misma distinción: ¿es un cambio o una transformación?\n\nNo es semántica. Un cambio resuelve un dolor puntual con una herramienta. Una transformación rediseña cómo opera la organización —procesos, liderazgo y cultura— de forma sostenida.\n\nPor eso nuestro método arranca con un Diagnóstico, no con una compra. Antes de proponer cualquier tecnología, mapeamos dónde está hoy la organización y a dónde quiere llegar. Muchas veces lo que llega como \"necesitamos esta herramienta\" es, en realidad, una transformación esperando método.\n\nLo vemos seguido: una organización pide una solución para un área y, al mirar debajo, aparecen los datos, después los procesos, y al final la cultura que tiene que sostenerlos. Pidió un cambio; lo que necesitaba era transformarse.\n\nDiseñar organizaciones para vivir en cambio: eso es Transformación Continua®.\n\n#TransformaciónContinua"
+    },
+    "x_paulo": {
+      "activo": true,
+      "formato": "hilo",
+      "hilo": [
+        "Hay una pregunta que casi ningún directorio tiene respondida, y define si la próxima inversión digital sirve o se pierde: ¿buscan un cambio o una transformación? 🧵",
+        "El cambio responde a una urgencia. Aparece un dolor, se contrata una solución, se cierra el tema. Transaccional y de corto plazo.",
+        "La transformación nace de una visión. Y desde ahí atraviesa procesos, liderazgo y cultura hasta cambiar cómo opera la organización. No empieza y termina: se vuelve forma de operar.",
+        "Lo que más escuchamos: líderes que hicieron todos los cambios posibles y sienten que nada se transformó. No les faltó inversión. Estaban comprando cambios mientras buscaban una transformación.",
+        "Comprar tecnología esperando transformarte es como cambiar el auto para escapar del tráfico. El problema no es el vehículo, es el sistema.",
+        "Entonces, antes de la próxima inversión, una pregunta sola: ¿cambio o transformación?"
+      ]
+    },
+    "instagram": {
+      "activo": true,
+      "formato": "carrusel",
+      "caption": "Cambio y transformación no son lo mismo —y confundirlos es lo que más caro le sale a una organización. Deslizá: la diferencia que lo define todo. Antes de la próxima inversión, una pregunta sola: ¿tu organización busca un cambio o una transformación?\n\n#LoComplejoSimple #TransformaciónContinua #TransformaciónDigital",
+      "carrusel": "ep1-1",
+      "carrusel_slides": 8
+    }
+  }
+}
