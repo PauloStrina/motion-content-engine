@@ -66,10 +66,11 @@ def fecha(dia, hhmm, buf=48):
         d += dt.timedelta(days=1)
     return d.replace(hour=h,minute=mm,second=0,microsecond=0).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-def _programar_raw(account, platform, text, when, media=None, hilo=None, page_id=None):
+def _programar_raw(account, platform, text, when, media=None, hilo=None, page_id=None, name=None):
     target = {"targetType": platform}
     if page_id: target["pageId"] = str(page_id)
     post = {"accountId":str(account),"content":{"text":text,"mediaUrls":media or [],"platform":platform},"target":target}
+    if name: post["name"] = name
     if hilo: post["additionalPosts"] = [{"text":t,"mediaUrls":[]} for t in hilo]
     r = _post("/posts", {"post":post,"scheduledTime":when})
     _validar(r); return r
@@ -80,6 +81,8 @@ HORARIOS = {"linkedin_paulo":("jue","09:00"),"linkedin_motion":("mie","11:00"),
 def publicar(m, cfg, solo=None):
     fallos = []
     media_base = os.environ.get("MEDIA_BASE","https://ops-motionco.github.io/motion-media/carruseles")
+    stamp = dt.datetime.now(dt.UTC).strftime("%Y%m%d-%H%M")
+    run_name = f"{m['episodio']}_{stamp}"
     for canal in M.CANALES:
         if solo and canal!=solo: continue
         p = M.pieza(m, canal)
@@ -92,24 +95,23 @@ def publicar(m, cfg, solo=None):
         try:
             if fmt=="post":
                 print(f"  texto: {p['texto'][:70]}...")
-                _programar_raw(acc, plat, p["texto"], when, page_id=cfg[canal].get("pageid"))
+                _programar_raw(acc, plat, p["texto"], when, page_id=cfg[canal].get("pageid"), name=f"{run_name}_{canal}")
             elif fmt=="hilo":
                 print(f"  hilo de {len(p['hilo'])} tweets")
-                _programar_raw(acc, plat, p["hilo"][0], when, hilo=p["hilo"][1:])
+                _programar_raw(acc, plat, p["hilo"][0], when, hilo=p["hilo"][1:], name=f"{run_name}_{canal}")
             elif fmt=="carrusel":
                 # NOMBRE Y CANTIDAD SALEN DEL MANIFIESTO (fuente única de verdad)
                 base = p["carrusel"]; n = p["carrusel_slides"]
                 if canal == "linkedin_paulo":
-                    # LinkedIn: documento PDF (mismo render que PNG, publicado como .pdf)
                     pdf_url = f"{media_base}/{base}.pdf"
                     print(f"  carrusel PDF {base}")
                     print(f"  texto: {p['texto'][:60]}...")
-                    _programar_raw(acc, plat, p["texto"], when, media=[pdf_url], page_id=cfg[canal].get("pageid"))
+                    _programar_raw(acc, plat, p["texto"], when, media=[pdf_url], page_id=cfg[canal].get("pageid"), name=f"{run_name}_{canal}")
                 else:
                     urls = [f"{media_base}/{base}-{i}.png" for i in range(1, n+1)]
                     print(f"  carrusel {base}: {n} slides")
                     print(f"  caption: {p['caption'][:60]}...")
-                    _programar_raw(acc, plat, p["caption"], when, media=urls)
+                    _programar_raw(acc, plat, p["caption"], when, media=urls, name=f"{run_name}_{canal}")
             else:
                 raise RuntimeError(f"Formato no soportado: {fmt}")
             print("  ✓ programado confirmado por Blotato")
