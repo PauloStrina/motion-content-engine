@@ -28,6 +28,17 @@ Proceso:
 { "episodio": "epX-Y", "serie": "...", "tesis": "...", "tipo": "problema|metodo|resultados|conexion", "estado": "borrador_para_aprobacion", "canales": { "linkedin_paulo": {"activo": true, "formato": "post", "texto": "POST LARGO en 1ra persona, voz de tesis, 800-1300 car, termina en #LoComplejoSimple"}, "linkedin_motion": {"activo": true, "formato": "post", "texto": "POST INSTITUCIONAL distinto, método/casos, 1ra plural, #TransformaciónContinua"}, "x_paulo": {"activo": true, "formato": "hilo", "hilo": ["tweet 1 con gancho 🧵","tweet 2","tweet 3","tweet 4"]}, "instagram": {"activo": true, "formato": "carrusel", "caption": "CAPTION CORTO (no el post de LinkedIn) + 2-3 hashtags", "carrusel": "epX-Y", "carrusel_slides": N} } }
 ```
 
+**linkedin_paulo con carrusel (opcional):** Cuando el episodio tiene carrusel de Instagram, podés publicar el mismo carrusel en LinkedIn como documento PDF (en vez de post de texto). En ese caso, reemplazá el `linkedin_paulo` así:
+
+```
+"linkedin_paulo": {"activo": true, "formato": "carrusel", "texto": "TEXTO INTRODUCTORIO del doc, 300-600 car, termina en #LoComplejoSimple", "carrusel": "epX-Y", "carrusel_slides": N}
+```
+
+- `carrusel` y `carrusel_slides` deben coincidir EXACTAMENTE con los del canal `instagram`.
+- `texto` es el copy del post que acompaña al PDF en LinkedIn (más corto que el post largo).
+- El PDF se genera del mismo render que las PNGs; el publicador lo sube automáticamente.
+- Usá esta opción cuando el carrusel tiene argumento visual fuerte que vale la pena mostrar en LinkedIn. Si el post de texto es más poderoso solo, dejá `formato: "post"`.
+
 REGLAS DURAS:
 - Cada canal contenido PROPIO. JAMÁS repetir el post de LinkedIn como caption de Instagram.
 - El caption de Instagram es corto: el peso está en el carrusel.

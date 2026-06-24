@@ -35,6 +35,15 @@ def main(ep, out_dir, render_py, slides_dir):
     final = sorted(glob.glob(os.path.join(out_dir, f"{base}-*.png")))
     print(f"✓ {len(final)} PNG generados como {base}-N.png (coincide con el publicador)")
     for f in final: print(f"   {os.path.basename(f)}")
+    # PDF para LinkedIn carrusel (WeasyPrint sin --png)
+    lkp = M.pieza(m, "linkedin_paulo")
+    if lkp and lkp.get("formato") == "carrusel":
+        subprocess.run(["python", render_py, spec, out_dir], check=True)
+        pdf_src = os.path.join(out_dir, f"{spec_base}.pdf")
+        pdf_dst = os.path.join(out_dir, f"{base}.pdf")
+        if os.path.exists(pdf_src) and pdf_src != pdf_dst:
+            os.rename(pdf_src, pdf_dst)
+        print(f"✓ PDF generado: {base}.pdf")
 
 if __name__ == "__main__":
     main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])

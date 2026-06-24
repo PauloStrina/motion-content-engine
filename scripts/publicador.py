@@ -99,10 +99,17 @@ def publicar(m, cfg, solo=None):
             elif fmt=="carrusel":
                 # NOMBRE Y CANTIDAD SALEN DEL MANIFIESTO (fuente única de verdad)
                 base = p["carrusel"]; n = p["carrusel_slides"]
-                urls = [f"{media_base}/{base}-{i}.png" for i in range(1, n+1)]
-                print(f"  carrusel {base}: {n} slides")
-                print(f"  caption: {p['caption'][:60]}...")
-                _programar_raw(acc, plat, p["caption"], when, media=urls)
+                if canal == "linkedin_paulo":
+                    # LinkedIn: documento PDF (mismo render que PNG, publicado como .pdf)
+                    pdf_url = f"{media_base}/{base}.pdf"
+                    print(f"  carrusel PDF {base}")
+                    print(f"  texto: {p['texto'][:60]}...")
+                    _programar_raw(acc, plat, p["texto"], when, media=[pdf_url], page_id=cfg[canal].get("pageid"))
+                else:
+                    urls = [f"{media_base}/{base}-{i}.png" for i in range(1, n+1)]
+                    print(f"  carrusel {base}: {n} slides")
+                    print(f"  caption: {p['caption'][:60]}...")
+                    _programar_raw(acc, plat, p["caption"], when, media=urls)
             else:
                 raise RuntimeError(f"Formato no soportado: {fmt}")
             print("  ✓ programado confirmado por Blotato")

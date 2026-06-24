@@ -26,6 +26,7 @@ def validar(m):
         if f=="post" and not c.get("texto"): e.append(f"{canal}: post sin texto")
         if f=="hilo" and not c.get("hilo"): e.append(f"{canal}: hilo sin hilo")
         if f=="carrusel":
-            for k in ("caption","carrusel","carrusel_slides"):
+            caption_key = "texto" if canal == "linkedin_paulo" else "caption"
+            for k in (caption_key,"carrusel","carrusel_slides"):
                 if not c.get(k): e.append(f"{canal}: carrusel sin {k}")
     return e
