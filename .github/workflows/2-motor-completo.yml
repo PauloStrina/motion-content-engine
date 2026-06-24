@@ -43,6 +43,7 @@ jobs:
           git clone "https://x-access-token:${TOKEN}@github.com/ops-motionco/motion-media.git" media_repo
           mkdir -p media_repo/carruseles
           cp media_out/*.png media_repo/carruseles/
+          cp media_out/*.pdf media_repo/carruseles/ 2>/dev/null || true
           cd media_repo
           git config user.name "motion-engine"; git config user.email "engine@motion.local"
           git add -A; git commit -m "carrusel ${{ steps.ep.outputs.episodio }}" || echo "sin cambios"
