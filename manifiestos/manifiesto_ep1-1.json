@@ -7,8 +7,10 @@
   "canales": {
     "linkedin_paulo": {
       "activo": true,
-      "formato": "post",
-      "texto": "Hay una pregunta que casi ningún directorio tiene respondida, y define todo lo que viene después: ¿tu organización busca un cambio o una transformación?\n\nParecen sinónimos. No lo son.\n\nEl cambio responde a una urgencia puntual: aparece un dolor, se contrata una solución y el tema se cierra. Es transaccional, de corto plazo. La transformación es otra cosa: nace de una visión, y desde ahí atraviesa los procesos, el liderazgo y la cultura hasta cambiar la forma en que la organización opera.\n\nLo que más escuchamos en Motion son líderes que hicieron todos los cambios posibles —compraron, implementaron, capacitaron— y todavía sienten que en el fondo nada se transformó. No les faltó decisión ni inversión. Pasa que estaban comprando cambios mientras buscaban una transformación, y son cosas distintas.\n\nComprar tecnología esperando transformarte es como cambiar el auto para escapar del tráfico: el problema no es el vehículo, es el sistema.\n\nEntonces la pregunta no es cuánto vas a invertir. Es qué estás buscando realmente.\n\n#LoComplejoSimple"
+      "formato": "carrusel",
+      "texto": "Hay una pregunta que casi ningún directorio tiene respondida, y define todo lo que viene después.\n\n¿Tu organización busca un cambio o una transformación?\n\nParecen sinónimos. No lo son. Deslizá el documento.\n\n#LoComplejoSimple",
+      "carrusel": "ep1-1",
+      "carrusel_slides": 8
     },
     "linkedin_motion": {
       "activo": true,
