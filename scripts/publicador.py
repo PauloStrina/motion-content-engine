@@ -15,6 +15,19 @@ BLOTATO_DELAY_SECONDS = 5
 BLOTATO_MAX_INTENTOS = 3
 def key(): return os.environ["BLOTATO_API_KEY"]
 
+def _upload_presigned(local_path):
+    """Upload local file to Blotato via presigned URL. Returns publicUrl."""
+    filename = os.path.basename(local_path)
+    r = _post("/media/uploads", {"filename": filename})
+    presigned_url = r["presignedUrl"]; public_url = r["publicUrl"]
+    ext = filename.rsplit(".", 1)[-1].lower()
+    ct = {"pdf":"application/pdf","png":"image/png","jpg":"image/jpeg","mp4":"video/mp4"}.get(ext,"application/octet-stream")
+    with open(local_path, "rb") as f: data = f.read()
+    req = urllib.request.Request(presigned_url, data=data, method="PUT", headers={"Content-Type": ct})
+    urllib.request.urlopen(req)
+    print(f"  ✓ uploaded to Blotato CDN: {public_url}")
+    return public_url
+
 def _post(path, body):
     if DRY:
         print(f"  [DRY] POST {path}: {json.dumps(body, ensure_ascii=False)[:140]}")
@@ -103,7 +116,12 @@ def publicar(m, cfg, solo=None):
                 # NOMBRE Y CANTIDAD SALEN DEL MANIFIESTO (fuente única de verdad)
                 base = p["carrusel"]; n = p["carrusel_slides"]
                 if canal == "linkedin_paulo":
-                    pdf_url = f"{media_base}/{base}.pdf"
+                    media_out = os.environ.get("MEDIA_OUT_DIR", "")
+                    local_pdf = os.path.join(media_out, f"{base}.pdf") if media_out else ""
+                    if not DRY and local_pdf and os.path.exists(local_pdf):
+                        pdf_url = _upload_presigned(local_pdf)
+                    else:
+                        pdf_url = f"{media_base}/{base}.pdf"
                     print(f"  carrusel PDF {base}")
                     print(f"  texto: {p['texto'][:60]}...")
                     _programar_raw(acc, plat, p["texto"], when, media=[pdf_url], page_id=cfg[canal].get("pageid"), name=f"{run_name}_{canal}")
