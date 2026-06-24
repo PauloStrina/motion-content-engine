@@ -38,11 +38,8 @@ def main(ep, out_dir, render_py, slides_dir):
     # PDF para LinkedIn carrusel (WeasyPrint sin --png)
     lkp = M.pieza(m, "linkedin_paulo")
     if lkp and lkp.get("formato") == "carrusel":
-        subprocess.run(["python", render_py, spec, out_dir], check=True)
-        pdf_src = os.path.join(out_dir, f"{spec_base}.pdf")
         pdf_dst = os.path.join(out_dir, f"{base}.pdf")
-        if os.path.exists(pdf_src) and pdf_src != pdf_dst:
-            os.rename(pdf_src, pdf_dst)
+        subprocess.run(["python", render_py, spec, pdf_dst], check=True)
         print(f"✓ PDF generado: {base}.pdf")
 
 if __name__ == "__main__":

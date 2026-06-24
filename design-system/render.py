@@ -21,12 +21,10 @@ def mix(a, b, t):
     return rgb2hex([A[i]+(B[i]-A[i])*t for i in range(3)])
 
 def lam(word, size, front, shadow_hex, bg_hex, depth=10):
-    line = int(size*1.06); layers = ''
-    for i in range(depth, 0, -1):
-        col = mix(shadow_hex, bg_hex, i/depth*0.85)
-        layers += f'<div class="futura" style="position:absolute;top:{i}px;left:{i}px;font-size:{size}px;line-height:{line}px;color:{col}">{word}</div>'
-    layers += f'<div class="futura" style="position:absolute;top:0;left:0;font-size:{size}px;line-height:{line}px;color:{front}">{word}</div>'
-    return f'<div style="position:relative;height:{line+depth}px">{layers}</div>'
+    # text-shadow: wraps naturally (no fixed-height container), visually equivalent
+    line = int(size*1.06)
+    shadows = [f'{i}px {i}px 0 {mix(shadow_hex, bg_hex, i/depth*0.85)}' for i in range(1, depth+1)]
+    return f'<div class="futura" style="font-size:{size}px;line-height:{line}px;color:{front};text-shadow:{", ".join(shadows)}">{word}</div>'
 
 def eco(word, size, color, n=3):
     ops = [1.0, 0.45, 0.16][:n]
@@ -87,7 +85,7 @@ def render(spec_path, out_path):
 .pager {{ position:absolute; top:96px; right:84px; font-family:'GothamM'; font-size:24px; letter-spacing:3px; }}
 .logo {{ position:absolute; bottom:64px; right:84px; width:190px; }}
 .foot {{ position:absolute; bottom:64px; left:84px; font-family:'GothamM'; font-size:26px; }}
-.mid {{ position:absolute; top:0; left:84px; right:84px; height:1350px; display:flex; flex-direction:column; justify-content:center; }}
+.mid {{ position:absolute; top:150px; left:84px; right:84px; bottom:140px; display:flex; flex-direction:column; justify-content:center; overflow:hidden; }}
 </style></head><body>{body}</body></html>'''
     HTML(string=html).write_pdf(out_path)
     print(f"OK: {out_path}")

@@ -37,7 +37,7 @@ Proceso:
 - `carrusel` y `carrusel_slides` deben coincidir EXACTAMENTE con los del canal `instagram`.
 - `texto` es el copy del post que acompaña al PDF en LinkedIn (más corto que el post largo).
 - El PDF se genera del mismo render que las PNGs; el publicador lo sube automáticamente.
-- Usá esta opción cuando el carrusel tiene argumento visual fuerte que vale la pena mostrar en LinkedIn. Si el post de texto es más poderoso solo, dejá `formato: "post"`.
+- **Por defecto, usá siempre esta opción cuando el episodio tiene carrusel.** Solo usá `formato: "post"` si el argumento funciona exclusivamente en texto largo y el carrusel no lo complementa.
 
 REGLAS DURAS:
 - Cada canal contenido PROPIO. JAMÁS repetir el post de LinkedIn como caption de Instagram.
