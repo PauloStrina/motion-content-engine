@@ -50,7 +50,7 @@
       "blocks": [
         {"type": "lyon", "text": "El cambio se mueve por la urgencia.", "size": 52, "color": "blanco", "mb": 8},
         {"type": "lyon", "text": "La transformación, por el", "size": 52, "color": "blanco", "mb": 40},
-        {"type": "eco", "text": "ENTUSIASMO", "size": 168, "color": "aqua"},
+        {"type": "eco", "text": "ENTUSIASMO", "size": 148, "color": "aqua"},
         {"type": "lyont", "text": "Saber que la visión puede<br>volverse resultados.", "size": 40, "color": "blanco", "mt": 52}
       ]
     },
@@ -70,7 +70,7 @@
         {"type": "futura", "text": "UNA SOLA PREGUNTA:", "size": 76, "lh": 84, "color": "blanco", "mb": 44},
         {"type": "futura", "text": "¿CAMBIO", "size": 150, "lh": 140, "color": "blanco"},
         {"type": "lyon", "text": "o", "size": 52, "color": "aqua", "mb": 0},
-        {"type": "lam", "text": "TRANSFORMACIÓN?", "size": 128, "color": "naranja"}
+        {"type": "lam", "text": "TRANSFORMACIÓN?", "size": 108, "color": "naranja"}
       ]
     }
   ]

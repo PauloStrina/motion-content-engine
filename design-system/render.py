@@ -85,7 +85,8 @@ def render(spec_path, out_path):
 .pager {{ position:absolute; top:96px; right:84px; font-family:'GothamM'; font-size:24px; letter-spacing:3px; }}
 .logo {{ position:absolute; bottom:64px; right:84px; width:190px; }}
 .foot {{ position:absolute; bottom:64px; left:84px; font-family:'GothamM'; font-size:26px; }}
-.mid {{ position:absolute; top:150px; left:84px; right:84px; bottom:140px; display:flex; flex-direction:column; justify-content:center; overflow:hidden; }}
+.mid {{ position:absolute; top:150px; left:84px; width:912px; bottom:140px; display:flex; flex-direction:column; justify-content:center; overflow:hidden; }}
+.futura {{ font-family:'FuturaM'; text-transform:uppercase; max-width:912px; word-break:break-word; }}
 </style></head><body>{body}</body></html>'''
     HTML(string=html).write_pdf(out_path)
     print(f"OK: {out_path}")
