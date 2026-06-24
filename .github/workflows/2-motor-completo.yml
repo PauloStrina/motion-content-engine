@@ -53,6 +53,7 @@ jobs:
       - name: Publicar en Blotato
         env:
           BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
+          MEDIA_OUT_DIR: media_out    # 
         run: |
           FLAG=""
           if [ "${{ github.event.inputs.modo }}" = "dry" ]; then FLAG="--dry"; fi
