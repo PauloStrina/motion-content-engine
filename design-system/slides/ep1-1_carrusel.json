@@ -64,7 +64,7 @@
       ]
     },
     {
-      "bg": "negro", "eyebrow_color": "aqua", "pager": "08 — 08", "foot": "Lo único permanente<br>es el movimiento",
+      "bg": "negro", "eyebrow_color": "aqua", "pager": "08 — 08", "foot": "Lo único permanente<br>es el movimiento", "foot_color": "naranja",
       "blocks": [
         {"type": "futura", "text": "ANTES DE LA PRÓXIMA INVERSIÓN,", "size": 76, "lh": 80, "color": "blanco"},
         {"type": "futura", "text": "UNA SOLA PREGUNTA:", "size": 76, "lh": 84, "color": "blanco", "mb": 44},
