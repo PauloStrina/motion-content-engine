@@ -68,7 +68,7 @@ def slide_html(s, is_portada=False):
     if s.get('foot'):
         foottext = s['foot']
     elif is_portada:
-        foottext = '#HistoriasEnMovimiento:<br>casos reales del día a día Motion.'
+        foottext = '#HistoriasEnMovimiento:<br>casos reales de nuestro día a día.'
     else:
         foottext = ''
     foot = f'<div class="foot" style="color:{C[logoname]}">{foottext}</div>' if foottext else ''

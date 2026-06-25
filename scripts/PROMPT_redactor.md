@@ -73,7 +73,7 @@ Ejemplo del tono buscado (ep1-1):
 **instagram (caption):**
 ```
 {Título del episodio corto}.
-#HistoriasEnMovimiento: casos reales del día a día Motion. No fake, no IA.
+#HistoriasEnMovimiento: casos reales de nuestro día a día. No fake, no IA.
 
 [1-2 líneas de gancho o pregunta]
 

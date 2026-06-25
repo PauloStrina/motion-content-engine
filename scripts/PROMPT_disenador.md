@@ -12,7 +12,7 @@ Leé "tipo" del manifiesto. Define color (ya lo sabés) Y arquitectura de slides
 Regla: el tratamiento dominante manda la composición; los otros 2 tratamientos solo como apoyo puntual. NO inventar tratamientos nuevos.
 4. Generá slides/<carrusel>_carrusel.json con el kit (lam monocolor, eco, lyon, narrativa cromática por tipo).
    El nombre del archivo DEBE coincidir con canales.instagram.carrusel.
-   NOTA RENDER: El eyebrow está vacío (render.py no muestra texto arriba a la izquierda). En la portada (slide 1) render.py agrega automáticamente "#HistoriasEnMovimiento: casos reales del día a día Motion." en el foot — no lo pongas vos. Sí ponés `eyebrow_color` en cada slide (define el color del pager y otros elementos según la paleta).
+   NOTA RENDER: El eyebrow está vacío (render.py no muestra texto arriba a la izquierda). En la portada (slide 1) render.py agrega automáticamente "#HistoriasEnMovimiento: casos reales de nuestro día a día." en el foot — no lo pongas vos. Sí ponés `eyebrow_color` en cada slide (define el color del pager y otros elementos según la paleta).
    ÚLTIMO SLIDE: siempre usar `"foot": "Lo único permanente es el movimiento", "foot_color": "naranja"` (reemplaza #LoComplejoSimple).
 5. El número de slides DEBE coincidir con carrusel_slides (si difiere, actualizá el manifiesto).
 El render posterior produce <carrusel>-1.png ... <carrusel>-N.png que el Publicador sube a Blotato.
