@@ -1,0 +1,53 @@
+{
+  "episodio": "ep1-1",
+  "slides": [
+    {
+      "number": 1,
+      "type": "cover",
+      "bg": "negro",
+      "text": "¿Cuál es la diferencia entre un <span class=\"acc\">cambio</span> y una <span class=\"acc\">transformación</span>?"
+    },
+    {
+      "number": 2,
+      "type": "body",
+      "bg": "negro",
+      "text": "Lo que más escuchamos: líderes que hicieron todos los cambios posibles y sienten que, en el fondo, nada se transformó."
+    },
+    {
+      "number": 3,
+      "type": "body",
+      "bg": "negro",
+      "text": "No les faltó inversión ni decisión. Esa incomodidad no es un problema: es <span class=\"acc\">lucidez</span>."
+    },
+    {
+      "number": 4,
+      "type": "body",
+      "bg": "aqua",
+      "text": "El cambio responde a un dolor puntual. Una urgencia: se contrata una solución y se cierra el tema."
+    },
+    {
+      "number": 5,
+      "type": "question",
+      "bg": "naranja",
+      "text": "Comprar tecnología esperando transformarte es como cambiar el auto para escapar del tráfico."
+    },
+    {
+      "number": 6,
+      "type": "body",
+      "bg": "violeta",
+      "text": "La transformación nace de una <span class=\"acc\">visión</span>. Y atraviesa procesos, liderazgo y cultura."
+    },
+    {
+      "number": 7,
+      "type": "body",
+      "bg": "violeta",
+      "text": "No termina: se vuelve la forma de operar. A eso lo llamamos Transformación Continua."
+    },
+    {
+      "number": 8,
+      "type": "closing",
+      "bg": "negro",
+      "text": "Antes de la próxima inversión, una pregunta: ¿<span class=\"acc\">cambio</span> o <span class=\"acc\">transformación</span>?"
+    }
+  ]
+}

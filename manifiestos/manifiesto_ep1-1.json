@@ -38,12 +38,12 @@
       "carrusel": "ep1-1",
       "carrusel_slides": 8
     },
-    "instagram_stories": {
+    "instagram_newsletter": {
       "activo": true,
-      "formato": "stories",
-      "stories_base": "ep1-1",
-      "stories_count": 6,
-      "caption": ""
+      "formato": "carrusel",
+      "caption": "¿Cambio o Transformación? La versión completa está en el newsletter Lo complejo, simple.\n\n#HistoriasEnMovimiento #TransformaciónDigital",
+      "carrusel": "ep1-1-news",
+      "carrusel_slides": 8
     }
   }
 }

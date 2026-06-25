@@ -29,8 +29,8 @@ jobs:
                con nombre <carrusel>_carrusel.json y la cantidad de slides que declare el manifiesto.
             3. Validá que manifiesto y JSON de slides tengan la MISMA cantidad de slides.
             4. Leé scripts/PROMPT_newsletter.md y seguilo: generá newsletters/newsletter_<ep>.md (edición del newsletter LinkedIn, Paulo la publica manual).
-            5. Leé scripts/PROMPT_stories.md y seguilo: generá design-system/slides/<ep>_stories.json (6 Instagram Stories que cuentan la historia del carrusel con más detalle).
-            Éxito = existen los cuatro archivos (manifiesto, JSON de slides del carrusel que coincide en cantidad, newsletter .md, y JSON de stories con 6 stories).
+            5. Leé scripts/PROMPT_carrusel_newsletter.md y seguilo: generá design-system/slides/<ep>_news.json (8 slides que replican el contenido del newsletter, estilo minimalista).
+            Éxito = existen los cuatro archivos (manifiesto, JSON del carrusel HEM que coincide en cantidad, newsletter .md, y JSON del carrusel newsletter con 8 slides).
       - name: Commit
         run: |
           git config user.name "motion-engine"; git config user.email "engine@motion.local"
