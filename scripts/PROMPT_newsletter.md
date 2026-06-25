@@ -16,7 +16,7 @@ Ejes del ángulo:
 2. **Validar la incomodidad, jamás agitar miedo.** "Tu incomodidad es lucidez; te falta el método, no la visión." PROHIBIDO terrorismo de obsolescencia ("no te quedes atrás", "subite al tren").
 3. **Método como martillo.** Transformación Continua® presentada como método pragmático, anclado en evidencia (artefacto / número / caso del Banco). Si no hay dato validado, no se inventa.
 4. **Entusiasmo como motor.** Transformar desde la posibilidad, no desde la urgencia ni el miedo. (Dosis en calibración activa §5bis — si dudás, pecá de sobrio.)
-5. **Anti-persecución.** El CTA invita al siguiente recurso del flow-map (diagnóstico, experiencia IA, carrusel), NUNCA "agendá una llamada hoy".
+5. **Anti-persecución.** El CTA invita a seguir la serie (continuidad), anclado en Transformación Continua: "Seguí esta serie…". NUNCA "agendá una llamada hoy", NUNCA "respondé a este correo" (vive en LinkedIn, no en email).
 
 ## 2. TÍTULO (regla corregida por el fundador)
 Claridad sobre intriga. El asunto anticipa con claridad qué se va a encontrar el lector — nadie abre lo que no entiende. La tensión y la antítesis van ADENTRO del texto, no en el asunto.
@@ -29,7 +29,7 @@ Esqueleto maestro (de `voz-motion.md` §7):
 2. **POR QUÉ IMPORTA** — el costo de no verlo, en lenguaje de negocio (no técnico). Acá se valida la incomodidad del lector.
 3. **EL MARCO / EL CÓMO** — numerado, 3-6 principios o pasos del método. Esto es la munición: lo que el lector reenvía.
 4. **CONCLUSIÓN con postura** — una toma de posición clara, no un resumen tibio.
-5. **CTA al recurso del flow-map** — suave, anti-persecución.
+5. **CTA "Seguí esta serie"** — invita a seguir las próximas ediciones, anclado en Transformación Continua. Suave, anti-persecución. Nada de email ni llamadas.
 
 ## 4. VOZ
 - 1ª persona singular (es la pieza más personal de Paulo): convicción, anécdota, postura. Puede dudar en voz alta y tomar partido fuerte.

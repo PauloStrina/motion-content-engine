@@ -30,7 +30,7 @@ No te propongo elegir transformación porque suene mejor. El cambio es legítimo
 
 Así que antes de la próxima inversión digital, una sola pregunta para la mesa: ¿esto que estamos por hacer es un cambio que resuelve un dolor, o el primer movimiento de una transformación que queremos sostener? Si la respuesta no es la misma para todos en el directorio, ahí está la conversación que vale la pena tener primero.
 
-Si querés ponerle método a esa pregunta, el próximo paso natural es un Diagnóstico: mapear dónde está hoy tu organización y a dónde quiere llegar, antes de mover una sola pieza de tecnología. Respondé a este correo y te cuento cómo lo hacemos.
+En las próximas ediciones vamos a ir desarmando, una por una, las distinciones que sostienen la Transformación Continua: el método para diseñar una organización que vive en cambio en lugar de perseguirlo. Seguí esta serie si querés tener esas conversaciones en tu directorio con método, no a las corridas.
 
 ---
 *Lo complejo, simple — MOTION*
