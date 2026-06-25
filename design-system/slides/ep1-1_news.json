@@ -11,7 +11,7 @@
       "number": 2,
       "type": "body",
       "bg": "negro",
-      "text": "Lo que más escuchamos: líderes que hicieron todos los cambios posibles y sienten que, en el fondo, nada se transformó."
+      "text": "Hicieron todos los cambios posibles. Y en el fondo sienten que <span class=\"acc\">nada</span> se transformó."
     },
     {
       "number": 3,
@@ -23,13 +23,13 @@
       "number": 4,
       "type": "body",
       "bg": "aqua",
-      "text": "El cambio responde a un dolor puntual. Una urgencia: se contrata una solución y se cierra el tema."
+      "text": "El cambio responde a un <span class=\"acc\">dolor</span> puntual. Se contrata una solución y se cierra el tema."
     },
     {
       "number": 5,
       "type": "question",
       "bg": "naranja",
-      "text": "Comprar tecnología esperando transformarte es como cambiar el auto para escapar del tráfico."
+      "text": "Comprar tecnología esperando transformarte es como cambiar el auto para escapar del <span class=\"acc\">tráfico</span>."
     },
     {
       "number": 6,
@@ -41,7 +41,7 @@
       "number": 7,
       "type": "body",
       "bg": "violeta",
-      "text": "No termina: se vuelve la forma de operar. A eso lo llamamos Transformación Continua."
+      "text": "No termina: se vuelve la forma de operar. A eso lo llamamos <span class=\"acc\">Transformación Continua</span>."
     },
     {
       "number": 8,
