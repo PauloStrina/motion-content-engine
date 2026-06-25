@@ -25,19 +25,52 @@ Proceso:
 3. Generá el manifiesto con esta estructura EXACTA, una pieza por canal, cada una con SU voz:
 
 ```
-{ "episodio": "epX-Y", "serie": "...", "tesis": "...", "tipo": "problema|metodo|resultados|conexion", "estado": "borrador_para_aprobacion", "canales": { "linkedin_paulo": {"activo": true, "formato": "post", "texto": "POST LARGO en 1ra persona, voz de tesis, 800-1300 car, termina en #LoComplejoSimple"}, "linkedin_motion": {"activo": true, "formato": "post", "texto": "POST INSTITUCIONAL distinto, método/casos, 1ra plural, #TransformaciónContinua"}, "x_paulo": {"activo": true, "formato": "hilo", "hilo": ["tweet 1 con gancho 🧵","tweet 2","tweet 3","tweet 4"]}, "instagram": {"activo": true, "formato": "carrusel", "caption": "CAPTION CORTO (no el post de LinkedIn) + 2-3 hashtags", "carrusel": "epX-Y", "carrusel_slides": N} } }
+{ "episodio": "epX-Y", "serie": "...", "tesis": "...", "tipo": "problema|metodo|resultados|conexion", "estado": "borrador_para_aprobacion", "canales": { "linkedin_paulo": {"activo": true, "formato": "post", "texto": "POST LARGO en 1ra persona, voz de tesis, 800-1300 car, termina en #LoComplejoSimple #HistoriasEnMovimiento"}, "linkedin_motion": {"activo": true, "formato": "post", "texto": "POST INSTITUCIONAL distinto, método/casos, 1ra plural, #TransformaciónContinua"}, "x_paulo": {"activo": true, "formato": "hilo", "hilo": ["tweet 1 con gancho 🧵","tweet 2","tweet 3","tweet 4"]}, "instagram": {"activo": true, "formato": "carrusel", "caption": "CAPTION CORTO (no el post de LinkedIn) + 2-3 hashtags", "carrusel": "epX-Y", "carrusel_slides": N} } }
 ```
 
 **linkedin_paulo con carrusel (opcional):** Cuando el episodio tiene carrusel de Instagram, podés publicar el mismo carrusel en LinkedIn como documento PDF (en vez de post de texto). En ese caso, reemplazá el `linkedin_paulo` así:
 
 ```
-"linkedin_paulo": {"activo": true, "formato": "carrusel", "texto": "TEXTO INTRODUCTORIO del doc, 300-600 car, termina en #LoComplejoSimple", "carrusel": "epX-Y", "carrusel_slides": N}
+"linkedin_paulo": {"activo": true, "formato": "carrusel", "texto": "TEXTO INTRODUCTORIO del doc, 300-600 car, termina en #LoComplejoSimple #HistoriasEnMovimiento", "carrusel": "epX-Y", "carrusel_slides": N}
 ```
 
 - `carrusel` y `carrusel_slides` deben coincidir EXACTAMENTE con los del canal `instagram`.
 - `texto` es el copy del post que acompaña al PDF en LinkedIn (más corto que el post largo).
 - El PDF se genera del mismo render que las PNGs; el publicador lo sube automáticamente.
 - **Por defecto, usá siempre esta opción cuando el episodio tiene carrusel.** Solo usá `formato: "post"` si el argumento funciona exclusivamente en texto largo y el carrusel no lo complementa.
+
+## ESTRUCTURA DE ENCABEZADO #HistoriasEnMovimiento (obligatorio en linkedin_paulo, instagram, x_paulo)
+
+Todos los episodios son parte de la serie #HistoriasEnMovimiento. El encabezado es SIEMPRE la primera parte del texto/caption/hilo.
+
+**linkedin_paulo (carrusel o post):**
+```
+{Título del episodio}.
+
+#HistoriasEnMovimiento es una serie de casos que vemos en el día a día de Motion. No fake, no IA.
+Si te resuena, me gustaría leerte en comentarios. Que LinkedIn sea una red de networking, no una vidriera para el ego.
+
+[cuerpo del post]
+
+#LoComplejoSimple #HistoriasEnMovimiento
+```
+
+**instagram (caption):**
+```
+{Título del episodio}.
+#HistoriasEnMovimiento: casos reales del día a día Motion. No fake, no IA.
+
+[1-2 líneas de gancho o pregunta]
+
+#LoComplejoSimple #HistoriasEnMovimiento #TransformaciónDigital
+```
+
+**x_paulo (primer tweet del hilo):**
+```
+{Título del episodio}. 🧵
+#HistoriasEnMovimiento — casos reales de Motion. No fake, no IA.
+```
+El hilo continúa con el desarrollo normal del episodio.
 
 REGLAS DURAS:
 - Cada canal contenido PROPIO. JAMÁS repetir el post de LinkedIn como caption de Instagram.

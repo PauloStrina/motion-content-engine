@@ -12,5 +12,6 @@ Leé "tipo" del manifiesto. Define color (ya lo sabés) Y arquitectura de slides
 Regla: el tratamiento dominante manda la composición; los otros 2 tratamientos solo como apoyo puntual. NO inventar tratamientos nuevos.
 4. Generá slides/<carrusel>_carrusel.json con el kit (lam monocolor, eco, lyon, narrativa cromática por tipo).
    El nombre del archivo DEBE coincidir con canales.instagram.carrusel.
+   NOTA RENDER: `#HistoriasEnMovimiento` se renderiza automáticamente arriba a la izquierda en TODOS los slides (eyebrow hardcodeado en render.py). En la portada también aparece el tagline "No fake, no IA." abajo. NO pongas eyebrow en el JSON — sí ponés `eyebrow_color` (define el color de ese texto según la paleta del slide).
 5. El número de slides DEBE coincidir con carrusel_slides (si difiere, actualizá el manifiesto).
 El render posterior produce <carrusel>-1.png ... <carrusel>-N.png que el Publicador sube a Blotato.

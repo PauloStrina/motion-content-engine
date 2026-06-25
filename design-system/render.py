@@ -54,7 +54,7 @@ def block_html(b, bg_hex):
         return rows
     return ''
 
-def slide_html(s):
+def slide_html(s, is_portada=False):
     bgname = s.get('bg','negro'); bg = C[bgname]
     logo = LOGO[ s.get('logo') or LOGO_FOR_BG[bgname] ]
     ebc = C.get(s.get('eyebrow_color',''), s.get('eyebrow_color','#888'))
@@ -62,8 +62,13 @@ def slide_html(s):
     for b in s.get('blocks', []):
         b['_bgname'] = bgname
         blocks += block_html(b, bg)
-    foot = f'<div class="foot" style="color:{C[s["foot_color"]]}">{s["foot"]}</div>' if s.get('foot') else ''
-    eb = f'<div class="eyebrow" style="color:{ebc}">{s["eyebrow"]}</div>' if s.get('eyebrow') else ''
+    if s.get('foot'):
+        foot = f'<div class="foot" style="color:{C[s["foot_color"]]}">{s["foot"]}</div>'
+    elif is_portada:
+        foot = f'<div class="foot" style="color:{ebc};opacity:0.55;font-size:19px">#HistoriasEnMovimiento: casos reales del día a día Motion. No fake, no IA.</div>'
+    else:
+        foot = ''
+    eb = f'<div class="eyebrow" style="color:{ebc}">#HistoriasEnMovimiento</div>'
     return f'''<div class="slide" style="background:{bg}">
       {eb}<div class="pager" style="color:{ebc}">{s.get('pager','')}</div>
       <div class="mid">{blocks}</div>{foot}
@@ -71,7 +76,7 @@ def slide_html(s):
 
 def render(spec_path, out_path):
     spec = json.load(open(spec_path))
-    body = ''.join(slide_html(s) for s in spec['slides'])
+    body = ''.join(slide_html(s, i==0) for i, s in enumerate(spec['slides']))
     html = f'''<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face {{ font-family:'FuturaM'; src: url('file://{BASE}/fonts/FuturaStd-CondensedExtraBd.otf') format('opentype'); }}
 @font-face {{ font-family:'GothamM'; src: url('file://{BASE}/fonts/GothamNarrow-Medium.otf') format('opentype'); }}

@@ -88,8 +88,8 @@ def _programar_raw(account, platform, text, when, media=None, hilo=None, page_id
     r = _post("/posts", {"post":post,"scheduledTime":when})
     _validar(r); return r
 
-HORARIOS = {"linkedin_paulo":("jue","09:00"),"linkedin_motion":("mie","11:00"),
-            "x_paulo":("mar","08:30"),"instagram":("vie","12:00")}
+HORARIOS = {"linkedin_paulo":("mie","09:00"),"linkedin_motion":("jue","11:00"),
+            "x_paulo":("mie","08:30"),"instagram":("jue","12:00")}
 
 def publicar(m, cfg, solo=None):
     fallos = []
