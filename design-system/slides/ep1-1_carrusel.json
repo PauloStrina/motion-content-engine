@@ -64,13 +64,12 @@
       ]
     },
     {
-      "bg": "negro", "eyebrow_color": "aqua", "pager": "08 — 08", "foot": "#LoComplejoSimple", "foot_color": "naranja",
+      "bg": "negro", "eyebrow_color": "aqua", "pager": "08 — 08", "foot": "Lo único permanente es el movimiento", "foot_color": "naranja",
       "blocks": [
         {"type": "futura", "text": "ANTES DE LA PRÓXIMA INVERSIÓN,", "size": 76, "lh": 80, "color": "blanco"},
         {"type": "futura", "text": "UNA SOLA PREGUNTA:", "size": 76, "lh": 84, "color": "blanco", "mb": 44},
-        {"type": "futura", "text": "¿CAMBIO", "size": 150, "lh": 140, "color": "blanco"},
-        {"type": "lyon", "text": "o", "size": 52, "color": "aqua", "mb": 0},
-        {"type": "lam", "text": "TRANSFORMACIÓN?", "size": 108, "color": "naranja"}
+        {"type": "futura", "text": "¿CAMBIO O", "size": 76, "lh": 80, "color": "blanco"},
+        {"type": "lam", "text": "TRANSFORMACIÓN?", "size": 76, "color": "naranja"}
       ]
     }
   ]

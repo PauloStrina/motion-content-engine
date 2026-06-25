@@ -39,30 +39,35 @@ Proceso:
 - El PDF se genera del mismo render que las PNGs; el publicador lo sube automáticamente.
 - **Por defecto, usá siempre esta opción cuando el episodio tiene carrusel.** Solo usá `formato: "post"` si el argumento funciona exclusivamente en texto largo y el carrusel no lo complementa.
 
-## ESTRUCTURA DE ENCABEZADO #HistoriasEnMovimiento (obligatorio en linkedin_paulo, instagram, x_paulo)
+## TÍTULO DEL EPISODIO
 
-Todos los episodios son parte de la serie #HistoriasEnMovimiento. El encabezado es SIEMPRE la primera parte del texto/caption/hilo.
+El título NO es la "serie". Es el **tema instalado**: corto, directo, en forma de pregunta o afirmación simple.
+- Bien: "¿Cambio o Transformación?", "La cultura es el sistema operativo", "Tecnología no es transformación"
+- Mal: "La diferencia que lo define todo", "El motor invisible de toda transformación"
+
+## ESTRUCTURA DE COPY #HistoriasEnMovimiento (obligatorio en linkedin_paulo, instagram, x_paulo)
+
+Todos los episodios son parte de la serie #HistoriasEnMovimiento. La estructura es FIJA.
 
 **linkedin_paulo (carrusel o post):**
 ```
-{Título del episodio}.
+{Título del episodio corto}.
+
+{Un párrafo que resume el tema. Formato párrafo continuo, 2-4 oraciones, tono humano. NO frases separadas por saltos de línea. NO bullets.}
 
 #HistoriasEnMovimiento es una serie de casos que vemos en el día a día de Motion. No fake, no IA.
 Si te resuena, me gustaría leerte en comentarios. Que LinkedIn sea una red de networking, no una vidriera para el ego.
-
-[cuerpo del post]
-
-#LoComplejoSimple #HistoriasEnMovimiento
 ```
+SIN hashtags al final. El texto termina en la línea del ego.
 
 **instagram (caption):**
 ```
-{Título del episodio}.
+{Título del episodio corto}.
 #HistoriasEnMovimiento: casos reales del día a día Motion. No fake, no IA.
 
 [1-2 líneas de gancho o pregunta]
 
-#LoComplejoSimple #HistoriasEnMovimiento #TransformaciónDigital
+#HistoriasEnMovimiento #TransformaciónDigital
 ```
 
 **x_paulo (primer tweet del hilo):**

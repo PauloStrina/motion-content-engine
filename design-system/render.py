@@ -65,10 +65,10 @@ def slide_html(s, is_portada=False):
     if s.get('foot'):
         foot = f'<div class="foot" style="color:{C[s["foot_color"]]}">{s["foot"]}</div>'
     elif is_portada:
-        foot = f'<div class="foot" style="color:{ebc};opacity:0.55;font-size:19px">#HistoriasEnMovimiento: casos reales del día a día Motion. No fake, no IA.</div>'
+        foot = f'<div class="foot" style="color:{ebc};font-size:26px">#HistoriasEnMovimiento: casos reales del día a día Motion.</div>'
     else:
         foot = ''
-    eb = f'<div class="eyebrow" style="color:{ebc}">#HistoriasEnMovimiento</div>'
+    eb = ''
     return f'''<div class="slide" style="background:{bg}">
       {eb}<div class="pager" style="color:{ebc}">{s.get('pager','')}</div>
       <div class="mid">{blocks}</div>{foot}
