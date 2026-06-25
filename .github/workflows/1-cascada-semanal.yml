@@ -20,17 +20,31 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          claude_args: "--allowedTools Read,Write,Edit,Glob,Grep,Bash"
+          claude_args: "--model claude-opus-4-8 --allowedTools Read,Write,Edit,Glob,Grep,Bash"
           show_full_output: true
           prompt: |
-            Episodio solicitado: "${{ github.event.inputs.episodio }}" (si está vacío, tomá el siguiente de la serie).
-            1. Leé scripts/PROMPT_redactor.md y seguilo: generá manifiestos/manifiesto_<ep>.json con las 4 piezas por canal.
-            2. Leé scripts/PROMPT_disenador.md: generá el JSON de slides del carrusel en la carpeta slides/ del design-system,
-               con nombre <carrusel>_carrusel.json y la cantidad de slides que declare el manifiesto.
+            Sos el equipo de contenido de Motion (Estratega + Redactor + Diseñador). Tu trabajo es de CRITERIO, no mecánico.
+            Episodio solicitado: "${{ github.event.inputs.episodio }}" (si está vacío, tomá el siguiente de la serie en CALENDARIO_EDITORIAL.md).
+
+            ## PASO 0 — CARGAR CONTEXTO (OBLIGATORIO, ANTES DE ESCRIBIR NADA)
+            Leé COMPLETOS y a fondo estos archivos. No los saltees, no leas solo el principio. Son la fuente de la voz y la estrategia:
+            - strategy/VOZ_corpus.md  (la voz real de Paulo — el más importante; absorbé ritmo, conectores, cómo baja lo abstracto)
+            - strategy/tesis.md       (las 4 tesis + matriz de intención por tipo de mensaje)
+            - strategy/voz-motion.md  (Brand Voice Playbook, formato por canal, léxico prohibido)
+            - strategy/buyer-persona.md (a quién le hablás)
+            - evidencias/banco.md     (datos permitidos — NUNCA inventes números fuera de acá)
+            Si una pieza no suena a Paulo (suena a IA imitándolo), NO está lista: reescribí. Aplicá la auto-crítica de VOZ_corpus.md §5.
+
+            ## GENERACIÓN
+            1. Leé scripts/PROMPT_redactor.md y seguilo: generá manifiestos/manifiesto_<ep>.json con las 4 piezas por canal, cada una con SU voz propia.
+            2. Leé scripts/PROMPT_disenador.md: generá el JSON de slides del carrusel en design-system/slides/<carrusel>_carrusel.json, con la cantidad que declare el manifiesto.
             3. Validá que manifiesto y JSON de slides tengan la MISMA cantidad de slides.
-            4. Leé scripts/PROMPT_newsletter.md y seguilo: generá newsletters/newsletter_<ep>.md (edición del newsletter LinkedIn, Paulo la publica manual).
-            5. Leé scripts/PROMPT_carrusel_newsletter.md y seguilo: generá design-system/slides/<ep>_news.json (8 slides que replican el contenido del newsletter, estilo minimalista).
-            Éxito = existen los cuatro archivos (manifiesto, JSON del carrusel HEM que coincide en cantidad, newsletter .md, y JSON del carrusel newsletter con 8 slides).
+            4. Leé scripts/PROMPT_newsletter.md y seguilo: generá newsletters/newsletter_<ep>.md.
+            5. Leé scripts/PROMPT_carrusel_newsletter.md y seguilo: generá design-system/slides/<ep>_news.json (8 slides).
+
+            ## REGLA DE CALIDAD (no negociable)
+            No hagas trabajo superficial ni reutilices texto viejo sin repensarlo. Cada pieza debe cumplir la INTENCIÓN de su tipo (matriz en tesis.md) y sonar a Paulo. Si el episodio ya existe, REGENERÁ las piezas aplicando la voz, no solo retoques cosméticos.
+            Éxito = existen los cuatro archivos (manifiesto, JSON del carrusel HEM que coincide en cantidad, newsletter .md, y JSON del carrusel newsletter con 8 slides), y cada pieza pasó la auto-crítica de voz.
       - name: Commit
         run: |
           git config user.name "motion-engine"; git config user.email "engine@motion.local"
