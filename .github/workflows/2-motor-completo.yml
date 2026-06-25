@@ -2,8 +2,12 @@ name: 2-motor-completo
 on:
   workflow_dispatch:
     inputs:
-      episodio:
-        description: "Episodio a publicar (ej: ep1-2). Vacío = el más reciente."
+      semana:
+        description: "Semana a publicar (1-8). Vacío = la más reciente generada. Programa los 2 episodios (carousel + newsletter)."
+        required: false
+        default: ""
+      solo_episodio:
+        description: "Opcional: publicar UN solo episodio (ej: ep1-1), ignorando la semana. Útil si un episodio está bloqueado."
         required: false
         default: ""
       modo:
@@ -22,39 +26,54 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq libpango-1.0-0 libpangoft2-1.0-0 poppler-utils
           pip install weasyprint --quiet
-      - name: Determinar episodio
-        id: ep
+      - name: Determinar episodios
+        id: eps
         run: |
-          EP="${{ github.event.inputs.episodio }}"
-          if [ -z "$EP" ]; then
-            EP=$(python3 -c "import json,glob,os; f=sorted(glob.glob('manifiestos/manifiesto_*.json'),key=os.path.getmtime)[-1]; print(json.load(open(f))['episodio'])")
+          SOLO="${{ github.event.inputs.solo_episodio }}"
+          SEM="${{ github.event.inputs.semana }}"
+          if [ -n "$SOLO" ]; then
+            EPS="$SOLO"
+          else
+            case "$SEM" in
+              1) EPS="ep1-1 ep1-2";; 2) EPS="ep1-3 ep1-4";;
+              3) EPS="ep2-1 ep2-2";; 4) EPS="ep2-3 ep2-4";;
+              5) EPS="ep3-1 ep3-2";; 6) EPS="ep3-3 ep3-4";;
+              7) EPS="ep4-1 ep4-2";; 8) EPS="ep4-3 ep4-4";;
+              *) EPS=$(python3 -c "import glob,os,json; f=sorted(glob.glob('manifiestos/manifiesto_*.json'),key=os.path.getmtime)[-1]; print(json.load(open(f))['episodio'])");;
+            esac
           fi
-          echo "episodio=$EP" >> $GITHUB_OUTPUT
-          echo "Episodio a procesar: $EP"
-      - name: Generar PNGs del carrusel (nombres desde el manifiesto)
+          echo "episodios=$EPS" >> $GITHUB_OUTPUT
+          echo "Episodios a procesar: $EPS"
+      - name: Generar PNGs/PDF de cada episodio
         run: |
           RP=$(find . -name render.py -path "*design-system*" | head -1)
           RD=$(dirname "$RP")
-          python scripts/generar_carrusel.py "${{ steps.ep.outputs.episodio }}" media_out "$RP" "$RD/slides"
-      - name: Empujar PNGs a motion-media
+          for EP in ${{ steps.eps.outputs.episodios }}; do
+            echo "=== Render $EP ==="
+            python scripts/generar_carrusel.py "$EP" media_out "$RP" "$RD/slides"
+          done
+      - name: Empujar media a motion-media
         env:
           TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}
         run: |
           git clone "https://x-access-token:${TOKEN}@github.com/ops-motionco/motion-media.git" media_repo
           mkdir -p media_repo/carruseles
-          cp media_out/*.png media_repo/carruseles/
+          cp media_out/*.png media_repo/carruseles/ 2>/dev/null || true
           cp media_out/*.pdf media_repo/carruseles/ 2>/dev/null || true
           cd media_repo
           git config user.name "motion-engine"; git config user.email "engine@motion.local"
-          git add -A; git commit -m "carrusel ${{ steps.ep.outputs.episodio }}" || echo "sin cambios"
+          git add -A; git commit -m "media semana ${{ github.event.inputs.semana }}" || echo "sin cambios"
           git push
       - name: Esperar publicación de Pages
         run: sleep 90
-      - name: Publicar en Blotato
+      - name: Publicar en Blotato (cada episodio su día)
         env:
           BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
-          MEDIA_OUT_DIR: media_out    # 
+          MEDIA_OUT_DIR: media_out
         run: |
           FLAG=""
           if [ "${{ github.event.inputs.modo }}" = "dry" ]; then FLAG="--dry"; fi
-          python scripts/publicador.py $FLAG --episodio "${{ steps.ep.outputs.episodio }}"
+          for EP in ${{ steps.eps.outputs.episodios }}; do
+            echo "=== Publicar $EP ==="
+            python scripts/publicador.py $FLAG --episodio "$EP"
+          done

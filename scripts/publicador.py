@@ -88,9 +88,14 @@ def _programar_raw(account, platform, text, when, media=None, hilo=None, page_id
     r = _post("/posts", {"post":post,"scheduledTime":when})
     _validar(r); return r
 
-HORARIOS = {"linkedin_paulo":("mie","09:00"),"linkedin_motion":("jue","11:00"),
-            "x_paulo":("mie","08:30"),"instagram":("jue","12:00"),
-            "instagram_newsletter":("mar","12:00")}
+# El día depende del FORMATO del episodio (modelo 8 semanas):
+# carousel → Martes · linkedin_motion → Miércoles · newsletter → Jueves
+HORARIOS_CAROUSEL = {"linkedin_paulo":("mar","09:00"),"instagram":("mar","12:00"),"x_paulo":("mar","08:30")}
+HORARIOS_NEWSLETTER = {"instagram_newsletter":("jue","12:00"),"x_paulo":("jue","08:30")}
+def horario(canal, tipo):
+    if canal == "linkedin_motion": return ("mie","11:00")
+    if M.formato(tipo) == "newsletter": return HORARIOS_NEWSLETTER.get(canal, ("jue","12:00"))
+    return HORARIOS_CAROUSEL.get(canal, ("mar","09:00"))
 
 def publicar(m, cfg, solo=None):
     fallos = []
@@ -104,7 +109,7 @@ def publicar(m, cfg, solo=None):
         if canal not in cfg: print(f"  ⏭  {canal}: sin config"); continue
         acc, plat = cfg[canal]["account"], cfg[canal]["platform"]
         if acc in ("PENDIENTE",""): print(f"  ⏭  {canal}: accountId PENDIENTE"); continue
-        dia,hora = HORARIOS.get(canal,("jue","09:00")); when = fecha(dia,hora); fmt = p["formato"]
+        dia,hora = horario(canal, m.get("tipo","")); when = fecha(dia,hora); fmt = p["formato"]
         print(f"\n▶ {canal} ({plat}, acc {acc}) → {when}")
         try:
             if fmt=="post":

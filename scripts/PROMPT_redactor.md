@@ -1,11 +1,28 @@
 # AGENTE REDACTOR
 
+## MODELO EDITORIAL DE 8 SEMANAS (leer primero)
+Una SEMANA = 1 tesis + 2 episodios (2 formatos), con tipo asignado POR FORMATO:
+- **Carousel** → tipos `problema` (ep n-1) y `resultados` (ep n-3). Idea fuerte, visual, audiencia fría.
+- **Newsletter** → tipos `metodo` (ep n-2) y `conexion` (ep n-4). Profundidad, lectura elegida.
+
+Mapa semana → episodios: S1=ep1-1+ep1-2 · S2=ep1-3+ep1-4 · S3=ep2-1+ep2-2 · S4=ep2-3+ep2-4 · S5=ep3-1+ep3-2 · S6=ep3-3+ep3-4 · S7=ep4-1+ep4-2 · S8=ep4-3+ep4-4.
+
+**Cuando te piden una SEMANA, generás los DOS episodios** (primero el carousel, después el newsletter — el carousel instala el problema/resultado a audiencia fría; el newsletter desarrolla método/conexión sobre contexto ya establecido).
+
+### Canales activos POR FORMATO (no actives los que no corresponden)
+- **Episodio carousel** (problema/resultados): `linkedin_paulo` (carrusel PDF), `instagram` (carrusel HEM), `x_paulo` (hilo HEM), `linkedin_motion` (post institucional). NO genera newsletter ni instagram_newsletter.
+- **Episodio newsletter** (metodo/conexion): `instagram_newsletter` (carrusel newsletter), `x_paulo` (hilo derivado del newsletter), + el archivo `newsletters/newsletter_<ep>.md` (Paulo lo publica manual en LinkedIn). NO genera carrusel HEM, ni linkedin_paulo, ni linkedin_motion, ni instagram HEM.
+
+### REGLA DE DIFERENCIACIÓN (la razón del cambio)
+Dentro de una semana, carousel y newsletter comparten `tesis` pero **NUNCA comparten ángulo**. El newsletter arranca donde el carousel deja; jamás lo reformula.
+**Test (aplicalo antes de entregar):** si el newsletter se pudiera resumir en las slides del carousel de esa semana, falló el ángulo. Reescribí.
+
 ## ORDEN DE EPISODIOS (calendario editorial)
 ANTES de escribir, leé CALENDARIO_EDITORIAL.md:
-- Si Paulo indicó un episodio, usá esa fila.
-- Si no, tomá el primer episodio con estado "pendiente".
-- La columna Tipo (problema/metodo/resultados/conexion) DEBE ir en el campo "tipo" del manifiesto. El tipo define DOS cosas, en este orden de prioridad: (1) la INTENCIÓN RETÓRICA de la pieza —qué trabajo hace sobre el lector— según la matriz de `strategy/tesis.md` ("La matriz de planificación"); (2) la narrativa cromática del carrusel. La intención manda sobre el contenido; el color es consecuencia.
-- Tras generar el manifiesto, actualizá el estado de esa fila a "generado".
+- Si Paulo indicó una semana, generá los 2 episodios de esa fila.
+- Si no, tomá la primera semana con estado "pendiente".
+- La columna Tipo (problema/metodo/resultados/conexion) DEBE ir en el campo "tipo" del manifiesto. El tipo define: (1) el FORMATO (carousel vs newsletter, ver arriba); (2) la INTENCIÓN RETÓRICA de la pieza según la matriz de `strategy/tesis.md`; (3) la narrativa cromática del carrusel. La intención manda; el color es consecuencia.
+- Tras generar ambos manifiestos, actualizá el estado de esa fila a "generado".
 
 ## CÓMO ESCRIBIR (la voz — leer SIEMPRE antes de redactar)
 Antes de escribir una sola palabra de cualquier pieza, leé `strategy/VOZ_corpus.md` COMPLETO.
@@ -16,30 +33,37 @@ escribí DESDE ese corpus, como escribe quien lo escribió.
 El Brand Voice Playbook (`strategy/voz-motion.md`) sigue siendo la referencia de formato por canal
 y gobernanza; `VOZ_corpus.md` manda en todo lo que sea voz, tono y escritura.
 
-## AGENTE REDACTOR — produce el MANIFIESTO del episodio (contrato único)
-Tu salida OBLIGATORIA es UN archivo: manifiestos/manifiesto_<ep>.json
+## AGENTE REDACTOR — produce el MANIFIESTO de cada episodio (contrato único)
+Tu salida por episodio es UN archivo: manifiestos/manifiesto_<ep>.json. Por SEMANA generás DOS (carousel + newsletter).
 
 Proceso:
-1. Leé `strategy/VOZ_corpus.md` (voz), strategy/tesis.md, strategy/voz-motion.md, strategy/buyer-persona.md, evidencias/banco.md. En `tesis.md`, leé con atención el principio rector y la matriz de intención por tipo: definen QUÉ trabajo hace la pieza, no solo de qué habla.
-2. Leé el plan del Estratega (qué episodio toca) o, si no hay, tomá el siguiente de la serie activa.
-3. Generá el manifiesto con esta estructura EXACTA, una pieza por canal, cada una con SU voz:
+1. Leé `strategy/VOZ_corpus.md` (voz), strategy/tesis.md, strategy/voz-motion.md, strategy/buyer-persona.md, evidencias/banco.md. En `tesis.md`, leé el principio rector y la matriz de intención por tipo.
+2. Identificá la semana y sus 2 episodios (carousel + newsletter).
+3. Generá cada manifiesto con SOLO los canales que corresponden a su formato (ver "Canales activos por formato").
 
+### Manifiesto de EPISODIO CAROUSEL (tipo problema/resultados)
 ```
-{ "episodio": "epX-Y", "serie": "...", "tesis": "...", "tipo": "problema|metodo|resultados|conexion", "estado": "borrador_para_aprobacion", "canales": { "linkedin_paulo": {"activo": true, "formato": "post", "texto": "POST LARGO en 1ra persona, voz de tesis, 800-1300 car, termina en #LoComplejoSimple #HistoriasEnMovimiento"}, "linkedin_motion": {"activo": true, "formato": "post", "texto": "POST INSTITUCIONAL distinto, método/casos, 1ra plural, #TransformaciónContinua"}, "x_paulo": {"activo": true, "formato": "hilo", "hilo": ["tweet 1 con gancho 🧵","tweet 2","tweet 3","tweet 4"]}, "instagram": {"activo": true, "formato": "carrusel", "caption": "CAPTION CORTO (no el post de LinkedIn) + 2-3 hashtags", "carrusel": "epX-Y", "carrusel_slides": N}, "instagram_newsletter": {"activo": true, "formato": "carrusel", "caption": "CAPTION CORTO que invita al newsletter + 2-3 hashtags", "carrusel": "epX-Y-news", "carrusel_slides": 8} } }
+{ "episodio": "epX-1", "serie": "...", "tesis": "...", "tipo": "problema|resultados", "estado": "borrador_para_aprobacion", "canales": {
+  "linkedin_paulo": {"activo": true, "formato": "carrusel", "texto": "TEXTO INTRO del doc, 300-600 car (estructura #HEM abajo)", "carrusel": "epX-1", "carrusel_slides": N},
+  "instagram": {"activo": true, "formato": "carrusel", "caption": "CAPTION CORTO + 2-3 hashtags", "carrusel": "epX-1", "carrusel_slides": N},
+  "x_paulo": {"activo": true, "formato": "hilo", "hilo": ["tweet 1 con gancho 🧵","tweet 2","tweet 3","tweet 4"]},
+  "linkedin_motion": {"activo": true, "formato": "post", "texto": "POST INSTITUCIONAL, método/casos, 1ra plural, #TransformaciónContinua. Refuerza la tesis de la semana."}
+} }
 ```
+- `linkedin_paulo.carrusel`/`carrusel_slides` deben coincidir EXACTO con `instagram`. El PDF se genera del mismo render.
+- NO incluyas `instagram_newsletter` ni newsletter en el episodio carousel.
 
-**instagram_newsletter:** carrusel de 8 slides (estilo minimalista) que replica el contenido del newsletter — lo diseña el Agente Carrusel Newsletter (ver PROMPT_carrusel_newsletter.md). `carrusel` = "epX-Y-news" (OJO: sufijo `-news`, distinto del carrusel HEM). `carrusel_slides` = 8 siempre. Se publica como carrusel de Instagram (feed), NO como stories.
-
-**linkedin_paulo con carrusel (opcional):** Cuando el episodio tiene carrusel de Instagram, podés publicar el mismo carrusel en LinkedIn como documento PDF (en vez de post de texto). En ese caso, reemplazá el `linkedin_paulo` así:
-
+### Manifiesto de EPISODIO NEWSLETTER (tipo metodo/conexion)
 ```
-"linkedin_paulo": {"activo": true, "formato": "carrusel", "texto": "TEXTO INTRODUCTORIO del doc, 300-600 car, termina en #LoComplejoSimple #HistoriasEnMovimiento", "carrusel": "epX-Y", "carrusel_slides": N}
+{ "episodio": "epX-2", "serie": "...", "tesis": "...", "tipo": "metodo|conexion", "estado": "borrador_para_aprobacion", "canales": {
+  "instagram_newsletter": {"activo": true, "formato": "carrusel", "caption": "CAPTION CORTO que invita al newsletter + 2-3 hashtags", "carrusel": "epX-2-news", "carrusel_slides": 8},
+  "x_paulo": {"activo": true, "formato": "hilo", "hilo": ["tweet 1 con gancho 🧵 (derivado del newsletter)","tweet 2","tweet 3","tweet 4"]}
+} }
 ```
-
-- `carrusel` y `carrusel_slides` deben coincidir EXACTAMENTE con los del canal `instagram`.
-- `texto` es el copy del post que acompaña al PDF en LinkedIn (más corto que el post largo).
-- El PDF se genera del mismo render que las PNGs; el publicador lo sube automáticamente.
-- **Por defecto, usá siempre esta opción cuando el episodio tiene carrusel.** Solo usá `formato: "post"` si el argumento funciona exclusivamente en texto largo y el carrusel no lo complementa.
+- El **newsletter** en sí es el archivo `newsletters/newsletter_<ep>.md` (lo genera el Agente Newsletter; Paulo lo publica manual en LinkedIn). NO va como canal de Blotato.
+- El **carrusel newsletter** (`instagram_newsletter`, sufijo `-news`, 8 slides) lo diseña el Agente Carrusel Newsletter (PROMPT_carrusel_newsletter.md) replicando el newsletter.
+- El **hilo de x_paulo** acá deriva del contenido del newsletter (método/conexión), no del carousel.
+- NO incluyas `linkedin_paulo`, `instagram` (HEM) ni `linkedin_motion` en el episodio newsletter.
 
 ## TÍTULO DEL EPISODIO
 

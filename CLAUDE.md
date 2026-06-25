@@ -30,7 +30,7 @@ Premisa de contexto (encabeza todo, NO es tesis): "Salto Tecnológico" — entor
 
 ### Los 4 Tipos de mensaje (método Rubilar)
 Cada tesis se recorre desde 4 ángulos: **problema · método · resultados · conexión**.
-→ 4 tesis × 4 tipos = **16 episodios base** (~4 meses a ritmo semanal). Al terminar, se reinicia con evidencia/analogías nuevas (espiral, no círculo: la tesis se repite, la munición rota).
+→ 4 tesis × 4 tipos = **8 semanas** (2 formatos por semana: carousel + newsletter) (~2 meses por vuelta). El tipo se asigna por formato: carousel = problema/resultados, newsletter = metodo/conexion. Misma tesis toda la semana, ángulos distintos por formato. Espiral: al cerrar las 8 semanas se reinicia con evidencia/analogías nuevas, misma estructura.
 
 ---
 

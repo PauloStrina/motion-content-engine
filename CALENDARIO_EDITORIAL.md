@@ -1,32 +1,29 @@
-# CALENDARIO EDITORIAL MOTION
-# Esta tabla la controla Paulo. El Estratega la lee y genera el próximo episodio con estado "pendiente".
-# CADA TESIS se recorre desde los 4 TIPOS de mensaje (método Rubilar):
-#   problema · metodo · resultados · conexion  (el Tipo define la narrativa cromática del carrusel)
-# Estados: pendiente · generado · programado · publicado
-# 4 tesis × 4 tipos = 16 episodios base (≈4 meses a ritmo semanal). Al terminar, se reinicia con evidencia nueva.
+# CALENDARIO EDITORIAL MOTION — Modelo de 8 semanas
+# Esta tabla la controla Paulo. El Estratega la lee y genera la próxima semana con estado "pendiente".
+# UNA SEMANA = 1 tesis + 2 formatos (2 episodios). El TIPO se asigna POR FORMATO:
+#   Carousel  → problema (ep n-1) / resultados (ep n-3)   (idea fuerte, visual, audiencia fría)
+#   Newsletter→ metodo   (ep n-2) / conexion   (ep n-4)   (profundidad, lectura elegida)
+# Misma tesis toda la semana; carousel y newsletter NUNCA comparten ángulo.
+# Estados: pendiente · generado · publicado
+# 4 tesis × 4 tipos = 8 semanas (≈2 meses por vuelta). Espiral: al cerrar la semana 8 se reinicia
+# todo a "pendiente" con evidencia/analogías nuevas (misma estructura).
 
-| Episodio | Tesis | Tipo | Estado |
-|----------|-------|------|--------|
-| ep1-1 | Cambio ≠ Transformación | problema | generado |
-| ep1-2 | Cambio ≠ Transformación | metodo | generado |
-| ep1-3 | Cambio ≠ Transformación | resultados | pendiente |
-| ep1-4 | Cambio ≠ Transformación | conexion | generado |
-| ep2-1 | La cultura es el sistema operativo | problema | pendiente |
-| ep2-2 | La cultura es el sistema operativo | metodo | pendiente |
-| ep2-3 | La cultura es el sistema operativo | resultados | pendiente |
-| ep2-4 | La cultura es el sistema operativo | conexion | pendiente |
-| ep3-1 | Modelos de gestión obsoletos → Transformación Continua | problema | pendiente |
-| ep3-2 | Modelos de gestión obsoletos → Transformación Continua | metodo | pendiente |
-| ep3-3 | Modelos de gestión obsoletos → Transformación Continua | resultados | pendiente |
-| ep3-4 | Modelos de gestión obsoletos → Transformación Continua | conexion | pendiente |
-| ep4-1 | Tecnología es commodity, el valor está en la orquestación | problema | pendiente |
-| ep4-2 | Tecnología es commodity, el valor está en la orquestación | metodo | pendiente |
-| ep4-3 | Tecnología es commodity, el valor está en la orquestación | resultados | pendiente |
-| ep4-4 | Tecnología es commodity, el valor está en la orquestación | conexion | pendiente |
+| Semana | Tesis | Carousel (tipo) | Newsletter (tipo) | Estado |
+|--------|-------|-----------------|-------------------|--------|
+| 1 | T1 Cambio ≠ Transformación | ep1-1 Problema   | ep1-2 Método    | pendiente |
+| 2 | T1 Cambio ≠ Transformación | ep1-3 Resultados | ep1-4 Conexión  | pendiente |
+| 3 | T2 Cultura = sistema operativo | ep2-1 Problema   | ep2-2 Método    | pendiente |
+| 4 | T2 Cultura = sistema operativo | ep2-3 Resultados | ep2-4 Conexión  | pendiente |
+| 5 | T3 Transformación Continua®    | ep3-1 Problema   | ep3-2 Método    | pendiente |
+| 6 | T3 Transformación Continua®    | ep3-3 Resultados | ep3-4 Conexión  | pendiente |
+| 7 | T4 Tecnología commodity        | ep4-1 Problema   | ep4-2 Método    | pendiente |
+| 8 | T4 Tecnología commodity        | ep4-3 Resultados | ep4-4 Conexión  | pendiente |
 
 # REGLA PARA EL ESTRATEGA:
-# 1. Si Paulo indicó un episodio específico al disparar la cascada (ej: ep3-1), generá ESE, ignorando el orden.
-# 2. Si no indicó ninguno, tomá el PRIMER episodio con estado "pendiente" de arriba hacia abajo.
-# 3. Usá la Tesis y el Tipo de esa fila. El Tipo define la paleta del carrusel:
-#    problema=negro · metodo=violeta · resultados=naranja · conexion=aqua
-# 4. Tras generar, cambiá el estado de esa fila a "generado".
+# 1. Si Paulo indicó una semana (1-8) al disparar la cascada, generá ESA (los 2 episodios).
+# 2. Si no indicó ninguna, tomá la PRIMERA semana con estado "pendiente" de arriba hacia abajo.
+# 3. Generá SIEMPRE los 2 episodios de la semana: primero el carousel, después el newsletter.
+#    - Carousel (problema/resultados): linkedin_paulo (PDF) + instagram (HEM) + x_paulo (hilo) + linkedin_motion.
+#    - Newsletter (metodo/conexion): newsletter .md (manual) + instagram_newsletter (carrusel news) + x_paulo (hilo).
+# 4. El Tipo define la paleta del carrusel: problema=negro · metodo=violeta · resultados=naranja · conexion=aqua
+# 5. Tras generar ambos, cambiá el estado de esa fila a "generado".

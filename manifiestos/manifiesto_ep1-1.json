@@ -37,13 +37,6 @@
       "caption": "¿Cambio o Transformación?\n#HistoriasEnMovimiento: casos reales de nuestro día a día. No fake, no IA.\n\nCambiaron todo lo que podían y sienten que nada se transformó. Antes de la próxima inversión, una pregunta sola.\n\n#HistoriasEnMovimiento #TransformaciónDigital",
       "carrusel": "ep1-1",
       "carrusel_slides": 8
-    },
-    "instagram_newsletter": {
-      "activo": true,
-      "formato": "carrusel",
-      "caption": "¿Cuál es la diferencia entre un cambio y una transformación? La versión completa está en el newsletter Lo complejo, simple.\n\n#HistoriasEnMovimiento #TransformaciónDigital",
-      "carrusel": "ep1-1-news",
-      "carrusel_slides": 8
     }
   }
 }
