@@ -79,9 +79,10 @@ def fecha(dia, hhmm, buf=48):
         d += dt.timedelta(days=1)
     return d.replace(hour=h,minute=mm,second=0,microsecond=0).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-def _programar_raw(account, platform, text, when, media=None, hilo=None, page_id=None, name=None):
+def _programar_raw(account, platform, text, when, media=None, hilo=None, page_id=None, name=None, media_type=None):
     target = {"targetType": platform}
     if page_id: target["pageId"] = str(page_id)
+    if media_type: target["mediaType"] = media_type
     post = {"accountId":str(account),"content":{"text":text,"mediaUrls":media or [],"platform":platform},"target":target}
     if name: post["name"] = name
     if hilo: post["additionalPosts"] = [{"text":t,"mediaUrls":[]} for t in hilo]
@@ -89,7 +90,8 @@ def _programar_raw(account, platform, text, when, media=None, hilo=None, page_id
     _validar(r); return r
 
 HORARIOS = {"linkedin_paulo":("mie","09:00"),"linkedin_motion":("jue","11:00"),
-            "x_paulo":("mie","08:30"),"instagram":("jue","12:00")}
+            "x_paulo":("mie","08:30"),"instagram":("jue","12:00"),
+            "instagram_stories":("vie","12:00")}
 
 def publicar(m, cfg, solo=None):
     fallos = []
@@ -130,6 +132,14 @@ def publicar(m, cfg, solo=None):
                     print(f"  carrusel {base}: {n} slides")
                     print(f"  caption: {p['caption'][:60]}...")
                     _programar_raw(acc, plat, p["caption"], when, media=urls, name=f"{run_name}_{canal}")
+            elif fmt=="stories":
+                # Instagram Stories: 6 posts SEPARADOS (Blotato usa solo 1 media por story).
+                base = p["stories_base"]; n = p["stories_count"]; cap = p.get("caption","")
+                print(f"  stories {base}: {n} posts (mediaType=story)")
+                for i in range(1, n+1):
+                    url = f"{media_base}/{base}-story-{i}.png"
+                    _programar_raw(acc, plat, cap, when, media=[url], media_type="story",
+                                   name=f"{run_name}_{canal}_{i}")
             else:
                 raise RuntimeError(f"Formato no soportado: {fmt}")
             print("  ✓ programado confirmado por Blotato")

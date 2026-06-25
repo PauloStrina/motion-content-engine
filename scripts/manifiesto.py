@@ -3,7 +3,7 @@
 NINGÚN componente adivina nada: todo sale de acá."""
 import json, os, glob
 MANIF_DIR = "manifiestos"
-CANALES = ["linkedin_paulo", "linkedin_motion", "x_paulo", "instagram"]
+CANALES = ["linkedin_paulo", "linkedin_motion", "x_paulo", "instagram", "instagram_stories"]
 def ruta(ep): return os.path.join(MANIF_DIR, f"manifiesto_{ep}.json")
 def escribir(m):
     os.makedirs(MANIF_DIR, exist_ok=True)
@@ -29,4 +29,7 @@ def validar(m):
             caption_key = "texto" if canal == "linkedin_paulo" else "caption"
             for k in (caption_key,"carrusel","carrusel_slides"):
                 if not c.get(k): e.append(f"{canal}: carrusel sin {k}")
+        if f=="stories":
+            for k in ("stories_base","stories_count"):
+                if not c.get(k): e.append(f"{canal}: stories sin {k}")
     return e

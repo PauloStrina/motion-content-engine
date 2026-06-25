@@ -3,3 +3,4 @@ canales:
   x_paulo:         {account: 20492, platform: twitter}
   linkedin_motion: {account: 25264, platform: linkedin, pageid: 105691334}
   instagram:       {account: 53650, platform: instagram}
+  instagram_stories: {account: 53650, platform: instagram}

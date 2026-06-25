@@ -25,8 +25,10 @@ Proceso:
 3. Generá el manifiesto con esta estructura EXACTA, una pieza por canal, cada una con SU voz:
 
 ```
-{ "episodio": "epX-Y", "serie": "...", "tesis": "...", "tipo": "problema|metodo|resultados|conexion", "estado": "borrador_para_aprobacion", "canales": { "linkedin_paulo": {"activo": true, "formato": "post", "texto": "POST LARGO en 1ra persona, voz de tesis, 800-1300 car, termina en #LoComplejoSimple #HistoriasEnMovimiento"}, "linkedin_motion": {"activo": true, "formato": "post", "texto": "POST INSTITUCIONAL distinto, método/casos, 1ra plural, #TransformaciónContinua"}, "x_paulo": {"activo": true, "formato": "hilo", "hilo": ["tweet 1 con gancho 🧵","tweet 2","tweet 3","tweet 4"]}, "instagram": {"activo": true, "formato": "carrusel", "caption": "CAPTION CORTO (no el post de LinkedIn) + 2-3 hashtags", "carrusel": "epX-Y", "carrusel_slides": N} } }
+{ "episodio": "epX-Y", "serie": "...", "tesis": "...", "tipo": "problema|metodo|resultados|conexion", "estado": "borrador_para_aprobacion", "canales": { "linkedin_paulo": {"activo": true, "formato": "post", "texto": "POST LARGO en 1ra persona, voz de tesis, 800-1300 car, termina en #LoComplejoSimple #HistoriasEnMovimiento"}, "linkedin_motion": {"activo": true, "formato": "post", "texto": "POST INSTITUCIONAL distinto, método/casos, 1ra plural, #TransformaciónContinua"}, "x_paulo": {"activo": true, "formato": "hilo", "hilo": ["tweet 1 con gancho 🧵","tweet 2","tweet 3","tweet 4"]}, "instagram": {"activo": true, "formato": "carrusel", "caption": "CAPTION CORTO (no el post de LinkedIn) + 2-3 hashtags", "carrusel": "epX-Y", "carrusel_slides": N}, "instagram_stories": {"activo": true, "formato": "stories", "stories_base": "epX-Y", "stories_count": 6, "caption": ""} } }
 ```
+
+**instagram_stories:** 6 Instagram Stories que el Agente Stories diseña (ver PROMPT_stories.md). `stories_base` = el episodio (mismo nombre del carrusel), `stories_count` = 6. El publicador las manda como 6 posts separados (Blotato usa 1 imagen por story). `caption` normalmente vacío (el texto va en la imagen).
 
 **linkedin_paulo con carrusel (opcional):** Cuando el episodio tiene carrusel de Instagram, podés publicar el mismo carrusel en LinkedIn como documento PDF (en vez de post de texto). En ese caso, reemplazá el `linkedin_paulo` así:
 
