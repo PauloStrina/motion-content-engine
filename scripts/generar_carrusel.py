@@ -41,6 +41,13 @@ def main(ep, out_dir, render_py, slides_dir):
         pdf_dst = os.path.join(out_dir, f"{base}.pdf")
         subprocess.run(["python", render_py, spec, pdf_dst], check=True)
         print(f"✓ PDF generado: {base}.pdf")
+    # STORIES: si existe <ep>_stories.json, renderizar las 6 stories como <ep>-story-N.png
+    stories_spec = os.path.join(slides_dir, f"{ep}_stories.json")
+    if os.path.exists(stories_spec):
+        render_stories_py = os.path.join(os.path.dirname(render_py), "render_stories.py")
+        subprocess.run(["python", render_stories_py, stories_spec, out_dir, "--png"], check=True)
+        story_pngs = sorted(glob.glob(os.path.join(out_dir, f"{ep}-story*.png")))
+        print(f"✓ {len(story_pngs)} stories generadas como {ep}-story-N.png")
 
 if __name__ == "__main__":
     main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
