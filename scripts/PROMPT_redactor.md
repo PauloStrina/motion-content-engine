@@ -53,12 +53,22 @@ Todos los episodios son parte de la serie #HistoriasEnMovimiento. La estructura 
 ```
 {Título del episodio corto}.
 
-{Un párrafo que resume el tema. Formato párrafo continuo, 2-4 oraciones, tono humano. NO frases separadas por saltos de línea. NO bullets.}
+{Un párrafo de 3-4 oraciones CORTAS que resume el tema. Cierra con un CTA simple al carrusel.}
 
 #HistoriasEnMovimiento es una serie de casos que vemos en el día a día de Motion. No fake, no IA.
 Si te resuena, me gustaría leerte en comentarios. Que LinkedIn sea una red de networking, no una vidriera para el ego.
 ```
 SIN hashtags al final. El texto termina en la línea del ego.
+
+**El párrafo — reglas duras (lo más importante de esta pieza):**
+- Oraciones CORTAS, una idea por oración. PROHIBIDO apilar subordinadas ("la distinción que define si la inversión que… mientras…").
+- Lenguaje hablado, como se lo contarías a un colega en un café. NO jerga corporativa: evitá "mueve la aguja", "saldar la distinción", "el directorio", "palanca", "accionable".
+- Arrancá desde la PERSONA, no desde el concepto: "Varios líderes con los que hablamos nos cuentan que…" (gente concreta y su sentir), no "casi ningún directorio tiene resuelto…".
+- Cerrá con un CTA breve y humano al carrusel: "Deslizá si te interpela." / "Te lo cuento en este carrusel."
+- Largo objetivo: 350-500 caracteres el párrafo. Si suena a informe, está mal: reescribí más corto y más hablado.
+
+Ejemplo del tono buscado (ep1-1):
+> "Varios líderes con los que hablamos nos cuentan que hicieron muchos cambios, pero en el fondo nada se transformó. No les falta inversión ni decisión, pero cambiar o transformarse no son lo mismo, y la diferencia es fundamental. Deslizá si te interpela."
 
 **instagram (caption):**
 ```

@@ -56,18 +56,22 @@ def block_html(b, bg_hex):
 
 def slide_html(s, is_portada=False):
     bgname = s.get('bg','negro'); bg = C[bgname]
-    logo = LOGO[ s.get('logo') or LOGO_FOR_BG[bgname] ]
+    logoname = s.get('logo') or LOGO_FOR_BG[bgname]
+    logo = LOGO[logoname]
     ebc = C.get(s.get('eyebrow_color',''), s.get('eyebrow_color','#888'))
     blocks = ''
     for b in s.get('blocks', []):
         b['_bgname'] = bgname
         blocks += block_html(b, bg)
+    # foot: frase en esquina inferior izquierda, 2 líneas, mismo color que el logo,
+    # alto total = alto del logo (≈46px @ width 190px). Usar <br> para forzar 2 líneas.
     if s.get('foot'):
-        foot = f'<div class="foot" style="color:{C[s["foot_color"]]}">{s["foot"]}</div>'
+        foottext = s['foot']
     elif is_portada:
-        foot = f'<div class="foot" style="color:{ebc};font-size:26px">#HistoriasEnMovimiento: casos reales del día a día Motion.</div>'
+        foottext = '#HistoriasEnMovimiento:<br>casos reales del día a día Motion.'
     else:
-        foot = ''
+        foottext = ''
+    foot = f'<div class="foot" style="color:{C[logoname]}">{foottext}</div>' if foottext else ''
     eb = ''
     return f'''<div class="slide" style="background:{bg}">
       {eb}<div class="pager" style="color:{ebc}">{s.get('pager','')}</div>
@@ -89,7 +93,7 @@ def render(spec_path, out_path):
 .eyebrow {{ font-family:'GothamM'; font-size:25px; letter-spacing:5px; text-transform:uppercase; position:absolute; top:96px; left:84px; }}
 .pager {{ position:absolute; top:96px; right:84px; font-family:'GothamM'; font-size:24px; letter-spacing:3px; }}
 .logo {{ position:absolute; bottom:64px; right:84px; width:190px; }}
-.foot {{ position:absolute; bottom:64px; left:84px; font-family:'GothamM'; font-size:26px; }}
+.foot {{ position:absolute; bottom:64px; left:84px; height:46px; font-family:'GothamM'; font-size:21px; line-height:23px; display:flex; flex-direction:column; justify-content:center; }}
 .mid {{ position:absolute; top:150px; left:84px; width:912px; bottom:140px; display:flex; flex-direction:column; justify-content:center; overflow:hidden; }}
 .futura {{ font-family:'FuturaM'; text-transform:uppercase; max-width:912px; word-break:break-word; }}
 </style></head><body>{body}</body></html>'''
