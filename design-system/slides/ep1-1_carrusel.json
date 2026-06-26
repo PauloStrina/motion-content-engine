@@ -6,7 +6,7 @@
       "blocks": [
         {"type": "futura", "text": "¿TU ORGANIZACIÓN", "size": 120, "lh": 112, "color": "blanco"},
         {"type": "futura", "text": "BUSCA UN CAMBIO", "size": 120, "lh": 112, "color": "blanco"},
-        {"type": "lam", "text": "O UNA TRANSFORMACIÓN?", "size": 92, "color": "naranja"},
+        {"type": "lam", "text": "O UNA TRANSFORMACIÓN?", "size": 90, "color": "naranja"},
         {"type": "spacer", "h": 46},
         {"type": "lyon", "text": "Casi nadie se hace esta<br>pregunta a tiempo.", "size": 44, "color": "aqua"}
       ]

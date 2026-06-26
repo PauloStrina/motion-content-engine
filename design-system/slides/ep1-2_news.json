@@ -1,0 +1,53 @@
+{
+  "episodio": "ep1-2",
+  "slides": [
+    {
+      "number": 1,
+      "type": "cover",
+      "bg": "negro",
+      "text": "Cómo saber si tu organización busca un cambio o una <span class=\"acc\">transformación</span>."
+    },
+    {
+      "number": 2,
+      "type": "body",
+      "bg": "negro",
+      "text": "Ya sabés que no son lo mismo. La pregunta que queda es otra: ¿de qué lado estoy <span class=\"acc\">parado</span>?"
+    },
+    {
+      "number": 3,
+      "type": "body",
+      "bg": "negro",
+      "text": "No te falta visión, te falta <span class=\"acc\">método</span>. Y se resuelve con tres preguntas del Diagnóstico."
+    },
+    {
+      "number": 4,
+      "type": "body",
+      "bg": "aqua",
+      "text": "Uno. ¿De dónde nace? De un <span class=\"acc\">dolor</span> puntual es un cambio. De una visión, una transformación."
+    },
+    {
+      "number": 5,
+      "type": "question",
+      "bg": "naranja",
+      "text": "Pidieron un tablero de Power BI. Atrás aparecieron los datos, los procesos y al final la <span class=\"acc\">cultura</span>."
+    },
+    {
+      "number": 6,
+      "type": "body",
+      "bg": "violeta",
+      "text": "Dos. ¿Qué toca? Un cambio toca una herramienta. Una transformación toca procesos, liderazgo y <span class=\"acc\">cultura</span>."
+    },
+    {
+      "number": 7,
+      "type": "body",
+      "bg": "violeta",
+      "text": "Tres. ¿Cuándo termina? Un cambio se cierra. Una transformación se vuelve la forma de <span class=\"acc\">operar</span>."
+    },
+    {
+      "number": 8,
+      "type": "closing",
+      "bg": "negro",
+      "text": "No hay método sin diagnóstico. Ordená qué buscás antes de decidir qué <span class=\"acc\">comprás</span>."
+    }
+  ]
+}
