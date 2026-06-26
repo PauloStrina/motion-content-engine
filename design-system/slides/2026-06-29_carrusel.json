@@ -1,0 +1,72 @@
+{
+  "episodio": "2026-06-29",
+  "slides": [
+    {
+      "bg": "negro",
+      "eyebrow_color": "naranja",
+      "pager": "01 / 07",
+      "blocks": [
+        {"type": "eco", "text": "CAMBIO", "size": 230, "color": "blanco", "n": 3},
+        {"type": "spacer", "h": 28},
+        {"type": "futura", "text": "no es transformación.", "size": 56, "color": "naranja"}
+      ]
+    },
+    {
+      "bg": "negro",
+      "eyebrow_color": "aqua",
+      "pager": "02 / 07",
+      "blocks": [
+        {"type": "futura", "text": "Hiciste todos los cambios posibles.", "size": 70, "color": "blanco", "mb": 22},
+        {"type": "futura", "text": "Y algo, en el fondo, sigue igual.", "size": 70, "color": "aqua"}
+      ]
+    },
+    {
+      "bg": "negro",
+      "eyebrow_color": "naranja",
+      "pager": "03 / 07",
+      "blocks": [
+        {"type": "futura", "text": "Cambiás para que", "size": 58, "color": "blanco", "mb": 8},
+        {"type": "lam", "text": "deje de doler", "size": 104, "color": "blanco"}
+      ]
+    },
+    {
+      "bg": "aqua",
+      "eyebrow_color": "violeta",
+      "pager": "04 / 07",
+      "blocks": [
+        {"type": "futura", "text": "Te transformás para", "size": 58, "color": "negro", "mb": 8},
+        {"type": "lam", "text": "alcanzar una visión", "size": 100, "color": "violeta"}
+      ]
+    },
+    {
+      "bg": "negro",
+      "eyebrow_color": "naranja",
+      "pager": "05 / 07",
+      "blocks": [
+        {"type": "futura", "text": "Por eso podés", "size": 58, "color": "blanco", "mb": 8},
+        {"type": "futura", "text": "cambiar mil veces", "size": 84, "color": "blanco", "mb": 14},
+        {"type": "lam", "text": "y no transformarte nunca", "size": 74, "color": "naranja"}
+      ]
+    },
+    {
+      "bg": "blanco",
+      "eyebrow_color": "violeta",
+      "pager": "06 / 07",
+      "blocks": [
+        {"type": "lyon", "text": "Comprar tecnología esperando transformarte es como cambiar el auto para escapar del tráfico.", "size": 62, "color": "negro", "lh2": 1.22, "mb": 26},
+        {"type": "lyont", "text": "El problema no es el vehículo. Es el sistema.", "size": 40, "color": "violeta"}
+      ]
+    },
+    {
+      "bg": "negro",
+      "eyebrow_color": "naranja",
+      "pager": "07 / 07",
+      "foot": "Lo único permanente es el movimiento",
+      "foot_color": "naranja",
+      "blocks": [
+        {"type": "futura", "text": "¿Buscás un cambio", "size": 88, "color": "blanco", "mb": 10},
+        {"type": "lam", "text": "o una transformación?", "size": 88, "color": "naranja"}
+      ]
+    }
+  ]
+}
