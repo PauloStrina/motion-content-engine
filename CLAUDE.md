@@ -72,18 +72,21 @@ quote card · dato (número con sombra laminada) · lista numerada. (Quote card:
 
 ## 4. ARQUITECTURA TÉCNICA
 
-### El contrato: MANIFIESTO por episodio
-Fuente ÚNICA de verdad. Un JSON `manifiestos/manifiesto_<ep>.json` que conecta Redactor→Diseñador→Publicador. Nadie adivina ni hardcodea. Estructura:
+### El contrato: MANIFIESTO SEMANAL (nombrado por fecha)
+Fuente ÚNICA de verdad. UN JSON por semana, `manifiestos/manifiesto_<fecha>.json` (`<fecha>` = lunes de la semana, YYYY-MM-DD), con TODA la publicación automática de la semana en los 6 canales. El newsletter va aparte (`newsletters/newsletter_<fecha>.md`, Paulo lo publica manual). Estructura:
 ```
-{ "episodio","serie","tesis","tipo","estado",
+{ "fecha_inicio":"<fecha>","semana":N,"tesis","estado",
+  "carousel":{tipo:"problema|resultados",tema}, "newsletter":{tipo:"metodo|conexion",tema},
   "canales": {
-    "linkedin_paulo":  {activo, formato:"post", texto},        // post largo, tesis, 1ra persona
-    "linkedin_motion": {activo, formato:"post", texto},        // institucional, método (DISTINTO)
-    "x_paulo":         {activo, formato:"hilo", hilo:[...]},
-    "instagram":       {activo, formato:"carrusel", caption (CORTO), carrusel:"<ep>", carrusel_slides:N}
+    "linkedin_paulo":       {formato:"carrusel", texto, carrusel:"<fecha>", carrusel_slides},   // HEM PDF · martes
+    "instagram":            {formato:"carrusel", caption, carrusel:"<fecha>", carrusel_slides},  // HEM · martes
+    "x_paulo_hem":          {formato:"hilo", hilo:[...]},                                        // hilo carousel · martes
+    "linkedin_motion":      {formato:"post", texto},                                             // institucional · miércoles
+    "instagram_newsletter": {formato:"carrusel", caption, carrusel:"<fecha>-news", carrusel_slides:8}, // jueves
+    "x_paulo_news":         {formato:"hilo", hilo:[...]}                                         // hilo newsletter · jueves
   }}
 ```
-REGLA DURA: cada canal su pieza propia. JAMÁS repetir el post de LinkedIn como caption de Instagram.
+REGLA DURA: cada canal su pieza propia. Carousel y newsletter comparten tesis, NUNCA ángulo. El día/hora de cada canal es fijo (CANAL_SCHEDULE en publicador.py); la programación se ancla a `fecha_inicio`.
 
 ### Render (no usa Chrome — no disponible en sandbox)
 WeasyPrint (HTML/CSS→PDF) + pdftoppm (PDF→PNG). `render.py` paramétrico lee JSON de slides (`--png` exporta imágenes). `generar_carrusel.py` deriva nombre y cantidad de slides DEL MANIFIESTO (garantiza congruencia de nombres con el publicador).
@@ -92,10 +95,10 @@ WeasyPrint (HTML/CSS→PDF) + pdftoppm (PDF→PNG). `render.py` paramétrico lee
 `publicador.py` lee el manifiesto, cada canal SU pieza. Resiliente: captura error por canal y sigue. Reintentos automáticos (429/500), pausa entre canales.
 - Imágenes: URLs públicas de `motion-media` vía GitHub Pages (https://ops-motionco.github.io/motion-media/carruseles/). NO base64 (Blotato lo rechaza).
 - LinkedIn Motion = cuenta de Paulo (25264) + **pageId 105691334** dentro de `target` (NO es un accountId).
-- Modo: programar con fecha futura (48hs buffer) → editable en calendario Blotato. NADA se publica sin OK final de Paulo.
+- Modo: la programación se ancla a `fecha_inicio` (martes/miércoles/jueves de esa semana) → editable en calendario Blotato. NADA se publica sin OK final de Paulo.
 
 ### accountIds Blotato (verificados)
-- linkedin_paulo: 25264 · x_paulo: 20492 · instagram: 53650 · linkedin_motion: usa 25264 + pageId 105691334.
+- linkedin_paulo: 25264 · x_paulo_hem y x_paulo_news: 20492 (misma cuenta Twitter, distinto día) · instagram e instagram_newsletter: 53650 · linkedin_motion: usa 25264 + pageId 105691334.
 
 ### Secrets en GitHub (repo motion-content-engine)
 ANTHROPIC_API_KEY · BLOTATO_API_KEY · MEDIA_REPO_TOKEN (fine-grained, Contents:write solo sobre motion-media).
@@ -103,19 +106,19 @@ ANTHROPIC_API_KEY · BLOTATO_API_KEY · MEDIA_REPO_TOKEN (fine-grained, Contents
 ---
 
 ## 5. FLUJO DE TRABAJO SEMANAL
-**Paso 1** (Paulo, 1 clic): Actions → `1-cascada-semanal` → Run → escribir episodio (ej. ep2-1) o vacío.
-**Paso 2** (máquina): Estratega lee CALENDARIO_EDITORIAL.md, Redactor escribe el manifiesto (4 piezas), Diseñador genera JSON de slides. Commit al repo.
-**Paso 3** (Paulo): revisar el manifiesto en el repo. Aprobar o pedir cambios. ← momento de criterio.
-**Paso 4** (Paulo, 1 clic): Actions → `2-motor-completo` → Run → indicar episodio + modo (dry/live). SIEMPRE indicar episodio explícito (no confiar en "más reciente").
-**Paso 5** (máquina): render carrusel → push PNG a motion-media → espera Pages → programa en Blotato.
+**Paso 1** (Paulo, 1 clic): Actions → `1-cascada-semanal` → Run → indicar **fecha** (lunes de la semana, YYYY-MM-DD) + semana editorial (1-8, opcional).
+**Paso 2** (máquina): el equipo lee CALENDARIO_EDITORIAL.md + voz, escribe el manifiesto semanal (6 canales) + newsletter .md + los 2 JSON de slides (HEM + newsletter). Commit al repo.
+**Paso 3** (Paulo): revisar el manifiesto + newsletter en el repo. Aprobar o pedir cambios. ← momento de criterio.
+**Paso 4** (Paulo, 1 clic): Actions → `2-motor-completo` → Run → indicar la **misma fecha** + modo (dry/live).
+**Paso 5** (máquina): render carruseles (HEM + newsletter) → push PNG/PDF a motion-media → espera Pages → programa la semana entera en Blotato (martes/miércoles/jueves).
 **Paso 6** (Paulo): OK final en calendario Blotato. Recién ahí se publica.
 
-Cadencia recomendada: 1 episodio/semana. Combustible: Paulo alimenta Banco de Evidencias + Playbook (1×/mes mínimo) o la rueda se seca en ~4 meses.
+Cadencia: 1 semana = 1 manifiesto = 1 corrida de cada workflow. Combustible: Paulo alimenta evidencias/playbook según haga falta.
 
-### Selección de episodio
-- Salto puntual: escribir el código (ej. ep3-1) al disparar. Override manual.
-- Cambio de plan: editar CALENDARIO_EDITORIAL.md (reordenar filas/estados).
-- Nomenclatura: ep<TESIS>-<TIPO>. Ej: ep3-1 = tesis 3, tipo problema. (-1 problema, -2 método, -3 resultados, -4 conexión.)
+### Selección de semana
+- La **fecha** (lunes) es la clave de todo: nombre de archivos + ancla de programación (publica martes/miércoles/jueves de ESA semana).
+- La **semana editorial** (1-8) define tesis + tipos (ver CALENDARIO_EDITORIAL.md). Vacío = primera "pendiente".
+- Plan: 8 semanas (carousel problema/resultados + newsletter metodo/conexion por semana). Al cerrar la 8, reiniciar el calendario con munición nueva.
 
 ---
 

@@ -1,8 +1,8 @@
 # AGENTE DISEÑADOR — genera el carrusel a partir del MANIFIESTO
-1. Leé el manifiesto más reciente (manifiestos/manifiesto_<ep>.json) y README-kit.md.
-2. Tomá canales.instagram.carrusel (nombre) y carrusel_slides (cantidad).
+1. Leé el manifiesto semanal (manifiestos/manifiesto_<fecha>.json) y README-kit.md. Vos hacés el carrusel HEM (el carrusel newsletter lo hace otro agente).
+2. Tomá canales.instagram.carrusel (nombre, = `<fecha>`) y carrusel_slides (cantidad). El archivo de slides va en design-system/slides/<fecha>_carrusel.json.
 3. ## PLANTILLA ESTRUCTURAL POR TIPO (no solo color)
-Leé "tipo" del manifiesto. Define color (ya lo sabés) Y arquitectura de slides:
+Leé `carousel.tipo` del manifiesto (problema o resultados). Define color (problema=negro · resultados=naranja) Y arquitectura de slides:
 
 - problema  → DOMINANTE: eco vertical. Portada eco/negro (palabra-eje). Interior: contraste binario dolor↔visión. Cierre: la pregunta sola, Futura grande, SIN respuesta. Prohibido número/método.
 - metodo    → DOMINANTE: degradé laminado sobre verbo de acción + esqueleto de lista numerada. Portada violeta (nombre del método). Interior: pasos 1→2→3 (movimiento visible). Cierre: principio condensado.

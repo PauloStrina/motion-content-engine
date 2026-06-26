@@ -2,8 +2,11 @@ name: 1-cascada-semanal
 on:
   workflow_dispatch:
     inputs:
+      fecha:
+        description: "Fecha del LUNES de la semana a publicar (YYYY-MM-DD). Es el nombre del manifiesto y ancla la programación."
+        required: true
       semana:
-        description: "Semana a generar (1-8). Vacío = la primera semana pendiente. Genera los 2 episodios (carousel + newsletter)."
+        description: "Semana editorial (1-8). Vacío = la primera 'pendiente' del calendario. Define tesis + tipos."
         required: false
         default: ""
 permissions:
@@ -24,42 +27,40 @@ jobs:
           show_full_output: true
           prompt: |
             Sos el equipo de contenido de Motion (Estratega + Redactor + Diseñador). Tu trabajo es de CRITERIO, no mecánico.
-            Semana solicitada: "${{ github.event.inputs.semana }}" (si está vacío, tomá la primera semana con estado "pendiente" en CALENDARIO_EDITORIAL.md).
+            FECHA (lunes de la semana): "${{ github.event.inputs.fecha }}" — es la CLAVE del manifiesto y de todos los archivos.
+            Semana editorial: "${{ github.event.inputs.semana }}" (si está vacío, tomá la primera "pendiente" en CALENDARIO_EDITORIAL.md). De ahí salen tesis + tipo del carousel + tipo del newsletter.
 
-            ## MODELO DE 8 SEMANAS — UNA SEMANA = 2 EPISODIOS
-            Cada semana tiene 2 episodios que comparten tesis pero NO ángulo:
-            - Episodio CAROUSEL (tipo problema o resultados, ep n-1 / n-3): canales linkedin_paulo (PDF), instagram (HEM), x_paulo (hilo), linkedin_motion.
-            - Episodio NEWSLETTER (tipo metodo o conexion, ep n-2 / n-4): newsletter .md (manual) + instagram_newsletter (carrusel news) + x_paulo (hilo derivado del newsletter).
-            Mapa: S1=ep1-1+ep1-2 · S2=ep1-3+ep1-4 · S3=ep2-1+ep2-2 · S4=ep2-3+ep2-4 · S5=ep3-1+ep3-2 · S6=ep3-3+ep3-4 · S7=ep4-1+ep4-2 · S8=ep4-3+ep4-4.
+            ## MODELO: 1 MANIFIESTO SEMANAL (todo en un archivo, nombrado por la fecha)
+            La semana tiene 2 contenidos que comparten tesis pero NO ángulo:
+            - CAROUSEL (tipo problema o resultados): canales linkedin_paulo (PDF), instagram (HEM), x_paulo_hem (hilo). Sale martes.
+            - INSTITUCIONAL: linkedin_motion (post que refuerza la tesis). Sale miércoles.
+            - NEWSLETTER (tipo metodo o conexion): newsletter .md (manual) + instagram_newsletter (carrusel news) + x_paulo_news (hilo). Sale jueves.
+            TODOS los canales de Blotato van en UN manifiesto: manifiestos/manifiesto_${{ github.event.inputs.fecha }}.json
 
             ## PASO 0 — CARGAR CONTEXTO (OBLIGATORIO, ANTES DE ESCRIBIR NADA)
-            Leé COMPLETOS y a fondo. No saltees, no leas solo el principio. Son la fuente de la voz y la estrategia:
+            Leé COMPLETOS y a fondo. No saltees, no leas solo el principio:
             - strategy/VOZ_corpus.md  (la voz real de Paulo — el más importante; absorbé ritmo, conectores, cómo baja lo abstracto)
             - strategy/tesis.md       (las 4 tesis + matriz de intención por tipo de mensaje)
             - strategy/voz-motion.md  (Brand Voice Playbook, formato por canal, léxico prohibido)
             - strategy/buyer-persona.md (a quién le hablás)
-            - evidencias/banco.md     (fuente de datos/casos cuando exista; podés usar números/casos cuando aporten — Paulo revisa y aprueba TODO antes de publicar)
-            Si una pieza no suena a Paulo (suena a IA imitándolo), NO está lista: reescribí. Aplicá la auto-crítica de VOZ_corpus.md §5.
+            - evidencias/banco.md     (fuente de datos/casos; podés usar números/casos cuando aporten — Paulo revisa y aprueba TODO antes de publicar)
+            Si una pieza no suena a Paulo, NO está lista: reescribí. Aplicá la auto-crítica de VOZ_corpus.md §5.
 
-            ## GENERACIÓN (los DOS episodios de la semana)
-            Leé scripts/PROMPT_redactor.md, scripts/PROMPT_disenador.md, scripts/PROMPT_newsletter.md y scripts/PROMPT_carrusel_newsletter.md, y seguilos.
+            ## GENERACIÓN (seguí los PROMPTs)
+            Leé scripts/PROMPT_redactor.md, scripts/PROMPT_disenador.md, scripts/PROMPT_newsletter.md y scripts/PROMPT_carrusel_newsletter.md.
+            Usá <fecha> = "${{ github.event.inputs.fecha }}" en TODOS los nombres de archivo.
 
-            Para el EPISODIO CAROUSEL (primero):
-            1. Generá manifiestos/manifiesto_<epCarousel>.json SOLO con canales linkedin_paulo (carrusel PDF), instagram (carrusel), x_paulo (hilo), linkedin_motion. NO incluyas newsletter ni instagram_newsletter.
-            2. Generá design-system/slides/<epCarousel>_carrusel.json (carrusel HEM); la cantidad de slides DEBE coincidir con el manifiesto.
-
-            Para el EPISODIO NEWSLETTER (después, ángulo distinto al carousel):
-            3. Generá manifiestos/manifiesto_<epNewsletter>.json SOLO con canales instagram_newsletter (carrusel news, 8 slides) y x_paulo (hilo derivado del newsletter). NO incluyas linkedin_paulo, instagram HEM ni linkedin_motion.
-            4. Generá newsletters/newsletter_<epNewsletter>.md.
-            5. Generá design-system/slides/<epNewsletter>_news.json (8 slides, carrusel newsletter).
+            1. manifiestos/manifiesto_<fecha>.json — manifiesto semanal con los 6 canales (estructura EXACTA en PROMPT_redactor.md). Incluí fecha_inicio=<fecha>, semana, tesis, carousel.tipo/tema, newsletter.tipo/tema.
+            2. design-system/slides/<fecha>_carrusel.json — carrusel HEM (paleta por carousel.tipo). Cantidad = carrusel_slides del manifiesto.
+            3. newsletters/newsletter_<fecha>.md — el newsletter (Paulo lo publica manual).
+            4. design-system/slides/<fecha>_news.json — carrusel newsletter, 8 slides, "episodio":"<fecha>".
 
             ## REGLAS DE CALIDAD (no negociables)
-            - Test de diferenciación: si el newsletter se pudiera resumir en las slides del carousel de esa semana, falló el ángulo. Reescribí.
-            - No hagas trabajo superficial ni reutilices texto viejo sin repensarlo. Si un episodio ya existe, REGENERÁ aplicando la voz, no retoques cosméticos.
-            - Cada pieza debe cumplir la INTENCIÓN de su tipo (matriz en tesis.md) y pasar la auto-crítica de voz.
-            6. Tras generar los 2 episodios, actualizá el estado de la semana a "generado" en CALENDARIO_EDITORIAL.md.
+            - Test de diferenciación: si el newsletter se pudiera resumir en las slides del carousel, falló el ángulo. Reescribí.
+            - No reutilices texto viejo sin repensarlo. Cada pieza cumple la INTENCIÓN de su tipo (matriz en tesis.md) y pasa la auto-crítica de voz.
+            5. Actualizá el estado de la semana a "generado" en CALENDARIO_EDITORIAL.md.
 
-            Éxito = existen, para el episodio carousel: manifiesto + <ep>_carrusel.json (coinciden en cantidad); para el episodio newsletter: manifiesto + newsletter .md + <ep>_news.json (8 slides).
+            Éxito = existen los 4 archivos con clave <fecha> (manifiesto con 6 canales, <fecha>_carrusel.json que coincide en cantidad, newsletter_<fecha>.md, <fecha>_news.json con 8 slides).
       - name: Commit
         run: |
           git config user.name "motion-engine"; git config user.email "engine@motion.local"

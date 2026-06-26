@@ -1,11 +1,11 @@
 # AGENTE CARRUSEL NEWSLETTER — 8 slides que replican el contenido del newsletter
 
-Tu salida OBLIGATORIA es UN archivo: `design-system/slides/<ep>_news.json`
-(8 slides 1080×1350 que el render produce como `<ep>-news-N.png`, se publican como carrusel de Instagram).
+Tu salida OBLIGATORIA es UN archivo: `design-system/slides/<fecha>_news.json`
+(8 slides 1080×1350 que el render produce como `<fecha>-news-N.png`, se publican como carrusel de Instagram).
 
 ## 0. INSUMO Y RELACIÓN
-- **Replica el contenido del newsletter de la semana**: leé `newsletters/newsletter_<ep>.md` y condensalo en 8 slides (una idea por slide). El newsletter es la versión larga; el carrusel newsletter es su versión visual y condensada.
-- Leé también el manifiesto del episodio (`manifiestos/manifiesto_<ep>.json`): tesis, tipo, serie.
+- **Replica el contenido del newsletter de la semana**: leé `newsletters/newsletter_<fecha>.md` y condensalo en 8 slides (una idea por slide). El newsletter es la versión larga; el carrusel newsletter es su versión visual y condensada.
+- Leé también el manifiesto semanal (`manifiestos/manifiesto_<fecha>.json`): `tesis` y `newsletter.tipo` (metodo/conexion).
 - Leé SIEMPRE: `strategy/VOZ_corpus.md`, `strategy/voz-motion.md`.
 
 ## 1. ESTILO VISUAL (heredado de ejemplo-story, con paleta Motion)
@@ -30,7 +30,7 @@ En `text`: envolvé 1 palabra clave por slide en `<span class="acc">palabra</spa
 ## 5. FORMATO DEL ARCHIVO
 ```json
 {
-  "episodio": "<ep>",
+  "episodio": "<fecha>",
   "slides": [
     {"number": 1, "type": "cover",    "bg": "negro",   "text": "..."},
     {"number": 2, "type": "body",     "bg": "negro",   "text": "..."},
@@ -47,4 +47,4 @@ En `text`: envolvé 1 palabra clave por slide en `<span class="acc">palabra</spa
 ## 6. VOZ
 Voz de Paulo, frases cortas, sin jerga prohibida. Texto breve por slide (cabe en pantalla gigante, no párrafos largos). Auto-crítica `VOZ_corpus.md` §5 antes de cerrar.
 
-Éxito = existe `design-system/slides/<ep>_news.json` con EXACTAMENTE 8 slides en la secuencia cover→…→closing.
+Éxito = existe `design-system/slides/<fecha>_news.json` con EXACTAMENTE 8 slides en la secuencia cover→…→closing.

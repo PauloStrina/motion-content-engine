@@ -3,7 +3,7 @@
 Modos:
   --dry              : no toca Blotato
   --solo <canal>     : un solo canal
-  --episodio <epX-Y> : elige qué episodio publicar (default: el más reciente)
+  --fecha <YYYY-MM-DD>: elige la semana a publicar (default: el manifiesto más reciente)
 Requiere: BLOTATO_API_KEY. accountId/platform/pageid desde config.yaml."""
 import os, sys, json, re, base64, urllib.request, datetime as dt, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -71,13 +71,14 @@ def load_cfg(cfg="config.yaml"):
     return chans
 
 DOW = {"lun":0,"mar":1,"mie":2,"jue":3,"vie":4,"sab":5,"dom":6}
-def fecha(dia, hhmm, buf=48):
-    now = dt.datetime.now(dt.UTC) + dt.timedelta(hours=buf)
-    h,mm = map(int, hhmm.split(":")); d = now
-    for _ in range(8):
-        if d.weekday()==DOW[dia]: break
-        d += dt.timedelta(days=1)
-    return d.replace(hour=h,minute=mm,second=0,microsecond=0).strftime("%Y-%m-%dT%H:%M:%SZ")
+def fecha_en_semana(fecha_inicio_iso, dia, hhmm):
+    """Fecha/hora del 'dia' (mar/mie/jue) en la semana de fecha_inicio_iso.
+    Normaliza al lunes de esa semana ISO, así sirve cualquier día que ponga Paulo."""
+    base = dt.date.fromisoformat(fecha_inicio_iso)
+    lunes = base - dt.timedelta(days=base.weekday())
+    target = lunes + dt.timedelta(days=DOW[dia])
+    h,mm = map(int, hhmm.split(":"))
+    return dt.datetime(target.year,target.month,target.day,h,mm).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 def _programar_raw(account, platform, text, when, media=None, hilo=None, page_id=None, name=None):
     target = {"targetType": platform}
@@ -88,20 +89,21 @@ def _programar_raw(account, platform, text, when, media=None, hilo=None, page_id
     r = _post("/posts", {"post":post,"scheduledTime":when})
     _validar(r); return r
 
-# El día depende del FORMATO del episodio (modelo 8 semanas):
-# carousel → Martes · linkedin_motion → Miércoles · newsletter → Jueves
-HORARIOS_CAROUSEL = {"linkedin_paulo":("mar","09:00"),"instagram":("mar","12:00"),"x_paulo":("mar","08:30")}
-HORARIOS_NEWSLETTER = {"instagram_newsletter":("jue","12:00"),"x_paulo":("jue","08:30")}
-def horario(canal, tipo):
-    if canal == "linkedin_motion": return ("mie","11:00")
-    if M.formato(tipo) == "newsletter": return HORARIOS_NEWSLETTER.get(canal, ("jue","12:00"))
-    return HORARIOS_CAROUSEL.get(canal, ("mar","09:00"))
+# Día y hora fijos por canal dentro de la semana (martes carousel · miércoles motion · jueves newsletter)
+CANAL_SCHEDULE = {
+    "linkedin_paulo":       ("mar","09:00"),
+    "instagram":            ("mar","12:00"),
+    "x_paulo_hem":          ("mar","08:30"),
+    "linkedin_motion":      ("mie","11:00"),
+    "instagram_newsletter": ("jue","12:00"),
+    "x_paulo_news":         ("jue","08:30"),
+}
 
 def publicar(m, cfg, solo=None):
     fallos = []
     media_base = os.environ.get("MEDIA_BASE","https://ops-motionco.github.io/motion-media/carruseles")
     stamp = dt.datetime.now(dt.UTC).strftime("%Y%m%d-%H%M")
-    run_name = f"{m['episodio']}_{stamp}"
+    run_name = f"{m['fecha_inicio']}_{stamp}"
     for canal in M.CANALES:
         if solo and canal!=solo: continue
         p = M.pieza(m, canal)
@@ -109,7 +111,7 @@ def publicar(m, cfg, solo=None):
         if canal not in cfg: print(f"  ⏭  {canal}: sin config"); continue
         acc, plat = cfg[canal]["account"], cfg[canal]["platform"]
         if acc in ("PENDIENTE",""): print(f"  ⏭  {canal}: accountId PENDIENTE"); continue
-        dia,hora = horario(canal, m.get("tipo","")); when = fecha(dia,hora); fmt = p["formato"]
+        dia,hora = CANAL_SCHEDULE.get(canal,("mar","09:00")); when = fecha_en_semana(m["fecha_inicio"],dia,hora); fmt = p["formato"]
         print(f"\n▶ {canal} ({plat}, acc {acc}) → {when}")
         try:
             if fmt=="post":
@@ -146,18 +148,18 @@ def publicar(m, cfg, solo=None):
 if __name__ == "__main__":
     solo = None
     if "--solo" in sys.argv: solo = sys.argv[sys.argv.index("--solo")+1]
-    # SELECCIÓN DE EPISODIO: --episodio epX-Y, o el más reciente por defecto
-    if "--episodio" in sys.argv:
-        ep = sys.argv[sys.argv.index("--episodio")+1]
-        try: m = M.leer(ep)
-        except Exception: print(f"No existe manifiesto para {ep}"); sys.exit(1)
+    # SELECCIÓN DE SEMANA: --fecha YYYY-MM-DD (lunes), o el manifiesto más reciente por defecto
+    if "--fecha" in sys.argv:
+        clave = sys.argv[sys.argv.index("--fecha")+1]
+        try: m = M.leer(clave)
+        except Exception: print(f"No existe manifiesto para {clave}"); sys.exit(1)
     else:
         m = M.mas_reciente()
     if not m: print("No hay manifiesto."); sys.exit(0)
     errs = M.validar(m)
     if errs: print("Manifiesto inválido:", errs); sys.exit(1)
     cfg = load_cfg()
-    print(f"Publicador — {'DRY' if DRY else 'LIVE'} — episodio {m['episodio']}")
+    print(f"Publicador — {'DRY' if DRY else 'LIVE'} — semana {m['fecha_inicio']}")
     print("Modo revisión: todo PROGRAMADO y editable en https://my.blotato.com/queue/calendar")
     fallos = publicar(m, cfg, solo)
     if fallos:

@@ -1,10 +1,10 @@
 # AGENTE NEWSLETTER — escribe la edición de "Lo complejo, simple"
 
-Tu salida OBLIGATORIA es UN archivo: `newsletters/newsletter_<ep>.md`
+Tu salida OBLIGATORIA es UN archivo: `newsletters/newsletter_<fecha>.md`
 (título + cuerpo, listo para que Paulo lo copie/pegue manualmente en LinkedIn Newsletter — Blotato NO lo publica).
 
 ## 0. INSUMO
-- Leé el manifiesto del episodio de la semana (`manifiestos/manifiesto_<ep>.json`): tesis, tipo, serie.
+- Leé el manifiesto semanal (`manifiestos/manifiesto_<fecha>.json`): `tesis` y `newsletter.tipo` (metodo/conexion) + `newsletter.tema`.
 - **Por defecto, el newsletter PROFUNDIZA el mismo tema del episodio HEM de esa semana** (misma tesis, mismo tipo de mensaje), pero en formato largo y editorial. No es un resumen del carrusel: es el capítulo profundo. *(Si Paulo indica otro tema, seguí esa instrucción.)*
 - Leé SIEMPRE antes de escribir: `strategy/VOZ_corpus.md` (voz de Paulo), `strategy/voz-motion.md`, `strategy/tesis.md`, `strategy/buyer-persona.md`, `evidencias/banco.md`.
 
@@ -47,4 +47,4 @@ Esqueleto maestro (de `voz-motion.md` §7):
 *Lo complejo, simple — MOTION*
 ```
 
-Éxito = existe `newsletters/newsletter_<ep>.md` con título claro + artículo que cumple el ángulo (equipa, no persuade) y la estructura.
+Éxito = existe `newsletters/newsletter_<fecha>.md` con título claro + artículo que cumple el ángulo (equipa, no persuade) y la estructura.
