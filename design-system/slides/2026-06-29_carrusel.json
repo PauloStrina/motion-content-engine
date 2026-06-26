@@ -2,70 +2,59 @@
   "episodio": "2026-06-29",
   "slides": [
     {
-      "bg": "negro",
-      "eyebrow_color": "naranja",
-      "pager": "01 / 07",
+      "bg": "naranja", "eyebrow_color": "negro", "pager": "01 — 08",
       "blocks": [
-        {"type": "eco", "text": "CAMBIO", "size": 230, "color": "blanco", "n": 3},
-        {"type": "spacer", "h": 28},
-        {"type": "futura", "text": "no es transformación.", "size": 56, "color": "naranja"}
+        {"type": "futura", "text": "Pidió un tablero.", "size": 96, "color": "negro", "mb": 18},
+        {"type": "lam", "text": "Encontró una organización entera.", "size": 64, "color": "blanco"}
       ]
     },
     {
-      "bg": "negro",
-      "eyebrow_color": "aqua",
-      "pager": "02 / 07",
+      "bg": "negro", "eyebrow_color": "naranja", "pager": "02 — 08",
       "blocks": [
-        {"type": "futura", "text": "Hiciste todos los cambios posibles.", "size": 70, "color": "blanco", "mb": 22},
-        {"type": "futura", "text": "Y algo, en el fondo, sigue igual.", "size": 70, "color": "aqua"}
+        {"type": "lyon", "text": "Un área necesitaba ver sus números.", "size": 52, "color": "blanco", "mb": 36},
+        {"type": "lyont", "text": "La solución parecía simple.", "size": 46, "color": "aqua"}
       ]
     },
     {
-      "bg": "negro",
-      "eyebrow_color": "naranja",
-      "pager": "03 / 07",
+      "bg": "negro", "eyebrow_color": "naranja", "pager": "03 — 08",
       "blocks": [
-        {"type": "futura", "text": "Cambiás para que", "size": 58, "color": "blanco", "mb": 8},
-        {"type": "lam", "text": "deje de doler", "size": 104, "color": "blanco"}
+        {"type": "futura", "text": "Al construirlo, los datos no cerraban.", "size": 58, "color": "blanco", "mb": 16},
+        {"type": "lam", "text": "Se cargaban mal desde el origen.", "size": 60, "color": "naranja"}
       ]
     },
     {
-      "bg": "aqua",
-      "eyebrow_color": "violeta",
-      "pager": "04 / 07",
+      "bg": "violeta", "eyebrow_color": "aqua", "pager": "04 — 08",
       "blocks": [
-        {"type": "futura", "text": "Te transformás para", "size": 58, "color": "negro", "mb": 8},
-        {"type": "lam", "text": "alcanzar una visión", "size": 100, "color": "violeta"}
+        {"type": "futura", "text": "Arreglar los datos destapó los procesos.", "size": 58, "color": "blanco", "mb": 16},
+        {"type": "lam", "text": "Cada uno hacía las cosas a su modo.", "size": 60, "color": "aqua"}
       ]
     },
     {
-      "bg": "negro",
-      "eyebrow_color": "naranja",
-      "pager": "05 / 07",
+      "bg": "negro", "eyebrow_color": "naranja", "pager": "05 — 08",
       "blocks": [
-        {"type": "futura", "text": "Por eso podés", "size": 58, "color": "blanco", "mb": 8},
-        {"type": "futura", "text": "cambiar mil veces", "size": 84, "color": "blanco", "mb": 14},
-        {"type": "lam", "text": "y no transformarte nunca", "size": 74, "color": "naranja"}
+        {"type": "futura", "text": "Y abajo de todo, lo de fondo:", "size": 58, "color": "blanco", "mb": 16},
+        {"type": "lam", "text": "ninguna costumbre de adaptarse al cambio.", "size": 60, "color": "naranja"}
       ]
     },
     {
-      "bg": "blanco",
-      "eyebrow_color": "violeta",
-      "pager": "06 / 07",
+      "bg": "blanco", "eyebrow_color": "violeta", "pager": "06 — 08",
       "blocks": [
-        {"type": "lyon", "text": "Comprar tecnología esperando transformarte es como cambiar el auto para escapar del tráfico.", "size": 62, "color": "negro", "lh2": 1.22, "mb": 26},
-        {"type": "lyont", "text": "El problema no es el vehículo. Es el sistema.", "size": 40, "color": "violeta"}
+        {"type": "lyon", "text": "Como una cebolla:", "size": 66, "color": "negro", "mb": 28},
+        {"type": "lyont", "text": "cada capa que abrís muestra la siguiente.", "size": 44, "color": "violeta"}
       ]
     },
     {
-      "bg": "negro",
-      "eyebrow_color": "naranja",
-      "pager": "07 / 07",
-      "foot": "Lo único permanente es el movimiento",
-      "foot_color": "naranja",
+      "bg": "aqua", "eyebrow_color": "violeta", "pager": "07 — 08",
       "blocks": [
-        {"type": "futura", "text": "¿Buscás un cambio", "size": 88, "color": "blanco", "mb": 10},
-        {"type": "lam", "text": "o una transformación?", "size": 88, "color": "naranja"}
+        {"type": "futura", "text": "No terminó en un tablero.", "size": 70, "color": "negro", "mb": 16},
+        {"type": "lam", "text": "Empezó un programa de transformación.", "size": 66, "color": "violeta"}
+      ]
+    },
+    {
+      "bg": "naranja", "eyebrow_color": "negro", "pager": "08 — 08", "foot": "Lo único permanente<br>es el movimiento", "foot_color": "negro",
+      "blocks": [
+        {"type": "futura", "text": "Pidió un cambio.", "size": 96, "color": "negro", "mb": 14},
+        {"type": "lam", "text": "Encontró su transformación.", "size": 88, "color": "blanco"}
       ]
     }
   ]

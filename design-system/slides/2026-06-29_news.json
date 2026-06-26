@@ -1,13 +1,13 @@
 {
-  "episodio": "2026-06-29",
+  "episodio": "2026-06-29-news",
   "slides": [
-    {"number": 1, "type": "cover",    "bg": "negro",   "text": "Cambio o transformación:<br>cómo <span class=\"acc\">saberlo</span>"},
-    {"number": 2, "type": "body",     "bg": "negro",   "text": "Invertiste, resolviste el dolor, y seis meses después la organización opera <span class=\"acc\">igual</span> que antes."},
-    {"number": 3, "type": "body",     "bg": "negro",   "text": "No falló la tecnología.<br>Faltó el <span class=\"acc\">método</span> para saber qué estabas resolviendo."},
-    {"number": 4, "type": "body",     "bg": "aqua",    "text": "Si lo que te mueve es algo que <span class=\"acc\">molesta</span>, estás resolviendo un cambio."},
-    {"number": 5, "type": "question", "bg": "naranja", "text": "Pidió un tablero. El problema estaba tres capas más <span class=\"acc\">abajo</span>: datos, procesos, cultura."},
-    {"number": 6, "type": "body",     "bg": "violeta", "text": "Si lo que te mueve es una <span class=\"acc\">visión</span>, no alcanza con comprar: hay que transformar de raíz."},
-    {"number": 7, "type": "body",     "bg": "violeta", "text": "No se gestiona el cambio.<br>Se diseña la organización para <span class=\"acc\">vivir en cambio</span>."},
-    {"number": 8, "type": "closing",  "bg": "negro",   "text": "La diferencia no es un misterio.<br>Es una pregunta que se puede <span class=\"acc\">diagnosticar</span>."}
+    {"number": 1, "type": "cover",    "bg": "negro",   "text": "Por qué elijo a los clientes que llegan <span class=\"acc\">incómodos</span>"},
+    {"number": 2, "type": "body",     "bg": "negro",   "text": "Unos llegan tranquilos.<br>A los <span class=\"acc\">incómodos</span> aprendí a preferirlos."},
+    {"number": 3, "type": "body",     "bg": "negro",   "text": "El tranquilo compra una solución y cierra el tema. Es un <span class=\"acc\">cambio</span>."},
+    {"number": 4, "type": "body",     "bg": "aqua",    "text": "El incómodo ya cambió mil veces y siente que nada se <span class=\"acc\">transformó</span>."},
+    {"number": 5, "type": "question", "bg": "naranja", "text": "¿Y si esa incomodidad no fuera un problema, sino <span class=\"acc\">lucidez</span>?"},
+    {"number": 6, "type": "body",     "bg": "violeta", "text": "No hay que convencerlo de transformarse.<br>Ya lo trae <span class=\"acc\">puesto</span>."},
+    {"number": 7, "type": "body",     "bg": "violeta", "text": "Lo que le falta no es visión.<br>Es <span class=\"acc\">método</span>."},
+    {"number": 8, "type": "closing",  "bg": "negro",   "text": "No vendo una visión.<br>Ayudo a materializar la <span class=\"acc\">tuya</span>."}
   ]
 }
