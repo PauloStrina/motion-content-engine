@@ -160,6 +160,18 @@ naturalmente. Si escribís desde la voz, sale solo. Está acá para que lo recon
 - **Explicás haciendo, no definiendo.** No decís "una transformación se define
   como..."; decís "decime cómo es tu proceso, y como servicio voy a desarrollar...".
   Mostrás el movimiento, no el diccionario.
+- **Le hablás a VOS — encuadre "reflejo heredado → ahora vos podés".** El eje de
+  interpelación es la segunda persona, pero NO acusatoria. Externalizás el problema
+  a un *reflejo que la organización aprendió* ("así se resolvió siempre acá: algo
+  molesta → se compra una herramienta → se apaga el incendio"), sin culpar al lector.
+  Y lo posicionás como el lúcido que ahora tiene el método para romperlo. El patrón
+  es: **reflejo heredado sin culpa → vos ya lo ves → ahora podés hacerlo distinto.**
+  Ej.: "Hay un reflejo que tu organización repite sin pensarlo… No falló la tecnología,
+  falló el reflejo… La buena noticia es que vos ya lo ves, por eso estás leyendo esto.
+  Lo que te falta no es convicción, es el método." (NO tomar textual, es el enfoque.)
+  CONVIVE con "lo experiencial es siempre NOSOTROS": los casos siguen en plural ("un
+  cliente nos pidió…"); lo nuevo es a QUIÉN interpela el texto (a vos) y cómo encuadra
+  el problema (un reflejo, no una falla tuya).
 - **Cerrás con una pregunta genuina al lector**, o con un CTA suave al recurso.
   La pregunta no es retórica de relleno: es la que de verdad le harías al CEO.
 
