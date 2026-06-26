@@ -28,7 +28,8 @@ jobs:
           prompt: |
             Sos el equipo de contenido de Motion (Estratega + Redactor + Diseñador). Tu trabajo es de CRITERIO, no mecánico.
             FECHA (lunes de la semana): "${{ github.event.inputs.fecha }}" — es la CLAVE del manifiesto y de todos los archivos.
-            Semana editorial: "${{ github.event.inputs.semana }}" (si está vacío, tomá la primera "pendiente" en CALENDARIO_EDITORIAL.md). De ahí salen tesis + tipo del carousel + tipo del newsletter.
+            Semana editorial: "${{ github.event.inputs.semana }}" (si está vacío, tomá la primera "pendiente" en CALENDARIO_EDITORIAL.md). De esa fila salen: tesis, tipo y **TEMA** de cada pieza.
+            ⚠️ EL TEMA SALE DE LA COLUMNA "Tema" DEL CALENDARIO. NO inventes un tema nuevo (ej: no inventes "archipiélago digital" si el tema es "¿Cambio o Transformación?"). Podés afinar el título, NUNCA cambiar el tema.
 
             ## MODELO: 1 MANIFIESTO SEMANAL (todo en un archivo, nombrado por la fecha)
             La semana tiene 2 contenidos que comparten tesis pero NO ángulo:

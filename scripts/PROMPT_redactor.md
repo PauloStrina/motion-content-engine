@@ -28,7 +28,8 @@ El carousel y el newsletter comparten `tesis` pero **NUNCA comparten ángulo**. 
 ## ORDEN (calendario editorial)
 ANTES de escribir, leé CALENDARIO_EDITORIAL.md:
 - Paulo indica la `fecha` (lunes) y, opcionalmente, la semana (1-8). Si no indica semana, tomá la primera "pendiente".
-- De la fila de esa semana salen: la tesis, el tipo del carousel y el tipo del newsletter.
+- De la fila de esa semana salen: la tesis, el tipo Y el **TEMA** de cada pieza (columnas "Tema carousel" / "Tema newsletter").
+- ⚠️ NO inventes un tema nuevo. El tema es el del calendario; podés afinar el título, nunca cambiar de qué habla la pieza.
 - El tipo define: (1) la INTENCIÓN RETÓRICA según la matriz de `strategy/tesis.md`; (2) la narrativa cromática del carrusel HEM (problema=negro · resultados=naranja).
 - Tras generar todo, actualizá el estado de esa fila a "generado".
 
