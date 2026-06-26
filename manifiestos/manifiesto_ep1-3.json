@@ -1,0 +1,43 @@
+{
+  "episodio": "ep1-3",
+  "serie": "La diferencia que lo define todo",
+  "tesis": "Cambio ≠ Transformación",
+  "tipo": "resultados",
+  "estado": "borrador_para_aprobacion",
+  "canales": {
+    "linkedin_paulo": {
+      "activo": true,
+      "formato": "carrusel",
+      "texto": "Pidió un tablero. Encontró una transformación.\n\nUna organización nos pidió algo concreto: un Power BI para un área. Al construirlo, abajo aparecieron los datos cargados mal. Abajo de los datos, los procesos desordenados. Y abajo de todo, una cultura que no sostenía nada de eso. De ese pedido chico terminó naciendo un programa entero. Te cuento cómo en este carrusel.\n\n#HistoriasEnMovimiento es una serie de casos que vemos en el día a día de Motion. No fake, no IA.\nSi te resuena, me gustaría leerte en comentarios. Que LinkedIn sea una red de networking, no una vidriera para el ego.",
+      "carrusel": "ep1-3",
+      "carrusel_slides": 8
+    },
+    "instagram": {
+      "activo": true,
+      "formato": "carrusel",
+      "caption": "Pidió un tablero. Encontró una transformación.\n#HistoriasEnMovimiento: casos reales de nuestro día a día. No fake, no IA.\n\nEmpezó por un Power BI para un área. Terminó en un programa que tocó datos, procesos y cultura. El efecto cebolla.\n\n#HistoriasEnMovimiento #TransformaciónDigital",
+      "carrusel": "ep1-3",
+      "carrusel_slides": 8
+    },
+    "x_paulo": {
+      "activo": true,
+      "formato": "hilo",
+      "hilo": [
+        "Pidió un tablero. Encontró una transformación. 🧵\n#HistoriasEnMovimiento — casos reales de Motion. No fake, no IA.",
+        "Una organización nos pidió un tablero de Power BI para un área. Un pedido de manual: acotado, con fecha, un cambio puntual. Lo tomamos así.",
+        "Al construirlo, lo primero que apareció no fue un gráfico: fueron datos cargados mal. Y ningún tablero salva datos que no son confiables.",
+        "Fuimos a los datos y abajo estaban los procesos, desordenados. Por eso los datos salían mal. Cada capa que corregíamos dejaba a la vista la siguiente.",
+        "Ordenamos los procesos y quedó la última capa, la de siempre: no había una cultura que sostuviera nada de eso. Ahí el tablero ya era otra cosa.",
+        "Pidió un cambio; encontró su transformación. De ese tablero nació un programa que conectó datos, procesos y cultura. El cliente lo resumió así: «sucedió alguna magia».",
+        "No fue magia, fue método. La diferencia nunca estuvo en la herramienta: estuvo en mirar debajo del pedido. A eso, sostenido en el tiempo, lo llamamos Transformación Continua."
+      ]
+    },
+    "linkedin_motion": {
+      "activo": true,
+      "formato": "post",
+      "texto": "«Necesitamos un tablero.» Así arrancó uno de los proyectos que mejor explican cómo trabajamos.\n\nEra un pedido legítimo: un Power BI para un área, acotado y con fecha. Pero nuestro método no empieza instalando la herramienta, empieza mirando debajo del pedido. Y debajo apareció una secuencia que vemos seguido: los datos estaban mal registrados, los procesos que los generaban estaban desordenados, y no existía una cultura de adaptación que sostuviera el conjunto.\n\nCada capa que ordenábamos dejaba a la vista la siguiente. A eso le decimos el efecto cebolla. De un tablero nació un programa integral que conectó datos, procesos y cultura, los tres a la vez, porque ninguno se mueve solo.\n\nEl cliente lo llamó magia. Para nosotros fue método: la organización pidió un cambio y encontró su transformación. Diseñar la organización para vivir en cambio, en lugar de resolver un pedido aislado, es lo que llamamos Transformación Continua®.\n\n#TransformaciónContinua",
+      "carrusel": "ep1-3",
+      "carrusel_slides": 8
+    }
+  }
+}

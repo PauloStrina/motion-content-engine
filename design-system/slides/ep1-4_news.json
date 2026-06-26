@@ -1,0 +1,53 @@
+{
+  "episodio": "ep1-4",
+  "slides": [
+    {
+      "number": 1,
+      "type": "cover",
+      "bg": "negro",
+      "text": "Por qué preferimos trabajar con líderes <span class=\"acc\">incómodos</span>."
+    },
+    {
+      "number": 2,
+      "type": "body",
+      "bg": "negro",
+      "text": "Llegan diciendo lo mismo: hicimos un montón de cosas y, en el fondo, nada se <span class=\"acc\">transformó</span>."
+    },
+    {
+      "number": 3,
+      "type": "body",
+      "bg": "negro",
+      "text": "Y lo dicen con culpa. Como si esa sensación fuera una falla suya. Es al <span class=\"acc\">revés</span>."
+    },
+    {
+      "number": 4,
+      "type": "body",
+      "bg": "aqua",
+      "text": "Esa incomodidad no es un problema. Es <span class=\"acc\">lucidez</span>: ya ves lo que falta transformar."
+    },
+    {
+      "number": 5,
+      "type": "question",
+      "bg": "naranja",
+      "text": "¿Cuántas veces te <span class=\"acc\">sorprendió</span> alguien de tu equipo?"
+    },
+    {
+      "number": 6,
+      "type": "body",
+      "bg": "violeta",
+      "text": "No se transforma desde el miedo. Se transforma desde la <span class=\"acc\">posibilidad</span>."
+    },
+    {
+      "number": 7,
+      "type": "body",
+      "bg": "aqua",
+      "text": "Por eso elegimos a quienes buscan transformarse, no a quienes buscan <span class=\"acc\">cambiar</span>."
+    },
+    {
+      "number": 8,
+      "type": "closing",
+      "bg": "negro",
+      "text": "¿Reconocés esa incomodidad? No es una falla. Es tu mejor punto de <span class=\"acc\">partida</span>."
+    }
+  ]
+}

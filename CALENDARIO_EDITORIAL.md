@@ -11,7 +11,7 @@
 | Semana | Tesis | Carousel (tipo) | Newsletter (tipo) | Estado |
 |--------|-------|-----------------|-------------------|--------|
 | 1 | T1 Cambio ≠ Transformación | ep1-1 Problema   | ep1-2 Método    | generado |
-| 2 | T1 Cambio ≠ Transformación | ep1-3 Resultados | ep1-4 Conexión  | pendiente |
+| 2 | T1 Cambio ≠ Transformación | ep1-3 Resultados | ep1-4 Conexión  | generado |
 | 3 | T2 Cultura = sistema operativo | ep2-1 Problema   | ep2-2 Método    | pendiente |
 | 4 | T2 Cultura = sistema operativo | ep2-3 Resultados | ep2-4 Conexión  | pendiente |
 | 5 | T3 Transformación Continua®    | ep3-1 Problema   | ep3-2 Método    | pendiente |

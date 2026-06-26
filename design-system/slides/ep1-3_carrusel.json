@@ -1,8 +1,8 @@
 {
-  "episodio": "1.3 — El efecto cebolla",
+  "episodio": "ep1-3 — El efecto cebolla",
   "slides": [
     {
-      "bg": "naranja", "eyebrow": "Serie · La diferencia que lo define todo", "eyebrow_color": "negro", "pager": "01 — 07",
+      "bg": "naranja", "eyebrow_color": "negro", "pager": "01 — 08",
       "blocks": [
         {"type": "futura", "text": "PIDIÓ UN TABLERO.", "size": 104, "lh": 100, "color": "negro"},
         {"type": "lam", "text": "ENCONTRÓ ALGO MÁS.", "size": 92, "color": "blanco"},
@@ -11,54 +11,63 @@
       ]
     },
     {
-      "bg": "negro", "eyebrow": "El pedido", "eyebrow_color": "naranja", "pager": "02 — 07",
+      "bg": "negro", "eyebrow_color": "naranja", "pager": "02 — 08",
       "blocks": [
         {"type": "lyon", "text": "El pedido era simple:", "size": 52, "color": "blanco", "mb": 36},
         {"type": "eco", "text": "UN TABLERO", "size": 150, "color": "naranja"},
-        {"type": "lyont", "text": "Un Power BI para un área.<br>Nada más.", "size": 40, "color": "aqua", "mt": 48}
+        {"type": "lyont", "text": "Un Power BI para un área.<br>Un cambio acotado, con fecha.", "size": 40, "color": "aqua", "mt": 48}
       ]
     },
     {
-      "bg": "negro", "eyebrow": "Capa 1 · Datos", "eyebrow_color": "naranja", "pager": "03 — 07",
+      "bg": "negro", "eyebrow_color": "naranja", "pager": "03 — 08",
       "blocks": [
-        {"type": "lyon", "text": "Al construirlo, lo primero:", "size": 52, "color": "blanco", "mb": 30},
+        {"type": "lyon", "text": "Al construirlo, lo primero<br>que apareció:", "size": 50, "color": "blanco", "mb": 30},
         {"type": "futura", "text": "DATOS MAL", "size": 112, "lh": 106, "color": "blanco"},
         {"type": "lam", "text": "REGISTRADOS.", "size": 112, "color": "naranja"},
         {"type": "lyont", "text": "Ningún tablero salva datos<br>que no son confiables.", "size": 40, "color": "aqua", "mt": 46}
       ]
     },
     {
-      "bg": "negro", "eyebrow": "Capa 2 · Procesos", "eyebrow_color": "naranja", "pager": "04 — 07",
+      "bg": "negro", "eyebrow_color": "naranja", "pager": "04 — 08",
       "blocks": [
-        {"type": "lyon", "text": "Fuimos a los datos<br>y el problema estaba debajo:", "size": 50, "color": "blanco", "mb": 30},
-        {"type": "lam", "text": "LOS PROCESOS.", "size": 132, "color": "naranja"},
-        {"type": "lyont", "text": "Desordenados.<br>Por eso los datos fallaban.", "size": 40, "color": "aqua", "mt": 48}
+        {"type": "lyon", "text": "Fuimos a los datos<br>y abajo estaba la causa:", "size": 50, "color": "blanco", "mb": 30},
+        {"type": "lam", "text": "LOS PROCESOS.", "size": 130, "color": "naranja"},
+        {"type": "lyont", "text": "Desordenados.<br>Por eso los datos salían mal.", "size": 40, "color": "aqua", "mt": 48}
       ]
     },
     {
-      "bg": "violeta", "eyebrow": "Capa 3 · Cultura", "eyebrow_color": "aqua", "pager": "05 — 07",
+      "bg": "violeta", "eyebrow_color": "aqua", "pager": "05 — 08",
       "blocks": [
-        {"type": "lyon", "text": "Ordenamos los procesos<br>y apareció la última capa:", "size": 50, "color": "blanco", "mb": 30},
+        {"type": "lyon", "text": "Ordenamos los procesos<br>y quedó la última capa:", "size": 50, "color": "blanco", "mb": 30},
         {"type": "eco", "text": "CULTURA", "size": 168, "color": "aqua"},
         {"type": "lyont", "text": "Nada sostiene el orden sin<br>una cultura que lo viva.", "size": 40, "color": "blanco", "mt": 48}
       ]
     },
     {
-      "bg": "aqua", "eyebrow": "El efecto cebolla", "eyebrow_color": "violeta", "pager": "06 — 07",
+      "bg": "aqua", "eyebrow_color": "violeta", "pager": "06 — 08",
       "blocks": [
-        {"type": "lyon", "text": "Cada capa que corregís<br>deja a la vista la siguiente.", "size": 50, "color": "negro", "mb": 34},
-        {"type": "futura", "text": "PIDIÓ UN CAMBIO.", "size": 90, "lh": 86, "color": "negro"},
-        {"type": "lam", "text": "ENCONTRÓ SU TRANSFORMACIÓN.", "size": 70, "color": "violeta"},
-        {"type": "lyont", "text": "Un programa que conectó<br>datos, procesos y cultura.", "size": 40, "color": "negro", "mt": 46}
+        {"type": "lyon", "text": "Lo llamamos el efecto cebolla:", "size": 50, "color": "negro", "mb": 22},
+        {"type": "futura", "text": "CADA CAPA QUE CORREGÍS", "size": 74, "lh": 72, "color": "negro"},
+        {"type": "lam", "text": "DEJA VER LA SIGUIENTE.", "size": 74, "color": "violeta"},
+        {"type": "lyont", "text": "El tablero, los datos, los<br>procesos, la cultura.", "size": 40, "color": "negro", "mt": 46}
       ]
     },
     {
-      "bg": "negro", "pager": "07 — 07", "foot": "#LoComplejoSimple", "foot_color": "naranja",
+      "bg": "naranja", "eyebrow_color": "negro", "pager": "07 — 08",
       "blocks": [
-        {"type": "lyon", "text": "El cliente lo resumió así:<br>«sucedió alguna magia».", "size": 46, "color": "blanco", "mb": 36},
-        {"type": "futura", "text": "NO FUE MAGIA.", "size": 100, "lh": 96, "color": "blanco"},
-        {"type": "lam", "text": "FUE MÉTODO.", "size": 124, "color": "naranja"},
-        {"type": "lyon", "text": "Transformación Continua® — seguí la serie.", "size": 42, "color": "aqua", "mb": 0, "mt": 54}
+        {"type": "lyon", "text": "El cliente lo llamó magia.", "size": 50, "color": "negro", "mb": 14},
+        {"type": "lyon", "text": "Para nosotros fue otra cosa:", "size": 50, "color": "negro", "mb": 42},
+        {"type": "futura", "text": "NO FUE MAGIA.", "size": 104, "lh": 98, "color": "negro"},
+        {"type": "lam", "text": "FUE MÉTODO.", "size": 124, "color": "blanco"}
+      ]
+    },
+    {
+      "bg": "negro", "eyebrow_color": "aqua", "pager": "08 — 08", "foot": "Lo único permanente<br>es el movimiento", "foot_color": "naranja",
+      "blocks": [
+        {"type": "lyon", "text": "El tablero era el pedido.", "size": 50, "color": "blanco", "mb": 44},
+        {"type": "futura", "text": "LA TRANSFORMACIÓN", "size": 78, "lh": 82, "color": "blanco"},
+        {"type": "lam", "text": "ERA LA NECESIDAD.", "size": 78, "color": "naranja"},
+        {"type": "lyon", "text": "Transformación Continua® — seguí la serie.", "size": 42, "color": "aqua", "mt": 54}
       ]
     }
   ]
