@@ -1,13 +1,13 @@
 {
   "episodio": "2026-06-29-news",
   "slides": [
-    {"number": 1, "type": "cover",    "bg": "negro",   "text": "Por qué elijo a los clientes que llegan <span class=\"acc\">incómodos</span>"},
-    {"number": 2, "type": "body",     "bg": "negro",   "text": "Unos llegan tranquilos.<br>A los <span class=\"acc\">incómodos</span> aprendí a preferirlos."},
-    {"number": 3, "type": "body",     "bg": "negro",   "text": "El tranquilo compra una solución y cierra el tema. Es un <span class=\"acc\">cambio</span>."},
-    {"number": 4, "type": "body",     "bg": "aqua",    "text": "El incómodo ya cambió mil veces y siente que nada se <span class=\"acc\">transformó</span>."},
-    {"number": 5, "type": "question", "bg": "naranja", "text": "¿Y si esa incomodidad no fuera un problema, sino <span class=\"acc\">lucidez</span>?"},
-    {"number": 6, "type": "body",     "bg": "violeta", "text": "No hay que convencerlo de transformarse.<br>Ya lo trae <span class=\"acc\">puesto</span>."},
-    {"number": 7, "type": "body",     "bg": "violeta", "text": "Lo que le falta no es visión.<br>Es <span class=\"acc\">método</span>."},
-    {"number": 8, "type": "closing",  "bg": "negro",   "text": "No vendo una visión.<br>Ayudo a materializar la <span class=\"acc\">tuya</span>."}
+    {"number": 1, "type": "cover",    "bg": "negro",   "text": "¿Tu organización busca un <span class=\"acc\">cambio</span> o una transformación?"},
+    {"number": 2, "type": "body",     "bg": "negro",   "text": "Las dos palabras se usan igual.<br>Y no son lo <span class=\"acc\">mismo</span>."},
+    {"number": 3, "type": "body",     "bg": "negro",   "text": "Confundirlas es por qué tanta inversión no <span class=\"acc\">transforma</span> nada."},
+    {"number": 4, "type": "body",     "bg": "aqua",    "text": "El cambio nace de un dolor.<br>Pide una <span class=\"acc\">herramienta</span>."},
+    {"number": 5, "type": "question", "bg": "naranja", "text": "¿Lo que traés es un apuro,<br>o una <span class=\"acc\">visión</span>?"},
+    {"number": 6, "type": "body",     "bg": "violeta", "text": "Por eso no empezamos comprando.<br>Empezamos <span class=\"acc\">diagnosticando</span>."},
+    {"number": 7, "type": "body",     "bg": "violeta", "text": "Antes de cada solución, una pregunta: ¿esto integra o solo <span class=\"acc\">parcha</span>?"},
+    {"number": 8, "type": "closing",  "bg": "negro",   "text": "No te falta visión.<br>Te falta el <span class=\"acc\">método</span>."}
   ]
 }
