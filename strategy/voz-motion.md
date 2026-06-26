@@ -67,6 +67,8 @@ Regla: una misma idea puede publicarse en los tres emisores, pero **nunca con el
 
 **Prohibidas (cliché o contrarias a la voz):** "en un mundo cada vez más digital/cambiante" · "disruptivo/disrupción" · "revolucionario" · "subite al tren de la IA" · "no te quedes atrás/afuera" · "potenciá tu negocio al siguiente nivel" · "la nueva normalidad" · "game changer" · "sinergia" · superlativos vacíos ("increíble", "brutal") · cualquier promesa de resultados sin evidencia.
 
+**Recurso prohibido en CARRUSELES (visual):** el bloque "Lo que más escuchamos: «cita de cliente»" y cualquier cita testimonial entre comillas en las slides — queda acartonado. En carrusel se dice la idea directo, sin enmarcarla como testimonio. (En posts/newsletter el "lo que más escuchamos" en NOSOTROS sigue OK; lo prohibido es la cita entrecomillada en las slides.)
+
 ## 7. Estructuras maestras (esqueletos para los agentes)
 
 **Artículo de newsletter (1-2 min):**

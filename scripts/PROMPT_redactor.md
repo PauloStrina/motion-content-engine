@@ -94,6 +94,7 @@ Reglas del manifiesto:
 - Carousel HEM: mismo nivel y ritmo que el EXEMPLAR (`design-system/slides/EJEMPLO_HEM_carrusel.json`) — arco narrativo, una analogía cultural, cierre con la pregunta/frase sola. Aplicá la matriz de intención del tipo (problema/resultados).
 - Newsletter: condensa el método/conexión del newsletter en 8 slides (una idea por slide), ángulo distinto al carousel.
 - Voz de Paulo SIEMPRE: oraciones cortas, sin jerga prohibida, auto-crítica de VOZ_corpus.md §5. Si suena a IA, reescribí.
+- PROHIBIDO en las slides: el recurso "Lo que más escuchamos: «cita»" y las citas testimoniales entre comillas. En visual queda acartonado/horrible. Decí la idea directo (ej. "Cambiaste mil veces y nada se transformó."), sin enmarcarla como testimonio ni meter comillas de cliente.
 
 ### Archivos que generan los otros agentes (coordinados por la cascada)
 - Diseñador: `design-system/slides/<fecha>_carrusel.json` — toma el copy de `carousel.slides` VERBATIM (1 línea = 1 bloque de texto, en orden) y SOLO asigna diseño (tratamiento/color/fondo) imitando el exemplar. No inventa ni cambia palabras.

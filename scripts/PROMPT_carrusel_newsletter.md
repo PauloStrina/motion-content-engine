@@ -21,8 +21,11 @@ Minimalista: **UNA idea por slide**, tipografía gigante, mucho aire. Marca arri
 7. **body** — el principio / la postura.
 8. **closing** — el cierre: la pregunta sola o la munición resumida. SIN hashtags.
 
-## 3. NARRATIVA CROMÁTICA (campo "bg", paleta Motion)
-El fondo gira cuando el argumento gira. cover/closing normalmente `negro`; el contraste en dos colores; la analogía (slide 5) en `naranja`. Colores: `negro` · `naranja` · `violeta` · `aqua` · `blanco`.
+## 3. COLOR ÚNICO (todas las slides el mismo fondo, lectura ágil)
+El carrusel newsletter es MONOCROMÁTICO: TODAS las slides el mismo `bg`, según el tipo:
+- `conexion` → `naranja`
+- `metodo`   → `aqua` (verde claro Motion)
+(El render lo fuerza igual con ese color; poné ese mismo `bg` en todas las slides.) El texto y el acento se eligen solos por contraste.
 
 ## 4. RESALTES
 En `text`: envolvé 1 palabra clave por slide en `<span class="acc">palabra</span>` (color acento automático por contraste). También `<br>`. Máximo 1 resalte por slide.

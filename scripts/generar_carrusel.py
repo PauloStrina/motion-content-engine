@@ -23,9 +23,13 @@ def inject_hem(spec, copy_slides):
             print(f"  ⚠ slide {i+1}: {len(tb)} bloques de texto vs {len(lineas)} líneas — copy del manifiesto NO inyectado (uso el del diseñador)")
     return spec
 
-def inject_news(spec, copy_slides):
-    """Carrusel newsletter: un texto por slide. Une las líneas con <br>."""
+# Carrusel newsletter MONOCROMÁTICO (todas las slides el mismo color, lectura ágil):
+#   conexion → naranja · metodo → aqua (verde claro Motion)
+NEWS_BG = {"conexion": "naranja", "metodo": "aqua"}
+def inject_news(spec, copy_slides, bg=None):
+    """Carrusel newsletter: un texto por slide (líneas unidas con <br>) y un único color de fondo."""
     for i, s in enumerate(spec.get("slides", [])):
+        if bg: s["bg"] = bg
         if i < len(copy_slides):
             lineas = copy_slides[i].get("lineas", [])
             if lineas: s["text"] = "<br>".join(lineas)
@@ -76,7 +80,8 @@ def main(fecha, out_dir, render_py, slides_dir):
     if os.path.exists(news_spec):
         hizo_algo = True
         copy_slides = m.get("newsletter", {}).get("slides", [])
-        merged = _merged(news_spec, out_dir, copy_slides, inject_news)
+        bg = NEWS_BG.get(m.get("newsletter", {}).get("tipo"))
+        merged = _merged(news_spec, out_dir, copy_slides, lambda sp, cs: inject_news(sp, cs, bg))
         render_news_py = os.path.join(os.path.dirname(render_py), "render_newsletter.py")
         subprocess.run(["python", render_news_py, merged, out_dir, "--png"], check=True)
         news_pngs = sorted(glob.glob(os.path.join(out_dir, f"{fecha}-news*.png")))
