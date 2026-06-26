@@ -210,8 +210,9 @@ Si encontrás cualquiera de los seis, no está listo. Reescribí.
   "revolucionario", "subite al tren de la IA", "no te quedes atrás/afuera",
   "potenciá tu negocio al siguiente nivel", "la nueva normalidad", "game changer",
   "sinergia", superlativos vacíos ("increíble", "brutal"), emojis de hype (🚀).
-- **Nunca inventes números, casos ni datos.** Solo los del Banco de Evidencias con
-  "Uso público: SÍ". Si no está, no se usa.
+- **Números y casos:** usalos cuando aporten al argumento. Paulo revisa y aprueba
+  TODO antes de publicar y se hace cargo de la veracidad. El Banco de Evidencias es
+  fuente útil, no un candado.
 - **Voseo rioplatense profesional:** "podés", "describí", "priorizá". Cercano sin
   lunfardo.
 - Si una pieza necesita violar una regla del Playbook para funcionar, no la

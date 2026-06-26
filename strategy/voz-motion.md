@@ -41,7 +41,7 @@ Regla: una misma idea puede publicarse en los tres emisores, pero **nunca con el
 6. **Apartes con personalidad.** Paréntesis que rompen la formalidad: "(SI, EMPATÍA)". Es el guiño humano dentro de la estructura. Dosis: máximo uno por pieza.
 7. **Voseo rioplatense profesional.** "Podés", "describí tu necesidad", "priorizá". Cercano sin ser informal. Sin lunfardo.
 8. **Verbos de acción y materialización.** Hacemos que las cosas sucedan: crear, diseñar, orquestar, desbloquear, materializar, instalar capacidades. Evitar verbos de intención (buscar, intentar, apuntar a).
-9. **Números cuando existen, silencio cuando no.** "+40% de productividad", "x4 ROI", "+15 proyectos/año" — siempre con respaldo del Banco de Evidencias. Jamás inventar ni redondear hacia arriba.
+9. **Números con criterio.** "+40% de productividad", "x4 ROI", "+15 proyectos/año" — usalos cuando aporten. Paulo revisa y aprueba TODO antes de publicar y se hace cargo de la veracidad. El Banco de Evidencias es fuente, no candado.
 10. **La acción supera a la reflexión (regla de performance comprobada).** Los contenidos de mejor rendimiento del fundador comunican algo *hecho*: actividad en vivo, video de trabajo real, hallazgos que surgen de la práctica — no reflexiones abstractas. Implicancia: toda reflexión se ancla a una acción concreta y reciente ("la semana pasada en un workshop..."), y la Sesión Pilar captura prioritariamente lo que se hizo, no solo lo que se piensa. Una marca llamada Motion comunica movimiento mostrándolo.
 
 ## 5. Reglas editoriales heredadas de la estrategia (innegociables)

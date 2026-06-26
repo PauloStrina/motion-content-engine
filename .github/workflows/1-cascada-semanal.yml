@@ -38,7 +38,7 @@ jobs:
             - strategy/tesis.md       (las 4 tesis + matriz de intención por tipo de mensaje)
             - strategy/voz-motion.md  (Brand Voice Playbook, formato por canal, léxico prohibido)
             - strategy/buyer-persona.md (a quién le hablás)
-            - evidencias/banco.md     (datos permitidos — NUNCA inventes números fuera de acá)
+            - evidencias/banco.md     (fuente de datos/casos cuando exista; podés usar números/casos cuando aporten — Paulo revisa y aprueba TODO antes de publicar)
             Si una pieza no suena a Paulo (suena a IA imitándolo), NO está lista: reescribí. Aplicá la auto-crítica de VOZ_corpus.md §5.
 
             ## GENERACIÓN (los DOS episodios de la semana)

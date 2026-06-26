@@ -143,14 +143,14 @@ Activos correctos: 1-cascada-semanal.yml, 2-motor-completo.yml, scripts/{manifie
 
 ## 9. BANCO DE EVIDENCIAS (a crear: evidencias/banco.md)
 Formato por entrada: Caso/cliente · Sector · Qué hicimos · Resultado (número) · Uso público (SÍ anonimizado / SÍ con nombre / NO) · Fuente del dato.
-Regla: el Redactor SOLO usa datos del banco con "Uso público: SÍ". Si un número no está, no se puede usar. Protege de publicar lo insostenible. (El "x4 ROI" NO está validado aún.)
+Regla: el banco es fuente útil de datos/casos, NO un candado. El Redactor puede usar números/casos cuando aporten. Paulo revisa y aprueba TODO antes de publicar (modo revisión en Blotato) y se hace cargo de la veracidad.
 
 ---
 
 ## 10. REGLAS DE ORO (para cualquier Claude que retome esto)
 1. El cerebro está en los DOCUMENTOS (estrategia), no en el código. Cambiar comportamiento = editar documento, no código.
 2. Cada canal su pieza propia. Nunca cruzar contenido entre canales.
-3. Nunca inventar datos/números/casos. Solo Banco de Evidencias.
+3. Usar números/casos cuando aporten. Paulo revisa y aprueba TODO antes de publicar y se hace cargo (el banco es fuente, no candado).
 4. Nada se publica sin OK humano de Paulo (modo revisión en Blotato).
 5. El manifiesto es la fuente de verdad. Nombres y cantidades salen de ahí.
 6. Paulo no es técnico: explicar como a alguien que hace clics, guías paso a paso, sin jerga.

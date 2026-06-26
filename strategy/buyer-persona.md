@@ -82,7 +82,7 @@ Empresas innovadoras de otros rubros · info de su competencia · comunicadores 
 1. **Cada pieza es una munición:** argumento, dato, framework o caso que el Visionario pueda reenviar a su directorio. Test: *"¿esto se lo reenviaría a su CEO/directorio para ganar una discusión?"*
 2. **Validar la incomodidad, no agitarla:** "tu incomodidad es lucidez; lo que te falta es el método", nunca miedo genérico.
 3. **Motion es dueña del CÓMO — y el CÓMO tiene nombre y artefactos:** el **Método de Transformación Continua, que combina negocio, tecnología y cultura para hacer que las cosas sucedan.** No es una frase: es un método pragmático, sistemático y con casos de éxito. Se comunica mostrando sus artefactos: Diagnóstico de 4 semanas (Chequeo de Madurez Digital, Mapeo de Procesos, Workshop de Estrategia Digital, Hoja de Ruta), los 3 rieles del Programa (Soluciones de Negocio, Cultura y Comunidad, Innovación), Sprint "1,2,3-Boom", y resultados (+15 proyectos/año, +150 involucrados, 10 intervenciones).
-4. **Regla de evidencia:** toda afirmación de método se ancla en un artefacto, un número o un caso del Banco de Evidencias. Nunca promesas sin prueba.
+4. **Regla de evidencia:** toda afirmación de método gana con un artefacto, un número o un caso concreto. Usalos cuando aporten; Paulo revisa y aprueba TODO antes de publicar y se hace cargo.
 5. **Sustantivos propios como ganchos de memoria:** Transformación Continua®, Sprint 1,2,3-Boom, Chequeo de Madurez Digital — usarlos sistemáticamente.
 6. **Lenguaje de negocio, nunca técnico.** Sus referentes son Bilinkis y Sinek, no documentación de herramientas.
 7. **Atacar la brecha Copilot:** "usar IA ≠ transformarse con IA".

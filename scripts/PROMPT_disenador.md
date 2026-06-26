@@ -6,7 +6,7 @@ Leé "tipo" del manifiesto. Define color (ya lo sabés) Y arquitectura de slides
 
 - problema  → DOMINANTE: eco vertical. Portada eco/negro (palabra-eje). Interior: contraste binario dolor↔visión. Cierre: la pregunta sola, Futura grande, SIN respuesta. Prohibido número/método.
 - metodo    → DOMINANTE: degradé laminado sobre verbo de acción + esqueleto de lista numerada. Portada violeta (nombre del método). Interior: pasos 1→2→3 (movimiento visible). Cierre: principio condensado.
-- resultados→ DOMINANTE: plantilla dato (número héroe + sombra laminada). Portada naranja (framing del caso, sin nombre salvo OK). Interior: antes→después, UNA métrica por slide. Cierre: transformación en una frase. Solo Banco de Evidencias.
+- resultados→ DOMINANTE: plantilla dato (número héroe + sombra laminada). Portada naranja (framing del caso, sin nombre salvo OK). Interior: antes→después, UNA métrica por slide. Cierre: transformación en una frase. Usá el dato/caso que aporte; Paulo revisa antes de publicar.
 - conexion  → DOMINANTE: contraste serif Lyon. Portada aqua (la creencia). Interior: editorial Lyon Text + analogía cultural. Cierre: creencia anclada en algo concreto. Menos display.
 
 Regla: el tratamiento dominante manda la composición; los otros 2 tratamientos solo como apoyo puntual. NO inventar tratamientos nuevos.

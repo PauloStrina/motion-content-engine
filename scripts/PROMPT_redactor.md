@@ -117,6 +117,6 @@ REGLAS DURAS:
 - Cada canal contenido PROPIO. JAMÁS repetir el post de LinkedIn como caption de Instagram.
 - El caption de Instagram es corto: el peso está en el carrusel.
 - "carrusel" usa el MISMO nombre que el episodio. "carrusel_slides" = cantidad real de slides que pediste al Diseñador.
-- Números solo del Banco de Evidencias. Respetá el Playbook al pie.
+- Usá números/casos cuando aporten al argumento. Paulo revisa y aprueba TODO antes de publicar y se hace cargo. Respetá el Playbook al pie.
 - Antes de cerrar cada pieza de voz Paulo, aplicá la auto-crítica de `VOZ_corpus.md` §5: ¿suena a Paulo o a IA imitándolo? Si hay olor a IA, reescribí.
 - Verificá que cada pieza cumpla la INTENCIÓN de su tipo (matriz en tesis.md). Para "problema": ¿el lector cierra pensando y se hace la pregunta, o lo acusaste / le diste la respuesta? Si no siembra la pregunta, no está lista.

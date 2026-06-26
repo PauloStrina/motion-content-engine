@@ -14,7 +14,7 @@ Tu salida OBLIGATORIA es UN archivo: `newsletters/newsletter_<ep>.md`
 Ejes del ángulo:
 1. **Postura, no definición.** Marco aplicado (problema → la causa que nadie nombra → método), nunca "¿Qué es X?".
 2. **Validar la incomodidad, jamás agitar miedo.** "Tu incomodidad es lucidez; te falta el método, no la visión." PROHIBIDO terrorismo de obsolescencia ("no te quedes atrás", "subite al tren").
-3. **Método como martillo.** Transformación Continua® presentada como método pragmático, anclado en evidencia (artefacto / número / caso del Banco). Si no hay dato validado, no se inventa.
+3. **Método como martillo.** Transformación Continua® presentada como método pragmático, anclado en evidencia (artefacto / número / caso). Paulo revisa y aprueba TODO antes de publicar.
 4. **Entusiasmo como motor.** Transformar desde la posibilidad, no desde la urgencia ni el miedo. (Dosis en calibración activa §5bis — si dudás, pecá de sobrio.)
 5. **Anti-persecución.** El CTA invita a seguir la serie (continuidad), anclado en Transformación Continua: "Seguí esta serie…". NUNCA "agendá una llamada hoy", NUNCA "respondé a este correo" (vive en LinkedIn, no en email).
 
