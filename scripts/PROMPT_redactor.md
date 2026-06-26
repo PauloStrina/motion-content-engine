@@ -55,8 +55,10 @@ Proceso:
   "fecha_inicio": "<fecha>",   // lunes de la semana, ej "2026-06-29"
   "semana": N,                  // 1-8
   "tesis": "...",
-  "carousel":   {"tipo": "problema|resultados", "tema": "título corto del carousel"},
-  "newsletter": {"tipo": "metodo|conexion",     "tema": "título corto del newsletter"},
+  "carousel":   {"tipo": "problema|resultados", "tema": "título corto del carousel",
+                 "slides": [ {"lineas": ["línea principal de la slide 1","apoyo opcional"]}, ... 8 slides ... ]},
+  "newsletter": {"tipo": "metodo|conexion",     "tema": "título corto del newsletter",
+                 "slides": [ {"lineas": ["texto de la slide 1 del carrusel newsletter"]}, ... 8 slides ... ]},
   "estado": "borrador_para_aprobacion",
   "canales": {
     "linkedin_paulo":       {"activo": true, "formato": "carrusel", "texto": "TEXTO INTRO del doc, 300-600 car (estructura #HEM abajo)", "carrusel": "<fecha>", "carrusel_slides": N},
@@ -73,10 +75,17 @@ Reglas del manifiesto:
 - `instagram_newsletter.carrusel` = `<fecha>-news` (sufijo `-news`), siempre 8 slides.
 - `x_paulo_hem` = hilo del carousel (ángulo problema/resultados). `x_paulo_news` = hilo del newsletter (ángulo metodo/conexion). Distintos.
 
+### EL COPY DE LAS SLIDES ES TUYO (lo más importante)
+`carousel.slides` y `newsletter.slides` son el COPY de cada carrusel — lo escribís VOS, el Redactor, con la voz de Paulo. NO es del Diseñador. Esto es lo que Paulo revisa y ajusta en el manifiesto, y lo que el render usa (se inyecta automáticamente). Reglas:
+- 8 slides cada uno. Una idea por slide. `lineas` = las frases tal como van en la slide (en orden de lectura).
+- Carousel HEM: mismo nivel y ritmo que el EXEMPLAR (`design-system/slides/EJEMPLO_HEM_carrusel.json`) — arco narrativo, una analogía cultural, cierre con la pregunta/frase sola. Aplicá la matriz de intención del tipo (problema/resultados).
+- Newsletter: condensa el método/conexión del newsletter en 8 slides (una idea por slide), ángulo distinto al carousel.
+- Voz de Paulo SIEMPRE: oraciones cortas, sin jerga prohibida, auto-crítica de VOZ_corpus.md §5. Si suena a IA, reescribí.
+
 ### Archivos que generan los otros agentes (coordinados por la cascada)
-- Diseñador: `design-system/slides/<fecha>_carrusel.json` (carrusel HEM, paleta por tipo del carousel).
-- Agente Newsletter: `newsletters/newsletter_<fecha>.md` (lo publica Paulo a mano).
-- Agente Carrusel Newsletter: `design-system/slides/<fecha>_news.json` (8 slides, `"episodio": "<fecha>"`).
+- Diseñador: `design-system/slides/<fecha>_carrusel.json` — toma el copy de `carousel.slides` VERBATIM (1 línea = 1 bloque de texto, en orden) y SOLO asigna diseño (tratamiento/color/fondo) imitando el exemplar. No inventa ni cambia palabras.
+- Agente Newsletter: `newsletters/newsletter_<fecha>.md` (artículo completo; lo publica Paulo a mano).
+- Agente Carrusel Newsletter: `design-system/slides/<fecha>_news.json` — toma `newsletter.slides` verbatim, 8 slides, `"episodio": "<fecha>"`.
 
 ## TÍTULO DEL EPISODIO
 

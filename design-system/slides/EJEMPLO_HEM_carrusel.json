@@ -2,13 +2,11 @@
   "episodio": "ep1-1 — Cambio vs Transformación",
   "slides": [
     {
-      "bg": "negro", "eyebrow_color": "aqua", "pager": "01 — 08",
+      "bg": "negro", "eyebrow_color": "naranja", "pager": "01 — 08",
       "blocks": [
-        {"type": "futura", "text": "¿TU ORGANIZACIÓN", "size": 120, "lh": 112, "color": "blanco"},
-        {"type": "futura", "text": "BUSCA UN CAMBIO", "size": 120, "lh": 112, "color": "blanco"},
-        {"type": "lam", "text": "O UNA TRANSFORMACIÓN?", "size": 90, "color": "naranja"},
-        {"type": "spacer", "h": 46},
-        {"type": "lyon", "text": "Casi nadie se hace esta<br>pregunta a tiempo.", "size": 44, "color": "aqua"}
+        {"type": "eco", "text": "CAMBIO", "size": 230, "color": "blanco", "n": 3},
+        {"type": "spacer", "h": 28},
+        {"type": "futura", "text": "no es transformación.", "size": 56, "color": "naranja"}
       ]
     },
     {

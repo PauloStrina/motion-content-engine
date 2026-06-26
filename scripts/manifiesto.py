@@ -42,6 +42,11 @@ def pieza(m, canal):
 def validar(m):
     e=[]
     if not m.get("fecha_inicio"): e.append("falta 'fecha_inicio' (YYYY-MM-DD del lunes de la semana)")
+    # el COPY de cada carrusel vive en carousel.slides / newsletter.slides (lo edita Paulo)
+    for k in ("carousel","newsletter"):
+        blk = m.get(k)
+        if blk and not blk.get("slides"):
+            e.append(f"{k}: falta 'slides' (el copy de las 8 slides del carrusel)")
     for canal,c in m.get("canales",{}).items():
         if not c.get("activo"): continue
         f=c.get("formato")

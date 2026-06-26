@@ -4,8 +4,8 @@ Tu salida OBLIGATORIA es UN archivo: `design-system/slides/<fecha>_news.json`
 (8 slides 1080×1350 que el render produce como `<fecha>-news-N.png`, se publican como carrusel de Instagram).
 
 ## 0. INSUMO Y RELACIÓN
-- **Replica el contenido del newsletter de la semana**: leé `newsletters/newsletter_<fecha>.md` y condensalo en 8 slides (una idea por slide). El newsletter es la versión larga; el carrusel newsletter es su versión visual y condensada.
-- Leé también el manifiesto semanal (`manifiestos/manifiesto_<fecha>.json`): `tesis` y `newsletter.tipo` (metodo/conexion).
+- **El COPY ya está en el manifiesto**: `newsletter.slides` (lista de 8, cada una con `lineas`). Lo escribió el Redactor con la voz de Paulo. NO inventás ni cambiás palabras — usás ese texto VERBATIM, una slide por entrada, en orden. (El render inyecta el copy del manifiesto; vos solo definís `type` y `bg`.)
+- Contexto: leé `newsletters/newsletter_<fecha>.md` (el artículo largo) y el manifiesto (`tesis`, `newsletter.tipo`) para elegir bien `type`/`bg` por slide.
 - Leé SIEMPRE: `strategy/VOZ_corpus.md`, `strategy/voz-motion.md`.
 
 ## 1. ESTILO VISUAL (heredado de ejemplo-story, con paleta Motion)

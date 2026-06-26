@@ -9,8 +9,12 @@ Es un carrusel HEM aprobado por Paulo. Tu salida debe alcanzar ESE nivel de riqu
 - **Cierre** = la pregunta/frase sola en futura + `foot` ("Lo único permanente es el movimiento").
 Si tu borrador tiene casi todo `futura`, un solo color de fondo, o menos de 8 slides → está POBRE: rehacelo imitando la variedad y el ritmo del exemplar. El exemplar manda sobre tu intuición.
 
+## EL COPY NO ES TUYO — lo escribió el Redactor en el manifiesto
+El texto de cada slide ya está en `carousel.slides` del manifiesto (lista de 8, cada una con `lineas`). NO inventás ni cambiás palabras. Tu trabajo es PURO DISEÑO: por cada slide, creás EXACTAMENTE tantos bloques de texto como `lineas` tiene (en el MISMO orden), y a cada uno le asignás tratamiento (futura/lam/eco/lyon/lyont), color, tamaño y el fondo del arco cromático. La línea 1 suele ser el golpe (futura/eco/lam), las siguientes apoyo (lyon/lyont).
+REGLA DURA: en cada slide, #bloques de texto = #lineas del manifiesto, en orden. (El render inyecta el copy del manifiesto por orden; si no coinciden, tu diseño queda sin el copy correcto.)
+
 1. Leé el manifiesto semanal (manifiestos/manifiesto_<fecha>.json) y README-kit.md. Vos hacés el carrusel HEM (el carrusel newsletter lo hace otro agente).
-2. Tomá canales.instagram.carrusel (nombre, = `<fecha>`) y carrusel_slides (cantidad). El archivo de slides va en design-system/slides/<fecha>_carrusel.json.
+2. Tomá canales.instagram.carrusel (nombre, = `<fecha>`), carrusel_slides (cantidad) y `carousel.slides` (el copy). El archivo de slides va en design-system/slides/<fecha>_carrusel.json.
 3. ## PLANTILLA ESTRUCTURAL POR TIPO (no solo color)
 Leé `carousel.tipo` del manifiesto (problema o resultados). Define color (problema=negro · resultados=naranja) Y arquitectura de slides:
 
