@@ -9,7 +9,7 @@
     "linkedin_paulo": {
       "activo": true,
       "formato": "carrusel",
-      "texto": "¿Cambio o transformación?\n\nVarios líderes con los que hablamos nos cuentan lo mismo: hicieron un montón de cambios y, en el fondo, sienten que nada se transformó. No les faltó inversión ni decisión. Lo que pasa es que cambiar y transformarse no son lo mismo, y confundirlos sale caro. Te lo cuento en este carrusel.\n\n#HistoriasEnMovimiento es una serie de casos que vemos en el día a día de Motion. No fake, no IA.\nSi te resuena, me gustaría leerte en comentarios. Que LinkedIn sea una red de networking, no una vidriera para el ego.",
+      "texto": "¿Cambio o transformación?\n\nVarios líderes con los que hablamos nos cuentan lo mismo: hicieron un montón de cambios, y en el fondo nada se transformó. No les faltó inversión ni decisión, pero cambiar y transformarse no son lo mismo. Nosotros vemos esta diferencia.\n\n#HistoriasEnMovimiento es una serie de casos que vemos en el día a día de Motion. No fake, no IA.\nSi te resuena, me gustaría leerte en comentarios. Que LinkedIn sea una red de networking, no una vidriera para el ego.",
       "carrusel": "2026-06-29",
       "carrusel_slides": 7
     },
@@ -34,12 +34,12 @@
     "linkedin_motion": {
       "activo": true,
       "formato": "post",
-      "texto": "Cambiar no es transformarse. Lo vemos seguido: una organización invierte en tecnología, resuelve un dolor puntual y, meses después, opera igual que antes.\n\nPor eso trabajamos desde un método. La Transformación Continua® combina negocio, tecnología y cultura para que transformarse deje de ser un proyecto con principio y fin y se vuelva una capacidad instalada en la organización. No se gestiona el cambio: se diseña la organización para vivir en cambio.\n\nEs lo que hacemos en cada Programa: +15 proyectos al año, +150 personas involucradas, equipos que aprenden a sostener su propia transformación. La tecnología cambia; la capacidad de transformarse, una vez instalada, queda.\n\nLo complejo, simple.\n#TransformaciónContinua"
+      "texto": "Cambiar no es transformarse. Lo vemos seguido: una organización invierte en tecnología, resuelve un dolor puntual y, meses después, opera igual que antes.\n\nPor eso trabajamos desde un método. La Transformación Continua® combina negocio, tecnología y cultura para que transformarse deje de ser un proyecto con principio y fin y se vuelva una capacidad instalada en la organización. No se gestiona el cambio: se diseña la organización para vivir en cambio.\n\nEs lo que hacemos en cada Programa: +15 proyectos por año, +150 personas involucradas, equipos que aprenden a sostener su propia transformación. La tecnología cambia; la capacidad de transformarse, queda.\n\nLo complejo, simple.\n#TransformaciónContinua"
     },
     "instagram_newsletter": {
       "activo": true,
       "formato": "carrusel",
-      "caption": "Cambio o transformación: cómo saber de qué lado estás.\nEsta semana en Lo complejo, simple.\n\nNo te falta tecnología. Te falta el método para saber qué estás resolviendo de verdad. Te lo contamos en 8 slides.\n\n#TransformaciónContinua #HistoriasEnMovimiento",
+      "caption": "Cambio o transformación: cómo saber de qué lado estás.\nEsta semana en Lo complejo, simple.\n\nNo te falta tecnología. Te falta el método para saber qué estás resolviendo de verdad.\n\n#TransformaciónContinua #HistoriasEnMovimiento",
       "carrusel": "2026-06-29-news",
       "carrusel_slides": 8
     },
