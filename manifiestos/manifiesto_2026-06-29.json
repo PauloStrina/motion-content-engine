@@ -1,0 +1,61 @@
+{
+  "fecha_inicio": "2026-06-29",
+  "semana": 1,
+  "tesis": "Cambio ≠ Transformación",
+  "estado": "borrador_para_aprobacion",
+
+  "carousel": {
+    "tipo": "problema",
+    "tema": "¿Cambio o Transformación? (la pregunta que casi nadie se hace a tiempo)",
+    "carrusel": "2026-06-29",
+    "carrusel_slides": 8,
+    "post_linkedin": "¿Cambio o Transformación?\n\nVarios líderes con los que hablamos nos cuentan lo mismo: hicieron todos los cambios posibles y en el fondo sienten que nada se transformó. No les faltó inversión ni decisión. Pero un cambio y una transformación no nacen del mismo lugar, y casi nadie se hace esa pregunta a tiempo. Te lo cuento en este carrusel.\n\n#HistoriasEnMovimiento es una serie de casos que vemos en el día a día de Motion. No fake, no IA.\nSi te resuena, me gustaría leerte en comentarios. Que LinkedIn sea una red de networking, no una vidriera para el ego.",
+    "caption_instagram": "¿Cambio o Transformación?\n#HistoriasEnMovimiento: casos reales de nuestro día a día. No fake, no IA.\n\nLa pregunta que casi nadie se hace antes de invertir.\n\n#HistoriasEnMovimiento #TransformaciónDigital",
+    "hilo_twitter": [
+      "¿Cambio o Transformación? 🧵\n#HistoriasEnMovimiento — casos reales de Motion. No fake, no IA.",
+      "Lo que más escuchamos de los líderes con los que trabajamos: hicieron todos los cambios posibles y en el fondo nada se transformó. No les faltó inversión ni decisión.",
+      "El cambio responde a un dolor puntual: algo molesta, se compra una solución, se cierra el tema. La transformación nace de una visión: de entender a dónde tiene que ir la organización.",
+      "Comprar tecnología esperando transformarte es como cambiar el auto para escapar del tráfico. El problema no es el vehículo, es el sistema.",
+      "Antes de la próxima inversión, una sola pregunta: ¿cambio o transformación? No es de presupuesto. Es de origen."
+    ],
+    "slides": [
+      {"lineas": ["CAMBIO", "no es transformación."]},
+      {"lineas": ["Lo que más escuchamos:", "«Hicimos todos los cambios posibles.<br>Y en el fondo nada se transformó.»", "No les faltó inversión ni decisión."]},
+      {"lineas": ["El cambio responde a un", "DOLOR", "Una urgencia puntual. Se contrata<br>una solución y se cierra el tema."]},
+      {"lineas": ["La transformación nace de una", "VISIÓN", "De entender a dónde<br>tiene que ir la organización."]},
+      {"lineas": ["El cambio empieza y termina.", "La transformación no termina.", "SE VUELVE LA FORMA", "DE OPERAR."]},
+      {"lineas": ["Comprar tecnología esperando transformarte es como cambiar el auto para escapar del tráfico.", "EL PROBLEMA NO ES", "EL VEHÍCULO.", "ES EL SISTEMA."]},
+      {"lineas": ["No es una diferencia", "de presupuesto. Es de origen.", "UN DOLOR.", "O UNA VISIÓN."]},
+      {"lineas": ["ANTES DE LA PRÓXIMA INVERSIÓN,", "UNA SOLA PREGUNTA:", "¿CAMBIO O", "TRANSFORMACIÓN?"]}
+    ]
+  },
+
+  "institucional": {
+    "post_linkedin_motion": "En Motion, antes de hablar de tecnología, hacemos una pregunta: ¿esto que buscás es un cambio o una transformación?\n\nNo es un juego de palabras. Un cambio resuelve un dolor puntual y se cierra cuando el problema desaparece. Una transformación modifica de raíz cómo opera la organización, y no termina: se vuelve la forma de trabajar.\n\nConfundirlos es la causa número uno de inversiones digitales que no mueven nada. Por eso cada acompañamiento arranca por un diagnóstico que distingue el origen del pedido antes de proponer una sola solución. No vendemos tecnología: orquestamos negocio, tecnología y cultura para que lo que se hace quede instalado como capacidad, no como factura.\n\nLa diferencia no es de presupuesto. Es de origen.\n\n#TransformaciónContinua"
+  },
+
+  "newsletter": {
+    "tipo": "metodo",
+    "tema": "Cómo saber si tu organización busca un cambio o una transformación (antes de invertir)",
+    "carrusel": "2026-06-29-news",
+    "carrusel_slides": 8,
+    "caption_instagram": "Cómo saber si tu organización busca un cambio o una transformación (antes de invertir).\n\nCuatro preguntas que responden lo que el presupuesto no puede. Nueva edición de Lo complejo, simple.\n\n#TransformaciónContinua #LoComplejoSimple",
+    "hilo_twitter": [
+      "La mayoría de las organizaciones decide cuánto invertir antes de decidir qué está buscando. Y ahí empieza el problema. 🧵",
+      "Cambio y transformación no se distinguen por el tamaño de la inversión. Se distinguen por el origen. Y el origen se puede diagnosticar antes de firmar.",
+      "Pregunta 1: ¿el pedido nace de un dolor puntual o de una visión? Pregunta 2: cuando termine, ¿desaparece el problema o la organización opera distinto?",
+      "Pregunta 3: ¿quién es dueño del resultado, un área o la dirección? Pregunta 4: cuando se apaga el incendio, ¿queda capacidad instalada o solo una factura?",
+      "Las cuatro respuestas ya estaban en el origen del pedido. Diagnosticarlo antes de invertir es parte del método. Esta semana lo desarrollo en Lo complejo, simple."
+    ],
+    "slides": [
+      {"lineas": ["¿Cambio o <span class=\"acc\">transformación</span>?", "Cómo saberlo antes de invertir."]},
+      {"lineas": ["Casi nadie lo decide a <span class=\"acc\">tiempo</span>.", "Primero se fija el presupuesto. Después se descubre qué se buscaba."]},
+      {"lineas": ["No te falta visión ni decisión.", "Te falta el <span class=\"acc\">método</span> para diagnosticarlo antes."]},
+      {"lineas": ["Pregunta 1.", "¿El pedido nace de un dolor puntual, o de una <span class=\"acc\">visión</span>?"]},
+      {"lineas": ["Pregunta 2.", "Cuando el proyecto termine, ¿desaparece el problema o la organización <span class=\"acc\">opera distinto</span>?"]},
+      {"lineas": ["Pregunta 3.", "¿Quién es <span class=\"acc\">dueño</span> del resultado? Un área con un problema, o la dirección con una visión."]},
+      {"lineas": ["Pregunta 4.", "Cuando se apaga el incendio, ¿queda <span class=\"acc\">capacidad instalada</span>, o solo una factura?"]},
+      {"lineas": ["Respondé las cuatro antes de firmar.", "La respuesta ya estaba en el <span class=\"acc\">origen</span>."]}
+    ]
+  }
+}

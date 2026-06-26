@@ -1,0 +1,13 @@
+{
+  "episodio": "2026-06-29",
+  "slides": [
+    {"number": 1, "type": "cover",    "bg": "negro",   "text": "¿Cambio o transformación?<br>Cómo saberlo antes de invertir."},
+    {"number": 2, "type": "body",     "bg": "negro",   "text": "Casi nadie lo decide a tiempo.<br>Primero se fija el presupuesto. Después se descubre qué se buscaba."},
+    {"number": 3, "type": "body",     "bg": "aqua",    "text": "No te falta visión ni decisión.<br>Te falta el método para diagnosticarlo antes."},
+    {"number": 4, "type": "body",     "bg": "negro",   "text": "Pregunta 1.<br>¿El pedido nace de un dolor puntual, o de una visión?"},
+    {"number": 5, "type": "question", "bg": "naranja", "text": "Pregunta 2.<br>Cuando el proyecto termine, ¿desaparece el problema o la organización opera distinto?"},
+    {"number": 6, "type": "body",     "bg": "violeta", "text": "Pregunta 3.<br>¿Quién es dueño del resultado? Un área con un problema, o la dirección con una visión."},
+    {"number": 7, "type": "body",     "bg": "violeta", "text": "Pregunta 4.<br>Cuando se apaga el incendio, ¿queda capacidad instalada, o solo una factura?"},
+    {"number": 8, "type": "closing",  "bg": "negro",   "text": "Respondé las cuatro antes de firmar.<br>La respuesta ya estaba en el origen."}
+  ]
+}

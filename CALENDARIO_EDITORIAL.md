@@ -9,7 +9,7 @@
 
 | Semana | Tesis | Carousel (tipo) | Tema carousel | Newsletter (tipo) | Tema newsletter | Estado |
 |--------|-------|-----------------|---------------|-------------------|-----------------|--------|
-| 1 | T1 Cambio ≠ Transformación | Problema   | ¿Cambio o Transformación? (la pregunta que casi nadie se hace a tiempo) | Método    | Cómo saber si tu organización busca un cambio o una transformación (antes de invertir) | pendiente |
+| 1 | T1 Cambio ≠ Transformación | Problema   | ¿Cambio o Transformación? (la pregunta que casi nadie se hace a tiempo) | Método    | Cómo saber si tu organización busca un cambio o una transformación (antes de invertir) | generado |
 | 2 | T1 Cambio ≠ Transformación | Resultados | Pidió un tablero, encontró una transformación (efecto cebolla) | Conexión  | Por qué elegimos trabajar con quien se siente incómodo | pendiente |
 | 3 | T2 Cultura = sistema operativo | Problema   | La brecha Copilot: quedarse en la herramienta (Power BI sobre stack Google) | Método    | Implementar ≠ adoptar IA · el Laboratorio de IA | pendiente |
 | 4 | T2 Cultura = sistema operativo | Resultados | Adopción real de IA + evidencia | Conexión  | Organizaciones más conscientes · los Heladeros de Disney | pendiente |
