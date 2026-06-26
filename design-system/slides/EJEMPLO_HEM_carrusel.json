@@ -13,7 +13,7 @@
       "bg": "negro", "eyebrow_color": "naranja", "pager": "02 — 08",
       "blocks": [
         {"type": "lyon", "text": "El cambio surge de un", "size": 52, "color": "blanco", "mb": 36},
-        {"type": "eco", "text": "DOLOR", "size": 250, "color": "naranja"},
+        {"type": "lam", "text": "DOLOR", "size": 250, "color": "naranja"},
         {"type": "lyont", "text": "Una necesidad puntual. Una urgencia.", "size": 40, "color": "aqua", "mt": 48}
       ]
     },
