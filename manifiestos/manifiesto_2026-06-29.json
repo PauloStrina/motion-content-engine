@@ -20,13 +20,12 @@
     ],
     "slides": [
       {"lineas": ["CAMBIO", "no es transformación."]},
-      {"lineas": ["Lo que más escuchamos:", "«Hicimos todos los cambios posibles.<br>Y en el fondo nada se transformó.»", "No les faltó inversión ni decisión."]},
       {"lineas": ["El cambio responde a un", "DOLOR", "Una urgencia puntual. Se contrata<br>una solución y se cierra el tema."]},
       {"lineas": ["La transformación nace de una", "VISIÓN", "De entender a dónde<br>tiene que ir la organización."]},
       {"lineas": ["El cambio empieza y termina.", "La transformación no termina.", "SE VUELVE LA FORMA", "DE OPERAR."]},
       {"lineas": ["Comprar tecnología esperando transformarte es como cambiar el auto para escapar del tráfico.", "EL PROBLEMA NO ES", "EL VEHÍCULO.", "ES EL SISTEMA."]},
       {"lineas": ["No es una diferencia", "de presupuesto. Es de origen.", "UN DOLOR.", "O UNA VISIÓN."]},
-      {"lineas": ["ANTES DE LA PRÓXIMA INVERSIÓN,", "UNA SOLA PREGUNTA:", "¿CAMBIO O", "TRANSFORMACIÓN?"]}
+      {"lineas": ["Estás buscando", "¿CAMBIO O", "TRANSFORMACIÓN?"]}
     ]
   },
 
@@ -48,14 +47,14 @@
       "Las cuatro respuestas ya estaban en el origen del pedido. Diagnosticarlo antes de invertir es parte del método. Esta semana lo desarrollo en Lo complejo, simple."
     ],
     "slides": [
-      {"lineas": ["¿Cambio o <span class=\"acc\">transformación</span>?", "Cómo saberlo antes de invertir."]},
+      {"lineas": ["¿Cambio o <span class=\"acc\">transformación</span>?", "Cómo saber qué necesitás."]},
       {"lineas": ["Casi nadie lo decide a <span class=\"acc\">tiempo</span>.", "Primero se fija el presupuesto. Después se descubre qué se buscaba."]},
       {"lineas": ["No te falta visión ni decisión.", "Te falta el <span class=\"acc\">método</span> para diagnosticarlo antes."]},
-      {"lineas": ["Pregunta 1.", "¿El pedido nace de un dolor puntual, o de una <span class=\"acc\">visión</span>?"]},
-      {"lineas": ["Pregunta 2.", "Cuando el proyecto termine, ¿desaparece el problema o la organización <span class=\"acc\">opera distinto</span>?"]},
-      {"lineas": ["Pregunta 3.", "¿Quién es <span class=\"acc\">dueño</span> del resultado? Un área con un problema, o la dirección con una visión."]},
-      {"lineas": ["Pregunta 4.", "Cuando se apaga el incendio, ¿queda <span class=\"acc\">capacidad instalada</span>, o solo una factura?"]},
-      {"lineas": ["Respondé las cuatro antes de firmar.", "La respuesta ya estaba en el <span class=\"acc\">origen</span>."]}
+      {"lineas": ["Pregunta 1.", "¿Tu búsqueda nace de un dolor puntual, o de una <span class=\"acc\">visión</span>?"]},
+      {"lineas": ["Pregunta 2.", "Cuando el proyecto termine, ¿desaparece un problema o la organización <span class=\"acc\">opera distinto</span>?"]},
+      {"lineas": ["Pregunta 3.", "¿Quién es <span class=\"acc\">dueño</span> del resultado? Un área con un problema, o toda la organización."]},
+      {"lineas": ["Pregunta 4.", "Cuando se apaga el incendio, ¿queda <span class=\"acc\">capacidad instalada</span>, o solo una herramienta?"]},
+      {"lineas": ["Respondé las cuatro antes de decidir.", "Eso ya te marca el <span class=\"acc\">camino</span>."]}
     ]
   }
 }
