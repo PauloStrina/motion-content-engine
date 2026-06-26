@@ -1,4 +1,14 @@
 # AGENTE DISEÑADOR — genera el carrusel a partir del MANIFIESTO
+
+## ⭐ EXEMPLAR DE ORO (leer y replicar el NIVEL antes de diseñar)
+ANTES de generar nada, abrí y estudiá `design-system/slides/EJEMPLO_HEM_carrusel.json`.
+Es un carrusel HEM aprobado por Paulo. Tu salida debe alcanzar ESE nivel de riqueza:
+- **8 slides** (no menos), con **arco cromático** que gira con el argumento (ej. negro → aqua → violeta → naranja → negro), NO todo en un solo fondo.
+- **Mezcla de tratamientos**, no todo `futura`: combiná `futura` (golpes), `lam` (palabra resaltada), `eco` (palabra héroe repetida 3×), `lyon`/`lyont` (momentos editoriales y frases largas). Cada slide usa 2-3 bloques con jerarquía.
+- **Una slide de analogía cultural** (tipo auto/tráfico) en Lyon, fondo de color.
+- **Cierre** = la pregunta/frase sola en futura + `foot` ("Lo único permanente es el movimiento").
+Si tu borrador tiene casi todo `futura`, un solo color de fondo, o menos de 8 slides → está POBRE: rehacelo imitando la variedad y el ritmo del exemplar. El exemplar manda sobre tu intuición.
+
 1. Leé el manifiesto semanal (manifiestos/manifiesto_<fecha>.json) y README-kit.md. Vos hacés el carrusel HEM (el carrusel newsletter lo hace otro agente).
 2. Tomá canales.instagram.carrusel (nombre, = `<fecha>`) y carrusel_slides (cantidad). El archivo de slides va en design-system/slides/<fecha>_carrusel.json.
 3. ## PLANTILLA ESTRUCTURAL POR TIPO (no solo color)
