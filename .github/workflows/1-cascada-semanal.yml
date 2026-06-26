@@ -51,7 +51,7 @@ jobs:
             Leé scripts/PROMPT_redactor.md, scripts/PROMPT_disenador.md, scripts/PROMPT_newsletter.md y scripts/PROMPT_carrusel_newsletter.md.
             Usá <fecha> = "${{ github.event.inputs.fecha }}" en TODOS los nombres de archivo.
 
-            1. manifiestos/manifiesto_<fecha>.json — manifiesto semanal con los 6 canales (estructura EXACTA en PROMPT_redactor.md). Incluí fecha_inicio=<fecha>, semana, tesis, carousel.tipo/tema, newsletter.tipo/tema.
+            1. manifiestos/manifiesto_<fecha>.json — manifiesto semanal POR BLOQUES (carousel / institucional / newsletter), cada bloque con su cabecera (post/caption/hilo) + sus 8 slides JUNTOS. Estructura EXACTA en PROMPT_redactor.md. Incluí fecha_inicio=<fecha>, semana, tesis, carousel.tipo/tema, newsletter.tipo/tema.
             2. design-system/slides/<fecha>_carrusel.json — carrusel HEM (paleta por carousel.tipo). Cantidad = carrusel_slides del manifiesto.
             3. newsletters/newsletter_<fecha>.md — el newsletter (Paulo lo publica manual).
             4. design-system/slides/<fecha>_news.json — carrusel newsletter, 8 slides, "episodio":"<fecha>".

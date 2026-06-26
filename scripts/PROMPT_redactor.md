@@ -50,31 +50,43 @@ Proceso:
 2. Tomá tesis + tipos de la fila de la semana en CALENDARIO_EDITORIAL.md.
 3. Escribí el carousel y el newsletter con ÁNGULOS distintos (test de diferenciación).
 
-### Estructura EXACTA del manifiesto semanal
+### Estructura EXACTA del manifiesto semanal (POR BLOQUES — cabecera + slides JUNTOS)
+Cada bloque agrupa TODO su contenido (la cabecera de cada red + las 8 slides) para revisarlo en conjunto.
 ```
 {
   "fecha_inicio": "<fecha>",   // lunes de la semana, ej "2026-06-29"
   "semana": N,                  // 1-8
   "tesis": "...",
-  "carousel":   {"tipo": "problema|resultados", "tema": "título corto del carousel",
-                 "slides": [ {"lineas": ["línea principal de la slide 1","apoyo opcional"]}, ... 8 slides ... ]},
-  "newsletter": {"tipo": "metodo|conexion",     "tema": "título corto del newsletter",
-                 "slides": [ {"lineas": ["texto de la slide 1 del carrusel newsletter"]}, ... 8 slides ... ]},
   "estado": "borrador_para_aprobacion",
-  "canales": {
-    "linkedin_paulo":       {"activo": true, "formato": "carrusel", "texto": "TEXTO INTRO del doc, 300-600 car (estructura #HEM abajo)", "carrusel": "<fecha>", "carrusel_slides": N},
-    "instagram":            {"activo": true, "formato": "carrusel", "caption": "CAPTION CORTO + 2-3 hashtags", "carrusel": "<fecha>", "carrusel_slides": N},
-    "x_paulo_hem":          {"activo": true, "formato": "hilo", "hilo": ["tweet 1 con gancho 🧵 (carousel HEM)","tweet 2","tweet 3","tweet 4"]},
-    "linkedin_motion":      {"activo": true, "formato": "post", "texto": "POST INSTITUCIONAL, método/casos, 1ra plural, #TransformaciónContinua. Refuerza la tesis de la semana."},
-    "instagram_newsletter": {"activo": true, "formato": "carrusel", "caption": "CAPTION CORTO que invita al newsletter + 2-3 hashtags", "carrusel": "<fecha>-news", "carrusel_slides": 8},
-    "x_paulo_news":         {"activo": true, "formato": "hilo", "hilo": ["tweet 1 con gancho 🧵 (derivado del newsletter)","tweet 2","tweet 3","tweet 4"]}
+
+  "carousel": {
+    "tipo": "problema|resultados",
+    "tema": "el de la columna Tema del calendario",
+    "carrusel": "<fecha>", "carrusel_slides": 8,
+    "post_linkedin":     "CABECERA del doc en LinkedIn (estructura #HEM, 300-600 car)",
+    "caption_instagram": "CAPTION CORTO + 2-3 hashtags",
+    "hilo_twitter":      ["tweet 1 con gancho 🧵 (carousel HEM)","tweet 2","tweet 3","tweet 4"],
+    "slides": [ {"lineas": ["línea principal de la slide 1","apoyo opcional"]}, ... 8 slides ... ]
+  },
+
+  "institucional": {
+    "post_linkedin_motion": "POST INSTITUCIONAL, método/casos, 1ra plural, #TransformaciónContinua. Refuerza la tesis."
+  },
+
+  "newsletter": {
+    "tipo": "metodo|conexion",
+    "tema": "el de la columna Tema del calendario",
+    "carrusel": "<fecha>-news", "carrusel_slides": 8,
+    "caption_instagram": "CAPTION CORTO que invita al newsletter + 2-3 hashtags",
+    "hilo_twitter":      ["tweet 1 con gancho 🧵 (derivado del newsletter)","tweet 2","tweet 3","tweet 4"],
+    "slides": [ {"lineas": ["texto de la slide 1 del carrusel newsletter"]}, ... 8 slides ... ]
   }
 }
 ```
 Reglas del manifiesto:
-- `linkedin_paulo.carrusel`/`carrusel_slides` = EXACTO igual que `instagram` (mismo carrusel HEM, nombre `<fecha>`). El PDF sale del mismo render.
-- `instagram_newsletter.carrusel` = `<fecha>-news` (sufijo `-news`), siempre 8 slides.
-- `x_paulo_hem` = hilo del carousel (ángulo problema/resultados). `x_paulo_news` = hilo del newsletter (ángulo metodo/conexion). Distintos.
+- En `carousel`: la CABECERA (`post_linkedin`, `caption_instagram`, `hilo_twitter`) y las `slides` van JUNTAS — escribilas para que funcionen como conjunto.
+- `carousel.carrusel` = `<fecha>` (HEM). `newsletter.carrusel` = `<fecha>-news`. Ambos `carrusel_slides`: 8.
+- El hilo del carousel (`carousel.hilo_twitter`) y el del newsletter (`newsletter.hilo_twitter`) tienen ángulos DISTINTOS.
 
 ### EL COPY DE LAS SLIDES ES TUYO (lo más importante)
 `carousel.slides` y `newsletter.slides` son el COPY de cada carrusel — lo escribís VOS, el Redactor, con la voz de Paulo. NO es del Diseñador. Esto es lo que Paulo revisa y ajusta en el manifiesto, y lo que el render usa (se inyecta automáticamente). Reglas:

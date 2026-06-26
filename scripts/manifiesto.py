@@ -37,23 +37,36 @@ def mas_reciente():
     fs = sorted(glob.glob(os.path.join(MANIF_DIR,"manifiesto_*.json")), key=os.path.getmtime, reverse=True)
     return json.load(open(fs[0], encoding="utf-8")) if fs else None
 def pieza(m, canal):
-    c = m.get("canales",{}).get(canal)
-    return c if (c and c.get("activo")) else None
+    """Arma la pieza por canal desde los BLOQUES de contenido (carousel / institucional / newsletter).
+    Cada bloque agrupa su cabecera (post/caption/hilo) JUNTO con sus slides, para revisarlo en conjunto.
+    Devuelve el dict que espera el publicador (formato + texto/caption/hilo + carrusel/carrusel_slides)."""
+    C = m.get("carousel", {}); N = m.get("newsletter", {}); I = m.get("institucional", {})
+    if canal == "linkedin_paulo":
+        t = C.get("post_linkedin")
+        return {"formato":"carrusel","texto":t,"carrusel":C.get("carrusel"),"carrusel_slides":C.get("carrusel_slides")} if t else None
+    if canal == "instagram":
+        cap = C.get("caption_instagram")
+        return {"formato":"carrusel","caption":cap,"carrusel":C.get("carrusel"),"carrusel_slides":C.get("carrusel_slides")} if cap else None
+    if canal == "x_paulo_hem":
+        h = C.get("hilo_twitter")
+        return {"formato":"hilo","hilo":h} if h else None
+    if canal == "linkedin_motion":
+        t = I.get("post_linkedin_motion")
+        return {"formato":"post","texto":t} if t else None
+    if canal == "instagram_newsletter":
+        cap = N.get("caption_instagram")
+        return {"formato":"carrusel","caption":cap,"carrusel":N.get("carrusel"),"carrusel_slides":N.get("carrusel_slides")} if cap else None
+    if canal == "x_paulo_news":
+        h = N.get("hilo_twitter")
+        return {"formato":"hilo","hilo":h} if h else None
+    return None
 def validar(m):
     e=[]
     if not m.get("fecha_inicio"): e.append("falta 'fecha_inicio' (YYYY-MM-DD del lunes de la semana)")
-    # el COPY de cada carrusel vive en carousel.slides / newsletter.slides (lo edita Paulo)
-    for k in ("carousel","newsletter"):
-        blk = m.get(k)
-        if blk and not blk.get("slides"):
-            e.append(f"{k}: falta 'slides' (el copy de las 8 slides del carrusel)")
-    for canal,c in m.get("canales",{}).items():
-        if not c.get("activo"): continue
-        f=c.get("formato")
-        if f=="post" and not c.get("texto"): e.append(f"{canal}: post sin texto")
-        if f=="hilo" and not c.get("hilo"): e.append(f"{canal}: hilo sin hilo")
-        if f=="carrusel":
-            caption_key = "texto" if canal == "linkedin_paulo" else "caption"
-            for k in (caption_key,"carrusel","carrusel_slides"):
-                if not c.get(k): e.append(f"{canal}: carrusel sin {k}")
+    C = m.get("carousel", {}); N = m.get("newsletter", {})
+    if not C.get("slides"): e.append("carousel: falta 'slides' (copy de las 8 slides)")
+    if not N.get("slides"): e.append("newsletter: falta 'slides' (copy de las 8 slides)")
+    if not C.get("post_linkedin"): e.append("carousel: falta 'post_linkedin' (cabecera del carrusel en LinkedIn)")
+    if not C.get("caption_instagram"): e.append("carousel: falta 'caption_instagram'")
+    if not N.get("caption_instagram"): e.append("newsletter: falta 'caption_instagram'")
     return e

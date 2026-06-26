@@ -72,21 +72,17 @@ quote card · dato (número con sombra laminada) · lista numerada. (Quote card:
 
 ## 4. ARQUITECTURA TÉCNICA
 
-### El contrato: MANIFIESTO SEMANAL (nombrado por fecha)
-Fuente ÚNICA de verdad. UN JSON por semana, `manifiestos/manifiesto_<fecha>.json` (`<fecha>` = lunes de la semana, YYYY-MM-DD), con TODA la publicación automática de la semana en los 6 canales. El newsletter va aparte (`newsletters/newsletter_<fecha>.md`, Paulo lo publica manual). Estructura:
+### El contrato: MANIFIESTO SEMANAL (nombrado por fecha, organizado por BLOQUES)
+Fuente ÚNICA de verdad. UN JSON por semana, `manifiestos/manifiesto_<fecha>.json` (`<fecha>` = lunes, YYYY-MM-DD). Organizado por BLOQUES de contenido: cada bloque agrupa su cabecera (post/caption/hilo) + sus 8 slides JUNTAS, para revisarlo en conjunto. El newsletter (artículo) va aparte (`newsletters/newsletter_<fecha>.md`, manual). Estructura:
 ```
 { "fecha_inicio":"<fecha>","semana":N,"tesis","estado",
-  "carousel":{tipo:"problema|resultados",tema}, "newsletter":{tipo:"metodo|conexion",tema},
-  "canales": {
-    "linkedin_paulo":       {formato:"carrusel", texto, carrusel:"<fecha>", carrusel_slides},   // HEM PDF · martes
-    "instagram":            {formato:"carrusel", caption, carrusel:"<fecha>", carrusel_slides},  // HEM · martes
-    "x_paulo_hem":          {formato:"hilo", hilo:[...]},                                        // hilo carousel · martes
-    "linkedin_motion":      {formato:"post", texto},                                             // institucional · miércoles
-    "instagram_newsletter": {formato:"carrusel", caption, carrusel:"<fecha>-news", carrusel_slides:8}, // jueves
-    "x_paulo_news":         {formato:"hilo", hilo:[...]}                                         // hilo newsletter · jueves
-  }}
+  "carousel": {tipo:"problema|resultados", tema, carrusel:"<fecha>", carrusel_slides:8,
+               post_linkedin, caption_instagram, hilo_twitter:[...], slides:[{lineas:[...]} x8]},   // martes
+  "institucional": {post_linkedin_motion},                                                          // miércoles
+  "newsletter": {tipo:"metodo|conexion", tema, carrusel:"<fecha>-news", carrusel_slides:8,
+                 caption_instagram, hilo_twitter:[...], slides:[{lineas:[...]} x8]} }               // jueves
 ```
-REGLA DURA: cada canal su pieza propia. Carousel y newsletter comparten tesis, NUNCA ángulo. El día/hora de cada canal es fijo (CANAL_SCHEDULE en publicador.py); la programación se ancla a `fecha_inicio`.
+El copy de las slides lo escribe el Redactor (voz) y se inyecta en el render (Paulo lo edita acá). `manifiesto.pieza()` arma la pieza por canal desde estos bloques. Carousel y newsletter comparten tesis, NUNCA ángulo. Día/hora fijos por canal (CANAL_SCHEDULE en publicador.py); la programación se ancla a `fecha_inicio`.
 
 ### Render (no usa Chrome — no disponible en sandbox)
 WeasyPrint (HTML/CSS→PDF) + pdftoppm (PDF→PNG). `render.py` paramétrico lee JSON de slides (`--png` exporta imágenes). `generar_carrusel.py` deriva nombre y cantidad de slides DEL MANIFIESTO (garantiza congruencia de nombres con el publicador).
