@@ -1,5 +1,5 @@
 {
-  "episodio": "ep1-1 — Cambio vs Transformación",
+  "episodio": "EJEMPLO HEM — Cambio vs Transformación (estructura de oro)",
   "slides": [
     {
       "bg": "negro", "eyebrow_color": "naranja", "pager": "01 — 08",
@@ -10,40 +10,50 @@
       ]
     },
     {
-      "bg": "negro", "eyebrow_color": "aqua", "pager": "02 — 08",
+      "bg": "negro", "eyebrow_color": "naranja", "pager": "02 — 08",
       "blocks": [
-        {"type": "lyon", "text": "Lo que más escuchamos:", "size": 50, "color": "blanco", "mb": 40},
-        {"type": "lyont", "text": "«Hicimos todos los cambios posibles.<br>Y en el fondo nada se transformó.»", "size": 52, "color": "blanco", "mb": 44},
-        {"type": "lyon", "text": "No les faltó inversión ni decisión.", "size": 42, "color": "aqua"}
+        {"type": "lyon", "text": "El cambio surge de un", "size": 52, "color": "blanco", "mb": 36},
+        {"type": "eco", "text": "DOLOR", "size": 250, "color": "naranja"},
+        {"type": "lyont", "text": "Una necesidad puntual. Una urgencia.", "size": 40, "color": "aqua", "mt": 48}
       ]
     },
     {
       "bg": "negro", "eyebrow_color": "naranja", "pager": "03 — 08",
       "blocks": [
-        {"type": "lyon", "text": "El cambio responde a un", "size": 52, "color": "blanco", "mb": 36},
-        {"type": "eco", "text": "DOLOR", "size": 250, "color": "naranja"},
-        {"type": "lyont", "text": "Una urgencia puntual. Se contrata<br>una solución y se cierra el tema.", "size": 40, "color": "aqua", "mt": 48}
+        {"type": "lyon", "text": "Es transaccional:", "size": 52, "color": "blanco", "mb": 40},
+        {"type": "rows", "html": "<span class='futura' style='font-size:88px;color:#FFFFFF'>PROBLEMA</span><span class='futura' style='font-size:88px;color:#FF5000'> → </span><span class='futura' style='font-size:88px;color:#FFFFFF'>SOLUCIÓN</span>", "ops": [1.0, 0.55, 0.25], "gap": 18},
+        {"type": "lyon", "text": "Corto plazo.", "size": 48, "color": "aqua", "mt": 56}
       ]
     },
     {
       "bg": "aqua", "eyebrow_color": "violeta", "pager": "04 — 08",
       "blocks": [
-        {"type": "lyon", "text": "La transformación nace de una", "size": 52, "color": "negro", "mb": 34},
+        {"type": "lyon", "text": "La transformación surge de una", "size": 52, "color": "negro", "mb": 34},
         {"type": "lam", "text": "VISIÓN", "size": 250, "color": "violeta"},
-        {"type": "lyont", "text": "De entender a dónde<br>tiene que ir la organización.", "size": 40, "color": "negro", "mt": 50}
+        {"type": "lyont", "text": "Del entendimiento<br>profundo del contexto.", "size": 40, "color": "negro", "mt": 50}
       ]
     },
     {
-      "bg": "violeta", "eyebrow_color": "aqua", "pager": "05 — 08",
+      "bg": "aqua", "eyebrow_color": "violeta", "pager": "05 — 08",
       "blocks": [
-        {"type": "lyon", "text": "El cambio empieza y termina.", "size": 52, "color": "blanco", "mb": 12},
-        {"type": "lyon", "text": "La transformación no termina.", "size": 52, "color": "blanco", "mb": 44},
-        {"type": "futura", "text": "SE VUELVE LA FORMA", "size": 92, "lh": 88, "color": "blanco"},
-        {"type": "lam", "text": "DE OPERAR.", "size": 92, "color": "aqua"}
+        {"type": "lyon", "text": "Y atraviesa todo:", "size": 52, "color": "negro", "mb": 40},
+        {"type": "futura", "text": "PROCESOS", "size": 135, "lh": 124, "color": "violeta"},
+        {"type": "futura", "text": "LIDERAZGO", "size": 135, "lh": 124, "color": "negro"},
+        {"type": "lam", "text": "CULTURA", "size": 135, "color": "naranja"},
+        {"type": "lyont", "text": "Mediano y largo plazo.", "size": 40, "color": "negro", "mt": 52}
       ]
     },
     {
-      "bg": "naranja", "eyebrow_color": "negro", "pager": "06 — 08",
+      "bg": "violeta", "eyebrow_color": "aqua", "pager": "06 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "Su motor no es la urgencia.", "size": 52, "color": "blanco", "mb": 8},
+        {"type": "lyon", "text": "Es el", "size": 52, "color": "blanco", "mb": 40},
+        {"type": "eco", "text": "ENTUSIASMO", "size": 168, "color": "aqua"},
+        {"type": "lyont", "text": "Saber que la visión puede<br>convertirse en resultados.", "size": 40, "color": "blanco", "mt": 52}
+      ]
+    },
+    {
+      "bg": "naranja", "eyebrow_color": "negro", "pager": "07 — 08",
       "blocks": [
         {"type": "lyon", "text": "Comprar tecnología esperando transformarte es como cambiar el auto para escapar del tráfico.", "size": 66, "lh2": 1.22, "color": "negro", "maxw": 900, "mb": 70},
         {"type": "futura", "text": "EL PROBLEMA NO ES", "size": 88, "lh": 84, "color": "blanco"},
@@ -52,21 +62,12 @@
       ]
     },
     {
-      "bg": "negro", "eyebrow_color": "aqua", "pager": "07 — 08",
-      "blocks": [
-        {"type": "lyon", "text": "No es una diferencia", "size": 52, "color": "blanco"},
-        {"type": "lyon", "text": "de presupuesto. Es de origen.", "size": 52, "color": "blanco", "mb": 48},
-        {"type": "futura", "text": "UN DOLOR.", "size": 104, "lh": 98, "color": "naranja"},
-        {"type": "lam", "text": "O UNA VISIÓN.", "size": 104, "color": "violeta"}
-      ]
-    },
-    {
       "bg": "negro", "eyebrow_color": "aqua", "pager": "08 — 08", "foot": "Lo único permanente<br>es el movimiento", "foot_color": "naranja",
       "blocks": [
-        {"type": "futura", "text": "ANTES DE LA PRÓXIMA INVERSIÓN,", "size": 76, "lh": 80, "color": "blanco"},
-        {"type": "futura", "text": "UNA SOLA PREGUNTA:", "size": 76, "lh": 84, "color": "blanco", "mb": 44},
-        {"type": "futura", "text": "¿CAMBIO O", "size": 76, "lh": 80, "color": "blanco"},
-        {"type": "lam", "text": "TRANSFORMACIÓN?", "size": 76, "color": "naranja"}
+        {"type": "futura", "text": "SI YA TENÉS LA VISIÓN,", "size": 92, "lh": 88, "color": "blanco"},
+        {"type": "futura", "text": "TE FALTA UNA SOLA COSA:", "size": 92, "lh": 96, "color": "blanco", "mb": 38},
+        {"type": "eco", "text": "EL CÓMO", "size": 155, "color": "naranja"},
+        {"type": "lyon", "text": "Transformación Continua® — seguí la serie.", "size": 42, "color": "aqua", "mt": 54}
       ]
     }
   ]

@@ -14,6 +14,7 @@ def inject_hem(spec, copy_slides):
     """Mapea, por orden, las líneas de copy del manifiesto a los bloques de texto de cada slide.
     Si la cantidad no coincide, deja el texto que puso el Diseñador (fallback seguro)."""
     for i, s in enumerate(spec.get("slides", [])):
+        if i == 0: continue  # la PORTADA es diseño fijo: no se inyecta copy del manifiesto
         if i >= len(copy_slides): break
         lineas = copy_slides[i].get("lineas", [])
         tb = [b for b in s.get("blocks", []) if b.get("type") in TEXT_TYPES]
