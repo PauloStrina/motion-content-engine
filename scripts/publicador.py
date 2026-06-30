@@ -121,23 +121,15 @@ def publicar(m, cfg, solo=None):
                 print(f"  hilo de {len(p['hilo'])} tweets")
                 _programar_raw(acc, plat, p["hilo"][0], when, hilo=p["hilo"][1:], name=f"{run_name}_{canal}")
             elif fmt=="carrusel":
-                # NOMBRE Y CANTIDAD SALEN DEL MANIFIESTO (fuente única de verdad)
+                # Carrusel = imágenes PNG en TODOS los canales (incluido LinkedIn).
+                # El PDF de LinkedIn falla en Blotato ("failed to read media metadata"): se sigue
+                # generando y queda en motion-media para publicar a mano, pero Blotato usa los PNG.
                 base = p["carrusel"]; n = p["carrusel_slides"]
-                if canal == "linkedin_paulo":
-                    media_out = os.environ.get("MEDIA_OUT_DIR", "")
-                    local_pdf = os.path.join(media_out, f"{base}.pdf") if media_out else ""
-                    if not DRY and local_pdf and os.path.exists(local_pdf):
-                        pdf_url = _upload_presigned(local_pdf)
-                    else:
-                        pdf_url = f"{media_base}/{base}.pdf"
-                    print(f"  carrusel PDF {base}")
-                    print(f"  texto: {p['texto'][:60]}...")
-                    _programar_raw(acc, plat, p["texto"], when, media=[pdf_url], page_id=cfg[canal].get("pageid"), name=f"{run_name}_{canal}")
-                else:
-                    urls = [f"{media_base}/{base}-{i}.png" for i in range(1, n+1)]
-                    print(f"  carrusel {base}: {n} slides")
-                    print(f"  caption: {p['caption'][:60]}...")
-                    _programar_raw(acc, plat, p["caption"], when, media=urls, name=f"{run_name}_{canal}")
+                urls = [f"{media_base}/{base}-{i}.png" for i in range(1, n+1)]
+                texto = p.get("texto") or p.get("caption")
+                print(f"  carrusel {base}: {n} imágenes")
+                print(f"  texto: {texto[:60]}...")
+                _programar_raw(acc, plat, texto, when, media=urls, page_id=cfg[canal].get("pageid"), name=f"{run_name}_{canal}")
             else:
                 raise RuntimeError(f"Formato no soportado: {fmt}")
             print("  ✓ programado confirmado por Blotato")
