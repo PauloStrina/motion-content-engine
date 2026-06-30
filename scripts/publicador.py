@@ -121,13 +121,13 @@ def publicar(m, cfg, solo=None):
                 print(f"  hilo de {len(p['hilo'])} tweets")
                 _programar_raw(acc, plat, p["hilo"][0], when, hilo=p["hilo"][1:], name=f"{run_name}_{canal}")
             elif fmt=="carrusel":
-                # Carrusel = imágenes PNG en TODOS los canales (incluido LinkedIn).
-                # El PDF de LinkedIn falla en Blotato ("failed to read media metadata"): se sigue
-                # generando y queda en motion-media para publicar a mano, pero Blotato usa los PNG.
+                # Carrusel = imágenes PNG en TODOS los canales. En LinkedIn, Blotato arma
+                # el DOCUMENTO PDF (carrusel deslizable) A PARTIR de los PNG — NO se le manda
+                # un PDF (lo rechaza: "failed to read media metadata"). Doc Blotato: pasar 2-10 PNG.
                 base = p["carrusel"]; n = p["carrusel_slides"]
                 urls = [f"{media_base}/{base}-{i}.png" for i in range(1, n+1)]
                 texto = p.get("texto") or p.get("caption")
-                print(f"  carrusel {base}: {n} imágenes")
+                print(f"  carrusel {base}: {n} imágenes (LinkedIn → Blotato arma el PDF documento)")
                 print(f"  texto: {texto[:60]}...")
                 _programar_raw(acc, plat, texto, when, media=urls, page_id=cfg[canal].get("pageid"), name=f"{run_name}_{canal}")
             else:
