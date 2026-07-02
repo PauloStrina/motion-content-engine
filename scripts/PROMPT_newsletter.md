@@ -20,8 +20,8 @@ Ejes del ángulo:
 
 ## 2. TÍTULO (regla corregida por el fundador)
 Claridad sobre intriga. El asunto anticipa con claridad qué se va a encontrar el lector — nadie abre lo que no entiende. La tensión y la antítesis van ADENTRO del texto, no en el asunto.
-- Cuando aplique, **título con número al frente** (más directo): "4 preguntas para saber si tu organización busca un cambio o una transformación".
-- Bien: "¿Cuál es la diferencia entre un cambio y una transformación?" · "4 preguntas para…"
+- El número al frente NO es regla: usalo SOLO si hace sentido con el contenido (ej. si el artículo realmente son 4 preguntas → "4 preguntas para…"). Si no aporta, título normal. Nunca fuerces un número.
+- Bien: "¿Cuál es la diferencia entre un cambio y una transformación?" · "4 preguntas para…" (cuando de verdad son 4)
 - Mal: "El error que te está costando millones" / "Esto cambiará tu empresa para siempre"
 
 ## 3. ESTRUCTURA (artículo 1-2 min de lectura, ~450-700 palabras — ágil, sin sermón)
