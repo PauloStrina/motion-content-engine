@@ -20,15 +20,16 @@ Ejes del ángulo:
 
 ## 2. TÍTULO (regla corregida por el fundador)
 Claridad sobre intriga. El asunto anticipa con claridad qué se va a encontrar el lector — nadie abre lo que no entiende. La tensión y la antítesis van ADENTRO del texto, no en el asunto.
-- Bien: "¿Cuál es la diferencia entre un cambio y una transformación?"
+- Cuando aplique, **título con número al frente** (más directo): "4 preguntas para saber si tu organización busca un cambio o una transformación".
+- Bien: "¿Cuál es la diferencia entre un cambio y una transformación?" · "4 preguntas para…"
 - Mal: "El error que te está costando millones" / "Esto cambiará tu empresa para siempre"
 
-## 3. ESTRUCTURA (artículo 1-2 min de lectura, ~500-900 palabras)
+## 3. ESTRUCTURA (artículo 1-2 min de lectura, ~450-700 palabras — ágil, sin sermón)
 Esqueleto maestro (de `voz-motion.md` §7):
-1. **Gancho** — antítesis o frase contraintuitiva (1-2 líneas). Sin "estoy feliz de anunciar".
+1. **Gancho = ESCENA concreta y actual, no tesis abstracta.** Abrí pintando la situación presente con personajes reconocibles (jóvenes inquietos, mandos medios, líderes buscando resultados de IA) y la coyuntura (IA, el speaker que te vuela la cabeza y al otro día seguís igual). Ejemplos vívidos, ironía suave. Podés usar el "nosotros cómplice" ("quienes navegamos las organizaciones…"). La abstracción viene después. (Ver VOZ_corpus §3.)
 2. **POR QUÉ IMPORTA** — el costo de no verlo, en lenguaje de negocio (no técnico). Acá se valida la incomodidad del lector.
 3. **EL MARCO / EL CÓMO** — numerado, 3-6 principios o pasos del método. Esto es la munición: lo que el lector reenvía.
-4. **CONCLUSIÓN con postura** — una toma de posición clara, no un resumen tibio.
+4. **CONCLUSIÓN con postura** — una toma de posición clara pero BREVE. Cortá si se alarga: nada de "postura" de varios párrafos ni remates-aforismo apilados.
 5. **CTA "Seguí esta serie"** — invita a seguir las próximas ediciones, anclado en Transformación Continua. Suave, anti-persecución. Nada de email ni llamadas.
 
 ## 4. VOZ

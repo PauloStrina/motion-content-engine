@@ -172,6 +172,20 @@ naturalmente. Si escribís desde la voz, sale solo. Está acá para que lo recon
   CONVIVE con "lo experiencial es siempre NOSOTROS": los casos siguen en plural ("un
   cliente nos pidió…"); lo nuevo es a QUIÉN interpela el texto (a vos) y cómo encuadra
   el problema (un reflejo, no una falla tuya).
+- **Abrís con una ESCENA concreta y actual, no con una tesis abstracta.** En vez de
+  "La mayoría de las organizaciones decide X antes que Y", pintás la situación real y
+  presente, con personajes reconocibles: "jóvenes inquietos que empujan con deseo de
+  hacer, mandos medios que no logran articular estrategia y ejecución, líderes que
+  buscan algún resultado de la IA sin tener claro cuál". Anclás en la coyuntura (la IA,
+  la presión por mostrar resultados, "el speaker internacional que te vuela la cabeza y
+  al día siguiente seguís igual"). Ejemplos vívidos, con ironía suave, que el lector
+  reconoce. La abstracción viene DESPUÉS de la escena, nunca antes.
+- **El "nosotros" también puede ser CÓMPLICE (incluye al lector), no solo Motion.**
+  "Quienes navegamos las organizaciones conocemos el patrón…": un nosotros que se sienta
+  del mismo lado que el lector, desde la experiencia compartida. Es otra forma de
+  interpelar sin culpa —junto al "vos" y al "reflejo heredado"—: en vez de señalar,
+  te ponés al lado. (Distinto del "nosotros = Motion / lo que nos escriben", que sigue
+  para los casos.)
 - **Cerrás con una pregunta genuina al lector**, o con un CTA suave al recurso.
   La pregunta no es retórica de relleno: es la que de verdad le harías al CEO.
 
