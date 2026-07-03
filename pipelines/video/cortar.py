@@ -161,7 +161,7 @@ def render(video, reel, intervalos, ass_path, out_path):
 
     script = out_path.with_suffix(".filter")
     script.write_text("\n".join(filtros), encoding="utf-8")
-    subprocess.run(["ffmpeg", "-y",
+    subprocess.run(["ffmpeg", "-y", "-copyts",
                     "-ss", f"{seek:.3f}", "-t", f"{duracion_lectura:.3f}", "-i", str(video),
                     "-i", str(LOGO),
                     "-filter_complex_script", str(script),
