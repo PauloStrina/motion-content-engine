@@ -8,6 +8,10 @@ on:
       slug:
         description: "El MISMO slug de la sesión (debe existir pipelines/video/reels/<slug>/manifiesto_reels.json)."
         required: true
+      video_pantalla_url:
+        description: "OPCIONAL (capacitación): link de Drive de la grabación de PANTALLA, grabada en simultáneo con la cámara."
+        required: false
+        default: ""
 permissions:
   contents: read
 jobs:
@@ -22,8 +26,16 @@ jobs:
           pip install --quiet --force-reinstall "gdown==5.2.0"
       - name: Descargar video de Drive
         run: python3 pipelines/video/descargar.py "${{ github.event.inputs.video_url }}" _video
+      - name: Descargar video de pantalla (si hay)
+        if: ${{ github.event.inputs.video_pantalla_url != '' }}
+        run: |
+          python3 pipelines/video/descargar.py "${{ github.event.inputs.video_pantalla_url }}" _pantalla
+          mv _pantalla/input.mp4 _video/pantalla.mp4
       - name: Cortar reels (silencios fuera, subtítulos y logo quemados)
-        run: python pipelines/video/cortar.py _video/input.mp4 "pipelines/video/reels/${{ github.event.inputs.slug }}" media_out
+        run: |
+          PANTALLA=""
+          if [ -f _video/pantalla.mp4 ]; then PANTALLA="_video/pantalla.mp4"; fi
+          python pipelines/video/cortar.py _video/input.mp4 "pipelines/video/reels/${{ github.event.inputs.slug }}" media_out $PANTALLA
       - name: Subir reels para revisión
         uses: actions/upload-artifact@v4
         with:

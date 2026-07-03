@@ -8,6 +8,10 @@ on:
       slug:
         description: "Nombre de la sesión (ej: 2026-07-03-conceptos). Nombra la carpeta en pipelines/video/reels/."
         required: true
+      con_pantalla:
+        description: "¿La sesión es una capacitación con grabación de pantalla? (los reels salen en modo split: pantalla arriba, cámara abajo)"
+        required: false
+        default: "no"
 permissions:
   contents: write
   id-token: write
@@ -40,6 +44,8 @@ jobs:
             (leer la estrategia completa antes de elegir nada).
             Escribí pipelines/video/reels/${{ github.event.inputs.slug }}/manifiesto_reels.json con la
             estructura EXACTA del prompt.
+            SESIÓN CON PANTALLA: "${{ github.event.inputs.con_pantalla }}" — si es "si"/"sí", es una
+            capacitación con grabación de pantalla: usá "modo":"split" en TODOS los reels.
             Éxito = existe el manifiesto, cada reel dura 20-62s según los timestamps, ningún segmento
             incluye retomas descartadas, y los captions pasan la auto-crítica de voz.
       - name: Commit (transcript + manifiesto de reels)

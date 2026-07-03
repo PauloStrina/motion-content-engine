@@ -3,10 +3,11 @@
 Por cada reel:
 - Recorta los segmentos elegidos por el Editor de Video y QUITA LOS SILENCIOS internos
   (pausas entre palabras > GAP_MAX se colapsan) para darle dinamismo.
-- Reencuadra a 1080x1920: modo "crop" (cara a pantalla completa) o "marco" (16:9 sobre fondo negro).
+- Reencuadra a 1080x1920: modo "crop" (cara a pantalla completa), "marco" (16:9 sobre fondo negro)
+  o "split" (grabación de pantalla arriba + cámara abajo; requiere el segundo video).
 - Quema subtítulos ASS estilo karaoke (palabra activa en naranja), título con caja del color del tipo
   y logo Motion.
-Uso: python cortar.py <video.mp4> <carpeta de la sesión> [carpeta de salida]
+Uso: python cortar.py <video.mp4> <carpeta de la sesión> [carpeta de salida] [video_pantalla.mp4]
 """
 import json, pathlib, subprocess, sys
 
@@ -136,34 +137,47 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     path.write_text(header + "\n".join(eventos) + "\n", encoding="utf-8")
 
 
-def render(video, reel, intervalos, ass_path, out_path):
+def render(video, reel, intervalos, ass_path, out_path, pantalla=None, offset_pantalla=0.0):
     """UNA sola decodificación por reel (seek al inicio del reel + duración acotada, nunca desde el
     segundo 0) y los silencios se saltan adentro con select/aselect sobre ese único stream — no se
-    concatenan clips de decodificadores separados, así video y audio quedan siempre sincronizados."""
+    concatenan clips de decodificadores separados, así video y audio quedan siempre sincronizados.
+    modo "split": la grabación de pantalla (segundo video, mismos cortes) va arriba y la cámara abajo."""
     overall_a = min(a for a, b in intervalos)
     overall_b = max(b for a, b in intervalos)
     seek = max(0.0, overall_a - 2)
     duracion_lectura = overall_b - seek + 0.5
     cond = "+".join(f"between(t\\,{a:.3f}\\,{b:.3f})" for a, b in intervalos)
 
-    filtros = [
-        f"[0:v]select='{cond}',setpts=N/FRAME_RATE/TB[vc];",
-        f"[0:a]aselect='{cond}',asetpts=N/SR/TB[ac];",
-    ]
-    if reel.get("modo") == "marco":
-        filtros.append("[vc]scale=1080:-2:force_original_aspect_ratio=decrease,"
-                       f"pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=0x{NEGRO}[vf];")
+    split = reel.get("modo") == "split" and pantalla
+    entradas = ["-ss", f"{seek:.3f}", "-t", f"{duracion_lectura:.3f}", "-i", str(video)]
+    filtros = [f"[0:a]aselect='{cond}',asetpts=N/SR/TB[ac];"]
+    if split:
+        off = offset_pantalla
+        cond_p = "+".join(f"between(t\\,{a + off:.3f}\\,{b + off:.3f})" for a, b in intervalos)
+        seek_p = max(0.0, overall_a + off - 2)
+        entradas += ["-ss", f"{seek_p:.3f}", "-t", f"{duracion_lectura:.3f}", "-i", str(pantalla)]
+        filtros.append(f"[0:v]select='{cond}',setpts=N/FRAME_RATE/TB,fps=30,"
+                       "crop=min(iw\\,ih*9/8):ih,scale=1080:960[vcam];")
+        filtros.append(f"[1:v]select='{cond_p}',setpts=N/FRAME_RATE/TB,fps=30,"
+                       "scale=1080:960:force_original_aspect_ratio=decrease,"
+                       f"pad=1080:960:(ow-iw)/2:(oh-ih)/2:color=0x{NEGRO}[vpan];")
+        filtros.append("[vpan][vcam]vstack=inputs=2[vf];")
+        logo_idx = 2
     else:
-        filtros.append("[vc]crop=min(iw\\,ih*9/16):ih,scale=1080:1920[vf];")
-    filtros.append("[1:v]scale=170:-1[lg];[vf][lg]overlay=W-w-48:H-h-64[vl];")
+        filtros.append(f"[0:v]select='{cond}',setpts=N/FRAME_RATE/TB[vc];")
+        if reel.get("modo") == "marco":
+            filtros.append("[vc]scale=1080:-2:force_original_aspect_ratio=decrease,"
+                           f"pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=0x{NEGRO}[vf];")
+        else:
+            filtros.append("[vc]crop=min(iw\\,ih*9/16):ih,scale=1080:1920[vf];")
+        logo_idx = 1
+    filtros.append(f"[{logo_idx}:v]scale=170:-1[lg];[vf][lg]overlay=W-w-48:H-h-64[vl];")
     filtros.append(f"[vl]ass=filename={ass_path.as_posix()}:fontsdir={FONTS_DIR.as_posix()}[vout];")
     filtros.append("[ac]loudnorm=I=-16:TP=-1.5:LRA=11[aout]")
 
     script = out_path.with_suffix(".filter")
     script.write_text("\n".join(filtros), encoding="utf-8")
-    subprocess.run(["ffmpeg", "-y", "-copyts",
-                    "-ss", f"{seek:.3f}", "-t", f"{duracion_lectura:.3f}", "-i", str(video),
-                    "-i", str(LOGO),
+    subprocess.run(["ffmpeg", "-y", "-copyts", *entradas, "-i", str(LOGO),
                     "-filter_complex_script", str(script),
                     "-map", "[vout]", "-map", "[aout]",
                     "-c:v", "libx264", "-crf", "18", "-preset", "faster", "-pix_fmt", "yuv420p",
@@ -172,14 +186,15 @@ def render(video, reel, intervalos, ass_path, out_path):
     script.unlink()
 
 
-def main(video, sesion_dir, out_dir="media_out"):
+def main(video, sesion_dir, out_dir="media_out", pantalla=None):
     sesion = pathlib.Path(sesion_dir)
     manifiesto = json.loads((sesion / "manifiesto_reels.json").read_text(encoding="utf-8"))
     words = json.loads((sesion / "transcript.json").read_text(encoding="utf-8"))["palabras"]
     out = pathlib.Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     familia = font_family()
-    print(f"Fuente para subtítulos: {familia}")
+    offset_pantalla = float(manifiesto.get("offset_pantalla", 0))
+    print(f"Fuente para subtítulos: {familia}" + (f" · pantalla: {pantalla} (offset {offset_pantalla}s)" if pantalla else ""))
 
     for reel in manifiesto["reels"]:
         nombre = f"reel_{reel['n']}_{reel['slug']}"
@@ -192,7 +207,7 @@ def main(video, sesion_dir, out_dir="media_out"):
               + ("  ⚠ PASA DE 62s" if duracion > 62 else ""))
         ass_path = out / f"{nombre}.ass"
         escribir_ass(ass_path, reel, sub_words, duracion, familia)
-        render(video, reel, intervalos, ass_path, out / f"{nombre}.mp4")
+        render(video, reel, intervalos, ass_path, out / f"{nombre}.mp4", pantalla, offset_pantalla)
         print(f"  OK → {out / (nombre + '.mp4')}")
 
 

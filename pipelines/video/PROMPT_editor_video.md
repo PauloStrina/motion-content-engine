@@ -35,7 +35,10 @@ Leé completos:
 7. Cada reel se asigna a una **tesis (1-4)** y un **tipo** (problema · metodo · resultados · conexion)
    según la matriz de tesis.md. El tipo define el color del título en el render.
 8. **`modo`**: "crop" (default, cara a pantalla completa 9:16) · "marco" (solo si en ese momento se
-   muestra algo en pantalla que hay que ver completo — el video queda 16:9 con marco de marca).
+   muestra algo en pantalla que hay que ver completo — el video queda 16:9 con marco de marca) ·
+   "split" (capacitaciones con grabación de pantalla: pantalla arriba + cámara abajo; usalo cuando
+   la corrida lo indique). Con "split", el manifiesto admite `"offset_pantalla"` a nivel raíz
+   (segundos de desfase si las dos grabaciones no arrancaron exactamente juntas; default 0).
 
 ## CAPTION
 `caption_instagram` en voz Motion (leé el formato de canal en voz-motion.md): abre con escena/frase
