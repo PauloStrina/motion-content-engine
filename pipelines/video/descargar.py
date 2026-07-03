@@ -2,10 +2,15 @@
 """Descarga el video largo desde Google Drive (link de archivo o de carpeta) y lo deja en <destino>/input.mp4.
 Uso: python descargar.py <url_drive> <carpeta_destino>
 El link debe estar compartido como "cualquiera con el enlace"."""
-import pathlib, shutil, sys
+import pathlib, re, shutil, sys
 import gdown
 
 VIDEO_EXTS = {".mp4", ".mov", ".mkv", ".m4v", ".webm"}
+
+
+def file_id(url):
+    m = re.search(r"/d/([\w-]+)", url) or re.search(r"[?&]id=([\w-]+)", url)
+    return m.group(1) if m else None
 
 
 def main(url, destino):
@@ -15,7 +20,10 @@ def main(url, destino):
     if "/folders/" in url:
         gdown.download_folder(url=url, output=str(dl), quiet=False, use_cookies=False)
     else:
-        gdown.download(url=url, output=str(dl) + "/", quiet=False, fuzzy=True, use_cookies=False)
+        fid = file_id(url)
+        if not fid:
+            sys.exit(f"ERROR: no pude extraer el ID de archivo del link: {url}")
+        gdown.download(id=fid, output=str(dl) + "/", quiet=False, use_cookies=False)
 
     files = [p for p in dl.rglob("*") if p.is_file()]
     if not files:

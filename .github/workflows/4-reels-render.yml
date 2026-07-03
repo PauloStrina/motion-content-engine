@@ -18,7 +18,7 @@ jobs:
       - name: Dependencias
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fontconfig
-          pip install --quiet --upgrade "gdown>=5"
+          pip install --quiet --force-reinstall "gdown==5.2.0"
       - name: Descargar video de Drive
         run: python3 pipelines/video/descargar.py "${{ github.event.inputs.video_url }}" _video
       - name: Cortar reels (silencios fuera, subtítulos y logo quemados)
