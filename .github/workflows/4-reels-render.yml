@@ -1,0 +1,41 @@
+name: 4-reels-render
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: "El MISMO link de Drive del video largo usado en 3-reels-guion."
+        required: true
+      slug:
+        description: "El MISMO slug de la sesión (debe existir pipelines/video/reels/<slug>/manifiesto_reels.json)."
+        required: true
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fontconfig
+          pip install --quiet gdown
+      - name: Descargar video de Drive
+        run: |
+          mkdir -p _video
+          URL="${{ github.event.inputs.video_url }}"
+          if echo "$URL" | grep -q "/folders/"; then
+            gdown --folder "$URL" -O _video
+          else
+            gdown --fuzzy "$URL" -O _video/
+          fi
+          VIDEO=$(find _video -type f \( -iname "*.mp4" -o -iname "*.mov" -o -iname "*.mkv" \) | sort -r | head -1)
+          if [ -z "$VIDEO" ]; then echo "ERROR: no se encontró video en el link"; exit 1; fi
+          if [ "$VIDEO" != "_video/input.mp4" ]; then mv "$VIDEO" _video/input.mp4; fi
+      - name: Cortar reels (silencios fuera, subtítulos y logo quemados)
+        run: python pipelines/video/cortar.py _video/input.mp4 "pipelines/video/reels/${{ github.event.inputs.slug }}" media_out
+      - name: Subir reels para revisión
+        uses: actions/upload-artifact@v4
+        with:
+          name: reels-${{ github.event.inputs.slug }}
+          path: media_out/*.mp4
+          retention-days: 14

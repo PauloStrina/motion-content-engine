@@ -120,6 +120,7 @@ Cadencia: 1 semana = 1 manifiesto = 1 corrida de cada workflow. Combustible: Pau
 
 ## 6. ESTADO ACTUAL
 ✅ Cascada de texto · ✅ Carruseles · ✅ Quote/dato/lista · ✅ Publicación 4 canales (ep1-2 programado en Blotato, modo revisión) · ✅ Calendario editorial · ✅ Manifiesto dinámico punta a punta.
+🚧 **Motor de reels** (pipelines/video/): grabación larga → whisper con timestamps por palabra → Editor de Video IA elige reels según estrategia (manifiesto_reels.json, Paulo revisa) → corte ffmpeg sin silencios + subtítulos karaoke de marca + título por tipo + logo → artifacts para revisión. Workflows `3-reels-guion` y `4-reels-render` (inputs: link Drive del video + slug de sesión). Primera prueba real pendiente.
 ⏸️ Standby: motion graphics conceptuales (svganim.py validado técnicamente, falta pulido de composición — espera modelo de mayor capacidad).
 
 ---
@@ -127,7 +128,7 @@ Cadencia: 1 semana = 1 manifiesto = 1 corrida de cada workflow. Combustible: Pau
 ## 7. PENDIENTES
 **Inmediato**: subir sistema-final + calendario al repo; borrar obsoletos (ver §8); probar flujo en dry; OK final ep1-2 en Blotato.
 **Corto**: crear Banco de Evidencias (evidencias/banco.md); validar dato "x4 ROI" antes de uso público; generar ep siguiente de punta a punta; pulir quote card; alinear 8→7 slides del ejemplo; limpieza de PNG huérfanos al regenerar.
-**Mediano**: motion graphics conceptuales (líneas+pelotitas, estilo referencias del usuario); editor de reels desde grabación; newsletter LinkedIn (verificar si Blotato lo soporta — probable que quede manual).
+**Mediano**: motion graphics conceptuales (líneas+pelotitas, estilo referencias del usuario); reels v2 (tracking de cara, modo marco automático, publicación de video vía Blotato); newsletter LinkedIn (verificar si Blotato lo soporta — probable que quede manual).
 **Estratégico**: Capa 4 — métricas y aprendizaje; salto a Claude Code con este CLAUDE.md; Armar el embudo de low to high ticket.
 
 ---

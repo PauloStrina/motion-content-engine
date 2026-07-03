@@ -1,0 +1,61 @@
+name: 3-reels-guion
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: "Link de Google Drive del video largo (archivo o carpeta compartida con 'cualquiera con el enlace')."
+        required: true
+      slug:
+        description: "Nombre de la sesión (ej: 2026-07-03-conceptos). Nombra la carpeta en pipelines/video/reels/."
+        required: true
+permissions:
+  contents: write
+  id-token: write
+jobs:
+  guion:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install --quiet faster-whisper gdown
+      - name: Descargar video de Drive
+        run: |
+          mkdir -p _video
+          URL="${{ github.event.inputs.video_url }}"
+          if echo "$URL" | grep -q "/folders/"; then
+            gdown --folder "$URL" -O _video
+          else
+            gdown --fuzzy "$URL" -O _video/
+          fi
+          VIDEO=$(find _video -type f \( -iname "*.mp4" -o -iname "*.mov" -o -iname "*.mkv" \) | sort -r | head -1)
+          if [ -z "$VIDEO" ]; then echo "ERROR: no se encontró video en el link"; exit 1; fi
+          if [ "$VIDEO" != "_video/input.mp4" ]; then mv "$VIDEO" _video/input.mp4; fi
+          echo "Video: $(du -h _video/input.mp4 | cut -f1)"
+      - name: Transcribir (whisper, timestamps por palabra)
+        run: python pipelines/video/transcribir.py _video/input.mp4 "pipelines/video/reels/${{ github.event.inputs.slug }}"
+      - name: Editor de Video (Claude elige los reels)
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: "--model claude-opus-4-8 --allowedTools Read,Write,Glob,Grep"
+          show_full_output: true
+          prompt: |
+            Sos el Editor de Video de Motion. Tu trabajo es de CRITERIO editorial, no mecánico.
+            SESIÓN: pipelines/video/reels/${{ github.event.inputs.slug }}/ (ya tiene transcript.md y transcript.json).
+            Leé pipelines/video/PROMPT_editor_video.md y seguilo AL PIE DE LA LETRA, incluido el PASO 0
+            (leer la estrategia completa antes de elegir nada).
+            Escribí pipelines/video/reels/${{ github.event.inputs.slug }}/manifiesto_reels.json con la
+            estructura EXACTA del prompt.
+            Éxito = existe el manifiesto, cada reel dura 20-62s según los timestamps, ningún segmento
+            incluye retomas descartadas, y los captions pasan la auto-crítica de voz.
+      - name: Commit (transcript + manifiesto de reels)
+        run: |
+          git config user.name "motion-engine"; git config user.email "engine@motion.local"
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git add pipelines/video/reels/
+          git commit -m "reels: guion de la sesión ${{ github.event.inputs.slug }}" || echo "sin cambios"
+          git push origin HEAD:main
