@@ -137,28 +137,33 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 
 def render(video, reel, intervalos, ass_path, out_path):
-    """Cada segmento es un -ss/-to de INPUT (seek real a keyframe cercano), no un filtro trim sobre
-    todo el archivo: evita que ffmpeg tenga que decodificar desde el segundo 0 en cada corte."""
-    entradas, filtros, concat = [], [], []
-    for i, (a, b) in enumerate(intervalos):
-        entradas += ["-ss", f"{max(0.0, a - 2):.3f}", "-to", f"{b:.3f}", "-i", str(video)]
-        filtros.append(f"[{i}:v]trim=start={a:.3f},setpts=PTS-STARTPTS[v{i}];")
-        filtros.append(f"[{i}:a]atrim=start={a:.3f},asetpts=PTS-STARTPTS[a{i}];")
-        concat.append(f"[v{i}][a{i}]")
-    filtros.append(f"{''.join(concat)}concat=n={len(intervalos)}:v=1:a=1[vc][ac];")
+    """UNA sola decodificación por reel (seek al inicio del reel + duración acotada, nunca desde el
+    segundo 0) y los silencios se saltan adentro con select/aselect sobre ese único stream — no se
+    concatenan clips de decodificadores separados, así video y audio quedan siempre sincronizados."""
+    overall_a = min(a for a, b in intervalos)
+    overall_b = max(b for a, b in intervalos)
+    seek = max(0.0, overall_a - 2)
+    duracion_lectura = overall_b - seek + 0.5
+    cond = "+".join(f"between(t\\,{a:.3f}\\,{b:.3f})" for a, b in intervalos)
+
+    filtros = [
+        f"[0:v]select='{cond}',setpts=N/FRAME_RATE/TB[vc];",
+        f"[0:a]aselect='{cond}',asetpts=N/SR/TB[ac];",
+    ]
     if reel.get("modo") == "marco":
         filtros.append("[vc]scale=1080:-2:force_original_aspect_ratio=decrease,"
                        f"pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=0x{NEGRO}[vf];")
     else:
         filtros.append("[vc]crop=min(iw\\,ih*9/16):ih,scale=1080:1920[vf];")
-    logo_idx = len(intervalos)
-    filtros.append(f"[{logo_idx}:v]scale=170:-1[lg];[vf][lg]overlay=W-w-48:H-h-64[vl];")
+    filtros.append("[1:v]scale=170:-1[lg];[vf][lg]overlay=W-w-48:H-h-64[vl];")
     filtros.append(f"[vl]ass=filename={ass_path.as_posix()}:fontsdir={FONTS_DIR.as_posix()}[vout];")
     filtros.append("[ac]loudnorm=I=-16:TP=-1.5:LRA=11[aout]")
 
     script = out_path.with_suffix(".filter")
     script.write_text("\n".join(filtros), encoding="utf-8")
-    subprocess.run(["ffmpeg", "-y", *entradas, "-i", str(LOGO),
+    subprocess.run(["ffmpeg", "-y",
+                    "-ss", f"{seek:.3f}", "-t", f"{duracion_lectura:.3f}", "-i", str(video),
+                    "-i", str(LOGO),
                     "-filter_complex_script", str(script),
                     "-map", "[vout]", "-map", "[aout]",
                     "-c:v", "libx264", "-crf", "18", "-preset", "faster", "-pix_fmt", "yuv420p",
