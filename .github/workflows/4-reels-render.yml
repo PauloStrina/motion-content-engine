@@ -18,19 +18,9 @@ jobs:
       - name: Dependencias
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fontconfig
-          pip install --quiet gdown
+          pip install --quiet --upgrade "gdown>=5"
       - name: Descargar video de Drive
-        run: |
-          mkdir -p _video
-          URL="${{ github.event.inputs.video_url }}"
-          if echo "$URL" | grep -q "/folders/"; then
-            gdown --folder "$URL" -O _video
-          else
-            gdown --fuzzy "$URL" -O _video/
-          fi
-          VIDEO=$(find _video -type f \( -iname "*.mp4" -o -iname "*.mov" -o -iname "*.mkv" \) | sort -r | head -1)
-          if [ -z "$VIDEO" ]; then echo "ERROR: no se encontró video en el link"; exit 1; fi
-          if [ "$VIDEO" != "_video/input.mp4" ]; then mv "$VIDEO" _video/input.mp4; fi
+        run: python3 pipelines/video/descargar.py "${{ github.event.inputs.video_url }}" _video
       - name: Cortar reels (silencios fuera, subtítulos y logo quemados)
         run: python pipelines/video/cortar.py _video/input.mp4 "pipelines/video/reels/${{ github.event.inputs.slug }}" media_out
       - name: Subir reels para revisión
