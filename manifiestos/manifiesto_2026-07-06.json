@@ -1,0 +1,61 @@
+{
+  "fecha_inicio": "2026-07-06",
+  "semana": 2,
+  "tesis": "Cambio ≠ Transformación",
+  "estado": "borrador_para_aprobacion",
+
+  "carousel": {
+    "tipo": "resultados",
+    "tema": "Pidió un tablero, encontró una transformación (efecto cebolla)",
+    "carrusel": "2026-07-06",
+    "carrusel_slides": 8,
+    "post_linkedin": "Pidió un tablero, encontró una transformación.\n\nUna organización nos pidió un tablero de Power BI para un área. Un pedido puntual, cerrado. Al construirlo vimos que los datos se cargaban mal. Al ordenar los datos aparecieron los procesos, desconectados entre áreas. Y atrás de los procesos estaba lo de fondo: no había una cultura que sostuviera el cambio. Pidió un cambio y encontró su transformación. Te lo cuento en este carrusel.\n\n#HistoriasEnMovimiento es una serie de casos que vemos en el día a día de Motion. No fake, no IA.\nSi te resuena, me gustaría leerte en comentarios. Que LinkedIn sea una red de networking, no una vidriera para el ego.",
+    "caption_instagram": "Pidió un tablero, encontró una transformación.\n#HistoriasEnMovimiento: casos reales de nuestro día a día. No fake, no IA.\n\nEmpezó por un tablero. Terminó tirando del hilo de toda la organización.\n\n#HistoriasEnMovimiento #TransformaciónDigital",
+    "hilo_twitter": [
+      "Pidió un tablero, encontró una transformación. 🧵\n#HistoriasEnMovimiento — casos reales de Motion. No fake, no IA.",
+      "Una organización nos pidió un tablero de Power BI para un área. Un pedido puntual, cerrado. Nada raro.",
+      "Al construirlo, los datos no cerraban: se cargaban mal desde el origen. Ordenamos los datos y aparecieron los procesos, desconectados entre áreas.",
+      "Ordenamos los procesos y quedó a la vista lo de fondo: no había una cultura que sostuviera el cambio. De un tablero salió un programa de transformación integral.",
+      "Pidió un cambio y encontró su transformación. El tablero era solo el primer hilo. La transformación no se compra: aparece cuando te animás a tirar de él."
+    ],
+    "slides": [
+      {"lineas": ["PIDIÓ UN TABLERO.", "Encontró una transformación."]},
+      {"lineas": ["Una organización nos pidió un tablero.", "Power BI para un área. Un pedido puntual."]},
+      {"lineas": ["Lo empezamos a construir.", "CAPA 1: LOS DATOS.", "Se cargaban mal desde el origen."]},
+      {"lineas": ["CAPA 2: LOS PROCESOS.", "Desconectados entre áreas.", "De ahí venían los datos malos."]},
+      {"lineas": ["CAPA 3: LA CULTURA.", "Nada sostenía la adaptación al cambio.", "Ahí estaba el verdadero tema."]},
+      {"lineas": ["Cada capa que abrís deja ver la siguiente.", "Lo que molesta nunca es la piel de arriba."]},
+      {"lineas": ["Pidió un cambio.", "Encontró su transformación."]},
+      {"lineas": ["El tablero fue solo el primer hilo.", "La transformación no se compra:", "se descubre."]}
+    ]
+  },
+
+  "institucional": {
+    "post_linkedin_motion": "Cuando una organización nos pide una herramienta puntual, no empezamos por la herramienta. Empezamos por entender qué hay detrás del pedido.\n\nNos pasa seguido: llega una solicitud acotada, un tablero, una integración, una capacitación, y al mapearla aparece una capa que explica a la anterior. Los datos que no cierran esconden procesos desconectados. Los procesos desconectados esconden una cultura que todavía no aprendió a sostener el cambio. Ese efecto es lo que el Diagnóstico de Transformación Continua saca a la luz antes de proponer una sola solución.\n\nNo se trata de venderle más a nadie. Se trata de no resolver en la piel un tema que está en el centro. Cuando el pedido es un cambio, entregamos ese cambio. Cuando atrás hay una transformación, la nombramos, y ahí sí diseñamos el programa que la sostiene.\n\n#TransformaciónContinua"
+  },
+
+  "newsletter": {
+    "tipo": "conexion",
+    "tema": "Por qué elegimos trabajar con quien se siente incómodo",
+    "carrusel": "2026-07-06-news",
+    "carrusel_slides": 8,
+    "caption_instagram": "Por qué elegimos trabajar con quien se siente incómodo.\n\nLa incomodidad de un líder casi nunca es una falla. Suele ser el primer síntoma de una transformación. Nueva edición de Lo complejo, simple.\n\n#TransformaciónContinua #LoComplejoSimple",
+    "hilo_twitter": [
+      "Cuando una organización nos escribe, en las primeras charlas ya se nota de qué lado está: la que llega con la lista de compras, y la que llega incómoda sin poder nombrar qué le molesta. 🧵",
+      "El que llega con la lista cerrada ya decidió que su problema es una compra. Es legítimo, pero es un cambio: resuelve un dolor y se cierra.",
+      "El que llega incómodo intuye que comprar una cosa más no le alcanza, aunque no sepa por qué. Esa incomodidad no es debilidad: es lucidez temprana. Es una visión buscando la forma de hacerse.",
+      "Por eso elegimos trabajar con el segundo. La incomodidad sostiene el proceso cuando aparece lo difícil, deja mirar debajo de la alfombra y le da a un líder la autoridad para pedir que la organización cambie.",
+      "Si algo te viene incomodando hace rato, probablemente no te falte convicción. Te falta el método. Y esa es una gran noticia. Lo desarrollo esta semana en Lo complejo, simple."
+    ],
+    "slides": [
+      {"lineas": ["Por qué elegimos trabajar", "con quien se siente <span class=\"acc\">incómodo</span>."]},
+      {"lineas": ["Unos llegan con una lista de compras.", "Otros, sin poder nombrar qué les <span class=\"acc\">molesta</span>."]},
+      {"lineas": ["Con los segundos", "elegimos <span class=\"acc\">trabajar</span>."]},
+      {"lineas": ["La incomodidad no es una falla.", "Es <span class=\"acc\">lucidez</span> temprana."]},
+      {"lineas": ["El que llega cómodo no deja mirar debajo de la <span class=\"acc\">alfombra</span>.", "El incómodo, sí."]},
+      {"lineas": ["Y debajo de la alfombra", "vive la <span class=\"acc\">transformación</span>."]},
+      {"lineas": ["No te sacamos la incomodidad de encima.", "Le ponemos <span class=\"acc\">método</span>."]},
+      {"lineas": ["Si algo te viene incomodando,", "no te falta convicción.", "Te falta el <span class=\"acc\">método</span>."]}
+    ]
+  }
+}

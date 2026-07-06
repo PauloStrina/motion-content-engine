@@ -1,0 +1,66 @@
+{
+  "episodio": "2026-07-06",
+  "slides": [
+    {
+      "bg": "naranja", "eyebrow_color": "negro", "pager": "01 — 08",
+      "blocks": [
+        {"type": "futura", "text": "PIDIÓ UN", "size": 74, "color": "negro"},
+        {"type": "eco", "text": "TABLERO", "size": 200, "color": "blanco", "n": 3},
+        {"type": "futura", "text": "Encontró una transformación.", "size": 52, "color": "violeta", "mt": 34}
+      ]
+    },
+    {
+      "bg": "negro", "eyebrow_color": "naranja", "pager": "02 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "Una organización nos pidió un tablero.", "size": 54, "color": "blanco", "mb": 40},
+        {"type": "lyont", "text": "Power BI para un área. Un pedido puntual.", "size": 42, "color": "aqua"}
+      ]
+    },
+    {
+      "bg": "negro", "eyebrow_color": "naranja", "pager": "03 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "Lo empezamos a construir.", "size": 50, "color": "blanco", "mb": 36},
+        {"type": "lam", "text": "CAPA 1: LOS DATOS.", "size": 100, "color": "naranja"},
+        {"type": "lyont", "text": "Se cargaban mal desde el origen.", "size": 40, "color": "aqua", "mt": 48}
+      ]
+    },
+    {
+      "bg": "violeta", "eyebrow_color": "aqua", "pager": "04 — 08",
+      "blocks": [
+        {"type": "lam", "text": "CAPA 2: LOS PROCESOS.", "size": 96, "color": "aqua"},
+        {"type": "futura", "text": "Desconectados entre áreas.", "size": 58, "color": "blanco", "mt": 34},
+        {"type": "lyont", "text": "De ahí venían los datos malos.", "size": 40, "color": "aqua", "mt": 46}
+      ]
+    },
+    {
+      "bg": "aqua", "eyebrow_color": "violeta", "pager": "05 — 08",
+      "blocks": [
+        {"type": "lam", "text": "CAPA 3: LA CULTURA.", "size": 96, "color": "violeta"},
+        {"type": "lyon", "text": "Nada sostenía la adaptación al cambio.", "size": 48, "color": "negro", "mt": 34},
+        {"type": "lyont", "text": "Ahí estaba el verdadero tema.", "size": 40, "color": "negro", "mt": 44}
+      ]
+    },
+    {
+      "bg": "violeta", "eyebrow_color": "aqua", "pager": "06 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "Cada capa que abrís deja ver la siguiente.", "size": 60, "lh2": 1.22, "color": "blanco", "maxw": 900, "mb": 50},
+        {"type": "futura", "text": "LO QUE MOLESTA NUNCA ES LA PIEL DE ARRIBA.", "size": 62, "lh": 66, "color": "aqua", "maxw": 860}
+      ]
+    },
+    {
+      "bg": "naranja", "eyebrow_color": "negro", "pager": "07 — 08",
+      "blocks": [
+        {"type": "futura", "text": "PIDIÓ UN CAMBIO.", "size": 100, "lh": 92, "color": "negro", "mb": 24},
+        {"type": "futura", "text": "Encontró su transformación.", "size": 60, "color": "blanco"}
+      ]
+    },
+    {
+      "bg": "negro", "eyebrow_color": "aqua", "pager": "08 — 08", "foot": "Lo único permanente<br>es el movimiento", "foot_color": "naranja",
+      "blocks": [
+        {"type": "lyon", "text": "El tablero fue solo el primer hilo.", "size": 50, "color": "blanco", "mb": 32},
+        {"type": "futura", "text": "LA TRANSFORMACIÓN NO SE COMPRA:", "size": 76, "lh": 74, "color": "blanco", "maxw": 900, "mb": 24},
+        {"type": "eco", "text": "se descubre.", "size": 150, "color": "naranja", "n": 3}
+      ]
+    }
+  ]
+}

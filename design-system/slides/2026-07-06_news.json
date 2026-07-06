@@ -1,0 +1,13 @@
+{
+  "episodio": "2026-07-06",
+  "slides": [
+    {"number": 1, "type": "cover",    "bg": "naranja", "text": "Por qué elegimos trabajar<br>con quien se siente <span class=\"acc\">incómodo</span>."},
+    {"number": 2, "type": "body",     "bg": "naranja", "text": "Unos llegan con una lista de compras.<br>Otros, sin poder nombrar qué les <span class=\"acc\">molesta</span>."},
+    {"number": 3, "type": "body",     "bg": "naranja", "text": "Con los segundos<br>elegimos <span class=\"acc\">trabajar</span>."},
+    {"number": 4, "type": "body",     "bg": "naranja", "text": "La incomodidad no es una falla.<br>Es <span class=\"acc\">lucidez</span> temprana."},
+    {"number": 5, "type": "question", "bg": "naranja", "text": "El que llega cómodo no deja mirar debajo de la <span class=\"acc\">alfombra</span>.<br>El incómodo, sí."},
+    {"number": 6, "type": "body",     "bg": "naranja", "text": "Y debajo de la alfombra<br>vive la <span class=\"acc\">transformación</span>."},
+    {"number": 7, "type": "body",     "bg": "naranja", "text": "No te sacamos la incomodidad de encima.<br>Le ponemos <span class=\"acc\">método</span>."},
+    {"number": 8, "type": "closing",  "bg": "naranja", "text": "Si algo te viene incomodando,<br>no te falta convicción.<br>Te falta el <span class=\"acc\">método</span>."}
+  ]
+}
