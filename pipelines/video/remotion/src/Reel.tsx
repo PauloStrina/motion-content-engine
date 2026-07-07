@@ -1,5 +1,4 @@
-import {AbsoluteFill, Img, OffthreadVideo, staticFile} from 'remotion';
-import {loadFont} from '@remotion/fonts';
+import {AbsoluteFill, Img, OffthreadVideo, continueRender, delayRender, staticFile} from 'remotion';
 import {Captions} from './Captions';
 import {Titulo} from './Titulo';
 
@@ -19,10 +18,25 @@ export const COLOR_TIPO: Record<string, string> = {
   conexion: COLORES.aqua,
 };
 
-loadFont({
-  family: 'FuturaM',
-  url: staticFile('fonts/FuturaStd-CondensedExtraBd.otf'),
-});
+// Carga manual (no @remotion/fonts): si la fuente falla, el render sigue y el motivo queda en el log
+// en vez de un timeout mudo de delayRender.
+if (typeof document !== 'undefined') {
+  const fuente = new FontFace(
+    'FuturaM',
+    `url('${staticFile('fonts/FuturaStd-CondensedExtraBd.otf')}') format('opentype')`,
+  );
+  const espera = delayRender('fuente FuturaM');
+  fuente
+    .load()
+    .then((f) => {
+      document.fonts.add(f);
+      continueRender(espera);
+    })
+    .catch((err) => {
+      console.error('La fuente FuturaM no cargó:', err);
+      continueRender(espera);
+    });
+}
 
 export type Palabra = {w: string; desde: number; hasta: number};
 export type Linea = {desde: number; hasta: number; palabras: Palabra[]};
