@@ -137,7 +137,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     path.write_text(header + "\n".join(eventos) + "\n", encoding="utf-8")
 
 
-def render(video, reel, intervalos, ass_path, out_path, pantalla=None, offset_pantalla=0.0):
+def render(video, reel, intervalos, ass_path, out_path, pantalla=None, offset_pantalla=0.0, brand=True):
     """UNA sola decodificación por reel (seek al inicio del reel + duración acotada, nunca desde el
     segundo 0) y los silencios se saltan adentro con select/aselect sobre ese único stream — no se
     concatenan clips de decodificadores separados, así video y audio quedan siempre sincronizados.
@@ -171,13 +171,18 @@ def render(video, reel, intervalos, ass_path, out_path, pantalla=None, offset_pa
         else:
             filtros.append("[vc]crop=min(iw\\,ih*9/16):ih,scale=1080:1920[vf];")
         logo_idx = 1
-    filtros.append(f"[{logo_idx}:v]scale=170:-1[lg];[vf][lg]overlay=W-w-48:H-h-64[vl];")
-    filtros.append(f"[vl]ass=filename={ass_path.as_posix()}:fontsdir={FONTS_DIR.as_posix()}[vout];")
+    if brand:
+        filtros.append(f"[{logo_idx}:v]scale=170:-1[lg];[vf][lg]overlay=W-w-48:H-h-64[vl];")
+        filtros.append(f"[vl]ass=filename={ass_path.as_posix()}:fontsdir={FONTS_DIR.as_posix()}[vout];")
+    else:
+        filtros.append(f"[vf]null[vout];")  # branding lo pone Remotion encima del video limpio
     filtros.append("[ac]loudnorm=I=-16:TP=-1.5:LRA=11[aout]")
 
+    if brand:
+        entradas += ["-i", str(LOGO)]
     script = out_path.with_suffix(".filter")
     script.write_text("\n".join(filtros), encoding="utf-8")
-    subprocess.run(["ffmpeg", "-y", "-copyts", *entradas, "-i", str(LOGO),
+    subprocess.run(["ffmpeg", "-y", "-copyts", *entradas,
                     "-filter_complex_script", str(script),
                     "-map", "[vout]", "-map", "[aout]",
                     "-c:v", "libx264", "-crf", "18", "-preset", "faster", "-pix_fmt", "yuv420p",
@@ -186,7 +191,16 @@ def render(video, reel, intervalos, ass_path, out_path, pantalla=None, offset_pa
     script.unlink()
 
 
-def main(video, sesion_dir, out_dir="media_out", pantalla=None):
+def props_remotion(reel, sub_words, duracion, nombre):
+    """JSON que consume la composición Remotion (branding animado encima del video limpio)."""
+    lineas = [{"desde": round(l[0]["desde"], 3), "hasta": round(l[-1]["hasta"], 3),
+               "palabras": [{"w": w["w"], "desde": round(w["desde"], 3), "hasta": round(w["hasta"], 3)} for w in l]}
+              for l in lineas_subtitulo(sub_words)]
+    return {"video": f"{nombre}.mp4", "titulo": reel["titulo"], "tipo": reel.get("tipo", "problema"),
+            "duracion": round(duracion, 3), "lineas": lineas}
+
+
+def main(video, sesion_dir, out_dir="media_out", pantalla=None, remotion=False):
     sesion = pathlib.Path(sesion_dir)
     manifiesto = json.loads((sesion / "manifiesto_reels.json").read_text(encoding="utf-8"))
     words = json.loads((sesion / "transcript.json").read_text(encoding="utf-8"))["palabras"]
@@ -206,10 +220,16 @@ def main(video, sesion_dir, out_dir="media_out", pantalla=None):
         print(f"  {len(intervalos)} cortes (silencios quitados), duración final {duracion:.1f}s"
               + ("  ⚠ PASA DE 62s" if duracion > 62 else ""))
         ass_path = out / f"{nombre}.ass"
-        escribir_ass(ass_path, reel, sub_words, duracion, familia)
-        render(video, reel, intervalos, ass_path, out / f"{nombre}.mp4", pantalla, offset_pantalla)
+        if remotion:
+            props = props_remotion(reel, sub_words, duracion, nombre)
+            (out / f"{nombre}.props.json").write_text(json.dumps(props, ensure_ascii=False, indent=1), encoding="utf-8")
+        else:
+            escribir_ass(ass_path, reel, sub_words, duracion, familia)
+        render(video, reel, intervalos, ass_path, out / f"{nombre}.mp4", pantalla, offset_pantalla,
+               brand=not remotion)
         print(f"  OK → {out / (nombre + '.mp4')}")
 
 
 if __name__ == "__main__":
-    main(*sys.argv[1:])
+    args = [a for a in sys.argv[1:] if a != "--remotion"]
+    main(*args, remotion="--remotion" in sys.argv)

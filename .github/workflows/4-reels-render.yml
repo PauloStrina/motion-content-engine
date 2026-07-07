@@ -31,11 +31,28 @@ jobs:
         run: |
           python3 pipelines/video/descargar.py "${{ github.event.inputs.video_pantalla_url }}" _pantalla
           mv _pantalla/input.mp4 _video/pantalla.mp4
-      - name: Cortar reels (silencios fuera, subtítulos y logo quemados)
+      - name: Cortar reels (silencios fuera, video limpio + timestamps para Remotion)
         run: |
           PANTALLA=""
           if [ -f _video/pantalla.mp4 ]; then PANTALLA="_video/pantalla.mp4"; fi
-          python pipelines/video/cortar.py _video/input.mp4 "pipelines/video/reels/${{ github.event.inputs.slug }}" media_out $PANTALLA
+          python pipelines/video/cortar.py _video/input.mp4 "pipelines/video/reels/${{ github.event.inputs.slug }}" media_clean $PANTALLA --remotion
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: pipelines/video/remotion/package-lock.json
+      - name: Branding con Remotion (subtítulos karaoke + título + logo)
+        run: |
+          cd pipelines/video/remotion
+          npm ci --no-audit --no-fund
+          mkdir -p public/fonts ../../../media_out
+          cp ../../../design-system/fonts/FuturaStd-CondensedExtraBd.otf public/fonts/
+          cp ../../../design-system/assets/logo-blanco.png public/
+          cp ../../../media_clean/*.mp4 public/
+          for P in ../../../media_clean/*.props.json; do
+            N=$(basename "$P" .props.json)
+            npx remotion render src/index.ts Reel "../../../media_out/$N.mp4" --props="$P"
+          done
       - name: Subir reels para revisión
         uses: actions/upload-artifact@v4
         with:
