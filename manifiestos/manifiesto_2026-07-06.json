@@ -9,24 +9,24 @@
     "tema": "Pidió un tablero, encontró una transformación (efecto cebolla)",
     "carrusel": "2026-07-06",
     "carrusel_slides": 8,
-    "post_linkedin": "Pidió un tablero, encontró una transformación.\n\nUna organización nos pidió un tablero de Power BI para un área. Un pedido puntual, cerrado. Al construirlo vimos que los datos se cargaban mal. Al ordenar los datos aparecieron los procesos, desconectados entre áreas. Y atrás de los procesos estaba lo de fondo: no había una cultura que sostuviera el cambio. Pidió un cambio y encontró su transformación. Te lo cuento en este carrusel.\n\n#HistoriasEnMovimiento es una serie de casos que vemos en el día a día de Motion. No fake, no IA.\nSi te resuena, me gustaría leerte en comentarios. Que LinkedIn sea una red de networking, no una vidriera para el ego.",
-    "caption_instagram": "Pidió un tablero, encontró una transformación.\n#HistoriasEnMovimiento: casos reales de nuestro día a día. No fake, no IA.\n\nEmpezó por un tablero. Terminó tirando del hilo de toda la organización.\n\n#HistoriasEnMovimiento #TransformaciónDigital",
+    "post_linkedin": "Lo que empezó por un dashboard y terminó en una transformación.\n\nUna organización nos pidió un tablero de Power BI para un área. Un pedido puntual, cerrado. Al construirlo vimos que los datos se cargaban mal. Al ordenar los datos vimos que los procesos estaban desconectados entre áreas. Y al revisar los procesos encontramos que lo que realmente se necesitaba era una cultura que sostuviera el cambio. Llevamos 2 años construyendola. \n\n#HistoriasEnMovimiento es una serie de casos que vemos en el día a día de Motion. No fake, no IA.\nSi te resuena, me gustaría leerte en comentarios. Que LinkedIn sea una red de networking, no una vidriera para el ego.",
+    "caption_instagram": "Lo que empieza por un dashboard y termina en una transformación.\n#HistoriasEnMovimiento: casos reales de nuestro día a día. No fake, no IA.\n\nEmpezó por un tablero. Terminó tirando del hilo de toda la organización.\n\n#HistoriasEnMovimiento #TransformaciónDigital",
     "hilo_twitter": [
-      "Pidió un tablero, encontró una transformación. 🧵\n#HistoriasEnMovimiento — casos reales de Motion. No fake, no IA.",
+      "Lo que empezó por un dashboard y terminó en una transformación. 🧵\n#HistoriasEnMovimiento — casos reales de Motion. No fake, no IA.",
       "Una organización nos pidió un tablero de Power BI para un área. Un pedido puntual, cerrado. Nada raro.",
       "Al construirlo, los datos no cerraban: se cargaban mal desde el origen. Ordenamos los datos y aparecieron los procesos, desconectados entre áreas.",
       "Ordenamos los procesos y quedó a la vista lo de fondo: no había una cultura que sostuviera el cambio. De un tablero salió un programa de transformación integral.",
       "Pidió un cambio y encontró su transformación. El tablero era solo el primer hilo. La transformación no se compra: aparece cuando te animás a tirar de él."
     ],
     "slides": [
-      {"lineas": ["PIDIÓ UN TABLERO.", "Encontró una transformación."]},
+      {"lineas": ["LO QUE EMPEZÓ CON UN DASHBOARD.", "Terminó en una transformación."]},
       {"lineas": ["Una organización nos pidió un tablero.", "Power BI para un área. Un pedido puntual."]},
       {"lineas": ["Lo empezamos a construir.", "CAPA 1: LOS DATOS.", "Se cargaban mal desde el origen."]},
       {"lineas": ["CAPA 2: LOS PROCESOS.", "Desconectados entre áreas.", "De ahí venían los datos malos."]},
       {"lineas": ["CAPA 3: LA CULTURA.", "Nada sostenía la adaptación al cambio.", "Ahí estaba el verdadero tema."]},
       {"lineas": ["Cada capa que abrís deja ver la siguiente.", "Lo que molesta nunca es la piel de arriba."]},
-      {"lineas": ["Pidió un cambio.", "Encontró su transformación."]},
-      {"lineas": ["El tablero fue solo el primer hilo.", "La transformación no se compra:", "se descubre."]}
+      {"lineas": ["El tablero fue solo la punta del hilo."]},
+      {"lineas": ["Llevamos 2 años.", "Trabajando la transformación."]}
     ]
   },
 
@@ -52,10 +52,10 @@
       {"lineas": ["Unos llegan con una lista de compras.", "Otros, sin poder nombrar qué les <span class=\"acc\">molesta</span>."]},
       {"lineas": ["Con los segundos", "elegimos <span class=\"acc\">trabajar</span>."]},
       {"lineas": ["La incomodidad no es una falla.", "Es <span class=\"acc\">lucidez</span> temprana."]},
-      {"lineas": ["El que llega cómodo no deja mirar debajo de la <span class=\"acc\">alfombra</span>.", "El incómodo, sí."]},
-      {"lineas": ["Y debajo de la alfombra", "vive la <span class=\"acc\">transformación</span>."]},
-      {"lineas": ["No te sacamos la incomodidad de encima.", "Le ponemos <span class=\"acc\">método</span>."]},
-      {"lineas": ["Si algo te viene incomodando,", "no te falta convicción.", "Te falta el <span class=\"acc\">método</span>."]}
+      {"lineas": ["El que llega cómodo no deja mirar debajo de la <span class=\"acc\">superficie</span>.", "El incómodo, sí."]},
+      {"lineas": ["Y debajo de la superficie", "está la <span class=\"acc\">transformación</span>."]},
+      {"lineas": ["Esa incomodidad", "Hay que transformarla en <span class=\"acc\">método</span>."]},
+      {"lineas": ["No te falta convicción.", "Te falta el <span class=\"acc\">CÓMO</span>."]}
     ]
   }
 }
