@@ -120,7 +120,7 @@ Cadencia: 1 semana = 1 manifiesto = 1 corrida de cada workflow. Combustible: Pau
 
 ## 6. ESTADO ACTUAL
 ✅ Cascada de texto · ✅ Carruseles · ✅ Quote/dato/lista · ✅ Publicación 4 canales (ep1-2 programado en Blotato, modo revisión) · ✅ Calendario editorial · ✅ Manifiesto dinámico punta a punta.
-🚧 **Motor de reels** (pipelines/video/): grabación larga → whisper con timestamps por palabra → Editor de Video IA elige reels según estrategia (manifiesto_reels.json, Paulo revisa) → corte ffmpeg sin silencios + subtítulos karaoke de marca + título por tipo + logo → artifacts para revisión. Workflows `3-reels-guion` y `4-reels-render` (inputs: link Drive del video + slug de sesión). Primera prueba real pendiente.
+✅ **Motor de reels** (pipelines/video/): grabación larga → whisper con timestamps por palabra → Editor de Video IA elige reels según estrategia (manifiesto_reels.json, Paulo revisa) → corte ffmpeg sin silencios → branding con **Remotion** (subtítulos karaoke animados con pop por palabra, título en caja del color del tipo, logo; fuentes como fuentes de sistema en CI, NUNCA FontFace/loadFont — congela el renderer) → artifacts para revisión (incluye `_control.png` de validación visual). Workflows `3-reels-guion` y `4-reels-render` (inputs: link Drive + slug; opcional video de pantalla → modo split). Validado end-to-end con sesión real. Modo split (capacitaciones) sin probar aún.
 ⏸️ Standby: motion graphics conceptuales (svganim.py validado técnicamente, falta pulido de composición — espera modelo de mayor capacidad).
 
 ---
