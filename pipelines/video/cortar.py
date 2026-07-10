@@ -175,7 +175,8 @@ def render(video, reel, intervalos, ass_path, out_path, pantalla=None, offset_pa
                        "scale=1080:960:force_original_aspect_ratio=decrease,"
                        f"pad=1080:960:(ow-iw)/2:(oh-ih)/2:color=0x{NEGRO}[vpan];")
         filtros.append(f"[vzb]crop=iw*{zc['w']}:ih*{zc['h']}:iw*{zc['x']}:ih*{zc['y']},"
-                       "scale=1080:960:force_original_aspect_ratio=increase,crop=1080:960[vcam];")
+                       "scale=1080:960:force_original_aspect_ratio=decrease,"
+                       f"pad=1080:960:(ow-iw)/2:(oh-ih)/2:color=0x{NEGRO}[vcam];")
         filtros.append("[vpan][vcam]vstack=inputs=2[vf];")
         logo_idx = 1
     else:
