@@ -1,5 +1,5 @@
 import {spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {COLORES, Linea} from './Reel';
+import {COLORES, FONT, Linea} from './Reel';
 
 const CONTORNO =
   '0 4px 24px rgba(0,0,0,0.6), -3px -3px 0 #1A1A1A, 3px -3px 0 #1A1A1A, -3px 3px 0 #1A1A1A, 3px 3px 0 #1A1A1A';
@@ -54,7 +54,7 @@ export const Captions: React.FC<{lineas: Linea[]}> = ({lineas}) => {
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
-        fontFamily: 'FuturaM',
+        fontFamily: FONT,
         fontSize: 84,
         lineHeight: 1.15,
         opacity: entrada,

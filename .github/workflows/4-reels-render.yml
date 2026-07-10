@@ -41,14 +41,21 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: pipelines/video/remotion/package-lock.json
+      - name: Instalar fuentes Motion en el sistema (Chrome las resuelve por nombre, sin carga web)
+        run: |
+          sudo mkdir -p /usr/share/fonts/opentype/motion
+          sudo cp design-system/fonts/*.otf /usr/share/fonts/opentype/motion/
+          sudo fc-cache -f
+          fc-list | grep -i futura
       - name: Branding con Remotion (subtítulos karaoke + título + logo)
         run: |
           cd pipelines/video/remotion
           npm ci --no-audit --no-fund
-          mkdir -p public/fonts ../../../media_out
-          cp ../../../design-system/fonts/FuturaStd-CondensedExtraBd.otf public/fonts/
+          mkdir -p public ../../../media_out
           cp ../../../design-system/assets/logo-blanco.png public/
           cp ../../../media_clean/*.mp4 public/
+          P1=$(ls ../../../media_clean/*.props.json | head -1)
+          npx remotion still src/index.ts Reel ../../../media_out/_control.png --props="$P1" --frame=45 --chrome-mode=chrome-for-testing
           for P in ../../../media_clean/*.props.json; do
             N=$(basename "$P" .props.json)
             npx remotion render src/index.ts Reel "../../../media_out/$N.mp4" --props="$P" --chrome-mode=chrome-for-testing --timeout=60000
@@ -57,5 +64,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: reels-${{ github.event.inputs.slug }}
-          path: media_out/*.mp4
+          path: media_out/*
           retention-days: 14

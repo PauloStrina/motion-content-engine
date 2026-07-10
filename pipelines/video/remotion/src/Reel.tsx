@@ -1,4 +1,4 @@
-import {AbsoluteFill, Img, OffthreadVideo, continueRender, delayRender, staticFile} from 'remotion';
+import {AbsoluteFill, Img, OffthreadVideo, staticFile} from 'remotion';
 import {Captions} from './Captions';
 import {Titulo} from './Titulo';
 
@@ -18,34 +18,10 @@ export const COLOR_TIPO: Record<string, string> = {
   conexion: COLORES.aqua,
 };
 
-// Carga manual (no @remotion/fonts): si la fuente falla, el render sigue y el motivo queda en el log
-// en vez de un timeout mudo de delayRender.
-if (typeof document !== 'undefined') {
-  const espera = delayRender('fuente FuturaM');
-  let listoLlamado = false;
-  const listo = () => {
-    if (!listoLlamado) {
-      listoLlamado = true;
-      continueRender(espera);
-    }
-  };
-  // fusible: nunca dejar el render colgado por la fuente
-  const fusible = setTimeout(() => {
-    console.error('Fuente FuturaM: timeout de carga, se continúa sin ella');
-    listo();
-  }, 10000);
-  // fetch a memoria en vez de FontFace(url): el font-loader de Chrome headless en Linux
-  // se colgaba resolviendo la URL (delayRender timeout en frame arbitrario)
-  fetch(staticFile('fonts/FuturaStd-CondensedExtraBd.otf'))
-    .then((r) => r.arrayBuffer())
-    .then((buf) => new FontFace('FuturaM', buf).load())
-    .then((f) => document.fonts.add(f))
-    .catch((err) => console.error('La fuente FuturaM no cargó:', err))
-    .finally(() => {
-      clearTimeout(fusible);
-      listo();
-    });
-}
+// La fuente se instala a NIVEL SISTEMA (fontconfig en CI, fuentes de usuario en Windows local):
+// Chrome la resuelve por nombre sin fetch ni delayRender — la carga web (FontFace/loadFont)
+// congelaba pestañas del renderer en Linux sin importar el modo de Chrome.
+export const FONT = "'Futura Std', 'FuturaM', Impact, 'Arial Narrow', sans-serif";
 
 export type Palabra = {w: string; desde: number; hasta: number};
 export type Linea = {desde: number; hasta: number; palabras: Palabra[]};

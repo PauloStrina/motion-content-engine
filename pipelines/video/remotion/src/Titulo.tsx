@@ -1,5 +1,5 @@
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {COLORES, COLOR_TIPO} from './Reel';
+import {COLORES, COLOR_TIPO, FONT} from './Reel';
 
 export const Titulo: React.FC<{texto: string; tipo: string}> = ({texto, tipo}) => {
   const frame = useCurrentFrame();
@@ -24,7 +24,7 @@ export const Titulo: React.FC<{texto: string; tipo: string}> = ({texto, tipo}) =
     >
       <div
         style={{
-          fontFamily: 'FuturaM',
+          fontFamily: FONT,
           textTransform: 'uppercase',
           fontSize: 58,
           lineHeight: 1.1,
