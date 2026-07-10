@@ -27,15 +27,10 @@ const PalabraKaraoke: React.FC<{w: string; desde: number; activa: boolean; dicha
   );
 };
 
-export const Captions: React.FC<{lineas: Linea[]; silencioEn?: {desde: number}[]}> = ({
-  lineas,
-  silencioEn = [],
-}) => {
+export const Captions: React.FC<{lineas: Linea[]}> = ({lineas}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const t = frame / fps;
-  // mientras hay una palabra destacada en pantalla, el caption se corre (foco único)
-  if (silencioEn.some((d) => t >= d.desde && t < d.desde + 1.4)) return null;
   const linea = lineas.find((l, i) => {
     const fin = i + 1 < lineas.length ? Math.min(l.hasta + 0.08, lineas[i + 1].desde) : l.hasta + 0.08;
     return t >= l.desde && t < fin;
