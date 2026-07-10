@@ -5,7 +5,10 @@ const demo: ReelProps = {
   video: '',
   titulo: 'El KPI del liderazgo',
   tipo: 'conexion',
+  modo: 'crop',
   duracion: 6,
+  cortes: [0, 1.7],
+  destacadas: [{desde: 2.2, palabra: 'Sorprendido'}],
   lineas: [
     {
       desde: 0.3,

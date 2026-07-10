@@ -40,6 +40,14 @@ Leé completos:
    la corrida lo indique). Con "split", el manifiesto admite `"offset_pantalla"` a nivel raíz
    (segundos de desfase si las dos grabaciones no arrancaron exactamente juntas; default 0).
 
+## PALABRAS DESTACADAS (énfasis visual)
+Por reel, elegí 1 a 3 **palabras martillo**: el momento de mayor énfasis, una antítesis, un concepto
+propietario ("transformación", "orquestador", "sorprendido"). En el render aparecen como tarjeta
+gigante con sombra laminada — úsalas donde un editor humano frenaría la imagen. Campo `destacadas`:
+`[{"t": <campo desde de ESA palabra en transcript.json>, "palabra": "Sorprendido"}]`.
+Puede ser una frase corta de máx 2 palabras ("Sistema operativo"). Si el reel no tiene un momento
+que lo amerite, dejá la lista vacía — mejor ninguna que una forzada.
+
 ## CAPTION
 `caption_instagram` en voz Motion (leé el formato de canal en voz-motion.md): abre con escena/frase
 concreta, sin clichés, hashtags al final. Es la pieza de Instagram que acompaña al reel.
@@ -61,6 +69,7 @@ concreta, sin clichés, hashtags al final. Es la pieza de Instagram que acompañ
         {"desde": 610.34, "hasta": 645.12},
         {"desde": 652.80, "hasta": 668.95}
       ],
+      "destacadas": [{"t": 622.41, "palabra": "Sorprendido"}],
       "caption_instagram": "..."
     }
   ]

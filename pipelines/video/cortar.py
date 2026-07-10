@@ -68,13 +68,15 @@ def cortes_sin_silencio(reel, words):
                 grupo.append(w)
         keep.append((a, grupo[-1]["hasta"] + PAD_OUT, grupo))
 
-    intervalos, t = [], 0.0
+    intervalos, inicios, t = [], [], 0.0
     for a, b, grupo in keep:
         intervalos.append((a, b))
+        inicios.append(round(t, 3))  # arranque de cada corte en la línea de tiempo del reel (punch-in)
         for w in grupo:
-            sub_words.append({"w": w["w"], "desde": t + (w["desde"] - a), "hasta": t + (w["hasta"] - a)})
+            sub_words.append({"w": w["w"], "desde": t + (w["desde"] - a), "hasta": t + (w["hasta"] - a),
+                              "orig": w["desde"]})
         t += b - a
-    return intervalos, sub_words, t
+    return intervalos, sub_words, t, inicios
 
 
 def lineas_subtitulo(sub_words):
@@ -191,13 +193,30 @@ def render(video, reel, intervalos, ass_path, out_path, pantalla=None, offset_pa
     script.unlink()
 
 
-def props_remotion(reel, sub_words, duracion, nombre):
+def _normal(p):
+    return p.lower().strip(".,!?¿¡;:\"'()")
+
+
+def props_remotion(reel, sub_words, duracion, nombre, inicios):
     """JSON que consume la composición Remotion (branding animado encima del video limpio)."""
     lineas = [{"desde": round(l[0]["desde"], 3), "hasta": round(l[-1]["hasta"], 3),
                "palabras": [{"w": w["w"], "desde": round(w["desde"], 3), "hasta": round(w["hasta"], 3)} for w in l]}
               for l in lineas_subtitulo(sub_words)]
+    # remapear las palabras destacadas (t absoluto del video original → línea de tiempo del reel):
+    # se busca la palabra del transcript más cercana al t que marcó el Editor (match por texto si se puede)
+    destacadas = []
+    for d in reel.get("destacadas", []):
+        cerca = [sw for sw in sub_words if abs(sw["orig"] - d["t"]) < 3.0]
+        if not cerca:
+            print(f"  AVISO: destacada {d} fuera de los cortes del reel — se omite")
+            continue
+        con_texto = [sw for sw in cerca if _normal(sw["w"]) == _normal(d["palabra"].split()[-1])]
+        sw = min(con_texto or cerca, key=lambda x: abs(x["orig"] - d["t"]))
+        destacadas.append({"desde": round(sw["desde"], 3), "palabra": d["palabra"]})
     return {"video": f"{nombre}.mp4", "titulo": reel["titulo"], "tipo": reel.get("tipo", "problema"),
-            "duracion": round(duracion, 3), "lineas": lineas}
+            "modo": reel.get("modo", "crop"), "duracion": round(duracion, 3),
+            "cortes": inicios, "destacadas": sorted(destacadas, key=lambda x: x["desde"]),
+            "lineas": lineas}
 
 
 def main(video, sesion_dir, out_dir="media_out", pantalla=None, remotion=False):
@@ -213,7 +232,7 @@ def main(video, sesion_dir, out_dir="media_out", pantalla=None, remotion=False):
     for reel in manifiesto["reels"]:
         nombre = f"reel_{reel['n']}_{reel['slug']}"
         print(f"\n== {nombre} ({reel.get('tipo')}, tesis {reel.get('tesis')}) ==")
-        intervalos, sub_words, duracion = cortes_sin_silencio(reel, words)
+        intervalos, sub_words, duracion, inicios = cortes_sin_silencio(reel, words)
         if not intervalos:
             print("  AVISO: sin intervalos — reel omitido")
             continue
@@ -221,7 +240,7 @@ def main(video, sesion_dir, out_dir="media_out", pantalla=None, remotion=False):
               + ("  ⚠ PASA DE 62s" if duracion > 62 else ""))
         ass_path = out / f"{nombre}.ass"
         if remotion:
-            props = props_remotion(reel, sub_words, duracion, nombre)
+            props = props_remotion(reel, sub_words, duracion, nombre, inicios)
             (out / f"{nombre}.props.json").write_text(json.dumps(props, ensure_ascii=False, indent=1), encoding="utf-8")
         else:
             escribir_ass(ass_path, reel, sub_words, duracion, familia)

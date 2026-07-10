@@ -1,91 +1,145 @@
-{
-  "slug": "2026-07-03-conceptos",
-  "video_duracion": 800.19,
-  "reels": [
-    {
-      "n": 1,
-      "slug": "kpi-liderazgo",
-      "titulo": "El KPI del liderazgo",
-      "tesis": 2,
-      "tipo": "conexion",
-      "modo": "crop",
-      "segmentos": [
-        {"desde": 608.64, "hasta": 669.6}
-      ],
-      "caption_instagram": "Hay un indicador que casi ningún líder tiene en su scorecard, y para mí dice más que cualquier otro: cuántas veces me vi sorprendido por alguien de mi equipo.\n\nSi te sorprenden, es porque abriste espacio para que experimenten y vayan más allá de la estrategia que vos imaginaste. Y ahí, cuando los resultados superan tu visión, empieza la transformación de verdad.\n\n¿Cuántas veces te sorprendió tu equipo este año?\n\n#TransformaciónContinua #Liderazgo #CulturaOrganizacional #Innovación #LoComplejoSimple"
-    },
-    {
-      "n": 2,
-      "slug": "cultura-sistema-operativo",
-      "titulo": "Cultura: sistema operativo",
-      "tesis": 2,
-      "tipo": "conexion",
-      "modo": "crop",
-      "segmentos": [
-        {"desde": 106.0, "hasta": 135.72}
-      ],
-      "caption_instagram": "A nosotros nos encanta decir que la cultura es el sistema operativo de la compañía. Una transformación digital no es un proyecto de IT: es el sistema por donde corre la esencia de la organización y hace que las cosas sucedan.\n\nPor eso ninguna herramienta transforma sola. Si la cultura no cambia, la mejor tecnología se apaga.\n\n#TransformaciónContinua #CulturaOrganizacional #TransformaciónDigital #Liderazgo #LoComplejoSimple"
-    },
-    {
-      "n": 3,
-      "slug": "service-as-a-software",
-      "titulo": "Service as a Software",
-      "tesis": 4,
-      "tipo": "metodo",
-      "modo": "crop",
-      "segmentos": [
-        {"desde": 525.23, "hasta": 571.85}
-      ],
-      "caption_instagram": "Antes comprabas un enlatado y adaptabas tu proceso a la herramienta. Ese era el SaaS, el software as a service.\n\nCon los nuevos modelos de IA el orden se dio vuelta: decime cómo es tu proceso y cuáles son tus necesidades, y como servicio desarrollo un software para tu realidad. Es el service as a software. Y lo importante ya no es elegir la herramienta, es el criterio para entender el problema.\n\n#ServiceAsASoftware #IA #TransformaciónDigital #Orquestación #LoComplejoSimple"
-    },
-    {
-      "n": 4,
-      "slug": "diseno-de-comportamientos",
-      "titulo": "Diseño de comportamientos",
-      "tesis": 2,
-      "tipo": "metodo",
-      "modo": "crop",
-      "segmentos": [
-        {"desde": 368.57, "hasta": 377.15},
-        {"desde": 409.41, "hasta": 448.27}
-      ],
-      "caption_instagram": "¿Vas a dejar a mano una barra de chocolate o una fruta? Si querés comer más sano, dejás la fruta: la volvés la decisión más fácil del día.\n\nEl diseño de comportamientos hace exactamente eso, pero a nivel organizacional: vuelve los hábitos que querés en tu cultura los más fáciles de hacer. No se trata de exigir más, se trata de diseñar el entorno.\n\n#DiseñoDeComportamientos #CulturaOrganizacional #TransformaciónContinua #Hábitos #LoComplejoSimple"
-    },
-    {
-      "n": 5,
-      "slug": "transformacion-continua",
-      "titulo": "Transformación Continua",
-      "tesis": 3,
-      "tipo": "metodo",
-      "modo": "crop",
-      "segmentos": [
-        {"desde": 34.84, "hasta": 88.16}
-      ],
-      "caption_instagram": "La mejora continua supone una tecnología que se mantiene. La gestión del cambio supone que el cambio es un salto puntual de una tecnología a otra. Las dos quedaron cortas.\n\nHoy el cambio es permanente. Por eso nace la Transformación Continua: combinar mejora continua, gestión del cambio y una dosis de ciencias del comportamiento para diseñar organizaciones que vivan en cambio, no que lo sufran.\n\n#TransformaciónContinua #GestiónDelCambio #MejoraContinua #TransformaciónDigital #LoComplejoSimple"
-    },
-    {
-      "n": 6,
-      "slug": "orquestadores",
-      "titulo": "Los Orquestadores",
-      "tesis": 4,
-      "tipo": "conexion",
-      "modo": "crop",
-      "segmentos": [
-        {"desde": 168.07, "hasta": 226.53}
-      ],
-      "caption_instagram": "En la era de la automatización con IA aparece un rol nuevo: el orquestador. Deja de poner el foco en la tarea para orquestar procesos, tecnología y personas hacia un objetivo.\n\nSuena simple, pero es casi un arte: requiere empatía para gestionar el cambio en la gente, pensamiento crítico para ver dónde cambiar y dónde no, y visión para pivotear cuando el escenario se mueve.\n\n#Orquestadores #IA #TransformaciónDigital #Liderazgo #LoComplejoSimple"
-    },
-    {
-      "n": 7,
-      "slug": "prospeccion-de-futuro",
-      "titulo": "Prospección de futuro",
-      "tesis": 3,
-      "tipo": "metodo",
-      "modo": "crop",
-      "segmentos": [
-        {"desde": 239.41, "hasta": 292.13}
-      ],
-      "caption_instagram": "Imaginá que en la industria alimenticia la gente empieza a dejar el azúcar. Eso impacta toda la cadena del producto.\n\nLa prospección de futuro parte de esa señal, define qué realidades se abren y hace ingeniería reversa: desde ese futuro posible vuelve a hoy para definir qué acciones y experimentos hacer ahora. En un escenario volátil, no se trata de adivinar un futuro, sino de prepararte para el que viene.\n\n#ProspecciónDeFuturo #Estrategia #Innovación #TransformaciónContinua #LoComplejoSimple"
-    }
-  ]
+﻿{
+    "slug":  "2026-07-03-conceptos",
+    "video_duracion":  800.19,
+    "reels":  [
+                  {
+                      "n":  1,
+                      "slug":  "kpi-liderazgo",
+                      "titulo":  "El KPI del liderazgo",
+                      "tesis":  2,
+                      "tipo":  "conexion",
+                      "modo":  "crop",
+                      "segmentos":  [
+                                        {
+                                            "desde":  608.64,
+                                            "hasta":  669.6
+                                        }
+                                    ],
+                      "caption_instagram":  "Hay un indicador que casi ningún líder tiene en su scorecard, y para mí dice más que cualquier otro: cuántas veces me vi sorprendido por alguien de mi equipo.\n\nSi te sorprenden, es porque abriste espacio para que experimenten y vayan más allá de la estrategia que vos imaginaste. Y ahí, cuando los resultados superan tu visión, empieza la transformación de verdad.\n\n¿Cuántas veces te sorprendió tu equipo este año?\n\n#TransformaciónContinua #Liderazgo #CulturaOrganizacional #Innovación #LoComplejoSimple",
+                      "destacadas":  [
+                                         {
+                                             "palabra":  "Sorprendido",
+                                             "t":  627.22
+                                         }
+                                     ]
+                  },
+                  {
+                      "n":  2,
+                      "slug":  "cultura-sistema-operativo",
+                      "titulo":  "Cultura: sistema operativo",
+                      "tesis":  2,
+                      "tipo":  "conexion",
+                      "modo":  "crop",
+                      "segmentos":  [
+                                        {
+                                            "desde":  106.0,
+                                            "hasta":  135.72
+                                        }
+                                    ],
+                      "caption_instagram":  "A nosotros nos encanta decir que la cultura es el sistema operativo de la compañía. Una transformación digital no es un proyecto de IT: es el sistema por donde corre la esencia de la organización y hace que las cosas sucedan.\n\nPor eso ninguna herramienta transforma sola. Si la cultura no cambia, la mejor tecnología se apaga.\n\n#TransformaciónContinua #CulturaOrganizacional #TransformaciónDigital #Liderazgo #LoComplejoSimple",
+                      "destacadas":  [
+                                         {
+                                             "palabra":  "Sistema operativo",
+                                             "t":  109.72
+                                         }
+                                     ]
+                  },
+                  {
+                      "n":  3,
+                      "slug":  "service-as-a-software",
+                      "titulo":  "Service as a Software",
+                      "tesis":  4,
+                      "tipo":  "metodo",
+                      "modo":  "crop",
+                      "segmentos":  [
+                                        {
+                                            "desde":  525.23,
+                                            "hasta":  571.85
+                                        }
+                                    ],
+                      "caption_instagram":  "Antes comprabas un enlatado y adaptabas tu proceso a la herramienta. Ese era el SaaS, el software as a service.\n\nCon los nuevos modelos de IA el orden se dio vuelta: decime cómo es tu proceso y cuáles son tus necesidades, y como servicio desarrollo un software para tu realidad. Es el service as a software. Y lo importante ya no es elegir la herramienta, es el criterio para entender el problema.\n\n#ServiceAsASoftware #IA #TransformaciónDigital #Orquestación #LoComplejoSimple"
+                  },
+                  {
+                      "n":  4,
+                      "slug":  "diseno-de-comportamientos",
+                      "titulo":  "Diseño de comportamientos",
+                      "tesis":  2,
+                      "tipo":  "metodo",
+                      "modo":  "crop",
+                      "segmentos":  [
+                                        {
+                                            "desde":  368.57,
+                                            "hasta":  377.15
+                                        },
+                                        {
+                                            "desde":  409.41,
+                                            "hasta":  448.27
+                                        }
+                                    ],
+                      "caption_instagram":  "¿Vas a dejar a mano una barra de chocolate o una fruta? Si querés comer más sano, dejás la fruta: la volvés la decisión más fácil del día.\n\nEl diseño de comportamientos hace exactamente eso, pero a nivel organizacional: vuelve los hábitos que querés en tu cultura los más fáciles de hacer. No se trata de exigir más, se trata de diseñar el entorno.\n\n#DiseñoDeComportamientos #CulturaOrganizacional #TransformaciónContinua #Hábitos #LoComplejoSimple",
+                      "destacadas":  [
+                                         {
+                                             "palabra":  "Chocolate o fruta",
+                                             "t":  420.53
+                                         }
+                                     ]
+                  },
+                  {
+                      "n":  5,
+                      "slug":  "transformacion-continua",
+                      "titulo":  "Transformación Continua",
+                      "tesis":  3,
+                      "tipo":  "metodo",
+                      "modo":  "crop",
+                      "segmentos":  [
+                                        {
+                                            "desde":  34.84,
+                                            "hasta":  88.16
+                                        }
+                                    ],
+                      "caption_instagram":  "La mejora continua supone una tecnología que se mantiene. La gestión del cambio supone que el cambio es un salto puntual de una tecnología a otra. Las dos quedaron cortas.\n\nHoy el cambio es permanente. Por eso nace la Transformación Continua: combinar mejora continua, gestión del cambio y una dosis de ciencias del comportamiento para diseñar organizaciones que vivan en cambio, no que lo sufran.\n\n#TransformaciónContinua #GestiónDelCambio #MejoraContinua #TransformaciónDigital #LoComplejoSimple"
+                  },
+                  {
+                      "n":  6,
+                      "slug":  "orquestadores",
+                      "titulo":  "Los Orquestadores",
+                      "tesis":  4,
+                      "tipo":  "conexion",
+                      "modo":  "crop",
+                      "segmentos":  [
+                                        {
+                                            "desde":  168.07,
+                                            "hasta":  226.53
+                                        }
+                                    ],
+                      "caption_instagram":  "En la era de la automatización con IA aparece un rol nuevo: el orquestador. Deja de poner el foco en la tarea para orquestar procesos, tecnología y personas hacia un objetivo.\n\nSuena simple, pero es casi un arte: requiere empatía para gestionar el cambio en la gente, pensamiento crítico para ver dónde cambiar y dónde no, y visión para pivotear cuando el escenario se mueve.\n\n#Orquestadores #IA #TransformaciónDigital #Liderazgo #LoComplejoSimple",
+                      "destacadas":  [
+                                         {
+                                             "palabra":  "Es un arte",
+                                             "t":  198.63
+                                         }
+                                     ]
+                  },
+                  {
+                      "n":  7,
+                      "slug":  "prospeccion-de-futuro",
+                      "titulo":  "Prospección de futuro",
+                      "tesis":  3,
+                      "tipo":  "metodo",
+                      "modo":  "crop",
+                      "segmentos":  [
+                                        {
+                                            "desde":  239.41,
+                                            "hasta":  292.13
+                                        }
+                                    ],
+                      "caption_instagram":  "Imaginá que en la industria alimenticia la gente empieza a dejar el azúcar. Eso impacta toda la cadena del producto.\n\nLa prospección de futuro parte de esa señal, define qué realidades se abren y hace ingeniería reversa: desde ese futuro posible vuelve a hoy para definir qué acciones y experimentos hacer ahora. En un escenario volátil, no se trata de adivinar un futuro, sino de prepararte para el que viene.\n\n#ProspecciónDeFuturo #Estrategia #Innovación #TransformaciónContinua #LoComplejoSimple",
+                      "destacadas":  [
+                                         {
+                                             "palabra":  "Ingeniería reversa",
+                                             "t":  279.99
+                                         }
+                                     ]
+                  }
+              ]
 }
