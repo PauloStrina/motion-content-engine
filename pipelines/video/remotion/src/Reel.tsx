@@ -42,7 +42,9 @@ export type ReelProps = {
 
 export const Reel: React.FC<ReelProps> = ({video, titulo, tipo, modo, lineas, cortes, destacadas}) => (
   <AbsoluteFill style={{backgroundColor: COLORES.negro}}>
-    {video ? <VideoPunch video={video} cortes={cortes ?? []} punch={modo !== 'split' && modo !== 'marco'} /> : null}
+    {video ? (
+      <VideoPunch video={video} cortes={cortes ?? []} punch={modo !== 'split' && modo !== 'marco' && modo !== 'zonas'} />
+    ) : null}
     <Progreso tipo={tipo} />
     <Titulo texto={titulo} tipo={tipo} />
     <Destacadas destacadas={destacadas ?? []} tipo={tipo} />

@@ -38,7 +38,10 @@ Leé completos:
    muestra algo en pantalla que hay que ver completo — el video queda 16:9 con marco de marca) ·
    "split" (capacitaciones con grabación de pantalla: pantalla arriba + cámara abajo; usalo cuando
    la corrida lo indique). Con "split", el manifiesto admite `"offset_pantalla"` a nivel raíz
-   (segundos de desfase si las dos grabaciones no arrancaron exactamente juntas; default 0).
+   (segundos de desfase si las dos grabaciones no arrancaron exactamente juntas; default 0) ·
+   "zonas" (video ÚNICO ya compuesto tipo stream de conferencia: se recortan dos regiones del frame
+   — slide y presentador — y se re-apilan vertical; las coordenadas van en `"zonas"` a nivel raíz:
+   `{"pantalla": {"x","y","w","h"}, "camara": {...}}` en fracciones 0-1, las define Paulo).
 
 ## PALABRAS DESTACADAS (énfasis visual)
 Por reel, elegí 1 a 3 **palabras martillo**: el momento de mayor énfasis, una antítesis, un concepto

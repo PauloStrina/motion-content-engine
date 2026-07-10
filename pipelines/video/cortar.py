@@ -139,11 +139,14 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     path.write_text(header + "\n".join(eventos) + "\n", encoding="utf-8")
 
 
-def render(video, reel, intervalos, ass_path, out_path, pantalla=None, offset_pantalla=0.0, brand=True):
+def render(video, reel, intervalos, ass_path, out_path, pantalla=None, offset_pantalla=0.0, brand=True,
+           zonas=None):
     """UNA sola decodificación por reel (seek al inicio del reel + duración acotada, nunca desde el
     segundo 0) y los silencios se saltan adentro con select/aselect sobre ese único stream — no se
     concatenan clips de decodificadores separados, así video y audio quedan siempre sincronizados.
-    modo "split": la grabación de pantalla (segundo video, mismos cortes) va arriba y la cámara abajo."""
+    modo "split": la grabación de pantalla (segundo video, mismos cortes) va arriba y la cámara abajo.
+    modo "zonas": video ÚNICO ya compuesto (stream de conferencia) — se recortan dos regiones del
+    mismo frame (zonas.pantalla y zonas.camara, fracciones 0-1 del ancho/alto) y se re-apilan."""
     overall_a = min(a for a, b in intervalos)
     overall_b = max(b for a, b in intervalos)
     seek = max(0.0, overall_a - 2)
@@ -165,6 +168,16 @@ def render(video, reel, intervalos, ass_path, out_path, pantalla=None, offset_pa
                        f"pad=1080:960:(ow-iw)/2:(oh-ih)/2:color=0x{NEGRO}[vpan];")
         filtros.append("[vpan][vcam]vstack=inputs=2[vf];")
         logo_idx = 2
+    elif reel.get("modo") == "zonas" and zonas:
+        zp, zc = zonas["pantalla"], zonas["camara"]
+        filtros.append(f"[0:v]select='{cond}',setpts=N/FRAME_RATE/TB,fps=30,split=2[vza][vzb];")
+        filtros.append(f"[vza]crop=iw*{zp['w']}:ih*{zp['h']}:iw*{zp['x']}:ih*{zp['y']},"
+                       "scale=1080:960:force_original_aspect_ratio=decrease,"
+                       f"pad=1080:960:(ow-iw)/2:(oh-ih)/2:color=0x{NEGRO}[vpan];")
+        filtros.append(f"[vzb]crop=iw*{zc['w']}:ih*{zc['h']}:iw*{zc['x']}:ih*{zc['y']},"
+                       "scale=1080:960:force_original_aspect_ratio=increase,crop=1080:960[vcam];")
+        filtros.append("[vpan][vcam]vstack=inputs=2[vf];")
+        logo_idx = 1
     else:
         filtros.append(f"[0:v]select='{cond}',setpts=N/FRAME_RATE/TB[vc];")
         if reel.get("modo") == "marco":
@@ -244,8 +257,11 @@ def main(video, sesion_dir, out_dir="media_out", pantalla=None, remotion=False):
             (out / f"{nombre}.props.json").write_text(json.dumps(props, ensure_ascii=False, indent=1), encoding="utf-8")
         else:
             escribir_ass(ass_path, reel, sub_words, duracion, familia)
+        zonas = reel.get("zonas") or manifiesto.get("zonas")
+        if reel.get("modo") == "zonas" and not zonas:
+            print("  AVISO: modo zonas sin coordenadas 'zonas' en el manifiesto — cae a crop")
         render(video, reel, intervalos, ass_path, out / f"{nombre}.mp4", pantalla, offset_pantalla,
-               brand=not remotion)
+               brand=not remotion, zonas=zonas)
         print(f"  OK → {out / (nombre + '.mp4')}")
 
 
