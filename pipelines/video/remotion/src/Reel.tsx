@@ -21,20 +21,29 @@ export const COLOR_TIPO: Record<string, string> = {
 // Carga manual (no @remotion/fonts): si la fuente falla, el render sigue y el motivo queda en el log
 // en vez de un timeout mudo de delayRender.
 if (typeof document !== 'undefined') {
-  const fuente = new FontFace(
-    'FuturaM',
-    `url('${staticFile('fonts/FuturaStd-CondensedExtraBd.otf')}') format('opentype')`,
-  );
   const espera = delayRender('fuente FuturaM');
-  fuente
-    .load()
-    .then((f) => {
-      document.fonts.add(f);
+  let listoLlamado = false;
+  const listo = () => {
+    if (!listoLlamado) {
+      listoLlamado = true;
       continueRender(espera);
-    })
-    .catch((err) => {
-      console.error('La fuente FuturaM no cargó:', err);
-      continueRender(espera);
+    }
+  };
+  // fusible: nunca dejar el render colgado por la fuente
+  const fusible = setTimeout(() => {
+    console.error('Fuente FuturaM: timeout de carga, se continúa sin ella');
+    listo();
+  }, 10000);
+  // fetch a memoria en vez de FontFace(url): el font-loader de Chrome headless en Linux
+  // se colgaba resolviendo la URL (delayRender timeout en frame arbitrario)
+  fetch(staticFile('fonts/FuturaStd-CondensedExtraBd.otf'))
+    .then((r) => r.arrayBuffer())
+    .then((buf) => new FontFace('FuturaM', buf).load())
+    .then((f) => document.fonts.add(f))
+    .catch((err) => console.error('La fuente FuturaM no cargó:', err))
+    .finally(() => {
+      clearTimeout(fusible);
+      listo();
     });
 }
 
