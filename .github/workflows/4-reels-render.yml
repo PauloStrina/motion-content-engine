@@ -51,7 +51,7 @@ jobs:
           cp ../../../media_clean/*.mp4 public/
           for P in ../../../media_clean/*.props.json; do
             N=$(basename "$P" .props.json)
-            npx remotion render src/index.ts Reel "../../../media_out/$N.mp4" --props="$P"
+            npx remotion render src/index.ts Reel "../../../media_out/$N.mp4" --props="$P" --chrome-mode=chrome-for-testing --timeout=60000
           done
       - name: Subir reels para revisión
         uses: actions/upload-artifact@v4
