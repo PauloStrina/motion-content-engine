@@ -79,7 +79,7 @@ jobs:
           cp "../../../media_clean/${{ matrix.reel }}.mp4" public/
           npx remotion render src/index.ts Reel "../../../media_out/${{ matrix.reel }}.mp4" \
             --props="../../../media_clean/${{ matrix.reel }}.props.json" \
-            --chrome-mode=chrome-for-testing --timeout=60000 --concurrency=4
+            --chrome-mode=chrome-for-testing --timeout=60000
           npx remotion still src/index.ts Reel "../../../media_out/_control_${{ matrix.reel }}.png" \
             --props="../../../media_clean/${{ matrix.reel }}.props.json" \
             --frame=45 --chrome-mode=chrome-for-testing
