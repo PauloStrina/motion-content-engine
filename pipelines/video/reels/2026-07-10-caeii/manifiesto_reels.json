@@ -1,0 +1,104 @@
+{
+ "slug": "2026-07-10-caeii",
+ "video_duracion": 2240.9,
+ "zonas": {
+  "pantalla": {"x": 0.055, "y": 0.075, "w": 0.633, "h": 0.735},
+  "camara": {"x": 0.752, "y": 0.03, "w": 0.248, "h": 0.91}
+ },
+ "reels": [
+  {
+   "n": 1,
+   "slug": "no-delegues-tu-criterio",
+   "titulo": "No delegues tu criterio",
+   "tesis": 4,
+   "tipo": "conexion",
+   "modo": "zonas",
+   "segmentos": [
+    {"desde": 2068.8, "hasta": 2124.8}
+   ],
+   "destacadas": [{"t": 2077.9, "palabra": "Tu criterio"}],
+   "caption_instagram": "En tiempos donde ChatGPT nos resuelve muchas cosas, mi invitación es una sola: no le deleguemos nuestro criterio.\n\nDeleguemos tareas, apoyémonos en herramientas. Pero el pensamiento crítico —qué sí, qué no, por dónde ir— es lo que nos hace profesionales. Muchas soluciones están dentro de la caja y no las vemos porque estamos en automatismo.\n\n¿Qué le estás delegando a la herramienta: la tarea o el criterio?\n\n#Criterio #IA #PensamientoCrítico #TransformaciónContinua #LoComplejoSimple"
+  },
+  {
+   "n": 2,
+   "slug": "pensar-dentro-de-la-caja",
+   "titulo": "Pensá DENTRO de la caja",
+   "tesis": 3,
+   "tipo": "metodo",
+   "modo": "zonas",
+   "segmentos": [
+    {"desde": 299.4, "hasta": 356.9}
+   ],
+   "destacadas": [{"t": 348.6, "palabra": "Dentro de la caja"}],
+   "caption_instagram": "\"Pensar fuera de la caja\" nació de un acertijo y terminó absolutamente trillada: todos buscando una caja de la cual salir, sin saber cuál era.\n\nMi propuesta es la contraria: pensar DENTRO de la caja. Una metodología de innovación que usa las restricciones de tu contexto —tu mercado, tu proceso, tu producto— a tu favor.\n\nPrimero definí tu caja. Después innová adentro.\n\n#Innovación #Metodología #SIT #TransformaciónContinua #LoComplejoSimple"
+  },
+  {
+   "n": 3,
+   "slug": "iphone-blackberry-sustraccion",
+   "titulo": "iPhone y la sustracción",
+   "tesis": 3,
+   "tipo": "conexion",
+   "modo": "zonas",
+   "segmentos": [
+    {"desde": 651.0, "hasta": 710.8}
+   ],
+   "destacadas": [{"t": 694.0, "palabra": "Sacó el teclado"}],
+   "caption_instagram": "BlackBerry era el líder del mercado gracias a su invento estrella: el teclado QWERTY físico. El que tenía un BlackBerry era un crack.\n\n¿Qué hizo Apple en 2007? Eliminó el componente más esencial del producto líder: sacó el teclado. Y esa sustracción resignificó todo el valor del smartphone.\n\nLa innovación muchas veces no es agregar: es animarse a quitar lo esencial y ver qué pasa.\n\n#Innovación #PatrónDeSustracción #iPhone #Metodología #LoComplejoSimple"
+  },
+  {
+   "n": 4,
+   "slug": "caso-panificadora",
+   "titulo": "Innovar sin presupuesto",
+   "tesis": 4,
+   "tipo": "resultados",
+   "modo": "zonas",
+   "segmentos": [
+    {"desde": 871.9, "hasta": 878.8},
+    {"desde": 894.9, "hasta": 945.5}
+   ],
+   "destacadas": [{"t": 923.0, "palabra": "Sin balanza"}],
+   "caption_instagram": "Una panificadora industrial perdía tiempo en cada batch: el pesaje de ingredientes tenía que ser quirúrgico y era lentísimo.\n\nLa tentación era \"inventemos una IA que pese ingredientes\". Aplicamos método: eliminamos la balanza —un componente fundamental del proceso— y la reemplazamos por cucharas dosificadoras hechas a medida del batch. Cucharazo, regla al ras, listo.\n\nCosto bajísimo. Resultado enorme. Eso es desafiar las fijaciones funcionales.\n\n#Innovación #CasoReal #Metodología #Industria #LoComplejoSimple"
+  },
+  {
+   "n": 5,
+   "slug": "experimento-de-la-vela",
+   "titulo": "El experimento de la vela",
+   "tesis": 2,
+   "tipo": "conexion",
+   "modo": "zonas",
+   "segmentos": [
+    {"desde": 1913.0, "hasta": 1945.5},
+    {"desde": 1951.5, "hasta": 1978.4}
+   ],
+   "destacadas": [{"t": 1970.8, "palabra": "Fijación funcional"}],
+   "caption_instagram": "Dos grupos, un desafío: fijar una vela a la pared sin que manche la mesa.\n\nAl primer grupo le dieron la caja de fósforos con los fósforos ADENTRO. Solo el 20% lo resolvió. Al segundo, los fósforos FUERA de la caja... y la mayoría vio la solución: la caja sostiene la vela.\n\nLa diferencia no fue inteligencia: fue la fijación funcional. Cuando algo \"sirve para una sola cosa\", dejamos de ver todo lo demás que puede hacer.\n\n#FijacionesFuncionales #Innovación #Comportamiento #Cultura #LoComplejoSimple"
+  },
+  {
+   "n": 6,
+   "slug": "cual-es-la-caja",
+   "titulo": "¿Cuál es la caja?",
+   "tesis": 3,
+   "tipo": "metodo",
+   "modo": "zonas",
+   "segmentos": [
+    {"desde": 421.0, "hasta": 471.3}
+   ],
+   "destacadas": [{"t": 437.4, "palabra": "Restricciones"}],
+   "caption_instagram": "SIT —pensamiento sistemático inventivo— plantea algo incómodo: es MÁS fácil producir ideas con método y restricciones que con lluvia de ideas libre.\n\nY de paso define la caja de una vez: las restricciones de tu contexto. Tu mercado, tu país, tu industria, tu proceso, tu producto. Delimitala y aprovechala en su máxima expresión.\n\nMétodo sistemático para generar ideas dentro de ese contexto. Eso es innovar en serio.\n\n#SIT #Metodología #Innovación #TransformaciónContinua #LoComplejoSimple"
+  },
+  {
+   "n": 7,
+   "slug": "extra-cash",
+   "titulo": "El invento del extra cash",
+   "tesis": 3,
+   "tipo": "conexion",
+   "modo": "zonas",
+   "segmentos": [
+    {"desde": 1531.0, "hasta": 1540.9},
+    {"desde": 1542.4, "hasta": 1594.0}
+   ],
+   "destacadas": [{"t": 1537.5, "palabra": "Extra cash"}],
+   "caption_instagram": "Hoy parece obvio, pero fue un invento magnífico: el extra cash del supermercado.\n\nPagás con débito y retirás efectivo. El usuario se ahorra el cajero. El comercio reduce el efectivo susceptible a robo y baja el costo logístico de los camiones de caudales. Una tarea unificada, valor para toda la cadena.\n\nEstaba ahí, a la vista de todos, hasta que alguien cambió el foco de análisis.\n\n#UnificaciónDeTareas #Innovación #Metodología #Retail #LoComplejoSimple"
+  }
+ ]
+}
