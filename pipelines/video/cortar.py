@@ -221,8 +221,8 @@ def props_remotion(reel, sub_words, duracion, nombre, inicios):
 
 def main(video, sesion_dir, out_dir="media_out", pantalla=None, remotion=False):
     sesion = pathlib.Path(sesion_dir)
-    manifiesto = json.loads((sesion / "manifiesto_reels.json").read_text(encoding="utf-8"))
-    words = json.loads((sesion / "transcript.json").read_text(encoding="utf-8"))["palabras"]
+    manifiesto = json.loads((sesion / "manifiesto_reels.json").read_text(encoding="utf-8-sig"))
+    words = json.loads((sesion / "transcript.json").read_text(encoding="utf-8-sig"))["palabras"]
     out = pathlib.Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     familia = font_family()
