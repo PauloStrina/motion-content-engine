@@ -9,6 +9,10 @@ on:
         description: "Segundo del video del que extraer el frame."
         required: true
         default: "60"
+      zona:
+        description: "OPCIONAL: fracciones x,y,w,h (0-1) para previsualizar un crop, ej: 0.75,0.02,0.245,0.55"
+        required: false
+        default: ""
 permissions:
   contents: read
 jobs:
@@ -26,10 +30,18 @@ jobs:
         run: |
           ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 _video/input.mp4 > frame.txt
           ffmpeg -y -ss "${{ github.event.inputs.segundo }}" -i _video/input.mp4 -frames:v 1 frame.png
+      - name: Previsualizar zona (si se pasó) — mismo criterio "cover" que usa el motor
+        if: ${{ github.event.inputs.zona != '' }}
+        run: |
+          IFS=',' read -r X Y W H <<< "${{ github.event.inputs.zona }}"
+          ffmpeg -y -i frame.png -vf "crop=iw*$W:ih*$H:iw*$X:ih*$Y,scale=1080:960:force_original_aspect_ratio=increase,crop=1080:960" zona_cover.png
+          ffmpeg -y -i frame.png -vf "crop=iw*$W:ih*$H:iw*$X:ih*$Y,scale=1080:960:force_original_aspect_ratio=decrease,pad=1080:960:(ow-iw)/2:(oh-ih)/2:color=0x1A1A1A" zona_contain.png
       - uses: actions/upload-artifact@v4
         with:
           name: frame
           path: |
             frame.png
             frame.txt
+            zona_*.png
           retention-days: 3
+          if-no-files-found: ignore
