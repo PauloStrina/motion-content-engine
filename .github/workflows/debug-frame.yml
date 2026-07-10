@@ -1,0 +1,35 @@
+name: debug-frame
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: "Link de Drive del video a inspeccionar."
+        required: true
+      segundo:
+        description: "Segundo del video del que extraer el frame."
+        required: true
+        default: "60"
+permissions:
+  contents: read
+jobs:
+  frame:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install --quiet "gdown==5.2.0"
+      - name: Descargar video de Drive
+        run: python3 pipelines/video/descargar.py "${{ github.event.inputs.video_url }}" _video
+      - name: Extraer frame + resolución
+        run: |
+          ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 _video/input.mp4 > frame.txt
+          ffmpeg -y -ss "${{ github.event.inputs.segundo }}" -i _video/input.mp4 -frames:v 1 frame.png
+      - uses: actions/upload-artifact@v4
+        with:
+          name: frame
+          path: |
+            frame.png
+            frame.txt
+          retention-days: 3
