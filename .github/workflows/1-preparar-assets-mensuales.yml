@@ -48,4 +48,4 @@ jobs:
           git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           git add design-system/slides/
           git commit -m "assets: preparar mes ${{ github.event.inputs.mes }}" || echo "sin cambios"
-          git push origin HEAD:main
+          git push origin "HEAD:${GITHUB_REF_NAME}"
