@@ -36,7 +36,12 @@ jobs:
           fi
 
       - name: Validar especificaciones visuales
-        run: python scripts/validar_assets_mes.py --mes "${{ github.event.inputs.mes }}"
+        run: |
+          if [ "${{ github.event.inputs.modo }}" = "live" ]; then
+            python scripts/validar_assets_mes.py --mes "${{ github.event.inputs.mes }}" --require-approved
+          else
+            python scripts/validar_assets_mes.py --mes "${{ github.event.inputs.mes }}"
+          fi
 
       - name: Instalar dependencias de render
         run: |
