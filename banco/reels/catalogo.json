@@ -1,4 +1,96 @@
 {
-  "_doc": "BANCO DE REELS — stock de videos listos para publicar. Lo alimenta el workflow 5-banco-reels (sube los MP4 aprobados a motion-media/reels/ y registra acá la metadata). La cascada mensual toma de acá los 2 videos por semana (matcheando tesis+tipo del día) y los marca 'reservado'. El publicador los marca 'publicado'. Estados: disponible | reservado | publicado. Paulo puede editar este archivo a mano (borrar un reel del banco, liberar una reserva, corregir tesis/tipo).",
-  "reels": []
+ "_doc": "BANCO DE REELS — stock de videos listos para publicar. Lo alimenta el workflow 5-banco-reels (sube los MP4 aprobados a motion-media/reels/ y registra acá la metadata). La cascada mensual toma de acá los 2 videos por semana (matcheando tesis+tipo del día) y los marca 'reservado'. El publicador los marca 'publicado'. Estados: disponible | reservado | publicado. Paulo puede editar este archivo a mano (borrar un reel del banco, liberar una reserva, corregir tesis/tipo).",
+ "reels": [
+  {
+   "id": "2026-07-03-conceptos_1",
+   "sesion": "2026-07-03-conceptos",
+   "archivo": "2026-07-03-conceptos_1.mp4",
+   "url": "https://ops-motionco.github.io/motion-media/reels/2026-07-03-conceptos_1.mp4",
+   "tesis": 2,
+   "tipo": "conexion",
+   "titulo": "El KPI del liderazgo",
+   "duracion": 49.8,
+   "caption_sugerido": "¿Cuántas veces te sorprendió alguien de tu equipo este año? Si la respuesta es \"ninguna\", el problema no es tu gente: es cuánto espacio le estás dejando para superarte. Es un indicador simple para agregar a tu Scorecard y una forma distinta de mirar el liderazgo: cuando te sorprenden, es porque abriste lugar para que experimenten y vayan más allá de la estrategia que vos imaginaste. Ahí empieza la transformación de verdad.\n\n#Liderazgo #TransformaciónCultural #TransformaciónContinua #Innovación #Equipos #LoComplejoSimple",
+   "estado": "disponible",
+   "reservado_para": null
+  },
+  {
+   "id": "2026-07-03-conceptos_2",
+   "sesion": "2026-07-03-conceptos",
+   "archivo": "2026-07-03-conceptos_2.mp4",
+   "url": "https://ops-motionco.github.io/motion-media/reels/2026-07-03-conceptos_2.mp4",
+   "tesis": 4,
+   "tipo": "metodo",
+   "titulo": "Service as a Software",
+   "duracion": 58.4,
+   "caption_sugerido": "Antes comprabas un enlatado y adaptabas tu empresa al software. Ahora el orden se da vuelta: primero tu proceso, después la herramienta hecha a tu medida. Es el salto del Software as a Service al Service as a Software. Y lo importante ya no es qué comprás, sino el criterio para entender qué necesitás y la empatía para no olvidar que las personas son las que van a usarlo.\n\n#ServiceAsASoftware #IA #TransformaciónDigital #Tecnología #Orquestación #LoComplejoSimple",
+   "estado": "disponible",
+   "reservado_para": null
+  },
+  {
+   "id": "2026-07-03-conceptos_3",
+   "sesion": "2026-07-03-conceptos",
+   "archivo": "2026-07-03-conceptos_3.mp4",
+   "url": "https://ops-motionco.github.io/motion-media/reels/2026-07-03-conceptos_3.mp4",
+   "tesis": 2,
+   "tipo": "problema",
+   "titulo": "Cultura: sistema operativo",
+   "duracion": 28.9,
+   "caption_sugerido": "Una transformación digital que se delega en IT sigue siendo un proyecto de tecnología. La cultura es el sistema operativo por donde corre la esencia de la organización y por donde suceden, o no, las cosas. Sin transformación cultural, la mejor herramienta queda encendida y sin usar.\n\n#Cultura #TransformaciónDigital #TransformaciónCultural #Liderazgo #TransformaciónContinua #LoComplejoSimple",
+   "estado": "disponible",
+   "reservado_para": null
+  },
+  {
+   "id": "2026-07-03-conceptos_4",
+   "sesion": "2026-07-03-conceptos",
+   "archivo": "2026-07-03-conceptos_4.mp4",
+   "url": "https://ops-motionco.github.io/motion-media/reels/2026-07-03-conceptos_4.mp4",
+   "tesis": 3,
+   "tipo": "metodo",
+   "titulo": "Transformación Continua",
+   "duracion": 52.4,
+   "caption_sugerido": "La mejora continua supone una tecnología que se queda quieta. La gestión del cambio supone que el cambio, en algún momento, termina. Hoy ninguna de las dos alcanza sola. La Transformación Continua las combina (y les suma una dosis de ciencias del comportamiento) para diseñar organizaciones que se adaptan sin romperse.\n\n#TransformaciónContinua #GestiónDelCambio #MejoraContinua #Cultura #Management #LoComplejoSimple",
+   "estado": "disponible",
+   "reservado_para": null
+  },
+  {
+   "id": "2026-07-03-conceptos_5",
+   "sesion": "2026-07-03-conceptos",
+   "archivo": "2026-07-03-conceptos_5.mp4",
+   "url": "https://ops-motionco.github.io/motion-media/reels/2026-07-03-conceptos_5.mp4",
+   "tesis": 2,
+   "tipo": "metodo",
+   "titulo": "Diseño de comportamientos",
+   "duracion": 57.6,
+   "caption_sugerido": "¿Querés comer más sano? Dejás la fruta a mano y la barra de chocolate lejos. El diseño de comportamientos hace exactamente eso dentro de una organización: convierte el hábito que buscás en la opción más fácil de elegir. No son discursos, son empujones (nudges) puestos con intención.\n\n#DiseñoDeComportamientos #Cultura #Nudges #Hábitos #TransformaciónCultural #LoComplejoSimple",
+   "estado": "disponible",
+   "reservado_para": null
+  },
+  {
+   "id": "2026-07-03-conceptos_6",
+   "sesion": "2026-07-03-conceptos",
+   "archivo": "2026-07-03-conceptos_6.mp4",
+   "url": "https://ops-motionco.github.io/motion-media/reels/2026-07-03-conceptos_6.mp4",
+   "tesis": 4,
+   "tipo": "conexion",
+   "titulo": "Los Orquestadores",
+   "duracion": 42.7,
+   "caption_sugerido": "El foco dejó de estar en la tarea. Aparece un rol nuevo que no ejecuta: orquesta procesos, tecnología y personas hacia un objetivo. Suena simple decirlo, pero es prácticamente un arte. Pide empatía para acompañar a la gente en el cambio y pensamiento crítico para ver qué hay que hacer y, sobre todo, qué hay que dejar de hacer.\n\n#Orquestadores #IA #Liderazgo #Innovación #FuturoDelTrabajo #LoComplejoSimple",
+   "estado": "disponible",
+   "reservado_para": null
+  },
+  {
+   "id": "2026-07-03-conceptos_7",
+   "sesion": "2026-07-03-conceptos",
+   "archivo": "2026-07-03-conceptos_7.mp4",
+   "url": "https://ops-motionco.github.io/motion-media/reels/2026-07-03-conceptos_7.mp4",
+   "tesis": 3,
+   "tipo": "metodo",
+   "titulo": "Prospección de futuros",
+   "duracion": 51.2,
+   "caption_sugerido": "Imaginá que las personas dejan de consumir azúcar. ¿Qué le pasa a toda una industria alimenticia? La prospección de futuros parte de una señal de cambio, dibuja las realidades que se desprenden de ese futuro posible y hace ingeniería reversa hasta hoy: qué acciones tenés que empezar a hacer ahora para llegar preparado.\n\n#ProspecciónDeFuturos #Estrategia #Innovación #Futuro #TransformaciónContinua #LoComplejoSimple",
+   "estado": "disponible",
+   "reservado_para": null
+  }
+ ]
 }
