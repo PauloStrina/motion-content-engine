@@ -58,7 +58,8 @@
    "tipo": "resultados",
    "modo": "zonas",
    "segmentos": [
-    {"desde": 871.9, "hasta": 878.8},
+    {"desde": 868.82, "hasta": 873.3},
+    {"desde": 877.22, "hasta": 884.22},
     {"desde": 894.9, "hasta": 900.8},
     {"desde": 910.3, "hasta": 925.9},
     {"desde": 929.7, "hasta": 945.5}
@@ -92,7 +93,7 @@
    "segmentos": [
     {"desde": 421.0, "hasta": 442.5},
     {"desde": 448.0, "hasta": 454.4},
-    {"desde": 456.4, "hasta": 471.3}
+    {"desde": 456.4, "hasta": 476.22}
    ],
    "destacadas": [{"t": 437.4, "palabra": "Restricciones"}],
    "caption_instagram": "SIT —pensamiento sistemático inventivo— plantea algo incómodo: es MÁS fácil producir ideas con método y restricciones que con lluvia de ideas libre.\n\nY de paso define la caja de una vez: las restricciones de tu contexto. Tu mercado, tu país, tu industria, tu proceso, tu producto. Delimitala y aprovechala en su máxima expresión.\n\nMétodo sistemático para generar ideas dentro de ese contexto. Eso es innovar en serio.\n\n#SIT #Metodología #Innovación #TransformaciónContinua #LoComplejoSimple"
