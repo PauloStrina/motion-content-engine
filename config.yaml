@@ -1,7 +1,3 @@
 canales:
-  linkedin_paulo:  {account: 25264, platform: linkedin}
-  x_paulo_hem:     {account: 20492, platform: twitter}
-  x_paulo_news:    {account: 20492, platform: twitter}
-  linkedin_motion: {account: 25264, platform: linkedin, pageid: 105691334}
-  instagram:       {account: 53650, platform: instagram}
-  instagram_newsletter: {account: 53650, platform: instagram}
+  linkedin_paulo: {account: 25264, platform: linkedin}
+  instagram:      {account: 53650, platform: instagram}
