@@ -1,27 +1,56 @@
 # MOTION CONTENT ENGINE
-Máquina de comunicación y marketing de Motion. Capa 1 (estrategia) + Capa 2 (fábrica) + Capa 3 (distribución) + Capa 4 (aprendizaje).
-**Principio:** todo es un archivo versionado. Humano solo en: insumo (opcional) y aprobación (obligatoria).
+
+Repositorio operativo para producir y programar contenido de Motion a partir de un **manifiesto mensual aprobado**.
+
+## Fuentes activas
+
+- `strategy/ESTRATEGIA_MOTION_CANONICA.md`: única fuente de verdad estratégica.
+- `knowledge/MASTER_BASE_CONOCIMIENTO.md`: referencia a la base de conocimiento activa del proyecto.
+- `manifiestos/mes_<YYYY-MM>.json`: contrato operativo aprobado para cada mes.
+
+La estrategia y los textos se definen fuera del repositorio. GitHub no decide qué comunicar ni redacta el mes: valida el manifiesto, genera especificaciones visuales, renderiza assets y programa las publicaciones.
+
+## Flujo mensual
+
+1. Definir y aprobar el plan de 16 publicaciones.
+2. Cargar `manifiestos/mes_<YYYY-MM>.json` con `estado: aprobado`.
+3. Ejecutar `1-preparar-assets-mensuales`.
+4. Revisar los archivos de diseño generados.
+5. Ejecutar `2-motor-mensual` en modo `dry`.
+6. Revisar el resultado.
+7. Ejecutar `2-motor-mensual` en modo `live`.
+
+El modo `live` se bloquea si el manifiesto no está aprobado.
+
+## Alcance activo
+
+- LinkedIn de Paulo.
+- Instagram de Motion.
+- Carruseles, posts largos, captions, newsletters manuales y programación por Blotato.
+- Sistema de diseño en código.
+
+## Video
+
+El subsistema de creación y edición de video se conserva sin cambios. Sus workflows, prompts, pipelines y banco de reels siguen operando de forma independiente.
 
 ## Estructura
-- `strategy/` — el cerebro: tesis, buyer persona, voz, plan maestro. Los agentes leen SIEMPRE de acá.
-- `skills/` — prompts de los 6 agentes.
-- `design-system/` — identidad como código: tokens + plantillas HTML + render a PNG/PDF.
-- `pipelines/video/` — corte de reels y motion graphics.
-- `queue/` — pending (borradores) → approved (tu OK) → published.
-- `automation/` — GitHub Actions: cascada semanal y publicación.
-- `scripts/` — publicación vía Blotato API.
-- `evidencias/` — Banco de Evidencias.
 
-## Setup (una tarde técnica)
-1. Crear repo privado en GitHub y pushear este contenido. Mover `automation/.github` a la raíz como `.github`.
-2. Secrets del repo (Settings → Secrets → Actions): `ANTHROPIC_API_KEY`, `BLOTATO_API_KEY`, `NOTIFY_EMAIL`.
-3. Copiar fuentes (.woff2) y logos (SVG) de Motion a `design-system/assets/` y completar los hex reales en `tokens.css` desde el manual de Oficina Robot (los actuales son APROXIMADOS — TODO marcado).
-4. Render local de prueba: `cd design-system/render && npm i puppeteer && node render.js ../templates/carousel.html demo.json`
-5. Crear cuenta Blotato, conectar canales, pegar API key. Completar endpoint real en `scripts/publish_blotato.py` según docs de Blotato (marcado TODO).
-6. Probar el workflow manualmente: Actions → "cascada-semanal" → Run workflow.
-7. Flujo diario: borradores aparecen en `queue/pending/` → revisás → movés a `queue/approved/` (commit) → el workflow de publicación los programa.
+- `.github/workflows/`: preparación de assets, publicación mensual y subsistema de video.
+- `strategy/`: estrategia canónica y archivos de compatibilidad del subsistema de video.
+- `knowledge/`: referencia a la base de conocimiento fuente.
+- `manifiestos/`: inputs mensuales aprobados.
+- `design-system/`: identidad visual, especificaciones y render.
+- `scripts/`: validación, render y publicación.
+- `pipelines/video/`: creación y edición de reels; fuera del alcance de esta refactorización.
+- `archive/`: manifiesto de documentación y automatizaciones discontinuadas.
 
-## Reglas duras
-- `aprobacion.modo` jamás pasa a automático.
-- Ningún agente inventa números: si no está en `evidencias/`, no se publica.
-- Las API keys viven SOLO en GitHub Secrets, nunca en el código.
+## Reglas operativas
+
+- Nada se publica sin aprobación humana.
+- `dry` no toca Blotato ni hace push a `motion-media`.
+- `live` exige `estado: aprobado`, `aprobado_por` y `aprobado_en`.
+- Los copies viven en el manifiesto. El diseñador no puede reescribirlos.
+- Las API keys viven únicamente en GitHub Secrets.
+- `archive/**` nunca se usa como fuente activa.
+
+Ver `docs/OPERACION_REPOSITORIO.md` y `docs/CONTRATO_MANIFIESTO_MENSUAL.md`.
