@@ -1,6 +1,10 @@
 {
   "slug": "2026-07-12-EPE-Desafíos de adoptar IA-FormatoCrop",
   "video_duracion": 352.18,
+  "zonas": {
+    "pantalla": {"x": 0, "y": 0, "w": 1, "h": 1},
+    "camara": {"x": 0.8935, "y": 0.1215, "w": 0.077, "h": 0.137}
+  },
   "reels": [
     {
       "n": 1,
@@ -8,7 +12,7 @@
       "titulo": "95% muere en piloto",
       "tesis": 2,
       "tipo": "problema",
-      "modo": "crop",
+      "modo": "zonas",
       "segmentos": [
         {"desde": 3.9, "hasta": 26.7},
         {"desde": 35.62, "hasta": 47.02}
@@ -21,7 +25,7 @@
       "titulo": "Un puente a ningún lado",
       "tesis": 1,
       "tipo": "problema",
-      "modo": "crop",
+      "modo": "zonas",
       "segmentos": [
         {"desde": 56.78, "hasta": 64.02},
         {"desde": 69.36, "hasta": 98.98}
@@ -34,7 +38,7 @@
       "titulo": "Adoptar IA es transformar",
       "tesis": 2,
       "tipo": "problema",
-      "modo": "crop",
+      "modo": "zonas",
       "segmentos": [
         {"desde": 251.66, "hasta": 265.78},
         {"desde": 280.56, "hasta": 314.68}
@@ -47,7 +51,7 @@
       "titulo": "Definí qué necesitás",
       "tesis": 4,
       "tipo": "metodo",
-      "modo": "crop",
+      "modo": "zonas",
       "segmentos": [
         {"desde": 112.66, "hasta": 153.88}
       ],
@@ -59,7 +63,7 @@
       "titulo": "Por qué resistís al cambio",
       "tesis": 2,
       "tipo": "problema",
-      "modo": "crop",
+      "modo": "zonas",
       "segmentos": [
         {"desde": 197.76, "hasta": 225.88},
         {"desde": 227.08, "hasta": 249.34}
@@ -72,7 +76,7 @@
       "titulo": "No dejes que te abrume",
       "tesis": 3,
       "tipo": "conexion",
-      "modo": "crop",
+      "modo": "zonas",
       "segmentos": [
         {"desde": 156.42, "hasta": 166.68},
         {"desde": 167.86, "hasta": 196.34}
