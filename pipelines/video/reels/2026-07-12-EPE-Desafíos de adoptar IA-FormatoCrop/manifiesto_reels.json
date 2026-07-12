@@ -1,0 +1,83 @@
+{
+  "slug": "2026-07-12-EPE-Desafíos de adoptar IA-FormatoCrop",
+  "video_duracion": 352.18,
+  "reels": [
+    {
+      "n": 1,
+      "slug": "brecha-adopcion-ia",
+      "titulo": "95% muere en piloto",
+      "tesis": 2,
+      "tipo": "problema",
+      "modo": "crop",
+      "segmentos": [
+        {"desde": 3.9, "hasta": 26.7},
+        {"desde": 35.62, "hasta": 47.02}
+      ],
+      "caption_instagram": "El 95% de los proyectos de IA nunca sale de la fase piloto. Y no es un problema de tecnología: la capacidad de la IA ya está, lo que no crece al mismo ritmo es la capacidad de las organizaciones para adoptarla. Adoptar no es instalar una herramienta, es cambiar cómo trabajamos todos los días, y ahí es donde la mayoría de los proyectos se traban. ¿Tu última inversión en IA ya vive en el día a día del equipo, o quedó en una prueba que nadie usa?\n\n#TransformaciónContinua #AdopciónDeIA #TransformaciónDigital #InteligenciaArtificial #LoComplejoSimple"
+    },
+    {
+      "n": 2,
+      "slug": "puente-a-ningun-lado",
+      "titulo": "Un puente a ningún lado",
+      "tesis": 1,
+      "tipo": "problema",
+      "modo": "crop",
+      "segmentos": [
+        {"desde": 56.78, "hasta": 64.02},
+        {"desde": 69.36, "hasta": 98.98}
+      ],
+      "caption_instagram": "En la ruta 9, entre Rosario y Buenos Aires, hay un puente famoso que conecta nada con nada. Uno lo mira y piensa qué sentido tuvo construirlo. Con muchos proyectos de IA pasa lo mismo: se avanza por la ansiedad de mostrar que estamos invirtiendo, sin frenar a pensar que adoptar IA implica rediseñar la forma en que trabajamos. Sin esa estrategia, cada inversión termina siendo un puente hacia ningún lado. ¿La IA que estás sumando conecta con tu negocio, o conecta nada con nada?\n\n#TransformaciónContinua #InteligenciaArtificial #EstrategiaDigital #LoComplejoSimple"
+    },
+    {
+      "n": 3,
+      "slug": "transformacion-integral",
+      "titulo": "Adoptar IA es transformar",
+      "tesis": 2,
+      "tipo": "problema",
+      "modo": "crop",
+      "segmentos": [
+        {"desde": 251.66, "hasta": 265.78},
+        {"desde": 280.56, "hasta": 314.68}
+      ],
+      "caption_instagram": "El desafío de adoptar IA no es técnico. Tiene que ver con la estrategia y el impacto, con redefinir procesos y entender qué necesitamos de verdad, y con algo más incómodo: un cambio personal y cultural, una nueva forma de hacer las cosas que todos tenemos que transitar. Por eso adoptar IA es, en realidad, un desafío de transformación integral. Entenderlo así es lo que permite trascender ese 95% de proyectos que se quedan en una prueba que nunca llega a la organización. ¿Estás implementando una herramienta, o transformando cómo trabaja tu gente?\n\n#TransformaciónContinua #AdopciónDeIA #TransformaciónDigital #LoComplejoSimple"
+    },
+    {
+      "n": 4,
+      "slug": "definir-necesidades-ia",
+      "titulo": "Definí qué necesitás",
+      "tesis": 4,
+      "tipo": "metodo",
+      "modo": "crop",
+      "segmentos": [
+        {"desde": 112.66, "hasta": 153.88}
+      ],
+      "caption_instagram": "Una solución de IA resuelve muy bien lo que le pidas. El problema es que casi nadie se detiene a definir qué necesita de verdad. Para pedir mejor primero hay que identificar nuestras dificultades y ver cómo se pueden mejorar nuestros procesos. Esa ingeniería reversa, entender antes de pedir, es lo que separa una IA con impacto real de una que solo genera ruido. ¿Estás eligiendo herramientas, o entendiendo tus necesidades?\n\n#ServiceAsASoftware #TransformaciónContinua #InteligenciaArtificial #LoComplejoSimple"
+    },
+    {
+      "n": 5,
+      "slug": "cerebro-resiste-cambio",
+      "titulo": "Por qué resistís al cambio",
+      "tesis": 2,
+      "tipo": "problema",
+      "modo": "crop",
+      "segmentos": [
+        {"desde": 197.76, "hasta": 225.88},
+        {"desde": 227.08, "hasta": 249.34}
+      ],
+      "caption_instagram": "Todos tenemos una resistencia natural a cambiar, y no es falta de voluntad: nuestro cerebro está cableado para ahorrar energía y repetir los patrones que ya conoce. Por eso adoptar IA cuesta tanto, implica el esfuerzo de dejar formas de trabajar que tenemos automatizadas para hacer las cosas de otra manera. A nivel biológico es un proceso que hay que transitar, el cerebro no viene preparado para cambios tan profundos. Entenderlo cambia la forma en que acompañamos a los equipos. ¿Cuánto de la resistencia en tu organización es que no quieren, y cuánto es simplemente cómo funciona el cerebro?\n\n#DiseñoDeComportamientos #TransformaciónContinua #InteligenciaArtificial #LoComplejoSimple"
+    },
+    {
+      "n": 6,
+      "slug": "no-te-abrumes-ia",
+      "titulo": "No dejes que te abrume",
+      "tesis": 3,
+      "tipo": "conexion",
+      "modo": "crop",
+      "segmentos": [
+        {"desde": 156.42, "hasta": 166.68},
+        {"desde": 167.86, "hasta": 196.34}
+      ],
+      "caption_instagram": "Aparecen tantas herramientas de IA, y tan rápido, que abruman. Hay un dicho que lo resume bien: la peor IA es la que usás hoy, porque la que viene la semana que viene ya es mejor. Esa sensación de no saber por dónde empezar existe y no vale la pena negarla, pero tampoco tiene que frenarnos ni generarnos ansiedad. Hacemos lo que podemos con la información que tenemos a mano y la convertimos en algo útil para el día a día. ¿Estás esperando la herramienta perfecta, o empezando con la que ya tenés?\n\n#TransformaciónContinua #InteligenciaArtificial #LoComplejoSimple"
+    }
+  ]
+}
