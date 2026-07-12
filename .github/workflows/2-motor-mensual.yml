@@ -1,0 +1,59 @@
+name: 2-motor-mensual
+# Ejecuta el mes ya aprobado: renderiza todos los carruseles, empuja media a motion-media,
+# y programa el MES COMPLETO en Blotato (16 días × LinkedIn + Instagram).
+# Los videos salen del banco (motion-media/reels/, subidos por 5-banco-reels) vía presigned upload.
+on:
+  workflow_dispatch:
+    inputs:
+      mes:
+        description: "Mes a publicar (YYYY-MM). Debe existir manifiestos/mes_<YYYY-MM>.json aprobado."
+        required: true
+      modo:
+        description: "dry = simular (no toca Blotato) · live = programar de verdad"
+        required: true
+        default: "dry"
+permissions:
+  contents: write
+  id-token: write
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq libpango-1.0-0 libpangoft2-1.0-0 poppler-utils
+          pip install weasyprint --quiet
+      - name: Render de todos los carruseles del mes
+        run: |
+          RP=$(find . -name render.py -path "*design-system*" | head -1)
+          RD=$(dirname "$RP")
+          python scripts/generar_carrusel_mes.py "${{ github.event.inputs.mes }}" media_out "$RP" "$RD/slides"
+      - name: Clonar motion-media (PNGs nuevos + MP4s del banco)
+        env:
+          TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}
+        run: |
+          git clone "https://x-access-token:${TOKEN}@github.com/ops-motionco/motion-media.git" media_repo
+          mkdir -p media_repo/carruseles
+          cp media_out/*.png media_repo/carruseles/ 2>/dev/null || true
+          cd media_repo
+          git config user.name "motion-engine"; git config user.email "engine@motion.local"
+          git add -A; git commit -m "media mes ${{ github.event.inputs.mes }}" || echo "sin cambios"
+          git push
+      - name: Esperar publicación de Pages
+        run: sleep 90
+      - name: Programar el mes en Blotato
+        env:
+          BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
+          REELS_DIR: media_repo/reels
+        run: |
+          FLAG=""
+          if [ "${{ github.event.inputs.modo }}" = "dry" ]; then FLAG="--dry"; fi
+          python scripts/publicador_mes.py $FLAG --mes "${{ github.event.inputs.mes }}"
+      - name: Commit catálogo (reels marcados como publicados)
+        run: |
+          git config user.name "motion-engine"; git config user.email "engine@motion.local"
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git add banco/
+          git commit -m "banco: reels publicados mes ${{ github.event.inputs.mes }}" || echo "sin cambios"
+          git push origin HEAD:main

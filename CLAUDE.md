@@ -28,9 +28,11 @@ CEO/Dirección de empresas 300-1000 empleados. YA sabe que necesita transformars
 
 Premisa de contexto (encabeza todo, NO es tesis): "Salto Tecnológico" — entorno macro desafiante + disrupción IA + exceso de info/crisis de propósito.
 
-### Los 4 Tipos de mensaje (método Rubilar)
+### Los 4 Tipos de mensaje (método Rubilar) — ESQUEMA MENSUAL (vigente desde jul 2026)
 Cada tesis se recorre desde 4 ángulos: **problema · método · resultados · conexión**.
-→ 4 tesis × 4 tipos = **8 semanas** (2 formatos por semana: carousel + newsletter) (~2 meses por vuelta). El tipo se asigna por formato: carousel = problema/resultados, newsletter = metodo/conexion. Misma tesis toda la semana, ángulos distintos por formato. Espiral: al cerrar las 8 semanas se reinicia con evidencia/analogías nuevas, misma estructura.
+→ **1 mes = 4 semanas = las 4 tesis** (una tesis por semana). Cada semana publica lun-jue, un tipo por día en orden FIJO (arco de persuasión): **lunes problema · martes método · miércoles resultados · jueves conexión**. Cada tesis reaparece mensualmente. Espiral: cada mes nuevo reusa la matriz con evidencia/analogías nuevas.
+Formatos por semana (regla dura: **2 videos por semana**, los asigna la cascada según stock del banco de reels): 2 días video (mismo reel LinkedIn+IG, caption propio) · 1 día carousel+newsletter LinkedIn (mismo tema: newsletter se explaya, carrusel sintetiza; carrusel compartido con IG) · 1 día post largo LinkedIn + carousel IG. Newsletter se publica manual (Blotato no la soporta).
+(El esquema semanal anterior de 8 semanas queda LEGACY: workflows 1-cascada-semanal y 2-motor-completo se conservan hasta validar el mensual.)
 
 ---
 
@@ -101,26 +103,30 @@ ANTHROPIC_API_KEY · BLOTATO_API_KEY · MEDIA_REPO_TOKEN (fine-grained, Contents
 
 ---
 
-## 5. FLUJO DE TRABAJO SEMANAL
-**Paso 1** (Paulo, 1 clic): Actions → `1-cascada-semanal` → Run → indicar **fecha** (lunes de la semana, YYYY-MM-DD) + semana editorial (1-8, opcional).
-**Paso 2** (máquina): el equipo lee CALENDARIO_EDITORIAL.md + voz, escribe el manifiesto semanal (6 canales) + newsletter .md + los 2 JSON de slides (HEM + newsletter). Commit al repo.
-**Paso 3** (Paulo): revisar el manifiesto + newsletter en el repo. Aprobar o pedir cambios. ← momento de criterio.
-**Paso 4** (Paulo, 1 clic): Actions → `2-motor-completo` → Run → indicar la **misma fecha** + modo (dry/live).
-**Paso 5** (máquina): render carruseles (HEM + newsletter) → push PNG/PDF a motion-media → espera Pages → programa la semana entera en Blotato (martes/miércoles/jueves).
-**Paso 6** (Paulo): OK final en calendario Blotato. Recién ahí se publica.
+## 5. FLUJO DE TRABAJO MENSUAL
+**Alimentar el banco** (cuando Paulo graba, las veces que haga falta):
+1. Grabar sesión larga → Actions `3-reels-guion` (link Drive + slug) → revisar manifiesto de reels → `4-reels-render` → revisar los MP4 del artifact.
+2. Actions → `5-banco-reels` → indicar slug + qué reels aprobás ("todos" o "1,3,5"). Sube los MP4 a motion-media/reels/ y los registra en banco/reels/catalogo.json con tesis+tipo. El catálogo muestra el stock por tesis/tipo (qué falta grabar).
 
-Cadencia: 1 semana = 1 manifiesto = 1 corrida de cada workflow. Combustible: Paulo alimenta evidencias/playbook según haga falta.
+**Generar y publicar el mes**:
+**Paso 1** (Paulo, 1 clic): Actions → `1-cascada-mensual` → mes (YYYY-MM) + primer lunes (YYYY-MM-DD).
+**Paso 2** (máquina): lee CALENDARIO (matriz de temas) + banco + voz → escribe manifiestos/mes_<YYYY-MM>.json (4 semanas × 4 días, 2 videos/semana reservados del banco o FALTANTES marcados con qué grabar) + JSONs de slides de todos los carruseles + 4 newsletters .md. Commit.
+**Paso 3** (Paulo): revisar el manifiesto mensual + newsletters. Si hay faltantes de video: grabar y pasar por el banco, después editar el manifiesto (formato→video + reel_id). ← momento de criterio.
+**Paso 4** (Paulo, 1 clic): Actions → `2-motor-mensual` → mismo mes + modo (dry/live).
+**Paso 5** (máquina): render de todos los carruseles → push a motion-media → programa el MES completo en Blotato (16 días × LinkedIn 09:00 + Instagram 12:00; videos vía presigned upload al CDN de Blotato) → marca reels como publicados en el catálogo.
+**Paso 6** (Paulo): OK final en calendario Blotato + publicar las 4 newsletters a mano en su día.
 
-### Selección de semana
-- La **fecha** (lunes) es la clave de todo: nombre de archivos + ancla de programación (publica martes/miércoles/jueves de ESA semana).
-- La **semana editorial** (1-8) define tesis + tipos (ver CALENDARIO_EDITORIAL.md). Vacío = primera "pendiente".
-- Plan: 8 semanas (carousel problema/resultados + newsletter metodo/conexion por semana). Al cerrar la 8, reiniciar el calendario con munición nueva.
+Cadencia: 1 mes = 1 manifiesto mensual = 1 corrida de cada workflow. Combustible: sesiones de grabación (el banco avisa qué tesis/tipo escasean) + evidencias.
+
+### LEGACY (esquema semanal viejo, hasta validar el mensual)
+`1-cascada-semanal` + `2-motor-completo` + manifiesto_<fecha>.json semanal (6 canales con X/Twitter e institucional). El esquema mensual NO incluye X ni linkedin_motion por ahora (decisión pendiente de Paulo).
 
 ---
 
 ## 6. ESTADO ACTUAL
 ✅ Cascada de texto · ✅ Carruseles · ✅ Quote/dato/lista · ✅ Publicación 4 canales (ep1-2 programado en Blotato, modo revisión) · ✅ Calendario editorial · ✅ Manifiesto dinámico punta a punta.
-✅ **Motor de reels** (pipelines/video/): grabación larga → whisper con timestamps por palabra → Editor de Video IA elige reels según estrategia (manifiesto_reels.json, Paulo revisa) → corte ffmpeg sin silencios → branding con **Remotion** (subtítulos karaoke animados con pop por palabra, título en caja del color del tipo, logo; fuentes como fuentes de sistema en CI, NUNCA FontFace/loadFont — congela el renderer) → artifacts para revisión (incluye `_control.png` de validación visual). Workflows `3-reels-guion` y `4-reels-render` (inputs: link Drive + slug; opcional video de pantalla → modo split). Validado end-to-end con sesión real. Modo split (capacitaciones) sin probar aún.
+✅ **Motor de reels** (pipelines/video/): grabación larga → whisper con timestamps por palabra → Editor de Video IA elige reels según estrategia (manifiesto_reels.json, Paulo revisa) → corte ffmpeg sin silencios → branding con **Remotion** (subtítulos karaoke animados con pop por palabra, título en caja del color del tipo, logo; fuentes como fuentes de sistema en CI, NUNCA FontFace/loadFont — congela el renderer) → artifacts para revisión (incluye `_control.png` de validación visual). Workflows `3-reels-guion` y `4-reels-render` (inputs: link Drive + slug; opcional video de pantalla → modo split). Modos de encuadre: crop (cámara sola) · split (2 archivos: pantalla+cámara) · zonas (stream compuesto, coordenadas en el manifiesto; calibrar con workflow `debug-frame`). Validado end-to-end con 2 sesiones reales (conceptos + charla CAEII). Modo split sin probar con material real.
+🚧 **Esquema mensual** (jul 2026): banco de reels (`banco/reels/catalogo.json` + workflow `5-banco-reels`, MP4s en motion-media/reels/) + cascada mensual (`1-cascada-mensual`, PROMPT_mes.md, manifiestos/mes_<YYYY-MM>.json) + motor mensual (`2-motor-mensual`, publicador_mes.py con video vía presigned upload a Blotato). Construido, SIN correr aún — falta poblar el banco y probar el primer mes en dry.
 ⏸️ Standby: motion graphics conceptuales (svganim.py validado técnicamente, falta pulido de composición — espera modelo de mayor capacidad).
 
 ---

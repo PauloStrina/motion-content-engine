@@ -1,0 +1,4 @@
+{
+  "_doc": "BANCO DE REELS — stock de videos listos para publicar. Lo alimenta el workflow 5-banco-reels (sube los MP4 aprobados a motion-media/reels/ y registra acá la metadata). La cascada mensual toma de acá los 2 videos por semana (matcheando tesis+tipo del día) y los marca 'reservado'. El publicador los marca 'publicado'. Estados: disponible | reservado | publicado. Paulo puede editar este archivo a mano (borrar un reel del banco, liberar una reserva, corregir tesis/tipo).",
+  "reels": []
+}

@@ -1,0 +1,46 @@
+name: 1-cascada-mensual
+# Genera TODO el contenido de un mes en una corrida: manifiesto mensual (4 semanas × 4 días),
+# slides de carruseles, 4 newsletters, y reserva los videos del banco (2 por semana).
+on:
+  workflow_dispatch:
+    inputs:
+      mes:
+        description: "Mes a generar (YYYY-MM). Nombra el manifiesto: manifiestos/mes_<YYYY-MM>.json"
+        required: true
+      primer_lunes:
+        description: "Fecha del PRIMER LUNES del ciclo (YYYY-MM-DD). Ancla las 4 semanas."
+        required: true
+permissions:
+  contents: write
+  id-token: write
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Estratega + Redactor + Diseñador (generan el mes completo)
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: "--model claude-opus-4-8 --allowedTools Read,Write,Edit,Glob,Grep,Bash"
+          show_full_output: true
+          prompt: |
+            Sos el equipo de contenido de Motion (Estratega + Redactor + Diseñador). Trabajo de CRITERIO, no mecánico.
+            MES: "${{ github.event.inputs.mes }}" · PRIMER LUNES: "${{ github.event.inputs.primer_lunes }}"
+            Leé scripts/PROMPT_mes.md y seguilo AL PIE DE LA LETRA, incluido el PASO 0 (contexto completo:
+            voz, tesis, buyer persona, calendario, banco de reels) y el AUTOCONTROL final.
+            Los temas salen de la matriz de CALENDARIO_EDITORIAL.md. Los videos salen de
+            banco/reels/catalogo.json (2 por semana, reservándolos). Las reglas de voz y formato por canal
+            están en scripts/PROMPT_redactor.md y strategy/.
+            Éxito = existe manifiestos/mes_${{ github.event.inputs.mes }}.json completo (4 semanas × 4 días,
+            2 videos/semana o faltantes marcados), los JSON de slides de cada carrusel, las 4 newsletters,
+            el catálogo con reservas y el calendario actualizado.
+      - name: Commit
+        run: |
+          git config user.name "motion-engine"; git config user.email "engine@motion.local"
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git add -A
+          git commit -m "cascada mensual: mes ${{ github.event.inputs.mes }} generado" || echo "sin cambios"
+          git push origin HEAD:main
