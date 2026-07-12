@@ -36,10 +36,10 @@ jobs:
             Leé scripts/PROMPT_preparar_assets_mes.md y ejecutalo exactamente.
             El manifiesto ya está aprobado: no cambies una sola palabra ni ningún campo.
             No leas archive/** y no modifiques ningún archivo relacionado con creación o edición de video.
-            Éxito = todos los JSON visuales existen y `python scripts/validar_assets_mes.py --mes "${{ github.event.inputs.mes }}"` finaliza sin errores.
+            Éxito = todos los JSON visuales existen y `python scripts/validar_assets_mes.py --mes "${{ github.event.inputs.mes }}" --require-approved` finaliza sin errores.
 
       - name: Validar assets
-        run: python scripts/validar_assets_mes.py --mes "${{ github.event.inputs.mes }}"
+        run: python scripts/validar_assets_mes.py --mes "${{ github.event.inputs.mes }}" --require-approved
 
       - name: Commit de especificaciones visuales
         run: |
