@@ -12,6 +12,10 @@ on:
         description: "¿La sesión es una capacitación con grabación de pantalla? (los reels salen en modo split: pantalla arriba, cámara abajo)"
         required: false
         default: "no"
+      brief_adicional:
+        description: "OPCIONAL: foco/criterio específico para ESTA sesión (qué buscar, qué evitar). Se suma a las reglas de PROMPT_editor_video.md, no las reemplaza."
+        required: false
+        default: ""
 permissions:
   contents: write
   id-token: write
@@ -46,6 +50,8 @@ jobs:
             estructura EXACTA del prompt.
             SESIÓN CON PANTALLA: "${{ github.event.inputs.con_pantalla }}" — si es "si"/"sí", es una
             capacitación con grabación de pantalla: usá "modo":"split" en TODOS los reels.
+            BRIEF ADICIONAL para ESTA sesión (además de PROMPT_editor_video.md, nunca en su lugar):
+            "${{ github.event.inputs.brief_adicional }}"
             Éxito = existe el manifiesto, cada reel dura 20-62s según los timestamps, ningún segmento
             incluye retomas descartadas, y los captions pasan la auto-crítica de voz.
       - name: Commit (transcript + manifiesto de reels)
