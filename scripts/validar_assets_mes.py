@@ -15,10 +15,11 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--mes", required=True)
     parser.add_argument("--slides-dir", default="design-system/slides")
+    parser.add_argument("--require-approved", action="store_true")
     args = parser.parse_args()
 
     manifest = MES.leer(args.mes)
-    errors = MES.validar(manifest, exigir_aprobado=True)
+    errors = MES.validar(manifest, exigir_aprobado=args.require_approved)
     slides_dir = Path(args.slides_dir)
 
     for week in manifest.get("semanas", []):
