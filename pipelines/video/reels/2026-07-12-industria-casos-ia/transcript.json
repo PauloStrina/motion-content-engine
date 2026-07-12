@@ -1,0 +1,13160 @@
+{
+ "duracion": 1159.23,
+ "palabras": [
+  {
+   "w": "Cuando",
+   "desde": 0.72,
+   "hasta": 1.12
+  },
+  {
+   "w": "hablamos",
+   "desde": 1.12,
+   "hasta": 1.6
+  },
+  {
+   "w": "de",
+   "desde": 1.6,
+   "hasta": 1.8
+  },
+  {
+   "w": "inteligencia",
+   "desde": 1.8,
+   "hasta": 2.44
+  },
+  {
+   "w": "artificial",
+   "desde": 2.44,
+   "hasta": 2.68
+  },
+  {
+   "w": "aplicada",
+   "desde": 2.68,
+   "hasta": 3.44
+  },
+  {
+   "w": "en",
+   "desde": 3.44,
+   "hasta": 3.82
+  },
+  {
+   "w": "las",
+   "desde": 3.82,
+   "hasta": 4.0
+  },
+  {
+   "w": "organizaciones,",
+   "desde": 4.0,
+   "hasta": 4.86
+  },
+  {
+   "w": "podemos",
+   "desde": 4.86,
+   "hasta": 5.26
+  },
+  {
+   "w": "dividirlo",
+   "desde": 5.26,
+   "hasta": 6.06
+  },
+  {
+   "w": "en",
+   "desde": 6.06,
+   "hasta": 6.44
+  },
+  {
+   "w": "cuatro",
+   "desde": 6.44,
+   "hasta": 7.02
+  },
+  {
+   "w": "tipos",
+   "desde": 7.02,
+   "hasta": 7.9
+  },
+  {
+   "w": "diferentes",
+   "desde": 7.9,
+   "hasta": 8.42
+  },
+  {
+   "w": "de",
+   "desde": 8.42,
+   "hasta": 8.76
+  },
+  {
+   "w": "uso.",
+   "desde": 8.76,
+   "hasta": 8.96
+  },
+  {
+   "w": "Por",
+   "desde": 9.18,
+   "hasta": 9.92
+  },
+  {
+   "w": "un",
+   "desde": 9.92,
+   "hasta": 10.08
+  },
+  {
+   "w": "lado",
+   "desde": 10.08,
+   "hasta": 10.32
+  },
+  {
+   "w": "está",
+   "desde": 10.32,
+   "hasta": 10.62
+  },
+  {
+   "w": "la",
+   "desde": 10.62,
+   "hasta": 10.96
+  },
+  {
+   "w": "IA",
+   "desde": 10.96,
+   "hasta": 11.24
+  },
+  {
+   "w": "usada",
+   "desde": 11.24,
+   "hasta": 11.82
+  },
+  {
+   "w": "como",
+   "desde": 11.82,
+   "hasta": 12.28
+  },
+  {
+   "w": "copiloto,",
+   "desde": 12.28,
+   "hasta": 13.02
+  },
+  {
+   "w": "donde",
+   "desde": 13.1,
+   "hasta": 13.58
+  },
+  {
+   "w": "va",
+   "desde": 13.58,
+   "hasta": 14.64
+  },
+  {
+   "w": "a",
+   "desde": 14.64,
+   "hasta": 14.68
+  },
+  {
+   "w": "ser",
+   "desde": 14.68,
+   "hasta": 14.86
+  },
+  {
+   "w": "de",
+   "desde": 14.86,
+   "hasta": 14.98
+  },
+  {
+   "w": "alguna",
+   "desde": 14.98,
+   "hasta": 15.14
+  },
+  {
+   "w": "manera",
+   "desde": 15.14,
+   "hasta": 15.52
+  },
+  {
+   "w": "nuestro",
+   "desde": 15.52,
+   "hasta": 15.76
+  },
+  {
+   "w": "asistente",
+   "desde": 15.76,
+   "hasta": 16.76
+  },
+  {
+   "w": "para",
+   "desde": 16.76,
+   "hasta": 17.06
+  },
+  {
+   "w": "realizar",
+   "desde": 17.06,
+   "hasta": 17.44
+  },
+  {
+   "w": "tareas,",
+   "desde": 17.44,
+   "hasta": 18.28
+  },
+  {
+   "w": "para",
+   "desde": 18.28,
+   "hasta": 18.88
+  },
+  {
+   "w": "hacer",
+   "desde": 18.88,
+   "hasta": 19.1
+  },
+  {
+   "w": "acciones",
+   "desde": 19.1,
+   "hasta": 19.7
+  },
+  {
+   "w": "o",
+   "desde": 19.7,
+   "hasta": 20.08
+  },
+  {
+   "w": "procedimientos",
+   "desde": 20.08,
+   "hasta": 20.76
+  },
+  {
+   "w": "individuales.",
+   "desde": 20.76,
+   "hasta": 21.72
+  },
+  {
+   "w": "Por",
+   "desde": 21.72,
+   "hasta": 22.58
+  },
+  {
+   "w": "otro",
+   "desde": 22.58,
+   "hasta": 22.74
+  },
+  {
+   "w": "lado",
+   "desde": 22.74,
+   "hasta": 23.0
+  },
+  {
+   "w": "tenemos",
+   "desde": 23.0,
+   "hasta": 23.24
+  },
+  {
+   "w": "lo",
+   "desde": 23.24,
+   "hasta": 23.48
+  },
+  {
+   "w": "que",
+   "desde": 23.48,
+   "hasta": 23.58
+  },
+  {
+   "w": "son",
+   "desde": 23.58,
+   "hasta": 23.84
+  },
+  {
+   "w": "las",
+   "desde": 23.84,
+   "hasta": 24.68
+  },
+  {
+   "w": "automatizaciones",
+   "desde": 24.68,
+   "hasta": 25.92
+  },
+  {
+   "w": "y",
+   "desde": 25.92,
+   "hasta": 26.82
+  },
+  {
+   "w": "los",
+   "desde": 26.82,
+   "hasta": 27.0
+  },
+  {
+   "w": "agentes",
+   "desde": 27.0,
+   "hasta": 27.78
+  },
+  {
+   "w": "autónomos",
+   "desde": 27.78,
+   "hasta": 28.54
+  },
+  {
+   "w": "que",
+   "desde": 28.54,
+   "hasta": 28.92
+  },
+  {
+   "w": "realizan",
+   "desde": 28.92,
+   "hasta": 29.66
+  },
+  {
+   "w": "una",
+   "desde": 29.66,
+   "hasta": 29.8
+  },
+  {
+   "w": "serie",
+   "desde": 29.8,
+   "hasta": 30.06
+  },
+  {
+   "w": "de",
+   "desde": 30.06,
+   "hasta": 30.26
+  },
+  {
+   "w": "procesos",
+   "desde": 30.26,
+   "hasta": 30.96
+  },
+  {
+   "w": "o",
+   "desde": 30.96,
+   "hasta": 31.06
+  },
+  {
+   "w": "tareas",
+   "desde": 31.06,
+   "hasta": 31.38
+  },
+  {
+   "w": "más",
+   "desde": 31.38,
+   "hasta": 31.56
+  },
+  {
+   "w": "complejas",
+   "desde": 31.56,
+   "hasta": 32.16
+  },
+  {
+   "w": "que",
+   "desde": 32.16,
+   "hasta": 32.94
+  },
+  {
+   "w": "incluso",
+   "desde": 32.94,
+   "hasta": 33.26
+  },
+  {
+   "w": "involucran",
+   "desde": 33.26,
+   "hasta": 34.0
+  },
+  {
+   "w": "a",
+   "desde": 34.0,
+   "hasta": 34.2
+  },
+  {
+   "w": "más",
+   "desde": 34.2,
+   "hasta": 34.44
+  },
+  {
+   "w": "de",
+   "desde": 34.44,
+   "hasta": 34.56
+  },
+  {
+   "w": "una",
+   "desde": 34.56,
+   "hasta": 34.72
+  },
+  {
+   "w": "persona",
+   "desde": 34.72,
+   "hasta": 35.16
+  },
+  {
+   "w": "o",
+   "desde": 35.16,
+   "hasta": 35.48
+  },
+  {
+   "w": "más",
+   "desde": 35.48,
+   "hasta": 35.68
+  },
+  {
+   "w": "de",
+   "desde": 35.68,
+   "hasta": 35.84
+  },
+  {
+   "w": "un",
+   "desde": 35.84,
+   "hasta": 36.02
+  },
+  {
+   "w": "área",
+   "desde": 36.02,
+   "hasta": 36.26
+  },
+  {
+   "w": "en",
+   "desde": 36.26,
+   "hasta": 36.52
+  },
+  {
+   "w": "una",
+   "desde": 36.52,
+   "hasta": 36.64
+  },
+  {
+   "w": "organización.",
+   "desde": 36.64,
+   "hasta": 37.22
+  },
+  {
+   "w": "Por",
+   "desde": 38.04,
+   "hasta": 38.68
+  },
+  {
+   "w": "otro",
+   "desde": 38.68,
+   "hasta": 38.82
+  },
+  {
+   "w": "lado",
+   "desde": 38.82,
+   "hasta": 38.98
+  },
+  {
+   "w": "tenemos",
+   "desde": 38.98,
+   "hasta": 39.24
+  },
+  {
+   "w": "la",
+   "desde": 39.24,
+   "hasta": 39.48
+  },
+  {
+   "w": "inteligencia",
+   "desde": 39.48,
+   "hasta": 40.06
+  },
+  {
+   "w": "avanzada",
+   "desde": 40.06,
+   "hasta": 40.62
+  },
+  {
+   "w": "que",
+   "desde": 40.62,
+   "hasta": 40.82
+  },
+  {
+   "w": "implica",
+   "desde": 40.82,
+   "hasta": 41.24
+  },
+  {
+   "w": "utilizar",
+   "desde": 41.24,
+   "hasta": 41.64
+  },
+  {
+   "w": "IA",
+   "desde": 41.64,
+   "hasta": 42.62
+  },
+  {
+   "w": "para",
+   "desde": 42.62,
+   "hasta": 43.26
+  },
+  {
+   "w": "hacer",
+   "desde": 43.26,
+   "hasta": 43.54
+  },
+  {
+   "w": "análisis",
+   "desde": 43.54,
+   "hasta": 44.1
+  },
+  {
+   "w": "de",
+   "desde": 44.1,
+   "hasta": 44.3
+  },
+  {
+   "w": "datos",
+   "desde": 44.3,
+   "hasta": 44.66
+  },
+  {
+   "w": "y",
+   "desde": 44.66,
+   "hasta": 45.04
+  },
+  {
+   "w": "encontrar",
+   "desde": 45.04,
+   "hasta": 45.38
+  },
+  {
+   "w": "patrones,",
+   "desde": 45.38,
+   "hasta": 46.84
+  },
+  {
+   "w": "encontrar",
+   "desde": 46.84,
+   "hasta": 47.34
+  },
+  {
+   "w": "predicciones",
+   "desde": 47.34,
+   "hasta": 48.72
+  },
+  {
+   "w": "de",
+   "desde": 48.72,
+   "hasta": 49.26
+  },
+  {
+   "w": "información",
+   "desde": 49.26,
+   "hasta": 49.84
+  },
+  {
+   "w": "que",
+   "desde": 49.84,
+   "hasta": 50.74
+  },
+  {
+   "w": "no",
+   "desde": 50.74,
+   "hasta": 50.94
+  },
+  {
+   "w": "encontramos",
+   "desde": 50.94,
+   "hasta": 51.32
+  },
+  {
+   "w": "así.",
+   "desde": 51.32,
+   "hasta": 51.64
+  },
+  {
+   "w": "Y",
+   "desde": 51.72,
+   "hasta": 52.24
+  },
+  {
+   "w": "por",
+   "desde": 52.24,
+   "hasta": 53.28
+  },
+  {
+   "w": "último",
+   "desde": 53.28,
+   "hasta": 53.6
+  },
+  {
+   "w": "tiene",
+   "desde": 53.6,
+   "hasta": 53.9
+  },
+  {
+   "w": "que",
+   "desde": 53.9,
+   "hasta": 54.06
+  },
+  {
+   "w": "ver",
+   "desde": 54.06,
+   "hasta": 54.26
+  },
+  {
+   "w": "con",
+   "desde": 54.26,
+   "hasta": 54.46
+  },
+  {
+   "w": "la",
+   "desde": 54.46,
+   "hasta": 54.62
+  },
+  {
+   "w": "IA",
+   "desde": 54.62,
+   "hasta": 54.86
+  },
+  {
+   "w": "aplicada",
+   "desde": 54.86,
+   "hasta": 55.38
+  },
+  {
+   "w": "en",
+   "desde": 55.38,
+   "hasta": 55.52
+  },
+  {
+   "w": "la",
+   "desde": 55.52,
+   "hasta": 55.56
+  },
+  {
+   "w": "interacción",
+   "desde": 55.56,
+   "hasta": 56.1
+  },
+  {
+   "w": "entre",
+   "desde": 56.1,
+   "hasta": 56.34
+  },
+  {
+   "w": "el",
+   "desde": 56.34,
+   "hasta": 56.46
+  },
+  {
+   "w": "mundo",
+   "desde": 56.46,
+   "hasta": 56.58
+  },
+  {
+   "w": "físico",
+   "desde": 56.58,
+   "hasta": 57.06
+  },
+  {
+   "w": "y",
+   "desde": 57.06,
+   "hasta": 57.14
+  },
+  {
+   "w": "lo",
+   "desde": 57.14,
+   "hasta": 57.24
+  },
+  {
+   "w": "digital,",
+   "desde": 57.24,
+   "hasta": 57.6
+  },
+  {
+   "w": "algunos",
+   "desde": 57.82,
+   "hasta": 58.62
+  },
+  {
+   "w": "de",
+   "desde": 58.62,
+   "hasta": 58.92
+  },
+  {
+   "w": "los",
+   "desde": 58.92,
+   "hasta": 59.02
+  },
+  {
+   "w": "ejemplos",
+   "desde": 59.02,
+   "hasta": 59.52
+  },
+  {
+   "w": "que",
+   "desde": 59.52,
+   "hasta": 59.64
+  },
+  {
+   "w": "ya",
+   "desde": 59.64,
+   "hasta": 59.78
+  },
+  {
+   "w": "veíamos",
+   "desde": 59.78,
+   "hasta": 60.26
+  },
+  {
+   "w": "en",
+   "desde": 60.26,
+   "hasta": 60.82
+  },
+  {
+   "w": "el",
+   "desde": 60.82,
+   "hasta": 61.32
+  },
+  {
+   "w": "video",
+   "desde": 61.32,
+   "hasta": 61.5
+  },
+  {
+   "w": "anterior",
+   "desde": 61.5,
+   "hasta": 61.74
+  },
+  {
+   "w": "y",
+   "desde": 61.74,
+   "hasta": 62.02
+  },
+  {
+   "w": "que",
+   "desde": 62.02,
+   "hasta": 62.06
+  },
+  {
+   "w": "ahora",
+   "desde": 62.06,
+   "hasta": 62.36
+  },
+  {
+   "w": "vamos",
+   "desde": 62.36,
+   "hasta": 63.14
+  },
+  {
+   "w": "a",
+   "desde": 63.14,
+   "hasta": 63.38
+  },
+  {
+   "w": "profundizar.",
+   "desde": 63.38,
+   "hasta": 63.92
+  },
+  {
+   "w": "Entonces,",
+   "desde": 64.48,
+   "hasta": 65.08
+  },
+  {
+   "w": "empezando",
+   "desde": 65.12,
+   "hasta": 65.96
+  },
+  {
+   "w": "por",
+   "desde": 65.96,
+   "hasta": 66.2
+  },
+  {
+   "w": "la",
+   "desde": 66.2,
+   "hasta": 66.38
+  },
+  {
+   "w": "IA",
+   "desde": 66.38,
+   "hasta": 66.62
+  },
+  {
+   "w": "como",
+   "desde": 66.62,
+   "hasta": 66.86
+  },
+  {
+   "w": "copiloto,",
+   "desde": 66.86,
+   "hasta": 67.48
+  },
+  {
+   "w": "ahí",
+   "desde": 67.62,
+   "hasta": 68.4
+  },
+  {
+   "w": "tenemos",
+   "desde": 68.4,
+   "hasta": 68.7
+  },
+  {
+   "w": "diferentes",
+   "desde": 68.7,
+   "hasta": 69.08
+  },
+  {
+   "w": "herramientas",
+   "desde": 69.08,
+   "hasta": 70.16
+  },
+  {
+   "w": "como",
+   "desde": 70.16,
+   "hasta": 70.34
+  },
+  {
+   "w": "puede",
+   "desde": 70.34,
+   "hasta": 70.56
+  },
+  {
+   "w": "ser",
+   "desde": 70.56,
+   "hasta": 70.72
+  },
+  {
+   "w": "Copilot",
+   "desde": 70.72,
+   "hasta": 71.12
+  },
+  {
+   "w": "de",
+   "desde": 71.12,
+   "hasta": 71.34
+  },
+  {
+   "w": "Microsoft,",
+   "desde": 71.34,
+   "hasta": 71.7
+  },
+  {
+   "w": "puede",
+   "desde": 72.0,
+   "hasta": 72.24
+  },
+  {
+   "w": "ser",
+   "desde": 72.24,
+   "hasta": 72.52
+  },
+  {
+   "w": "Gemini,",
+   "desde": 72.52,
+   "hasta": 73.06
+  },
+  {
+   "w": "ChanchiPT,",
+   "desde": 73.28,
+   "hasta": 74.26
+  },
+  {
+   "w": "Cloud,",
+   "desde": 74.56,
+   "hasta": 75.28
+  },
+  {
+   "w": "Grok",
+   "desde": 75.56,
+   "hasta": 76.3
+  },
+  {
+   "w": "u",
+   "desde": 76.3,
+   "hasta": 76.6
+  },
+  {
+   "w": "otras",
+   "desde": 76.6,
+   "hasta": 76.96
+  },
+  {
+   "w": "aplicaciones",
+   "desde": 76.96,
+   "hasta": 77.8
+  },
+  {
+   "w": "que",
+   "desde": 77.8,
+   "hasta": 78.56
+  },
+  {
+   "w": "básicamente",
+   "desde": 78.56,
+   "hasta": 78.96
+  },
+  {
+   "w": "utilizan",
+   "desde": 78.96,
+   "hasta": 79.96
+  },
+  {
+   "w": "por",
+   "desde": 79.96,
+   "hasta": 80.66
+  },
+  {
+   "w": "detrás",
+   "desde": 80.66,
+   "hasta": 81.06
+  },
+  {
+   "w": "el",
+   "desde": 81.06,
+   "hasta": 81.24
+  },
+  {
+   "w": "modelo",
+   "desde": 81.24,
+   "hasta": 81.5
+  },
+  {
+   "w": "de",
+   "desde": 81.5,
+   "hasta": 81.7
+  },
+  {
+   "w": "IA.",
+   "desde": 81.7,
+   "hasta": 81.7
+  },
+  {
+   "w": "Y",
+   "desde": 81.72,
+   "hasta": 82.36
+  },
+  {
+   "w": "acá",
+   "desde": 82.36,
+   "hasta": 84.72
+  },
+  {
+   "w": "vamos",
+   "desde": 84.72,
+   "hasta": 84.92
+  },
+  {
+   "w": "a",
+   "desde": 84.92,
+   "hasta": 85.12
+  },
+  {
+   "w": "ver",
+   "desde": 85.12,
+   "hasta": 85.26
+  },
+  {
+   "w": "tres",
+   "desde": 85.26,
+   "hasta": 85.5
+  },
+  {
+   "w": "casos.",
+   "desde": 85.5,
+   "hasta": 85.8
+  },
+  {
+   "w": "Este",
+   "desde": 86.06,
+   "hasta": 86.46
+  },
+  {
+   "w": "es",
+   "desde": 86.46,
+   "hasta": 86.86
+  },
+  {
+   "w": "un",
+   "desde": 86.86,
+   "hasta": 87.04
+  },
+  {
+   "w": "ejemplo",
+   "desde": 87.04,
+   "hasta": 87.5
+  },
+  {
+   "w": "de",
+   "desde": 87.5,
+   "hasta": 88.96
+  },
+  {
+   "w": "usar",
+   "desde": 88.96,
+   "hasta": 90.22
+  },
+  {
+   "w": "la",
+   "desde": 90.22,
+   "hasta": 90.7
+  },
+  {
+   "w": "IA",
+   "desde": 90.7,
+   "hasta": 90.96
+  },
+  {
+   "w": "como",
+   "desde": 90.96,
+   "hasta": 91.66
+  },
+  {
+   "w": "copiloto",
+   "desde": 91.66,
+   "hasta": 92.44
+  },
+  {
+   "w": "para",
+   "desde": 92.44,
+   "hasta": 93.88
+  },
+  {
+   "w": "describir",
+   "desde": 93.88,
+   "hasta": 95.08
+  },
+  {
+   "w": "procesos",
+   "desde": 95.08,
+   "hasta": 95.86
+  },
+  {
+   "w": "y",
+   "desde": 95.86,
+   "hasta": 95.92
+  },
+  {
+   "w": "actividades.",
+   "desde": 95.92,
+   "hasta": 96.38
+  },
+  {
+   "w": "¿Cómo",
+   "desde": 96.52,
+   "hasta": 96.72
+  },
+  {
+   "w": "funciona?",
+   "desde": 96.72,
+   "hasta": 97.16
+  },
+  {
+   "w": "Esto",
+   "desde": 97.28,
+   "hasta": 97.5
+  },
+  {
+   "w": "lo",
+   "desde": 97.5,
+   "hasta": 97.68
+  },
+  {
+   "w": "utilizamos",
+   "desde": 97.68,
+   "hasta": 98.22
+  },
+  {
+   "w": "en",
+   "desde": 98.22,
+   "hasta": 98.38
+  },
+  {
+   "w": "nuestra",
+   "desde": 98.38,
+   "hasta": 98.56
+  },
+  {
+   "w": "consultora",
+   "desde": 98.56,
+   "hasta": 99.3
+  },
+  {
+   "w": "en",
+   "desde": 99.3,
+   "hasta": 99.44
+  },
+  {
+   "w": "donde",
+   "desde": 99.44,
+   "hasta": 100.18
+  },
+  {
+   "w": "realizamos",
+   "desde": 100.18,
+   "hasta": 100.76
+  },
+  {
+   "w": "una",
+   "desde": 100.76,
+   "hasta": 100.96
+  },
+  {
+   "w": "reunión",
+   "desde": 100.96,
+   "hasta": 101.4
+  },
+  {
+   "w": "virtual",
+   "desde": 101.4,
+   "hasta": 101.84
+  },
+  {
+   "w": "con",
+   "desde": 101.84,
+   "hasta": 102.54
+  },
+  {
+   "w": "nuestros",
+   "desde": 102.54,
+   "hasta": 102.72
+  },
+  {
+   "w": "clientes",
+   "desde": 102.72,
+   "hasta": 103.28
+  },
+  {
+   "w": "para",
+   "desde": 103.28,
+   "hasta": 103.44
+  },
+  {
+   "w": "hacer",
+   "desde": 103.44,
+   "hasta": 103.64
+  },
+  {
+   "w": "un",
+   "desde": 103.64,
+   "hasta": 103.82
+  },
+  {
+   "w": "diagnóstico,",
+   "desde": 103.82,
+   "hasta": 104.32
+  },
+  {
+   "w": "un",
+   "desde": 104.32,
+   "hasta": 104.42
+  },
+  {
+   "w": "relevamiento",
+   "desde": 104.42,
+   "hasta": 104.98
+  },
+  {
+   "w": "de",
+   "desde": 104.98,
+   "hasta": 105.44
+  },
+  {
+   "w": "una",
+   "desde": 105.44,
+   "hasta": 107.34
+  },
+  {
+   "w": "entrevista",
+   "desde": 107.34,
+   "hasta": 107.88
+  },
+  {
+   "w": "de",
+   "desde": 107.88,
+   "hasta": 108.18
+  },
+  {
+   "w": "procesos.",
+   "desde": 108.18,
+   "hasta": 109.26
+  },
+  {
+   "w": "Entonces",
+   "desde": 109.76,
+   "hasta": 110.2
+  },
+  {
+   "w": "grabamos",
+   "desde": 110.2,
+   "hasta": 110.96
+  },
+  {
+   "w": "la",
+   "desde": 110.96,
+   "hasta": 111.1
+  },
+  {
+   "w": "reunión.",
+   "desde": 111.1,
+   "hasta": 111.58
+  },
+  {
+   "w": "La",
+   "desde": 111.72,
+   "hasta": 111.94
+  },
+  {
+   "w": "conversación",
+   "desde": 111.94,
+   "hasta": 112.5
+  },
+  {
+   "w": "y",
+   "desde": 112.5,
+   "hasta": 112.8
+  },
+  {
+   "w": "extraemos",
+   "desde": 112.8,
+   "hasta": 113.6
+  },
+  {
+   "w": "la",
+   "desde": 113.6,
+   "hasta": 114.46
+  },
+  {
+   "w": "transcripción",
+   "desde": 114.46,
+   "hasta": 115.4
+  },
+  {
+   "w": "de",
+   "desde": 115.4,
+   "hasta": 115.78
+  },
+  {
+   "w": "lo",
+   "desde": 115.78,
+   "hasta": 115.88
+  },
+  {
+   "w": "que",
+   "desde": 115.88,
+   "hasta": 116.04
+  },
+  {
+   "w": "se",
+   "desde": 116.04,
+   "hasta": 116.18
+  },
+  {
+   "w": "conversó.",
+   "desde": 116.18,
+   "hasta": 116.72
+  },
+  {
+   "w": "Hasta",
+   "desde": 116.86,
+   "hasta": 117.38
+  },
+  {
+   "w": "ahí",
+   "desde": 117.38,
+   "hasta": 117.72
+  },
+  {
+   "w": "todo",
+   "desde": 117.72,
+   "hasta": 118.36
+  },
+  {
+   "w": "normal.",
+   "desde": 118.36,
+   "hasta": 118.72
+  },
+  {
+   "w": "¿Qué",
+   "desde": 119.1,
+   "hasta": 119.62
+  },
+  {
+   "w": "hacemos",
+   "desde": 119.62,
+   "hasta": 119.84
+  },
+  {
+   "w": "a",
+   "desde": 119.84,
+   "hasta": 120.04
+  },
+  {
+   "w": "partir",
+   "desde": 120.04,
+   "hasta": 120.34
+  },
+  {
+   "w": "de",
+   "desde": 120.34,
+   "hasta": 120.56
+  },
+  {
+   "w": "ahí?",
+   "desde": 120.56,
+   "hasta": 120.74
+  },
+  {
+   "w": "A",
+   "desde": 121.08,
+   "hasta": 121.6
+  },
+  {
+   "w": "ese",
+   "desde": 121.6,
+   "hasta": 121.82
+  },
+  {
+   "w": "documento",
+   "desde": 121.82,
+   "hasta": 122.38
+  },
+  {
+   "w": "que",
+   "desde": 122.38,
+   "hasta": 122.44
+  },
+  {
+   "w": "acá",
+   "desde": 122.44,
+   "hasta": 122.58
+  },
+  {
+   "w": "lo",
+   "desde": 122.58,
+   "hasta": 122.68
+  },
+  {
+   "w": "vamos",
+   "desde": 122.68,
+   "hasta": 122.84
+  },
+  {
+   "w": "a",
+   "desde": 122.84,
+   "hasta": 123.0
+  },
+  {
+   "w": "ver",
+   "desde": 123.0,
+   "hasta": 123.14
+  },
+  {
+   "w": "en",
+   "desde": 123.14,
+   "hasta": 123.28
+  },
+  {
+   "w": "el",
+   "desde": 123.28,
+   "hasta": 123.34
+  },
+  {
+   "w": "ejemplo",
+   "desde": 123.34,
+   "hasta": 123.72
+  },
+  {
+   "w": "del",
+   "desde": 123.72,
+   "hasta": 124.22
+  },
+  {
+   "w": "video,",
+   "desde": 124.22,
+   "hasta": 124.52
+  },
+  {
+   "w": "lo",
+   "desde": 124.66,
+   "hasta": 125.5
+  },
+  {
+   "w": "introducimos",
+   "desde": 125.5,
+   "hasta": 126.84
+  },
+  {
+   "w": "en",
+   "desde": 126.84,
+   "hasta": 127.18
+  },
+  {
+   "w": "un",
+   "desde": 127.18,
+   "hasta": 127.3
+  },
+  {
+   "w": "asistente",
+   "desde": 127.3,
+   "hasta": 127.96
+  },
+  {
+   "w": "de",
+   "desde": 127.96,
+   "hasta": 128.14
+  },
+  {
+   "w": "IA",
+   "desde": 128.14,
+   "hasta": 128.36
+  },
+  {
+   "w": "que",
+   "desde": 128.36,
+   "hasta": 128.54
+  },
+  {
+   "w": "ya",
+   "desde": 128.54,
+   "hasta": 128.76
+  },
+  {
+   "w": "está",
+   "desde": 128.76,
+   "hasta": 129.0
+  },
+  {
+   "w": "pre",
+   "desde": 129.0,
+   "hasta": 129.32
+  },
+  {
+   "w": "-entrenado",
+   "desde": 129.32,
+   "hasta": 129.88
+  },
+  {
+   "w": "para",
+   "desde": 129.88,
+   "hasta": 130.9
+  },
+  {
+   "w": "obtener",
+   "desde": 130.9,
+   "hasta": 131.82
+  },
+  {
+   "w": "la",
+   "desde": 131.82,
+   "hasta": 131.94
+  },
+  {
+   "w": "información",
+   "desde": 131.94,
+   "hasta": 132.18
+  },
+  {
+   "w": "que",
+   "desde": 132.18,
+   "hasta": 132.7
+  },
+  {
+   "w": "aparezca",
+   "desde": 132.7,
+   "hasta": 133.24
+  },
+  {
+   "w": "dentro",
+   "desde": 133.24,
+   "hasta": 133.92
+  },
+  {
+   "w": "del",
+   "desde": 133.92,
+   "hasta": 134.76
+  },
+  {
+   "w": "texto",
+   "desde": 134.76,
+   "hasta": 135.38
+  },
+  {
+   "w": "de",
+   "desde": 135.38,
+   "hasta": 135.58
+  },
+  {
+   "w": "la",
+   "desde": 135.58,
+   "hasta": 135.68
+  },
+  {
+   "w": "conversación",
+   "desde": 135.68,
+   "hasta": 136.36
+  },
+  {
+   "w": "y",
+   "desde": 136.36,
+   "hasta": 137.14
+  },
+  {
+   "w": "estructurarla",
+   "desde": 137.14,
+   "hasta": 138.28
+  },
+  {
+   "w": "de",
+   "desde": 138.28,
+   "hasta": 138.62
+  },
+  {
+   "w": "una",
+   "desde": 138.62,
+   "hasta": 138.78
+  },
+  {
+   "w": "determinada",
+   "desde": 138.78,
+   "hasta": 139.34
+  },
+  {
+   "w": "manera.",
+   "desde": 139.34,
+   "hasta": 139.66
+  },
+  {
+   "w": "Como",
+   "desde": 139.88,
+   "hasta": 140.12
+  },
+  {
+   "w": "dije,",
+   "desde": 140.12,
+   "hasta": 140.84
+  },
+  {
+   "w": "esto",
+   "desde": 141.0,
+   "hasta": 141.26
+  },
+  {
+   "w": "ya",
+   "desde": 141.26,
+   "hasta": 141.42
+  },
+  {
+   "w": "está.",
+   "desde": 141.42,
+   "hasta": 141.62
+  },
+  {
+   "w": "Está",
+   "desde": 141.72,
+   "hasta": 141.74
+  },
+  {
+   "w": "pre",
+   "desde": 141.74,
+   "hasta": 141.88
+  },
+  {
+   "w": "-entrenado,",
+   "desde": 141.88,
+   "hasta": 142.5
+  },
+  {
+   "w": "con",
+   "desde": 142.52,
+   "hasta": 142.62
+  },
+  {
+   "w": "lo",
+   "desde": 142.62,
+   "hasta": 142.74
+  },
+  {
+   "w": "cual",
+   "desde": 142.74,
+   "hasta": 142.92
+  },
+  {
+   "w": "van",
+   "desde": 142.92,
+   "hasta": 143.04
+  },
+  {
+   "w": "a",
+   "desde": 143.04,
+   "hasta": 143.14
+  },
+  {
+   "w": "ver",
+   "desde": 143.14,
+   "hasta": 143.28
+  },
+  {
+   "w": "que",
+   "desde": 143.28,
+   "hasta": 143.46
+  },
+  {
+   "w": "solamente",
+   "desde": 143.46,
+   "hasta": 144.64
+  },
+  {
+   "w": "le",
+   "desde": 144.64,
+   "hasta": 145.12
+  },
+  {
+   "w": "estoy",
+   "desde": 145.12,
+   "hasta": 145.36
+  },
+  {
+   "w": "proporcionando",
+   "desde": 145.36,
+   "hasta": 146.18
+  },
+  {
+   "w": "el",
+   "desde": 146.18,
+   "hasta": 146.42
+  },
+  {
+   "w": "documento",
+   "desde": 146.42,
+   "hasta": 147.18
+  },
+  {
+   "w": "sin",
+   "desde": 147.18,
+   "hasta": 147.44
+  },
+  {
+   "w": "ninguna",
+   "desde": 147.44,
+   "hasta": 147.8
+  },
+  {
+   "w": "instrucción",
+   "desde": 147.8,
+   "hasta": 148.3
+  },
+  {
+   "w": "adicional.",
+   "desde": 148.3,
+   "hasta": 148.74
+  },
+  {
+   "w": "Ahí",
+   "desde": 150.26,
+   "hasta": 150.82
+  },
+  {
+   "w": "vemos",
+   "desde": 150.82,
+   "hasta": 151.02
+  },
+  {
+   "w": "que",
+   "desde": 151.02,
+   "hasta": 151.2
+  },
+  {
+   "w": "el",
+   "desde": 151.2,
+   "hasta": 151.28
+  },
+  {
+   "w": "asistente",
+   "desde": 151.28,
+   "hasta": 151.82
+  },
+  {
+   "w": "trabaja",
+   "desde": 151.82,
+   "hasta": 152.68
+  },
+  {
+   "w": "y",
+   "desde": 152.68,
+   "hasta": 153.18
+  },
+  {
+   "w": "comienza",
+   "desde": 153.18,
+   "hasta": 153.72
+  },
+  {
+   "w": "a",
+   "desde": 153.72,
+   "hasta": 153.98
+  },
+  {
+   "w": "estructurar",
+   "desde": 153.98,
+   "hasta": 154.5
+  },
+  {
+   "w": "la",
+   "desde": 154.5,
+   "hasta": 154.66
+  },
+  {
+   "w": "información",
+   "desde": 154.66,
+   "hasta": 154.94
+  },
+  {
+   "w": "que",
+   "desde": 154.94,
+   "hasta": 155.28
+  },
+  {
+   "w": "se",
+   "desde": 155.28,
+   "hasta": 155.38
+  },
+  {
+   "w": "conversó",
+   "desde": 155.38,
+   "hasta": 155.86
+  },
+  {
+   "w": "en",
+   "desde": 155.86,
+   "hasta": 155.9
+  },
+  {
+   "w": "la",
+   "desde": 155.9,
+   "hasta": 155.98
+  },
+  {
+   "w": "reunión.",
+   "desde": 155.98,
+   "hasta": 156.28
+  },
+  {
+   "w": "En",
+   "desde": 156.3,
+   "hasta": 156.42
+  },
+  {
+   "w": "este",
+   "desde": 156.42,
+   "hasta": 156.54
+  },
+  {
+   "w": "caso",
+   "desde": 156.54,
+   "hasta": 156.92
+  },
+  {
+   "w": "es",
+   "desde": 156.92,
+   "hasta": 157.08
+  },
+  {
+   "w": "con",
+   "desde": 157.08,
+   "hasta": 157.22
+  },
+  {
+   "w": "un",
+   "desde": 157.22,
+   "hasta": 157.34
+  },
+  {
+   "w": "área",
+   "desde": 157.34,
+   "hasta": 157.52
+  },
+  {
+   "w": "de",
+   "desde": 157.52,
+   "hasta": 157.64
+  },
+  {
+   "w": "recursos",
+   "desde": 157.64,
+   "hasta": 157.88
+  },
+  {
+   "w": "humanos",
+   "desde": 157.88,
+   "hasta": 158.3
+  },
+  {
+   "w": "donde",
+   "desde": 158.3,
+   "hasta": 159.44
+  },
+  {
+   "w": "se",
+   "desde": 159.44,
+   "hasta": 159.94
+  },
+  {
+   "w": "repasaron",
+   "desde": 159.94,
+   "hasta": 160.52
+  },
+  {
+   "w": "cuatro",
+   "desde": 160.52,
+   "hasta": 161.02
+  },
+  {
+   "w": "grandes",
+   "desde": 161.02,
+   "hasta": 161.46
+  },
+  {
+   "w": "procesos",
+   "desde": 161.46,
+   "hasta": 162.36
+  },
+  {
+   "w": "que",
+   "desde": 162.36,
+   "hasta": 162.54
+  },
+  {
+   "w": "están",
+   "desde": 162.54,
+   "hasta": 162.72
+  },
+  {
+   "w": "siendo",
+   "desde": 162.72,
+   "hasta": 163.02
+  },
+  {
+   "w": "expresados",
+   "desde": 163.02,
+   "hasta": 164.9
+  },
+  {
+   "w": "ahí",
+   "desde": 164.9,
+   "hasta": 165.14
+  },
+  {
+   "w": "en",
+   "desde": 165.14,
+   "hasta": 165.5
+  },
+  {
+   "w": "la",
+   "desde": 165.5,
+   "hasta": 165.72
+  },
+  {
+   "w": "descripción",
+   "desde": 165.72,
+   "hasta": 166.32
+  },
+  {
+   "w": "del",
+   "desde": 166.32,
+   "hasta": 166.86
+  },
+  {
+   "w": "informe.",
+   "desde": 166.86,
+   "hasta": 167.5
+  },
+  {
+   "w": "Y",
+   "desde": 167.82,
+   "hasta": 168.38
+  },
+  {
+   "w": "posteriormente",
+   "desde": 168.38,
+   "hasta": 169.14
+  },
+  {
+   "w": "procede",
+   "desde": 169.14,
+   "hasta": 169.88
+  },
+  {
+   "w": "a",
+   "desde": 169.88,
+   "hasta": 169.94
+  },
+  {
+   "w": "realizar",
+   "desde": 169.94,
+   "hasta": 170.24
+  },
+  {
+   "w": "un",
+   "desde": 170.24,
+   "hasta": 171.12
+  },
+  {
+   "w": "mapa",
+   "desde": 171.12,
+   "hasta": 171.42
+  },
+  {
+   "w": "de",
+   "desde": 171.42,
+   "hasta": 171.58
+  },
+  {
+   "w": "procesos.",
+   "desde": 171.58,
+   "hasta": 171.7
+  },
+  {
+   "w": "Hay",
+   "desde": 171.72,
+   "hasta": 171.9
+  },
+  {
+   "w": "un",
+   "desde": 171.9,
+   "hasta": 171.9
+  },
+  {
+   "w": "mapa",
+   "desde": 171.9,
+   "hasta": 171.9
+  },
+  {
+   "w": "de",
+   "desde": 171.9,
+   "hasta": 171.9
+  },
+  {
+   "w": "procesos",
+   "desde": 171.9,
+   "hasta": 172.24
+  },
+  {
+   "w": "y",
+   "desde": 172.24,
+   "hasta": 172.26
+  },
+  {
+   "w": "actividades",
+   "desde": 172.26,
+   "hasta": 172.82
+  },
+  {
+   "w": "que,",
+   "desde": 172.82,
+   "hasta": 173.78
+  },
+  {
+   "w": "por",
+   "desde": 173.86,
+   "hasta": 174.9
+  },
+  {
+   "w": "definición",
+   "desde": 174.9,
+   "hasta": 175.58
+  },
+  {
+   "w": "nuestra,",
+   "desde": 175.58,
+   "hasta": 175.8
+  },
+  {
+   "w": "está",
+   "desde": 176.1,
+   "hasta": 176.94
+  },
+  {
+   "w": "en",
+   "desde": 176.94,
+   "hasta": 177.1
+  },
+  {
+   "w": "formato",
+   "desde": 177.1,
+   "hasta": 177.64
+  },
+  {
+   "w": "de",
+   "desde": 177.64,
+   "hasta": 177.76
+  },
+  {
+   "w": "tabla",
+   "desde": 177.76,
+   "hasta": 178.3
+  },
+  {
+   "w": "en",
+   "desde": 178.3,
+   "hasta": 178.62
+  },
+  {
+   "w": "donde",
+   "desde": 178.62,
+   "hasta": 179.38
+  },
+  {
+   "w": "cada",
+   "desde": 179.38,
+   "hasta": 180.88
+  },
+  {
+   "w": "fila",
+   "desde": 180.88,
+   "hasta": 181.62
+  },
+  {
+   "w": "es",
+   "desde": 181.62,
+   "hasta": 181.7
+  },
+  {
+   "w": "un",
+   "desde": 181.7,
+   "hasta": 181.82
+  },
+  {
+   "w": "proceso",
+   "desde": 181.82,
+   "hasta": 182.26
+  },
+  {
+   "w": "o",
+   "desde": 182.26,
+   "hasta": 182.44
+  },
+  {
+   "w": "una",
+   "desde": 182.44,
+   "hasta": 182.58
+  },
+  {
+   "w": "actividad",
+   "desde": 182.58,
+   "hasta": 182.92
+  },
+  {
+   "w": "y",
+   "desde": 182.92,
+   "hasta": 183.24
+  },
+  {
+   "w": "en",
+   "desde": 183.24,
+   "hasta": 183.38
+  },
+  {
+   "w": "las",
+   "desde": 183.38,
+   "hasta": 183.5
+  },
+  {
+   "w": "columnas",
+   "desde": 183.5,
+   "hasta": 183.94
+  },
+  {
+   "w": "hay",
+   "desde": 183.94,
+   "hasta": 184.06
+  },
+  {
+   "w": "información",
+   "desde": 184.06,
+   "hasta": 184.3
+  },
+  {
+   "w": "relevante.",
+   "desde": 184.3,
+   "hasta": 185.28
+  },
+  {
+   "w": "¿Quién",
+   "desde": 186.52,
+   "hasta": 187.0
+  },
+  {
+   "w": "es",
+   "desde": 187.0,
+   "hasta": 187.12
+  },
+  {
+   "w": "el",
+   "desde": 187.12,
+   "hasta": 187.26
+  },
+  {
+   "w": "responsable",
+   "desde": 187.26,
+   "hasta": 187.72
+  },
+  {
+   "w": "del",
+   "desde": 187.72,
+   "hasta": 187.86
+  },
+  {
+   "w": "proceso?",
+   "desde": 187.86,
+   "hasta": 188.14
+  },
+  {
+   "w": "¿Qué",
+   "desde": 188.88,
+   "hasta": 189.36
+  },
+  {
+   "w": "herramientas",
+   "desde": 189.36,
+   "hasta": 189.8
+  },
+  {
+   "w": "se",
+   "desde": 189.8,
+   "hasta": 189.88
+  },
+  {
+   "w": "utilizan?",
+   "desde": 189.88,
+   "hasta": 190.46
+  },
+  {
+   "w": "¿Cuáles",
+   "desde": 190.5,
+   "hasta": 190.78
+  },
+  {
+   "w": "son",
+   "desde": 190.78,
+   "hasta": 190.9
+  },
+  {
+   "w": "las",
+   "desde": 190.9,
+   "hasta": 191.0
+  },
+  {
+   "w": "entradas",
+   "desde": 191.0,
+   "hasta": 191.46
+  },
+  {
+   "w": "y",
+   "desde": 191.46,
+   "hasta": 191.62
+  },
+  {
+   "w": "las",
+   "desde": 191.62,
+   "hasta": 191.74
+  },
+  {
+   "w": "salidas?",
+   "desde": 191.74,
+   "hasta": 192.22
+  },
+  {
+   "w": "¿Cuál",
+   "desde": 192.26,
+   "hasta": 192.46
+  },
+  {
+   "w": "es",
+   "desde": 192.46,
+   "hasta": 192.54
+  },
+  {
+   "w": "la",
+   "desde": 192.54,
+   "hasta": 192.64
+  },
+  {
+   "w": "criticidad,",
+   "desde": 192.64,
+   "hasta": 193.48
+  },
+  {
+   "w": "los",
+   "desde": 193.52,
+   "hasta": 193.76
+  },
+  {
+   "w": "puntos",
+   "desde": 193.76,
+   "hasta": 194.08
+  },
+  {
+   "w": "de",
+   "desde": 194.08,
+   "hasta": 194.26
+  },
+  {
+   "w": "dolor",
+   "desde": 194.26,
+   "hasta": 194.5
+  },
+  {
+   "w": "de",
+   "desde": 194.5,
+   "hasta": 194.7
+  },
+  {
+   "w": "ese",
+   "desde": 194.7,
+   "hasta": 194.84
+  },
+  {
+   "w": "proceso?",
+   "desde": 194.84,
+   "hasta": 195.18
+  },
+  {
+   "w": "Eso",
+   "desde": 195.76,
+   "hasta": 196.24
+  },
+  {
+   "w": "en",
+   "desde": 196.24,
+   "hasta": 196.46
+  },
+  {
+   "w": "nuestro",
+   "desde": 196.46,
+   "hasta": 196.6
+  },
+  {
+   "w": "marco",
+   "desde": 196.6,
+   "hasta": 197.0
+  },
+  {
+   "w": "de",
+   "desde": 197.0,
+   "hasta": 197.16
+  },
+  {
+   "w": "consultoría",
+   "desde": 197.16,
+   "hasta": 197.72
+  },
+  {
+   "w": "nos",
+   "desde": 197.72,
+   "hasta": 197.92
+  },
+  {
+   "w": "permite,",
+   "desde": 197.92,
+   "hasta": 198.36
+  },
+  {
+   "w": "a",
+   "desde": 198.5,
+   "hasta": 198.96
+  },
+  {
+   "w": "partir",
+   "desde": 198.96,
+   "hasta": 199.3
+  },
+  {
+   "w": "de",
+   "desde": 199.3,
+   "hasta": 199.44
+  },
+  {
+   "w": "tener",
+   "desde": 199.44,
+   "hasta": 199.64
+  },
+  {
+   "w": "una",
+   "desde": 199.64,
+   "hasta": 199.82
+  },
+  {
+   "w": "conversación,",
+   "desde": 199.82,
+   "hasta": 200.8
+  },
+  {
+   "w": "una",
+   "desde": 201.72,
+   "hasta": 201.88
+  },
+  {
+   "w": "charla",
+   "desde": 201.88,
+   "hasta": 202.42
+  },
+  {
+   "w": "con",
+   "desde": 202.42,
+   "hasta": 202.56
+  },
+  {
+   "w": "una",
+   "desde": 202.56,
+   "hasta": 202.74
+  },
+  {
+   "w": "persona",
+   "desde": 202.74,
+   "hasta": 203.16
+  },
+  {
+   "w": "preguntándole",
+   "desde": 203.16,
+   "hasta": 204.38
+  },
+  {
+   "w": "por",
+   "desde": 204.38,
+   "hasta": 204.84
+  },
+  {
+   "w": "sus",
+   "desde": 204.84,
+   "hasta": 205.04
+  },
+  {
+   "w": "desafíos,",
+   "desde": 205.04,
+   "hasta": 205.56
+  },
+  {
+   "w": "automáticamente",
+   "desde": 206.4,
+   "hasta": 206.88
+  },
+  {
+   "w": "salir",
+   "desde": 206.88,
+   "hasta": 207.36
+  },
+  {
+   "w": "con",
+   "desde": 207.36,
+   "hasta": 208.08
+  },
+  {
+   "w": "una",
+   "desde": 208.08,
+   "hasta": 209.24
+  },
+  {
+   "w": "definición",
+   "desde": 209.24,
+   "hasta": 209.94
+  },
+  {
+   "w": "de",
+   "desde": 209.94,
+   "hasta": 210.46
+  },
+  {
+   "w": "proceso",
+   "desde": 210.46,
+   "hasta": 210.88
+  },
+  {
+   "w": "y",
+   "desde": 210.88,
+   "hasta": 211.56
+  },
+  {
+   "w": "de",
+   "desde": 211.56,
+   "hasta": 212.04
+  },
+  {
+   "w": "actividades",
+   "desde": 212.04,
+   "hasta": 212.7
+  },
+  {
+   "w": "sobre",
+   "desde": 212.7,
+   "hasta": 213.1
+  },
+  {
+   "w": "las",
+   "desde": 213.1,
+   "hasta": 213.24
+  },
+  {
+   "w": "cuales",
+   "desde": 213.24,
+   "hasta": 213.52
+  },
+  {
+   "w": "tenemos",
+   "desde": 213.52,
+   "hasta": 213.8
+  },
+  {
+   "w": "que",
+   "desde": 213.8,
+   "hasta": 214.44
+  },
+  {
+   "w": "tener",
+   "desde": 214.44,
+   "hasta": 215.12
+  },
+  {
+   "w": "prioridad",
+   "desde": 215.12,
+   "hasta": 215.74
+  },
+  {
+   "w": "para",
+   "desde": 215.74,
+   "hasta": 216.56
+  },
+  {
+   "w": "desarrollar",
+   "desde": 216.56,
+   "hasta": 217.92
+  },
+  {
+   "w": "mejoras,",
+   "desde": 217.92,
+   "hasta": 218.58
+  },
+  {
+   "w": "optimizaciones",
+   "desde": 218.58,
+   "hasta": 219.52
+  },
+  {
+   "w": "o",
+   "desde": 219.52,
+   "hasta": 220.26
+  },
+  {
+   "w": "digitalización",
+   "desde": 220.26,
+   "hasta": 221.16
+  },
+  {
+   "w": "de",
+   "desde": 221.16,
+   "hasta": 221.76
+  },
+  {
+   "w": "tareas.",
+   "desde": 221.76,
+   "hasta": 222.18
+  },
+  {
+   "w": "Entonces",
+   "desde": 222.6,
+   "hasta": 223.26
+  },
+  {
+   "w": "este",
+   "desde": 223.26,
+   "hasta": 223.54
+  },
+  {
+   "w": "es",
+   "desde": 223.54,
+   "hasta": 223.74
+  },
+  {
+   "w": "un",
+   "desde": 223.74,
+   "hasta": 223.94
+  },
+  {
+   "w": "ejemplo",
+   "desde": 223.94,
+   "hasta": 224.44
+  },
+  {
+   "w": "de",
+   "desde": 224.44,
+   "hasta": 225.44
+  },
+  {
+   "w": "un",
+   "desde": 225.44,
+   "hasta": 225.8
+  },
+  {
+   "w": "uso",
+   "desde": 225.8,
+   "hasta": 226.02
+  },
+  {
+   "w": "relativamente",
+   "desde": 226.02,
+   "hasta": 226.62
+  },
+  {
+   "w": "simple",
+   "desde": 226.62,
+   "hasta": 227.06
+  },
+  {
+   "w": "de",
+   "desde": 227.06,
+   "hasta": 227.26
+  },
+  {
+   "w": "una",
+   "desde": 227.26,
+   "hasta": 227.44
+  },
+  {
+   "w": "IA",
+   "desde": 227.44,
+   "hasta": 227.72
+  },
+  {
+   "w": "que",
+   "desde": 227.72,
+   "hasta": 227.92
+  },
+  {
+   "w": "obtiene,",
+   "desde": 227.92,
+   "hasta": 228.54
+  },
+  {
+   "w": "participa",
+   "desde": 229.54,
+   "hasta": 230.5
+  },
+  {
+   "w": "de",
+   "desde": 230.5,
+   "hasta": 230.8
+  },
+  {
+   "w": "una",
+   "desde": 230.8,
+   "hasta": 231.34
+  },
+  {
+   "w": "reunión.",
+   "desde": 231.34,
+   "hasta": 231.7
+  },
+  {
+   "w": "Obteniendo",
+   "desde": 232.62,
+   "hasta": 233.12
+  },
+  {
+   "w": "la",
+   "desde": 233.12,
+   "hasta": 233.62
+  },
+  {
+   "w": "transcripción",
+   "desde": 233.62,
+   "hasta": 234.36
+  },
+  {
+   "w": "de",
+   "desde": 234.36,
+   "hasta": 234.5
+  },
+  {
+   "w": "lo",
+   "desde": 234.5,
+   "hasta": 234.56
+  },
+  {
+   "w": "que",
+   "desde": 234.56,
+   "hasta": 234.68
+  },
+  {
+   "w": "se",
+   "desde": 234.68,
+   "hasta": 234.8
+  },
+  {
+   "w": "conversa",
+   "desde": 234.8,
+   "hasta": 235.32
+  },
+  {
+   "w": "y",
+   "desde": 235.32,
+   "hasta": 235.38
+  },
+  {
+   "w": "a",
+   "desde": 235.38,
+   "hasta": 235.44
+  },
+  {
+   "w": "partir",
+   "desde": 235.44,
+   "hasta": 235.76
+  },
+  {
+   "w": "de",
+   "desde": 235.76,
+   "hasta": 235.92
+  },
+  {
+   "w": "ahí",
+   "desde": 235.92,
+   "hasta": 236.08
+  },
+  {
+   "w": "tiene",
+   "desde": 236.08,
+   "hasta": 236.44
+  },
+  {
+   "w": "eso",
+   "desde": 236.44,
+   "hasta": 236.68
+  },
+  {
+   "w": "como",
+   "desde": 236.68,
+   "hasta": 236.98
+  },
+  {
+   "w": "input,",
+   "desde": 236.98,
+   "hasta": 237.42
+  },
+  {
+   "w": "como",
+   "desde": 237.56,
+   "hasta": 237.98
+  },
+  {
+   "w": "materia",
+   "desde": 237.98,
+   "hasta": 238.28
+  },
+  {
+   "w": "prima",
+   "desde": 238.28,
+   "hasta": 238.6
+  },
+  {
+   "w": "para",
+   "desde": 238.6,
+   "hasta": 239.3
+  },
+  {
+   "w": "elaborar",
+   "desde": 239.3,
+   "hasta": 240.08
+  },
+  {
+   "w": "una",
+   "desde": 240.08,
+   "hasta": 240.96
+  },
+  {
+   "w": "salida",
+   "desde": 240.96,
+   "hasta": 241.52
+  },
+  {
+   "w": "de",
+   "desde": 241.52,
+   "hasta": 242.02
+  },
+  {
+   "w": "lo",
+   "desde": 242.02,
+   "hasta": 242.16
+  },
+  {
+   "w": "que",
+   "desde": 242.16,
+   "hasta": 242.32
+  },
+  {
+   "w": "le",
+   "desde": 242.32,
+   "hasta": 242.4
+  },
+  {
+   "w": "pidamos.",
+   "desde": 242.4,
+   "hasta": 242.76
+  },
+  {
+   "w": "Está",
+   "desde": 242.98,
+   "hasta": 243.44
+  },
+  {
+   "w": "hecha",
+   "desde": 243.44,
+   "hasta": 244.04
+  },
+  {
+   "w": "con",
+   "desde": 244.04,
+   "hasta": 244.2
+  },
+  {
+   "w": "ChatGPT,",
+   "desde": 244.2,
+   "hasta": 245.06
+  },
+  {
+   "w": "que",
+   "desde": 245.18,
+   "hasta": 245.4
+  },
+  {
+   "w": "es",
+   "desde": 245.4,
+   "hasta": 245.54
+  },
+  {
+   "w": "una",
+   "desde": 245.54,
+   "hasta": 245.74
+  },
+  {
+   "w": "de",
+   "desde": 245.74,
+   "hasta": 245.86
+  },
+  {
+   "w": "las",
+   "desde": 245.86,
+   "hasta": 246.02
+  },
+  {
+   "w": "herramientas",
+   "desde": 246.02,
+   "hasta": 246.64
+  },
+  {
+   "w": "que",
+   "desde": 246.64,
+   "hasta": 246.76
+  },
+  {
+   "w": "vamos",
+   "desde": 246.76,
+   "hasta": 246.92
+  },
+  {
+   "w": "a",
+   "desde": 246.92,
+   "hasta": 247.14
+  },
+  {
+   "w": "ver",
+   "desde": 247.14,
+   "hasta": 247.4
+  },
+  {
+   "w": "a",
+   "desde": 247.4,
+   "hasta": 248.38
+  },
+  {
+   "w": "lo",
+   "desde": 248.38,
+   "hasta": 248.48
+  },
+  {
+   "w": "largo",
+   "desde": 248.48,
+   "hasta": 248.76
+  },
+  {
+   "w": "del",
+   "desde": 248.76,
+   "hasta": 248.92
+  },
+  {
+   "w": "curso.",
+   "desde": 248.92,
+   "hasta": 249.14
+  },
+  {
+   "w": "Por",
+   "desde": 250.12,
+   "hasta": 250.62
+  },
+  {
+   "w": "otro",
+   "desde": 250.62,
+   "hasta": 250.78
+  },
+  {
+   "w": "lado,",
+   "desde": 250.78,
+   "hasta": 251.16
+  },
+  {
+   "w": "tenemos",
+   "desde": 251.16,
+   "hasta": 251.54
+  },
+  {
+   "w": "otro",
+   "desde": 251.54,
+   "hasta": 252.02
+  },
+  {
+   "w": "caso",
+   "desde": 252.02,
+   "hasta": 252.3
+  },
+  {
+   "w": "de",
+   "desde": 252.3,
+   "hasta": 252.62
+  },
+  {
+   "w": "uso",
+   "desde": 252.62,
+   "hasta": 252.84
+  },
+  {
+   "w": "de",
+   "desde": 252.84,
+   "hasta": 253.32
+  },
+  {
+   "w": "IA",
+   "desde": 253.32,
+   "hasta": 253.52
+  },
+  {
+   "w": "como",
+   "desde": 253.52,
+   "hasta": 253.74
+  },
+  {
+   "w": "copiloto",
+   "desde": 253.74,
+   "hasta": 254.38
+  },
+  {
+   "w": "y",
+   "desde": 254.38,
+   "hasta": 254.54
+  },
+  {
+   "w": "en",
+   "desde": 254.54,
+   "hasta": 254.66
+  },
+  {
+   "w": "este",
+   "desde": 254.66,
+   "hasta": 254.8
+  },
+  {
+   "w": "caso",
+   "desde": 254.8,
+   "hasta": 255.0
+  },
+  {
+   "w": "utilizando",
+   "desde": 255.0,
+   "hasta": 255.64
+  },
+  {
+   "w": "la",
+   "desde": 255.64,
+   "hasta": 255.8
+  },
+  {
+   "w": "herramienta",
+   "desde": 255.8,
+   "hasta": 256.38
+  },
+  {
+   "w": "Gemini",
+   "desde": 256.38,
+   "hasta": 256.8
+  },
+  {
+   "w": "de",
+   "desde": 256.8,
+   "hasta": 257.14
+  },
+  {
+   "w": "Google,",
+   "desde": 257.14,
+   "hasta": 257.5
+  },
+  {
+   "w": "que",
+   "desde": 257.7,
+   "hasta": 258.12
+  },
+  {
+   "w": "también",
+   "desde": 258.12,
+   "hasta": 258.5
+  },
+  {
+   "w": "la",
+   "desde": 258.5,
+   "hasta": 258.76
+  },
+  {
+   "w": "vamos",
+   "desde": 258.76,
+   "hasta": 258.96
+  },
+  {
+   "w": "a",
+   "desde": 258.96,
+   "hasta": 259.18
+  },
+  {
+   "w": "ver",
+   "desde": 259.18,
+   "hasta": 259.38
+  },
+  {
+   "w": "en",
+   "desde": 259.38,
+   "hasta": 259.78
+  },
+  {
+   "w": "la",
+   "desde": 259.78,
+   "hasta": 259.9
+  },
+  {
+   "w": "práctica,",
+   "desde": 259.9,
+   "hasta": 260.42
+  },
+  {
+   "w": "que",
+   "desde": 260.48,
+   "hasta": 261.1
+  },
+  {
+   "w": "es",
+   "desde": 261.1,
+   "hasta": 261.22
+  },
+  {
+   "w": "para",
+   "desde": 261.22,
+   "hasta": 261.36
+  },
+  {
+   "w": "realizar",
+   "desde": 261.36,
+   "hasta": 261.64
+  },
+  {
+   "w": "una",
+   "desde": 261.64,
+   "hasta": 261.7
+  },
+  {
+   "w": "consulta.",
+   "desde": 261.7,
+   "hasta": 261.7
+  },
+  {
+   "w": "Vamos",
+   "desde": 261.7,
+   "hasta": 261.88
+  },
+  {
+   "w": "a",
+   "desde": 261.88,
+   "hasta": 261.88
+  },
+  {
+   "w": "empezar",
+   "desde": 261.88,
+   "hasta": 261.88
+  },
+  {
+   "w": "investigación",
+   "desde": 261.88,
+   "hasta": 262.22
+  },
+  {
+   "w": "profunda",
+   "desde": 262.22,
+   "hasta": 263.28
+  },
+  {
+   "w": "sobre",
+   "desde": 263.28,
+   "hasta": 263.58
+  },
+  {
+   "w": "determinado",
+   "desde": 263.58,
+   "hasta": 264.22
+  },
+  {
+   "w": "tema",
+   "desde": 264.22,
+   "hasta": 264.48
+  },
+  {
+   "w": "y",
+   "desde": 264.48,
+   "hasta": 264.86
+  },
+  {
+   "w": "generar",
+   "desde": 264.86,
+   "hasta": 265.62
+  },
+  {
+   "w": "contenido",
+   "desde": 265.62,
+   "hasta": 266.02
+  },
+  {
+   "w": "y",
+   "desde": 266.02,
+   "hasta": 267.22
+  },
+  {
+   "w": "piezas",
+   "desde": 267.22,
+   "hasta": 267.7
+  },
+  {
+   "w": "visuales",
+   "desde": 267.7,
+   "hasta": 268.28
+  },
+  {
+   "w": "para",
+   "desde": 268.28,
+   "hasta": 268.44
+  },
+  {
+   "w": "comunicar.",
+   "desde": 268.44,
+   "hasta": 268.96
+  },
+  {
+   "w": "Entonces",
+   "desde": 269.18,
+   "hasta": 269.82
+  },
+  {
+   "w": "empezamos",
+   "desde": 269.82,
+   "hasta": 270.66
+  },
+  {
+   "w": "pidiéndole",
+   "desde": 270.66,
+   "hasta": 271.18
+  },
+  {
+   "w": "a",
+   "desde": 271.18,
+   "hasta": 271.48
+  },
+  {
+   "w": "la",
+   "desde": 271.48,
+   "hasta": 271.76
+  },
+  {
+   "w": "IA",
+   "desde": 271.76,
+   "hasta": 272.08
+  },
+  {
+   "w": "hacer",
+   "desde": 272.08,
+   "hasta": 272.52
+  },
+  {
+   "w": "una",
+   "desde": 272.52,
+   "hasta": 272.78
+  },
+  {
+   "w": "determinada",
+   "desde": 272.78,
+   "hasta": 273.48
+  },
+  {
+   "w": "investigación",
+   "desde": 273.48,
+   "hasta": 273.8
+  },
+  {
+   "w": "profunda",
+   "desde": 273.8,
+   "hasta": 274.72
+  },
+  {
+   "w": "sobre",
+   "desde": 274.72,
+   "hasta": 275.06
+  },
+  {
+   "w": "un",
+   "desde": 275.06,
+   "hasta": 275.22
+  },
+  {
+   "w": "tema,",
+   "desde": 275.22,
+   "hasta": 275.5
+  },
+  {
+   "w": "con",
+   "desde": 275.64,
+   "hasta": 276.18
+  },
+  {
+   "w": "lo",
+   "desde": 276.18,
+   "hasta": 276.3
+  },
+  {
+   "w": "cual",
+   "desde": 276.3,
+   "hasta": 276.48
+  },
+  {
+   "w": "va",
+   "desde": 276.48,
+   "hasta": 276.64
+  },
+  {
+   "w": "a",
+   "desde": 276.64,
+   "hasta": 276.72
+  },
+  {
+   "w": "consultar",
+   "desde": 276.72,
+   "hasta": 277.26
+  },
+  {
+   "w": "diferentes",
+   "desde": 277.26,
+   "hasta": 277.46
+  },
+  {
+   "w": "fuentes",
+   "desde": 277.46,
+   "hasta": 278.12
+  },
+  {
+   "w": "de",
+   "desde": 278.12,
+   "hasta": 278.22
+  },
+  {
+   "w": "información",
+   "desde": 278.22,
+   "hasta": 278.54
+  },
+  {
+   "w": "y",
+   "desde": 278.54,
+   "hasta": 278.84
+  },
+  {
+   "w": "va",
+   "desde": 278.84,
+   "hasta": 278.96
+  },
+  {
+   "w": "a",
+   "desde": 278.96,
+   "hasta": 279.02
+  },
+  {
+   "w": "generar",
+   "desde": 279.02,
+   "hasta": 279.38
+  },
+  {
+   "w": "un",
+   "desde": 279.38,
+   "hasta": 279.5
+  },
+  {
+   "w": "informe",
+   "desde": 279.5,
+   "hasta": 280.06
+  },
+  {
+   "w": "escrito",
+   "desde": 280.06,
+   "hasta": 280.26
+  },
+  {
+   "w": "ampliamente",
+   "desde": 280.26,
+   "hasta": 281.68
+  },
+  {
+   "w": "detallado.",
+   "desde": 281.68,
+   "hasta": 282.4
+  },
+  {
+   "w": "Luego",
+   "desde": 283.61,
+   "hasta": 283.94
+  },
+  {
+   "w": "tomamos",
+   "desde": 283.94,
+   "hasta": 284.6
+  },
+  {
+   "w": "como",
+   "desde": 284.6,
+   "hasta": 285.14
+  },
+  {
+   "w": "materia",
+   "desde": 285.14,
+   "hasta": 286.28
+  },
+  {
+   "w": "prima",
+   "desde": 286.28,
+   "hasta": 286.64
+  },
+  {
+   "w": "ese",
+   "desde": 286.64,
+   "hasta": 286.92
+  },
+  {
+   "w": "informe",
+   "desde": 286.92,
+   "hasta": 287.7
+  },
+  {
+   "w": "donde",
+   "desde": 287.7,
+   "hasta": 288.12
+  },
+  {
+   "w": "investigó",
+   "desde": 288.12,
+   "hasta": 288.7
+  },
+  {
+   "w": "en",
+   "desde": 288.7,
+   "hasta": 288.86
+  },
+  {
+   "w": "todas",
+   "desde": 288.86,
+   "hasta": 289.08
+  },
+  {
+   "w": "las",
+   "desde": 289.08,
+   "hasta": 289.28
+  },
+  {
+   "w": "fuentes",
+   "desde": 289.28,
+   "hasta": 289.56
+  },
+  {
+   "w": "públicas",
+   "desde": 289.56,
+   "hasta": 290.26
+  },
+  {
+   "w": "que",
+   "desde": 290.26,
+   "hasta": 290.44
+  },
+  {
+   "w": "tenga",
+   "desde": 290.44,
+   "hasta": 290.7
+  },
+  {
+   "w": "a",
+   "desde": 290.7,
+   "hasta": 290.9
+  },
+  {
+   "w": "disposición.",
+   "desde": 290.9,
+   "hasta": 291.54
+  },
+  {
+   "w": "Y",
+   "desde": 292.74,
+   "hasta": 293.26
+  },
+  {
+   "w": "vamos",
+   "desde": 293.26,
+   "hasta": 293.44
+  },
+  {
+   "w": "a",
+   "desde": 293.44,
+   "hasta": 293.64
+  },
+  {
+   "w": "ir",
+   "desde": 293.64,
+   "hasta": 293.76
+  },
+  {
+   "w": "a",
+   "desde": 293.76,
+   "hasta": 293.82
+  },
+  {
+   "w": "otra",
+   "desde": 293.82,
+   "hasta": 294.02
+  },
+  {
+   "w": "herramienta",
+   "desde": 294.02,
+   "hasta": 294.68
+  },
+  {
+   "w": "que",
+   "desde": 294.68,
+   "hasta": 295.0
+  },
+  {
+   "w": "se",
+   "desde": 295.0,
+   "hasta": 295.12
+  },
+  {
+   "w": "llama",
+   "desde": 295.12,
+   "hasta": 295.46
+  },
+  {
+   "w": "Notebook",
+   "desde": 295.46,
+   "hasta": 297.2
+  },
+  {
+   "w": "LM.",
+   "desde": 297.2,
+   "hasta": 297.66
+  },
+  {
+   "w": "También",
+   "desde": 298.1,
+   "hasta": 298.62
+  },
+  {
+   "w": "es",
+   "desde": 298.62,
+   "hasta": 299.02
+  },
+  {
+   "w": "de",
+   "desde": 299.02,
+   "hasta": 299.16
+  },
+  {
+   "w": "Google",
+   "desde": 299.16,
+   "hasta": 299.42
+  },
+  {
+   "w": "y",
+   "desde": 299.42,
+   "hasta": 299.68
+  },
+  {
+   "w": "sirve",
+   "desde": 299.68,
+   "hasta": 299.98
+  },
+  {
+   "w": "para",
+   "desde": 299.98,
+   "hasta": 300.16
+  },
+  {
+   "w": "crear,",
+   "desde": 300.16,
+   "hasta": 300.56
+  },
+  {
+   "w": "como",
+   "desde": 300.66,
+   "hasta": 300.88
+  },
+  {
+   "w": "el",
+   "desde": 300.88,
+   "hasta": 301.04
+  },
+  {
+   "w": "nombre",
+   "desde": 301.04,
+   "hasta": 301.2
+  },
+  {
+   "w": "en",
+   "desde": 301.2,
+   "hasta": 301.32
+  },
+  {
+   "w": "inglés",
+   "desde": 301.32,
+   "hasta": 301.5
+  },
+  {
+   "w": "lo",
+   "desde": 301.5,
+   "hasta": 301.64
+  },
+  {
+   "w": "dice,",
+   "desde": 301.64,
+   "hasta": 301.86
+  },
+  {
+   "w": "cuadernos",
+   "desde": 301.9,
+   "hasta": 302.74
+  },
+  {
+   "w": "en",
+   "desde": 302.74,
+   "hasta": 302.88
+  },
+  {
+   "w": "donde",
+   "desde": 302.88,
+   "hasta": 303.06
+  },
+  {
+   "w": "vamos",
+   "desde": 303.06,
+   "hasta": 303.3
+  },
+  {
+   "w": "a",
+   "desde": 303.3,
+   "hasta": 303.56
+  },
+  {
+   "w": "darle",
+   "desde": 303.56,
+   "hasta": 303.82
+  },
+  {
+   "w": "información",
+   "desde": 303.82,
+   "hasta": 304.7
+  },
+  {
+   "w": "como",
+   "desde": 304.7,
+   "hasta": 305.22
+  },
+  {
+   "w": "materia",
+   "desde": 305.22,
+   "hasta": 305.52
+  },
+  {
+   "w": "prima",
+   "desde": 305.52,
+   "hasta": 305.82
+  },
+  {
+   "w": "y",
+   "desde": 305.82,
+   "hasta": 306.48
+  },
+  {
+   "w": "nos",
+   "desde": 306.48,
+   "hasta": 306.66
+  },
+  {
+   "w": "va",
+   "desde": 306.66,
+   "hasta": 306.8
+  },
+  {
+   "w": "a",
+   "desde": 306.8,
+   "hasta": 306.86
+  },
+  {
+   "w": "permitir",
+   "desde": 306.86,
+   "hasta": 307.16
+  },
+  {
+   "w": "generar",
+   "desde": 307.16,
+   "hasta": 307.72
+  },
+  {
+   "w": "contenido",
+   "desde": 307.72,
+   "hasta": 308.22
+  },
+  {
+   "w": "visual.",
+   "desde": 308.22,
+   "hasta": 308.68
+  },
+  {
+   "w": "Entonces",
+   "desde": 308.78,
+   "hasta": 309.02
+  },
+  {
+   "w": "le",
+   "desde": 309.02,
+   "hasta": 309.24
+  },
+  {
+   "w": "damos",
+   "desde": 309.24,
+   "hasta": 309.52
+  },
+  {
+   "w": "como",
+   "desde": 309.52,
+   "hasta": 309.76
+  },
+  {
+   "w": "input",
+   "desde": 309.76,
+   "hasta": 310.16
+  },
+  {
+   "w": "ahí",
+   "desde": 310.16,
+   "hasta": 310.66
+  },
+  {
+   "w": "el",
+   "desde": 310.66,
+   "hasta": 311.48
+  },
+  {
+   "w": "archivo",
+   "desde": 311.48,
+   "hasta": 311.98
+  },
+  {
+   "w": "y",
+   "desde": 311.98,
+   "hasta": 312.16
+  },
+  {
+   "w": "otros",
+   "desde": 312.16,
+   "hasta": 312.48
+  },
+  {
+   "w": "archivos",
+   "desde": 312.48,
+   "hasta": 313.0
+  },
+  {
+   "w": "que",
+   "desde": 313.0,
+   "hasta": 313.18
+  },
+  {
+   "w": "hayamos",
+   "desde": 313.18,
+   "hasta": 313.5
+  },
+  {
+   "w": "encontrado",
+   "desde": 313.5,
+   "hasta": 314.14
+  },
+  {
+   "w": "relacionado",
+   "desde": 314.14,
+   "hasta": 315.04
+  },
+  {
+   "w": "a",
+   "desde": 315.04,
+   "hasta": 315.3
+  },
+  {
+   "w": "esa",
+   "desde": 315.3,
+   "hasta": 315.92
+  },
+  {
+   "w": "investigación",
+   "desde": 315.92,
+   "hasta": 316.32
+  },
+  {
+   "w": "del",
+   "desde": 316.32,
+   "hasta": 316.74
+  },
+  {
+   "w": "tema",
+   "desde": 316.74,
+   "hasta": 316.96
+  },
+  {
+   "w": "que",
+   "desde": 316.96,
+   "hasta": 317.14
+  },
+  {
+   "w": "queremos",
+   "desde": 317.14,
+   "hasta": 317.44
+  },
+  {
+   "w": "hacer.",
+   "desde": 317.44,
+   "hasta": 318.02
+  },
+  {
+   "w": "Y",
+   "desde": 318.38,
+   "hasta": 318.9
+  },
+  {
+   "w": "en",
+   "desde": 318.9,
+   "hasta": 319.7
+  },
+  {
+   "w": "esta",
+   "desde": 319.7,
+   "hasta": 319.96
+  },
+  {
+   "w": "sección",
+   "desde": 319.96,
+   "hasta": 320.42
+  },
+  {
+   "w": "podemos",
+   "desde": 320.42,
+   "hasta": 320.64
+  },
+  {
+   "w": "empezar",
+   "desde": 320.64,
+   "hasta": 321.18
+  },
+  {
+   "w": "a",
+   "desde": 321.18,
+   "hasta": 321.36
+  },
+  {
+   "w": "crear",
+   "desde": 321.36,
+   "hasta": 321.52
+  },
+  {
+   "w": "un",
+   "desde": 321.52,
+   "hasta": 321.52
+  },
+  {
+   "w": "archivo.",
+   "desde": 321.52,
+   "hasta": 321.52
+  },
+  {
+   "w": "Podemos",
+   "desde": 321.52,
+   "hasta": 321.6
+  },
+  {
+   "w": "crear",
+   "desde": 321.6,
+   "hasta": 321.6
+  },
+  {
+   "w": "recursos",
+   "desde": 321.6,
+   "hasta": 321.78
+  },
+  {
+   "w": "visuales,",
+   "desde": 321.78,
+   "hasta": 322.56
+  },
+  {
+   "w": "por",
+   "desde": 322.58,
+   "hasta": 322.68
+  },
+  {
+   "w": "ejemplo,",
+   "desde": 322.68,
+   "hasta": 323.12
+  },
+  {
+   "w": "un",
+   "desde": 323.16,
+   "hasta": 324.0
+  },
+  {
+   "w": "árbol",
+   "desde": 324.0,
+   "hasta": 324.42
+  },
+  {
+   "w": "de",
+   "desde": 324.42,
+   "hasta": 324.64
+  },
+  {
+   "w": "ideas",
+   "desde": 324.64,
+   "hasta": 325.52
+  },
+  {
+   "w": "para",
+   "desde": 325.52,
+   "hasta": 326.28
+  },
+  {
+   "w": "conectar",
+   "desde": 326.28,
+   "hasta": 327.02
+  },
+  {
+   "w": "puntos",
+   "desde": 327.02,
+   "hasta": 327.3
+  },
+  {
+   "w": "de",
+   "desde": 327.3,
+   "hasta": 328.1
+  },
+  {
+   "w": "mayor",
+   "desde": 328.1,
+   "hasta": 328.26
+  },
+  {
+   "w": "a",
+   "desde": 328.26,
+   "hasta": 328.44
+  },
+  {
+   "w": "menor.",
+   "desde": 328.44,
+   "hasta": 328.66
+  },
+  {
+   "w": "Podemos",
+   "desde": 329.26,
+   "hasta": 329.68
+  },
+  {
+   "w": "crear",
+   "desde": 329.68,
+   "hasta": 329.92
+  },
+  {
+   "w": "infográficos",
+   "desde": 329.92,
+   "hasta": 331.26
+  },
+  {
+   "w": "de",
+   "desde": 331.26,
+   "hasta": 331.46
+  },
+  {
+   "w": "una",
+   "desde": 331.46,
+   "hasta": 331.9
+  },
+  {
+   "w": "imagen",
+   "desde": 331.9,
+   "hasta": 332.36
+  },
+  {
+   "w": "vertical",
+   "desde": 332.36,
+   "hasta": 333.36
+  },
+  {
+   "w": "u",
+   "desde": 333.36,
+   "hasta": 333.9
+  },
+  {
+   "w": "horizontal",
+   "desde": 333.9,
+   "hasta": 334.34
+  },
+  {
+   "w": "que",
+   "desde": 334.34,
+   "hasta": 335.32
+  },
+  {
+   "w": "permitan",
+   "desde": 335.32,
+   "hasta": 335.88
+  },
+  {
+   "w": "describir",
+   "desde": 335.88,
+   "hasta": 336.3
+  },
+  {
+   "w": "el",
+   "desde": 336.3,
+   "hasta": 336.46
+  },
+  {
+   "w": "tema",
+   "desde": 336.46,
+   "hasta": 336.74
+  },
+  {
+   "w": "a",
+   "desde": 336.74,
+   "hasta": 337.4
+  },
+  {
+   "w": "partir",
+   "desde": 337.4,
+   "hasta": 337.88
+  },
+  {
+   "w": "de",
+   "desde": 337.88,
+   "hasta": 338.16
+  },
+  {
+   "w": "elementos",
+   "desde": 338.16,
+   "hasta": 338.74
+  },
+  {
+   "w": "gráficos.",
+   "desde": 338.74,
+   "hasta": 339.48
+  },
+  {
+   "w": "Podemos",
+   "desde": 340.36,
+   "hasta": 340.78
+  },
+  {
+   "w": "crear",
+   "desde": 340.78,
+   "hasta": 340.98
+  },
+  {
+   "w": "una",
+   "desde": 340.98,
+   "hasta": 341.2
+  },
+  {
+   "w": "presentación",
+   "desde": 341.2,
+   "hasta": 342.16
+  },
+  {
+   "w": "literalmente",
+   "desde": 342.16,
+   "hasta": 343.44
+  },
+  {
+   "w": "de",
+   "desde": 343.44,
+   "hasta": 343.66
+  },
+  {
+   "w": "PowerPoint",
+   "desde": 343.66,
+   "hasta": 344.02
+  },
+  {
+   "w": "como",
+   "desde": 344.02,
+   "hasta": 344.52
+  },
+  {
+   "w": "estamos",
+   "desde": 344.52,
+   "hasta": 344.74
+  },
+  {
+   "w": "viendo",
+   "desde": 344.74,
+   "hasta": 345.06
+  },
+  {
+   "w": "ahí",
+   "desde": 345.06,
+   "hasta": 345.28
+  },
+  {
+   "w": "en",
+   "desde": 345.28,
+   "hasta": 345.4
+  },
+  {
+   "w": "pantalla",
+   "desde": 345.4,
+   "hasta": 345.68
+  },
+  {
+   "w": "para",
+   "desde": 345.68,
+   "hasta": 346.16
+  },
+  {
+   "w": "poder",
+   "desde": 346.16,
+   "hasta": 346.54
+  },
+  {
+   "w": "justamente",
+   "desde": 346.54,
+   "hasta": 347.12
+  },
+  {
+   "w": "presentar",
+   "desde": 347.12,
+   "hasta": 348.3
+  },
+  {
+   "w": "el",
+   "desde": 348.3,
+   "hasta": 348.42
+  },
+  {
+   "w": "tema.",
+   "desde": 348.42,
+   "hasta": 348.66
+  },
+  {
+   "w": "Podemos",
+   "desde": 349.04,
+   "hasta": 349.88
+  },
+  {
+   "w": "crear",
+   "desde": 349.88,
+   "hasta": 350.34
+  },
+  {
+   "w": "recursos.",
+   "desde": 350.34,
+   "hasta": 351.1
+  },
+  {
+   "w": "Podemos",
+   "desde": 351.52,
+   "hasta": 352.16
+  },
+  {
+   "w": "crear",
+   "desde": 352.16,
+   "hasta": 352.16
+  },
+  {
+   "w": "recursos",
+   "desde": 352.16,
+   "hasta": 352.16
+  },
+  {
+   "w": "de",
+   "desde": 352.16,
+   "hasta": 352.16
+  },
+  {
+   "w": "video,",
+   "desde": 352.16,
+   "hasta": 352.94
+  },
+  {
+   "w": "¿sí?",
+   "desde": 353.22,
+   "hasta": 353.94
+  },
+  {
+   "w": "Entonces",
+   "desde": 354.02,
+   "hasta": 354.54
+  },
+  {
+   "w": "vamos",
+   "desde": 354.54,
+   "hasta": 355.04
+  },
+  {
+   "w": "a",
+   "desde": 355.04,
+   "hasta": 355.2
+  },
+  {
+   "w": "crear",
+   "desde": 355.2,
+   "hasta": 355.4
+  },
+  {
+   "w": "un",
+   "desde": 355.4,
+   "hasta": 355.56
+  },
+  {
+   "w": "video",
+   "desde": 355.56,
+   "hasta": 355.86
+  },
+  {
+   "w": "a",
+   "desde": 355.86,
+   "hasta": 356.1
+  },
+  {
+   "w": "partir",
+   "desde": 356.1,
+   "hasta": 356.36
+  },
+  {
+   "w": "de",
+   "desde": 356.36,
+   "hasta": 356.54
+  },
+  {
+   "w": "la",
+   "desde": 356.54,
+   "hasta": 356.62
+  },
+  {
+   "w": "información",
+   "desde": 356.62,
+   "hasta": 356.92
+  },
+  {
+   "w": "que",
+   "desde": 356.92,
+   "hasta": 357.3
+  },
+  {
+   "w": "contiene",
+   "desde": 357.3,
+   "hasta": 357.7
+  },
+  {
+   "w": "la",
+   "desde": 357.7,
+   "hasta": 357.86
+  },
+  {
+   "w": "IA.",
+   "desde": 357.86,
+   "hasta": 358.12
+  },
+  {
+   "w": "Un",
+   "desde": 358.44,
+   "hasta": 359.04
+  },
+  {
+   "w": "video",
+   "desde": 359.04,
+   "hasta": 359.3
+  },
+  {
+   "w": "que",
+   "desde": 359.3,
+   "hasta": 359.46
+  },
+  {
+   "w": "va",
+   "desde": 359.46,
+   "hasta": 359.5
+  },
+  {
+   "w": "a",
+   "desde": 359.5,
+   "hasta": 359.58
+  },
+  {
+   "w": "tener",
+   "desde": 359.58,
+   "hasta": 359.72
+  },
+  {
+   "w": "gráficos,",
+   "desde": 359.72,
+   "hasta": 360.28
+  },
+  {
+   "w": "que",
+   "desde": 360.28,
+   "hasta": 360.36
+  },
+  {
+   "w": "va",
+   "desde": 360.36,
+   "hasta": 360.44
+  },
+  {
+   "w": "a",
+   "desde": 360.44,
+   "hasta": 360.54
+  },
+  {
+   "w": "tener",
+   "desde": 360.54,
+   "hasta": 360.84
+  },
+  {
+   "w": "una",
+   "desde": 360.84,
+   "hasta": 361.16
+  },
+  {
+   "w": "descripción",
+   "desde": 361.16,
+   "hasta": 362.42
+  },
+  {
+   "w": "hablada",
+   "desde": 362.42,
+   "hasta": 363.26
+  },
+  {
+   "w": "del",
+   "desde": 363.26,
+   "hasta": 363.78
+  },
+  {
+   "w": "tema.",
+   "desde": 363.78,
+   "hasta": 364.1
+  },
+  {
+   "w": "Así",
+   "desde": 364.8,
+   "hasta": 365.4
+  },
+  {
+   "w": "podríamos",
+   "desde": 365.4,
+   "hasta": 365.86
+  },
+  {
+   "w": "crear",
+   "desde": 365.86,
+   "hasta": 366.08
+  },
+  {
+   "w": "otro",
+   "desde": 366.08,
+   "hasta": 366.28
+  },
+  {
+   "w": "tipo",
+   "desde": 366.28,
+   "hasta": 366.56
+  },
+  {
+   "w": "de",
+   "desde": 366.56,
+   "hasta": 366.76
+  },
+  {
+   "w": "recursos",
+   "desde": 366.76,
+   "hasta": 367.1
+  },
+  {
+   "w": "como",
+   "desde": 367.1,
+   "hasta": 367.76
+  },
+  {
+   "w": "podcast,",
+   "desde": 367.76,
+   "hasta": 368.42
+  },
+  {
+   "w": "como",
+   "desde": 368.62,
+   "hasta": 368.78
+  },
+  {
+   "w": "tarjetas",
+   "desde": 368.78,
+   "hasta": 369.36
+  },
+  {
+   "w": "didácticas",
+   "desde": 369.36,
+   "hasta": 370.1
+  },
+  {
+   "w": "o",
+   "desde": 370.1,
+   "hasta": 370.66
+  },
+  {
+   "w": "informes",
+   "desde": 370.66,
+   "hasta": 371.18
+  },
+  {
+   "w": "de",
+   "desde": 371.18,
+   "hasta": 371.26
+  },
+  {
+   "w": "todo",
+   "desde": 371.26,
+   "hasta": 371.4
+  },
+  {
+   "w": "tipo.",
+   "desde": 371.4,
+   "hasta": 371.7
+  },
+  {
+   "w": "Finalmente,",
+   "desde": 372.56,
+   "hasta": 373.16
+  },
+  {
+   "w": "otra",
+   "desde": 373.16,
+   "hasta": 373.6
+  },
+  {
+   "w": "cosa",
+   "desde": 373.6,
+   "hasta": 373.96
+  },
+  {
+   "w": "que",
+   "desde": 373.96,
+   "hasta": 374.14
+  },
+  {
+   "w": "podríamos",
+   "desde": 374.14,
+   "hasta": 374.54
+  },
+  {
+   "w": "hacer",
+   "desde": 374.54,
+   "hasta": 374.9
+  },
+  {
+   "w": "es,",
+   "desde": 374.9,
+   "hasta": 375.22
+  },
+  {
+   "w": "volviendo",
+   "desde": 375.32,
+   "hasta": 376.08
+  },
+  {
+   "w": "a",
+   "desde": 376.08,
+   "hasta": 376.44
+  },
+  {
+   "w": "la",
+   "desde": 376.44,
+   "hasta": 376.72
+  },
+  {
+   "w": "suite",
+   "desde": 376.72,
+   "hasta": 377.0
+  },
+  {
+   "w": "de",
+   "desde": 377.0,
+   "hasta": 377.34
+  },
+  {
+   "w": "Gemini,",
+   "desde": 377.34,
+   "hasta": 377.7
+  },
+  {
+   "w": "a",
+   "desde": 377.86,
+   "hasta": 378.76
+  },
+  {
+   "w": "partir",
+   "desde": 378.76,
+   "hasta": 379.12
+  },
+  {
+   "w": "de",
+   "desde": 379.12,
+   "hasta": 379.28
+  },
+  {
+   "w": "la",
+   "desde": 379.28,
+   "hasta": 379.36
+  },
+  {
+   "w": "información",
+   "desde": 379.36,
+   "hasta": 379.62
+  },
+  {
+   "w": "que",
+   "desde": 379.62,
+   "hasta": 379.98
+  },
+  {
+   "w": "tenemos,",
+   "desde": 379.98,
+   "hasta": 380.26
+  },
+  {
+   "w": "podemos",
+   "desde": 380.26,
+   "hasta": 380.4
+  },
+  {
+   "w": "crear",
+   "desde": 380.4,
+   "hasta": 380.66
+  },
+  {
+   "w": "una",
+   "desde": 380.66,
+   "hasta": 381.3
+  },
+  {
+   "w": "página",
+   "desde": 381.3,
+   "hasta": 381.64
+  },
+  {
+   "w": "web,",
+   "desde": 381.64,
+   "hasta": 382.02
+  },
+  {
+   "w": "¿sí?",
+   "desde": 382.2,
+   "hasta": 382.7
+  },
+  {
+   "w": "Ahí",
+   "desde": 382.78,
+   "hasta": 382.98
+  },
+  {
+   "w": "vemos",
+   "desde": 382.98,
+   "hasta": 383.16
+  },
+  {
+   "w": "cómo",
+   "desde": 383.16,
+   "hasta": 383.42
+  },
+  {
+   "w": "a",
+   "desde": 383.42,
+   "hasta": 383.76
+  },
+  {
+   "w": "partir",
+   "desde": 383.76,
+   "hasta": 384.04
+  },
+  {
+   "w": "de",
+   "desde": 384.04,
+   "hasta": 384.2
+  },
+  {
+   "w": "nuestra",
+   "desde": 384.2,
+   "hasta": 384.32
+  },
+  {
+   "w": "instrucción",
+   "desde": 384.32,
+   "hasta": 384.86
+  },
+  {
+   "w": "se",
+   "desde": 384.86,
+   "hasta": 385.0
+  },
+  {
+   "w": "está",
+   "desde": 385.0,
+   "hasta": 385.14
+  },
+  {
+   "w": "creando",
+   "desde": 385.14,
+   "hasta": 385.66
+  },
+  {
+   "w": "todo",
+   "desde": 385.66,
+   "hasta": 386.22
+  },
+  {
+   "w": "el",
+   "desde": 386.22,
+   "hasta": 386.36
+  },
+  {
+   "w": "código",
+   "desde": 386.36,
+   "hasta": 386.66
+  },
+  {
+   "w": "que",
+   "desde": 386.66,
+   "hasta": 386.98
+  },
+  {
+   "w": "va",
+   "desde": 386.98,
+   "hasta": 387.08
+  },
+  {
+   "w": "a",
+   "desde": 387.08,
+   "hasta": 387.14
+  },
+  {
+   "w": "dar",
+   "desde": 387.14,
+   "hasta": 387.24
+  },
+  {
+   "w": "lugar",
+   "desde": 387.24,
+   "hasta": 387.46
+  },
+  {
+   "w": "a",
+   "desde": 387.46,
+   "hasta": 387.76
+  },
+  {
+   "w": "ese",
+   "desde": 387.76,
+   "hasta": 388.26
+  },
+  {
+   "w": "informe",
+   "desde": 388.26,
+   "hasta": 388.74
+  },
+  {
+   "w": "web.",
+   "desde": 388.74,
+   "hasta": 388.92
+  },
+  {
+   "w": "Y",
+   "desde": 389.08,
+   "hasta": 389.58
+  },
+  {
+   "w": "ese",
+   "desde": 389.58,
+   "hasta": 389.74
+  },
+  {
+   "w": "informe",
+   "desde": 389.74,
+   "hasta": 390.18
+  },
+  {
+   "w": "después",
+   "desde": 390.18,
+   "hasta": 390.36
+  },
+  {
+   "w": "lo",
+   "desde": 390.36,
+   "hasta": 390.54
+  },
+  {
+   "w": "podemos",
+   "desde": 390.54,
+   "hasta": 390.82
+  },
+  {
+   "w": "utilizar,",
+   "desde": 390.82,
+   "hasta": 391.2
+  },
+  {
+   "w": "como",
+   "desde": 391.36,
+   "hasta": 391.52
+  },
+  {
+   "w": "decíamos,",
+   "desde": 391.52,
+   "hasta": 391.84
+  },
+  {
+   "w": "para",
+   "desde": 391.94,
+   "hasta": 392.1
+  },
+  {
+   "w": "hacer",
+   "desde": 392.1,
+   "hasta": 392.36
+  },
+  {
+   "w": "una",
+   "desde": 392.36,
+   "hasta": 392.68
+  },
+  {
+   "w": "presentación",
+   "desde": 392.68,
+   "hasta": 393.46
+  },
+  {
+   "w": "de",
+   "desde": 393.46,
+   "hasta": 394.26
+  },
+  {
+   "w": "la",
+   "desde": 394.26,
+   "hasta": 394.38
+  },
+  {
+   "w": "información",
+   "desde": 394.38,
+   "hasta": 394.86
+  },
+  {
+   "w": "en",
+   "desde": 394.86,
+   "hasta": 395.46
+  },
+  {
+   "w": "formato",
+   "desde": 395.46,
+   "hasta": 395.92
+  },
+  {
+   "w": "visual.",
+   "desde": 395.92,
+   "hasta": 396.24
+  },
+  {
+   "w": "Todos",
+   "desde": 397.18,
+   "hasta": 397.7
+  },
+  {
+   "w": "estos",
+   "desde": 397.7,
+   "hasta": 398.16
+  },
+  {
+   "w": "ejemplos",
+   "desde": 398.16,
+   "hasta": 399.08
+  },
+  {
+   "w": "los",
+   "desde": 399.08,
+   "hasta": 399.2
+  },
+  {
+   "w": "vamos",
+   "desde": 399.2,
+   "hasta": 399.42
+  },
+  {
+   "w": "a",
+   "desde": 399.42,
+   "hasta": 399.6
+  },
+  {
+   "w": "ver",
+   "desde": 399.6,
+   "hasta": 399.82
+  },
+  {
+   "w": "en",
+   "desde": 399.82,
+   "hasta": 400.08
+  },
+  {
+   "w": "el",
+   "desde": 400.08,
+   "hasta": 400.2
+  },
+  {
+   "w": "módulo",
+   "desde": 400.2,
+   "hasta": 400.44
+  },
+  {
+   "w": "2",
+   "desde": 400.44,
+   "hasta": 400.68
+  },
+  {
+   "w": "y",
+   "desde": 400.68,
+   "hasta": 400.88
+  },
+  {
+   "w": "módulo",
+   "desde": 400.88,
+   "hasta": 401.12
+  },
+  {
+   "w": "3.",
+   "desde": 401.12,
+   "hasta": 401.38
+  },
+  {
+   "w": "Otro",
+   "desde": 403.24,
+   "hasta": 403.76
+  },
+  {
+   "w": "ejemplo",
+   "desde": 403.76,
+   "hasta": 404.02
+  },
+  {
+   "w": "que",
+   "desde": 404.02,
+   "hasta": 404.34
+  },
+  {
+   "w": "vamos",
+   "desde": 404.34,
+   "hasta": 404.54
+  },
+  {
+   "w": "a",
+   "desde": 404.54,
+   "hasta": 404.76
+  },
+  {
+   "w": "ver",
+   "desde": 404.76,
+   "hasta": 405.02
+  },
+  {
+   "w": "también",
+   "desde": 405.02,
+   "hasta": 405.68
+  },
+  {
+   "w": "es",
+   "desde": 405.68,
+   "hasta": 406.26
+  },
+  {
+   "w": "la",
+   "desde": 406.26,
+   "hasta": 406.86
+  },
+  {
+   "w": "construcción",
+   "desde": 406.86,
+   "hasta": 407.46
+  },
+  {
+   "w": "de",
+   "desde": 407.46,
+   "hasta": 407.6
+  },
+  {
+   "w": "aplicaciones",
+   "desde": 407.6,
+   "hasta": 408.52
+  },
+  {
+   "w": "para",
+   "desde": 410.54,
+   "hasta": 410.94
+  },
+  {
+   "w": "gestionar",
+   "desde": 410.94,
+   "hasta": 411.34
+  },
+  {
+   "w": "procesos,",
+   "desde": 411.34,
+   "hasta": 412.28
+  },
+  {
+   "w": "¿sí?",
+   "desde": 412.28,
+   "hasta": 412.56
+  },
+  {
+   "w": "Entonces,",
+   "desde": 412.62,
+   "hasta": 413.02
+  },
+  {
+   "w": "imaginemos",
+   "desde": 413.02,
+   "hasta": 413.74
+  },
+  {
+   "w": "que",
+   "desde": 413.74,
+   "hasta": 413.86
+  },
+  {
+   "w": "yo",
+   "desde": 413.86,
+   "hasta": 413.94
+  },
+  {
+   "w": "quiero",
+   "desde": 413.94,
+   "hasta": 414.18
+  },
+  {
+   "w": "crear",
+   "desde": 414.18,
+   "hasta": 414.34
+  },
+  {
+   "w": "una",
+   "desde": 414.34,
+   "hasta": 414.54
+  },
+  {
+   "w": "app",
+   "desde": 414.54,
+   "hasta": 414.74
+  },
+  {
+   "w": "interna",
+   "desde": 414.74,
+   "hasta": 415.28
+  },
+  {
+   "w": "para",
+   "desde": 415.28,
+   "hasta": 415.52
+  },
+  {
+   "w": "utilizar",
+   "desde": 415.52,
+   "hasta": 415.88
+  },
+  {
+   "w": "en",
+   "desde": 415.88,
+   "hasta": 416.06
+  },
+  {
+   "w": "nuestra",
+   "desde": 416.06,
+   "hasta": 416.2
+  },
+  {
+   "w": "empresa.",
+   "desde": 416.2,
+   "hasta": 416.64
+  },
+  {
+   "w": "En",
+   "desde": 417.66,
+   "hasta": 418.06
+  },
+  {
+   "w": "este",
+   "desde": 418.06,
+   "hasta": 418.24
+  },
+  {
+   "w": "caso,",
+   "desde": 418.24,
+   "hasta": 418.66
+  },
+  {
+   "w": "la",
+   "desde": 418.84,
+   "hasta": 420.02
+  },
+  {
+   "w": "IA",
+   "desde": 420.02,
+   "hasta": 420.28
+  },
+  {
+   "w": "va",
+   "desde": 420.28,
+   "hasta": 420.4
+  },
+  {
+   "w": "a",
+   "desde": 420.4,
+   "hasta": 420.48
+  },
+  {
+   "w": "funcionar",
+   "desde": 420.48,
+   "hasta": 420.82
+  },
+  {
+   "w": "como",
+   "desde": 420.82,
+   "hasta": 420.98
+  },
+  {
+   "w": "un",
+   "desde": 420.98,
+   "hasta": 421.08
+  },
+  {
+   "w": "asistente",
+   "desde": 421.08,
+   "hasta": 421.58
+  },
+  {
+   "w": "que",
+   "desde": 421.58,
+   "hasta": 421.76
+  },
+  {
+   "w": "nos",
+   "desde": 421.76,
+   "hasta": 421.88
+  },
+  {
+   "w": "va",
+   "desde": 421.88,
+   "hasta": 421.98
+  },
+  {
+   "w": "a",
+   "desde": 421.98,
+   "hasta": 422.06
+  },
+  {
+   "w": "dar",
+   "desde": 422.06,
+   "hasta": 422.2
+  },
+  {
+   "w": "mayor",
+   "desde": 422.2,
+   "hasta": 422.44
+  },
+  {
+   "w": "velocidad",
+   "desde": 422.44,
+   "hasta": 422.9
+  },
+  {
+   "w": "en",
+   "desde": 422.9,
+   "hasta": 423.14
+  },
+  {
+   "w": "el",
+   "desde": 423.14,
+   "hasta": 423.24
+  },
+  {
+   "w": "desarrollo",
+   "desde": 423.24,
+   "hasta": 423.7
+  },
+  {
+   "w": "de",
+   "desde": 423.7,
+   "hasta": 423.98
+  },
+  {
+   "w": "esa",
+   "desde": 423.98,
+   "hasta": 424.12
+  },
+  {
+   "w": "aplicación,",
+   "desde": 424.12,
+   "hasta": 424.58
+  },
+  {
+   "w": "en",
+   "desde": 424.68,
+   "hasta": 424.8
+  },
+  {
+   "w": "la",
+   "desde": 424.8,
+   "hasta": 424.86
+  },
+  {
+   "w": "creación",
+   "desde": 424.86,
+   "hasta": 425.38
+  },
+  {
+   "w": "de",
+   "desde": 425.38,
+   "hasta": 425.68
+  },
+  {
+   "w": "ese",
+   "desde": 425.68,
+   "hasta": 425.82
+  },
+  {
+   "w": "sistema.",
+   "desde": 425.82,
+   "hasta": 426.76
+  },
+  {
+   "w": "Entonces,",
+   "desde": 427.08,
+   "hasta": 427.48
+  },
+  {
+   "w": "acá",
+   "desde": 427.54,
+   "hasta": 427.7
+  },
+  {
+   "w": "fíjense",
+   "desde": 427.7,
+   "hasta": 428.06
+  },
+  {
+   "w": "que",
+   "desde": 428.06,
+   "hasta": 428.22
+  },
+  {
+   "w": "yo",
+   "desde": 428.22,
+   "hasta": 428.38
+  },
+  {
+   "w": "escribo",
+   "desde": 428.38,
+   "hasta": 428.98
+  },
+  {
+   "w": "con",
+   "desde": 428.98,
+   "hasta": 429.12
+  },
+  {
+   "w": "mis",
+   "desde": 429.12,
+   "hasta": 429.26
+  },
+  {
+   "w": "palabras",
+   "desde": 429.26,
+   "hasta": 429.64
+  },
+  {
+   "w": "un",
+   "desde": 429.64,
+   "hasta": 430.5
+  },
+  {
+   "w": "determinado",
+   "desde": 430.5,
+   "hasta": 431.18
+  },
+  {
+   "w": "proceso.",
+   "desde": 431.18,
+   "hasta": 431.58
+  },
+  {
+   "w": "En",
+   "desde": 431.66,
+   "hasta": 431.88
+  },
+  {
+   "w": "este",
+   "desde": 431.88,
+   "hasta": 432.0
+  },
+  {
+   "w": "caso",
+   "desde": 432.0,
+   "hasta": 432.16
+  },
+  {
+   "w": "es",
+   "desde": 432.16,
+   "hasta": 432.32
+  },
+  {
+   "w": "un",
+   "desde": 432.32,
+   "hasta": 432.36
+  },
+  {
+   "w": "proceso",
+   "desde": 432.36,
+   "hasta": 432.56
+  },
+  {
+   "w": "logístico",
+   "desde": 432.56,
+   "hasta": 433.32
+  },
+  {
+   "w": "de",
+   "desde": 433.32,
+   "hasta": 433.4
+  },
+  {
+   "w": "un",
+   "desde": 433.4,
+   "hasta": 433.48
+  },
+  {
+   "w": "camión",
+   "desde": 433.48,
+   "hasta": 433.9
+  },
+  {
+   "w": "que",
+   "desde": 433.9,
+   "hasta": 434.12
+  },
+  {
+   "w": "transita",
+   "desde": 434.12,
+   "hasta": 434.96
+  },
+  {
+   "w": "adentro",
+   "desde": 434.96,
+   "hasta": 435.72
+  },
+  {
+   "w": "de",
+   "desde": 435.72,
+   "hasta": 435.8
+  },
+  {
+   "w": "una",
+   "desde": 435.8,
+   "hasta": 435.9
+  },
+  {
+   "w": "planta",
+   "desde": 435.9,
+   "hasta": 436.4
+  },
+  {
+   "w": "y",
+   "desde": 436.4,
+   "hasta": 436.52
+  },
+  {
+   "w": "que",
+   "desde": 436.52,
+   "hasta": 436.64
+  },
+  {
+   "w": "tiene",
+   "desde": 436.64,
+   "hasta": 436.96
+  },
+  {
+   "w": "diferentes",
+   "desde": 436.96,
+   "hasta": 437.3
+  },
+  {
+   "w": "interlocutores",
+   "desde": 437.3,
+   "hasta": 438.34
+  },
+  {
+   "w": "que",
+   "desde": 438.34,
+   "hasta": 438.52
+  },
+  {
+   "w": "van",
+   "desde": 438.52,
+   "hasta": 438.64
+  },
+  {
+   "w": "a",
+   "desde": 438.64,
+   "hasta": 438.76
+  },
+  {
+   "w": "operar",
+   "desde": 438.76,
+   "hasta": 439.1
+  },
+  {
+   "w": "ese",
+   "desde": 439.1,
+   "hasta": 439.3
+  },
+  {
+   "w": "sistema.",
+   "desde": 439.3,
+   "hasta": 439.72
+  },
+  {
+   "w": "Entonces,",
+   "desde": 440.26,
+   "hasta": 440.6
+  },
+  {
+   "w": "les",
+   "desde": 440.6,
+   "hasta": 441.4
+  },
+  {
+   "w": "pido",
+   "desde": 441.4,
+   "hasta": 441.92
+  },
+  {
+   "w": "a",
+   "desde": 441.92,
+   "hasta": 442.16
+  },
+  {
+   "w": "la",
+   "desde": 442.16,
+   "hasta": 442.54
+  },
+  {
+   "w": "IA",
+   "desde": 442.54,
+   "hasta": 442.76
+  },
+  {
+   "w": "que",
+   "desde": 442.76,
+   "hasta": 442.98
+  },
+  {
+   "w": "desarrolle",
+   "desde": 442.98,
+   "hasta": 444.16
+  },
+  {
+   "w": "una",
+   "desde": 444.16,
+   "hasta": 444.36
+  },
+  {
+   "w": "aplicación",
+   "desde": 444.36,
+   "hasta": 445.02
+  },
+  {
+   "w": "para",
+   "desde": 445.02,
+   "hasta": 446.08
+  },
+  {
+   "w": "poder",
+   "desde": 446.08,
+   "hasta": 446.42
+  },
+  {
+   "w": "cumplir",
+   "desde": 446.42,
+   "hasta": 446.98
+  },
+  {
+   "w": "con",
+   "desde": 446.98,
+   "hasta": 447.1
+  },
+  {
+   "w": "los",
+   "desde": 447.1,
+   "hasta": 447.22
+  },
+  {
+   "w": "requisitos",
+   "desde": 447.22,
+   "hasta": 447.84
+  },
+  {
+   "w": "que",
+   "desde": 447.84,
+   "hasta": 448.24
+  },
+  {
+   "w": "yo",
+   "desde": 448.24,
+   "hasta": 448.44
+  },
+  {
+   "w": "describí",
+   "desde": 448.44,
+   "hasta": 448.94
+  },
+  {
+   "w": "en",
+   "desde": 448.94,
+   "hasta": 449.06
+  },
+  {
+   "w": "mi",
+   "desde": 449.06,
+   "hasta": 449.18
+  },
+  {
+   "w": "proceso.",
+   "desde": 449.18,
+   "hasta": 449.5
+  },
+  {
+   "w": "Luego",
+   "desde": 450.26,
+   "hasta": 450.94
+  },
+  {
+   "w": "de",
+   "desde": 450.94,
+   "hasta": 451.28
+  },
+  {
+   "w": "estructurar",
+   "desde": 451.28,
+   "hasta": 452.82
+  },
+  {
+   "w": "cierta",
+   "desde": 452.82,
+   "hasta": 453.26
+  },
+  {
+   "w": "información",
+   "desde": 453.26,
+   "hasta": 453.52
+  },
+  {
+   "w": "por",
+   "desde": 453.52,
+   "hasta": 454.0
+  },
+  {
+   "w": "detrás,",
+   "desde": 454.0,
+   "hasta": 454.4
+  },
+  {
+   "w": "vamos",
+   "desde": 454.54,
+   "hasta": 455.0
+  },
+  {
+   "w": "a",
+   "desde": 455.0,
+   "hasta": 455.18
+  },
+  {
+   "w": "ver",
+   "desde": 455.18,
+   "hasta": 455.34
+  },
+  {
+   "w": "que",
+   "desde": 455.34,
+   "hasta": 455.54
+  },
+  {
+   "w": "la",
+   "desde": 455.54,
+   "hasta": 455.84
+  },
+  {
+   "w": "IA",
+   "desde": 455.84,
+   "hasta": 456.04
+  },
+  {
+   "w": "va",
+   "desde": 456.04,
+   "hasta": 456.18
+  },
+  {
+   "w": "a",
+   "desde": 456.18,
+   "hasta": 456.26
+  },
+  {
+   "w": "comenzar",
+   "desde": 456.26,
+   "hasta": 456.66
+  },
+  {
+   "w": "a",
+   "desde": 456.66,
+   "hasta": 456.72
+  },
+  {
+   "w": "generar",
+   "desde": 456.72,
+   "hasta": 457.2
+  },
+  {
+   "w": "código",
+   "desde": 457.2,
+   "hasta": 458.28
+  },
+  {
+   "w": "correspondiente",
+   "desde": 458.28,
+   "hasta": 459.62
+  },
+  {
+   "w": "a",
+   "desde": 459.62,
+   "hasta": 460.12
+  },
+  {
+   "w": "justamente",
+   "desde": 460.12,
+   "hasta": 461.44
+  },
+  {
+   "w": "un",
+   "desde": 461.44,
+   "hasta": 461.76
+  },
+  {
+   "w": "aplicativo",
+   "desde": 461.76,
+   "hasta": 462.44
+  },
+  {
+   "w": "que",
+   "desde": 462.44,
+   "hasta": 463.1
+  },
+  {
+   "w": "después",
+   "desde": 463.1,
+   "hasta": 463.36
+  },
+  {
+   "w": "va",
+   "desde": 463.36,
+   "hasta": 463.84
+  },
+  {
+   "w": "a",
+   "desde": 463.84,
+   "hasta": 463.98
+  },
+  {
+   "w": "poder",
+   "desde": 463.98,
+   "hasta": 464.14
+  },
+  {
+   "w": "ser",
+   "desde": 464.14,
+   "hasta": 464.36
+  },
+  {
+   "w": "un",
+   "desde": 464.36,
+   "hasta": 464.48
+  },
+  {
+   "w": "aplicativo",
+   "desde": 464.48,
+   "hasta": 464.98
+  },
+  {
+   "w": "web",
+   "desde": 464.98,
+   "hasta": 465.26
+  },
+  {
+   "w": "o",
+   "desde": 465.26,
+   "hasta": 465.46
+  },
+  {
+   "w": "un",
+   "desde": 465.46,
+   "hasta": 465.6
+  },
+  {
+   "w": "aplicativo",
+   "desde": 465.6,
+   "hasta": 466.22
+  },
+  {
+   "w": "en",
+   "desde": 466.22,
+   "hasta": 466.64
+  },
+  {
+   "w": "un",
+   "desde": 466.64,
+   "hasta": 467.72
+  },
+  {
+   "w": "escritorio",
+   "desde": 467.72,
+   "hasta": 468.68
+  },
+  {
+   "w": "de",
+   "desde": 468.68,
+   "hasta": 468.76
+  },
+  {
+   "w": "computadora.",
+   "desde": 468.76,
+   "hasta": 469.38
+  },
+  {
+   "w": "Y",
+   "desde": 470.34,
+   "hasta": 470.94
+  },
+  {
+   "w": "luego",
+   "desde": 470.94,
+   "hasta": 471.54
+  },
+  {
+   "w": "de",
+   "desde": 471.54,
+   "hasta": 471.86
+  },
+  {
+   "w": "un",
+   "desde": 471.86,
+   "hasta": 472.12
+  },
+  {
+   "w": "tiempo",
+   "desde": 472.12,
+   "hasta": 472.54
+  },
+  {
+   "w": "va",
+   "desde": 472.54,
+   "hasta": 473.06
+  },
+  {
+   "w": "a",
+   "desde": 473.06,
+   "hasta": 473.26
+  },
+  {
+   "w": "terminar",
+   "desde": 473.26,
+   "hasta": 473.76
+  },
+  {
+   "w": "entregando",
+   "desde": 473.76,
+   "hasta": 475.06
+  },
+  {
+   "w": "una",
+   "desde": 475.06,
+   "hasta": 475.64
+  },
+  {
+   "w": "primera",
+   "desde": 475.64,
+   "hasta": 475.94
+  },
+  {
+   "w": "versión,",
+   "desde": 475.94,
+   "hasta": 476.28
+  },
+  {
+   "w": "en",
+   "desde": 476.32,
+   "hasta": 476.46
+  },
+  {
+   "w": "este",
+   "desde": 476.46,
+   "hasta": 476.56
+  },
+  {
+   "w": "caso,",
+   "desde": 476.56,
+   "hasta": 476.9
+  },
+  {
+   "w": "de",
+   "desde": 476.9,
+   "hasta": 477.06
+  },
+  {
+   "w": "una",
+   "desde": 477.06,
+   "hasta": 477.2
+  },
+  {
+   "w": "aplicación",
+   "desde": 477.2,
+   "hasta": 477.76
+  },
+  {
+   "w": "que",
+   "desde": 477.76,
+   "hasta": 478.42
+  },
+  {
+   "w": "vemos",
+   "desde": 478.42,
+   "hasta": 478.66
+  },
+  {
+   "w": "que",
+   "desde": 478.66,
+   "hasta": 478.86
+  },
+  {
+   "w": "se",
+   "desde": 478.86,
+   "hasta": 479.0
+  },
+  {
+   "w": "usa",
+   "desde": 479.0,
+   "hasta": 479.18
+  },
+  {
+   "w": "para",
+   "desde": 479.18,
+   "hasta": 479.42
+  },
+  {
+   "w": "gestionar",
+   "desde": 479.42,
+   "hasta": 479.86
+  },
+  {
+   "w": "un",
+   "desde": 479.86,
+   "hasta": 480.14
+  },
+  {
+   "w": "proceso",
+   "desde": 480.14,
+   "hasta": 480.48
+  },
+  {
+   "w": "logístico",
+   "desde": 480.48,
+   "hasta": 481.22
+  },
+  {
+   "w": "de",
+   "desde": 481.22,
+   "hasta": 481.48
+  },
+  {
+   "w": "camiones",
+   "desde": 481.48,
+   "hasta": 481.88
+  },
+  {
+   "w": "en",
+   "desde": 481.88,
+   "hasta": 482.06
+  },
+  {
+   "w": "planta",
+   "desde": 482.06,
+   "hasta": 482.58
+  },
+  {
+   "w": "con",
+   "desde": 482.58,
+   "hasta": 483.08
+  },
+  {
+   "w": "distintos",
+   "desde": 483.08,
+   "hasta": 483.58
+  },
+  {
+   "w": "interlocutores",
+   "desde": 483.58,
+   "hasta": 485.3
+  },
+  {
+   "w": "que",
+   "desde": 485.3,
+   "hasta": 485.54
+  },
+  {
+   "w": "van",
+   "desde": 485.54,
+   "hasta": 485.7
+  },
+  {
+   "w": "a",
+   "desde": 485.7,
+   "hasta": 485.84
+  },
+  {
+   "w": "realizar",
+   "desde": 485.84,
+   "hasta": 486.16
+  },
+  {
+   "w": "distintas",
+   "desde": 486.16,
+   "hasta": 486.7
+  },
+  {
+   "w": "tareas,",
+   "desde": 486.7,
+   "hasta": 487.1
+  },
+  {
+   "w": "completar",
+   "desde": 487.1,
+   "hasta": 487.54
+  },
+  {
+   "w": "información,",
+   "desde": 487.54,
+   "hasta": 487.72
+  },
+  {
+   "w": "apretar",
+   "desde": 488.08,
+   "hasta": 488.52
+  },
+  {
+   "w": "botones,",
+   "desde": 488.52,
+   "hasta": 488.96
+  },
+  {
+   "w": "cambiar",
+   "desde": 488.96,
+   "hasta": 489.28
+  },
+  {
+   "w": "estado",
+   "desde": 489.28,
+   "hasta": 489.62
+  },
+  {
+   "w": "de",
+   "desde": 489.62,
+   "hasta": 489.92
+  },
+  {
+   "w": "cosas.",
+   "desde": 489.92,
+   "hasta": 490.22
+  },
+  {
+   "w": "Y",
+   "desde": 491.02,
+   "hasta": 491.62
+  },
+  {
+   "w": "que",
+   "desde": 491.62,
+   "hasta": 491.7
+  },
+  {
+   "w": "es",
+   "desde": 491.7,
+   "hasta": 491.86
+  },
+  {
+   "w": "básicamente",
+   "desde": 491.86,
+   "hasta": 492.16
+  },
+  {
+   "w": "lo",
+   "desde": 492.16,
+   "hasta": 492.54
+  },
+  {
+   "w": "que",
+   "desde": 492.54,
+   "hasta": 492.66
+  },
+  {
+   "w": "se",
+   "desde": 492.66,
+   "hasta": 492.8
+  },
+  {
+   "w": "hace",
+   "desde": 492.8,
+   "hasta": 492.98
+  },
+  {
+   "w": "a",
+   "desde": 492.98,
+   "hasta": 493.12
+  },
+  {
+   "w": "partir",
+   "desde": 493.12,
+   "hasta": 493.36
+  },
+  {
+   "w": "de",
+   "desde": 493.36,
+   "hasta": 493.52
+  },
+  {
+   "w": "un",
+   "desde": 493.52,
+   "hasta": 493.62
+  },
+  {
+   "w": "sistema",
+   "desde": 493.62,
+   "hasta": 493.94
+  },
+  {
+   "w": "de",
+   "desde": 493.94,
+   "hasta": 494.16
+  },
+  {
+   "w": "gestión",
+   "desde": 494.16,
+   "hasta": 494.6
+  },
+  {
+   "w": "más",
+   "desde": 494.6,
+   "hasta": 495.12
+  },
+  {
+   "w": "chico",
+   "desde": 495.12,
+   "hasta": 495.44
+  },
+  {
+   "w": "o",
+   "desde": 495.44,
+   "hasta": 495.5
+  },
+  {
+   "w": "más",
+   "desde": 495.5,
+   "hasta": 495.62
+  },
+  {
+   "w": "grande",
+   "desde": 495.62,
+   "hasta": 495.94
+  },
+  {
+   "w": "en",
+   "desde": 495.94,
+   "hasta": 496.58
+  },
+  {
+   "w": "el",
+   "desde": 496.58,
+   "hasta": 496.66
+  },
+  {
+   "w": "marco",
+   "desde": 496.66,
+   "hasta": 497.06
+  },
+  {
+   "w": "de",
+   "desde": 497.06,
+   "hasta": 497.4
+  },
+  {
+   "w": "una",
+   "desde": 497.4,
+   "hasta": 497.68
+  },
+  {
+   "w": "organización.",
+   "desde": 497.68,
+   "hasta": 498.32
+  },
+  {
+   "w": "Entonces,",
+   "desde": 498.68,
+   "hasta": 499.28
+  },
+  {
+   "w": "en",
+   "desde": 499.3,
+   "hasta": 499.54
+  },
+  {
+   "w": "este",
+   "desde": 499.54,
+   "hasta": 499.66
+  },
+  {
+   "w": "caso,",
+   "desde": 499.66,
+   "hasta": 500.04
+  },
+  {
+   "w": "la",
+   "desde": 500.04,
+   "hasta": 500.2
+  },
+  {
+   "w": "IA",
+   "desde": 500.2,
+   "hasta": 500.52
+  },
+  {
+   "w": "como",
+   "desde": 500.52,
+   "hasta": 500.8
+  },
+  {
+   "w": "copiloto",
+   "desde": 500.8,
+   "hasta": 501.38
+  },
+  {
+   "w": "para",
+   "desde": 501.38,
+   "hasta": 501.78
+  },
+  {
+   "w": "poder",
+   "desde": 501.78,
+   "hasta": 502.08
+  },
+  {
+   "w": "crear",
+   "desde": 502.08,
+   "hasta": 502.42
+  },
+  {
+   "w": "este",
+   "desde": 502.42,
+   "hasta": 502.66
+  },
+  {
+   "w": "tipo",
+   "desde": 502.66,
+   "hasta": 502.9
+  },
+  {
+   "w": "de",
+   "desde": 502.9,
+   "hasta": 503.06
+  },
+  {
+   "w": "soluciones",
+   "desde": 503.06,
+   "hasta": 503.5
+  },
+  {
+   "w": "más",
+   "desde": 503.5,
+   "hasta": 504.16
+  },
+  {
+   "w": "a",
+   "desde": 504.16,
+   "hasta": 504.32
+  },
+  {
+   "w": "medida",
+   "desde": 504.32,
+   "hasta": 504.62
+  },
+  {
+   "w": "de",
+   "desde": 504.62,
+   "hasta": 505.06
+  },
+  {
+   "w": "las",
+   "desde": 505.06,
+   "hasta": 505.24
+  },
+  {
+   "w": "necesidades",
+   "desde": 505.24,
+   "hasta": 505.84
+  },
+  {
+   "w": "que",
+   "desde": 505.84,
+   "hasta": 506.14
+  },
+  {
+   "w": "vemos",
+   "desde": 506.14,
+   "hasta": 506.36
+  },
+  {
+   "w": "en",
+   "desde": 506.36,
+   "hasta": 507.1
+  },
+  {
+   "w": "los",
+   "desde": 507.1,
+   "hasta": 507.9
+  },
+  {
+   "w": "procesos",
+   "desde": 507.9,
+   "hasta": 508.44
+  },
+  {
+   "w": "de",
+   "desde": 508.44,
+   "hasta": 508.48
+  },
+  {
+   "w": "las",
+   "desde": 508.48,
+   "hasta": 508.6
+  },
+  {
+   "w": "compañías.",
+   "desde": 508.6,
+   "hasta": 509.22
+  },
+  {
+   "w": "Con",
+   "desde": 512.52,
+   "hasta": 513.12
+  },
+  {
+   "w": "eso",
+   "desde": 513.12,
+   "hasta": 513.34
+  },
+  {
+   "w": "cerramos",
+   "desde": 513.34,
+   "hasta": 513.84
+  },
+  {
+   "w": "entonces",
+   "desde": 513.84,
+   "hasta": 514.28
+  },
+  {
+   "w": "algunos",
+   "desde": 514.28,
+   "hasta": 515.76
+  },
+  {
+   "w": "ejemplos",
+   "desde": 515.76,
+   "hasta": 516.54
+  },
+  {
+   "w": "de",
+   "desde": 516.54,
+   "hasta": 516.72
+  },
+  {
+   "w": "la",
+   "desde": 516.72,
+   "hasta": 517.06
+  },
+  {
+   "w": "IA",
+   "desde": 517.06,
+   "hasta": 517.42
+  },
+  {
+   "w": "utilizada",
+   "desde": 517.42,
+   "hasta": 518.34
+  },
+  {
+   "w": "como",
+   "desde": 518.34,
+   "hasta": 518.62
+  },
+  {
+   "w": "copiloto",
+   "desde": 518.62,
+   "hasta": 519.18
+  },
+  {
+   "w": "para",
+   "desde": 519.18,
+   "hasta": 519.48
+  },
+  {
+   "w": "ser",
+   "desde": 519.48,
+   "hasta": 519.7
+  },
+  {
+   "w": "nuestro",
+   "desde": 519.7,
+   "hasta": 519.94
+  },
+  {
+   "w": "asistente",
+   "desde": 519.94,
+   "hasta": 520.58
+  },
+  {
+   "w": "personal",
+   "desde": 520.58,
+   "hasta": 520.96
+  },
+  {
+   "w": "en",
+   "desde": 520.96,
+   "hasta": 521.56
+  },
+  {
+   "w": "las",
+   "desde": 521.56,
+   "hasta": 521.66
+  },
+  {
+   "w": "tareas",
+   "desde": 521.66,
+   "hasta": 522.24
+  },
+  {
+   "w": "de",
+   "desde": 522.24,
+   "hasta": 522.62
+  },
+  {
+   "w": "nuestro",
+   "desde": 522.62,
+   "hasta": 522.84
+  },
+  {
+   "w": "día",
+   "desde": 522.84,
+   "hasta": 523.14
+  },
+  {
+   "w": "a",
+   "desde": 523.14,
+   "hasta": 523.28
+  },
+  {
+   "w": "día.",
+   "desde": 523.28,
+   "hasta": 523.42
+  },
+  {
+   "w": "Otra",
+   "desde": 525.55,
+   "hasta": 526.15
+  },
+  {
+   "w": "forma",
+   "desde": 526.15,
+   "hasta": 526.51
+  },
+  {
+   "w": "de",
+   "desde": 526.51,
+   "hasta": 526.65
+  },
+  {
+   "w": "usar",
+   "desde": 526.65,
+   "hasta": 526.79
+  },
+  {
+   "w": "la",
+   "desde": 526.79,
+   "hasta": 527.09
+  },
+  {
+   "w": "IA",
+   "desde": 527.09,
+   "hasta": 527.33
+  },
+  {
+   "w": "dijimos",
+   "desde": 527.33,
+   "hasta": 527.75
+  },
+  {
+   "w": "que",
+   "desde": 527.75,
+   "hasta": 527.93
+  },
+  {
+   "w": "es",
+   "desde": 527.93,
+   "hasta": 528.11
+  },
+  {
+   "w": "para",
+   "desde": 528.11,
+   "hasta": 528.69
+  },
+  {
+   "w": "hacer",
+   "desde": 528.69,
+   "hasta": 529.21
+  },
+  {
+   "w": "automatizaciones",
+   "desde": 529.21,
+   "hasta": 530.19
+  },
+  {
+   "w": "y",
+   "desde": 530.19,
+   "hasta": 530.45
+  },
+  {
+   "w": "agentes.",
+   "desde": 530.45,
+   "hasta": 530.97
+  },
+  {
+   "w": "Vamos",
+   "desde": 530.97,
+   "hasta": 531.35
+  },
+  {
+   "w": "a",
+   "desde": 531.35,
+   "hasta": 531.53
+  },
+  {
+   "w": "ver",
+   "desde": 531.53,
+   "hasta": 531.71
+  },
+  {
+   "w": "algunos",
+   "desde": 531.71,
+   "hasta": 531.93
+  },
+  {
+   "w": "ejemplos.",
+   "desde": 531.93,
+   "hasta": 532.63
+  },
+  {
+   "w": "Por",
+   "desde": 533.47,
+   "hasta": 534.07
+  },
+  {
+   "w": "un",
+   "desde": 534.07,
+   "hasta": 534.23
+  },
+  {
+   "w": "lado,",
+   "desde": 534.23,
+   "hasta": 534.55
+  },
+  {
+   "w": "solemos",
+   "desde": 534.71,
+   "hasta": 535.23
+  },
+  {
+   "w": "tener",
+   "desde": 535.23,
+   "hasta": 535.55
+  },
+  {
+   "w": "el",
+   "desde": 535.55,
+   "hasta": 535.89
+  },
+  {
+   "w": "típico",
+   "desde": 535.89,
+   "hasta": 536.57
+  },
+  {
+   "w": "WhatsApp",
+   "desde": 536.57,
+   "hasta": 537.23
+  },
+  {
+   "w": "conectado",
+   "desde": 537.23,
+   "hasta": 539.07
+  },
+  {
+   "w": "a",
+   "desde": 539.07,
+   "hasta": 539.41
+  },
+  {
+   "w": "una",
+   "desde": 539.41,
+   "hasta": 540.45
+  },
+  {
+   "w": "IA",
+   "desde": 540.45,
+   "hasta": 540.69
+  },
+  {
+   "w": "generativa.",
+   "desde": 540.69,
+   "hasta": 541.35
+  },
+  {
+   "w": "Entonces,",
+   "desde": 541.41,
+   "hasta": 541.77
+  },
+  {
+   "w": "estos",
+   "desde": 541.83,
+   "hasta": 542.11
+  },
+  {
+   "w": "son",
+   "desde": 542.11,
+   "hasta": 542.31
+  },
+  {
+   "w": "chatbots",
+   "desde": 542.31,
+   "hasta": 543.09
+  },
+  {
+   "w": "de",
+   "desde": 543.09,
+   "hasta": 543.37
+  },
+  {
+   "w": "IA",
+   "desde": 543.37,
+   "hasta": 543.57
+  },
+  {
+   "w": "generativa",
+   "desde": 543.57,
+   "hasta": 544.09
+  },
+  {
+   "w": "que",
+   "desde": 544.09,
+   "hasta": 544.33
+  },
+  {
+   "w": "se",
+   "desde": 544.33,
+   "hasta": 544.45
+  },
+  {
+   "w": "pueden",
+   "desde": 544.45,
+   "hasta": 544.75
+  },
+  {
+   "w": "utilizar,",
+   "desde": 544.75,
+   "hasta": 545.41
+  },
+  {
+   "w": "conectar",
+   "desde": 545.77,
+   "hasta": 546.49
+  },
+  {
+   "w": "a",
+   "desde": 546.49,
+   "hasta": 546.57
+  },
+  {
+   "w": "diferentes",
+   "desde": 546.57,
+   "hasta": 546.77
+  },
+  {
+   "w": "canales",
+   "desde": 546.77,
+   "hasta": 547.65
+  },
+  {
+   "w": "conversacionales,",
+   "desde": 547.65,
+   "hasta": 548.71
+  },
+  {
+   "w": "omnicanales,",
+   "desde": 550.47,
+   "hasta": 551.07
+  },
+  {
+   "w": "y",
+   "desde": 551.09,
+   "hasta": 551.73
+  },
+  {
+   "w": "alimentar",
+   "desde": 551.73,
+   "hasta": 553.17
+  },
+  {
+   "w": "ese",
+   "desde": 553.17,
+   "hasta": 553.47
+  },
+  {
+   "w": "chatbot",
+   "desde": 553.47,
+   "hasta": 553.91
+  },
+  {
+   "w": "con",
+   "desde": 553.91,
+   "hasta": 554.09
+  },
+  {
+   "w": "una",
+   "desde": 554.09,
+   "hasta": 554.23
+  },
+  {
+   "w": "base",
+   "desde": 554.23,
+   "hasta": 554.49
+  },
+  {
+   "w": "de",
+   "desde": 554.49,
+   "hasta": 554.59
+  },
+  {
+   "w": "conocimiento",
+   "desde": 554.59,
+   "hasta": 555.15
+  },
+  {
+   "w": "que",
+   "desde": 555.15,
+   "hasta": 555.37
+  },
+  {
+   "w": "va",
+   "desde": 555.37,
+   "hasta": 555.53
+  },
+  {
+   "w": "a",
+   "desde": 555.53,
+   "hasta": 555.59
+  },
+  {
+   "w": "ser",
+   "desde": 555.59,
+   "hasta": 555.71
+  },
+  {
+   "w": "la",
+   "desde": 555.71,
+   "hasta": 555.81
+  },
+  {
+   "w": "que",
+   "desde": 555.81,
+   "hasta": 555.93
+  },
+  {
+   "w": "va",
+   "desde": 555.93,
+   "hasta": 556.07
+  },
+  {
+   "w": "a",
+   "desde": 556.07,
+   "hasta": 556.13
+  },
+  {
+   "w": "regir",
+   "desde": 556.13,
+   "hasta": 556.53
+  },
+  {
+   "w": "la",
+   "desde": 556.53,
+   "hasta": 556.67
+  },
+  {
+   "w": "forma",
+   "desde": 556.67,
+   "hasta": 557.05
+  },
+  {
+   "w": "en",
+   "desde": 557.05,
+   "hasta": 557.53
+  },
+  {
+   "w": "que",
+   "desde": 557.53,
+   "hasta": 557.69
+  },
+  {
+   "w": "ese",
+   "desde": 557.69,
+   "hasta": 558.61
+  },
+  {
+   "w": "asistente",
+   "desde": 558.61,
+   "hasta": 559.11
+  },
+  {
+   "w": "va",
+   "desde": 559.11,
+   "hasta": 559.33
+  },
+  {
+   "w": "a",
+   "desde": 559.33,
+   "hasta": 559.39
+  },
+  {
+   "w": "responder.",
+   "desde": 559.39,
+   "hasta": 559.73
+  },
+  {
+   "w": "Son",
+   "desde": 560.53,
+   "hasta": 560.83
+  },
+  {
+   "w": "muy",
+   "desde": 560.83,
+   "hasta": 561.01
+  },
+  {
+   "w": "utilizados",
+   "desde": 561.01,
+   "hasta": 561.41
+  },
+  {
+   "w": "en",
+   "desde": 561.41,
+   "hasta": 561.55
+  },
+  {
+   "w": "atención",
+   "desde": 561.55,
+   "hasta": 561.85
+  },
+  {
+   "w": "al",
+   "desde": 561.85,
+   "hasta": 562.09
+  },
+  {
+   "w": "público",
+   "desde": 562.09,
+   "hasta": 562.35
+  },
+  {
+   "w": "y",
+   "desde": 562.35,
+   "hasta": 562.75
+  },
+  {
+   "w": "en",
+   "desde": 562.75,
+   "hasta": 562.87
+  },
+  {
+   "w": "procesos",
+   "desde": 562.87,
+   "hasta": 563.37
+  },
+  {
+   "w": "comerciales.",
+   "desde": 563.37,
+   "hasta": 563.71
+  },
+  {
+   "w": "Otro",
+   "desde": 567.92,
+   "hasta": 568.52
+  },
+  {
+   "w": "ejemplo",
+   "desde": 568.52,
+   "hasta": 569.12
+  },
+  {
+   "w": "muy",
+   "desde": 569.12,
+   "hasta": 569.68
+  },
+  {
+   "w": "típico",
+   "desde": 569.68,
+   "hasta": 570.14
+  },
+  {
+   "w": "es",
+   "desde": 570.14,
+   "hasta": 570.42
+  },
+  {
+   "w": "el",
+   "desde": 570.42,
+   "hasta": 570.8
+  },
+  {
+   "w": "del",
+   "desde": 570.8,
+   "hasta": 570.98
+  },
+  {
+   "w": "procesamiento",
+   "desde": 570.98,
+   "hasta": 571.62
+  },
+  {
+   "w": "masivo",
+   "desde": 571.62,
+   "hasta": 572.48
+  },
+  {
+   "w": "de",
+   "desde": 572.48,
+   "hasta": 572.7
+  },
+  {
+   "w": "documentos",
+   "desde": 572.7,
+   "hasta": 573.52
+  },
+  {
+   "w": "con",
+   "desde": 573.52,
+   "hasta": 573.66
+  },
+  {
+   "w": "IA.",
+   "desde": 573.66,
+   "hasta": 573.92
+  },
+  {
+   "w": "Por",
+   "desde": 574.06,
+   "hasta": 574.32
+  },
+  {
+   "w": "ejemplo,",
+   "desde": 574.32,
+   "hasta": 574.74
+  },
+  {
+   "w": "en",
+   "desde": 574.74,
+   "hasta": 574.92
+  },
+  {
+   "w": "este",
+   "desde": 574.92,
+   "hasta": 575.06
+  },
+  {
+   "w": "caso",
+   "desde": 575.06,
+   "hasta": 575.28
+  },
+  {
+   "w": "estamos",
+   "desde": 575.28,
+   "hasta": 575.56
+  },
+  {
+   "w": "viendo",
+   "desde": 575.56,
+   "hasta": 575.84
+  },
+  {
+   "w": "una",
+   "desde": 575.84,
+   "hasta": 576.06
+  },
+  {
+   "w": "constancia",
+   "desde": 576.06,
+   "hasta": 576.74
+  },
+  {
+   "w": "de",
+   "desde": 576.74,
+   "hasta": 576.92
+  },
+  {
+   "w": "inscripción",
+   "desde": 576.92,
+   "hasta": 577.6
+  },
+  {
+   "w": "en",
+   "desde": 577.6,
+   "hasta": 577.76
+  },
+  {
+   "w": "ARCA",
+   "desde": 577.76,
+   "hasta": 578.0
+  },
+  {
+   "w": "en",
+   "desde": 578.0,
+   "hasta": 578.3
+  },
+  {
+   "w": "donde",
+   "desde": 578.3,
+   "hasta": 579.1
+  },
+  {
+   "w": "se",
+   "desde": 579.1,
+   "hasta": 579.32
+  },
+  {
+   "w": "necesita",
+   "desde": 579.32,
+   "hasta": 579.68
+  },
+  {
+   "w": "obtener",
+   "desde": 579.68,
+   "hasta": 580.2
+  },
+  {
+   "w": "una",
+   "desde": 580.2,
+   "hasta": 580.4
+  },
+  {
+   "w": "serie",
+   "desde": 580.4,
+   "hasta": 580.7
+  },
+  {
+   "w": "de",
+   "desde": 580.7,
+   "hasta": 581.1
+  },
+  {
+   "w": "datos",
+   "desde": 581.1,
+   "hasta": 581.48
+  },
+  {
+   "w": "que",
+   "desde": 581.48,
+   "hasta": 581.88
+  },
+  {
+   "w": "están",
+   "desde": 581.88,
+   "hasta": 582.12
+  },
+  {
+   "w": "dentro",
+   "desde": 582.12,
+   "hasta": 582.62
+  },
+  {
+   "w": "de",
+   "desde": 582.62,
+   "hasta": 583.14
+  },
+  {
+   "w": "ese",
+   "desde": 583.14,
+   "hasta": 584.12
+  },
+  {
+   "w": "documento",
+   "desde": 584.12,
+   "hasta": 585.08
+  },
+  {
+   "w": "como",
+   "desde": 585.08,
+   "hasta": 585.9
+  },
+  {
+   "w": "el",
+   "desde": 585.9,
+   "hasta": 586.42
+  },
+  {
+   "w": "CUID,",
+   "desde": 586.42,
+   "hasta": 586.68
+  },
+  {
+   "w": "la",
+   "desde": 586.84,
+   "hasta": 587.06
+  },
+  {
+   "w": "razón",
+   "desde": 587.06,
+   "hasta": 587.3
+  },
+  {
+   "w": "social",
+   "desde": 587.3,
+   "hasta": 587.6
+  },
+  {
+   "w": "de",
+   "desde": 587.6,
+   "hasta": 587.78
+  },
+  {
+   "w": "una",
+   "desde": 587.78,
+   "hasta": 587.86
+  },
+  {
+   "w": "empresa,",
+   "desde": 587.86,
+   "hasta": 588.18
+  },
+  {
+   "w": "información",
+   "desde": 588.4,
+   "hasta": 589.14
+  },
+  {
+   "w": "de",
+   "desde": 589.14,
+   "hasta": 589.98
+  },
+  {
+   "w": "dirección,",
+   "desde": 589.98,
+   "hasta": 590.76
+  },
+  {
+   "w": "etc.",
+   "desde": 590.88,
+   "hasta": 591.2
+  },
+  {
+   "w": "Y",
+   "desde": 592.42,
+   "hasta": 593.02
+  },
+  {
+   "w": "podemos",
+   "desde": 593.02,
+   "hasta": 593.3
+  },
+  {
+   "w": "entrenar",
+   "desde": 593.3,
+   "hasta": 594.08
+  },
+  {
+   "w": "o",
+   "desde": 594.08,
+   "hasta": 594.4
+  },
+  {
+   "w": "preparar",
+   "desde": 594.4,
+   "hasta": 594.92
+  },
+  {
+   "w": "una",
+   "desde": 594.92,
+   "hasta": 595.06
+  },
+  {
+   "w": "IA",
+   "desde": 595.06,
+   "hasta": 595.32
+  },
+  {
+   "w": "para",
+   "desde": 595.32,
+   "hasta": 595.54
+  },
+  {
+   "w": "que",
+   "desde": 595.54,
+   "hasta": 595.72
+  },
+  {
+   "w": "obtenga",
+   "desde": 595.72,
+   "hasta": 596.1
+  },
+  {
+   "w": "esa",
+   "desde": 596.12,
+   "hasta": 596.36
+  },
+  {
+   "w": "información",
+   "desde": 596.36,
+   "hasta": 596.98
+  },
+  {
+   "w": "de",
+   "desde": 596.98,
+   "hasta": 598.28
+  },
+  {
+   "w": "forma",
+   "desde": 598.28,
+   "hasta": 598.52
+  },
+  {
+   "w": "automatizada",
+   "desde": 598.52,
+   "hasta": 599.18
+  },
+  {
+   "w": "procesando",
+   "desde": 599.18,
+   "hasta": 599.92
+  },
+  {
+   "w": "uno",
+   "desde": 599.92,
+   "hasta": 600.32
+  },
+  {
+   "w": "o",
+   "desde": 600.32,
+   "hasta": 600.48
+  },
+  {
+   "w": "muchos",
+   "desde": 600.48,
+   "hasta": 600.74
+  },
+  {
+   "w": "documentos.",
+   "desde": 600.74,
+   "hasta": 601.64
+  },
+  {
+   "w": "Y",
+   "desde": 602.44,
+   "hasta": 602.92
+  },
+  {
+   "w": "esto",
+   "desde": 602.92,
+   "hasta": 603.18
+  },
+  {
+   "w": "ha",
+   "desde": 603.18,
+   "hasta": 603.4
+  },
+  {
+   "w": "ido",
+   "desde": 603.4,
+   "hasta": 603.58
+  },
+  {
+   "w": "avanzando",
+   "desde": 603.58,
+   "hasta": 604.08
+  },
+  {
+   "w": "a",
+   "desde": 604.08,
+   "hasta": 604.12
+  },
+  {
+   "w": "lo",
+   "desde": 604.12,
+   "hasta": 604.18
+  },
+  {
+   "w": "largo",
+   "desde": 604.18,
+   "hasta": 604.4
+  },
+  {
+   "w": "del",
+   "desde": 604.4,
+   "hasta": 604.52
+  },
+  {
+   "w": "tiempo.",
+   "desde": 604.52,
+   "hasta": 604.78
+  },
+  {
+   "w": "Antes",
+   "desde": 604.84,
+   "hasta": 605.06
+  },
+  {
+   "w": "se",
+   "desde": 605.06,
+   "hasta": 605.22
+  },
+  {
+   "w": "necesitaba,",
+   "desde": 605.22,
+   "hasta": 605.82
+  },
+  {
+   "w": "como",
+   "desde": 605.84,
+   "hasta": 606.14
+  },
+  {
+   "w": "decíamos,",
+   "desde": 606.14,
+   "hasta": 606.48
+  },
+  {
+   "w": "entrenar",
+   "desde": 606.52,
+   "hasta": 606.98
+  },
+  {
+   "w": "un",
+   "desde": 606.98,
+   "hasta": 607.12
+  },
+  {
+   "w": "modelo",
+   "desde": 607.12,
+   "hasta": 607.36
+  },
+  {
+   "w": "único",
+   "desde": 607.36,
+   "hasta": 607.76
+  },
+  {
+   "w": "para",
+   "desde": 607.76,
+   "hasta": 608.14
+  },
+  {
+   "w": "cada",
+   "desde": 608.14,
+   "hasta": 608.38
+  },
+  {
+   "w": "uno",
+   "desde": 608.38,
+   "hasta": 608.68
+  },
+  {
+   "w": "de",
+   "desde": 608.68,
+   "hasta": 608.78
+  },
+  {
+   "w": "los",
+   "desde": 608.78,
+   "hasta": 608.88
+  },
+  {
+   "w": "formatos",
+   "desde": 608.88,
+   "hasta": 609.76
+  },
+  {
+   "w": "del",
+   "desde": 609.76,
+   "hasta": 610.2
+  },
+  {
+   "w": "archivo",
+   "desde": 610.2,
+   "hasta": 611.22
+  },
+  {
+   "w": "correspondiente.",
+   "desde": 611.22,
+   "hasta": 612.02
+  },
+  {
+   "w": "Hoy",
+   "desde": 612.16,
+   "hasta": 612.64
+  },
+  {
+   "w": "en",
+   "desde": 612.64,
+   "hasta": 612.76
+  },
+  {
+   "w": "día",
+   "desde": 612.76,
+   "hasta": 613.0
+  },
+  {
+   "w": "ya",
+   "desde": 613.0,
+   "hasta": 613.18
+  },
+  {
+   "w": "hay",
+   "desde": 613.18,
+   "hasta": 613.42
+  },
+  {
+   "w": "modelos",
+   "desde": 613.42,
+   "hasta": 613.84
+  },
+  {
+   "w": "que",
+   "desde": 613.84,
+   "hasta": 613.96
+  },
+  {
+   "w": "permiten",
+   "desde": 613.96,
+   "hasta": 614.44
+  },
+  {
+   "w": "procesar",
+   "desde": 614.44,
+   "hasta": 615.02
+  },
+  {
+   "w": "cualquier",
+   "desde": 615.02,
+   "hasta": 615.76
+  },
+  {
+   "w": "tipo",
+   "desde": 615.76,
+   "hasta": 616.14
+  },
+  {
+   "w": "de",
+   "desde": 616.14,
+   "hasta": 616.34
+  },
+  {
+   "w": "archivo",
+   "desde": 616.34,
+   "hasta": 616.78
+  },
+  {
+   "w": "independientemente",
+   "desde": 616.78,
+   "hasta": 617.64
+  },
+  {
+   "w": "de",
+   "desde": 617.64,
+   "hasta": 617.88
+  },
+  {
+   "w": "la",
+   "desde": 617.88,
+   "hasta": 618.34
+  },
+  {
+   "w": "estructura",
+   "desde": 618.34,
+   "hasta": 618.92
+  },
+  {
+   "w": "en",
+   "desde": 618.92,
+   "hasta": 619.02
+  },
+  {
+   "w": "que",
+   "desde": 619.02,
+   "hasta": 619.14
+  },
+  {
+   "w": "esté",
+   "desde": 619.14,
+   "hasta": 619.28
+  },
+  {
+   "w": "armada",
+   "desde": 619.28,
+   "hasta": 619.8
+  },
+  {
+   "w": "la",
+   "desde": 619.8,
+   "hasta": 619.94
+  },
+  {
+   "w": "información",
+   "desde": 619.94,
+   "hasta": 620.24
+  },
+  {
+   "w": "porque",
+   "desde": 620.74,
+   "hasta": 621.22
+  },
+  {
+   "w": "va",
+   "desde": 621.22,
+   "hasta": 621.44
+  },
+  {
+   "w": "a",
+   "desde": 621.44,
+   "hasta": 621.48
+  },
+  {
+   "w": "tener",
+   "desde": 621.48,
+   "hasta": 621.64
+  },
+  {
+   "w": "la",
+   "desde": 621.64,
+   "hasta": 621.82
+  },
+  {
+   "w": "inteligencia",
+   "desde": 621.82,
+   "hasta": 622.34
+  },
+  {
+   "w": "de",
+   "desde": 622.34,
+   "hasta": 622.5
+  },
+  {
+   "w": "detectar",
+   "desde": 622.5,
+   "hasta": 623.24
+  },
+  {
+   "w": "dónde",
+   "desde": 623.24,
+   "hasta": 624.16
+  },
+  {
+   "w": "está",
+   "desde": 624.16,
+   "hasta": 624.46
+  },
+  {
+   "w": "ese",
+   "desde": 624.46,
+   "hasta": 624.64
+  },
+  {
+   "w": "dato",
+   "desde": 624.64,
+   "hasta": 624.88
+  },
+  {
+   "w": "que",
+   "desde": 624.88,
+   "hasta": 625.1
+  },
+  {
+   "w": "está",
+   "desde": 625.1,
+   "hasta": 625.22
+  },
+  {
+   "w": "buscando,",
+   "desde": 625.22,
+   "hasta": 625.54
+  },
+  {
+   "w": "Por",
+   "desde": 626.12,
+   "hasta": 626.38
+  },
+  {
+   "w": "ejemplo,",
+   "desde": 626.38,
+   "hasta": 626.38
+  },
+  {
+   "w": "el",
+   "desde": 626.38,
+   "hasta": 626.58
+  },
+  {
+   "w": "quit.",
+   "desde": 626.58,
+   "hasta": 626.84
+  },
+  {
+   "w": "Vamos",
+   "desde": 627.2,
+   "hasta": 627.76
+  },
+  {
+   "w": "a",
+   "desde": 627.76,
+   "hasta": 627.96
+  },
+  {
+   "w": "ver",
+   "desde": 627.96,
+   "hasta": 628.14
+  },
+  {
+   "w": "acá",
+   "desde": 628.14,
+   "hasta": 628.32
+  },
+  {
+   "w": "un",
+   "desde": 628.32,
+   "hasta": 628.6
+  },
+  {
+   "w": "ejemplo",
+   "desde": 628.6,
+   "hasta": 629.04
+  },
+  {
+   "w": "en",
+   "desde": 629.04,
+   "hasta": 629.46
+  },
+  {
+   "w": "formato",
+   "desde": 629.46,
+   "hasta": 629.8
+  },
+  {
+   "w": "de",
+   "desde": 629.8,
+   "hasta": 629.88
+  },
+  {
+   "w": "video.",
+   "desde": 629.88,
+   "hasta": 630.14
+  },
+  {
+   "w": "Tenemos",
+   "desde": 630.2,
+   "hasta": 630.4
+  },
+  {
+   "w": "una",
+   "desde": 630.4,
+   "hasta": 630.68
+  },
+  {
+   "w": "factura",
+   "desde": 630.68,
+   "hasta": 631.22
+  },
+  {
+   "w": "con",
+   "desde": 631.22,
+   "hasta": 631.34
+  },
+  {
+   "w": "determinada",
+   "desde": 631.34,
+   "hasta": 631.86
+  },
+  {
+   "w": "información",
+   "desde": 631.86,
+   "hasta": 632.08
+  },
+  {
+   "w": "de",
+   "desde": 632.08,
+   "hasta": 633.08
+  },
+  {
+   "w": "la",
+   "desde": 633.08,
+   "hasta": 633.18
+  },
+  {
+   "w": "cual",
+   "desde": 633.18,
+   "hasta": 633.4
+  },
+  {
+   "w": "queremos",
+   "desde": 633.4,
+   "hasta": 633.64
+  },
+  {
+   "w": "que",
+   "desde": 633.64,
+   "hasta": 633.98
+  },
+  {
+   "w": "nuestro",
+   "desde": 633.98,
+   "hasta": 634.9
+  },
+  {
+   "w": "agente",
+   "desde": 634.9,
+   "hasta": 635.52
+  },
+  {
+   "w": "extraiga",
+   "desde": 635.52,
+   "hasta": 636.5
+  },
+  {
+   "w": "determinadas",
+   "desde": 636.5,
+   "hasta": 637.3
+  },
+  {
+   "w": "informaciones.",
+   "desde": 637.3,
+   "hasta": 637.88
+  },
+  {
+   "w": "Emisor,",
+   "desde": 637.88,
+   "hasta": 638.42
+  },
+  {
+   "w": "cliente,",
+   "desde": 638.42,
+   "hasta": 639.02
+  },
+  {
+   "w": "monto,",
+   "desde": 639.02,
+   "hasta": 639.36
+  },
+  {
+   "w": "moneda,",
+   "desde": 639.46,
+   "hasta": 639.92
+  },
+  {
+   "w": "etc.",
+   "desde": 639.98,
+   "hasta": 640.28
+  },
+  {
+   "w": "Entonces",
+   "desde": 640.28,
+   "hasta": 641.06
+  },
+  {
+   "w": "vamos",
+   "desde": 641.06,
+   "hasta": 641.8
+  },
+  {
+   "w": "a",
+   "desde": 641.8,
+   "hasta": 642.0
+  },
+  {
+   "w": "ver",
+   "desde": 642.0,
+   "hasta": 642.22
+  },
+  {
+   "w": "cómo",
+   "desde": 642.22,
+   "hasta": 642.54
+  },
+  {
+   "w": "se",
+   "desde": 642.54,
+   "hasta": 642.7
+  },
+  {
+   "w": "ejecuta",
+   "desde": 642.7,
+   "hasta": 643.24
+  },
+  {
+   "w": "en",
+   "desde": 643.24,
+   "hasta": 643.28
+  },
+  {
+   "w": "la",
+   "desde": 643.28,
+   "hasta": 643.36
+  },
+  {
+   "w": "práctica.",
+   "desde": 643.36,
+   "hasta": 643.94
+  },
+  {
+   "w": "En",
+   "desde": 645.22,
+   "hasta": 645.76
+  },
+  {
+   "w": "este",
+   "desde": 645.76,
+   "hasta": 645.94
+  },
+  {
+   "w": "caso",
+   "desde": 645.94,
+   "hasta": 646.26
+  },
+  {
+   "w": "es",
+   "desde": 646.26,
+   "hasta": 646.46
+  },
+  {
+   "w": "un",
+   "desde": 646.46,
+   "hasta": 646.68
+  },
+  {
+   "w": "workflow",
+   "desde": 646.68,
+   "hasta": 646.96
+  },
+  {
+   "w": "que",
+   "desde": 646.96,
+   "hasta": 647.28
+  },
+  {
+   "w": "contiene",
+   "desde": 647.28,
+   "hasta": 647.64
+  },
+  {
+   "w": "un",
+   "desde": 647.64,
+   "hasta": 647.76
+  },
+  {
+   "w": "agente",
+   "desde": 647.76,
+   "hasta": 648.12
+  },
+  {
+   "w": "de",
+   "desde": 648.12,
+   "hasta": 648.18
+  },
+  {
+   "w": "IA",
+   "desde": 648.18,
+   "hasta": 648.44
+  },
+  {
+   "w": "donde",
+   "desde": 648.44,
+   "hasta": 648.74
+  },
+  {
+   "w": "va",
+   "desde": 648.74,
+   "hasta": 649.0
+  },
+  {
+   "w": "a",
+   "desde": 649.0,
+   "hasta": 649.08
+  },
+  {
+   "w": "recibir",
+   "desde": 649.08,
+   "hasta": 649.36
+  },
+  {
+   "w": "como",
+   "desde": 649.36,
+   "hasta": 649.76
+  },
+  {
+   "w": "input",
+   "desde": 649.76,
+   "hasta": 650.16
+  },
+  {
+   "w": "del",
+   "desde": 650.16,
+   "hasta": 650.36
+  },
+  {
+   "w": "proceso",
+   "desde": 650.36,
+   "hasta": 650.7
+  },
+  {
+   "w": "un",
+   "desde": 650.7,
+   "hasta": 651.72
+  },
+  {
+   "w": "documento",
+   "desde": 651.72,
+   "hasta": 652.52
+  },
+  {
+   "w": "con",
+   "desde": 652.52,
+   "hasta": 653.38
+  },
+  {
+   "w": "la",
+   "desde": 653.38,
+   "hasta": 653.54
+  },
+  {
+   "w": "factura.",
+   "desde": 653.54,
+   "hasta": 654.06
+  },
+  {
+   "w": "Va",
+   "desde": 654.28,
+   "hasta": 654.82
+  },
+  {
+   "w": "a",
+   "desde": 654.82,
+   "hasta": 654.94
+  },
+  {
+   "w": "realizar",
+   "desde": 654.94,
+   "hasta": 655.2
+  },
+  {
+   "w": "una",
+   "desde": 655.2,
+   "hasta": 655.5
+  },
+  {
+   "w": "serie",
+   "desde": 655.5,
+   "hasta": 655.74
+  },
+  {
+   "w": "de",
+   "desde": 655.74,
+   "hasta": 655.88
+  },
+  {
+   "w": "pasos,",
+   "desde": 655.88,
+   "hasta": 656.34
+  },
+  {
+   "w": "lo",
+   "desde": 656.34,
+   "hasta": 656.98
+  },
+  {
+   "w": "va",
+   "desde": 656.98,
+   "hasta": 657.16
+  },
+  {
+   "w": "a",
+   "desde": 657.16,
+   "hasta": 657.22
+  },
+  {
+   "w": "procesar",
+   "desde": 657.22,
+   "hasta": 657.8
+  },
+  {
+   "w": "y",
+   "desde": 657.8,
+   "hasta": 658.0
+  },
+  {
+   "w": "como",
+   "desde": 658.0,
+   "hasta": 658.24
+  },
+  {
+   "w": "salida",
+   "desde": 658.24,
+   "hasta": 658.7
+  },
+  {
+   "w": "va",
+   "desde": 658.7,
+   "hasta": 658.94
+  },
+  {
+   "w": "a",
+   "desde": 658.94,
+   "hasta": 659.18
+  },
+  {
+   "w": "extraer",
+   "desde": 659.18,
+   "hasta": 659.96
+  },
+  {
+   "w": "la",
+   "desde": 659.96,
+   "hasta": 660.64
+  },
+  {
+   "w": "información",
+   "desde": 660.64,
+   "hasta": 660.84
+  },
+  {
+   "w": "correspondiente",
+   "desde": 660.84,
+   "hasta": 661.8
+  },
+  {
+   "w": "e",
+   "desde": 661.8,
+   "hasta": 662.08
+  },
+  {
+   "w": "incrustarla",
+   "desde": 662.08,
+   "hasta": 663.02
+  },
+  {
+   "w": "dentro",
+   "desde": 663.02,
+   "hasta": 663.32
+  },
+  {
+   "w": "de",
+   "desde": 663.32,
+   "hasta": 663.44
+  },
+  {
+   "w": "una",
+   "desde": 663.44,
+   "hasta": 663.58
+  },
+  {
+   "w": "tabla.",
+   "desde": 663.58,
+   "hasta": 663.98
+  },
+  {
+   "w": "En",
+   "desde": 664.16,
+   "hasta": 664.7
+  },
+  {
+   "w": "este",
+   "desde": 664.7,
+   "hasta": 664.86
+  },
+  {
+   "w": "ejemplo",
+   "desde": 664.86,
+   "hasta": 665.18
+  },
+  {
+   "w": "de",
+   "desde": 665.18,
+   "hasta": 665.48
+  },
+  {
+   "w": "Google",
+   "desde": 665.48,
+   "hasta": 665.78
+  },
+  {
+   "w": "Sheet",
+   "desde": 665.78,
+   "hasta": 666.1
+  },
+  {
+   "w": "para",
+   "desde": 666.1,
+   "hasta": 666.42
+  },
+  {
+   "w": "hacer",
+   "desde": 666.42,
+   "hasta": 666.64
+  },
+  {
+   "w": "algo",
+   "desde": 666.64,
+   "hasta": 666.8
+  },
+  {
+   "w": "bien",
+   "desde": 666.8,
+   "hasta": 667.0
+  },
+  {
+   "w": "simple,",
+   "desde": 667.0,
+   "hasta": 667.34
+  },
+  {
+   "w": "pero",
+   "desde": 667.4,
+   "hasta": 667.58
+  },
+  {
+   "w": "puede",
+   "desde": 667.58,
+   "hasta": 667.8
+  },
+  {
+   "w": "ser",
+   "desde": 667.8,
+   "hasta": 668.06
+  },
+  {
+   "w": "incluso",
+   "desde": 668.06,
+   "hasta": 668.46
+  },
+  {
+   "w": "un",
+   "desde": 668.46,
+   "hasta": 668.64
+  },
+  {
+   "w": "proceso",
+   "desde": 668.64,
+   "hasta": 668.88
+  },
+  {
+   "w": "más",
+   "desde": 668.88,
+   "hasta": 669.1
+  },
+  {
+   "w": "complejo.",
+   "desde": 669.1,
+   "hasta": 669.64
+  },
+  {
+   "w": "Vemos",
+   "desde": 670.28,
+   "hasta": 670.46
+  },
+  {
+   "w": "entonces",
+   "desde": 670.46,
+   "hasta": 670.72
+  },
+  {
+   "w": "que",
+   "desde": 670.72,
+   "hasta": 671.04
+  },
+  {
+   "w": "se",
+   "desde": 671.04,
+   "hasta": 671.3
+  },
+  {
+   "w": "creó",
+   "desde": 671.3,
+   "hasta": 671.86
+  },
+  {
+   "w": "una",
+   "desde": 671.86,
+   "hasta": 672.84
+  },
+  {
+   "w": "segunda",
+   "desde": 672.84,
+   "hasta": 673.14
+  },
+  {
+   "w": "línea",
+   "desde": 673.14,
+   "hasta": 673.48
+  },
+  {
+   "w": "que",
+   "desde": 673.48,
+   "hasta": 673.88
+  },
+  {
+   "w": "antes",
+   "desde": 673.88,
+   "hasta": 674.12
+  },
+  {
+   "w": "no",
+   "desde": 674.12,
+   "hasta": 674.3
+  },
+  {
+   "w": "estaba",
+   "desde": 674.3,
+   "hasta": 674.52
+  },
+  {
+   "w": "disponible",
+   "desde": 674.52,
+   "hasta": 675.12
+  },
+  {
+   "w": "y",
+   "desde": 675.12,
+   "hasta": 675.34
+  },
+  {
+   "w": "que",
+   "desde": 675.34,
+   "hasta": 675.42
+  },
+  {
+   "w": "fue",
+   "desde": 675.42,
+   "hasta": 675.62
+  },
+  {
+   "w": "a",
+   "desde": 675.62,
+   "hasta": 675.76
+  },
+  {
+   "w": "partir",
+   "desde": 675.76,
+   "hasta": 676.02
+  },
+  {
+   "w": "del",
+   "desde": 676.02,
+   "hasta": 676.24
+  },
+  {
+   "w": "procesamiento",
+   "desde": 676.24,
+   "hasta": 677.16
+  },
+  {
+   "w": "de",
+   "desde": 677.16,
+   "hasta": 677.94
+  },
+  {
+   "w": "la",
+   "desde": 677.94,
+   "hasta": 678.8
+  },
+  {
+   "w": "factura",
+   "desde": 678.8,
+   "hasta": 679.3
+  },
+  {
+   "w": "que",
+   "desde": 679.3,
+   "hasta": 679.44
+  },
+  {
+   "w": "estamos",
+   "desde": 679.44,
+   "hasta": 679.62
+  },
+  {
+   "w": "viendo",
+   "desde": 679.62,
+   "hasta": 679.86
+  },
+  {
+   "w": "en",
+   "desde": 679.86,
+   "hasta": 680.02
+  },
+  {
+   "w": "el",
+   "desde": 680.02,
+   "hasta": 680.06
+  },
+  {
+   "w": "lado",
+   "desde": 680.06,
+   "hasta": 680.2
+  },
+  {
+   "w": "izquierdo",
+   "desde": 680.2,
+   "hasta": 680.58
+  },
+  {
+   "w": "de",
+   "desde": 680.58,
+   "hasta": 680.66
+  },
+  {
+   "w": "pantalla.",
+   "desde": 680.66,
+   "hasta": 680.88
+  },
+  {
+   "w": "Un",
+   "desde": 681.52,
+   "hasta": 682.12
+  },
+  {
+   "w": "caso",
+   "desde": 682.12,
+   "hasta": 682.32
+  },
+  {
+   "w": "muy",
+   "desde": 682.32,
+   "hasta": 682.58
+  },
+  {
+   "w": "típico",
+   "desde": 682.58,
+   "hasta": 683.02
+  },
+  {
+   "w": "en",
+   "desde": 683.02,
+   "hasta": 683.1
+  },
+  {
+   "w": "procesos",
+   "desde": 683.1,
+   "hasta": 683.5
+  },
+  {
+   "w": "administrativos",
+   "desde": 683.5,
+   "hasta": 684.26
+  },
+  {
+   "w": "de",
+   "desde": 684.26,
+   "hasta": 684.52
+  },
+  {
+   "w": "diferentes",
+   "desde": 684.52,
+   "hasta": 685.12
+  },
+  {
+   "w": "compañías",
+   "desde": 685.12,
+   "hasta": 686.04
+  },
+  {
+   "w": "de",
+   "desde": 686.04,
+   "hasta": 686.16
+  },
+  {
+   "w": "servicio",
+   "desde": 686.16,
+   "hasta": 686.46
+  },
+  {
+   "w": "y",
+   "desde": 686.46,
+   "hasta": 686.9
+  },
+  {
+   "w": "de",
+   "desde": 686.9,
+   "hasta": 687.0
+  },
+  {
+   "w": "industria.",
+   "desde": 687.0,
+   "hasta": 687.46
+  },
+  {
+   "w": "Otro",
+   "desde": 689.68,
+   "hasta": 690.28
+  },
+  {
+   "w": "ejemplo,",
+   "desde": 690.28,
+   "hasta": 690.68
+  },
+  {
+   "w": "quizá",
+   "desde": 690.76,
+   "hasta": 692.1
+  },
+  {
+   "w": "más",
+   "desde": 692.1,
+   "hasta": 692.56
+  },
+  {
+   "w": "robusto",
+   "desde": 692.56,
+   "hasta": 693.32
+  },
+  {
+   "w": "todavía,",
+   "desde": 693.32,
+   "hasta": 693.6
+  },
+  {
+   "w": "tiene",
+   "desde": 693.88,
+   "hasta": 694.36
+  },
+  {
+   "w": "que",
+   "desde": 694.36,
+   "hasta": 694.56
+  },
+  {
+   "w": "ver",
+   "desde": 694.56,
+   "hasta": 694.76
+  },
+  {
+   "w": "con",
+   "desde": 694.76,
+   "hasta": 695.1
+  },
+  {
+   "w": "agentes",
+   "desde": 695.1,
+   "hasta": 696.44
+  },
+  {
+   "w": "autónomos",
+   "desde": 696.44,
+   "hasta": 698.08
+  },
+  {
+   "w": "que",
+   "desde": 698.08,
+   "hasta": 698.42
+  },
+  {
+   "w": "replican",
+   "desde": 698.42,
+   "hasta": 699.22
+  },
+  {
+   "w": "la",
+   "desde": 699.22,
+   "hasta": 700.06
+  },
+  {
+   "w": "tarea",
+   "desde": 700.06,
+   "hasta": 700.54
+  },
+  {
+   "w": "que",
+   "desde": 700.54,
+   "hasta": 700.72
+  },
+  {
+   "w": "realiza",
+   "desde": 700.72,
+   "hasta": 701.18
+  },
+  {
+   "w": "Google.",
+   "desde": 701.18,
+   "hasta": 701.48
+  },
+  {
+   "w": "Un",
+   "desde": 701.98,
+   "hasta": 702.42
+  },
+  {
+   "w": "proceso",
+   "desde": 702.42,
+   "hasta": 703.12
+  },
+  {
+   "w": "manual",
+   "desde": 703.12,
+   "hasta": 703.72
+  },
+  {
+   "w": "en",
+   "desde": 703.72,
+   "hasta": 704.36
+  },
+  {
+   "w": "el",
+   "desde": 704.36,
+   "hasta": 704.54
+  },
+  {
+   "w": "escritorio",
+   "desde": 704.54,
+   "hasta": 705.08
+  },
+  {
+   "w": "de",
+   "desde": 705.08,
+   "hasta": 705.18
+  },
+  {
+   "w": "la",
+   "desde": 705.18,
+   "hasta": 705.28
+  },
+  {
+   "w": "computadora.",
+   "desde": 705.28,
+   "hasta": 705.9
+  },
+  {
+   "w": "Por",
+   "desde": 706.04,
+   "hasta": 706.14
+  },
+  {
+   "w": "ejemplo,",
+   "desde": 706.14,
+   "hasta": 706.48
+  },
+  {
+   "w": "en",
+   "desde": 706.48,
+   "hasta": 706.62
+  },
+  {
+   "w": "este",
+   "desde": 706.62,
+   "hasta": 706.7
+  },
+  {
+   "w": "caso,",
+   "desde": 706.7,
+   "hasta": 707.04
+  },
+  {
+   "w": "entrar",
+   "desde": 707.08,
+   "hasta": 707.74
+  },
+  {
+   "w": "a",
+   "desde": 707.74,
+   "hasta": 707.94
+  },
+  {
+   "w": "una",
+   "desde": 707.94,
+   "hasta": 708.04
+  },
+  {
+   "w": "página",
+   "desde": 708.04,
+   "hasta": 708.24
+  },
+  {
+   "w": "web,",
+   "desde": 708.24,
+   "hasta": 708.6
+  },
+  {
+   "w": "loguearse,",
+   "desde": 708.86,
+   "hasta": 710.08
+  },
+  {
+   "w": "completar",
+   "desde": 710.24,
+   "hasta": 710.88
+  },
+  {
+   "w": "cierta",
+   "desde": 710.88,
+   "hasta": 711.1
+  },
+  {
+   "w": "información,",
+   "desde": 711.1,
+   "hasta": 711.48
+  },
+  {
+   "w": "presionar",
+   "desde": 711.7,
+   "hasta": 712.2
+  },
+  {
+   "w": "botones,",
+   "desde": 712.2,
+   "hasta": 712.88
+  },
+  {
+   "w": "buscar",
+   "desde": 712.96,
+   "hasta": 713.52
+  },
+  {
+   "w": "un",
+   "desde": 713.52,
+   "hasta": 713.7
+  },
+  {
+   "w": "documento",
+   "desde": 713.7,
+   "hasta": 714.4
+  },
+  {
+   "w": "y",
+   "desde": 714.4,
+   "hasta": 714.9
+  },
+  {
+   "w": "adjuntarlo",
+   "desde": 714.9,
+   "hasta": 716.7
+  },
+  {
+   "w": "para",
+   "desde": 716.7,
+   "hasta": 716.98
+  },
+  {
+   "w": "cerrar",
+   "desde": 716.98,
+   "hasta": 717.44
+  },
+  {
+   "w": "una",
+   "desde": 717.44,
+   "hasta": 717.72
+  },
+  {
+   "w": "tarea.",
+   "desde": 717.72,
+   "hasta": 718.02
+  },
+  {
+   "w": "Esto",
+   "desde": 718.16,
+   "hasta": 718.38
+  },
+  {
+   "w": "lo",
+   "desde": 718.38,
+   "hasta": 718.54
+  },
+  {
+   "w": "puede",
+   "desde": 718.54,
+   "hasta": 718.74
+  },
+  {
+   "w": "hacer",
+   "desde": 718.74,
+   "hasta": 718.94
+  },
+  {
+   "w": "de",
+   "desde": 718.94,
+   "hasta": 719.2
+  },
+  {
+   "w": "manera",
+   "desde": 719.2,
+   "hasta": 719.34
+  },
+  {
+   "w": "repetitiva",
+   "desde": 719.34,
+   "hasta": 720.2
+  },
+  {
+   "w": "en",
+   "desde": 720.2,
+   "hasta": 721.34
+  },
+  {
+   "w": "diferentes",
+   "desde": 721.34,
+   "hasta": 721.82
+  },
+  {
+   "w": "páginas",
+   "desde": 721.82,
+   "hasta": 722.68
+  },
+  {
+   "w": "web",
+   "desde": 722.68,
+   "hasta": 722.86
+  },
+  {
+   "w": "con",
+   "desde": 722.86,
+   "hasta": 723.1
+  },
+  {
+   "w": "diferentes",
+   "desde": 723.1,
+   "hasta": 723.38
+  },
+  {
+   "w": "formatos,",
+   "desde": 723.38,
+   "hasta": 724.24
+  },
+  {
+   "w": "siempre",
+   "desde": 724.28,
+   "hasta": 724.64
+  },
+  {
+   "w": "partiendo",
+   "desde": 724.64,
+   "hasta": 725.2
+  },
+  {
+   "w": "de",
+   "desde": 725.2,
+   "hasta": 725.5
+  },
+  {
+   "w": "realizar",
+   "desde": 725.5,
+   "hasta": 726.18
+  },
+  {
+   "w": "una",
+   "desde": 726.18,
+   "hasta": 726.54
+  },
+  {
+   "w": "buena",
+   "desde": 726.54,
+   "hasta": 726.86
+  },
+  {
+   "w": "instrucción,",
+   "desde": 726.86,
+   "hasta": 727.44
+  },
+  {
+   "w": "una",
+   "desde": 727.44,
+   "hasta": 727.58
+  },
+  {
+   "w": "buena",
+   "desde": 727.58,
+   "hasta": 727.82
+  },
+  {
+   "w": "descripción",
+   "desde": 727.82,
+   "hasta": 728.32
+  },
+  {
+   "w": "de",
+   "desde": 728.32,
+   "hasta": 728.44
+  },
+  {
+   "w": "cuáles",
+   "desde": 728.44,
+   "hasta": 728.62
+  },
+  {
+   "w": "son",
+   "desde": 728.62,
+   "hasta": 728.8
+  },
+  {
+   "w": "sus",
+   "desde": 728.8,
+   "hasta": 728.94
+  },
+  {
+   "w": "objetivos,",
+   "desde": 728.94,
+   "hasta": 729.52
+  },
+  {
+   "w": "cuáles",
+   "desde": 729.56,
+   "hasta": 729.8
+  },
+  {
+   "w": "son",
+   "desde": 729.8,
+   "hasta": 730.02
+  },
+  {
+   "w": "las",
+   "desde": 730.02,
+   "hasta": 730.68
+  },
+  {
+   "w": "restricciones",
+   "desde": 730.68,
+   "hasta": 731.24
+  },
+  {
+   "w": "y",
+   "desde": 731.24,
+   "hasta": 731.48
+  },
+  {
+   "w": "los",
+   "desde": 731.48,
+   "hasta": 731.62
+  },
+  {
+   "w": "parámetros.",
+   "desde": 731.62,
+   "hasta": 731.96
+  },
+  {
+   "w": "A",
+   "desde": 731.98,
+   "hasta": 732.5
+  },
+  {
+   "w": "partir",
+   "desde": 732.5,
+   "hasta": 732.94
+  },
+  {
+   "w": "de",
+   "desde": 732.94,
+   "hasta": 733.14
+  },
+  {
+   "w": "los",
+   "desde": 733.14,
+   "hasta": 733.22
+  },
+  {
+   "w": "cuales",
+   "desde": 733.22,
+   "hasta": 733.48
+  },
+  {
+   "w": "se",
+   "desde": 733.48,
+   "hasta": 734.18
+  },
+  {
+   "w": "guía",
+   "desde": 734.18,
+   "hasta": 734.64
+  },
+  {
+   "w": "para",
+   "desde": 734.64,
+   "hasta": 734.98
+  },
+  {
+   "w": "realizar",
+   "desde": 734.98,
+   "hasta": 735.5
+  },
+  {
+   "w": "esa",
+   "desde": 735.5,
+   "hasta": 735.88
+  },
+  {
+   "w": "tarea.",
+   "desde": 735.88,
+   "hasta": 736.22
+  },
+  {
+   "w": "Pero",
+   "desde": 736.34,
+   "hasta": 736.96
+  },
+  {
+   "w": "vemos",
+   "desde": 736.96,
+   "hasta": 737.18
+  },
+  {
+   "w": "entonces",
+   "desde": 737.18,
+   "hasta": 737.48
+  },
+  {
+   "w": "también",
+   "desde": 737.48,
+   "hasta": 737.9
+  },
+  {
+   "w": "un",
+   "desde": 737.9,
+   "hasta": 738.14
+  },
+  {
+   "w": "proceso",
+   "desde": 738.14,
+   "hasta": 738.42
+  },
+  {
+   "w": "que",
+   "desde": 738.42,
+   "hasta": 738.74
+  },
+  {
+   "w": "tiene",
+   "desde": 738.74,
+   "hasta": 740.28
+  },
+  {
+   "w": "muchas",
+   "desde": 740.28,
+   "hasta": 741.4
+  },
+  {
+   "w": "aristas",
+   "desde": 741.4,
+   "hasta": 741.9
+  },
+  {
+   "w": "administrativas",
+   "desde": 741.9,
+   "hasta": 742.7
+  },
+  {
+   "w": "y",
+   "desde": 742.7,
+   "hasta": 742.86
+  },
+  {
+   "w": "se",
+   "desde": 742.86,
+   "hasta": 742.98
+  },
+  {
+   "w": "puede",
+   "desde": 742.98,
+   "hasta": 743.28
+  },
+  {
+   "w": "trabajar",
+   "desde": 743.28,
+   "hasta": 744.72
+  },
+  {
+   "w": "a",
+   "desde": 744.72,
+   "hasta": 745.1
+  },
+  {
+   "w": "partir",
+   "desde": 745.1,
+   "hasta": 745.42
+  },
+  {
+   "w": "de",
+   "desde": 745.42,
+   "hasta": 745.68
+  },
+  {
+   "w": "la",
+   "desde": 745.68,
+   "hasta": 746.04
+  },
+  {
+   "w": "implementación",
+   "desde": 746.04,
+   "hasta": 746.7
+  },
+  {
+   "w": "de",
+   "desde": 746.7,
+   "hasta": 746.96
+  },
+  {
+   "w": "agentes",
+   "desde": 746.96,
+   "hasta": 747.52
+  },
+  {
+   "w": "de",
+   "desde": 747.52,
+   "hasta": 747.78
+  },
+  {
+   "w": "inteligencia",
+   "desde": 747.78,
+   "hasta": 748.32
+  },
+  {
+   "w": "artificial.",
+   "desde": 748.32,
+   "hasta": 748.6
+  },
+  {
+   "w": "Con",
+   "desde": 750.92,
+   "hasta": 751.28
+  },
+  {
+   "w": "esto",
+   "desde": 751.28,
+   "hasta": 751.5
+  },
+  {
+   "w": "veíamos",
+   "desde": 751.5,
+   "hasta": 751.84
+  },
+  {
+   "w": "entonces",
+   "desde": 751.84,
+   "hasta": 752.32
+  },
+  {
+   "w": "tres",
+   "desde": 752.32,
+   "hasta": 753.4
+  },
+  {
+   "w": "ejemplos",
+   "desde": 753.4,
+   "hasta": 755.24
+  },
+  {
+   "w": "diferentes.",
+   "desde": 755.24,
+   "hasta": 755.58
+  },
+  {
+   "w": "Chatbots",
+   "desde": 755.94,
+   "hasta": 756.5
+  },
+  {
+   "w": "para",
+   "desde": 756.5,
+   "hasta": 757.48
+  },
+  {
+   "w": "atención",
+   "desde": 757.48,
+   "hasta": 757.72
+  },
+  {
+   "w": "al",
+   "desde": 757.72,
+   "hasta": 757.94
+  },
+  {
+   "w": "público,",
+   "desde": 757.94,
+   "hasta": 758.24
+  },
+  {
+   "w": "procesamiento",
+   "desde": 758.44,
+   "hasta": 759.0
+  },
+  {
+   "w": "masivo",
+   "desde": 759.0,
+   "hasta": 759.6
+  },
+  {
+   "w": "de",
+   "desde": 759.6,
+   "hasta": 759.68
+  },
+  {
+   "w": "documentos",
+   "desde": 759.68,
+   "hasta": 760.38
+  },
+  {
+   "w": "y",
+   "desde": 760.38,
+   "hasta": 760.54
+  },
+  {
+   "w": "agentes",
+   "desde": 760.54,
+   "hasta": 760.96
+  },
+  {
+   "w": "autónomos",
+   "desde": 760.96,
+   "hasta": 761.44
+  },
+  {
+   "w": "que",
+   "desde": 761.44,
+   "hasta": 761.68
+  },
+  {
+   "w": "replican",
+   "desde": 761.68,
+   "hasta": 762.56
+  },
+  {
+   "w": "tareas.",
+   "desde": 762.56,
+   "hasta": 762.92
+  },
+  {
+   "w": "Tareas",
+   "desde": 763.48,
+   "hasta": 763.78
+  },
+  {
+   "w": "repetitivas",
+   "desde": 763.78,
+   "hasta": 764.74
+  },
+  {
+   "w": "dentro",
+   "desde": 764.74,
+   "hasta": 765.9
+  },
+  {
+   "w": "de",
+   "desde": 765.9,
+   "hasta": 766.24
+  },
+  {
+   "w": "lo",
+   "desde": 766.24,
+   "hasta": 766.32
+  },
+  {
+   "w": "que",
+   "desde": 766.32,
+   "hasta": 766.4
+  },
+  {
+   "w": "es",
+   "desde": 766.4,
+   "hasta": 766.5
+  },
+  {
+   "w": "el",
+   "desde": 766.5,
+   "hasta": 766.66
+  },
+  {
+   "w": "bloque",
+   "desde": 766.66,
+   "hasta": 766.9
+  },
+  {
+   "w": "de",
+   "desde": 766.9,
+   "hasta": 767.06
+  },
+  {
+   "w": "automatización",
+   "desde": 767.06,
+   "hasta": 767.84
+  },
+  {
+   "w": "y",
+   "desde": 767.84,
+   "hasta": 768.46
+  },
+  {
+   "w": "agentes.",
+   "desde": 768.46,
+   "hasta": 769.04
+  },
+  {
+   "w": "Nos",
+   "desde": 769.42,
+   "hasta": 769.98
+  },
+  {
+   "w": "vamos",
+   "desde": 769.98,
+   "hasta": 770.18
+  },
+  {
+   "w": "al",
+   "desde": 770.18,
+   "hasta": 770.36
+  },
+  {
+   "w": "tercer",
+   "desde": 770.36,
+   "hasta": 770.58
+  },
+  {
+   "w": "bloque,",
+   "desde": 770.58,
+   "hasta": 770.92
+  },
+  {
+   "w": "que",
+   "desde": 770.98,
+   "hasta": 771.1
+  },
+  {
+   "w": "es",
+   "desde": 771.1,
+   "hasta": 771.18
+  },
+  {
+   "w": "el",
+   "desde": 771.18,
+   "hasta": 771.3
+  },
+  {
+   "w": "de",
+   "desde": 771.3,
+   "hasta": 771.4
+  },
+  {
+   "w": "inteligencia",
+   "desde": 771.4,
+   "hasta": 771.9
+  },
+  {
+   "w": "avanzada.",
+   "desde": 771.9,
+   "hasta": 772.38
+  },
+  {
+   "w": "Probablemente",
+   "desde": 773.2,
+   "hasta": 773.76
+  },
+  {
+   "w": "hayan",
+   "desde": 773.76,
+   "hasta": 774.02
+  },
+  {
+   "w": "escuchado",
+   "desde": 774.02,
+   "hasta": 774.46
+  },
+  {
+   "w": "y",
+   "desde": 774.46,
+   "hasta": 774.62
+  },
+  {
+   "w": "hablamos",
+   "desde": 774.62,
+   "hasta": 775.02
+  },
+  {
+   "w": "al",
+   "desde": 775.02,
+   "hasta": 775.12
+  },
+  {
+   "w": "principio",
+   "desde": 775.12,
+   "hasta": 775.42
+  },
+  {
+   "w": "de",
+   "desde": 775.42,
+   "hasta": 775.7
+  },
+  {
+   "w": "el",
+   "desde": 775.7,
+   "hasta": 775.94
+  },
+  {
+   "w": "concepto",
+   "desde": 775.94,
+   "hasta": 776.78
+  },
+  {
+   "w": "de",
+   "desde": 776.78,
+   "hasta": 776.86
+  },
+  {
+   "w": "Machine",
+   "desde": 776.86,
+   "hasta": 777.2
+  },
+  {
+   "w": "Learning.",
+   "desde": 777.2,
+   "hasta": 777.6
+  },
+  {
+   "w": "Básicamente",
+   "desde": 778.54,
+   "hasta": 779.1
+  },
+  {
+   "w": "lo",
+   "desde": 779.1,
+   "hasta": 779.48
+  },
+  {
+   "w": "que",
+   "desde": 779.48,
+   "hasta": 779.64
+  },
+  {
+   "w": "permite",
+   "desde": 779.64,
+   "hasta": 780.02
+  },
+  {
+   "w": "es",
+   "desde": 780.02,
+   "hasta": 781.02
+  },
+  {
+   "w": "aplicar",
+   "desde": 781.02,
+   "hasta": 781.92
+  },
+  {
+   "w": "un",
+   "desde": 781.92,
+   "hasta": 782.32
+  },
+  {
+   "w": "modelo",
+   "desde": 782.32,
+   "hasta": 782.7
+  },
+  {
+   "w": "de",
+   "desde": 782.7,
+   "hasta": 782.96
+  },
+  {
+   "w": "IA",
+   "desde": 782.96,
+   "hasta": 783.24
+  },
+  {
+   "w": "para",
+   "desde": 783.24,
+   "hasta": 783.92
+  },
+  {
+   "w": "analizar",
+   "desde": 783.92,
+   "hasta": 784.62
+  },
+  {
+   "w": "una",
+   "desde": 784.62,
+   "hasta": 784.88
+  },
+  {
+   "w": "serie",
+   "desde": 784.88,
+   "hasta": 785.16
+  },
+  {
+   "w": "de",
+   "desde": 785.16,
+   "hasta": 785.4
+  },
+  {
+   "w": "datos",
+   "desde": 785.4,
+   "hasta": 785.74
+  },
+  {
+   "w": "históricos",
+   "desde": 785.74,
+   "hasta": 786.84
+  },
+  {
+   "w": "y",
+   "desde": 786.84,
+   "hasta": 787.44
+  },
+  {
+   "w": "a",
+   "desde": 787.44,
+   "hasta": 787.66
+  },
+  {
+   "w": "partir",
+   "desde": 787.66,
+   "hasta": 787.94
+  },
+  {
+   "w": "de",
+   "desde": 787.94,
+   "hasta": 788.14
+  },
+  {
+   "w": "esos",
+   "desde": 788.14,
+   "hasta": 788.26
+  },
+  {
+   "w": "datos",
+   "desde": 788.26,
+   "hasta": 789.02
+  },
+  {
+   "w": "encontrar",
+   "desde": 789.02,
+   "hasta": 789.38
+  },
+  {
+   "w": "correlaciones",
+   "desde": 789.38,
+   "hasta": 790.44
+  },
+  {
+   "w": "que",
+   "desde": 790.44,
+   "hasta": 790.78
+  },
+  {
+   "w": "nos",
+   "desde": 790.78,
+   "hasta": 790.9
+  },
+  {
+   "w": "puedan",
+   "desde": 790.9,
+   "hasta": 791.16
+  },
+  {
+   "w": "dar",
+   "desde": 791.16,
+   "hasta": 791.34
+  },
+  {
+   "w": "información.",
+   "desde": 791.34,
+   "hasta": 791.72
+  },
+  {
+   "w": "De",
+   "desde": 792.46,
+   "hasta": 793.14
+  },
+  {
+   "w": "un",
+   "desde": 793.14,
+   "hasta": 793.74
+  },
+  {
+   "w": "resultado",
+   "desde": 793.74,
+   "hasta": 794.4
+  },
+  {
+   "w": "futuro",
+   "desde": 794.4,
+   "hasta": 795.04
+  },
+  {
+   "w": "de",
+   "desde": 795.04,
+   "hasta": 795.96
+  },
+  {
+   "w": "determinada",
+   "desde": 795.96,
+   "hasta": 796.76
+  },
+  {
+   "w": "variable,",
+   "desde": 796.76,
+   "hasta": 797.02
+  },
+  {
+   "w": "por",
+   "desde": 797.3,
+   "hasta": 797.6
+  },
+  {
+   "w": "ejemplo,",
+   "desde": 797.6,
+   "hasta": 798.06
+  },
+  {
+   "w": "voy",
+   "desde": 798.16,
+   "hasta": 799.88
+  },
+  {
+   "w": "a",
+   "desde": 799.88,
+   "hasta": 800.08
+  },
+  {
+   "w": "hacer",
+   "desde": 800.08,
+   "hasta": 800.2
+  },
+  {
+   "w": "una",
+   "desde": 800.2,
+   "hasta": 800.36
+  },
+  {
+   "w": "correlación",
+   "desde": 800.36,
+   "hasta": 800.84
+  },
+  {
+   "w": "simple",
+   "desde": 800.84,
+   "hasta": 801.28
+  },
+  {
+   "w": "en",
+   "desde": 801.28,
+   "hasta": 802.18
+  },
+  {
+   "w": "los",
+   "desde": 802.18,
+   "hasta": 802.32
+  },
+  {
+   "w": "días",
+   "desde": 802.32,
+   "hasta": 802.58
+  },
+  {
+   "w": "de",
+   "desde": 802.58,
+   "hasta": 803.24
+  },
+  {
+   "w": "calor,",
+   "desde": 803.24,
+   "hasta": 803.62
+  },
+  {
+   "w": "hay",
+   "desde": 803.78,
+   "hasta": 804.24
+  },
+  {
+   "w": "más",
+   "desde": 804.24,
+   "hasta": 804.58
+  },
+  {
+   "w": "posibilidades",
+   "desde": 804.58,
+   "hasta": 805.52
+  },
+  {
+   "w": "de",
+   "desde": 805.52,
+   "hasta": 806.04
+  },
+  {
+   "w": "que",
+   "desde": 806.04,
+   "hasta": 806.54
+  },
+  {
+   "w": "se",
+   "desde": 806.54,
+   "hasta": 806.74
+  },
+  {
+   "w": "venda",
+   "desde": 806.74,
+   "hasta": 807.22
+  },
+  {
+   "w": "helado",
+   "desde": 807.22,
+   "hasta": 807.8
+  },
+  {
+   "w": "en",
+   "desde": 807.8,
+   "hasta": 808.14
+  },
+  {
+   "w": "una",
+   "desde": 808.14,
+   "hasta": 808.32
+  },
+  {
+   "w": "heladería.",
+   "desde": 808.32,
+   "hasta": 808.82
+  },
+  {
+   "w": "Obviamente",
+   "desde": 809.36,
+   "hasta": 810.04
+  },
+  {
+   "w": "que",
+   "desde": 810.04,
+   "hasta": 810.34
+  },
+  {
+   "w": "esa",
+   "desde": 810.34,
+   "hasta": 810.52
+  },
+  {
+   "w": "es",
+   "desde": 810.52,
+   "hasta": 810.62
+  },
+  {
+   "w": "una",
+   "desde": 810.62,
+   "hasta": 810.8
+  },
+  {
+   "w": "correlación",
+   "desde": 810.8,
+   "hasta": 811.26
+  },
+  {
+   "w": "simple,",
+   "desde": 811.26,
+   "hasta": 811.56
+  },
+  {
+   "w": "pero",
+   "desde": 811.64,
+   "hasta": 811.82
+  },
+  {
+   "w": "a",
+   "desde": 811.82,
+   "hasta": 811.98
+  },
+  {
+   "w": "partir",
+   "desde": 811.98,
+   "hasta": 812.3
+  },
+  {
+   "w": "del",
+   "desde": 812.3,
+   "hasta": 812.52
+  },
+  {
+   "w": "uso",
+   "desde": 812.52,
+   "hasta": 812.72
+  },
+  {
+   "w": "de",
+   "desde": 812.72,
+   "hasta": 812.8
+  },
+  {
+   "w": "inteligencia",
+   "desde": 812.8,
+   "hasta": 813.24
+  },
+  {
+   "w": "artificial",
+   "desde": 813.24,
+   "hasta": 813.54
+  },
+  {
+   "w": "en",
+   "desde": 813.54,
+   "hasta": 814.4
+  },
+  {
+   "w": "modelos",
+   "desde": 814.4,
+   "hasta": 814.96
+  },
+  {
+   "w": "de",
+   "desde": 814.96,
+   "hasta": 815.1
+  },
+  {
+   "w": "datos",
+   "desde": 815.1,
+   "hasta": 815.34
+  },
+  {
+   "w": "de",
+   "desde": 815.34,
+   "hasta": 815.68
+  },
+  {
+   "w": "muchas",
+   "desde": 815.68,
+   "hasta": 816.1
+  },
+  {
+   "w": "variables",
+   "desde": 816.1,
+   "hasta": 816.5
+  },
+  {
+   "w": "y",
+   "desde": 816.5,
+   "hasta": 816.96
+  },
+  {
+   "w": "de",
+   "desde": 816.96,
+   "hasta": 817.08
+  },
+  {
+   "w": "gran",
+   "desde": 817.08,
+   "hasta": 817.38
+  },
+  {
+   "w": "cantidad",
+   "desde": 817.38,
+   "hasta": 817.76
+  },
+  {
+   "w": "de",
+   "desde": 817.76,
+   "hasta": 817.88
+  },
+  {
+   "w": "información,",
+   "desde": 817.88,
+   "hasta": 818.16
+  },
+  {
+   "w": "se",
+   "desde": 818.24,
+   "hasta": 819.18
+  },
+  {
+   "w": "pueden",
+   "desde": 819.18,
+   "hasta": 819.48
+  },
+  {
+   "w": "encontrar",
+   "desde": 819.48,
+   "hasta": 819.94
+  },
+  {
+   "w": "esa",
+   "desde": 819.94,
+   "hasta": 820.34
+  },
+  {
+   "w": "serie",
+   "desde": 820.34,
+   "hasta": 820.62
+  },
+  {
+   "w": "de",
+   "desde": 820.62,
+   "hasta": 820.8
+  },
+  {
+   "w": "correlaciones.",
+   "desde": 820.8,
+   "hasta": 821.34
+  },
+  {
+   "w": "Pero",
+   "desde": 821.34,
+   "hasta": 821.7
+  },
+  {
+   "w": "a",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "partir",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "del",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "uso",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "de",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "inteligencia",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "artificial",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "en",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "modelos",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "de",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "datos",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "de",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "muchas",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "variables",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "y",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "de",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "gran",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "cantidad",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "de",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "información,",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "se",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "pueden",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "encontrar",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "esa",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "serie",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "de",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "correlaciones.",
+   "desde": 821.7,
+   "hasta": 821.7
+  },
+  {
+   "w": "Que",
+   "desde": 821.72,
+   "hasta": 821.76
+  },
+  {
+   "w": "nos",
+   "desde": 821.76,
+   "hasta": 821.9
+  },
+  {
+   "w": "den",
+   "desde": 821.9,
+   "hasta": 822.48
+  },
+  {
+   "w": "información",
+   "desde": 822.48,
+   "hasta": 822.84
+  },
+  {
+   "w": "para",
+   "desde": 822.84,
+   "hasta": 823.32
+  },
+  {
+   "w": "tomar",
+   "desde": 823.32,
+   "hasta": 823.62
+  },
+  {
+   "w": "decisiones",
+   "desde": 823.62,
+   "hasta": 824.24
+  },
+  {
+   "w": "estratégicas",
+   "desde": 824.24,
+   "hasta": 825.1
+  },
+  {
+   "w": "sobre",
+   "desde": 825.1,
+   "hasta": 825.78
+  },
+  {
+   "w": "nuestro",
+   "desde": 825.78,
+   "hasta": 826.2
+  },
+  {
+   "w": "negocio",
+   "desde": 826.2,
+   "hasta": 826.74
+  },
+  {
+   "w": "o",
+   "desde": 826.74,
+   "hasta": 826.94
+  },
+  {
+   "w": "sobre",
+   "desde": 826.94,
+   "hasta": 827.12
+  },
+  {
+   "w": "nuestro",
+   "desde": 827.12,
+   "hasta": 827.34
+  },
+  {
+   "w": "proceso.",
+   "desde": 827.34,
+   "hasta": 827.78
+  },
+  {
+   "w": "Este",
+   "desde": 829.58,
+   "hasta": 830.24
+  },
+  {
+   "w": "es",
+   "desde": 830.24,
+   "hasta": 830.5
+  },
+  {
+   "w": "un",
+   "desde": 830.5,
+   "hasta": 830.76
+  },
+  {
+   "w": "ejemplo",
+   "desde": 830.76,
+   "hasta": 831.18
+  },
+  {
+   "w": "similar",
+   "desde": 831.18,
+   "hasta": 832.2
+  },
+  {
+   "w": "en",
+   "desde": 832.2,
+   "hasta": 832.62
+  },
+  {
+   "w": "donde",
+   "desde": 832.62,
+   "hasta": 832.9
+  },
+  {
+   "w": "se",
+   "desde": 832.9,
+   "hasta": 833.98
+  },
+  {
+   "w": "trabaja",
+   "desde": 833.98,
+   "hasta": 834.94
+  },
+  {
+   "w": "el",
+   "desde": 834.94,
+   "hasta": 835.2
+  },
+  {
+   "w": "precio",
+   "desde": 835.2,
+   "hasta": 835.72
+  },
+  {
+   "w": "variable",
+   "desde": 835.72,
+   "hasta": 836.2
+  },
+  {
+   "w": "de",
+   "desde": 836.2,
+   "hasta": 836.58
+  },
+  {
+   "w": "un",
+   "desde": 836.58,
+   "hasta": 836.68
+  },
+  {
+   "w": "producto",
+   "desde": 836.68,
+   "hasta": 837.0
+  },
+  {
+   "w": "en",
+   "desde": 837.0,
+   "hasta": 837.3
+  },
+  {
+   "w": "una",
+   "desde": 837.3,
+   "hasta": 837.48
+  },
+  {
+   "w": "página",
+   "desde": 837.48,
+   "hasta": 837.7
+  },
+  {
+   "w": "web",
+   "desde": 837.7,
+   "hasta": 838.06
+  },
+  {
+   "w": "en",
+   "desde": 838.06,
+   "hasta": 838.34
+  },
+  {
+   "w": "función",
+   "desde": 838.34,
+   "hasta": 838.66
+  },
+  {
+   "w": "de",
+   "desde": 838.66,
+   "hasta": 839.7
+  },
+  {
+   "w": "la",
+   "desde": 839.7,
+   "hasta": 840.04
+  },
+  {
+   "w": "tasa",
+   "desde": 840.04,
+   "hasta": 840.52
+  },
+  {
+   "w": "de",
+   "desde": 840.52,
+   "hasta": 840.56
+  },
+  {
+   "w": "conversión.",
+   "desde": 840.56,
+   "hasta": 841.16
+  },
+  {
+   "w": "¿Qué",
+   "desde": 841.24,
+   "hasta": 841.44
+  },
+  {
+   "w": "quiere",
+   "desde": 841.44,
+   "hasta": 841.58
+  },
+  {
+   "w": "decir?",
+   "desde": 841.58,
+   "hasta": 841.8
+  },
+  {
+   "w": "Básicamente",
+   "desde": 842.68,
+   "hasta": 843.34
+  },
+  {
+   "w": "esta",
+   "desde": 843.34,
+   "hasta": 843.68
+  },
+  {
+   "w": "línea",
+   "desde": 843.68,
+   "hasta": 844.0
+  },
+  {
+   "w": "define",
+   "desde": 844.0,
+   "hasta": 844.46
+  },
+  {
+   "w": "si",
+   "desde": 844.46,
+   "hasta": 845.12
+  },
+  {
+   "w": "los",
+   "desde": 845.12,
+   "hasta": 845.74
+  },
+  {
+   "w": "clientes",
+   "desde": 845.74,
+   "hasta": 846.16
+  },
+  {
+   "w": "están",
+   "desde": 846.16,
+   "hasta": 846.34
+  },
+  {
+   "w": "entrando",
+   "desde": 846.34,
+   "hasta": 846.76
+  },
+  {
+   "w": "a",
+   "desde": 846.76,
+   "hasta": 846.86
+  },
+  {
+   "w": "ver",
+   "desde": 846.86,
+   "hasta": 846.94
+  },
+  {
+   "w": "el",
+   "desde": 846.94,
+   "hasta": 847.06
+  },
+  {
+   "w": "producto",
+   "desde": 847.06,
+   "hasta": 847.34
+  },
+  {
+   "w": "y",
+   "desde": 847.34,
+   "hasta": 847.66
+  },
+  {
+   "w": "lo",
+   "desde": 847.66,
+   "hasta": 847.78
+  },
+  {
+   "w": "compran,",
+   "desde": 847.78,
+   "hasta": 848.34
+  },
+  {
+   "w": "lo",
+   "desde": 848.44,
+   "hasta": 848.9
+  },
+  {
+   "w": "cual",
+   "desde": 848.9,
+   "hasta": 849.08
+  },
+  {
+   "w": "genera",
+   "desde": 849.08,
+   "hasta": 849.44
+  },
+  {
+   "w": "una",
+   "desde": 849.44,
+   "hasta": 849.52
+  },
+  {
+   "w": "conversión.",
+   "desde": 849.52,
+   "hasta": 850.24
+  },
+  {
+   "w": "O",
+   "desde": 850.24,
+   "hasta": 850.78
+  },
+  {
+   "w": "si",
+   "desde": 850.78,
+   "hasta": 850.96
+  },
+  {
+   "w": "entran,",
+   "desde": 850.96,
+   "hasta": 851.42
+  },
+  {
+   "w": "ven.",
+   "desde": 851.42,
+   "hasta": 851.56
+  },
+  {
+   "w": "Ven",
+   "desde": 851.72,
+   "hasta": 851.76
+  },
+  {
+   "w": "el",
+   "desde": 851.76,
+   "hasta": 851.76
+  },
+  {
+   "w": "producto",
+   "desde": 851.76,
+   "hasta": 851.88
+  },
+  {
+   "w": "y",
+   "desde": 851.88,
+   "hasta": 852.46
+  },
+  {
+   "w": "no",
+   "desde": 852.46,
+   "hasta": 852.72
+  },
+  {
+   "w": "lo",
+   "desde": 852.72,
+   "hasta": 852.86
+  },
+  {
+   "w": "compran,",
+   "desde": 852.86,
+   "hasta": 853.3
+  },
+  {
+   "w": "lo",
+   "desde": 853.36,
+   "hasta": 853.84
+  },
+  {
+   "w": "cual",
+   "desde": 853.84,
+   "hasta": 854.04
+  },
+  {
+   "w": "podríamos",
+   "desde": 854.04,
+   "hasta": 854.38
+  },
+  {
+   "w": "asumir",
+   "desde": 854.38,
+   "hasta": 854.96
+  },
+  {
+   "w": "que",
+   "desde": 854.96,
+   "hasta": 855.32
+  },
+  {
+   "w": "podría",
+   "desde": 855.32,
+   "hasta": 855.7
+  },
+  {
+   "w": "ser",
+   "desde": 855.7,
+   "hasta": 855.96
+  },
+  {
+   "w": "un",
+   "desde": 855.96,
+   "hasta": 856.14
+  },
+  {
+   "w": "problema",
+   "desde": 856.14,
+   "hasta": 856.38
+  },
+  {
+   "w": "de",
+   "desde": 856.38,
+   "hasta": 856.56
+  },
+  {
+   "w": "precio.",
+   "desde": 856.56,
+   "hasta": 856.88
+  },
+  {
+   "w": "¿Qué",
+   "desde": 857.18,
+   "hasta": 857.86
+  },
+  {
+   "w": "es",
+   "desde": 857.86,
+   "hasta": 857.96
+  },
+  {
+   "w": "lo",
+   "desde": 857.96,
+   "hasta": 857.98
+  },
+  {
+   "w": "que",
+   "desde": 857.98,
+   "hasta": 858.1
+  },
+  {
+   "w": "hace",
+   "desde": 858.1,
+   "hasta": 858.32
+  },
+  {
+   "w": "esta",
+   "desde": 858.32,
+   "hasta": 858.52
+  },
+  {
+   "w": "herramienta?",
+   "desde": 858.52,
+   "hasta": 859.2
+  },
+  {
+   "w": "Modifica",
+   "desde": 859.84,
+   "hasta": 860.52
+  },
+  {
+   "w": "el",
+   "desde": 860.52,
+   "hasta": 860.7
+  },
+  {
+   "w": "precio",
+   "desde": 860.7,
+   "hasta": 861.06
+  },
+  {
+   "w": "automáticamente.",
+   "desde": 861.06,
+   "hasta": 862.18
+  },
+  {
+   "w": "Entonces,",
+   "desde": 862.18,
+   "hasta": 862.6
+  },
+  {
+   "w": "si",
+   "desde": 862.64,
+   "hasta": 862.94
+  },
+  {
+   "w": "la",
+   "desde": 862.94,
+   "hasta": 863.44
+  },
+  {
+   "w": "tasa",
+   "desde": 863.44,
+   "hasta": 863.9
+  },
+  {
+   "w": "de",
+   "desde": 863.9,
+   "hasta": 863.94
+  },
+  {
+   "w": "conversión",
+   "desde": 863.94,
+   "hasta": 864.72
+  },
+  {
+   "w": "cae",
+   "desde": 864.72,
+   "hasta": 866.06
+  },
+  {
+   "w": "por",
+   "desde": 866.06,
+   "hasta": 866.4
+  },
+  {
+   "w": "debajo",
+   "desde": 866.4,
+   "hasta": 867.42
+  },
+  {
+   "w": "de",
+   "desde": 867.42,
+   "hasta": 867.5
+  },
+  {
+   "w": "un",
+   "desde": 867.5,
+   "hasta": 867.66
+  },
+  {
+   "w": "determinado",
+   "desde": 867.66,
+   "hasta": 868.1
+  },
+  {
+   "w": "número,",
+   "desde": 868.1,
+   "hasta": 868.36
+  },
+  {
+   "w": "baja",
+   "desde": 868.46,
+   "hasta": 868.74
+  },
+  {
+   "w": "el",
+   "desde": 868.74,
+   "hasta": 868.96
+  },
+  {
+   "w": "precio",
+   "desde": 868.96,
+   "hasta": 869.24
+  },
+  {
+   "w": "para",
+   "desde": 869.24,
+   "hasta": 869.44
+  },
+  {
+   "w": "poder",
+   "desde": 869.44,
+   "hasta": 869.8
+  },
+  {
+   "w": "generar",
+   "desde": 869.8,
+   "hasta": 870.46
+  },
+  {
+   "w": "mayor",
+   "desde": 870.46,
+   "hasta": 871.1
+  },
+  {
+   "w": "atractividad",
+   "desde": 871.1,
+   "hasta": 871.74
+  },
+  {
+   "w": "en",
+   "desde": 871.74,
+   "hasta": 872.0
+  },
+  {
+   "w": "el",
+   "desde": 872.0,
+   "hasta": 872.08
+  },
+  {
+   "w": "producto",
+   "desde": 872.08,
+   "hasta": 872.42
+  },
+  {
+   "w": "y",
+   "desde": 872.42,
+   "hasta": 872.8
+  },
+  {
+   "w": "aumentar",
+   "desde": 872.8,
+   "hasta": 873.26
+  },
+  {
+   "w": "la",
+   "desde": 873.26,
+   "hasta": 874.24
+  },
+  {
+   "w": "tasa",
+   "desde": 874.24,
+   "hasta": 874.62
+  },
+  {
+   "w": "de",
+   "desde": 874.62,
+   "hasta": 874.64
+  },
+  {
+   "w": "conversión",
+   "desde": 874.64,
+   "hasta": 875.24
+  },
+  {
+   "w": "creciendo",
+   "desde": 875.24,
+   "hasta": 876.54
+  },
+  {
+   "w": "la",
+   "desde": 876.54,
+   "hasta": 876.78
+  },
+  {
+   "w": "demanda.",
+   "desde": 876.78,
+   "hasta": 877.7
+  },
+  {
+   "w": "Veíamos",
+   "desde": 879.18,
+   "hasta": 879.86
+  },
+  {
+   "w": "entonces.",
+   "desde": 879.86,
+   "hasta": 880.32
+  },
+  {
+   "w": "Entonces,",
+   "desde": 880.32,
+   "hasta": 880.56
+  },
+  {
+   "w": "dos",
+   "desde": 880.56,
+   "hasta": 881.68
+  },
+  {
+   "w": "ejemplos",
+   "desde": 881.68,
+   "hasta": 882.5
+  },
+  {
+   "w": "del",
+   "desde": 882.5,
+   "hasta": 883.08
+  },
+  {
+   "w": "uso",
+   "desde": 883.08,
+   "hasta": 883.28
+  },
+  {
+   "w": "de",
+   "desde": 883.28,
+   "hasta": 883.42
+  },
+  {
+   "w": "inteligencia",
+   "desde": 883.42,
+   "hasta": 883.9
+  },
+  {
+   "w": "artificial",
+   "desde": 883.9,
+   "hasta": 884.16
+  },
+  {
+   "w": "para",
+   "desde": 884.16,
+   "hasta": 885.28
+  },
+  {
+   "w": "encontrar",
+   "desde": 885.28,
+   "hasta": 886.12
+  },
+  {
+   "w": "información",
+   "desde": 886.12,
+   "hasta": 886.72
+  },
+  {
+   "w": "en",
+   "desde": 886.72,
+   "hasta": 888.04
+  },
+  {
+   "w": "una",
+   "desde": 888.04,
+   "hasta": 888.14
+  },
+  {
+   "w": "serie",
+   "desde": 888.14,
+   "hasta": 888.42
+  },
+  {
+   "w": "de",
+   "desde": 888.42,
+   "hasta": 888.66
+  },
+  {
+   "w": "datos",
+   "desde": 888.66,
+   "hasta": 889.08
+  },
+  {
+   "w": "y",
+   "desde": 889.08,
+   "hasta": 889.44
+  },
+  {
+   "w": "tomar",
+   "desde": 889.44,
+   "hasta": 889.66
+  },
+  {
+   "w": "decisiones",
+   "desde": 889.66,
+   "hasta": 890.26
+  },
+  {
+   "w": "estratégicas.",
+   "desde": 890.26,
+   "hasta": 890.96
+  },
+  {
+   "w": "Por",
+   "desde": 891.06,
+   "hasta": 891.32
+  },
+  {
+   "w": "último,",
+   "desde": 891.32,
+   "hasta": 891.7
+  },
+  {
+   "w": "tenemos",
+   "desde": 891.74,
+   "hasta": 892.04
+  },
+  {
+   "w": "el",
+   "desde": 892.04,
+   "hasta": 892.34
+  },
+  {
+   "w": "uso",
+   "desde": 892.34,
+   "hasta": 892.66
+  },
+  {
+   "w": "de",
+   "desde": 892.66,
+   "hasta": 893.08
+  },
+  {
+   "w": "IA",
+   "desde": 893.08,
+   "hasta": 893.28
+  },
+  {
+   "w": "en",
+   "desde": 893.28,
+   "hasta": 893.62
+  },
+  {
+   "w": "el",
+   "desde": 893.62,
+   "hasta": 893.86
+  },
+  {
+   "w": "mundo",
+   "desde": 893.86,
+   "hasta": 894.1
+  },
+  {
+   "w": "físico",
+   "desde": 894.1,
+   "hasta": 894.64
+  },
+  {
+   "w": "digital.",
+   "desde": 894.64,
+   "hasta": 894.88
+  },
+  {
+   "w": "Algunos",
+   "desde": 895.44,
+   "hasta": 896.16
+  },
+  {
+   "w": "ejemplos.",
+   "desde": 896.16,
+   "hasta": 896.84
+  },
+  {
+   "w": "Por",
+   "desde": 896.84,
+   "hasta": 897.4
+  },
+  {
+   "w": "un",
+   "desde": 897.4,
+   "hasta": 897.54
+  },
+  {
+   "w": "lado,",
+   "desde": 897.54,
+   "hasta": 897.84
+  },
+  {
+   "w": "tenemos",
+   "desde": 897.86,
+   "hasta": 898.3
+  },
+  {
+   "w": "el",
+   "desde": 898.3,
+   "hasta": 899.98
+  },
+  {
+   "w": "uso",
+   "desde": 899.98,
+   "hasta": 900.26
+  },
+  {
+   "w": "de",
+   "desde": 900.26,
+   "hasta": 900.4
+  },
+  {
+   "w": "IA",
+   "desde": 900.4,
+   "hasta": 900.68
+  },
+  {
+   "w": "integrada",
+   "desde": 900.68,
+   "hasta": 901.64
+  },
+  {
+   "w": "en",
+   "desde": 901.64,
+   "hasta": 901.76
+  },
+  {
+   "w": "cámaras",
+   "desde": 901.76,
+   "hasta": 902.22
+  },
+  {
+   "w": "para",
+   "desde": 902.22,
+   "hasta": 902.42
+  },
+  {
+   "w": "detectar",
+   "desde": 902.42,
+   "hasta": 903.0
+  },
+  {
+   "w": "condiciones",
+   "desde": 903.0,
+   "hasta": 903.42
+  },
+  {
+   "w": "inseguras",
+   "desde": 903.42,
+   "hasta": 904.38
+  },
+  {
+   "w": "en",
+   "desde": 904.38,
+   "hasta": 905.06
+  },
+  {
+   "w": "procesos",
+   "desde": 905.06,
+   "hasta": 906.16
+  },
+  {
+   "w": "industriales.",
+   "desde": 906.16,
+   "hasta": 906.9
+  },
+  {
+   "w": "O",
+   "desde": 908.52,
+   "hasta": 909.24
+  },
+  {
+   "w": "en",
+   "desde": 909.24,
+   "hasta": 909.5
+  },
+  {
+   "w": "procesos",
+   "desde": 909.5,
+   "hasta": 910.2
+  },
+  {
+   "w": "digitales.",
+   "desde": 910.2,
+   "hasta": 910.3
+  },
+  {
+   "w": "De",
+   "desde": 910.32,
+   "hasta": 910.38
+  },
+  {
+   "w": "seguridad",
+   "desde": 910.38,
+   "hasta": 910.88
+  },
+  {
+   "w": "patrimonial",
+   "desde": 910.88,
+   "hasta": 911.78
+  },
+  {
+   "w": "o",
+   "desde": 911.78,
+   "hasta": 912.24
+  },
+  {
+   "w": "seguridad",
+   "desde": 912.24,
+   "hasta": 913.0
+  },
+  {
+   "w": "en",
+   "desde": 913.0,
+   "hasta": 913.12
+  },
+  {
+   "w": "el",
+   "desde": 913.12,
+   "hasta": 913.22
+  },
+  {
+   "w": "trabajo.",
+   "desde": 913.22,
+   "hasta": 913.5
+  },
+  {
+   "w": "Por",
+   "desde": 916.25,
+   "hasta": 916.62
+  },
+  {
+   "w": "otro",
+   "desde": 916.62,
+   "hasta": 916.82
+  },
+  {
+   "w": "lado,",
+   "desde": 916.82,
+   "hasta": 917.18
+  },
+  {
+   "w": "tenemos",
+   "desde": 917.2,
+   "hasta": 917.52
+  },
+  {
+   "w": "ejemplos",
+   "desde": 917.52,
+   "hasta": 919.26
+  },
+  {
+   "w": "de",
+   "desde": 919.26,
+   "hasta": 919.62
+  },
+  {
+   "w": "robótica.",
+   "desde": 919.62,
+   "hasta": 920.5
+  },
+  {
+   "w": "En",
+   "desde": 920.54,
+   "hasta": 921.18
+  },
+  {
+   "w": "este",
+   "desde": 921.18,
+   "hasta": 921.42
+  },
+  {
+   "w": "es",
+   "desde": 921.42,
+   "hasta": 921.7
+  },
+  {
+   "w": "un",
+   "desde": 921.7,
+   "hasta": 921.9
+  },
+  {
+   "w": "caso",
+   "desde": 921.9,
+   "hasta": 922.26
+  },
+  {
+   "w": "de",
+   "desde": 922.26,
+   "hasta": 922.44
+  },
+  {
+   "w": "un",
+   "desde": 922.44,
+   "hasta": 922.54
+  },
+  {
+   "w": "robot",
+   "desde": 922.54,
+   "hasta": 922.78
+  },
+  {
+   "w": "cuadrípedo",
+   "desde": 922.78,
+   "hasta": 923.44
+  },
+  {
+   "w": "que",
+   "desde": 923.44,
+   "hasta": 923.7
+  },
+  {
+   "w": "se",
+   "desde": 923.7,
+   "hasta": 923.8
+  },
+  {
+   "w": "utiliza",
+   "desde": 923.8,
+   "hasta": 924.4
+  },
+  {
+   "w": "también",
+   "desde": 924.4,
+   "hasta": 924.78
+  },
+  {
+   "w": "para",
+   "desde": 924.78,
+   "hasta": 925.06
+  },
+  {
+   "w": "procesos",
+   "desde": 925.06,
+   "hasta": 925.56
+  },
+  {
+   "w": "de",
+   "desde": 925.56,
+   "hasta": 925.66
+  },
+  {
+   "w": "vigilancia,",
+   "desde": 925.66,
+   "hasta": 926.48
+  },
+  {
+   "w": "de",
+   "desde": 926.48,
+   "hasta": 927.12
+  },
+  {
+   "w": "seguridad",
+   "desde": 927.12,
+   "hasta": 927.52
+  },
+  {
+   "w": "24",
+   "desde": 927.52,
+   "hasta": 927.74
+  },
+  {
+   "w": "horas,",
+   "desde": 927.74,
+   "hasta": 928.44
+  },
+  {
+   "w": "de",
+   "desde": 928.62,
+   "hasta": 929.9
+  },
+  {
+   "w": "trabajo",
+   "desde": 929.9,
+   "hasta": 931.38
+  },
+  {
+   "w": "en",
+   "desde": 931.38,
+   "hasta": 931.7
+  },
+  {
+   "w": "espacios",
+   "desde": 931.7,
+   "hasta": 932.1
+  },
+  {
+   "w": "confinados",
+   "desde": 932.1,
+   "hasta": 932.72
+  },
+  {
+   "w": "o",
+   "desde": 932.72,
+   "hasta": 933.06
+  },
+  {
+   "w": "en",
+   "desde": 933.06,
+   "hasta": 933.26
+  },
+  {
+   "w": "espacios",
+   "desde": 933.26,
+   "hasta": 933.82
+  },
+  {
+   "w": "remotos",
+   "desde": 933.82,
+   "hasta": 935.54
+  },
+  {
+   "w": "donde",
+   "desde": 935.54,
+   "hasta": 936.58
+  },
+  {
+   "w": "hay",
+   "desde": 936.58,
+   "hasta": 937.64
+  },
+  {
+   "w": "pocas",
+   "desde": 937.64,
+   "hasta": 938.34
+  },
+  {
+   "w": "condiciones",
+   "desde": 938.34,
+   "hasta": 938.74
+  },
+  {
+   "w": "de",
+   "desde": 938.74,
+   "hasta": 939.46
+  },
+  {
+   "w": "habitabilidad.",
+   "desde": 939.46,
+   "hasta": 940.32
+  },
+  {
+   "w": "Básicamente,",
+   "desde": 940.32,
+   "hasta": 941.84
+  },
+  {
+   "w": "es",
+   "desde": 941.84,
+   "hasta": 942.4
+  },
+  {
+   "w": "un",
+   "desde": 942.4,
+   "hasta": 942.6
+  },
+  {
+   "w": "cuadrípedo",
+   "desde": 942.6,
+   "hasta": 943.02
+  },
+  {
+   "w": "que",
+   "desde": 943.02,
+   "hasta": 943.24
+  },
+  {
+   "w": "tiene",
+   "desde": 943.24,
+   "hasta": 943.56
+  },
+  {
+   "w": "una",
+   "desde": 943.56,
+   "hasta": 943.92
+  },
+  {
+   "w": "cámara",
+   "desde": 943.92,
+   "hasta": 944.24
+  },
+  {
+   "w": "integrada",
+   "desde": 944.24,
+   "hasta": 944.74
+  },
+  {
+   "w": "y",
+   "desde": 944.74,
+   "hasta": 944.84
+  },
+  {
+   "w": "que",
+   "desde": 944.84,
+   "hasta": 944.92
+  },
+  {
+   "w": "permite",
+   "desde": 944.92,
+   "hasta": 945.24
+  },
+  {
+   "w": "hacer",
+   "desde": 945.24,
+   "hasta": 946.24
+  },
+  {
+   "w": "detección",
+   "desde": 946.24,
+   "hasta": 947.06
+  },
+  {
+   "w": "de",
+   "desde": 947.06,
+   "hasta": 947.2
+  },
+  {
+   "w": "imágenes",
+   "desde": 947.2,
+   "hasta": 947.72
+  },
+  {
+   "w": "e",
+   "desde": 947.72,
+   "hasta": 947.86
+  },
+  {
+   "w": "inteligencia",
+   "desde": 947.86,
+   "hasta": 948.62
+  },
+  {
+   "w": "a",
+   "desde": 948.62,
+   "hasta": 949.5
+  },
+  {
+   "w": "partir",
+   "desde": 949.5,
+   "hasta": 950.06
+  },
+  {
+   "w": "del",
+   "desde": 950.06,
+   "hasta": 950.44
+  },
+  {
+   "w": "procesamiento",
+   "desde": 950.44,
+   "hasta": 951.76
+  },
+  {
+   "w": "de",
+   "desde": 951.76,
+   "hasta": 952.18
+  },
+  {
+   "w": "videos.",
+   "desde": 952.18,
+   "hasta": 952.8
+  },
+  {
+   "w": "También",
+   "desde": 954.32,
+   "hasta": 955.16
+  },
+  {
+   "w": "muy",
+   "desde": 955.16,
+   "hasta": 955.38
+  },
+  {
+   "w": "utilizado",
+   "desde": 955.38,
+   "hasta": 955.88
+  },
+  {
+   "w": "en",
+   "desde": 955.88,
+   "hasta": 956.04
+  },
+  {
+   "w": "procesos",
+   "desde": 956.04,
+   "hasta": 956.78
+  },
+  {
+   "w": "industriales",
+   "desde": 956.78,
+   "hasta": 958.04
+  },
+  {
+   "w": "y",
+   "desde": 958.04,
+   "hasta": 958.52
+  },
+  {
+   "w": "también",
+   "desde": 958.52,
+   "hasta": 958.82
+  },
+  {
+   "w": "en",
+   "desde": 958.82,
+   "hasta": 959.1
+  },
+  {
+   "w": "espacios,",
+   "desde": 959.1,
+   "hasta": 959.6
+  },
+  {
+   "w": "como",
+   "desde": 959.6,
+   "hasta": 959.78
+  },
+  {
+   "w": "decíamos,",
+   "desde": 959.78,
+   "hasta": 960.14
+  },
+  {
+   "w": "de",
+   "desde": 960.28,
+   "hasta": 960.86
+  },
+  {
+   "w": "amplia",
+   "desde": 960.86,
+   "hasta": 961.6
+  },
+  {
+   "w": "territorialidad.",
+   "desde": 961.6,
+   "hasta": 964.24
+  },
+  {
+   "w": "Y",
+   "desde": 966.39,
+   "hasta": 967.17
+  },
+  {
+   "w": "por",
+   "desde": 967.17,
+   "hasta": 967.27
+  },
+  {
+   "w": "último,",
+   "desde": 967.27,
+   "hasta": 967.63
+  },
+  {
+   "w": "el",
+   "desde": 967.63,
+   "hasta": 967.83
+  },
+  {
+   "w": "ejemplo",
+   "desde": 967.83,
+   "hasta": 968.13
+  },
+  {
+   "w": "que",
+   "desde": 968.13,
+   "hasta": 968.59
+  },
+  {
+   "w": "veíamos",
+   "desde": 968.59,
+   "hasta": 968.99
+  },
+  {
+   "w": "más",
+   "desde": 968.99,
+   "hasta": 969.71
+  },
+  {
+   "w": "temprano",
+   "desde": 969.71,
+   "hasta": 970.17
+  },
+  {
+   "w": "sobre.",
+   "desde": 970.17,
+   "hasta": 970.73
+  },
+  {
+   "w": "Lentes",
+   "desde": 971.87,
+   "hasta": 972.59
+  },
+  {
+   "w": "de",
+   "desde": 972.59,
+   "hasta": 972.81
+  },
+  {
+   "w": "Meta,",
+   "desde": 972.81,
+   "hasta": 973.19
+  },
+  {
+   "w": "que",
+   "desde": 973.19,
+   "hasta": 973.57
+  },
+  {
+   "w": "fueron",
+   "desde": 973.57,
+   "hasta": 974.03
+  },
+  {
+   "w": "presentados",
+   "desde": 974.03,
+   "hasta": 974.87
+  },
+  {
+   "w": "recientemente",
+   "desde": 974.87,
+   "hasta": 975.99
+  },
+  {
+   "w": "en",
+   "desde": 975.99,
+   "hasta": 977.15
+  },
+  {
+   "w": "finales",
+   "desde": 978.4,
+   "hasta": 979.24
+  },
+  {
+   "w": "de",
+   "desde": 979.24,
+   "hasta": 979.28
+  },
+  {
+   "w": "2025.",
+   "desde": 979.28,
+   "hasta": 979.72
+  },
+  {
+   "w": "Es",
+   "desde": 979.72,
+   "hasta": 980.34
+  },
+  {
+   "w": "una",
+   "desde": 980.34,
+   "hasta": 980.54
+  },
+  {
+   "w": "colaboración",
+   "desde": 980.54,
+   "hasta": 981.14
+  },
+  {
+   "w": "entre",
+   "desde": 981.14,
+   "hasta": 981.34
+  },
+  {
+   "w": "Meta",
+   "desde": 981.34,
+   "hasta": 981.86
+  },
+  {
+   "w": "y",
+   "desde": 981.86,
+   "hasta": 982.02
+  },
+  {
+   "w": "RayBan",
+   "desde": 982.02,
+   "hasta": 982.58
+  },
+  {
+   "w": "que",
+   "desde": 982.58,
+   "hasta": 982.9
+  },
+  {
+   "w": "lo",
+   "desde": 982.9,
+   "hasta": 983.28
+  },
+  {
+   "w": "que",
+   "desde": 983.28,
+   "hasta": 983.42
+  },
+  {
+   "w": "hace",
+   "desde": 983.42,
+   "hasta": 983.66
+  },
+  {
+   "w": "es",
+   "desde": 983.66,
+   "hasta": 984.0
+  },
+  {
+   "w": "integrar",
+   "desde": 984.0,
+   "hasta": 984.78
+  },
+  {
+   "w": "dentro",
+   "desde": 984.78,
+   "hasta": 985.2
+  },
+  {
+   "w": "de",
+   "desde": 985.2,
+   "hasta": 985.52
+  },
+  {
+   "w": "los",
+   "desde": 985.52,
+   "hasta": 985.7
+  },
+  {
+   "w": "lentes",
+   "desde": 985.7,
+   "hasta": 986.14
+  },
+  {
+   "w": "la",
+   "desde": 986.14,
+   "hasta": 987.0
+  },
+  {
+   "w": "posibilidad",
+   "desde": 987.0,
+   "hasta": 987.48
+  },
+  {
+   "w": "de",
+   "desde": 987.48,
+   "hasta": 987.76
+  },
+  {
+   "w": "tener",
+   "desde": 987.76,
+   "hasta": 988.1
+  },
+  {
+   "w": "como",
+   "desde": 988.1,
+   "hasta": 988.88
+  },
+  {
+   "w": "una",
+   "desde": 988.88,
+   "hasta": 989.08
+  },
+  {
+   "w": "pantalla",
+   "desde": 989.08,
+   "hasta": 989.48
+  },
+  {
+   "w": "dentro",
+   "desde": 989.48,
+   "hasta": 991.38
+  },
+  {
+   "w": "del",
+   "desde": 991.38,
+   "hasta": 991.74
+  },
+  {
+   "w": "ocular.",
+   "desde": 991.74,
+   "hasta": 992.12
+  },
+  {
+   "w": "Entonces,",
+   "desde": 992.28,
+   "hasta": 992.66
+  },
+  {
+   "w": "vamos",
+   "desde": 992.66,
+   "hasta": 992.98
+  },
+  {
+   "w": "a",
+   "desde": 992.98,
+   "hasta": 993.16
+  },
+  {
+   "w": "ver",
+   "desde": 993.16,
+   "hasta": 993.3
+  },
+  {
+   "w": "acá",
+   "desde": 993.3,
+   "hasta": 993.44
+  },
+  {
+   "w": "algunos",
+   "desde": 993.44,
+   "hasta": 993.7
+  },
+  {
+   "w": "ejemplos",
+   "desde": 993.7,
+   "hasta": 994.4
+  },
+  {
+   "w": "donde",
+   "desde": 994.4,
+   "hasta": 995.16
+  },
+  {
+   "w": "se",
+   "desde": 995.16,
+   "hasta": 995.64
+  },
+  {
+   "w": "plantea",
+   "desde": 995.64,
+   "hasta": 996.26
+  },
+  {
+   "w": "tener",
+   "desde": 996.26,
+   "hasta": 996.44
+  },
+  {
+   "w": "una",
+   "desde": 996.44,
+   "hasta": 996.7
+  },
+  {
+   "w": "conversación",
+   "desde": 996.7,
+   "hasta": 997.52
+  },
+  {
+   "w": "dentro",
+   "desde": 997.52,
+   "hasta": 998.26
+  },
+  {
+   "w": "de",
+   "desde": 998.26,
+   "hasta": 998.44
+  },
+  {
+   "w": "que",
+   "desde": 998.44,
+   "hasta": 998.7
+  },
+  {
+   "w": "se",
+   "desde": 998.7,
+   "hasta": 998.82
+  },
+  {
+   "w": "pueda",
+   "desde": 998.82,
+   "hasta": 998.98
+  },
+  {
+   "w": "ver",
+   "desde": 998.98,
+   "hasta": 999.12
+  },
+  {
+   "w": "dentro",
+   "desde": 999.12,
+   "hasta": 999.32
+  },
+  {
+   "w": "del",
+   "desde": 999.32,
+   "hasta": 999.48
+  },
+  {
+   "w": "propio",
+   "desde": 999.48,
+   "hasta": 999.66
+  },
+  {
+   "w": "lente.",
+   "desde": 999.66,
+   "hasta": 1000.02
+  },
+  {
+   "w": "Poder",
+   "desde": 1000.64,
+   "hasta": 1001.0
+  },
+  {
+   "w": "decidir.",
+   "desde": 1001.0,
+   "hasta": 1001.78
+  },
+  {
+   "w": "contestar,",
+   "desde": 1003.22,
+   "hasta": 1003.94
+  },
+  {
+   "w": "atender",
+   "desde": 1003.94,
+   "hasta": 1004.28
+  },
+  {
+   "w": "una",
+   "desde": 1004.28,
+   "hasta": 1004.5
+  },
+  {
+   "w": "llamada,",
+   "desde": 1004.5,
+   "hasta": 1005.08
+  },
+  {
+   "w": "navegar",
+   "desde": 1005.1,
+   "hasta": 1006.38
+  },
+  {
+   "w": "por",
+   "desde": 1006.38,
+   "hasta": 1006.6
+  },
+  {
+   "w": "una",
+   "desde": 1006.6,
+   "hasta": 1006.78
+  },
+  {
+   "w": "red",
+   "desde": 1006.78,
+   "hasta": 1006.98
+  },
+  {
+   "w": "social.",
+   "desde": 1006.98,
+   "hasta": 1007.22
+  },
+  {
+   "w": "Todo",
+   "desde": 1007.56,
+   "hasta": 1008.0
+  },
+  {
+   "w": "eso",
+   "desde": 1008.0,
+   "hasta": 1008.24
+  },
+  {
+   "w": "se",
+   "desde": 1008.24,
+   "hasta": 1008.42
+  },
+  {
+   "w": "maneja",
+   "desde": 1008.42,
+   "hasta": 1008.9
+  },
+  {
+   "w": "con",
+   "desde": 1008.9,
+   "hasta": 1009.58
+  },
+  {
+   "w": "una",
+   "desde": 1009.58,
+   "hasta": 1010.4
+  },
+  {
+   "w": "pulsera",
+   "desde": 1010.4,
+   "hasta": 1011.34
+  },
+  {
+   "w": "que",
+   "desde": 1011.34,
+   "hasta": 1011.8
+  },
+  {
+   "w": "detecta",
+   "desde": 1011.8,
+   "hasta": 1013.82
+  },
+  {
+   "w": "impulsos",
+   "desde": 1013.82,
+   "hasta": 1014.32
+  },
+  {
+   "w": "eléctricos",
+   "desde": 1014.32,
+   "hasta": 1014.9
+  },
+  {
+   "w": "y",
+   "desde": 1014.9,
+   "hasta": 1014.98
+  },
+  {
+   "w": "a",
+   "desde": 1014.98,
+   "hasta": 1015.06
+  },
+  {
+   "w": "partir",
+   "desde": 1015.06,
+   "hasta": 1015.36
+  },
+  {
+   "w": "de",
+   "desde": 1015.36,
+   "hasta": 1015.5
+  },
+  {
+   "w": "micromovimientos,",
+   "desde": 1015.5,
+   "hasta": 1016.72
+  },
+  {
+   "w": "fíjense,",
+   "desde": 1016.74,
+   "hasta": 1017.12
+  },
+  {
+   "w": "de",
+   "desde": 1017.14,
+   "hasta": 1017.3
+  },
+  {
+   "w": "la",
+   "desde": 1017.3,
+   "hasta": 1017.38
+  },
+  {
+   "w": "mano",
+   "desde": 1017.38,
+   "hasta": 1017.66
+  },
+  {
+   "w": "está",
+   "desde": 1017.66,
+   "hasta": 1017.96
+  },
+  {
+   "w": "generando",
+   "desde": 1017.96,
+   "hasta": 1018.66
+  },
+  {
+   "w": "una",
+   "desde": 1018.66,
+   "hasta": 1019.78
+  },
+  {
+   "w": "navegación",
+   "desde": 1019.78,
+   "hasta": 1020.5
+  },
+  {
+   "w": "de",
+   "desde": 1020.5,
+   "hasta": 1020.86
+  },
+  {
+   "w": "alguna",
+   "desde": 1020.86,
+   "hasta": 1021.02
+  },
+  {
+   "w": "manera",
+   "desde": 1021.02,
+   "hasta": 1021.44
+  },
+  {
+   "w": "por",
+   "desde": 1021.44,
+   "hasta": 1021.88
+  },
+  {
+   "w": "esa",
+   "desde": 1021.88,
+   "hasta": 1023.26
+  },
+  {
+   "w": "pantalla",
+   "desde": 1023.26,
+   "hasta": 1023.7
+  },
+  {
+   "w": "virtual",
+   "desde": 1023.7,
+   "hasta": 1025.12
+  },
+  {
+   "w": "que",
+   "desde": 1025.12,
+   "hasta": 1025.6
+  },
+  {
+   "w": "aparece",
+   "desde": 1025.6,
+   "hasta": 1025.98
+  },
+  {
+   "w": "dentro",
+   "desde": 1025.98,
+   "hasta": 1026.9
+  },
+  {
+   "w": "del",
+   "desde": 1026.9,
+   "hasta": 1027.2
+  },
+  {
+   "w": "lente",
+   "desde": 1027.2,
+   "hasta": 1027.64
+  },
+  {
+   "w": "de",
+   "desde": 1027.64,
+   "hasta": 1028.08
+  },
+  {
+   "w": "la",
+   "desde": 1028.08,
+   "hasta": 1028.18
+  },
+  {
+   "w": "persona",
+   "desde": 1028.18,
+   "hasta": 1028.52
+  },
+  {
+   "w": "que",
+   "desde": 1028.52,
+   "hasta": 1028.72
+  },
+  {
+   "w": "lo",
+   "desde": 1028.72,
+   "hasta": 1028.8
+  },
+  {
+   "w": "está",
+   "desde": 1028.8,
+   "hasta": 1028.9
+  },
+  {
+   "w": "utilizando.",
+   "desde": 1028.9,
+   "hasta": 1029.48
+  },
+  {
+   "w": "Fíjense",
+   "desde": 1031.27,
+   "hasta": 1032.29
+  },
+  {
+   "w": "ahí",
+   "desde": 1032.29,
+   "hasta": 1032.49
+  },
+  {
+   "w": "cómo",
+   "desde": 1032.49,
+   "hasta": 1032.85
+  },
+  {
+   "w": "con",
+   "desde": 1032.85,
+   "hasta": 1033.01
+  },
+  {
+   "w": "ese",
+   "desde": 1033.01,
+   "hasta": 1033.17
+  },
+  {
+   "w": "movimiento",
+   "desde": 1033.17,
+   "hasta": 1033.47
+  },
+  {
+   "w": "de",
+   "desde": 1033.47,
+   "hasta": 1033.79
+  },
+  {
+   "w": "mano",
+   "desde": 1033.79,
+   "hasta": 1033.93
+  },
+  {
+   "w": "la",
+   "desde": 1033.93,
+   "hasta": 1034.25
+  },
+  {
+   "w": "persona",
+   "desde": 1034.25,
+   "hasta": 1034.57
+  },
+  {
+   "w": "está",
+   "desde": 1034.57,
+   "hasta": 1034.87
+  },
+  {
+   "w": "controlando",
+   "desde": 1034.87,
+   "hasta": 1036.63
+  },
+  {
+   "w": "estos",
+   "desde": 1036.63,
+   "hasta": 1037.57
+  },
+  {
+   "w": "lentes",
+   "desde": 1037.57,
+   "hasta": 1038.11
+  },
+  {
+   "w": "y",
+   "desde": 1038.11,
+   "hasta": 1038.35
+  },
+  {
+   "w": "está",
+   "desde": 1038.35,
+   "hasta": 1038.57
+  },
+  {
+   "w": "pudiendo",
+   "desde": 1038.57,
+   "hasta": 1039.05
+  },
+  {
+   "w": "ver",
+   "desde": 1039.05,
+   "hasta": 1039.79
+  },
+  {
+   "w": "en",
+   "desde": 1039.79,
+   "hasta": 1039.99
+  },
+  {
+   "w": "vivo,",
+   "desde": 1039.99,
+   "hasta": 1040.35
+  },
+  {
+   "w": "interactuar",
+   "desde": 1040.37,
+   "hasta": 1041.75
+  },
+  {
+   "w": "en",
+   "desde": 1041.75,
+   "hasta": 1041.89
+  },
+  {
+   "w": "el",
+   "desde": 1041.89,
+   "hasta": 1041.99
+  },
+  {
+   "w": "mundo",
+   "desde": 1041.99,
+   "hasta": 1042.15
+  },
+  {
+   "w": "físico",
+   "desde": 1042.15,
+   "hasta": 1042.65
+  },
+  {
+   "w": "y",
+   "desde": 1042.65,
+   "hasta": 1042.71
+  },
+  {
+   "w": "digital",
+   "desde": 1042.71,
+   "hasta": 1042.97
+  },
+  {
+   "w": "en",
+   "desde": 1042.97,
+   "hasta": 1043.25
+  },
+  {
+   "w": "vivo.",
+   "desde": 1043.25,
+   "hasta": 1043.49
+  },
+  {
+   "w": "Acá",
+   "desde": 1043.89,
+   "hasta": 1044.53
+  },
+  {
+   "w": "vamos",
+   "desde": 1044.53,
+   "hasta": 1044.67
+  },
+  {
+   "w": "a",
+   "desde": 1044.67,
+   "hasta": 1044.81
+  },
+  {
+   "w": "ver",
+   "desde": 1044.81,
+   "hasta": 1045.03
+  },
+  {
+   "w": "que",
+   "desde": 1045.03,
+   "hasta": 1045.19
+  },
+  {
+   "w": "Mark",
+   "desde": 1045.19,
+   "hasta": 1045.37
+  },
+  {
+   "w": "Zuckerberg",
+   "desde": 1045.37,
+   "hasta": 1045.87
+  },
+  {
+   "w": "está",
+   "desde": 1045.87,
+   "hasta": 1046.19
+  },
+  {
+   "w": "escribiendo",
+   "desde": 1046.19,
+   "hasta": 1047.07
+  },
+  {
+   "w": "con",
+   "desde": 1047.07,
+   "hasta": 1048.01
+  },
+  {
+   "w": "la",
+   "desde": 1048.01,
+   "hasta": 1048.21
+  },
+  {
+   "w": "mano",
+   "desde": 1048.21,
+   "hasta": 1048.51
+  },
+  {
+   "w": "o",
+   "desde": 1048.51,
+   "hasta": 1048.97
+  },
+  {
+   "w": "está",
+   "desde": 1048.97,
+   "hasta": 1049.41
+  },
+  {
+   "w": "modificando",
+   "desde": 1049.41,
+   "hasta": 1051.25
+  },
+  {
+   "w": "una",
+   "desde": 1051.25,
+   "hasta": 1052.67
+  },
+  {
+   "w": "playlist,",
+   "desde": 1052.67,
+   "hasta": 1053.17
+  },
+  {
+   "w": "modificando",
+   "desde": 1053.37,
+   "hasta": 1054.07
+  },
+  {
+   "w": "el",
+   "desde": 1054.07,
+   "hasta": 1054.23
+  },
+  {
+   "w": "volumen,",
+   "desde": 1054.23,
+   "hasta": 1054.81
+  },
+  {
+   "w": "todo",
+   "desde": 1055.05,
+   "hasta": 1055.37
+  },
+  {
+   "w": "a",
+   "desde": 1055.37,
+   "hasta": 1055.51
+  },
+  {
+   "w": "partir",
+   "desde": 1055.51,
+   "hasta": 1055.83
+  },
+  {
+   "w": "del",
+   "desde": 1055.83,
+   "hasta": 1056.11
+  },
+  {
+   "w": "movimiento",
+   "desde": 1056.11,
+   "hasta": 1056.55
+  },
+  {
+   "w": "de",
+   "desde": 1056.55,
+   "hasta": 1056.97
+  },
+  {
+   "w": "manos.",
+   "desde": 1056.97,
+   "hasta": 1057.19
+  },
+  {
+   "w": "Obviamente",
+   "desde": 1058.01,
+   "hasta": 1058.65
+  },
+  {
+   "w": "que",
+   "desde": 1058.65,
+   "hasta": 1059.05
+  },
+  {
+   "w": "algunos",
+   "desde": 1059.05,
+   "hasta": 1059.75
+  },
+  {
+   "w": "de",
+   "desde": 1059.75,
+   "hasta": 1060.25
+  },
+  {
+   "w": "estos",
+   "desde": 1060.25,
+   "hasta": 1060.49
+  },
+  {
+   "w": "impactos,",
+   "desde": 1060.49,
+   "hasta": 1061.21
+  },
+  {
+   "w": "sobre",
+   "desde": 1061.27,
+   "hasta": 1061.37
+  },
+  {
+   "w": "todo",
+   "desde": 1061.37,
+   "hasta": 1061.67
+  },
+  {
+   "w": "lo",
+   "desde": 1061.67,
+   "hasta": 1061.83
+  },
+  {
+   "w": "que",
+   "desde": 1061.83,
+   "hasta": 1061.91
+  },
+  {
+   "w": "tienen",
+   "desde": 1061.91,
+   "hasta": 1062.09
+  },
+  {
+   "w": "que",
+   "desde": 1062.09,
+   "hasta": 1062.21
+  },
+  {
+   "w": "ver",
+   "desde": 1062.21,
+   "hasta": 1062.37
+  },
+  {
+   "w": "con",
+   "desde": 1062.37,
+   "hasta": 1062.53
+  },
+  {
+   "w": "el",
+   "desde": 1062.53,
+   "hasta": 1062.71
+  },
+  {
+   "w": "mundo",
+   "desde": 1062.71,
+   "hasta": 1062.87
+  },
+  {
+   "w": "de",
+   "desde": 1062.87,
+   "hasta": 1063.01
+  },
+  {
+   "w": "la",
+   "desde": 1063.01,
+   "hasta": 1063.09
+  },
+  {
+   "w": "robótica",
+   "desde": 1063.09,
+   "hasta": 1063.93
+  },
+  {
+   "w": "y",
+   "desde": 1063.93,
+   "hasta": 1064.05
+  },
+  {
+   "w": "las",
+   "desde": 1064.05,
+   "hasta": 1064.23
+  },
+  {
+   "w": "interacciones",
+   "desde": 1064.23,
+   "hasta": 1064.99
+  },
+  {
+   "w": "físico",
+   "desde": 1064.99,
+   "hasta": 1065.35
+  },
+  {
+   "w": "-digitales,",
+   "desde": 1065.35,
+   "hasta": 1065.95
+  },
+  {
+   "w": "van",
+   "desde": 1065.95,
+   "hasta": 1066.09
+  },
+  {
+   "w": "a",
+   "desde": 1066.09,
+   "hasta": 1066.23
+  },
+  {
+   "w": "llevar",
+   "desde": 1066.23,
+   "hasta": 1066.39
+  },
+  {
+   "w": "un",
+   "desde": 1066.39,
+   "hasta": 1066.61
+  },
+  {
+   "w": "poco",
+   "desde": 1066.61,
+   "hasta": 1066.71
+  },
+  {
+   "w": "más",
+   "desde": 1066.71,
+   "hasta": 1066.93
+  },
+  {
+   "w": "de",
+   "desde": 1066.93,
+   "hasta": 1067.03
+  },
+  {
+   "w": "tiempo",
+   "desde": 1067.03,
+   "hasta": 1067.47
+  },
+  {
+   "w": "en",
+   "desde": 1067.99,
+   "hasta": 1068.41
+  },
+  {
+   "w": "llegar",
+   "desde": 1068.41,
+   "hasta": 1068.83
+  },
+  {
+   "w": "a",
+   "desde": 1068.83,
+   "hasta": 1069.01
+  },
+  {
+   "w": "las",
+   "desde": 1069.01,
+   "hasta": 1069.23
+  },
+  {
+   "w": "distintas",
+   "desde": 1069.23,
+   "hasta": 1069.77
+  },
+  {
+   "w": "situaciones",
+   "desde": 1069.77,
+   "hasta": 1071.89
+  },
+  {
+   "w": "de",
+   "desde": 1071.89,
+   "hasta": 1072.03
+  },
+  {
+   "w": "la",
+   "desde": 1072.03,
+   "hasta": 1072.25
+  },
+  {
+   "w": "vida",
+   "desde": 1072.25,
+   "hasta": 1072.51
+  },
+  {
+   "w": "cotidiana,",
+   "desde": 1072.51,
+   "hasta": 1073.09
+  },
+  {
+   "w": "pero",
+   "desde": 1073.27,
+   "hasta": 1073.83
+  },
+  {
+   "w": "sí",
+   "desde": 1073.83,
+   "hasta": 1074.09
+  },
+  {
+   "w": "hay",
+   "desde": 1074.09,
+   "hasta": 1074.27
+  },
+  {
+   "w": "que",
+   "desde": 1074.27,
+   "hasta": 1074.63
+  },
+  {
+   "w": "entender",
+   "desde": 1074.63,
+   "hasta": 1074.95
+  },
+  {
+   "w": "que",
+   "desde": 1074.95,
+   "hasta": 1075.27
+  },
+  {
+   "w": "es",
+   "desde": 1075.27,
+   "hasta": 1075.45
+  },
+  {
+   "w": "probable",
+   "desde": 1075.45,
+   "hasta": 1075.83
+  },
+  {
+   "w": "que",
+   "desde": 1075.83,
+   "hasta": 1076.11
+  },
+  {
+   "w": "haya",
+   "desde": 1076.11,
+   "hasta": 1076.25
+  },
+  {
+   "w": "modificaciones",
+   "desde": 1076.25,
+   "hasta": 1076.99
+  },
+  {
+   "w": "en",
+   "desde": 1076.99,
+   "hasta": 1077.23
+  },
+  {
+   "w": "las",
+   "desde": 1077.23,
+   "hasta": 1077.41
+  },
+  {
+   "w": "interfaces",
+   "desde": 1077.41,
+   "hasta": 1077.99
+  },
+  {
+   "w": "de",
+   "desde": 1077.99,
+   "hasta": 1079.29
+  },
+  {
+   "w": "comunicación.",
+   "desde": 1079.29,
+   "hasta": 1080.27
+  },
+  {
+   "w": "Al",
+   "desde": 1080.61,
+   "hasta": 1081.03
+  },
+  {
+   "w": "final",
+   "desde": 1081.03,
+   "hasta": 1081.23
+  },
+  {
+   "w": "del",
+   "desde": 1081.23,
+   "hasta": 1081.39
+  },
+  {
+   "w": "día,",
+   "desde": 1081.39,
+   "hasta": 1081.59
+  },
+  {
+   "w": "si",
+   "desde": 1081.65,
+   "hasta": 1081.75
+  },
+  {
+   "w": "lo",
+   "desde": 1081.75,
+   "hasta": 1081.87
+  },
+  {
+   "w": "pensamos",
+   "desde": 1081.87,
+   "hasta": 1082.29
+  },
+  {
+   "w": "hoy,",
+   "desde": 1082.29,
+   "hasta": 1082.53
+  },
+  {
+   "w": "un",
+   "desde": 1082.61,
+   "hasta": 1082.73
+  },
+  {
+   "w": "teclado",
+   "desde": 1082.73,
+   "hasta": 1083.39
+  },
+  {
+   "w": "no",
+   "desde": 1083.39,
+   "hasta": 1083.93
+  },
+  {
+   "w": "deja",
+   "desde": 1083.93,
+   "hasta": 1084.17
+  },
+  {
+   "w": "de",
+   "desde": 1084.17,
+   "hasta": 1084.35
+  },
+  {
+   "w": "ser",
+   "desde": 1084.35,
+   "hasta": 1084.51
+  },
+  {
+   "w": "una",
+   "desde": 1084.51,
+   "hasta": 1084.67
+  },
+  {
+   "w": "restricción",
+   "desde": 1084.67,
+   "hasta": 1085.67
+  },
+  {
+   "w": "a",
+   "desde": 1085.67,
+   "hasta": 1086.59
+  },
+  {
+   "w": "la",
+   "desde": 1086.59,
+   "hasta": 1086.71
+  },
+  {
+   "w": "hora",
+   "desde": 1086.71,
+   "hasta": 1086.89
+  },
+  {
+   "w": "de",
+   "desde": 1086.89,
+   "hasta": 1087.01
+  },
+  {
+   "w": "comunicarnos.",
+   "desde": 1087.01,
+   "hasta": 1087.59
+  },
+  {
+   "w": "Yo",
+   "desde": 1087.71,
+   "hasta": 1087.99
+  },
+  {
+   "w": "necesito",
+   "desde": 1087.99,
+   "hasta": 1088.63
+  },
+  {
+   "w": "escribirle,",
+   "desde": 1088.63,
+   "hasta": 1089.33
+  },
+  {
+   "w": "hablar",
+   "desde": 1089.35,
+   "hasta": 1089.55
+  },
+  {
+   "w": "con",
+   "desde": 1089.55,
+   "hasta": 1089.83
+  },
+  {
+   "w": "alguien",
+   "desde": 1089.83,
+   "hasta": 1090.15
+  },
+  {
+   "w": "que",
+   "desde": 1090.15,
+   "hasta": 1090.47
+  },
+  {
+   "w": "está",
+   "desde": 1090.47,
+   "hasta": 1090.63
+  },
+  {
+   "w": "lejos,",
+   "desde": 1090.63,
+   "hasta": 1091.11
+  },
+  {
+   "w": "y",
+   "desde": 1091.27,
+   "hasta": 1091.93
+  },
+  {
+   "w": "no",
+   "desde": 1091.93,
+   "hasta": 1092.29
+  },
+  {
+   "w": "tengo",
+   "desde": 1092.29,
+   "hasta": 1092.67
+  },
+  {
+   "w": "alternativa",
+   "desde": 1092.67,
+   "hasta": 1094.11
+  },
+  {
+   "w": "que",
+   "desde": 1094.11,
+   "hasta": 1094.31
+  },
+  {
+   "w": "teclear",
+   "desde": 1094.31,
+   "hasta": 1095.01
+  },
+  {
+   "w": "o",
+   "desde": 1095.01,
+   "hasta": 1095.17
+  },
+  {
+   "w": "escribir",
+   "desde": 1095.17,
+   "hasta": 1095.49
+  },
+  {
+   "w": "algo.",
+   "desde": 1095.49,
+   "hasta": 1095.71
+  },
+  {
+   "w": "Pero",
+   "desde": 1095.93,
+   "hasta": 1096.47
+  },
+  {
+   "w": "si",
+   "desde": 1096.47,
+   "hasta": 1096.79
+  },
+  {
+   "w": "yo",
+   "desde": 1096.79,
+   "hasta": 1096.95
+  },
+  {
+   "w": "lo",
+   "desde": 1096.95,
+   "hasta": 1097.09
+  },
+  {
+   "w": "puedo",
+   "desde": 1097.09,
+   "hasta": 1097.29
+  },
+  {
+   "w": "hablar",
+   "desde": 1097.29,
+   "hasta": 1097.63
+  },
+  {
+   "w": "y",
+   "desde": 1097.63,
+   "hasta": 1097.93
+  },
+  {
+   "w": "la",
+   "desde": 1097.93,
+   "hasta": 1098.13
+  },
+  {
+   "w": "máquina",
+   "desde": 1098.13,
+   "hasta": 1098.55
+  },
+  {
+   "w": "lo",
+   "desde": 1098.55,
+   "hasta": 1099.03
+  },
+  {
+   "w": "interpreta",
+   "desde": 1099.03,
+   "hasta": 1099.71
+  },
+  {
+   "w": "y",
+   "desde": 1099.71,
+   "hasta": 1099.81
+  },
+  {
+   "w": "lo",
+   "desde": 1099.81,
+   "hasta": 1099.97
+  },
+  {
+   "w": "traduce,",
+   "desde": 1099.97,
+   "hasta": 1100.47
+  },
+  {
+   "w": "con",
+   "desde": 1101.17,
+   "hasta": 1101.77
+  },
+  {
+   "w": "eso",
+   "desde": 1101.77,
+   "hasta": 1102.05
+  },
+  {
+   "w": "gano",
+   "desde": 1102.05,
+   "hasta": 1102.31
+  },
+  {
+   "w": "velocidad,",
+   "desde": 1102.31,
+   "hasta": 1102.63
+  },
+  {
+   "w": "es",
+   "desde": 1102.77,
+   "hasta": 1102.99
+  },
+  {
+   "w": "probable",
+   "desde": 1102.99,
+   "hasta": 1103.25
+  },
+  {
+   "w": "que",
+   "desde": 1103.25,
+   "hasta": 1103.55
+  },
+  {
+   "w": "comience",
+   "desde": 1103.55,
+   "hasta": 1104.01
+  },
+  {
+   "w": "a",
+   "desde": 1104.01,
+   "hasta": 1104.23
+  },
+  {
+   "w": "poco",
+   "desde": 1104.23,
+   "hasta": 1104.45
+  },
+  {
+   "w": "a",
+   "desde": 1104.45,
+   "hasta": 1104.57
+  },
+  {
+   "w": "desaparecer",
+   "desde": 1104.57,
+   "hasta": 1105.19
+  },
+  {
+   "w": "el",
+   "desde": 1105.19,
+   "hasta": 1105.33
+  },
+  {
+   "w": "teclado",
+   "desde": 1105.33,
+   "hasta": 1105.81
+  },
+  {
+   "w": "como",
+   "desde": 1105.81,
+   "hasta": 1106.03
+  },
+  {
+   "w": "interfase",
+   "desde": 1106.03,
+   "hasta": 1106.65
+  },
+  {
+   "w": "y",
+   "desde": 1106.65,
+   "hasta": 1107.43
+  },
+  {
+   "w": "aparezcan",
+   "desde": 1107.43,
+   "hasta": 1108.05
+  },
+  {
+   "w": "muchas",
+   "desde": 1108.05,
+   "hasta": 1108.27
+  },
+  {
+   "w": "más",
+   "desde": 1108.27,
+   "hasta": 1108.47
+  },
+  {
+   "w": "interfaces",
+   "desde": 1108.47,
+   "hasta": 1108.71
+  },
+  {
+   "w": "que",
+   "desde": 1108.71,
+   "hasta": 1109.15
+  },
+  {
+   "w": "son",
+   "desde": 1109.15,
+   "hasta": 1109.35
+  },
+  {
+   "w": "de",
+   "desde": 1109.35,
+   "hasta": 1109.55
+  },
+  {
+   "w": "voz",
+   "desde": 1109.55,
+   "hasta": 1109.79
+  },
+  {
+   "w": "y",
+   "desde": 1109.79,
+   "hasta": 1110.53
+  },
+  {
+   "w": "de",
+   "desde": 1110.53,
+   "hasta": 1110.87
+  },
+  {
+   "w": "procesamiento",
+   "desde": 1110.87,
+   "hasta": 1111.71
+  },
+  {
+   "w": "de",
+   "desde": 1111.71,
+   "hasta": 1111.93
+  },
+  {
+   "w": "imagen,",
+   "desde": 1111.93,
+   "hasta": 1112.21
+  },
+  {
+   "w": "como",
+   "desde": 1112.45,
+   "hasta": 1113.17
+  },
+  {
+   "w": "la",
+   "desde": 1113.17,
+   "hasta": 1114.17
+  },
+  {
+   "w": "inteligencia",
+   "desde": 1114.17,
+   "hasta": 1114.65
+  },
+  {
+   "w": "artificial",
+   "desde": 1114.65,
+   "hasta": 1114.89
+  },
+  {
+   "w": "lo",
+   "desde": 1114.89,
+   "hasta": 1115.21
+  },
+  {
+   "w": "permite",
+   "desde": 1115.21,
+   "hasta": 1115.47
+  },
+  {
+   "w": "en",
+   "desde": 1115.47,
+   "hasta": 1115.81
+  },
+  {
+   "w": "este",
+   "desde": 1115.81,
+   "hasta": 1115.97
+  },
+  {
+   "w": "tipo",
+   "desde": 1115.97,
+   "hasta": 1116.21
+  },
+  {
+   "w": "de",
+   "desde": 1116.21,
+   "hasta": 1116.31
+  },
+  {
+   "w": "ejemplos.",
+   "desde": 1116.31,
+   "hasta": 1116.65
+  },
+  {
+   "w": "Entonces",
+   "desde": 1117.23,
+   "hasta": 1117.83
+  },
+  {
+   "w": "cerramos",
+   "desde": 1117.83,
+   "hasta": 1118.27
+  },
+  {
+   "w": "con",
+   "desde": 1118.27,
+   "hasta": 1118.63
+  },
+  {
+   "w": "los",
+   "desde": 1118.63,
+   "hasta": 1119.29
+  },
+  {
+   "w": "cuatro",
+   "desde": 1119.29,
+   "hasta": 1119.59
+  },
+  {
+   "w": "bloques",
+   "desde": 1119.59,
+   "hasta": 1120.17
+  },
+  {
+   "w": "de",
+   "desde": 1121.27,
+   "hasta": 1121.83
+  },
+  {
+   "w": "casos",
+   "desde": 1121.83,
+   "hasta": 1122.39
+  },
+  {
+   "w": "de",
+   "desde": 1122.39,
+   "hasta": 1122.67
+  },
+  {
+   "w": "industria.",
+   "desde": 1122.67,
+   "hasta": 1123.21
+  },
+  {
+   "w": "Desde",
+   "desde": 1123.31,
+   "hasta": 1123.81
+  },
+  {
+   "w": "un",
+   "desde": 1123.81,
+   "hasta": 1124.23
+  },
+  {
+   "w": "asistente",
+   "desde": 1124.23,
+   "hasta": 1124.79
+  },
+  {
+   "w": "personal",
+   "desde": 1124.79,
+   "hasta": 1125.17
+  },
+  {
+   "w": "para",
+   "desde": 1125.17,
+   "hasta": 1125.59
+  },
+  {
+   "w": "realizar",
+   "desde": 1125.59,
+   "hasta": 1125.87
+  },
+  {
+   "w": "tareas",
+   "desde": 1125.87,
+   "hasta": 1126.71
+  },
+  {
+   "w": "de",
+   "desde": 1126.71,
+   "hasta": 1127.29
+  },
+  {
+   "w": "todo",
+   "desde": 1127.29,
+   "hasta": 1127.51
+  },
+  {
+   "w": "tipo.",
+   "desde": 1127.51,
+   "hasta": 1127.89
+  },
+  {
+   "w": "Desde",
+   "desde": 1128.27,
+   "hasta": 1128.83
+  },
+  {
+   "w": "la",
+   "desde": 1128.83,
+   "hasta": 1129.27
+  },
+  {
+   "w": "automatización",
+   "desde": 1129.27,
+   "hasta": 1129.89
+  },
+  {
+   "w": "y",
+   "desde": 1129.89,
+   "hasta": 1130.11
+  },
+  {
+   "w": "agentes",
+   "desde": 1130.11,
+   "hasta": 1130.63
+  },
+  {
+   "w": "para",
+   "desde": 1130.63,
+   "hasta": 1130.83
+  },
+  {
+   "w": "integrar",
+   "desde": 1130.83,
+   "hasta": 1131.33
+  },
+  {
+   "w": "procesos",
+   "desde": 1131.33,
+   "hasta": 1131.93
+  },
+  {
+   "w": "y",
+   "desde": 1131.93,
+   "hasta": 1131.99
+  },
+  {
+   "w": "automatizar",
+   "desde": 1131.99,
+   "hasta": 1132.55
+  },
+  {
+   "w": "tareas",
+   "desde": 1132.55,
+   "hasta": 1132.89
+  },
+  {
+   "w": "repetitivas.",
+   "desde": 1132.89,
+   "hasta": 1133.57
+  },
+  {
+   "w": "IA",
+   "desde": 1133.85,
+   "hasta": 1134.41
+  },
+  {
+   "w": "para",
+   "desde": 1134.41,
+   "hasta": 1134.85
+  },
+  {
+   "w": "inteligencia",
+   "desde": 1134.85,
+   "hasta": 1135.45
+  },
+  {
+   "w": "avanzada",
+   "desde": 1135.45,
+   "hasta": 1135.97
+  },
+  {
+   "w": "y",
+   "desde": 1135.97,
+   "hasta": 1136.15
+  },
+  {
+   "w": "análisis",
+   "desde": 1136.15,
+   "hasta": 1136.55
+  },
+  {
+   "w": "de",
+   "desde": 1136.55,
+   "hasta": 1136.67
+  },
+  {
+   "w": "datos.",
+   "desde": 1136.67,
+   "hasta": 1136.93
+  },
+  {
+   "w": "Y",
+   "desde": 1137.37,
+   "hasta": 1137.93
+  },
+  {
+   "w": "por",
+   "desde": 1137.93,
+   "hasta": 1138.01
+  },
+  {
+   "w": "último,",
+   "desde": 1138.01,
+   "hasta": 1138.37
+  },
+  {
+   "w": "IA",
+   "desde": 1138.43,
+   "hasta": 1138.79
+  },
+  {
+   "w": "en",
+   "desde": 1138.79,
+   "hasta": 1139.41
+  },
+  {
+   "w": "el",
+   "desde": 1139.41,
+   "hasta": 1139.67
+  },
+  {
+   "w": "mundo",
+   "desde": 1139.67,
+   "hasta": 1139.91
+  },
+  {
+   "w": "físico",
+   "desde": 1139.91,
+   "hasta": 1140.55
+  },
+  {
+   "w": "-digital.",
+   "desde": 1140.55,
+   "hasta": 1140.93
+  },
+  {
+   "w": "¿En",
+   "desde": 1141.19,
+   "hasta": 1141.75
+  },
+  {
+   "w": "qué",
+   "desde": 1141.75,
+   "hasta": 1141.85
+  },
+  {
+   "w": "nos",
+   "desde": 1141.85,
+   "hasta": 1141.95
+  },
+  {
+   "w": "vamos",
+   "desde": 1141.95,
+   "hasta": 1142.13
+  },
+  {
+   "w": "a",
+   "desde": 1142.13,
+   "hasta": 1142.37
+  },
+  {
+   "w": "sumergir",
+   "desde": 1142.37,
+   "hasta": 1142.89
+  },
+  {
+   "w": "a",
+   "desde": 1142.89,
+   "hasta": 1143.03
+  },
+  {
+   "w": "lo",
+   "desde": 1143.03,
+   "hasta": 1143.11
+  },
+  {
+   "w": "largo",
+   "desde": 1143.11,
+   "hasta": 1143.45
+  },
+  {
+   "w": "de",
+   "desde": 1143.45,
+   "hasta": 1143.57
+  },
+  {
+   "w": "este",
+   "desde": 1143.57,
+   "hasta": 1143.73
+  },
+  {
+   "w": "curso?",
+   "desde": 1143.73,
+   "hasta": 1144.01
+  },
+  {
+   "w": "En",
+   "desde": 1144.55,
+   "hasta": 1144.83
+  },
+  {
+   "w": "el",
+   "desde": 1144.83,
+   "hasta": 1144.95
+  },
+  {
+   "w": "primero,",
+   "desde": 1144.95,
+   "hasta": 1145.29
+  },
+  {
+   "w": "en",
+   "desde": 1145.47,
+   "hasta": 1145.65
+  },
+  {
+   "w": "el",
+   "desde": 1145.65,
+   "hasta": 1145.81
+  },
+  {
+   "w": "IA",
+   "desde": 1145.81,
+   "hasta": 1146.03
+  },
+  {
+   "w": "como",
+   "desde": 1146.03,
+   "hasta": 1146.35
+  },
+  {
+   "w": "copiloto",
+   "desde": 1146.35,
+   "hasta": 1146.85
+  },
+  {
+   "w": "vamos",
+   "desde": 1146.85,
+   "hasta": 1147.07
+  },
+  {
+   "w": "a",
+   "desde": 1147.07,
+   "hasta": 1147.27
+  },
+  {
+   "w": "ver",
+   "desde": 1147.27,
+   "hasta": 1147.39
+  },
+  {
+   "w": "varios",
+   "desde": 1147.39,
+   "hasta": 1147.71
+  },
+  {
+   "w": "casos",
+   "desde": 1147.71,
+   "hasta": 1148.03
+  },
+  {
+   "w": "para",
+   "desde": 1148.43,
+   "hasta": 1148.71
+  },
+  {
+   "w": "que",
+   "desde": 1148.71,
+   "hasta": 1148.87
+  },
+  {
+   "w": "cada",
+   "desde": 1148.87,
+   "hasta": 1149.05
+  },
+  {
+   "w": "uno",
+   "desde": 1149.05,
+   "hasta": 1149.31
+  },
+  {
+   "w": "pueda",
+   "desde": 1149.31,
+   "hasta": 1149.57
+  },
+  {
+   "w": "incorporarlo",
+   "desde": 1149.57,
+   "hasta": 1150.25
+  },
+  {
+   "w": "en",
+   "desde": 1150.25,
+   "hasta": 1150.55
+  },
+  {
+   "w": "su",
+   "desde": 1150.55,
+   "hasta": 1150.67
+  },
+  {
+   "w": "día",
+   "desde": 1150.67,
+   "hasta": 1150.89
+  },
+  {
+   "w": "a",
+   "desde": 1150.89,
+   "hasta": 1151.01
+  },
+  {
+   "w": "día.",
+   "desde": 1151.01,
+   "hasta": 1151.25
+  },
+  {
+   "w": "Y",
+   "desde": 1151.25,
+   "hasta": 1152.29
+  },
+  {
+   "w": "realmente",
+   "desde": 1152.29,
+   "hasta": 1153.39
+  },
+  {
+   "w": "sacarle",
+   "desde": 1153.39,
+   "hasta": 1153.93
+  },
+  {
+   "w": "jugo",
+   "desde": 1153.93,
+   "hasta": 1154.25
+  },
+  {
+   "w": "a",
+   "desde": 1154.25,
+   "hasta": 1154.27
+  },
+  {
+   "w": "la",
+   "desde": 1154.27,
+   "hasta": 1154.35
+  },
+  {
+   "w": "inteligencia",
+   "desde": 1154.35,
+   "hasta": 1155.13
+  },
+  {
+   "w": "artificial",
+   "desde": 1155.13,
+   "hasta": 1155.27
+  },
+  {
+   "w": "para",
+   "desde": 1155.27,
+   "hasta": 1155.89
+  },
+  {
+   "w": "ganar",
+   "desde": 1155.89,
+   "hasta": 1156.25
+  },
+  {
+   "w": "productividad",
+   "desde": 1156.25,
+   "hasta": 1156.87
+  },
+  {
+   "w": "en",
+   "desde": 1156.87,
+   "hasta": 1157.11
+  },
+  {
+   "w": "las",
+   "desde": 1157.11,
+   "hasta": 1157.37
+  },
+  {
+   "w": "tareas",
+   "desde": 1157.37,
+   "hasta": 1157.67
+  },
+  {
+   "w": "cotidianas.",
+   "desde": 1157.67,
+   "hasta": 1158.21
+  }
+ ]
+}
