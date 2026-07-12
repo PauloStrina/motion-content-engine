@@ -232,18 +232,23 @@
    "hasta": 26.84
   },
   {
-   "w": "no",
+   "w": "igual",
    "desde": 26.84,
    "hasta": 26.94
   },
   {
-   "w": "te",
+   "w": "no",
    "desde": 26.94,
-   "hasta": 27.24
+   "hasta": 27.18
+  },
+  {
+   "w": "te",
+   "desde": 27.18,
+   "hasta": 27.28
   },
   {
    "w": "preocupes",
-   "desde": 27.24,
+   "desde": 27.28,
    "hasta": 27.68
   },
   {
@@ -259,26 +264,26 @@
   {
    "w": "digo",
    "desde": 28.2,
-   "hasta": 28.74
+   "hasta": 28.72
   },
   {
    "w": "igual",
-   "desde": 28.74,
-   "hasta": 29.0
+   "desde": 28.72,
+   "hasta": 29.02
   },
   {
    "w": "no",
-   "desde": 29.0,
-   "hasta": 32.28
+   "desde": 29.02,
+   "hasta": 32.3
   },
   {
    "w": "la",
-   "desde": 34.84,
-   "hasta": 35.54
+   "desde": 34.88,
+   "hasta": 35.56
   },
   {
    "w": "transformación",
-   "desde": 35.54,
+   "desde": 35.56,
    "hasta": 36.24
   },
   {
@@ -304,11 +309,11 @@
   {
    "w": "modelo",
    "desde": 37.42,
-   "hasta": 38.04
+   "hasta": 38.06
   },
   {
    "w": "de",
-   "desde": 38.04,
+   "desde": 38.06,
    "hasta": 38.22
   },
   {
@@ -374,11 +379,11 @@
   {
    "w": "continua",
    "desde": 42.76,
-   "hasta": 43.14
+   "hasta": 43.18
   },
   {
    "w": "no",
-   "desde": 43.14,
+   "desde": 43.18,
    "hasta": 43.52
   },
   {
@@ -389,11 +394,11 @@
   {
    "w": "parte",
    "desde": 43.92,
-   "hasta": 45.54
+   "hasta": 45.56
   },
   {
    "w": "de",
-   "desde": 45.54,
+   "desde": 45.56,
    "hasta": 45.74
   },
   {
@@ -494,21 +499,21 @@
   {
    "w": "obsolescencia",
    "desde": 53.36,
-   "hasta": 53.82
+   "hasta": 53.84
   },
   {
    "w": "de",
-   "desde": 53.82,
-   "hasta": 54.1
+   "desde": 53.84,
+   "hasta": 54.12
   },
   {
    "w": "la",
-   "desde": 54.1,
-   "hasta": 54.44
+   "desde": 54.12,
+   "hasta": 54.46
   },
   {
    "w": "famosa",
-   "desde": 54.44,
+   "desde": 54.46,
    "hasta": 54.84
   },
   {
@@ -553,22 +558,22 @@
   },
   {
    "w": "una",
-   "desde": 56.84,
-   "hasta": 56.88
+   "desde": 56.8,
+   "hasta": 56.86
   },
   {
    "w": "tecnología",
-   "desde": 56.88,
+   "desde": 56.86,
    "hasta": 57.4
   },
   {
    "w": "y",
    "desde": 57.4,
-   "hasta": 57.78
+   "hasta": 57.8
   },
   {
    "w": "preparo",
-   "desde": 57.78,
+   "desde": 57.8,
    "hasta": 58.4
   },
   {
@@ -617,38 +622,38 @@
    "hasta": 60.64
   },
   {
-   "w": "tecnología.",
+   "w": "tecnología",
    "desde": 60.64,
-   "hasta": 61.1
+   "hasta": 61.08
   },
   {
-   "w": "Hoy",
-   "desde": 61.34,
-   "hasta": 61.86
+   "w": "hoy",
+   "desde": 61.08,
+   "hasta": 61.84
   },
   {
    "w": "la",
-   "desde": 61.86,
-   "hasta": 62.0
+   "desde": 61.84,
+   "hasta": 62.02
   },
   {
    "w": "realidad",
-   "desde": 62.0,
+   "desde": 62.02,
    "hasta": 62.32
   },
   {
    "w": "es",
    "desde": 62.32,
-   "hasta": 62.54
+   "hasta": 62.52
   },
   {
    "w": "que",
-   "desde": 62.54,
-   "hasta": 62.64
+   "desde": 62.52,
+   "hasta": 62.66
   },
   {
    "w": "estamos",
-   "desde": 62.64,
+   "desde": 62.66,
    "hasta": 62.98
   },
   {
@@ -664,36 +669,36 @@
   {
    "w": "ambiente",
    "desde": 63.28,
-   "hasta": 63.62
+   "hasta": 63.6
   },
   {
    "w": "en",
-   "desde": 63.62,
+   "desde": 63.6,
    "hasta": 63.82
   },
   {
    "w": "donde",
    "desde": 63.82,
-   "hasta": 64.06
+   "hasta": 64.04
   },
   {
    "w": "los",
-   "desde": 64.06,
+   "desde": 64.04,
    "hasta": 64.8
   },
   {
    "w": "cambios",
    "desde": 64.8,
-   "hasta": 65.2
+   "hasta": 65.22
   },
   {
    "w": "son",
-   "desde": 65.2,
-   "hasta": 65.36
+   "desde": 65.22,
+   "hasta": 65.38
   },
   {
    "w": "permanentes",
-   "desde": 65.36,
+   "desde": 65.38,
    "hasta": 66.04
   },
   {
@@ -717,18 +722,18 @@
    "hasta": 66.76
   },
   {
-   "w": "permanente,",
+   "w": "permanente",
    "desde": 66.76,
-   "hasta": 67.28
+   "hasta": 67.26
   },
   {
    "w": "entonces",
-   "desde": 67.34,
-   "hasta": 67.5
+   "desde": 67.26,
+   "hasta": 67.48
   },
   {
    "w": "hay",
-   "desde": 67.5,
+   "desde": 67.48,
    "hasta": 67.7
   },
   {
@@ -739,11 +744,11 @@
   {
    "w": "combinar",
    "desde": 67.86,
-   "hasta": 68.36
+   "hasta": 68.38
   },
   {
    "w": "la",
-   "desde": 68.36,
+   "desde": 68.38,
    "hasta": 68.96
   },
   {
@@ -779,21 +784,21 @@
   {
    "w": "cambio",
    "desde": 71.34,
-   "hasta": 71.68
+   "hasta": 71.66
   },
   {
    "w": "y",
-   "desde": 71.68,
+   "desde": 71.66,
    "hasta": 72.24
   },
   {
    "w": "sumarle",
    "desde": 72.24,
-   "hasta": 72.66
+   "hasta": 72.68
   },
   {
    "w": "una",
-   "desde": 72.66,
+   "desde": 72.68,
    "hasta": 73.8
   },
   {
@@ -819,11 +824,11 @@
   {
    "w": "comportamiento",
    "desde": 74.88,
-   "hasta": 75.48
+   "hasta": 75.46
   },
   {
    "w": "para",
-   "desde": 75.48,
+   "desde": 75.46,
    "hasta": 75.74
   },
   {
@@ -889,26 +894,26 @@
   {
    "w": "de",
    "desde": 81.76,
-   "hasta": 82.22
+   "hasta": 82.2
   },
   {
    "w": "adaptarse",
-   "desde": 82.22,
-   "hasta": 83.12
+   "desde": 82.2,
+   "hasta": 83.1
   },
   {
    "w": "en",
-   "desde": 83.12,
+   "desde": 83.1,
    "hasta": 83.5
   },
   {
    "w": "base",
    "desde": 83.5,
-   "hasta": 83.78
+   "hasta": 83.76
   },
   {
    "w": "a",
-   "desde": 83.78,
+   "desde": 83.76,
    "hasta": 84.04
   },
   {
@@ -929,11 +934,11 @@
   {
    "w": "contexto",
    "desde": 84.6,
-   "hasta": 84.82
+   "hasta": 85.02
   },
   {
    "w": "y",
-   "desde": 84.82,
+   "desde": 85.02,
    "hasta": 85.68
   },
   {
@@ -952,43 +957,43 @@
    "hasta": 86.18
   },
   {
-   "w": "estratégicos",
-   "desde": 86.18,
+   "w": "políticos",
+   "desde": 86.8,
    "hasta": 86.92
   },
   {
    "w": "de",
    "desde": 86.92,
-   "hasta": 87.12
+   "hasta": 87.1
   },
   {
    "w": "las",
-   "desde": 87.12,
+   "desde": 87.1,
    "hasta": 87.56
   },
   {
-   "w": "compañías.",
+   "w": "compañías",
    "desde": 87.56,
-   "hasta": 88.16
+   "hasta": 88.14
   },
   {
-   "w": "Bueno,",
-   "desde": 104.98,
-   "hasta": 105.54
+   "w": "bueno",
+   "desde": 91.15,
+   "hasta": 92.57
   },
   {
-   "w": "sí,",
-   "desde": 105.68,
+   "w": "si",
+   "desde": 104.54,
    "hasta": 105.9
   },
   {
    "w": "a",
-   "desde": 106.0,
-   "hasta": 106.18
+   "desde": 105.9,
+   "hasta": 106.16
   },
   {
    "w": "nosotros",
-   "desde": 106.18,
+   "desde": 106.16,
    "hasta": 106.46
   },
   {
@@ -1009,26 +1014,26 @@
   {
    "w": "que",
    "desde": 107.84,
-   "hasta": 108.08
+   "hasta": 108.1
   },
   {
    "w": "la",
-   "desde": 108.08,
-   "hasta": 108.3
+   "desde": 108.1,
+   "hasta": 108.28
   },
   {
    "w": "cultura",
-   "desde": 108.3,
+   "desde": 108.28,
    "hasta": 108.64
   },
   {
    "w": "es",
    "desde": 108.64,
-   "hasta": 108.96
+   "hasta": 108.98
   },
   {
    "w": "el",
-   "desde": 108.96,
+   "desde": 108.98,
    "hasta": 109.46
   },
   {
@@ -1039,56 +1044,56 @@
   {
    "w": "operativo",
    "desde": 109.72,
-   "hasta": 110.22
+   "hasta": 110.24
   },
   {
    "w": "de",
-   "desde": 110.22,
+   "desde": 110.24,
    "hasta": 110.38
   },
   {
    "w": "la",
    "desde": 110.38,
-   "hasta": 110.46
+   "hasta": 110.48
   },
   {
-   "w": "compañía.",
-   "desde": 110.46,
-   "hasta": 111.02
+   "w": "compañía",
+   "desde": 110.48,
+   "hasta": 111.0
   },
   {
-   "w": "Una",
-   "desde": 111.08,
-   "hasta": 111.48
+   "w": "una",
+   "desde": 111.0,
+   "hasta": 111.44
   },
   {
    "w": "transformación",
-   "desde": 111.48,
+   "desde": 111.44,
    "hasta": 112.18
   },
   {
    "w": "digital",
    "desde": 112.18,
-   "hasta": 112.42
+   "hasta": 112.46
   },
   {
    "w": "no",
-   "desde": 112.42,
-   "hasta": 112.88
+   "desde": 112.46,
+   "hasta": 112.9
   },
   {
    "w": "se",
-   "desde": 112.88,
+   "desde": 112.9,
    "hasta": 113.04
   },
   {
    "w": "trata",
    "desde": 113.04,
-   "hasta": 113.28
+   "hasta": 113.3
   },
   {
    "w": "de",
-   "desde": 113.28,
+   "desde": 113.3,
    "hasta": 113.66
   },
   {
@@ -1099,26 +1104,26 @@
   {
    "w": "proyecto",
    "desde": 114.02,
-   "hasta": 114.34
+   "hasta": 114.32
   },
   {
    "w": "de",
-   "desde": 114.34,
+   "desde": 114.32,
    "hasta": 114.56
   },
   {
-   "w": "IT",
+   "w": "haití",
    "desde": 114.56,
-   "hasta": 114.72
+   "hasta": 114.8
   },
   {
-   "w": "solamente,",
-   "desde": 114.72,
-   "hasta": 115.08
+   "w": "solamente",
+   "desde": 114.8,
+   "hasta": 115.1
   },
   {
    "w": "sino",
-   "desde": 115.14,
+   "desde": 115.1,
    "hasta": 115.6
   },
   {
@@ -1127,43 +1132,43 @@
    "hasta": 115.8
   },
   {
-   "w": "generar",
+   "w": "general",
    "desde": 115.8,
-   "hasta": 116.58
+   "hasta": 116.5
   },
   {
    "w": "una",
-   "desde": 116.58,
+   "desde": 116.5,
    "hasta": 116.7
   },
   {
    "w": "transformación",
    "desde": 116.7,
-   "hasta": 117.34
+   "hasta": 117.38
   },
   {
    "w": "cultural",
-   "desde": 117.34,
-   "hasta": 117.78
+   "desde": 117.38,
+   "hasta": 117.76
   },
   {
    "w": "que",
-   "desde": 117.78,
-   "hasta": 118.6
+   "desde": 117.76,
+   "hasta": 118.62
   },
   {
    "w": "es",
-   "desde": 118.6,
+   "desde": 118.62,
    "hasta": 118.82
   },
   {
    "w": "el",
    "desde": 118.82,
-   "hasta": 119.24
+   "hasta": 119.0
   },
   {
    "w": "sistema",
-   "desde": 119.24,
+   "desde": 119.0,
    "hasta": 119.58
   },
   {
@@ -1179,11 +1184,11 @@
   {
    "w": "corre",
    "desde": 120.04,
-   "hasta": 120.5
+   "hasta": 120.52
   },
   {
    "w": "la",
-   "desde": 120.5,
+   "desde": 120.52,
    "hasta": 121.78
   },
   {
@@ -1204,26 +1209,26 @@
   {
    "w": "organización",
    "desde": 122.48,
-   "hasta": 123.1
+   "hasta": 123.08
   },
   {
    "w": "y",
-   "desde": 123.1,
-   "hasta": 123.44
+   "desde": 123.08,
+   "hasta": 123.48
   },
   {
    "w": "que",
-   "desde": 123.44,
+   "desde": 123.48,
    "hasta": 123.56
   },
   {
    "w": "hace",
    "desde": 123.56,
-   "hasta": 123.84
+   "hasta": 123.88
   },
   {
    "w": "que",
-   "desde": 123.84,
+   "desde": 123.88,
    "hasta": 124.04
   },
   {
@@ -1244,11 +1249,11 @@
   {
    "w": "y",
    "desde": 124.9,
-   "hasta": 125.28
+   "hasta": 125.38
   },
   {
    "w": "que",
-   "desde": 125.28,
+   "desde": 125.38,
    "hasta": 125.42
   },
   {
@@ -1259,121 +1264,71 @@
   {
    "w": "resultados",
    "desde": 125.58,
-   "hasta": 125.96
+   "hasta": 126.0
   },
   {
    "w": "organizacionales",
-   "desde": 125.96,
+   "desde": 126.0,
    "hasta": 127.38
   },
   {
-   "w": "lleguen.",
+   "w": "lleguen",
    "desde": 127.38,
    "hasta": 127.72
   },
   {
-   "w": "Entonces",
-   "desde": 127.78,
-   "hasta": 128.1
+   "w": "entonces",
+   "desde": 127.72,
+   "hasta": 128.04
   },
   {
    "w": "siempre",
-   "desde": 128.1,
+   "desde": 128.04,
    "hasta": 128.82
   },
   {
    "w": "hablamos",
    "desde": 128.82,
-   "hasta": 129.24
+   "hasta": 129.26
   },
   {
    "w": "de",
-   "desde": 129.24,
+   "desde": 129.26,
    "hasta": 129.38
   },
   {
    "w": "que",
    "desde": 129.38,
-   "hasta": 129.48
-  },
-  {
-   "w": "la",
-   "desde": 129.48,
-   "hasta": 129.56
-  },
-  {
-   "w": "cultura",
-   "desde": 129.56,
-   "hasta": 129.56
-  },
-  {
-   "w": "es",
-   "desde": 129.56,
-   "hasta": 129.56
-  },
-  {
-   "w": "el",
-   "desde": 129.56,
-   "hasta": 129.56
-  },
-  {
-   "w": "sistema",
-   "desde": 129.56,
-   "hasta": 129.56
-  },
-  {
-   "w": "operativo",
-   "desde": 129.56,
-   "hasta": 129.56
-  },
-  {
-   "w": "de",
-   "desde": 129.56,
-   "hasta": 129.56
-  },
-  {
-   "w": "la",
-   "desde": 129.56,
-   "hasta": 129.56
-  },
-  {
-   "w": "compañía,",
-   "desde": 129.56,
-   "hasta": 129.56
-  },
-  {
-   "w": "que",
-   "desde": 129.58,
-   "hasta": 129.58
+   "hasta": 129.52
   },
   {
    "w": "una",
-   "desde": 129.58,
-   "hasta": 129.68
+   "desde": 129.52,
+   "hasta": 129.7
   },
   {
    "w": "transformación",
-   "desde": 129.68,
-   "hasta": 130.3
+   "desde": 129.7,
+   "hasta": 130.28
   },
   {
    "w": "digital",
-   "desde": 130.3,
-   "hasta": 130.6
+   "desde": 130.28,
+   "hasta": 130.58
   },
   {
    "w": "requiere",
-   "desde": 130.6,
+   "desde": 130.58,
    "hasta": 131.9
   },
   {
    "w": "necesariamente",
    "desde": 131.9,
-   "hasta": 132.44
+   "hasta": 132.42
   },
   {
    "w": "una",
-   "desde": 132.44,
+   "desde": 132.42,
    "hasta": 132.7
   },
   {
@@ -1384,21 +1339,21 @@
   {
    "w": "cultural",
    "desde": 133.34,
-   "hasta": 133.7
+   "hasta": 133.72
   },
   {
    "w": "para",
-   "desde": 133.7,
-   "hasta": 134.22
+   "desde": 133.72,
+   "hasta": 134.2
   },
   {
    "w": "ser",
-   "desde": 134.22,
-   "hasta": 134.42
+   "desde": 134.2,
+   "hasta": 134.4
   },
   {
    "w": "sustentable",
-   "desde": 134.42,
+   "desde": 134.4,
    "hasta": 135.06
   },
   {
@@ -1409,46 +1364,26 @@
   {
    "w": "efectiva.",
    "desde": 135.2,
-   "hasta": 135.72
-  },
-  {
-   "w": "¿Qué",
-   "desde": 138.19,
-   "hasta": 138.71
-  },
-  {
-   "w": "son",
-   "desde": 138.71,
-   "hasta": 138.85
-  },
-  {
-   "w": "los",
-   "desde": 138.85,
-   "hasta": 139.01
-  },
-  {
-   "w": "orquestadores?",
-   "desde": 139.01,
-   "hasta": 139.71
+   "hasta": 135.7
   },
   {
    "w": "Los",
-   "desde": 140.61,
-   "hasta": 141.57
+   "desde": 137.99,
+   "hasta": 138.85
   },
   {
    "w": "orquestadores",
-   "desde": 141.57,
-   "hasta": 142.31
+   "desde": 138.85,
+   "hasta": 139.71
   },
   {
    "w": "es",
-   "desde": 142.31,
-   "hasta": 142.59
+   "desde": 139.71,
+   "hasta": 142.57
   },
   {
    "w": "un",
-   "desde": 142.59,
+   "desde": 142.57,
    "hasta": 142.89
   },
   {
@@ -1464,31 +1399,31 @@
   {
    "w": "profesional",
    "desde": 143.97,
-   "hasta": 144.29
+   "hasta": 144.31
   },
   {
    "w": "que",
-   "desde": 144.29,
+   "desde": 144.31,
    "hasta": 145.07
   },
   {
    "w": "cambia",
    "desde": 145.07,
-   "hasta": 146.03
+   "hasta": 146.05
   },
   {
    "w": "el",
-   "desde": 146.03,
+   "desde": 146.05,
    "hasta": 146.11
   },
   {
    "w": "foco",
    "desde": 146.11,
-   "hasta": 146.51
+   "hasta": 146.53
   },
   {
    "w": "y",
-   "desde": 146.51,
+   "desde": 146.53,
    "hasta": 147.25
   },
   {
@@ -1514,11 +1449,11 @@
   {
    "w": "en",
    "desde": 148.91,
-   "hasta": 149.15
+   "hasta": 149.13
   },
   {
    "w": "la",
-   "desde": 149.15,
+   "desde": 149.13,
    "hasta": 149.23
   },
   {
@@ -1529,131 +1464,76 @@
   {
    "w": "para",
    "desde": 149.59,
-   "hasta": 150.05
+   "hasta": 150.09
   },
   {
    "w": "orquestar",
-   "desde": 150.05,
-   "hasta": 150.91
+   "desde": 150.09,
+   "hasta": 150.93
   },
   {
    "w": "una",
-   "desde": 150.91,
-   "hasta": 151.39
+   "desde": 150.93,
+   "hasta": 151.41
   },
   {
    "w": "serie",
-   "desde": 151.39,
+   "desde": 151.41,
    "hasta": 151.77
   },
   {
    "w": "de",
    "desde": 151.77,
-   "hasta": 152.65
+   "hasta": 152.11
   },
   {
    "w": "procesos",
-   "desde": 152.65,
+   "desde": 152.11,
    "hasta": 153.43
   },
   {
-   "w": "combinando...",
+   "w": "combinando.",
    "desde": 153.43,
-   "hasta": 154.59
+   "hasta": 154.51
   },
   {
-   "w": "No,",
-   "desde": 154.59,
-   "hasta": 155.05
-  },
-  {
-   "w": "repito.",
-   "desde": 155.13,
-   "hasta": 155.71
-  },
-  {
-   "w": "Los",
-   "desde": 160.15,
-   "hasta": 160.63
-  },
-  {
-   "w": "orquestadores",
-   "desde": 160.63,
-   "hasta": 161.45
-  },
-  {
-   "w": "es",
-   "desde": 161.45,
-   "hasta": 162.11
-  },
-  {
-   "w": "un...",
-   "desde": 162.11,
-   "hasta": 162.49
-  },
-  {
-   "w": "El",
-   "desde": 163.51,
-   "hasta": 164.19
-  },
-  {
-   "w": "rol",
-   "desde": 164.19,
-   "hasta": 164.39
-  },
-  {
-   "w": "de",
-   "desde": 164.39,
-   "hasta": 164.51
+   "w": "Repito,",
+   "desde": 154.81,
+   "hasta": 155.73
   },
   {
    "w": "los",
-   "desde": 164.51,
-   "hasta": 164.63
+   "desde": 159.87,
+   "hasta": 160.61
   },
   {
    "w": "orquestadores",
-   "desde": 164.63,
-   "hasta": 165.29
-  },
-  {
-   "w": "repito.",
-   "desde": 165.29,
-   "hasta": 166.63
-  },
-  {
-   "w": "Los",
-   "desde": 168.07,
-   "hasta": 168.77
-  },
-  {
-   "w": "orquestadores",
-   "desde": 168.77,
-   "hasta": 169.47
+   "desde": 160.61,
+   "hasta": 161.35
   },
   {
    "w": "son",
-   "desde": 169.47,
-   "hasta": 170.33
+   "desde": 161.35,
+   "hasta": 161.97
   },
   {
    "w": "un",
-   "desde": 170.33,
-   "hasta": 170.51
+   "desde": 161.97,
+   "hasta": 170.43
   },
   {
    "w": "nuevo",
-   "desde": 170.51,
-   "hasta": 170.71
+   "desde": 170.43,
+   "hasta": 170.73
   },
   {
    "w": "rol",
-   "desde": 170.71,
-   "hasta": 171.45
+   "desde": 170.73,
+   "hasta": 171.39
   },
   {
    "w": "profesional",
-   "desde": 171.45,
+   "desde": 171.39,
    "hasta": 171.93
   },
   {
@@ -1669,31 +1549,31 @@
   {
    "w": "en",
    "desde": 172.63,
-   "hasta": 173.49
+   "hasta": 173.45
   },
   {
    "w": "la",
-   "desde": 173.49,
+   "desde": 173.45,
    "hasta": 173.77
   },
   {
    "w": "era",
    "desde": 173.77,
-   "hasta": 174.03
+   "hasta": 174.01
   },
   {
    "w": "de",
-   "desde": 174.03,
+   "desde": 174.01,
    "hasta": 174.11
   },
   {
    "w": "automatización",
    "desde": 174.11,
-   "hasta": 174.71
+   "hasta": 174.69
   },
   {
    "w": "con",
-   "desde": 174.71,
+   "desde": 174.69,
    "hasta": 174.97
   },
   {
@@ -1704,11 +1584,11 @@
   {
    "w": "donde",
    "desde": 175.31,
-   "hasta": 175.73
+   "hasta": 175.71
   },
   {
    "w": "el",
-   "desde": 175.73,
+   "desde": 175.71,
    "hasta": 176.41
   },
   {
@@ -1722,13 +1602,18 @@
    "hasta": 177.17
   },
   {
-   "w": "estar",
+   "w": "de",
    "desde": 177.17,
-   "hasta": 177.35
+   "hasta": 177.29
+  },
+  {
+   "w": "estar",
+   "desde": 177.29,
+   "hasta": 177.47
   },
   {
    "w": "en",
-   "desde": 177.35,
+   "desde": 177.47,
    "hasta": 177.63
   },
   {
@@ -1739,11 +1624,11 @@
   {
    "w": "tarea",
    "desde": 177.73,
-   "hasta": 178.17
+   "hasta": 178.15
   },
   {
    "w": "en",
-   "desde": 178.17,
+   "desde": 178.15,
    "hasta": 178.37
   },
   {
@@ -1759,21 +1644,21 @@
   {
    "w": "en",
    "desde": 179.23,
-   "hasta": 179.51
+   "hasta": 179.47
   },
   {
    "w": "la",
-   "desde": 179.51,
+   "desde": 179.47,
    "hasta": 179.71
   },
   {
    "w": "orquestación",
    "desde": 179.71,
-   "hasta": 180.37
+   "hasta": 180.25
   },
   {
    "w": "sistémica",
-   "desde": 180.37,
+   "desde": 180.25,
    "hasta": 181.05
   },
   {
@@ -1784,16 +1669,16 @@
   {
    "w": "una",
    "desde": 181.99,
-   "hasta": 182.35
+   "hasta": 182.33
   },
   {
    "w": "organización.",
-   "desde": 182.35,
-   "hasta": 182.97
+   "desde": 182.33,
+   "hasta": 182.93
   },
   {
    "w": "Entonces,",
-   "desde": 183.07,
+   "desde": 183.05,
    "hasta": 183.31
   },
   {
@@ -1804,11 +1689,11 @@
   {
    "w": "orquestador",
    "desde": 184.01,
-   "hasta": 184.55
+   "hasta": 184.57
   },
   {
    "w": "tiene",
-   "desde": 184.55,
+   "desde": 184.57,
    "hasta": 184.95
   },
   {
@@ -1819,41 +1704,41 @@
   {
    "w": "combinar",
    "desde": 185.09,
-   "hasta": 185.53
+   "hasta": 185.55
   },
   {
    "w": "procesos,",
-   "desde": 185.53,
+   "desde": 185.55,
    "hasta": 186.65
   },
   {
-   "w": "tecnología",
+   "w": "tecnologías,",
    "desde": 186.65,
-   "hasta": 187.53
+   "hasta": 187.47
   },
   {
    "w": "y",
-   "desde": 187.53,
-   "hasta": 188.43
+   "desde": 187.47,
+   "hasta": 188.03
   },
   {
    "w": "personas",
-   "desde": 188.43,
-   "hasta": 188.83
+   "desde": 188.03,
+   "hasta": 188.79
   },
   {
    "w": "para",
-   "desde": 188.83,
+   "desde": 188.79,
    "hasta": 190.07
   },
   {
    "w": "desarrollar",
    "desde": 190.07,
-   "hasta": 190.99
+   "hasta": 191.01
   },
   {
    "w": "el",
-   "desde": 190.99,
+   "desde": 191.01,
    "hasta": 191.11
   },
   {
@@ -1869,11 +1754,11 @@
   {
    "w": "operativo",
    "desde": 191.57,
-   "hasta": 192.09
+   "hasta": 192.11
   },
   {
    "w": "que",
-   "desde": 192.09,
+   "desde": 192.11,
    "hasta": 192.25
   },
   {
@@ -1894,26 +1779,26 @@
   {
    "w": "objetivo",
    "desde": 192.83,
-   "hasta": 193.09
+   "hasta": 193.05
   },
   {
-   "w": "organizado.",
-   "desde": 193.09,
-   "hasta": 193.49
+   "w": "organizacional.",
+   "desde": 193.05,
+   "hasta": 193.79
   },
   {
    "w": "Y",
-   "desde": 193.51,
-   "hasta": 193.95
+   "desde": 193.97,
+   "hasta": 193.99
   },
   {
    "w": "esto",
-   "desde": 193.95,
-   "hasta": 194.19
+   "desde": 193.99,
+   "hasta": 194.21
   },
   {
    "w": "parece",
-   "desde": 194.19,
+   "desde": 194.21,
    "hasta": 194.77
   },
   {
@@ -1924,26 +1809,26 @@
   {
    "w": "simple",
    "desde": 195.05,
-   "hasta": 195.59
+   "hasta": 195.57
   },
   {
    "w": "de",
-   "desde": 195.59,
+   "desde": 195.57,
    "hasta": 195.77
   },
   {
    "w": "decirlo,",
    "desde": 195.77,
-   "hasta": 196.11
+   "hasta": 196.09
   },
   {
    "w": "pero",
    "desde": 196.13,
-   "hasta": 196.29
+   "hasta": 196.27
   },
   {
    "w": "es",
-   "desde": 196.29,
+   "desde": 196.27,
    "hasta": 196.53
   },
   {
@@ -1959,21 +1844,21 @@
   {
    "w": "enorme",
    "desde": 197.05,
-   "hasta": 197.29
+   "hasta": 197.27
   },
   {
    "w": "y",
-   "desde": 197.29,
+   "desde": 197.27,
    "hasta": 197.61
   },
   {
    "w": "es",
    "desde": 197.61,
-   "hasta": 197.89
+   "hasta": 197.91
   },
   {
    "w": "prácticamente",
-   "desde": 197.89,
+   "desde": 197.91,
    "hasta": 198.33
   },
   {
@@ -1994,11 +1879,11 @@
   {
    "w": "requiere",
    "desde": 199.67,
-   "hasta": 200.03
+   "hasta": 200.01
   },
   {
    "w": "mucha",
-   "desde": 200.03,
+   "desde": 200.01,
    "hasta": 200.19
   },
   {
@@ -2009,11 +1894,11 @@
   {
    "w": "para",
    "desde": 200.79,
-   "hasta": 201.07
+   "hasta": 201.09
   },
   {
    "w": "entender",
-   "desde": 201.07,
+   "desde": 201.09,
    "hasta": 201.69
   },
   {
@@ -2039,21 +1924,21 @@
   {
    "w": "en",
    "desde": 204.35,
-   "hasta": 204.91
+   "hasta": 204.95
   },
   {
    "w": "las",
-   "desde": 204.91,
-   "hasta": 205.31
+   "desde": 204.95,
+   "hasta": 205.29
   },
   {
    "w": "personas",
-   "desde": 205.31,
-   "hasta": 206.19
+   "desde": 205.29,
+   "hasta": 206.15
   },
   {
    "w": "de",
-   "desde": 206.19,
+   "desde": 206.15,
    "hasta": 206.33
   },
   {
@@ -2062,13 +1947,13 @@
    "hasta": 206.37
   },
   {
-   "w": "organización,",
+   "w": "organización.",
    "desde": 206.37,
-   "hasta": 206.93
+   "hasta": 206.95
   },
   {
-   "w": "requiere",
-   "desde": 207.07,
+   "w": "Requiere",
+   "desde": 207.25,
    "hasta": 207.77
   },
   {
@@ -2079,11 +1964,11 @@
   {
    "w": "crítico",
    "desde": 208.17,
-   "hasta": 208.69
+   "hasta": 208.65
   },
   {
    "w": "para",
-   "desde": 208.69,
+   "desde": 208.65,
    "hasta": 208.93
   },
   {
@@ -2094,16 +1979,16 @@
   {
    "w": "dónde",
    "desde": 209.69,
-   "hasta": 210.51
+   "hasta": 210.53
   },
   {
    "w": "sí",
-   "desde": 210.51,
-   "hasta": 210.77
+   "desde": 210.53,
+   "hasta": 210.79
   },
   {
    "w": "y",
-   "desde": 210.77,
+   "desde": 210.79,
    "hasta": 210.99
   },
   {
@@ -2129,31 +2014,31 @@
   {
    "w": "cambiar",
    "desde": 212.01,
-   "hasta": 212.31
+   "hasta": 212.29
   },
   {
-   "w": "y",
-   "desde": 212.31,
-   "hasta": 212.55
+   "w": "y,",
+   "desde": 212.29,
+   "hasta": 212.59
   },
   {
    "w": "sobre",
-   "desde": 212.55,
-   "hasta": 212.75
+   "desde": 212.61,
+   "hasta": 212.77
   },
   {
-   "w": "todo",
-   "desde": 212.75,
-   "hasta": 213.03
+   "w": "todo,",
+   "desde": 212.77,
+   "hasta": 213.09
   },
   {
    "w": "qué",
-   "desde": 213.03,
-   "hasta": 213.31
+   "desde": 213.15,
+   "hasta": 213.33
   },
   {
    "w": "hay",
-   "desde": 213.31,
+   "desde": 213.33,
    "hasta": 213.47
   },
   {
@@ -2174,11 +2059,11 @@
   {
    "w": "qué",
    "desde": 213.89,
-   "hasta": 213.93
+   "hasta": 213.95
   },
   {
    "w": "hay",
-   "desde": 213.93,
+   "desde": 213.95,
    "hasta": 214.03
   },
   {
@@ -2203,82 +2088,82 @@
   },
   {
    "w": "Entonces,",
-   "desde": 214.83,
-   "hasta": 215.65
+   "desde": 215.21,
+   "hasta": 215.73
   },
   {
    "w": "mucho",
-   "desde": 215.71,
+   "desde": 215.73,
    "hasta": 216.01
   },
   {
    "w": "pensamiento",
    "desde": 216.01,
-   "hasta": 216.51
+   "hasta": 216.49
   },
   {
    "w": "crítico",
-   "desde": 216.51,
-   "hasta": 216.99
+   "desde": 216.49,
+   "hasta": 217.01
   },
   {
-   "w": "y",
-   "desde": 216.99,
-   "hasta": 217.17
+   "w": "y,",
+   "desde": 217.01,
+   "hasta": 217.19
   },
   {
-   "w": "también",
-   "desde": 217.17,
-   "hasta": 217.37
+   "w": "también,",
+   "desde": 217.23,
+   "hasta": 217.45
   },
   {
    "w": "mucha",
-   "desde": 217.37,
-   "hasta": 217.69
+   "desde": 217.45,
+   "hasta": 217.61
   },
   {
    "w": "visión",
-   "desde": 217.69,
+   "desde": 217.61,
    "hasta": 218.01
   },
   {
    "w": "estratégica",
    "desde": 218.01,
-   "hasta": 218.67
+   "hasta": 218.69
   },
   {
    "w": "para",
-   "desde": 218.67,
-   "hasta": 219.25
+   "desde": 218.69,
+   "hasta": 219.23
   },
   {
    "w": "pivotear",
-   "desde": 219.25,
-   "hasta": 219.99
+   "desde": 219.23,
+   "hasta": 220.01
   },
   {
    "w": "las",
-   "desde": 219.99,
+   "desde": 220.01,
    "hasta": 220.15
   },
   {
    "w": "decisiones",
    "desde": 220.15,
-   "hasta": 220.83
+   "hasta": 220.91
   },
   {
    "w": "en",
-   "desde": 220.83,
-   "hasta": 221.33
+   "desde": 220.91,
+   "hasta": 221.35
   },
   {
    "w": "función",
-   "desde": 221.33,
-   "hasta": 221.59
+   "desde": 221.35,
+   "hasta": 221.57
   },
   {
    "w": "de",
-   "desde": 221.59,
+   "desde": 221.57,
    "hasta": 221.91
   },
   {
@@ -2294,51 +2179,51 @@
   {
    "w": "de",
    "desde": 222.83,
-   "hasta": 222.95
+   "hasta": 222.97
   },
   {
    "w": "escenario",
-   "desde": 222.95,
+   "desde": 222.97,
    "hasta": 223.35
   },
   {
    "w": "contextuales",
    "desde": 223.35,
-   "hasta": 224.59
+   "hasta": 224.61
   },
   {
-   "w": "y",
-   "desde": 224.59,
-   "hasta": 224.67
+   "w": "y,",
+   "desde": 224.61,
+   "hasta": 224.69
   },
   {
-   "w": "también",
-   "desde": 224.67,
-   "hasta": 224.95
+   "w": "también,",
+   "desde": 224.73,
+   "hasta": 224.99
   },
   {
    "w": "dentro",
-   "desde": 224.95,
-   "hasta": 225.41
+   "desde": 224.99,
+   "hasta": 225.37
   },
   {
    "w": "de",
-   "desde": 225.41,
+   "desde": 225.37,
    "hasta": 225.83
   },
   {
    "w": "la",
    "desde": 225.83,
-   "hasta": 225.91
+   "hasta": 225.93
   },
   {
    "w": "organización.",
-   "desde": 225.91,
-   "hasta": 226.53
+   "desde": 225.93,
+   "hasta": 226.55
   },
   {
    "w": "¿Qué",
-   "desde": 229.52,
+   "desde": 229.2,
    "hasta": 229.84
   },
   {
@@ -2354,76 +2239,76 @@
   {
    "w": "inteligencia",
    "desde": 230.02,
-   "hasta": 230.44
+   "hasta": 230.42
   },
   {
    "w": "híbrida?",
-   "desde": 230.44,
-   "hasta": 231.02
+   "desde": 230.42,
+   "hasta": 231.08
   },
   {
-   "w": "Esa",
-   "desde": 232.87,
-   "hasta": 233.51
+   "w": "En",
+   "desde": 232.77,
+   "hasta": 233.29
   },
   {
-   "w": "pasión,",
-   "desde": 233.51,
+   "w": "esa",
+   "desde": 233.29,
+   "hasta": 233.53
+  },
+  {
+   "w": "pasión",
+   "desde": 233.53,
    "hasta": 233.83
   },
   {
-   "w": "hola.",
+   "w": "volvamos",
    "desde": 233.83,
-   "hasta": 233.99
-  },
-  {
-   "w": "Vamos",
-   "desde": 234.07,
-   "hasta": 234.29
+   "hasta": 234.09
   },
   {
    "w": "a",
-   "desde": 234.29,
+   "desde": 234.09,
    "hasta": 234.41
   },
   {
    "w": "la",
    "desde": 234.41,
-   "hasta": 234.43
+   "hasta": 234.49
   },
   {
    "w": "prospección",
-   "desde": 234.43,
-   "hasta": 234.77
+   "desde": 234.49,
+   "hasta": 234.75
   },
   {
    "w": "de",
-   "desde": 234.77,
+   "desde": 234.75,
    "hasta": 234.89
   },
   {
    "w": "futuro.",
    "desde": 234.89,
-   "hasta": 235.07
+   "hasta": 235.11
   },
   {
    "w": "Bueno,",
-   "desde": 238.71,
-   "hasta": 239.35
+   "desde": 238.69,
+   "hasta": 239.33
   },
   {
    "w": "la",
-   "desde": 239.41,
+   "desde": 239.39,
    "hasta": 239.53
   },
   {
    "w": "prospección",
    "desde": 239.53,
-   "hasta": 240.29
+   "hasta": 240.27
   },
   {
    "w": "de",
-   "desde": 240.29,
+   "desde": 240.27,
    "hasta": 240.53
   },
   {
@@ -2439,31 +2324,31 @@
   {
    "w": "una",
    "desde": 241.15,
-   "hasta": 241.53
+   "hasta": 241.55
   },
   {
    "w": "metodología",
-   "desde": 241.53,
+   "desde": 241.55,
    "hasta": 242.59
   },
   {
    "w": "que",
    "desde": 242.59,
-   "hasta": 243.37
+   "hasta": 243.39
   },
   {
    "w": "hoy",
-   "desde": 243.37,
+   "desde": 243.39,
    "hasta": 244.09
   },
   {
    "w": "yo",
    "desde": 244.09,
-   "hasta": 244.55
+   "hasta": 244.57
   },
   {
    "w": "creo",
-   "desde": 244.55,
+   "desde": 244.57,
    "hasta": 244.75
   },
   {
@@ -2474,31 +2359,31 @@
   {
    "w": "es",
    "desde": 244.89,
-   "hasta": 245.13
+   "hasta": 245.11
   },
   {
    "w": "más",
-   "desde": 245.13,
-   "hasta": 245.35
+   "desde": 245.11,
+   "hasta": 245.37
   },
   {
    "w": "necesaria",
-   "desde": 245.35,
+   "desde": 245.37,
    "hasta": 245.89
   },
   {
    "w": "que",
    "desde": 245.89,
-   "hasta": 246.01
+   "hasta": 246.03
   },
   {
    "w": "nunca",
-   "desde": 246.01,
-   "hasta": 246.27
+   "desde": 246.03,
+   "hasta": 246.25
   },
   {
    "w": "en",
-   "desde": 246.27,
+   "desde": 246.25,
    "hasta": 246.53
   },
   {
@@ -2513,22 +2398,22 @@
   },
   {
    "w": "Parte",
-   "desde": 248.11,
-   "hasta": 248.75
+   "desde": 248.09,
+   "hasta": 248.73
   },
   {
    "w": "de",
-   "desde": 248.75,
+   "desde": 248.73,
    "hasta": 249.05
   },
   {
    "w": "identificar",
    "desde": 249.05,
-   "hasta": 250.39
+   "hasta": 250.37
   },
   {
    "w": "señales",
-   "desde": 250.39,
+   "desde": 250.37,
    "hasta": 250.97
   },
   {
@@ -2537,52 +2422,52 @@
    "hasta": 251.09
   },
   {
-   "w": "cambio.",
+   "w": "cambio",
    "desde": 251.09,
-   "hasta": 251.45
+   "hasta": 251.43
   },
   {
-   "w": "En",
-   "desde": 251.71,
+   "w": "en",
+   "desde": 251.43,
    "hasta": 251.87
   },
   {
    "w": "diferentes",
    "desde": 251.87,
-   "hasta": 252.07
+   "hasta": 252.17
   },
   {
-   "w": "industrias,",
-   "desde": 252.07,
-   "hasta": 252.89
+   "w": "industrias.",
+   "desde": 252.17,
+   "hasta": 252.87
   },
   {
-   "w": "ejemplo,",
-   "desde": 252.99,
-   "hasta": 253.59
+   "w": "Ejemplo,",
+   "desde": 253.01,
+   "hasta": 253.65
   },
   {
    "w": "en",
-   "desde": 253.69,
+   "desde": 253.67,
    "hasta": 253.87
   },
   {
    "w": "la",
    "desde": 253.87,
-   "hasta": 253.93
+   "hasta": 253.97
   },
   {
-   "w": "industria",
-   "desde": 253.93,
+   "w": "industria,",
+   "desde": 253.97,
    "hasta": 254.31
   },
   {
-   "w": "alimenticia,",
-   "desde": 254.31,
-   "hasta": 255.11
+   "w": "alimenticia.",
+   "desde": 254.33,
+   "hasta": 255.05
   },
   {
-   "w": "imaginemos",
+   "w": "Imaginemos",
    "desde": 255.17,
    "hasta": 255.69
   },
@@ -2642,23 +2527,28 @@
    "hasta": 258.65
   },
   {
-   "w": "azúcares.",
+   "w": "azúcares,",
    "desde": 258.65,
    "hasta": 259.51
   },
   {
-   "w": "Entonces",
-   "desde": 259.99,
-   "hasta": 260.55
+   "w": "¿no?",
+   "desde": 259.61,
+   "hasta": 259.85
+  },
+  {
+   "w": "Entonces,",
+   "desde": 260.09,
+   "hasta": 260.63
   },
   {
    "w": "eso",
-   "desde": 260.55,
-   "hasta": 260.91
+   "desde": 260.67,
+   "hasta": 260.93
   },
   {
    "w": "va",
-   "desde": 260.91,
+   "desde": 260.93,
    "hasta": 261.09
   },
   {
@@ -2669,11 +2559,11 @@
   {
    "w": "generar",
    "desde": 261.11,
-   "hasta": 261.45
+   "hasta": 261.43
   },
   {
    "w": "una",
-   "desde": 261.45,
+   "desde": 261.43,
    "hasta": 261.55
   },
   {
@@ -2694,11 +2584,11 @@
   {
    "w": "en",
    "desde": 262.45,
-   "hasta": 262.77
+   "hasta": 262.75
   },
   {
    "w": "toda",
-   "desde": 262.77,
+   "desde": 262.75,
    "hasta": 263.07
   },
   {
@@ -2709,31 +2599,31 @@
   {
    "w": "cadena",
    "desde": 263.31,
-   "hasta": 264.23
+   "hasta": 264.21
   },
   {
    "w": "industrial",
-   "desde": 264.23,
-   "hasta": 264.75
+   "desde": 264.21,
+   "hasta": 264.73
   },
   {
    "w": "de",
-   "desde": 264.75,
-   "hasta": 265.71
+   "desde": 264.73,
+   "hasta": 265.69
   },
   {
    "w": "ese",
-   "desde": 265.71,
-   "hasta": 266.27
+   "desde": 265.69,
+   "hasta": 266.29
   },
   {
    "w": "producto.",
-   "desde": 266.27,
-   "hasta": 266.61
+   "desde": 266.29,
+   "hasta": 266.59
   },
   {
    "w": "El",
-   "desde": 267.47,
+   "desde": 267.49,
    "hasta": 268.03
   },
   {
@@ -2744,21 +2634,21 @@
   {
    "w": "o",
    "desde": 268.49,
-   "hasta": 268.77
+   "hasta": 268.75
   },
   {
    "w": "la",
-   "desde": 268.77,
+   "desde": 268.75,
    "hasta": 268.87
   },
   {
    "w": "prospección",
    "desde": 268.87,
-   "hasta": 269.41
+   "hasta": 269.39
   },
   {
    "w": "de",
-   "desde": 269.41,
+   "desde": 269.39,
    "hasta": 269.57
   },
   {
@@ -2774,17 +2664,17 @@
   {
    "w": "que",
    "desde": 270.05,
-   "hasta": 270.19
+   "hasta": 270.21
   },
   {
    "w": "hace",
-   "desde": 270.19,
+   "desde": 270.21,
    "hasta": 270.37
   },
   {
    "w": "es,",
    "desde": 270.37,
-   "hasta": 270.65
+   "hasta": 270.61
   },
   {
    "w": "a",
@@ -2799,56 +2689,56 @@
   {
    "w": "de",
    "desde": 271.19,
-   "hasta": 271.43
+   "hasta": 271.41
   },
   {
    "w": "esa",
-   "desde": 271.43,
+   "desde": 271.41,
    "hasta": 271.67
   },
   {
    "w": "señal",
    "desde": 271.67,
-   "hasta": 272.25
+   "hasta": 272.21
   },
   {
    "w": "identificada,",
-   "desde": 272.25,
+   "desde": 272.21,
    "hasta": 273.05
   },
   {
    "w": "definir",
-   "desde": 273.11,
-   "hasta": 274.27
+   "desde": 274.13,
+   "hasta": 274.67
   },
   {
    "w": "qué",
-   "desde": 274.27,
-   "hasta": 275.23
+   "desde": 274.67,
+   "hasta": 275.21
   },
   {
    "w": "realidades",
-   "desde": 275.23,
-   "hasta": 276.11
+   "desde": 275.21,
+   "hasta": 276.09
   },
   {
    "w": "se",
-   "desde": 276.11,
+   "desde": 276.09,
    "hasta": 276.37
   },
   {
    "w": "desprenden",
    "desde": 276.37,
-   "hasta": 277.05
+   "hasta": 277.03
   },
   {
    "w": "en",
-   "desde": 277.05,
-   "hasta": 277.19
+   "desde": 277.03,
+   "hasta": 277.21
   },
   {
    "w": "ese",
-   "desde": 277.19,
+   "desde": 277.21,
    "hasta": 277.39
   },
   {
@@ -2859,16 +2749,16 @@
   {
    "w": "posible",
    "desde": 277.79,
-   "hasta": 278.29
+   "hasta": 278.25
   },
   {
    "w": "y",
-   "desde": 278.29,
-   "hasta": 278.95
+   "desde": 278.25,
+   "hasta": 278.89
   },
   {
    "w": "hacer",
-   "desde": 278.95,
+   "desde": 278.89,
    "hasta": 279.15
   },
   {
@@ -2884,11 +2774,11 @@
   {
    "w": "ingeniería",
    "desde": 279.47,
-   "hasta": 279.99
+   "hasta": 279.97
   },
   {
    "w": "reversa",
-   "desde": 279.99,
+   "desde": 279.97,
    "hasta": 280.59
   },
   {
@@ -2899,11 +2789,11 @@
   {
    "w": "ese",
    "desde": 280.63,
-   "hasta": 280.77
+   "hasta": 280.79
   },
   {
    "w": "futuro",
-   "desde": 280.77,
+   "desde": 280.79,
    "hasta": 281.07
   },
   {
@@ -2919,46 +2809,21 @@
   {
    "w": "a",
    "desde": 281.65,
-   "hasta": 281.69
-  },
-  {
-   "w": "la",
-   "desde": 281.69,
-   "hasta": 281.69
-  },
-  {
-   "w": "realidad.",
-   "desde": 281.69,
-   "hasta": 281.69
-  },
-  {
-   "w": "Y",
-   "desde": 281.71,
-   "hasta": 281.83
-  },
-  {
-   "w": "llegar",
-   "desde": 281.83,
-   "hasta": 281.83
-  },
-  {
-   "w": "a",
-   "desde": 281.83,
-   "hasta": 282.07
+   "hasta": 282.05
   },
   {
    "w": "hoy",
-   "desde": 282.07,
+   "desde": 282.05,
    "hasta": 282.47
   },
   {
    "w": "cuáles",
    "desde": 282.47,
-   "hasta": 283.23
+   "hasta": 283.21
   },
   {
    "w": "son",
-   "desde": 283.23,
+   "desde": 283.21,
    "hasta": 283.43
   },
   {
@@ -2967,23 +2832,23 @@
    "hasta": 283.65
   },
   {
-   "w": "acciones",
+   "w": "acciones,",
    "desde": 283.65,
-   "hasta": 284.39
+   "hasta": 284.25
   },
   {
    "w": "o",
-   "desde": 284.39,
-   "hasta": 285.27
+   "desde": 284.33,
+   "hasta": 285.01
   },
   {
    "w": "experimentaciones",
-   "desde": 285.27,
-   "hasta": 286.17
+   "desde": 285.01,
+   "hasta": 286.15
   },
   {
    "w": "que",
-   "desde": 286.17,
+   "desde": 286.15,
    "hasta": 286.37
   },
   {
@@ -3009,11 +2874,11 @@
   {
    "w": "que",
    "desde": 287.37,
-   "hasta": 287.49
+   "hasta": 287.51
   },
   {
    "w": "está",
-   "desde": 287.49,
+   "desde": 287.51,
    "hasta": 287.63
   },
   {
@@ -3032,18 +2897,18 @@
    "hasta": 288.09
   },
   {
-   "w": "alimenticia,",
+   "w": "alimenticia",
    "desde": 288.09,
-   "hasta": 288.61
+   "hasta": 288.57
   },
   {
    "w": "tiene",
-   "desde": 288.69,
-   "hasta": 288.97
+   "desde": 288.57,
+   "hasta": 288.93
   },
   {
    "w": "que",
-   "desde": 288.97,
+   "desde": 288.93,
    "hasta": 289.17
   },
   {
@@ -3064,16 +2929,16 @@
   {
    "w": "preparada",
    "desde": 290.15,
-   "hasta": 290.85
+   "hasta": 290.83
   },
   {
    "w": "ante",
-   "desde": 290.85,
-   "hasta": 291.53
+   "desde": 290.83,
+   "hasta": 291.55
   },
   {
    "w": "ese",
-   "desde": 291.53,
+   "desde": 291.55,
    "hasta": 291.79
   },
   {
@@ -3087,13 +2952,13 @@
    "hasta": 292.39
   },
   {
-   "w": "repente",
+   "w": "repente,",
    "desde": 292.39,
-   "hasta": 292.71
+   "hasta": 292.73
   },
   {
    "w": "desarrollar",
-   "desde": 292.71,
+   "desde": 292.73,
    "hasta": 293.73
   },
   {
@@ -3119,11 +2984,11 @@
   {
    "w": "sustitutos",
    "desde": 295.07,
-   "hasta": 295.85
+   "hasta": 295.83
   },
   {
    "w": "del",
-   "desde": 295.85,
+   "desde": 295.83,
    "hasta": 296.09
   },
   {
@@ -3137,18 +3002,18 @@
    "hasta": 296.53
   },
   {
-   "w": "azúcar",
+   "w": "azúcar,",
    "desde": 296.53,
-   "hasta": 296.85
+   "hasta": 296.91
   },
   {
    "w": "o",
-   "desde": 296.85,
-   "hasta": 297.51
+   "desde": 297.01,
+   "hasta": 297.53
   },
   {
    "w": "pensar",
-   "desde": 297.51,
+   "desde": 297.53,
    "hasta": 298.03
   },
   {
@@ -3172,28 +3037,28 @@
    "hasta": 298.93
   },
   {
-   "w": "negocio",
+   "w": "negocio,",
    "desde": 298.93,
-   "hasta": 299.45
+   "hasta": 299.47
   },
   {
    "w": "o",
-   "desde": 299.45,
-   "hasta": 299.93
+   "desde": 299.49,
+   "hasta": 299.95
   },
   {
    "w": "entender",
-   "desde": 299.93,
+   "desde": 299.95,
    "hasta": 300.17
   },
   {
    "w": "también",
    "desde": 300.17,
-   "hasta": 300.55
+   "hasta": 300.57
   },
   {
    "w": "cuál",
-   "desde": 300.55,
+   "desde": 300.57,
    "hasta": 301.63
   },
   {
@@ -3209,11 +3074,11 @@
   {
    "w": "impacto",
    "desde": 301.89,
-   "hasta": 302.15
+   "hasta": 302.17
   },
   {
    "w": "en",
-   "desde": 302.15,
+   "desde": 302.17,
    "hasta": 302.59
   },
   {
@@ -3262,18 +3127,18 @@
    "hasta": 305.39
   },
   {
-   "w": "Entonces",
-   "desde": 305.53,
+   "w": "Entonces,",
+   "desde": 305.57,
    "hasta": 305.81
   },
   {
    "w": "la",
-   "desde": 305.81,
-   "hasta": 306.67
+   "desde": 305.91,
+   "hasta": 306.93
   },
   {
    "w": "prospección",
-   "desde": 306.67,
+   "desde": 306.93,
    "hasta": 307.53
   },
   {
@@ -3289,11 +3154,11 @@
   {
    "w": "permite,",
    "desde": 307.83,
-   "hasta": 308.13
+   "hasta": 308.11
   },
   {
    "w": "ante",
-   "desde": 308.49,
+   "desde": 308.53,
    "hasta": 309.11
   },
   {
@@ -3309,21 +3174,21 @@
   {
    "w": "volátil",
    "desde": 309.55,
-   "hasta": 310.23
+   "hasta": 310.25
   },
   {
    "w": "como",
-   "desde": 310.23,
+   "desde": 310.25,
    "hasta": 310.53
   },
   {
    "w": "el",
    "desde": 310.53,
-   "hasta": 310.69
+   "hasta": 310.67
   },
   {
    "w": "que",
-   "desde": 310.69,
+   "desde": 310.67,
    "hasta": 310.83
   },
   {
@@ -3334,26 +3199,26 @@
   {
    "w": "hoy,",
    "desde": 311.11,
-   "hasta": 311.43
+   "hasta": 311.41
   },
   {
    "w": "definir",
-   "desde": 312.75,
-   "hasta": 313.31
+   "desde": 311.55,
+   "hasta": 313.27
   },
   {
    "w": "diferentes",
-   "desde": 313.31,
-   "hasta": 313.87
+   "desde": 313.27,
+   "hasta": 313.89
   },
   {
    "w": "lineamientos",
-   "desde": 313.87,
-   "hasta": 315.05
+   "desde": 314.33,
+   "hasta": 315.07
   },
   {
    "w": "y",
-   "desde": 315.05,
+   "desde": 315.07,
    "hasta": 315.55
   },
   {
@@ -3364,21 +3229,21 @@
   {
    "w": "hacia",
    "desde": 317.29,
-   "hasta": 317.57
+   "hasta": 317.55
   },
   {
    "w": "atrás,",
-   "desde": 317.57,
-   "hasta": 317.91
+   "desde": 317.55,
+   "hasta": 317.93
   },
   {
    "w": "hacer",
    "desde": 318.07,
-   "hasta": 318.77
+   "hasta": 318.79
   },
   {
    "w": "ingeniería",
-   "desde": 318.77,
+   "desde": 318.79,
    "hasta": 319.33
   },
   {
@@ -3399,11 +3264,11 @@
   {
    "w": "cuáles",
    "desde": 320.59,
-   "hasta": 320.99
+   "hasta": 321.01
   },
   {
    "w": "son",
-   "desde": 320.99,
+   "desde": 321.01,
    "hasta": 321.17
   },
   {
@@ -3464,146 +3329,86 @@
   {
    "w": "futuro.",
    "desde": 324.03,
-   "hasta": 324.33
+   "hasta": 324.31
   },
   {
-   "w": "¿Estamos",
-   "desde": 324.71,
-   "hasta": 324.99
-  },
-  {
-   "w": "en",
-   "desde": 329.76,
-   "hasta": 329.9
-  },
-  {
-   "w": "la",
-   "desde": 329.9,
-   "hasta": 329.94
-  },
-  {
-   "w": "ocasión?",
-   "desde": 329.94,
-   "hasta": 330.16
-  },
-  {
-   "w": "Sí.",
-   "desde": 334.08,
-   "hasta": 334.64
-  },
-  {
-   "w": "No,",
-   "desde": 339.77,
-   "hasta": 340.33
-  },
-  {
-   "w": "vamos",
-   "desde": 340.43,
-   "hasta": 340.63
+   "w": "Vamos",
+   "desde": 335.64,
+   "hasta": 336.4
   },
   {
    "w": "con",
-   "desde": 340.63,
-   "hasta": 340.83
+   "desde": 340.05,
+   "hasta": 340.81
   },
   {
    "w": "el",
-   "desde": 340.83,
-   "hasta": 341.01
+   "desde": 340.81,
+   "hasta": 340.91
   },
   {
    "w": "diseño",
-   "desde": 341.01,
+   "desde": 340.91,
    "hasta": 342.33
   },
   {
    "w": "de",
    "desde": 342.33,
-   "hasta": 342.41
+   "hasta": 342.43
   },
   {
    "w": "comportamientos.",
-   "desde": 342.41,
-   "hasta": 342.95
-  },
-  {
-   "w": "Vamos",
-   "desde": 344.45,
-   "hasta": 345.01
-  },
-  {
-   "w": "con",
-   "desde": 345.01,
-   "hasta": 345.33
-  },
-  {
-   "w": "el",
-   "desde": 345.33,
-   "hasta": 345.55
-  },
-  {
-   "w": "diseño",
-   "desde": 345.55,
-   "hasta": 345.83
-  },
-  {
-   "w": "de",
-   "desde": 345.83,
-   "hasta": 345.97
-  },
-  {
-   "w": "comportamientos.",
-   "desde": 345.97,
-   "hasta": 346.51
+   "desde": 342.43,
+   "hasta": 342.99
   },
   {
    "w": "El",
-   "desde": 368.57,
-   "hasta": 369.13
+   "desde": 346.59,
+   "hasta": 347.35
   },
   {
    "w": "diseño",
-   "desde": 369.13,
-   "hasta": 369.67
+   "desde": 368.85,
+   "hasta": 369.61
   },
   {
    "w": "de",
-   "desde": 369.67,
+   "desde": 369.61,
    "hasta": 369.79
   },
   {
    "w": "comportamientos",
    "desde": 369.79,
-   "hasta": 370.65
+   "hasta": 370.59
   },
   {
    "w": "se",
-   "desde": 370.65,
-   "hasta": 371.47
+   "desde": 370.59,
+   "hasta": 371.05
   },
   {
    "w": "trata",
-   "desde": 371.47,
-   "hasta": 371.73
+   "desde": 371.05,
+   "hasta": 371.71
   },
   {
    "w": "de",
-   "desde": 371.73,
-   "hasta": 372.17
+   "desde": 371.71,
+   "hasta": 372.15
   },
   {
    "w": "hacer",
-   "desde": 372.17,
+   "desde": 372.15,
    "hasta": 372.95
   },
   {
    "w": "que",
    "desde": 372.95,
-   "hasta": 373.17
+   "hasta": 373.15
   },
   {
    "w": "los",
-   "desde": 373.17,
+   "desde": 373.15,
    "hasta": 373.33
   },
   {
@@ -3627,18 +3432,18 @@
    "hasta": 374.95
   },
   {
-   "w": "organización,",
+   "w": "organización",
    "desde": 374.95,
-   "hasta": 375.13
+   "hasta": 375.49
   },
   {
    "w": "sean",
-   "desde": 375.15,
-   "hasta": 375.71
+   "desde": 375.49,
+   "hasta": 375.83
   },
   {
    "w": "los",
-   "desde": 375.71,
+   "desde": 375.83,
    "hasta": 376.05
   },
   {
@@ -3662,18 +3467,18 @@
    "hasta": 377.15
   },
   {
-   "w": "Entonces",
-   "desde": 378.65,
-   "hasta": 379.21
+   "w": "Entonces,",
+   "desde": 378.69,
+   "hasta": 379.25
   },
   {
    "w": "parte",
-   "desde": 379.21,
-   "hasta": 379.77
+   "desde": 379.25,
+   "hasta": 379.81
   },
   {
    "w": "siempre",
-   "desde": 379.77,
+   "desde": 379.81,
    "hasta": 380.11
   },
   {
@@ -3747,13 +3552,13 @@
    "hasta": 383.97
   },
   {
-   "w": "organización.",
+   "w": "organización,",
    "desde": 383.97,
-   "hasta": 384.51
+   "hasta": 384.55
   },
   {
-   "w": "Y",
-   "desde": 384.65,
+   "w": "y",
+   "desde": 384.63,
    "hasta": 384.77
   },
   {
@@ -3774,11 +3579,11 @@
   {
    "w": "ahí",
    "desde": 385.25,
-   "hasta": 385.37
+   "hasta": 385.39
   },
   {
    "w": "hay",
-   "desde": 385.37,
+   "desde": 385.39,
    "hasta": 385.49
   },
   {
@@ -3804,16 +3609,16 @@
   {
    "w": "neurociencia,",
    "desde": 387.19,
-   "hasta": 387.87
+   "hasta": 387.85
   },
   {
    "w": "innovación,",
-   "desde": 387.97,
-   "hasta": 389.17
+   "desde": 388.67,
+   "hasta": 389.23
   },
   {
    "w": "gestión",
-   "desde": 389.17,
+   "desde": 389.23,
    "hasta": 389.79
   },
   {
@@ -3824,31 +3629,31 @@
   {
    "w": "cambio,",
    "desde": 389.87,
-   "hasta": 390.17
+   "hasta": 390.19
   },
   {
    "w": "para",
-   "desde": 390.67,
+   "desde": 390.35,
    "hasta": 390.95
   },
   {
    "w": "diseñar",
    "desde": 390.95,
-   "hasta": 391.65
+   "hasta": 391.67
   },
   {
    "w": "esos",
-   "desde": 391.65,
+   "desde": 391.67,
    "hasta": 391.91
   },
   {
    "w": "flujos,",
    "desde": 391.91,
-   "hasta": 392.61
+   "hasta": 392.63
   },
   {
    "w": "esas",
-   "desde": 392.61,
+   "desde": 392.63,
    "hasta": 393.01
   },
   {
@@ -3859,11 +3664,11 @@
   {
    "w": "y",
    "desde": 393.97,
-   "hasta": 394.21
+   "hasta": 394.23
   },
   {
    "w": "dinámicas",
-   "desde": 394.21,
+   "desde": 394.23,
    "hasta": 394.81
   },
   {
@@ -3874,46 +3679,46 @@
   {
    "w": "de",
    "desde": 395.03,
-   "hasta": 395.17
+   "hasta": 395.15
   },
   {
    "w": "una",
-   "desde": 395.17,
+   "desde": 395.15,
    "hasta": 395.23
   },
   {
    "w": "organización",
    "desde": 395.23,
-   "hasta": 395.81
+   "hasta": 395.79
   },
   {
    "w": "que",
-   "desde": 395.81,
-   "hasta": 396.83
+   "desde": 395.79,
+   "hasta": 396.81
   },
   {
    "w": "incentiven",
-   "desde": 396.83,
-   "hasta": 397.67
+   "desde": 396.81,
+   "hasta": 397.65
   },
   {
    "w": "las",
-   "desde": 397.67,
-   "hasta": 398.51
+   "desde": 397.65,
+   "hasta": 398.53
   },
   {
    "w": "prácticas",
-   "desde": 398.51,
+   "desde": 398.53,
    "hasta": 399.09
   },
   {
    "w": "asociadas",
    "desde": 399.09,
-   "hasta": 399.89
+   "hasta": 399.87
   },
   {
    "w": "a",
-   "desde": 399.89,
+   "desde": 399.87,
    "hasta": 400.09
   },
   {
@@ -3954,71 +3759,51 @@
   {
    "w": "muchos",
    "desde": 402.93,
-   "hasta": 403.33
+   "hasta": 403.29
   },
   {
    "w": "tips,",
-   "desde": 403.33,
+   "desde": 403.29,
    "hasta": 404.27
   },
   {
    "w": "muchas",
-   "desde": 404.41,
+   "desde": 404.43,
    "hasta": 404.63
   },
   {
-   "w": "metodologías.",
-   "desde": 404.63,
-   "hasta": 405.13
-  },
-  {
-   "w": "Hay",
-   "desde": 405.15,
-   "hasta": 405.15
-  },
-  {
-   "w": "muchas",
-   "desde": 405.15,
-   "hasta": 405.15
-  },
-  {
-   "w": "pequeñas",
-   "desde": 405.15,
-   "hasta": 405.15
-  },
-  {
    "w": "metodologías,",
-   "desde": 405.15,
+   "desde": 404.63,
    "hasta": 405.53
   },
   {
    "w": "muchas",
-   "desde": 405.63,
+   "desde": 405.61,
    "hasta": 405.99
   },
   {
    "w": "pequeñas",
    "desde": 405.99,
-   "hasta": 406.97
+   "hasta": 407.09
   },
   {
-   "w": "hábitos.",
-   "desde": 406.97,
-   "hasta": 408.75
+   "w": "hábitos,",
+   "desde": 408.37,
+   "hasta": 408.81
   },
   {
-   "w": "Hay",
-   "desde": 409.41,
-   "hasta": 409.85
+   "w": "hay",
+   "desde": 408.81,
+   "hasta": 409.25
   },
   {
    "w": "muchos",
-   "desde": 409.85,
-   "hasta": 410.29
+   "desde": 409.25,
+   "hasta": 410.25
   },
   {
    "w": "lo",
-   "desde": 410.29,
+   "desde": 410.25,
    "hasta": 410.85
   },
   {
@@ -4059,36 +3844,36 @@
   {
    "w": "se",
    "desde": 413.69,
-   "hasta": 413.81
+   "hasta": 413.83
   },
   {
    "w": "pueden",
-   "desde": 413.81,
+   "desde": 413.83,
    "hasta": 414.13
   },
   {
    "w": "colocar.",
    "desde": 414.13,
-   "hasta": 414.53
+   "hasta": 414.55
   },
   {
    "w": "Es",
-   "desde": 414.83,
-   "hasta": 415.27
+   "desde": 414.81,
+   "hasta": 415.25
   },
   {
    "w": "el",
-   "desde": 415.27,
-   "hasta": 415.45
+   "desde": 415.25,
+   "hasta": 415.43
   },
   {
    "w": "ejemplo",
-   "desde": 415.45,
-   "hasta": 415.71
+   "desde": 415.43,
+   "hasta": 415.75
   },
   {
    "w": "de",
-   "desde": 415.71,
+   "desde": 415.75,
    "hasta": 415.97
   },
   {
@@ -4119,11 +3904,11 @@
   {
    "w": "la",
    "desde": 417.75,
-   "hasta": 417.85
+   "hasta": 417.87
   },
   {
    "w": "alacena",
-   "desde": 417.85,
+   "desde": 417.87,
    "hasta": 418.41
   },
   {
@@ -4147,23 +3932,23 @@
    "hasta": 419.37
   },
   {
-   "w": "mano.",
+   "w": "mano,",
    "desde": 419.37,
    "hasta": 419.59
   },
   {
-   "w": "¿Vas",
-   "desde": 419.67,
-   "hasta": 419.81
+   "w": "vas",
+   "desde": 419.69,
+   "hasta": 419.77
   },
   {
    "w": "a",
-   "desde": 419.81,
-   "hasta": 419.87
+   "desde": 419.77,
+   "hasta": 419.89
   },
   {
    "w": "poner",
-   "desde": 419.87,
+   "desde": 419.89,
    "hasta": 420.05
   },
   {
@@ -4179,11 +3964,11 @@
   {
    "w": "de",
    "desde": 420.47,
-   "hasta": 420.53
+   "hasta": 420.55
   },
   {
    "w": "chocolate",
-   "desde": 420.53,
+   "desde": 420.55,
    "hasta": 420.77
   },
   {
@@ -4194,11 +3979,11 @@
   {
    "w": "vas",
    "desde": 421.41,
-   "hasta": 421.69
+   "hasta": 421.71
   },
   {
    "w": "a",
-   "desde": 421.69,
+   "desde": 421.71,
    "hasta": 421.85
   },
   {
@@ -4212,23 +3997,23 @@
    "hasta": 422.19
   },
   {
-   "w": "fruta?",
+   "w": "fruta.",
    "desde": 422.19,
    "hasta": 422.65
   },
   {
    "w": "Bueno,",
    "desde": 422.71,
-   "hasta": 422.87
+   "hasta": 422.83
   },
   {
    "w": "probablemente",
    "desde": 422.89,
-   "hasta": 423.39
+   "hasta": 423.37
   },
   {
    "w": "si",
-   "desde": 423.39,
+   "desde": 423.37,
    "hasta": 423.49
   },
   {
@@ -4239,21 +4024,21 @@
   {
    "w": "queriendo",
    "desde": 423.71,
-   "hasta": 424.21
+   "hasta": 424.15
   },
   {
    "w": "tener",
-   "desde": 424.21,
+   "desde": 424.15,
    "hasta": 424.77
   },
   {
    "w": "una",
    "desde": 424.77,
-   "hasta": 424.97
+   "hasta": 424.99
   },
   {
    "w": "dieta",
-   "desde": 424.97,
+   "desde": 424.99,
    "hasta": 425.19
   },
   {
@@ -4262,23 +4047,23 @@
    "hasta": 425.39
   },
   {
-   "w": "saludable,",
+   "w": "saludable",
    "desde": 425.39,
    "hasta": 425.83
   },
   {
    "w": "vas",
-   "desde": 425.89,
-   "hasta": 425.97
+   "desde": 425.83,
+   "hasta": 425.99
   },
   {
    "w": "a",
-   "desde": 425.97,
-   "hasta": 426.13
+   "desde": 425.99,
+   "hasta": 426.15
   },
   {
    "w": "dejar",
-   "desde": 426.13,
+   "desde": 426.15,
    "hasta": 426.35
   },
   {
@@ -4299,11 +4084,11 @@
   {
    "w": "alcance",
    "desde": 426.85,
-   "hasta": 427.19
+   "hasta": 427.17
   },
   {
    "w": "de",
-   "desde": 427.19,
+   "desde": 427.17,
    "hasta": 427.29
   },
   {
@@ -4314,31 +4099,31 @@
   {
    "w": "mano",
    "desde": 427.33,
-   "hasta": 427.59
+   "hasta": 427.57
   },
   {
    "w": "para",
-   "desde": 427.59,
-   "hasta": 428.13
+   "desde": 427.57,
+   "hasta": 428.09
   },
   {
    "w": "que",
-   "desde": 428.13,
-   "hasta": 428.25
+   "desde": 428.09,
+   "hasta": 428.27
   },
   {
    "w": "sea",
-   "desde": 428.25,
+   "desde": 428.27,
    "hasta": 428.47
   },
   {
    "w": "la",
    "desde": 428.47,
-   "hasta": 429.09
+   "hasta": 429.11
   },
   {
    "w": "decisión",
-   "desde": 429.09,
+   "desde": 429.11,
    "hasta": 429.47
   },
   {
@@ -4359,11 +4144,11 @@
   {
    "w": "tomar",
    "desde": 430.09,
-   "hasta": 430.33
+   "hasta": 430.35
   },
   {
    "w": "en",
-   "desde": 430.33,
+   "desde": 430.35,
    "hasta": 430.67
   },
   {
@@ -4374,16 +4159,16 @@
   {
    "w": "rutina",
    "desde": 430.77,
-   "hasta": 431.23
+   "hasta": 431.25
   },
   {
    "w": "del",
-   "desde": 431.23,
-   "hasta": 431.39
+   "desde": 431.25,
+   "hasta": 431.37
   },
   {
    "w": "día",
-   "desde": 431.39,
+   "desde": 431.37,
    "hasta": 431.55
   },
   {
@@ -4394,7 +4179,7 @@
   {
    "w": "día.",
    "desde": 431.65,
-   "hasta": 431.81
+   "hasta": 431.79
   },
   {
    "w": "Bueno,",
@@ -4409,96 +4194,96 @@
   {
    "w": "diseño",
    "desde": 432.59,
-   "hasta": 432.89
+   "hasta": 432.91
   },
   {
    "w": "de",
-   "desde": 432.89,
+   "desde": 432.91,
    "hasta": 432.95
   },
   {
-   "w": "comportamientos",
+   "w": "comportamiento",
    "desde": 432.95,
-   "hasta": 433.59
+   "hasta": 433.53
   },
   {
    "w": "se",
-   "desde": 433.59,
-   "hasta": 433.75
+   "desde": 433.53,
+   "hasta": 433.73
   },
   {
    "w": "trata",
-   "desde": 433.75,
-   "hasta": 433.99
+   "desde": 433.73,
+   "hasta": 433.97
   },
   {
    "w": "un",
-   "desde": 433.99,
+   "desde": 433.97,
    "hasta": 434.25
   },
   {
    "w": "poco",
    "desde": 434.25,
-   "hasta": 434.49
+   "hasta": 434.53
   },
   {
    "w": "de",
-   "desde": 434.49,
-   "hasta": 434.67
+   "desde": 434.53,
+   "hasta": 434.69
   },
   {
-   "w": "eso.",
-   "desde": 434.67,
-   "hasta": 434.93
+   "w": "eso",
+   "desde": 434.69,
+   "hasta": 434.91
   },
   {
-   "w": "A",
-   "desde": 435.15,
-   "hasta": 435.17
+   "w": "a",
+   "desde": 434.91,
+   "hasta": 435.13
   },
   {
    "w": "nivel",
-   "desde": 435.17,
+   "desde": 435.13,
    "hasta": 435.33
   },
   {
    "w": "organizacional",
    "desde": 435.33,
-   "hasta": 436.11
+   "hasta": 436.09
   },
   {
    "w": "y",
-   "desde": 436.11,
-   "hasta": 436.49
+   "desde": 436.09,
+   "hasta": 436.53
   },
   {
    "w": "tiene",
-   "desde": 436.49,
-   "hasta": 436.97
+   "desde": 436.53,
+   "hasta": 436.99
   },
   {
    "w": "mucha",
-   "desde": 436.97,
-   "hasta": 437.25
+   "desde": 436.99,
+   "hasta": 437.27
   },
   {
-   "w": "efectividad",
-   "desde": 437.25,
-   "hasta": 437.85
+   "w": "efectividad.",
+   "desde": 437.27,
+   "hasta": 437.75
   },
   {
-   "w": "en",
-   "desde": 437.85,
-   "hasta": 438.01
+   "w": "En",
+   "desde": 437.77,
+   "hasta": 437.97
   },
   {
    "w": "crear",
-   "desde": 438.01,
-   "hasta": 438.19
+   "desde": 437.97,
+   "hasta": 438.13
   },
   {
    "w": "culturas",
-   "desde": 438.19,
+   "desde": 438.13,
    "hasta": 438.85
   },
   {
@@ -4514,31 +4299,31 @@
   {
    "w": "capacidades",
    "desde": 441.19,
-   "hasta": 441.89
+   "hasta": 441.91
   },
   {
    "w": "son",
-   "desde": 441.89,
+   "desde": 441.91,
    "hasta": 442.63
   },
   {
    "w": "el",
    "desde": 442.63,
-   "hasta": 443.15
+   "hasta": 443.11
   },
   {
    "w": "punto",
-   "desde": 443.15,
-   "hasta": 444.11
+   "desde": 443.11,
+   "hasta": 444.09
   },
   {
    "w": "fundamental",
-   "desde": 444.11,
-   "hasta": 444.61
+   "desde": 444.09,
+   "hasta": 444.63
   },
   {
    "w": "para",
-   "desde": 444.61,
+   "desde": 444.63,
    "hasta": 445.05
   },
   {
@@ -4549,11 +4334,11 @@
   {
    "w": "y",
    "desde": 445.75,
-   "hasta": 445.87
+   "hasta": 445.89
   },
   {
    "w": "hacer",
-   "desde": 445.87,
+   "desde": 445.89,
    "hasta": 446.09
   },
   {
@@ -4588,17 +4373,17 @@
   },
   {
    "w": "Con",
-   "desde": 451.45,
+   "desde": 451.53,
    "hasta": 452.29
   },
   {
    "w": "los",
    "desde": 462.34,
-   "hasta": 462.8
+   "hasta": 462.76
   },
   {
    "w": "nuevos",
-   "desde": 462.8,
+   "desde": 462.76,
    "hasta": 463.1
   },
   {
@@ -4609,26 +4394,26 @@
   {
    "w": "de",
    "desde": 463.68,
-   "hasta": 463.76
+   "hasta": 463.74
   },
   {
-   "w": "IA,",
-   "desde": 463.76,
+   "w": "IA",
+   "desde": 463.74,
    "hasta": 463.96
   },
   {
    "w": "estamos",
-   "desde": 464.08,
-   "hasta": 465.28
+   "desde": 463.96,
+   "hasta": 464.7
   },
   {
    "w": "viendo",
-   "desde": 465.28,
-   "hasta": 465.62
+   "desde": 464.7,
+   "hasta": 465.6
   },
   {
    "w": "un",
-   "desde": 465.62,
+   "desde": 465.6,
    "hasta": 465.84
   },
   {
@@ -4644,11 +4429,11 @@
   {
    "w": "el",
    "desde": 466.6,
-   "hasta": 466.8
+   "hasta": 466.78
   },
   {
    "w": "concepto",
-   "desde": 466.8,
+   "desde": 466.78,
    "hasta": 467.3
   },
   {
@@ -4659,66 +4444,71 @@
   {
    "w": "de",
    "desde": 467.62,
-   "hasta": 468.1
+   "hasta": 468.08
   },
   {
-   "w": "services",
-   "desde": 468.1,
-   "hasta": 468.66
+   "w": "Service",
+   "desde": 468.08,
+   "hasta": 468.64
   },
   {
    "w": "as",
-   "desde": 468.66,
-   "hasta": 468.94
+   "desde": 468.64,
+   "hasta": 468.92
   },
   {
-   "w": "software.",
-   "desde": 468.94,
-   "hasta": 469.36
+   "w": "a",
+   "desde": 468.92,
+   "hasta": 469.04
+  },
+  {
+   "w": "Software.",
+   "desde": 469.04,
+   "hasta": 469.42
   },
   {
    "w": "Con",
-   "desde": 469.78,
-   "hasta": 470.56
+   "desde": 469.82,
+   "hasta": 470.58
   },
   {
    "w": "los",
-   "desde": 470.56,
-   "hasta": 472.28
+   "desde": 470.58,
+   "hasta": 472.3
   },
   {
    "w": "nuevos",
-   "desde": 472.28,
-   "hasta": 472.54
+   "desde": 472.3,
+   "hasta": 472.56
   },
   {
    "w": "modelos",
-   "desde": 472.54,
-   "hasta": 473.14
+   "desde": 472.56,
+   "hasta": 473.1
   },
   {
    "w": "de",
-   "desde": 473.14,
+   "desde": 473.1,
    "hasta": 473.24
   },
   {
-   "w": "IA,",
+   "w": "IA",
    "desde": 473.24,
    "hasta": 473.48
   },
   {
    "w": "estamos",
-   "desde": 473.58,
-   "hasta": 474.1
+   "desde": 473.48,
+   "hasta": 474.04
   },
   {
    "w": "viendo",
-   "desde": 474.1,
-   "hasta": 474.52
+   "desde": 474.04,
+   "hasta": 474.5
   },
   {
    "w": "un",
-   "desde": 474.52,
+   "desde": 474.5,
    "hasta": 475.22
   },
   {
@@ -4729,32 +4519,32 @@
   {
    "w": "en",
    "desde": 475.62,
-   "hasta": 475.84
+   "hasta": 475.86
   },
   {
    "w": "el",
-   "desde": 475.84,
+   "desde": 475.86,
    "hasta": 475.98
   },
   {
    "w": "concepto",
    "desde": 475.98,
-   "hasta": 476.54
+   "hasta": 476.52
   },
   {
    "w": "tradicional",
-   "desde": 476.54,
-   "hasta": 476.9
+   "desde": 476.52,
+   "hasta": 476.82
   },
   {
    "w": "del",
-   "desde": 476.96,
-   "hasta": 477.2
+   "desde": 476.82,
+   "hasta": 477.26
   },
   {
    "w": "SaaS,",
-   "desde": 477.2,
-   "hasta": 477.56
+   "desde": 477.26,
+   "hasta": 477.6
   },
   {
    "w": "lo",
@@ -4764,56 +4554,56 @@
   {
    "w": "que",
    "desde": 478.0,
-   "hasta": 478.16
+   "hasta": 478.14
   },
   {
    "w": "se",
-   "desde": 478.16,
-   "hasta": 478.38
+   "desde": 478.14,
+   "hasta": 478.36
   },
   {
    "w": "conoce",
-   "desde": 478.38,
+   "desde": 478.36,
    "hasta": 478.7
   },
   {
    "w": "como",
    "desde": 478.7,
-   "hasta": 478.96
+   "hasta": 478.94
   },
   {
-   "w": "service",
-   "desde": 478.96,
-   "hasta": 479.5
+   "w": "Service",
+   "desde": 478.94,
+   "hasta": 479.44
   },
   {
    "w": "as",
-   "desde": 479.5,
-   "hasta": 479.74
+   "desde": 479.44,
+   "hasta": 479.56
   },
   {
    "w": "a",
-   "desde": 479.74,
-   "hasta": 479.84
+   "desde": 479.56,
+   "hasta": 479.56
   },
   {
-   "w": "software,",
-   "desde": 479.84,
-   "hasta": 480.12
+   "w": "Software.",
+   "desde": 479.56,
+   "hasta": 479.56
   },
   {
-   "w": "que",
-   "desde": 480.42,
-   "hasta": 480.96
+   "w": "Que",
+   "desde": 479.58,
+   "hasta": 479.94
   },
   {
    "w": "es",
-   "desde": 480.96,
-   "hasta": 481.08
+   "desde": 479.94,
+   "hasta": 481.06
   },
   {
    "w": "básicamente",
-   "desde": 481.08,
+   "desde": 481.06,
    "hasta": 481.44
   },
   {
@@ -4834,11 +4624,11 @@
   {
    "w": "y",
    "desde": 482.74,
-   "hasta": 483.58
+   "hasta": 483.54
   },
   {
    "w": "lo",
-   "desde": 483.58,
+   "desde": 483.54,
    "hasta": 484.1
   },
   {
@@ -4849,26 +4639,31 @@
   {
    "w": "en",
    "desde": 484.52,
-   "hasta": 484.9
+   "hasta": 484.92
+  },
+  {
+   "w": "el",
+   "desde": 484.92,
+   "hasta": 485.04
   },
   {
    "w": "modelo",
-   "desde": 484.9,
-   "hasta": 485.28
+   "desde": 485.04,
+   "hasta": 485.4
   },
   {
    "w": "de",
-   "desde": 485.28,
+   "desde": 485.4,
    "hasta": 485.54
   },
   {
    "w": "licencias",
    "desde": 485.54,
-   "hasta": 486.08
+   "hasta": 486.12
   },
   {
    "w": "como",
-   "desde": 486.08,
+   "desde": 486.12,
    "hasta": 487.16
   },
   {
@@ -4879,41 +4674,41 @@
   {
    "w": "enlatado",
    "desde": 487.3,
-   "hasta": 487.8
+   "hasta": 487.84
   },
   {
    "w": "para",
-   "desde": 487.8,
-   "hasta": 488.06
+   "desde": 487.84,
+   "hasta": 488.08
   },
   {
    "w": "que",
-   "desde": 488.06,
+   "desde": 488.08,
    "hasta": 488.26
   },
   {
    "w": "vos",
    "desde": 488.26,
-   "hasta": 488.44
+   "hasta": 488.42
   },
   {
    "w": "adaptes",
-   "desde": 488.44,
-   "hasta": 488.94
+   "desde": 488.42,
+   "hasta": 488.96
   },
   {
    "w": "tu",
-   "desde": 488.94,
+   "desde": 488.96,
    "hasta": 489.04
   },
   {
    "w": "proceso",
    "desde": 489.04,
-   "hasta": 489.48
+   "hasta": 489.4
   },
   {
    "w": "a",
-   "desde": 489.48,
+   "desde": 489.4,
    "hasta": 489.7
   },
   {
@@ -4924,46 +4719,46 @@
   {
    "w": "sistema",
    "desde": 489.88,
-   "hasta": 490.28
+   "hasta": 490.26
   },
   {
    "w": "y",
-   "desde": 490.28,
-   "hasta": 491.02
+   "desde": 490.26,
+   "hasta": 491.0
   },
   {
    "w": "gestiones",
-   "desde": 491.02,
-   "hasta": 491.56
+   "desde": 491.0,
+   "hasta": 491.54
   },
   {
    "w": "tu",
-   "desde": 491.56,
-   "hasta": 491.76
+   "desde": 491.54,
+   "hasta": 491.74
   },
   {
    "w": "organización.",
-   "desde": 491.76,
+   "desde": 491.74,
    "hasta": 492.32
   },
   {
    "w": "Bueno,",
-   "desde": 492.76,
+   "desde": 492.54,
    "hasta": 493.02
   },
   {
    "w": "en",
    "desde": 493.1,
-   "hasta": 493.76
+   "hasta": 493.74
   },
   {
    "w": "esta",
-   "desde": 493.76,
-   "hasta": 494.04
+   "desde": 493.74,
+   "hasta": 494.02
   },
   {
    "w": "nueva",
-   "desde": 494.04,
+   "desde": 494.02,
    "hasta": 494.48
   },
   {
@@ -4979,21 +4774,21 @@
   {
    "w": "invierte",
    "desde": 495.24,
-   "hasta": 495.88
+   "hasta": 495.9
   },
   {
    "w": "y",
-   "desde": 495.88,
+   "desde": 495.9,
    "hasta": 496.26
   },
   {
    "w": "pasa",
    "desde": 496.26,
-   "hasta": 496.82
+   "hasta": 496.8
   },
   {
    "w": "a",
-   "desde": 496.82,
+   "desde": 496.8,
    "hasta": 496.94
   },
   {
@@ -5022,7 +4817,7 @@
    "hasta": 498.32
   },
   {
-   "w": "software",
+   "w": "Software",
    "desde": 498.32,
    "hasta": 498.66
   },
@@ -5037,9 +4832,9 @@
    "hasta": 499.0
   },
   {
-   "w": "service,",
+   "w": "Service,",
    "desde": 499.0,
-   "hasta": 499.32
+   "hasta": 499.26
   },
   {
    "w": "pasa",
@@ -5054,21 +4849,21 @@
   {
    "w": "ser",
    "desde": 499.7,
-   "hasta": 499.84
+   "hasta": 499.86
   },
   {
    "w": "un",
-   "desde": 499.84,
+   "desde": 499.86,
    "hasta": 500.08
   },
   {
-   "w": "service",
+   "w": "Service",
    "desde": 500.08,
-   "hasta": 500.4
+   "hasta": 500.42
   },
   {
    "w": "as",
-   "desde": 500.4,
+   "desde": 500.42,
    "hasta": 500.66
   },
   {
@@ -5077,68 +4872,63 @@
    "hasta": 500.8
   },
   {
-   "w": "software,",
+   "w": "Software",
    "desde": 500.8,
-   "hasta": 501.1
+   "hasta": 501.08
   },
   {
    "w": "en",
-   "desde": 501.26,
+   "desde": 501.08,
    "hasta": 501.48
   },
   {
    "w": "donde",
    "desde": 501.48,
-   "hasta": 501.68
+   "hasta": 501.72
   },
   {
    "w": "básicamente",
-   "desde": 501.68,
+   "desde": 501.72,
    "hasta": 503.14
   },
   {
    "w": "se",
    "desde": 503.14,
-   "hasta": 503.74
+   "hasta": 503.76
   },
   {
    "w": "invierte...",
-   "desde": 503.74,
-   "hasta": 504.56
+   "desde": 503.76,
+   "hasta": 504.68
   },
   {
-   "w": "No.",
-   "desde": 506.08,
-   "hasta": 506.64
+   "w": "Bien.",
+   "desde": 506.04,
+   "hasta": 506.76
   },
   {
-   "w": "Bien,",
-   "desde": 521.0,
-   "hasta": 521.52
-  },
-  {
-   "w": "estamos",
-   "desde": 525.23,
-   "hasta": 525.75
+   "w": "Estamos",
+   "desde": 525.93,
+   "hasta": 525.95
   },
   {
    "w": "viendo",
-   "desde": 525.75,
-   "hasta": 526.07
+   "desde": 525.95,
+   "hasta": 526.03
   },
   {
    "w": "un",
-   "desde": 526.07,
+   "desde": 526.03,
    "hasta": 526.31
   },
   {
    "w": "giro",
    "desde": 526.31,
-   "hasta": 526.73
+   "hasta": 526.75
   },
   {
    "w": "en",
-   "desde": 526.73,
+   "desde": 526.75,
    "hasta": 526.99
   },
   {
@@ -5159,16 +4949,16 @@
   {
    "w": "soluciones",
    "desde": 527.71,
-   "hasta": 528.09
+   "hasta": 528.11
   },
   {
    "w": "digitales",
-   "desde": 528.09,
-   "hasta": 528.85
+   "desde": 528.11,
+   "hasta": 528.87
   },
   {
    "w": "donde",
-   "desde": 528.85,
+   "desde": 528.87,
    "hasta": 529.33
   },
   {
@@ -5204,11 +4994,11 @@
   {
    "w": "el",
    "desde": 531.99,
-   "hasta": 532.23
+   "hasta": 532.21
   },
   {
-   "w": "software",
-   "desde": 532.23,
+   "w": "Software",
+   "desde": 532.21,
    "hasta": 532.87
   },
   {
@@ -5219,31 +5009,31 @@
   {
    "w": "a",
    "desde": 533.07,
-   "hasta": 533.13
+   "hasta": 533.15
   },
   {
-   "w": "service,",
-   "desde": 533.13,
-   "hasta": 533.41
+   "w": "Service.",
+   "desde": 533.15,
+   "hasta": 533.39
   },
   {
-   "w": "que",
+   "w": "Que",
    "desde": 533.51,
-   "hasta": 533.63
+   "hasta": 533.65
   },
   {
-   "w": "era",
-   "desde": 533.63,
+   "w": "era,",
+   "desde": 533.65,
    "hasta": 533.79
   },
   {
    "w": "yo",
-   "desde": 533.79,
-   "hasta": 534.11
+   "desde": 533.85,
+   "hasta": 534.09
   },
   {
    "w": "hago",
-   "desde": 534.11,
+   "desde": 534.09,
    "hasta": 534.27
   },
   {
@@ -5259,21 +5049,21 @@
   {
    "w": "enlatado",
    "desde": 534.75,
-   "hasta": 535.29
+   "hasta": 535.27
   },
   {
    "w": "y",
-   "desde": 535.29,
-   "hasta": 535.91
+   "desde": 535.27,
+   "hasta": 535.93
   },
   {
    "w": "te",
-   "desde": 535.91,
-   "hasta": 536.03
+   "desde": 535.93,
+   "hasta": 536.05
   },
   {
    "w": "digo",
-   "desde": 536.03,
+   "desde": 536.05,
    "hasta": 536.27
   },
   {
@@ -5294,16 +5084,16 @@
   {
    "w": "adaptar",
    "desde": 536.89,
-   "hasta": 537.27
+   "hasta": 537.29
   },
   {
    "w": "tu",
-   "desde": 537.27,
-   "hasta": 537.45
+   "desde": 537.29,
+   "hasta": 537.43
   },
   {
    "w": "proceso",
-   "desde": 537.45,
+   "desde": 537.43,
    "hasta": 537.83
   },
   {
@@ -5312,28 +5102,28 @@
    "hasta": 538.21
   },
   {
-   "w": "sistema",
+   "w": "sistema.",
    "desde": 538.21,
-   "hasta": 538.59
+   "hasta": 538.53
   },
   {
-   "w": "y",
-   "desde": 539.19,
-   "hasta": 539.71
+   "w": "Y",
+   "desde": 539.37,
+   "hasta": 539.85
   },
   {
    "w": "está",
-   "desde": 539.71,
-   "hasta": 540.05
+   "desde": 539.85,
+   "hasta": 540.07
   },
   {
    "w": "cambiando",
-   "desde": 540.05,
-   "hasta": 540.65
+   "desde": 540.07,
+   "hasta": 540.71
   },
   {
    "w": "el",
-   "desde": 540.65,
+   "desde": 540.71,
    "hasta": 541.11
   },
   {
@@ -5342,13 +5132,18 @@
    "hasta": 541.45
   },
   {
-   "w": "está",
-   "desde": 541.53,
-   "hasta": 541.75
+   "w": "no?",
+   "desde": 541.55,
+   "hasta": 541.61
+  },
+  {
+   "w": "Está",
+   "desde": 541.67,
+   "hasta": 541.87
   },
   {
    "w": "pasándose",
-   "desde": 541.75,
+   "desde": 541.87,
    "hasta": 542.73
   },
   {
@@ -5362,7 +5157,7 @@
    "hasta": 543.03
   },
   {
-   "w": "service",
+   "w": "Service",
    "desde": 543.03,
    "hasta": 543.51
   },
@@ -5377,23 +5172,23 @@
    "hasta": 543.95
   },
   {
-   "w": "software.",
+   "w": "Software.",
    "desde": 543.95,
-   "hasta": 544.21
+   "hasta": 544.19
   },
   {
    "w": "Es",
    "desde": 544.43,
-   "hasta": 544.53
+   "hasta": 544.55
   },
   {
    "w": "decir,",
-   "desde": 544.53,
+   "desde": 544.55,
    "hasta": 544.79
   },
   {
    "w": "decime",
-   "desde": 544.85,
+   "desde": 544.89,
    "hasta": 545.45
   },
   {
@@ -5418,12 +5213,12 @@
   },
   {
    "w": "cuáles",
-   "desde": 546.91,
-   "hasta": 547.17
+   "desde": 546.93,
+   "hasta": 547.19
   },
   {
    "w": "son",
-   "desde": 547.17,
+   "desde": 547.19,
    "hasta": 547.37
   },
   {
@@ -5434,36 +5229,36 @@
   {
    "w": "necesidades",
    "desde": 547.57,
-   "hasta": 548.17
+   "hasta": 548.19
   },
   {
-   "w": "puntuales",
-   "desde": 548.17,
-   "hasta": 549.11
+   "w": "puntuales.",
+   "desde": 548.19,
+   "hasta": 549.13
   },
   {
-   "w": "y",
-   "desde": 549.11,
-   "hasta": 549.53
+   "w": "Y",
+   "desde": 549.15,
+   "hasta": 549.55
   },
   {
    "w": "como",
-   "desde": 549.53,
+   "desde": 549.55,
    "hasta": 549.73
   },
   {
-   "w": "servicio",
+   "w": "servicio,",
    "desde": 549.73,
-   "hasta": 550.25
+   "hasta": 550.29
   },
   {
    "w": "yo",
-   "desde": 550.25,
-   "hasta": 551.13
+   "desde": 550.45,
+   "hasta": 551.11
   },
   {
    "w": "voy",
-   "desde": 551.13,
+   "desde": 551.11,
    "hasta": 551.25
   },
   {
@@ -5474,21 +5269,21 @@
   {
    "w": "desarrollar",
    "desde": 551.31,
-   "hasta": 551.79
+   "hasta": 551.81
   },
   {
    "w": "un",
-   "desde": 551.79,
+   "desde": 551.81,
    "hasta": 551.91
   },
   {
    "w": "software",
    "desde": 551.91,
-   "hasta": 552.13
+   "hasta": 552.15
   },
   {
    "w": "que",
-   "desde": 552.13,
+   "desde": 552.15,
    "hasta": 552.43
   },
   {
@@ -5499,26 +5294,26 @@
   {
    "w": "a",
    "desde": 552.55,
-   "hasta": 552.79
+   "hasta": 552.77
   },
   {
-   "w": "estar,",
-   "desde": 552.79,
-   "hasta": 553.11
+   "w": "estar",
+   "desde": 552.77,
+   "hasta": 553.17
   },
   {
-   "w": "especialmente,",
-   "desde": 554.09,
-   "hasta": 554.61
+   "w": "especialmente",
+   "desde": 553.17,
+   "hasta": 554.21
   },
   {
    "w": "customizado",
-   "desde": 554.61,
-   "hasta": 555.13
+   "desde": 554.21,
+   "hasta": 555.15
   },
   {
    "w": "para",
-   "desde": 555.13,
+   "desde": 555.15,
    "hasta": 555.71
   },
   {
@@ -5529,11 +5324,11 @@
   {
    "w": "realidad",
    "desde": 555.89,
-   "hasta": 556.19
+   "hasta": 556.03
   },
   {
    "w": "de",
-   "desde": 556.19,
+   "desde": 556.03,
    "hasta": 556.33
   },
   {
@@ -5544,12 +5339,12 @@
   {
    "w": "organización.",
    "desde": 556.43,
-   "hasta": 557.01
+   "hasta": 557.05
   },
   {
    "w": "Eso,",
-   "desde": 557.27,
-   "hasta": 557.79
+   "desde": 557.21,
+   "hasta": 557.77
   },
   {
    "w": "obviamente,",
@@ -5558,17 +5353,17 @@
   },
   {
    "w": "es",
-   "desde": 558.13,
+   "desde": 558.07,
    "hasta": 558.29
   },
   {
    "w": "posible",
    "desde": 558.29,
-   "hasta": 558.55
+   "hasta": 558.57
   },
   {
    "w": "a",
-   "desde": 558.55,
+   "desde": 558.57,
    "hasta": 558.75
   },
   {
@@ -5589,11 +5384,11 @@
   {
    "w": "potencia",
    "desde": 559.25,
-   "hasta": 559.61
+   "hasta": 559.63
   },
   {
    "w": "que",
-   "desde": 559.61,
+   "desde": 559.63,
    "hasta": 559.79
   },
   {
@@ -5604,21 +5399,21 @@
   {
    "w": "da",
    "desde": 559.91,
-   "hasta": 560.11
+   "hasta": 560.09
   },
   {
    "w": "la",
-   "desde": 560.11,
+   "desde": 560.09,
    "hasta": 560.27
   },
   {
    "w": "IA",
    "desde": 560.27,
-   "hasta": 560.55
+   "hasta": 560.53
   },
   {
    "w": "y",
-   "desde": 560.55,
+   "desde": 560.53,
    "hasta": 560.75
   },
   {
@@ -5629,11 +5424,11 @@
   {
    "w": "flexibilidad",
    "desde": 560.87,
-   "hasta": 561.43
+   "hasta": 561.47
   },
   {
    "w": "y",
-   "desde": 561.43,
+   "desde": 561.47,
    "hasta": 561.69
   },
   {
@@ -5644,31 +5439,31 @@
   {
    "w": "de",
    "desde": 561.97,
-   "hasta": 562.17
+   "hasta": 562.19
   },
   {
-   "w": "desarrollo,",
-   "desde": 562.17,
-   "hasta": 562.47
+   "w": "desarrollo.",
+   "desde": 562.19,
+   "hasta": 562.49
   },
   {
-   "w": "pero",
+   "w": "Pero",
    "desde": 562.79,
-   "hasta": 563.27
+   "hasta": 563.29
   },
   {
    "w": "cambia",
-   "desde": 563.27,
+   "desde": 563.29,
    "hasta": 563.57
   },
   {
    "w": "totalmente",
    "desde": 563.57,
-   "hasta": 563.81
+   "hasta": 563.83
   },
   {
    "w": "la",
-   "desde": 563.81,
+   "desde": 563.83,
    "hasta": 564.15
   },
   {
@@ -5677,23 +5472,23 @@
    "hasta": 564.59
   },
   {
-   "w": "Ahora,",
-   "desde": 564.77,
-   "hasta": 565.29
+   "w": "Ahora",
+   "desde": 564.71,
+   "hasta": 565.27
   },
   {
    "w": "lo",
-   "desde": 565.39,
+   "desde": 565.27,
    "hasta": 565.55
   },
   {
    "w": "importante",
    "desde": 565.55,
-   "hasta": 565.93
+   "hasta": 565.91
   },
   {
    "w": "es",
-   "desde": 565.93,
+   "desde": 565.91,
    "hasta": 566.31
   },
   {
@@ -5719,26 +5514,26 @@
   {
    "w": "entender",
    "desde": 568.35,
-   "hasta": 568.65
+   "hasta": 568.69
   },
   {
    "w": "las",
-   "desde": 568.65,
-   "hasta": 569.43
+   "desde": 568.69,
+   "hasta": 569.45
   },
   {
    "w": "necesidades,",
-   "desde": 569.43,
-   "hasta": 570.07
+   "desde": 569.45,
+   "hasta": 570.05
   },
   {
    "w": "identificar",
-   "desde": 570.09,
-   "hasta": 570.79
+   "desde": 570.11,
+   "hasta": 570.81
   },
   {
    "w": "los",
-   "desde": 570.79,
+   "desde": 570.81,
    "hasta": 571.15
   },
   {
@@ -5769,21 +5564,21 @@
   {
    "w": "estratégica",
    "desde": 572.73,
-   "hasta": 573.33
+   "hasta": 573.35
   },
   {
    "w": "para",
-   "desde": 573.33,
+   "desde": 573.35,
    "hasta": 573.55
   },
   {
    "w": "entender",
    "desde": 573.55,
-   "hasta": 573.93
+   "hasta": 573.95
   },
   {
    "w": "cómo",
-   "desde": 573.93,
+   "desde": 573.95,
    "hasta": 574.73
   },
   {
@@ -5799,26 +5594,26 @@
   {
    "w": "evolucionar",
    "desde": 574.97,
-   "hasta": 575.39
+   "hasta": 575.41
   },
   {
    "w": "esa",
-   "desde": 575.39,
-   "hasta": 575.63
+   "desde": 575.41,
+   "hasta": 575.61
   },
   {
    "w": "organización",
-   "desde": 575.63,
-   "hasta": 576.13
+   "desde": 575.61,
+   "hasta": 576.15
   },
   {
    "w": "y",
-   "desde": 576.13,
-   "hasta": 576.29
+   "desde": 576.15,
+   "hasta": 576.31
   },
   {
    "w": "que",
-   "desde": 576.29,
+   "desde": 576.31,
    "hasta": 576.39
   },
   {
@@ -5829,11 +5624,11 @@
   {
    "w": "software",
    "desde": 576.55,
-   "hasta": 576.81
+   "hasta": 576.83
   },
   {
    "w": "se",
-   "desde": 576.81,
+   "desde": 576.83,
    "hasta": 577.39
   },
   {
@@ -5849,31 +5644,31 @@
   {
    "w": "esa",
    "desde": 578.03,
-   "hasta": 578.21
+   "hasta": 578.19
   },
   {
-   "w": "evolución",
-   "desde": 578.21,
+   "w": "evolución.",
+   "desde": 578.19,
    "hasta": 578.65
   },
   {
-   "w": "y",
-   "desde": 578.65,
-   "hasta": 579.37
+   "w": "Y",
+   "desde": 578.85,
+   "hasta": 579.41
   },
   {
    "w": "también,",
-   "desde": 579.37,
+   "desde": 579.41,
    "hasta": 579.69
   },
   {
    "w": "de",
    "desde": 579.71,
-   "hasta": 579.91
+   "hasta": 579.89
   },
   {
    "w": "vuelta,",
-   "desde": 579.91,
+   "desde": 579.89,
    "hasta": 580.11
   },
   {
@@ -5889,66 +5684,56 @@
   {
    "w": "para",
    "desde": 580.89,
-   "hasta": 581.51
+   "hasta": 581.49
   },
   {
    "w": "entender",
-   "desde": 581.51,
-   "hasta": 582.49
+   "desde": 581.49,
+   "hasta": 582.51
   },
   {
    "w": "que",
-   "desde": 582.49,
-   "hasta": 582.89
+   "desde": 582.51,
+   "hasta": 582.87
   },
   {
    "w": "las",
-   "desde": 582.89,
+   "desde": 582.87,
    "hasta": 583.13
   },
   {
-   "w": "personas,",
+   "w": "personas",
    "desde": 583.13,
-   "hasta": 583.29
+   "hasta": 583.61
   },
   {
    "w": "son",
-   "desde": 583.29,
-   "hasta": 583.45
+   "desde": 583.61,
+   "hasta": 584.41
   },
   {
    "w": "los",
-   "desde": 583.45,
-   "hasta": 584.53
+   "desde": 584.41,
+   "hasta": 584.55
   },
   {
    "w": "usuarios",
-   "desde": 584.53,
-   "hasta": 584.95
+   "desde": 584.55,
+   "hasta": 584.93
   },
   {
-   "w": "principales",
-   "desde": 584.95,
-   "hasta": 585.47
+   "w": "principales.",
+   "desde": 584.93,
+   "hasta": 585.49
   },
   {
-   "w": "y",
-   "desde": 585.47,
-   "hasta": 585.59
-  },
-  {
-   "w": "que",
-   "desde": 585.59,
-   "hasta": 585.71
-  },
-  {
-   "w": "todo",
-   "desde": 585.71,
-   "hasta": 586.07
+   "w": "Todo",
+   "desde": 585.89,
+   "hasta": 586.01
   },
   {
    "w": "software",
-   "desde": 586.07,
+   "desde": 586.01,
    "hasta": 586.41
   },
   {
@@ -5979,11 +5764,11 @@
   {
    "w": "ser",
    "desde": 587.61,
-   "hasta": 587.79
+   "hasta": 587.81
   },
   {
    "w": "centrado",
-   "desde": 587.79,
+   "desde": 587.81,
    "hasta": 588.27
   },
   {
@@ -6008,22 +5793,22 @@
   },
   {
    "w": "Voy",
-   "desde": 603.56,
-   "hasta": 604.08
+   "desde": 603.58,
+   "hasta": 604.1
   },
   {
    "w": "directo",
-   "desde": 604.08,
+   "desde": 604.1,
    "hasta": 604.46
   },
   {
    "w": "al",
    "desde": 604.46,
-   "hasta": 604.58
+   "hasta": 604.6
   },
   {
    "w": "KPI",
-   "desde": 604.58,
+   "desde": 604.6,
    "hasta": 605.12
   },
   {
@@ -6034,7 +5819,7 @@
   {
    "w": "liderazgo.",
    "desde": 605.32,
-   "hasta": 605.7
+   "hasta": 605.72
   },
   {
    "w": "Cuando",
@@ -6054,21 +5839,21 @@
   {
    "w": "transformación",
    "desde": 609.82,
-   "hasta": 611.02
+   "hasta": 611.0
   },
   {
    "w": "cultural,",
-   "desde": 611.02,
+   "desde": 611.0,
    "hasta": 611.38
   },
   {
    "w": "siempre",
    "desde": 611.66,
-   "hasta": 612.1
+   "hasta": 612.12
   },
   {
    "w": "me",
-   "desde": 612.1,
+   "desde": 612.12,
    "hasta": 612.56
   },
   {
@@ -6084,11 +5869,11 @@
   {
    "w": "a",
    "desde": 615.06,
-   "hasta": 615.14
+   "hasta": 615.16
   },
   {
    "w": "los",
-   "desde": 615.14,
+   "desde": 615.16,
    "hasta": 615.28
   },
   {
@@ -6104,11 +5889,11 @@
   {
    "w": "preguntarles",
    "desde": 616.1,
-   "hasta": 617.16
+   "hasta": 617.18
   },
   {
    "w": "si",
-   "desde": 617.16,
+   "desde": 617.18,
    "hasta": 617.34
   },
   {
@@ -6154,11 +5939,11 @@
   {
    "w": "simple,",
    "desde": 620.0,
-   "hasta": 620.38
+   "hasta": 620.36
   },
   {
    "w": "pero",
-   "desde": 620.42,
+   "desde": 620.44,
    "hasta": 620.64
   },
   {
@@ -6167,18 +5952,18 @@
    "hasta": 620.9
   },
   {
-   "w": "efectivo,",
+   "w": "efectivo.",
    "desde": 620.9,
-   "hasta": 621.54
+   "hasta": 621.52
   },
   {
-   "w": "que",
+   "w": "Que",
    "desde": 621.58,
-   "hasta": 621.84
+   "hasta": 621.86
   },
   {
    "w": "deberían",
-   "desde": 621.84,
+   "desde": 621.86,
    "hasta": 622.24
   },
   {
@@ -6209,21 +5994,21 @@
   {
    "w": "su",
    "desde": 623.62,
-   "hasta": 623.84
+   "hasta": 623.82
   },
   {
-   "w": "scorecard",
-   "desde": 623.84,
+   "w": "Scorecard",
+   "desde": 623.82,
    "hasta": 624.66
   },
   {
    "w": "del",
    "desde": 624.66,
-   "hasta": 624.86
+   "hasta": 624.88
   },
   {
    "w": "año,",
-   "desde": 624.86,
+   "desde": 624.88,
    "hasta": 625.1
   },
   {
@@ -6264,36 +6049,36 @@
   {
    "w": "por",
    "desde": 628.16,
-   "hasta": 628.56
+   "hasta": 628.54
   },
   {
    "w": "alguien",
-   "desde": 628.56,
-   "hasta": 628.86
+   "desde": 628.54,
+   "hasta": 628.84
   },
   {
    "w": "de",
-   "desde": 628.86,
-   "hasta": 629.08
+   "desde": 628.84,
+   "hasta": 629.06
   },
   {
    "w": "mi",
-   "desde": 629.08,
+   "desde": 629.06,
    "hasta": 629.18
   },
   {
    "w": "equipo.",
    "desde": 629.18,
-   "hasta": 629.46
+   "hasta": 629.5
   },
   {
-   "w": "¿Y",
-   "desde": 630.04,
-   "hasta": 630.52
+   "w": "Y",
+   "desde": 629.96,
+   "hasta": 630.48
   },
   {
    "w": "qué",
-   "desde": 630.52,
+   "desde": 630.48,
    "hasta": 630.56
   },
   {
@@ -6304,21 +6089,21 @@
   {
    "w": "esto?",
    "desde": 630.94,
-   "hasta": 631.28
+   "hasta": 631.3
   },
   {
    "w": "Que",
-   "desde": 631.62,
-   "hasta": 632.1
+   "desde": 631.3,
+   "hasta": 631.98
   },
   {
    "w": "si",
-   "desde": 632.1,
-   "hasta": 633.06
+   "desde": 631.98,
+   "hasta": 632.96
   },
   {
    "w": "yo",
-   "desde": 633.06,
+   "desde": 632.96,
    "hasta": 633.28
   },
   {
@@ -6337,23 +6122,23 @@
    "hasta": 634.26
   },
   {
-   "w": "sorprendido,",
+   "w": "sorprendido",
    "desde": 634.26,
-   "hasta": 635.24
+   "hasta": 635.22
   },
   {
    "w": "es",
-   "desde": 635.28,
-   "hasta": 635.92
+   "desde": 635.22,
+   "hasta": 635.9
   },
   {
    "w": "porque",
-   "desde": 635.92,
-   "hasta": 636.14
+   "desde": 635.9,
+   "hasta": 636.12
   },
   {
    "w": "estoy",
-   "desde": 636.14,
+   "desde": 636.12,
    "hasta": 636.36
   },
   {
@@ -6394,16 +6179,16 @@
   {
    "w": "innovación",
    "desde": 639.74,
-   "hasta": 640.44
+   "hasta": 640.46
   },
   {
    "w": "e",
-   "desde": 640.44,
-   "hasta": 640.66
+   "desde": 640.46,
+   "hasta": 640.8
   },
   {
    "w": "incentivando",
-   "desde": 640.66,
+   "desde": 640.8,
    "hasta": 641.5
   },
   {
@@ -6419,11 +6204,11 @@
   {
    "w": "personas",
    "desde": 641.9,
-   "hasta": 642.26
+   "hasta": 642.28
   },
   {
    "w": "a",
-   "desde": 642.26,
+   "desde": 642.28,
    "hasta": 642.48
   },
   {
@@ -6507,28 +6292,28 @@
    "hasta": 646.3
   },
   {
-   "w": "equipo,",
+   "w": "equipo.",
    "desde": 646.3,
-   "hasta": 646.62
+   "hasta": 646.58
   },
   {
-   "w": "a",
+   "w": "A",
    "desde": 646.72,
-   "hasta": 647.14
+   "hasta": 647.12
   },
   {
    "w": "tal",
-   "desde": 647.14,
+   "desde": 647.12,
    "hasta": 647.3
   },
   {
    "w": "punto",
    "desde": 647.3,
-   "hasta": 647.5
+   "hasta": 647.52
   },
   {
    "w": "que",
-   "desde": 647.5,
+   "desde": 647.52,
    "hasta": 647.78
   },
   {
@@ -6584,11 +6369,11 @@
   {
    "w": "visión",
    "desde": 650.54,
-   "hasta": 650.96
+   "hasta": 651.0
   },
   {
    "w": "que",
-   "desde": 650.96,
+   "desde": 651.0,
    "hasta": 651.08
   },
   {
@@ -6599,21 +6384,21 @@
   {
    "w": "tenía",
    "desde": 651.18,
-   "hasta": 651.38
+   "hasta": 651.36
   },
   {
    "w": "como",
-   "desde": 651.38,
+   "desde": 651.36,
    "hasta": 651.62
   },
   {
    "w": "líder.",
    "desde": 651.62,
-   "hasta": 651.94
+   "hasta": 651.96
   },
   {
    "w": "Y",
-   "desde": 652.16,
+   "desde": 652.12,
    "hasta": 652.62
   },
   {
@@ -6629,16 +6414,16 @@
   {
    "w": "proceso",
    "desde": 653.02,
-   "hasta": 653.42
+   "hasta": 653.44
   },
   {
    "w": "es",
-   "desde": 653.42,
-   "hasta": 653.74
+   "desde": 653.44,
+   "hasta": 653.76
   },
   {
    "w": "donde",
-   "desde": 653.74,
+   "desde": 653.76,
    "hasta": 653.94
   },
   {
@@ -6649,26 +6434,26 @@
   {
    "w": "una",
    "desde": 654.36,
-   "hasta": 655.02
+   "hasta": 655.04
   },
   {
    "w": "verdadera",
-   "desde": 655.02,
+   "desde": 655.04,
    "hasta": 655.44
   },
   {
-   "w": "transformación",
+   "w": "transformación.",
    "desde": 655.44,
    "hasta": 656.06
   },
   {
-   "w": "porque",
+   "w": "Porque",
    "desde": 656.06,
-   "hasta": 656.28
+   "hasta": 656.32
   },
   {
    "w": "te",
-   "desde": 656.28,
+   "desde": 656.32,
    "hasta": 656.84
   },
   {
@@ -6694,11 +6479,11 @@
   {
    "w": "resultados",
    "desde": 657.54,
-   "hasta": 658.06
+   "hasta": 658.04
   },
   {
    "w": "a",
-   "desde": 658.06,
+   "desde": 658.04,
    "hasta": 658.46
   },
   {
@@ -6709,111 +6494,56 @@
   {
    "w": "que",
    "desde": 658.6,
-   "hasta": 658.72
+   "hasta": 658.7
   },
   {
    "w": "se",
-   "desde": 658.72,
-   "hasta": 658.82
+   "desde": 658.7,
+   "hasta": 658.84
   },
   {
-   "w": "llegan,",
-   "desde": 658.82,
-   "hasta": 659.2
+   "w": "llegan.",
+   "desde": 658.84,
+   "hasta": 659.18
   },
   {
-   "w": "cuando",
+   "w": "Cuando",
    "desde": 659.2,
-   "hasta": 659.48
-  },
-  {
-   "w": "llegan",
-   "desde": 659.48,
-   "hasta": 659.56
-  },
-  {
-   "w": "los",
-   "desde": 659.56,
-   "hasta": 659.56
-  },
-  {
-   "w": "resultados,",
-   "desde": 659.56,
-   "hasta": 659.56
-  },
-  {
-   "w": "son",
-   "desde": 659.56,
-   "hasta": 659.56
-  },
-  {
-   "w": "los",
-   "desde": 659.56,
-   "hasta": 659.56
-  },
-  {
-   "w": "que",
-   "desde": 659.56,
-   "hasta": 659.56
-  },
-  {
-   "w": "más",
-   "desde": 659.56,
-   "hasta": 659.56
-  },
-  {
-   "w": "te",
-   "desde": 659.56,
-   "hasta": 659.56
-  },
-  {
-   "w": "gustan.",
-   "desde": 659.56,
-   "hasta": 659.56
-  },
-  {
-   "w": "Y",
-   "desde": 659.58,
-   "hasta": 660.2
-  },
-  {
-   "w": "cuando",
-   "desde": 660.2,
-   "hasta": 660.2
+   "hasta": 659.54
   },
   {
    "w": "esa",
-   "desde": 660.2,
+   "desde": 659.54,
    "hasta": 660.2
   },
   {
-   "w": "innovación,",
+   "w": "innovación.",
    "desde": 660.2,
-   "hasta": 660.8
+   "hasta": 660.76
   },
   {
-   "w": "esa",
-   "desde": 660.82,
-   "hasta": 661.14
+   "w": "Esa",
+   "desde": 660.76,
+   "hasta": 661.16
   },
   {
-   "w": "experimentación,",
-   "desde": 661.14,
-   "hasta": 662.1
+   "w": "experimentación",
+   "desde": 661.16,
+   "hasta": 662.0
   },
   {
    "w": "es",
-   "desde": 662.1,
+   "desde": 662.0,
    "hasta": 662.7
   },
   {
    "w": "parte",
    "desde": 662.7,
-   "hasta": 662.94
+   "hasta": 662.92
   },
   {
    "w": "del",
-   "desde": 662.94,
+   "desde": 662.92,
    "hasta": 663.14
   },
   {
@@ -6829,26 +6559,26 @@
   {
    "w": "tu",
    "desde": 663.72,
-   "hasta": 663.78
+   "hasta": 663.8
   },
   {
-   "w": "equipo,",
-   "desde": 663.78,
-   "hasta": 664.16
+   "w": "equipo.",
+   "desde": 663.8,
+   "hasta": 664.1
   },
   {
-   "w": "esos",
-   "desde": 664.68,
-   "hasta": 665.02
+   "w": "Esos",
+   "desde": 664.6,
+   "hasta": 665.04
   },
   {
    "w": "resultados",
-   "desde": 665.02,
-   "hasta": 665.44
+   "desde": 665.04,
+   "hasta": 665.42
   },
   {
    "w": "van",
-   "desde": 665.44,
+   "desde": 665.42,
    "hasta": 665.64
   },
   {
@@ -6874,41 +6604,41 @@
   {
    "w": "grandes",
    "desde": 666.24,
-   "hasta": 666.64
+   "hasta": 666.62
   },
   {
    "w": "que",
-   "desde": 666.64,
+   "desde": 666.62,
    "hasta": 667.12
   },
   {
    "w": "lo",
    "desde": 667.12,
-   "hasta": 667.54
+   "hasta": 667.56
   },
   {
    "w": "que",
-   "desde": 667.54,
+   "desde": 667.56,
    "hasta": 667.72
   },
   {
    "w": "vos",
    "desde": 667.72,
-   "hasta": 667.82
+   "hasta": 667.8
   },
   {
    "w": "habías",
-   "desde": 667.82,
+   "desde": 667.8,
    "hasta": 668.08
   },
   {
    "w": "planificado",
    "desde": 668.08,
-   "hasta": 668.68
+   "hasta": 668.66
   },
   {
    "w": "en",
-   "desde": 668.68,
+   "desde": 668.66,
    "hasta": 668.8
   },
   {
@@ -6922,13 +6652,23 @@
    "hasta": 669.6
   },
   {
-   "w": "¿Hola?",
-   "desde": 671.45,
-   "hasta": 671.95
+   "w": "Hola.",
+   "desde": 671.53,
+   "hasta": 671.97
+  },
+  {
+   "w": "Hola.",
+   "desde": 672.21,
+   "hasta": 672.55
+  },
+  {
+   "w": "Hola.",
+   "desde": 672.73,
+   "hasta": 672.81
   },
   {
    "w": "Martín",
-   "desde": 700.59,
+   "desde": 700.65,
    "hasta": 701.09
   },
   {
@@ -6944,11 +6684,11 @@
   {
    "w": "está",
    "desde": 701.39,
-   "hasta": 701.53
+   "hasta": 701.51
   },
   {
    "w": "buscando",
-   "desde": 701.53,
+   "desde": 701.51,
    "hasta": 701.69
   },
   {
@@ -6958,12 +6698,12 @@
   },
   {
    "w": "Si",
-   "desde": 704.01,
-   "hasta": 704.51
+   "desde": 704.09,
+   "hasta": 704.53
   },
   {
    "w": "no",
-   "desde": 704.51,
+   "desde": 704.53,
    "hasta": 704.69
   },
   {
@@ -6977,384 +6717,109 @@
    "hasta": 704.95
   },
   {
-   "w": "atrás",
+   "w": "acá",
    "desde": 704.95,
    "hasta": 705.11
   },
   {
-   "w": "de",
+   "w": "en",
    "desde": 705.11,
-   "hasta": 705.25
+   "hasta": 705.17
   },
   {
    "w": "la",
-   "desde": 705.25,
-   "hasta": 705.33
+   "desde": 705.17,
+   "hasta": 705.31
   },
   {
    "w": "puerta,",
-   "desde": 705.33,
-   "hasta": 705.59
+   "desde": 705.31,
+   "hasta": 705.55
   },
   {
-   "w": "no",
+   "w": "da",
    "desde": 705.69,
-   "hasta": 705.81
+   "hasta": 705.77
   },
   {
-   "w": "hay.",
-   "desde": 705.81,
-   "hasta": 706.53
+   "w": "la",
+   "desde": 705.77,
+   "hasta": 705.89
+  },
+  {
+   "w": "puerta.",
+   "desde": 705.89,
+   "hasta": 706.13
   },
   {
    "w": "Ok.",
-   "desde": 707.19,
-   "hasta": 707.69
+   "desde": 707.15,
+   "hasta": 707.59
   },
   {
    "w": "No",
-   "desde": 707.87,
-   "hasta": 708.37
+   "desde": 707.91,
+   "hasta": 708.35
   },
   {
    "w": "pide",
-   "desde": 708.37,
+   "desde": 708.35,
    "hasta": 708.91
   },
   {
-   "w": "sución",
+   "w": "sesión",
    "desde": 708.91,
    "hasta": 709.15
   },
   {
    "w": "porque...",
    "desde": 709.15,
-   "hasta": 709.69
+   "hasta": 709.97
   },
   {
    "w": "Perdón.",
    "desde": 713.14,
-   "hasta": 713.64
+   "hasta": 713.58
   },
   {
    "w": "Perdón.",
-   "desde": 714.28,
+   "desde": 714.18,
    "hasta": 714.62
   },
   {
-   "w": "No,",
-   "desde": 715.72,
+   "w": "Perdón.",
+   "desde": 715.4,
    "hasta": 715.84
   },
   {
-   "w": "no",
-   "desde": 715.84,
-   "hasta": 715.96
+   "w": "Perdón",
+   "desde": 726.24,
+   "hasta": 727.64
   },
   {
-   "w": "cuenta.",
-   "desde": 715.96,
-   "hasta": 716.08
+   "w": "por",
+   "desde": 727.64,
+   "hasta": 729.04
   },
   {
-   "w": "Sí.",
-   "desde": 717.32,
-   "hasta": 717.88
+   "w": "aquí.",
+   "desde": 729.04,
+   "hasta": 734.58
   },
   {
-   "w": "Pero",
-   "desde": 720.92,
-   "hasta": 721.48
+   "w": "Perdón.",
+   "desde": 751.88,
+   "hasta": 752.38
   },
   {
-   "w": "tenemos",
-   "desde": 721.48,
-   "hasta": 721.7
-  },
-  {
-   "w": "la",
-   "desde": 721.7,
-   "hasta": 721.94
-  },
-  {
-   "w": "recuerda.",
-   "desde": 721.94,
-   "hasta": 722.26
-  },
-  {
-   "w": "Si",
-   "desde": 724.6,
-   "hasta": 725.16
-  },
-  {
-   "w": "no",
-   "desde": 725.16,
-   "hasta": 725.72
-  },
-  {
-   "w": "hay",
-   "desde": 725.72,
-   "hasta": 725.8
-  },
-  {
-   "w": "nadie",
-   "desde": 725.8,
-   "hasta": 725.9
-  },
-  {
-   "w": "atrás",
-   "desde": 725.9,
-   "hasta": 726.6
-  },
-  {
-   "w": "de",
-   "desde": 726.6,
-   "hasta": 726.68
-  },
-  {
-   "w": "la",
-   "desde": 726.68,
-   "hasta": 727.66
-  },
-  {
-   "w": "puerta,",
-   "desde": 727.66,
-   "hasta": 727.94
-  },
-  {
-   "w": "no",
-   "desde": 728.24,
-   "hasta": 728.26
-  },
-  {
-   "w": "hay.",
-   "desde": 728.26,
-   "hasta": 728.26
-  },
-  {
-   "w": "La",
-   "desde": 728.26,
-   "hasta": 728.38
-  },
-  {
-   "w": "verdad",
-   "desde": 728.38,
-   "hasta": 728.62
-  },
-  {
-   "w": "es",
-   "desde": 728.62,
-   "hasta": 728.98
-  },
-  {
-   "w": "que",
-   "desde": 728.98,
-   "hasta": 729.26
-  },
-  {
-   "w": "para",
-   "desde": 729.26,
-   "hasta": 729.78
-  },
-  {
-   "w": "mí,",
-   "desde": 729.78,
-   "hasta": 730.06
-  },
-  {
-   "w": "pero",
-   "desde": 730.06,
-   "hasta": 730.46
-  },
-  {
-   "w": "es",
-   "desde": 730.46,
-   "hasta": 730.46
-  },
-  {
-   "w": "muy",
-   "desde": 730.46,
-   "hasta": 730.74
-  },
-  {
-   "w": "claro.",
-   "desde": 730.74,
-   "hasta": 730.74
-  },
-  {
-   "w": "Ya",
-   "desde": 731.6,
-   "hasta": 731.88
-  },
-  {
-   "w": "no",
-   "desde": 731.88,
-   "hasta": 732.14
-  },
-  {
-   "w": "le",
-   "desde": 732.14,
-   "hasta": 732.22
-  },
-  {
-   "w": "damos",
-   "desde": 732.22,
-   "hasta": 732.38
-  },
-  {
-   "w": "ni",
-   "desde": 732.38,
-   "hasta": 732.72
-  },
-  {
-   "w": "dinero.",
-   "desde": 732.72,
-   "hasta": 733.52
-  },
-  {
-   "w": "No,",
-   "desde": 733.8,
-   "hasta": 734.36
-  },
-  {
-   "w": "no",
-   "desde": 734.54,
-   "hasta": 734.54
-  },
-  {
-   "w": "le",
-   "desde": 734.54,
-   "hasta": 734.82
-  },
-  {
-   "w": "da",
-   "desde": 734.82,
-   "hasta": 734.98
-  },
-  {
-   "w": "cofrido",
-   "desde": 734.98,
-   "hasta": 735.3
-  },
-  {
-   "w": "porque",
-   "desde": 735.3,
-   "hasta": 736.14
-  },
-  {
-   "w": "no",
-   "desde": 736.14,
-   "hasta": 736.22
-  },
-  {
-   "w": "estáis",
-   "desde": 739.96,
-   "hasta": 740.52
-  },
-  {
-   "w": "vosotros.",
-   "desde": 740.52,
-   "hasta": 740.8
-  },
-  {
-   "w": "Porque",
-   "desde": 741.04,
-   "hasta": 741.48
-  },
-  {
-   "w": "están",
-   "desde": 741.48,
-   "hasta": 741.78
-  },
-  {
-   "w": "que",
-   "desde": 741.78,
-   "hasta": 742.42
-  },
-  {
-   "w": "tienen",
-   "desde": 742.42,
-   "hasta": 742.58
-  },
-  {
-   "w": "una",
-   "desde": 742.58,
-   "hasta": 742.98
-  },
-  {
-   "w": "trabajo",
-   "desde": 742.98,
-   "hasta": 743.38
-  },
-  {
-   "w": "y",
-   "desde": 743.38,
-   "hasta": 744.18
-  },
-  {
-   "w": "es...",
-   "desde": 744.18,
-   "hasta": 744.62
-  },
-  {
-   "w": "Habríamos",
-   "desde": 745.28,
-   "hasta": 745.84
-  },
-  {
-   "w": "estado",
-   "desde": 745.84,
-   "hasta": 746.28
-  },
-  {
-   "w": "muy",
-   "desde": 746.28,
-   "hasta": 746.56
-  },
-  {
-   "w": "mal.",
-   "desde": 746.56,
-   "hasta": 747.26
-  },
-  {
-   "w": "Pero,",
-   "desde": 747.3,
-   "hasta": 747.6
-  },
-  {
-   "w": "sí,",
-   "desde": 747.84,
-   "hasta": 748.42
-  },
-  {
-   "w": "el",
-   "desde": 748.52,
-   "hasta": 748.64
-  },
-  {
-   "w": "cambio",
-   "desde": 748.64,
-   "hasta": 748.76
-  },
-  {
-   "w": "es",
-   "desde": 748.76,
-   "hasta": 748.86
-  },
-  {
-   "w": "un",
-   "desde": 748.86,
-   "hasta": 749.0
-  },
-  {
-   "w": "retiro.",
-   "desde": 749.0,
-   "hasta": 749.4
+   "w": "Perdón.",
+   "desde": 752.5,
+   "hasta": 752.74
   },
   {
    "w": "Gracias.",
-   "desde": 750.96,
-   "hasta": 752.36
+   "desde": 754.22,
+   "hasta": 755.62
   }
  ]
 }
