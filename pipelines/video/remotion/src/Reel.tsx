@@ -34,11 +34,11 @@ export type ReelProps = {
   lineas: Linea[];
 };
 
-export const Reel: React.FC<ReelProps> = ({video, titulo, tipo, lineas}) => (
+export const Reel: React.FC<ReelProps> = ({video, titulo, tipo, modo, lineas}) => (
   <AbsoluteFill style={{backgroundColor: COLORES.negro}}>
     {video ? <OffthreadVideo src={staticFile(video)} /> : null}
     <Titulo texto={titulo} tipo={tipo} />
-    <Captions lineas={lineas} />
+    <Captions lineas={lineas} modo={modo} />
     <Img
       src={staticFile('logo-blanco.png')}
       style={{position: 'absolute', right: 48, bottom: 64, width: 170, opacity: 0.92}}

@@ -24,9 +24,15 @@ Leé completos:
 3. **Hook en los primeros 3 segundos.** El reel arranca en la frase más fuerte del fragmento, no en el
    preámbulo. Si la mejor frase está en el medio, el reel puede abrir ahí (usando segmentos reordenados
    solo si el audio lo permite sin salto raro — en la duda, orden cronológico).
-4. **Duración: 20 a 60 segundos hablados.** Estimala con los timestamps. Si un tema dura más, recortá
-   frases del medio usando VARIOS segmentos (el sistema los concatena). Nunca cortar a mitad de frase:
-   cada segmento empieza donde empieza una frase y termina donde termina una frase.
+4. **Duración: 20 a 60 segundos hablados. Corte denso, NO un bloque continuo.** Un reel de 45-60s
+   segundos NUNCA es un único segmento largo — es un collage de 5 a 10+ segmentos cortos (2-8
+   segundos cada uno) que dicen SOLO lo esencial. Por cada frase candidata preguntate: "¿esta frase
+   suma información/impacto nueva, o repite/rodea lo que ya dijo?". Si repite, la reformula, se
+   traba, o es puente sin contenido ("bueno...", "entonces lo que pasa es...", "digamos que...",
+   "o sea..."), se CORTA — aunque la frase en sí esté bien dicha. El resultado tiene que sentirse
+   más rápido y denso que el habla natural de Paulo, como si un editor humano hubiera pasado tijera
+   fila por fila. Nunca cortar a mitad de frase: cada segmento empieza donde empieza una frase/idea
+   y termina donde termina.
 5. **Sin límite de cantidad**: cada tema que se sostiene solo (idea completa: apertura + desarrollo +
    cierre) es un reel. Un tema flojo o incompleto NO se fuerza: se omite.
 6. **Timestamps EXACTOS de transcript.json**: `desde` = campo `desde` de la PRIMERA palabra del
@@ -78,4 +84,10 @@ concreta, sin clichés, hashtags al final. Es la pieza de Instagram que acompañ
 - ¿Ningún segmento incluye retomas descartadas o charla de set?
 - ¿Todos los `desde`/`hasta` existen como timestamps de palabras en transcript.json?
 - ¿La suma de cada reel está entre 20 y 62 segundos?
+- **¿Cada segmento representa un corte REAL?** Dos "segmentos" consecutivos que empiezan uno justo
+  donde termina el otro (sin nada eliminado en el medio) NO generan ningún salto — es idéntico a
+  haberlos puesto como uno solo. Cada límite entre segmentos tiene que dejar afuera algo (muletilla,
+  repetición, rodeo, tangente). No dividas artificialmente solo para sumar cantidad de segmentos.
+- Si un reel tiene 1-2 segmentos MUY largos (30s+) sin ningún corte interno, volvé a pasar tijera:
+  seguro hay muletillas, repeticiones o rodeos reales que se pueden eliminar.
 - ¿El caption suena a Paulo (auto-crítica de VOZ_corpus.md §5)?

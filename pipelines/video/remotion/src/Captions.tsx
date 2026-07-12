@@ -27,7 +27,7 @@ const PalabraKaraoke: React.FC<{w: string; desde: number; activa: boolean; dicha
   );
 };
 
-export const Captions: React.FC<{lineas: Linea[]}> = ({lineas}) => {
+export const Captions: React.FC<{lineas: Linea[]; modo?: string}> = ({lineas, modo}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const t = frame / fps;
@@ -44,13 +44,17 @@ export const Captions: React.FC<{lineas: Linea[]}> = ({lineas}) => {
     durationInFrames: 5,
   });
 
+  // en split/zonas el frame se parte en dos mitades (pantalla arriba, cámara abajo); el subtítulo
+  // va centrado en la costura (y=960) para no taparle la cara al que habla.
+  const enLaCostura = modo === 'split' || modo === 'zonas';
+
   return (
     <div
       style={{
         position: 'absolute',
         left: 40,
         right: 40,
-        bottom: 520,
+        ...(enLaCostura ? {top: 860} : {bottom: 520}),
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
