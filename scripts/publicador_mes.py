@@ -43,7 +43,8 @@ def publicar_mes(
         start = week["fecha_inicio"]
         for day_key in MES.DIAS:
             day = week["dias"][day_key]
-            fmt = day["formato"]
+            original_fmt = day["formato"]
+            fmt = original_fmt
             if fmt == "faltante_video":
                 print(f"\n⚠ {start}/{day_key}: video faltante; se usa fallback")
                 fmt = "post_carousel"
@@ -56,7 +57,11 @@ def publicar_mes(
                     continue
                 video_url = media_video(client, reel, reels_dir)
 
-            channels = day.get("canales", ["linkedin_paulo", "instagram"])
+            # Las newsletters se publican manualmente en LinkedIn. Por defecto,
+            # carousel_news programa solo el carrusel de Instagram y conserva
+            # texto_linkedin para compartir la newsletter una vez publicada.
+            default_channels = ["instagram"] if original_fmt == "carousel_news" else ["linkedin_paulo", "instagram"]
+            channels = day.get("canales", default_channels)
             for channel in channels:
                 if channel not in HORA:
                     failures.append(f"{start}/{day_key}/{channel}: canal inválido")
