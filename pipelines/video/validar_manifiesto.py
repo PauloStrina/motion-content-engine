@@ -47,10 +47,16 @@ def existe_cerca(valor: float, candidatos: list[float], tolerancia: float = 0.02
     return any(abs(valor - c) <= tolerancia for c in candidatos)
 
 
-def validar(sesion: pathlib.Path, stage: str, min_s: float, max_s: float) -> list[str]:
+def validar(
+    sesion: pathlib.Path,
+    manifiesto_path: pathlib.Path,
+    stage: str,
+    min_s: float,
+    max_s: float,
+) -> list[str]:
     errores: list[str] = []
     try:
-        manifiesto = cargar_json(sesion / "manifiesto_reels.json")
+        manifiesto = cargar_json(manifiesto_path)
         transcript = cargar_json(sesion / "transcript.json")
     except ValueError as exc:
         return [str(exc)]
@@ -160,17 +166,29 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("sesion_dir", type=pathlib.Path)
     parser.add_argument("--stage", choices=("guion", "render"), default="guion")
+    parser.add_argument(
+        "--manifest",
+        type=pathlib.Path,
+        help="Manifiesto alternativo; default: <sesion>/manifiesto_reels.json",
+    )
     parser.add_argument("--min-seconds", type=float, default=20)
     parser.add_argument("--max-seconds", type=float, default=62)
     args = parser.parse_args()
 
-    errores = validar(args.sesion_dir, args.stage, args.min_seconds, args.max_seconds)
+    manifiesto_path = args.manifest or (args.sesion_dir / "manifiesto_reels.json")
+    errores = validar(
+        args.sesion_dir,
+        manifiesto_path,
+        args.stage,
+        args.min_seconds,
+        args.max_seconds,
+    )
     if errores:
         print("MANIFIESTO INVÁLIDO:", file=sys.stderr)
         for error in errores:
             print(f"- {error}", file=sys.stderr)
         return 1
-    print(f"OK: {args.sesion_dir / 'manifiesto_reels.json'} validado para etapa {args.stage}")
+    print(f"OK: {manifiesto_path} validado para etapa {args.stage}")
     return 0
 
 
