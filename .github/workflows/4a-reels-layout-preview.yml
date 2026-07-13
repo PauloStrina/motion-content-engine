@@ -1,0 +1,54 @@
+name: 4a-reels-layout-preview
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: "Video largo a analizar."
+        required: true
+      slug:
+        description: "Sesión con manifiesto_reels.json existente."
+        required: true
+      layout_mode:
+        description: "Modo de análisis visual."
+        required: true
+        default: "auto_per_reel"
+        type: choice
+        options:
+          - auto_per_reel
+          - zones_single_file
+          - camera_only
+          - keep_manifest
+      poster_asset:
+        description: "Imagen para la mitad superior cuando no hay pantalla."
+        required: true
+        default: "design-system/assets/innpulso-fondo.png"
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install --quiet --force-reinstall "gdown==5.2.0"
+          pip install --quiet opencv-python-headless
+      - name: Descargar video
+        run: python3 pipelines/video/descargar.py "${{ github.event.inputs.video_url }}" _video
+      - name: Resolver y previsualizar layouts
+        run: |
+          python pipelines/video/resolver_layout.py \
+            _video/input.mp4 \
+            "pipelines/video/reels/${{ github.event.inputs.slug }}" \
+            --mode "${{ github.event.inputs.layout_mode }}" \
+            --poster "${{ github.event.inputs.poster_asset }}" \
+            --preview-dir layout_preview
+          python pipelines/video/validar_manifiesto.py \
+            "pipelines/video/reels/${{ github.event.inputs.slug }}" --stage render
+      - uses: actions/upload-artifact@v4
+        with:
+          name: layout-preview-${{ github.event.inputs.slug }}
+          path: layout_preview/
+          retention-days: 14
