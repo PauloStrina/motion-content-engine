@@ -3,17 +3,33 @@ on:
   workflow_dispatch:
     inputs:
       video_url:
-        description: "Link de Google Drive del video largo (archivo o carpeta compartida con 'cualquiera con el enlace')."
-        required: true
-      slug:
-        description: "Nombre de la sesión (ej: 2026-07-03-conceptos). Nombra la carpeta en pipelines/video/reels/."
-        required: true
-      con_pantalla:
-        description: "¿La sesión es una capacitación con grabación de pantalla? (los reels salen en modo split: pantalla arriba, cámara abajo)"
+        description: "Link de Google Drive del video largo. Solo se usa si hay que transcribir."
         required: false
-        default: "no"
+        default: ""
+      slug:
+        description: "Nombre de la sesión (ej: 2026-07-03-conceptos)."
+        required: true
+      modo_ejecucion:
+        description: "Auto reutiliza transcript existente; solo_generar nunca vuelve a transcribir."
+        required: true
+        default: "auto"
+        type: choice
+        options:
+          - auto
+          - transcribir_y_generar
+          - solo_generar
+      layout_mode:
+        description: "Layout previsto para render. No define coordenadas; el motor las resuelve por reel."
+        required: true
+        default: "auto_per_reel"
+        type: choice
+        options:
+          - auto_per_reel
+          - zones_single_file
+          - camera_only
+          - split_two_files
       brief_adicional:
-        description: "OPCIONAL: foco/criterio específico para ESTA sesión (qué buscar, qué evitar). Se suma a las reglas de PROMPT_editor_video.md, no las reemplaza."
+        description: "OPCIONAL: foco específico de esta sesión (qué buscar y qué evitar)."
         required: false
         default: ""
 permissions:
@@ -22,17 +38,59 @@ permissions:
 jobs:
   guion:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      VIDEO_URL: ${{ inputs.video_url }}
+      SLUG: ${{ inputs.slug }}
+      MODO_EJECUCION: ${{ inputs.modo_ejecucion }}
     steps:
       - uses: actions/checkout@v4
-      - name: Dependencias
+
+      - name: Decidir si hay que transcribir
+        id: decidir
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$SLUG" || "$SLUG" == *"/"* || "$SLUG" == *".."* ]]; then
+            echo "ERROR: slug inválido" >&2
+            exit 1
+          fi
+
+          DIR="pipelines/video/reels/$SLUG"
+          EXISTE=false
+          if [ -s "$DIR/transcript.json" ] && [ -s "$DIR/transcript.md" ]; then EXISTE=true; fi
+
+          if [ "$MODO_EJECUCION" = "solo_generar" ] && [ "$EXISTE" != "true" ]; then
+            echo "ERROR: solo_generar requiere transcript.json y transcript.md existentes en $DIR" >&2
+            exit 1
+          fi
+
+          TRANSCRIBIR=true
+          if [ "$MODO_EJECUCION" = "solo_generar" ]; then TRANSCRIBIR=false; fi
+          if [ "$MODO_EJECUCION" = "auto" ] && [ "$EXISTE" = "true" ]; then TRANSCRIBIR=false; fi
+
+          if [ "$TRANSCRIBIR" = "true" ] && [ -z "$VIDEO_URL" ]; then
+            echo "ERROR: video_url es obligatorio cuando hay que transcribir" >&2
+            exit 1
+          fi
+          echo "transcribir=$TRANSCRIBIR" >> "$GITHUB_OUTPUT"
+          echo "Transcript existente: $EXISTE · transcribir: $TRANSCRIBIR"
+
+      - name: Dependencias de transcripción
+        if: ${{ steps.decidir.outputs.transcribir == 'true' }}
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           pip install --quiet faster-whisper
           pip install --quiet --force-reinstall "gdown==5.2.0"
+
       - name: Descargar video de Drive
-        run: python3 pipelines/video/descargar.py "${{ github.event.inputs.video_url }}" _video
+        if: ${{ steps.decidir.outputs.transcribir == 'true' }}
+        run: python3 pipelines/video/descargar.py "$VIDEO_URL" _video
+
       - name: Transcribir (whisper, timestamps por palabra)
-        run: python pipelines/video/transcribir.py _video/input.mp4 "pipelines/video/reels/${{ github.event.inputs.slug }}"
+        if: ${{ steps.decidir.outputs.transcribir == 'true' }}
+        run: python pipelines/video/transcribir.py _video/input.mp4 "pipelines/video/reels/$SLUG"
+
       - name: Editor de Video (Claude elige los reels)
         uses: anthropics/claude-code-action@v1
         env:
@@ -43,21 +101,39 @@ jobs:
           show_full_output: true
           prompt: |
             Sos el Editor de Video de Motion. Tu trabajo es de CRITERIO editorial, no mecánico.
-            SESIÓN: pipelines/video/reels/${{ github.event.inputs.slug }}/ (ya tiene transcript.md y transcript.json).
-            Leé pipelines/video/PROMPT_editor_video.md y seguilo AL PIE DE LA LETRA, incluido el PASO 0
-            (leer la estrategia completa antes de elegir nada).
-            Escribí pipelines/video/reels/${{ github.event.inputs.slug }}/manifiesto_reels.json con la
-            estructura EXACTA del prompt.
-            SESIÓN CON PANTALLA: "${{ github.event.inputs.con_pantalla }}" — si es "si"/"sí", es una
-            capacitación con grabación de pantalla: usá "modo":"split" en TODOS los reels.
-            BRIEF ADICIONAL para ESTA sesión (además de PROMPT_editor_video.md, nunca en su lugar):
-            "${{ github.event.inputs.brief_adicional }}"
-            Éxito = existe el manifiesto, cada reel dura 20-62s según los timestamps, ningún segmento
-            incluye retomas descartadas, y los captions pasan la auto-crítica de voz.
-      - name: Commit (transcript + manifiesto de reels)
+            SESIÓN: pipelines/video/reels/${{ inputs.slug }}/ (ya tiene transcript.md y transcript.json).
+            Leé pipelines/video/PROMPT_editor_video.md y seguilo AL PIE DE LA LETRA, incluido el PASO 0.
+            Escribí pipelines/video/reels/${{ inputs.slug }}/manifiesto_reels.json con la estructura exacta.
+            LAYOUT PREVISTO: "${{ inputs.layout_mode }}". El layout final y las coordenadas se resuelven
+            después, por reel, en el workflow de render. No inventes coordenadas.
+            BRIEF ADICIONAL para ESTA sesión (se suma a las reglas canónicas; nunca las reemplaza):
+            "${{ inputs.brief_adicional }}"
+            Éxito = existe el manifiesto, cada reel dura 20-62s según timestamps, no incluye retomas descartadas,
+            respeta confidencialidad/evidencia y los captions pasan la auto-crítica de voz.
+
+      - name: Validar salida editorial
+        run: python pipelines/video/validar_manifiesto.py "pipelines/video/reels/$SLUG" --stage guion
+
+      - name: Commit seguro (transcript + manifiesto)
+        shell: bash
         run: |
-          git config user.name "motion-engine"; git config user.email "engine@motion.local"
+          set -euo pipefail
+          TARGET_BRANCH="${GITHUB_REF_NAME:-main}"
+          DIR="pipelines/video/reels/$SLUG"
+          git config user.name "motion-engine"
+          git config user.email "engine@motion.local"
           git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
-          git add pipelines/video/reels/
-          git commit -m "reels: guion de la sesión ${{ github.event.inputs.slug }}" || echo "sin cambios"
-          git push origin HEAD:main
+          git add "$DIR"
+          git commit -m "reels: guion de la sesión $SLUG" || echo "sin cambios locales"
+
+          for intento in 1 2 3 4; do
+            git fetch origin "$TARGET_BRANCH"
+            git rebase "origin/$TARGET_BRANCH"
+            if git push origin "HEAD:$TARGET_BRANCH"; then
+              exit 0
+            fi
+            echo "Push rechazado por actualización concurrente; reintento $intento/4" >&2
+            sleep $((intento * 5))
+          done
+          echo "ERROR: no se pudo integrar el resultado sin pisar cambios concurrentes" >&2
+          exit 1
