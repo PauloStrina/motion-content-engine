@@ -35,6 +35,12 @@ jobs:
     timeout-minutes: 60
     outputs:
       reels: ${{ steps.lista.outputs.reels }}
+    env:
+      VIDEO_URL: ${{ inputs.video_url }}
+      SLUG: ${{ inputs.slug }}
+      LAYOUT_MODE: ${{ inputs.layout_mode }}
+      POSTER_ASSET: ${{ inputs.poster_asset }}
+      VIDEO_PANTALLA_URL: ${{ inputs.video_pantalla_url }}
     steps:
       - uses: actions/checkout@v4
       - name: Dependencias
@@ -46,57 +52,71 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if [ "${{ github.event.inputs.layout_mode }}" = "split_two_files" ] && [ -z "${{ github.event.inputs.video_pantalla_url }}" ]; then
+          if [[ -z "$SLUG" || "$SLUG" == *"/"* || "$SLUG" == *".."* ]]; then
+            echo "ERROR: slug inválido" >&2
+            exit 1
+          fi
+          if [[ "$POSTER_ASSET" != design-system/assets/* || "$POSTER_ASSET" == *".."* ]]; then
+            echo "ERROR: poster_asset debe estar dentro de design-system/assets/" >&2
+            exit 1
+          fi
+          if [ "$LAYOUT_MODE" = "split_two_files" ] && [ -z "$VIDEO_PANTALLA_URL" ]; then
             echo "ERROR: split_two_files requiere video_pantalla_url" >&2
             exit 1
           fi
-          if [ ! -f "${{ github.event.inputs.poster_asset }}" ]; then
-            echo "ERROR: no existe poster_asset=${{ github.event.inputs.poster_asset }}" >&2
+          if [ ! -f "$POSTER_ASSET" ]; then
+            echo "ERROR: no existe poster_asset=$POSTER_ASSET" >&2
             exit 1
           fi
       - name: Descargar video de Drive
-        run: python3 pipelines/video/descargar.py "${{ github.event.inputs.video_url }}" _video
+        run: python3 pipelines/video/descargar.py "$VIDEO_URL" _video
       - name: Descargar video de pantalla (si hay)
-        if: ${{ github.event.inputs.video_pantalla_url != '' }}
+        if: ${{ inputs.video_pantalla_url != '' }}
         run: |
-          python3 pipelines/video/descargar.py "${{ github.event.inputs.video_pantalla_url }}" _pantalla
+          python3 pipelines/video/descargar.py "$VIDEO_PANTALLA_URL" _pantalla
           mv _pantalla/input.mp4 _video/pantalla.mp4
       - name: Resolver layout por reel
         run: |
           python pipelines/video/resolver_layout.py \
             _video/input.mp4 \
-            "pipelines/video/reels/${{ github.event.inputs.slug }}" \
-            --mode "${{ github.event.inputs.layout_mode }}" \
-            --poster "${{ github.event.inputs.poster_asset }}" \
-            --preview-dir layout_preview
+            "pipelines/video/reels/$SLUG" \
+            --mode "$LAYOUT_MODE" \
+            --poster "$POSTER_ASSET" \
+            --preview-dir layout_preview \
+            --output _layout/manifiesto_resuelto.json
       - name: Validar manifiesto para render
         run: |
           python pipelines/video/validar_manifiesto.py \
-            "pipelines/video/reels/${{ github.event.inputs.slug }}" --stage render
+            "pipelines/video/reels/$SLUG" --stage render \
+            --manifest _layout/manifiesto_resuelto.json
       - name: Subir diagnóstico de layout
         uses: actions/upload-artifact@v4
         with:
-          name: layout-preview-${{ github.event.inputs.slug }}
+          name: layout-preview-${{ inputs.slug }}
           path: layout_preview/
           retention-days: 14
+      - name: Preparar sesión efímera de render
+        run: |
+          mkdir -p _runtime/session
+          cp "pipelines/video/reels/$SLUG/transcript.json" _runtime/session/transcript.json
+          cp _layout/manifiesto_resuelto.json _runtime/session/manifiesto_reels.json
       - name: Cortar reels (video limpio + timestamps para Remotion)
         shell: bash
         run: |
           set -euo pipefail
-          EXTRA=(--poster "${{ github.event.inputs.poster_asset }}")
-          if [ -f _video/pantalla.mp4 ]; then EXTRA+=(--pantalla _video/pantalla.mp4); fi
-          python pipelines/video/cortar.py \
-            _video/input.mp4 \
-            "pipelines/video/reels/${{ github.event.inputs.slug }}" \
-            media_clean \
-            "${EXTRA[@]}" \
-            --remotion
+          if [ -f _video/pantalla.mp4 ]; then
+            python pipelines/video/cortar.py _video/input.mp4 _runtime/session media_clean \
+              --poster "$POSTER_ASSET" --pantalla _video/pantalla.mp4 --remotion
+          else
+            python pipelines/video/cortar.py _video/input.mp4 _runtime/session media_clean \
+              --poster "$POSTER_ASSET" --remotion
+          fi
       - name: Listar reels para la matriz de render
         id: lista
         run: echo "reels=$(ls media_clean/*.props.json | xargs -n1 basename | sed 's/\.props\.json//' | jq -R . | jq -sc .)" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@v4
         with:
-          name: media-clean-${{ github.event.inputs.slug }}
+          name: media-clean-${{ inputs.slug }}
           path: media_clean/
           retention-days: 3
   render:
@@ -111,7 +131,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
-          name: media-clean-${{ github.event.inputs.slug }}
+          name: media-clean-${{ inputs.slug }}
           path: media_clean
       - name: Instalar fuentes Motion
         run: |
@@ -124,21 +144,23 @@ jobs:
           cache: npm
           cache-dependency-path: pipelines/video/remotion/package-lock.json
       - name: Branding con Remotion
+        env:
+          REEL_NAME: ${{ matrix.reel }}
         run: |
           cd pipelines/video/remotion
           npm ci --no-audit --no-fund
           mkdir -p public ../../../media_out
           cp ../../../design-system/assets/logo-blanco.png public/
-          cp "../../../media_clean/${{ matrix.reel }}.mp4" public/
-          npx remotion render src/index.ts Reel "../../../media_out/${{ matrix.reel }}.mp4" \
-            --props="../../../media_clean/${{ matrix.reel }}.props.json" \
+          cp "../../../media_clean/$REEL_NAME.mp4" public/
+          npx remotion render src/index.ts Reel "../../../media_out/$REEL_NAME.mp4" \
+            --props="../../../media_clean/$REEL_NAME.props.json" \
             --chrome-mode=chrome-for-testing --timeout=60000
-          npx remotion still src/index.ts Reel "../../../media_out/_control_${{ matrix.reel }}.png" \
-            --props="../../../media_clean/${{ matrix.reel }}.props.json" \
+          npx remotion still src/index.ts Reel "../../../media_out/_control_$REEL_NAME.png" \
+            --props="../../../media_clean/$REEL_NAME.props.json" \
             --frame=45 --chrome-mode=chrome-for-testing
       - uses: actions/upload-artifact@v4
         with:
-          name: parcial-${{ github.event.inputs.slug }}-${{ matrix.reel }}
+          name: parcial-${{ inputs.slug }}-${{ matrix.reel }}
           path: media_out/*
           retention-days: 3
   empaquetar:
@@ -148,7 +170,7 @@ jobs:
       - name: Unir los reels en un solo artifact
         uses: actions/upload-artifact/merge@v4
         with:
-          name: reels-${{ github.event.inputs.slug }}
-          pattern: parcial-${{ github.event.inputs.slug }}-*
+          name: reels-${{ inputs.slug }}
+          pattern: parcial-${{ inputs.slug }}-*
           delete-merged: true
           retention-days: 14
