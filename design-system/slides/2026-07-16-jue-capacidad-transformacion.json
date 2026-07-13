@@ -1,0 +1,127 @@
+{
+  "episodio": "La transformación se convierte en capacidad",
+  "slides": [
+    {
+      "bg": "negro",
+      "eyebrow_color": "naranja",
+      "pager": "01 — 08",
+      "blocks": [
+        {
+          "type": "futura",
+          "text": "Que termine el proyecto no significa que termine la transformación.",
+          "size": 64,
+          "color": "blanco",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "aqua",
+      "eyebrow_color": "violeta",
+      "pager": "02 — 08",
+      "blocks": [
+        {
+          "type": "futura",
+          "text": "Una herramienta puede implementarse.",
+          "size": 105,
+          "color": "negro",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "violeta",
+      "eyebrow_color": "aqua",
+      "pager": "03 — 08",
+      "blocks": [
+        {
+          "type": "futura",
+          "text": "Un proceso puede mejorarse.",
+          "size": 105,
+          "color": "blanco",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "naranja",
+      "eyebrow_color": "negro",
+      "pager": "04 — 08",
+      "blocks": [
+        {
+          "type": "futura",
+          "text": "Una capacitación puede terminar.",
+          "size": 105,
+          "color": "negro",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "negro",
+      "eyebrow_color": "naranja",
+      "pager": "05 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "Lo que tiene que quedar es la capacidad de observar, decidir y adaptarse.",
+          "size": 62,
+          "color": "blanco",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "aqua",
+      "eyebrow_color": "violeta",
+      "pager": "06 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "Esa capacidad se construye en los hábitos, las prioridades y la forma de trabajar.",
+          "size": 62,
+          "color": "negro",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "violeta",
+      "eyebrow_color": "aqua",
+      "pager": "07 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "Transformación Continua® convierte la adaptación en una práctica de gestión.",
+          "size": 62,
+          "color": "blanco",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "naranja",
+      "eyebrow_color": "negro",
+      "pager": "08 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "El mejor resultado es quedar mejor preparados para el siguiente cambio.",
+          "size": 62,
+          "color": "negro",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ],
+      "foot": "Lo único permanente<br>es el movimiento",
+      "foot_color": "negro"
+    }
+  ]
+}
