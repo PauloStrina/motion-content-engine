@@ -43,7 +43,7 @@
 [02:31 — 151.8s] Claro.
 [02:32 — 152.3s] Entonces, en ese sentido es que por participar dentro de ferias o congresos, digamos, de innovación, de tecnología y demás,
 [02:43 — 163.7s] pudimos empezar a ver qué hacen otras empresas, qué hacen otras áreas de innovación y demás.
-[02:49 — 169.2s] Y en eso buscamos un socio estratégico que es Paulo Entrina, que es Motion en realidad.
+[02:49 — 169.2s] Y en eso buscamos un socio estratégico que es Paulo Strina, que es Motion en realidad.
 [02:55 — 175.4s] Paulo es el líder de innovación de Motion.
 [02:57 — 177.7s] Motion es una consultora de aceleración digital que nos va a acompañar en todo lo que van a ver ahora.
 [03:06 — 186.8s] Muy bien.
