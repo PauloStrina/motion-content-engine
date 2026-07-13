@@ -109,6 +109,24 @@ Antes de aprobar una pieza, verificar:
 
 `Convengamos que...` queda registrado como un ejemplo positivo de apertura conversacional en esta pieza, no como una fórmula obligatoria para futuros posts.
 
+### CE-003 — Diferenciar la audiencia real de LinkedIn e Instagram
+
+- Estado: activo.
+- Alcance: general.
+- Origen: instrucción explícita de Paulo del 12 de julio de 2026.
+
+Antes de aprobar una pieza, verificar:
+
+- que LinkedIn se redacte para una audiencia compuesta principalmente por contactos de organizaciones multinacionales y de mayor complejidad;
+- que Instagram se redacte para una audiencia compuesta principalmente por empresas pequeñas y medianas;
+- que las referencias a multinacionales, estructuras multinegocio, silos, gobernanza corporativa o complejidad matricial no se trasladen automáticamente a Instagram;
+- que Instagram use situaciones reconocibles para dueños, líderes y equipos de PyMEs, sin reducir el rigor conceptual;
+- que una misma tesis pueda conservarse entre canales, pero con contexto, ejemplos, profundidad y extensión adaptados a cada audiencia;
+- que los captions de Instagram sean breves, complementen la pieza visual y no repitan el carrusel;
+- que Instagram no utilice hashtags, salvo instrucción explícita posterior.
+
+Esta segmentación por canal es operativa y responde a la composición real de las audiencias actuales. No redefine el ICP general de Motion ni obliga a que todos los contenidos de un canal adopten el mismo ejemplo.
+
 ## 6. Entradas de auditoría
 
 ### AE-2026-07-12-001 — Lanzamiento de la serie Transformación Continua
@@ -163,3 +181,35 @@ El resto de la pieza utilizaba frases breves, párrafos de una sola oración y s
 #### Control editorial derivado
 
 Aplicar `CE-001` a todas las piezas y `CE-002` cuando el contenido permita partir de una situación observable del ICP o de una experiencia concreta de Motion. Antes de aprobar, verificar además que ningún concepto del método haya sido simplificado de manera incorrecta para mejorar el ritmo del texto.
+
+### AE-2026-07-12-002 — Adaptación de Transformación Continua a Instagram
+
+- Fecha: 2026-07-12.
+- Pieza: carrusel y copy del reel de Transformación Continua.
+- Canal: Instagram.
+- Estado: abierta.
+- Alcance: general.
+- Disparador: el primer borrador trasladó a Instagram el contexto de multinacionales utilizado para LinkedIn, aunque la audiencia real de Instagram está compuesta principalmente por pequeñas y medianas empresas.
+
+#### Borrador observado
+
+> Cuando una multinacional termina de implementar un cambio, el contexto ya volvió a cambiar.
+
+#### Devolución del usuario
+
+- LinkedIn concentra contactos vinculados con organizaciones multinacionales.
+- Instagram concentra principalmente empresas pequeñas y medianas.
+- Las referencias a multinacionales no deben trasladarse a Instagram.
+- Los copys de Instagram deben ser más breves, sin hashtags y sin repetir el contenido del carrusel.
+
+#### Versión final aprobada
+
+> Pendiente.
+
+#### Análisis del cambio
+
+La tesis puede mantenerse entre canales, pero la situación de entrada debe corresponder a la audiencia efectiva de cada uno. Instagram no es una versión resumida de LinkedIn: requiere otro contexto, otra escala de problema y una menor extensión.
+
+#### Control editorial derivado
+
+Aplicar `CE-003` antes de adaptar cualquier contenido entre LinkedIn e Instagram. La adaptación debe rehacerse desde la audiencia y no limitarse a recortar el mismo texto.
