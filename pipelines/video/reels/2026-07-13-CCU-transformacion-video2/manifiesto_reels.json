@@ -1,0 +1,66 @@
+{
+  "slug": "2026-07-13-CCU-transformacion-video2",
+  "video_duracion": 2240.88,
+  "reels": [
+    {
+      "n": 1,
+      "slug": "el-negocio-primero",
+      "titulo": "El negocio primero",
+      "tesis": 4,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 1071.55, "hasta": 1092.69}
+      ],
+      "caption_instagram": "Cuando entramos a una organización no arrancamos por la herramienta. Arrancamos por el negocio: cuál es la necesidad real y dónde están las oportunidades de crecer o de ganar eficiencia. Recién ahí entra la tecnología, como medio, y la cultura, que es lo que sostiene el cambio en el día a día. Esa mirada integral es la que termina generando el impacto que se sostiene en el largo plazo.\n\n#TransformaciónContinua #TransformaciónDigital"
+    },
+    {
+      "n": 2,
+      "slug": "un-socio-estrategico",
+      "titulo": "Un socio estratégico",
+      "tesis": 3,
+      "tipo": "conexion",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 163.74, "hasta": 186.60}
+      ],
+      "caption_instagram": "Muchas áreas de innovación llegan al mismo punto: tienen la iniciativa y las ganas, participan de ferias y congresos, ven lo que hacen otros, pero necesitan alguien que las acompañe a bajarlo a la práctica. Ahí es donde entramos nosotros. Acompañamos a los líderes a convertir esa intención en un programa concreto, integrando negocio, tecnología y cultura. No traemos una herramienta suelta: traemos un socio para sostener el proceso.\n\n#TransformaciónContinua #Innovación"
+    },
+    {
+      "n": 3,
+      "slug": "espacio-100-humano",
+      "titulo": "Un espacio 100% humano",
+      "tesis": 2,
+      "tipo": "conexion",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 1524.75, "hasta": 1559.81}
+      ],
+      "caption_instagram": "Le llamamos laboratorio y es, ante todo, un espacio 100% humano. Los equipos toman una oportunidad real, aprenden a usar las herramientas, se equivocan, superan esa frustración de equivocarse y terminan presentando su solución en un pitch al liderazgo. No es solo la tecnología: es la visibilidad, el reconocimiento y el sentido de pertenencia por haber hecho algo que va más allá de lo que se espera en el día a día. Al final, lo que premiamos es la curiosidad de las personas.\n\n#TransformaciónContinua #CulturaDigital"
+    },
+    {
+      "n": 4,
+      "slug": "gobernanza-y-autonomia",
+      "titulo": "Gobernanza y autonomía",
+      "tesis": 2,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 1465.81, "hasta": 1504.93}
+      ],
+      "caption_instagram": "Una comunidad de innovación necesita dos cosas al mismo tiempo, y suelen parecer opuestas. Por un lado gobernanza: un equipo que conecte negocio, tecnología y personas, y que teja el puente político para resolverle el problema al área que lo necesita. Por otro, capilaridad: aceleración y autonomía dentro de cada área, a través de embajadores a los que les das herramientas, metodologías y mentoría. El valor no está en elegir una u otra, sino en sostener las dos a la vez.\n\n#TransformaciónContinua #Innovación"
+    },
+    {
+      "n": 5,
+      "slug": "goles-rapidos",
+      "titulo": "Goles rápidos",
+      "tesis": 4,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 1670.11, "hasta": 1690.61}
+      ],
+      "caption_instagram": "Todo empieza con un mapeo: qué dolores y qué oportunidades hay, y quiénes son las personas que pueden moverlos. De ahí sale una lista que priorizamos por esfuerzo e impacto. Y siempre buscamos meter algunos goles rápidos, eso que se puede hacer ahora mismo para agregar valor, antes de encarar el proyecto más grande. Mostrar valor temprano es lo que le da aire al resto de la transformación.\n\n#TransformaciónContinua #TransformaciónDigital"
+    }
+  ]
+}
