@@ -187,7 +187,7 @@ Aplicar `CE-001` a todas las piezas y `CE-002` cuando el contenido permita parti
 - Fecha: 2026-07-12.
 - Pieza: carrusel y copy del reel de Transformación Continua.
 - Canal: Instagram.
-- Estado: abierta.
+- Estado: cerrada.
 - Alcance: general.
 - Disparador: el primer borrador trasladó a Instagram el contexto de multinacionales utilizado para LinkedIn, aunque la audiencia real de Instagram está compuesta principalmente por pequeñas y medianas empresas.
 
@@ -201,14 +201,32 @@ Aplicar `CE-001` a todas las piezas y `CE-002` cuando el contenido permita parti
 - Instagram concentra principalmente empresas pequeñas y medianas.
 - Las referencias a multinacionales no deben trasladarse a Instagram.
 - Los copys de Instagram deben ser más breves, sin hashtags y sin repetir el contenido del carrusel.
+- La portada del carrusel debe contener una tensión reconocible y atractiva, no una descripción neutra del tema.
+- El concepto propietario debe presentarse como `nuestro método de Transformación Continua®` cuando la pieza explica su aplicación.
 
 #### Versión final aprobada
 
-> Pendiente.
+**Portada del carrusel:**
+
+> Cuando tu empresa termina de adaptarse a un cambio, ya apareció el siguiente.
+
+**Caption del carrusel:**
+
+> Transformación Continua® integra Mejora Continua, Gestión del Cambio y Diseño Organizacional para desarrollar la capacidad de adaptación permanente en las organizaciones.
+
+**Copy del reel:**
+
+> La Mejora Continua optimiza. La Gestión del Cambio acompaña transiciones.
+> La Transformación Continua® integra ambas disciplinas junto con Diseño Organizacional para desarrollar organizaciones dinámicas.
 
 #### Análisis del cambio
 
-La tesis puede mantenerse entre canales, pero la situación de entrada debe corresponder a la audiencia efectiva de cada uno. Instagram no es una versión resumida de LinkedIn: requiere otro contexto, otra escala de problema y una menor extensión.
+- La situación de entrada pasó de una organización multinacional a una experiencia transversal y reconocible para una PyME: terminar de adaptarse cuando ya aparece el siguiente cambio.
+- El carrusel conserva el rigor del método sin depender de referencias a complejidad corporativa, silos o estructuras multinegocio.
+- El caption dejó de resumir las ocho placas y quedó limitado a una definición complementaria.
+- El copy del reel se redujo a dos ideas y eliminó hashtags.
+- La mayor brevedad de Instagram no implica usar frases vacías: cada oración debe sostener una función conceptual clara.
+- No debe generalizarse la portada literal ni la estructura de dos frases. El aprendizaje aplicable es la adecuación de audiencia, escala, extensión y función del caption.
 
 #### Control editorial derivado
 
