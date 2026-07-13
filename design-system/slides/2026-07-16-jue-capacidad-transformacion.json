@@ -2,15 +2,15 @@
   "episodio": "La transformación se convierte en capacidad",
   "slides": [
     {
-      "bg": "negro",
-      "eyebrow_color": "naranja",
+      "bg": "aqua",
+      "eyebrow_color": "violeta",
       "pager": "01 — 08",
       "blocks": [
         {
           "type": "futura",
           "text": "Que termine el proyecto no significa que termine la transformación.",
           "size": 64,
-          "color": "blanco",
+          "color": "negro",
           "maxw": 900,
           "lh2": 1.18
         }
