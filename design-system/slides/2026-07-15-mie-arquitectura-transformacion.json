@@ -2,15 +2,15 @@
   "episodio": "Arquitectura de transformación — de iniciativas a dirección común",
   "slides": [
     {
-      "bg": "negro",
-      "eyebrow_color": "naranja",
+      "bg": "naranja",
+      "eyebrow_color": "negro",
       "pager": "01 — 08",
       "blocks": [
         {
           "type": "futura",
           "text": "Tener más proyectos digitales no significa tener una transformación.",
           "size": 64,
-          "color": "blanco",
+          "color": "negro",
           "maxw": 900,
           "lh2": 1.18
         }
