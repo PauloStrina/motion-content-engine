@@ -17,7 +17,7 @@ El workflow falla si Claude no crea un manifiesto válido. No se acepta un run v
 
 Workflow: `4a-reels-layout-preview`
 
-Analiza varios frames por reel y genera imágenes 1080×1920 en un artifact. No publica ni modifica el repositorio.
+Analiza varios frames por reel y genera imágenes 1080×1920 en un artifact. Escribe un manifiesto resuelto efímero y no modifica el manifiesto editorial ni el repositorio.
 
 ### 3. Renderizar
 
@@ -32,6 +32,8 @@ Modos:
 - `keep_manifest`: conserva modos y coordenadas manuales existentes.
 
 Cuando el video tiene una cámara pequeña superpuesta, `resolver_layout.py` detecta rostros y genera coordenadas por reel. Cuando no detecta un recuadro estable de cámara, usa `poster` para evitar crops incorrectos.
+
+El layout resuelto se guarda en `_layout/manifiesto_resuelto.json` dentro del runner. El render copia ese archivo y la transcripción a una sesión efímera bajo `_runtime/`. El manifiesto editorial aprobado permanece inmutable.
 
 ## Imagen superior
 
