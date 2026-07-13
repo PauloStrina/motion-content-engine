@@ -64,10 +64,25 @@ Valores actuales:
 - Estrategia: `strategy/ESTRATEGIA_MOTION_CANONICA.md`.
 - Corpus y evidencia: `knowledge/MASTER_BASE_CONOCIMIENTO.md` en la base del proyecto; el repositorio conserva una referencia, no una copia operativa.
 - Ejecución mensual: manifiesto aprobado.
+- Aprendizaje editorial operativo: `docs/AUDITORIA_EDITORIAL.md`.
+
+`docs/AUDITORIA_EDITORIAL.md` conserva correcciones estructurales, pares borrador → versión final y controles de voz. No redefine estrategia ni reemplaza el corpus.
 
 Los archivos de `archive/` no se consultan en producción.
 
-## 5. Subsistema de video
+## 5. Control editorial
+
+Antes de aprobar una pieza:
+
+1. consultar `docs/AUDITORIA_EDITORIAL.md`;
+2. revisar los controles editoriales activos;
+3. incorporar las correcciones del usuario como una entrada nueva cuando tengan valor estructural;
+4. clasificar el alcance como `local`, `recurrente` o `general`;
+5. cerrar la entrada únicamente cuando exista una versión final aprobada para comparar contra el borrador.
+
+La auditoría es acumulativa. No se usa para convertir cada corrección aislada en una regla permanente.
+
+## 6. Subsistema de video
 
 Los workflows, prompts y pipelines de creación y edición de reels se mantienen sin cambios y operan de forma independiente. Esta refactorización no modifica:
 
@@ -76,6 +91,6 @@ Los workflows, prompts y pipelines de creación y edición de reels se mantienen
 - `scripts/PROMPT_editor_video.md`;
 - procesamiento, corte, subtitulado, render o catalogación de reels.
 
-## 6. Recuperación
+## 7. Recuperación
 
 La rama `backup/pre-canonica-2026-07-13` conserva el estado completo anterior a esta reorganización. Los archivos retirados se documentan en `archive/2026-07-pre-canonica/README.md`.
