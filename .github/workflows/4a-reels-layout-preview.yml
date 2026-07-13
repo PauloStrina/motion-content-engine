@@ -39,7 +39,7 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           pip install --quiet --force-reinstall "gdown==5.2.0"
-          pip install --quiet opencv-python-headless
+          pip install --quiet opencv-python-headless==4.10.0.84
       - name: Validar inputs
         shell: bash
         run: |
