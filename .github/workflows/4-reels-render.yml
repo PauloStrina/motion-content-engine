@@ -3,13 +3,28 @@ on:
   workflow_dispatch:
     inputs:
       video_url:
-        description: "El MISMO link de Drive del video largo usado en 3-reels-guion."
+        description: "El mismo video largo usado en el guion."
         required: true
       slug:
-        description: "El MISMO slug de la sesión (debe existir pipelines/video/reels/<slug>/manifiesto_reels.json)."
+        description: "Slug de la sesión con transcript y manifiesto válidos."
         required: true
+      layout_mode:
+        description: "El motor resuelve el layout por reel; keep_manifest conserva coordenadas manuales existentes."
+        required: true
+        default: "auto_per_reel"
+        type: choice
+        options:
+          - auto_per_reel
+          - zones_single_file
+          - camera_only
+          - split_two_files
+          - keep_manifest
+      poster_asset:
+        description: "Imagen superior cuando no hay contenido proyectado. Ruta dentro del repo."
+        required: true
+        default: "design-system/assets/innpulso-fondo.png"
       video_pantalla_url:
-        description: "OPCIONAL (capacitación): link de Drive de la grabación de PANTALLA, grabada en simultáneo con la cámara."
+        description: "Solo para split_two_files: grabación de pantalla sincronizada."
         required: false
         default: ""
 permissions:
@@ -17,7 +32,7 @@ permissions:
 jobs:
   cortar:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     outputs:
       reels: ${{ steps.lista.outputs.reels }}
     steps:
@@ -26,6 +41,19 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fontconfig
           pip install --quiet --force-reinstall "gdown==5.2.0"
+          pip install --quiet opencv-python-headless
+      - name: Validar inputs de layout
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event.inputs.layout_mode }}" = "split_two_files" ] && [ -z "${{ github.event.inputs.video_pantalla_url }}" ]; then
+            echo "ERROR: split_two_files requiere video_pantalla_url" >&2
+            exit 1
+          fi
+          if [ ! -f "${{ github.event.inputs.poster_asset }}" ]; then
+            echo "ERROR: no existe poster_asset=${{ github.event.inputs.poster_asset }}" >&2
+            exit 1
+          fi
       - name: Descargar video de Drive
         run: python3 pipelines/video/descargar.py "${{ github.event.inputs.video_url }}" _video
       - name: Descargar video de pantalla (si hay)
@@ -33,11 +61,36 @@ jobs:
         run: |
           python3 pipelines/video/descargar.py "${{ github.event.inputs.video_pantalla_url }}" _pantalla
           mv _pantalla/input.mp4 _video/pantalla.mp4
-      - name: Cortar reels (silencios fuera, video limpio + timestamps para Remotion)
+      - name: Resolver layout por reel
         run: |
-          PANTALLA=""
-          if [ -f _video/pantalla.mp4 ]; then PANTALLA="_video/pantalla.mp4"; fi
-          python pipelines/video/cortar.py _video/input.mp4 "pipelines/video/reels/${{ github.event.inputs.slug }}" media_clean $PANTALLA --remotion
+          python pipelines/video/resolver_layout.py \
+            _video/input.mp4 \
+            "pipelines/video/reels/${{ github.event.inputs.slug }}" \
+            --mode "${{ github.event.inputs.layout_mode }}" \
+            --poster "${{ github.event.inputs.poster_asset }}" \
+            --preview-dir layout_preview
+      - name: Validar manifiesto para render
+        run: |
+          python pipelines/video/validar_manifiesto.py \
+            "pipelines/video/reels/${{ github.event.inputs.slug }}" --stage render
+      - name: Subir diagnóstico de layout
+        uses: actions/upload-artifact@v4
+        with:
+          name: layout-preview-${{ github.event.inputs.slug }}
+          path: layout_preview/
+          retention-days: 14
+      - name: Cortar reels (video limpio + timestamps para Remotion)
+        shell: bash
+        run: |
+          set -euo pipefail
+          EXTRA=(--poster "${{ github.event.inputs.poster_asset }}")
+          if [ -f _video/pantalla.mp4 ]; then EXTRA+=(--pantalla _video/pantalla.mp4); fi
+          python pipelines/video/cortar.py \
+            _video/input.mp4 \
+            "pipelines/video/reels/${{ github.event.inputs.slug }}" \
+            media_clean \
+            "${EXTRA[@]}" \
+            --remotion
       - name: Listar reels para la matriz de render
         id: lista
         run: echo "reels=$(ls media_clean/*.props.json | xargs -n1 basename | sed 's/\.props\.json//' | jq -R . | jq -sc .)" >> "$GITHUB_OUTPUT"
@@ -60,7 +113,7 @@ jobs:
         with:
           name: media-clean-${{ github.event.inputs.slug }}
           path: media_clean
-      - name: Instalar fuentes Motion en el sistema (Chrome las resuelve por nombre, sin carga web)
+      - name: Instalar fuentes Motion
         run: |
           sudo mkdir -p /usr/share/fonts/opentype/motion
           sudo cp design-system/fonts/*.otf /usr/share/fonts/opentype/motion/
@@ -70,7 +123,7 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: pipelines/video/remotion/package-lock.json
-      - name: Branding con Remotion (subtítulos karaoke + título + logo)
+      - name: Branding con Remotion
         run: |
           cd pipelines/video/remotion
           npm ci --no-audit --no-fund
