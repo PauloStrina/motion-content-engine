@@ -93,6 +93,22 @@ Antes de aprobar una pieza, verificar:
 
 Este control no prohíbe los contrastes, las frases breves ni los párrafos de una sola oración. Exige que su uso sea deliberado y excepcional, no el molde predeterminado.
 
+### CE-002 — Anclar el argumento en un contexto reconocible y propio de Motion
+
+- Estado: activo.
+- Alcance: recurrente.
+- Origen: versión final aprobada del post de Transformación Continua del 12 de julio de 2026.
+
+Antes de aprobar una pieza, verificar:
+
+- que el texto parta de una situación observable y relevante para el ICP, cuando el tema lo permita;
+- que las referencias a Motion, sus métodos y su experiencia sean concretas y no intercambiables con cualquier consultora;
+- que se nombren correctamente los conceptos propietarios, sin introducir etapas o componentes que no correspondan;
+- que la prosa privilegie precisión y naturalidad por encima de la exhaustividad conceptual;
+- que una expresión eficaz de una pieza no se convierta en una muletilla para las siguientes.
+
+`Convengamos que...` queda registrado como un ejemplo positivo de apertura conversacional en esta pieza, no como una fórmula obligatoria para futuros posts.
+
 ## 6. Entradas de auditoría
 
 ### AE-2026-07-12-001 — Lanzamiento de la serie Transformación Continua
@@ -100,8 +116,8 @@ Este control no prohíbe los contrastes, las frases breves ni los párrafos de u
 - Fecha: 2026-07-12.
 - Pieza: publicación inicial de la semana de Transformación Continua.
 - Canal: LinkedIn.
-- Estado: abierta.
-- Alcance: general.
+- Estado: cerrada.
+- Alcance: general para el patrón anti-plantilla y recurrente para los aprendizajes positivos de voz.
 - Disparador: el borrador fue identificado por Paulo como una redacción estandarizada y fácilmente reconocible como generada por IA.
 
 #### Borrador observado
@@ -115,15 +131,35 @@ El resto de la pieza utilizaba frases breves, párrafos de una sola oración y s
 - La apertura `El problema no es X, es Y` está saturada en LinkedIn.
 - Las frases cortas con puntos y saltos de línea reproducen un patrón reconocible de contenido generado por IA.
 - Las oraciones individuales separadas por dos saltos de línea vuelven artificial la voz.
+- La apertura debía partir de una situación reconocible en organizaciones multinacionales y no de un hook prefabricado.
+- `Diagnóstico` debía eliminarse de la secuencia genérica de gestión de proyectos porque forma parte de la lógica del Programa de Transformación Continua y no corresponde presentarlo como una etapa indiferenciada.
+- La conclusión debía vincular el concepto con organizaciones de alta complejidad —multinacionales, multinegocio y con tendencia a operar en silos— en lugar de anunciar genéricamente que se estaba llevando a un programa.
 
 #### Versión final aprobada
 
-> Pendiente.
+> Convengamos que en una organización multinacional la transformación rara vez avanza de forma ordenada. Cada área tiene sus prioridades, sus sistemas y sus tiempos.
+>
+> Y es común tender a gestionar la transformación de la misma forma que administramos un proyecto: planificación, implementación y cierre. Esa secuencia es necesaria para ordenar, pero también instala una expectativa difícil de sostener: que después del esfuerzo va a llegar la estabilidad.
+>
+> La realidad es que, mientras un equipo termina de incorporar una tecnología, ya cambiaron algunas capacidades, las expectativas del mercado o la manera de trabajar. La Mejora Continua sigue siendo fundamental para optimizar lo que existe, y la Gestión del Cambio es necesaria para acompañar las transiciones. Lo que hoy pierde sentido es tratarlas como disciplinas separadas, que aparecen solamente en momentos puntuales.
+>
+> De esa necesidad nace nuestro framework de Transformación Continua®. No significa vivir cambiando todo ni mantener un estado de urgencia permanente. Se trata de desarrollar la capacidad de observar el contexto, revisar prioridades y distinguir qué conviene conservar, mejorar o modificar.
+>
+> Para lograrlo no alcanza con combinar estrategia y tecnología. Hay que diseñar dinámicas de trabajo que hagan que la adaptación no dependa de esfuerzos extraordinarios, sino de una práctica consciente.
+>
+> Esa es la forma de ser de @Motion. Y durante esta semana voy a compartir cómo estamos llevando este concepto a organizaciones de alta complejidad: multinacionales, multinegocio y con una fuerte tendencia a operar en silos. Es justamente en esos entornos donde el desafío deja de ser ejecutar proyectos aislados y pasa a ser integrar Negocio, Tecnología y Cultura dentro de un mismo sistema de gestión.
 
 #### Análisis del cambio
 
-La falla no estuvo en el concepto estratégico, sino en haberlo convertido demasiado pronto en una plantilla de canal. El contenido debe reconstruirse desde una situación, observación o razonamiento concreto y redactarse primero como prosa natural. Solo después corresponde adaptarlo al formato de LinkedIn.
+- La apertura pasó de un contraste abstracto y trillado a una observación conversacional sobre un entorno concreto: organizaciones multinacionales con prioridades, sistemas y tiempos diferentes.
+- El texto dejó de buscar ritmo mediante cortes artificiales y recuperó párrafos completos, con continuidad argumental.
+- Se redujo la cantidad de conceptos explicados y se conservaron únicamente los necesarios para sostener la tesis.
+- Se usó una formulación más oral y propia de Paulo: `Convengamos que`, `va a llegar la estabilidad`, `Esa es la forma de ser de @Motion`.
+- Se reemplazó una referencia genérica a “un Programa” por una aplicación específica en organizaciones multinacionales, multinegocio y con tendencia a operar en silos.
+- Se nombró el framework propietario y se cerró conectando Negocio, Tecnología y Cultura con un sistema de gestión.
+- Se corrigió una imprecisión conceptual: no presentar el diagnóstico como parte de una secuencia genérica de proyectos cuando tiene una función específica dentro del Programa de Transformación Continua.
+- No debe generalizarse el uso literal de `Convengamos que`, la mención `Esa es la forma de ser de @Motion` ni la misma estructura de cierre. Son expresiones válidas en esta pieza, no una plantilla nueva.
 
 #### Control editorial derivado
 
-Aplicar `CE-001` a todas las piezas futuras y cerrar esta entrada únicamente cuando exista una versión final aprobada para comparar contra el borrador.
+Aplicar `CE-001` a todas las piezas y `CE-002` cuando el contenido permita partir de una situación observable del ICP o de una experiencia concreta de Motion. Antes de aprobar, verificar además que ningún concepto del método haya sido simplificado de manera incorrecta para mejorar el ritmo del texto.
