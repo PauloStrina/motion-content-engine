@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Renderiza los carruseles del manifiesto mensual sin reescribir el copy."""
+"""Renderiza los carruseles del ciclo o de una semana sin reescribir copy."""
 from __future__ import annotations
 
+import argparse
 import glob
 import json
 import os
@@ -45,9 +46,15 @@ def merged(spec_path: Path, out_dir: Path, copy_slides: list[dict]) -> Path:
     return destination
 
 
-def main(month: str, out_dir_raw: str, render_py_raw: str, slides_dir_raw: str) -> int:
+def run(
+    month: str,
+    out_dir_raw: str,
+    render_py_raw: str,
+    slides_dir_raw: str,
+    semana: int | None,
+) -> int:
     manifest = MES.leer(month)
-    errors = MES.validar(manifest)
+    errors = MES.validar(manifest, semana=semana)
     if errors:
         for error in errors:
             print(f"ERROR: {error}")
@@ -59,7 +66,7 @@ def main(month: str, out_dir_raw: str, render_py_raw: str, slides_dir_raw: str) 
     out_dir.mkdir(parents=True, exist_ok=True)
     total = 0
 
-    for week in manifest["semanas"]:
+    for week in MES.seleccionar_semanas(manifest, semana):
         for day_key in MES.DIAS:
             day = week["dias"][day_key]
             if day["formato"] not in {"carousel_news", "post_carousel", "faltante_video"}:
@@ -96,9 +103,21 @@ def main(month: str, out_dir_raw: str, render_py_raw: str, slides_dir_raw: str) 
             print(f"✓ {base}: {count} PNG")
             total += 1
 
-    print(f"\n✓ {total} carruseles renderizados")
+    scope = f"semana {semana}" if semana else "mes completo"
+    print(f"\n✓ {total} carruseles renderizados · {scope}")
     return 0
 
 
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("mes")
+    parser.add_argument("out_dir")
+    parser.add_argument("render_py")
+    parser.add_argument("slides_dir")
+    parser.add_argument("--semana", type=int, choices=(1, 2, 3, 4))
+    args = parser.parse_args()
+    return run(args.mes, args.out_dir, args.render_py, args.slides_dir, args.semana)
+
+
 if __name__ == "__main__":
-    raise SystemExit(main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]))
+    raise SystemExit(main())
