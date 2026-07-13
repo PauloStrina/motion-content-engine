@@ -1,0 +1,127 @@
+{
+  "episodio": "Arquitectura de transformación — de iniciativas a dirección común",
+  "slides": [
+    {
+      "bg": "naranja",
+      "eyebrow_color": "negro",
+      "pager": "01 — 08",
+      "blocks": [
+        {
+          "type": "futura",
+          "text": "Tener más proyectos digitales no significa tener una transformación.",
+          "size": 64,
+          "color": "negro",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "aqua",
+      "eyebrow_color": "violeta",
+      "pager": "02 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "Un tablero, una automatización o una aplicación pueden resolver problemas concretos.",
+          "size": 62,
+          "color": "negro",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "violeta",
+      "eyebrow_color": "aqua",
+      "pager": "03 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "Pero si cada iniciativa avanza por separado, el resultado sigue siendo fragmentado.",
+          "size": 62,
+          "color": "blanco",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "naranja",
+      "eyebrow_color": "negro",
+      "pager": "04 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "En un programa reciente organizamos el trabajo alrededor de tres frentes.",
+          "size": 62,
+          "color": "negro",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "negro",
+      "eyebrow_color": "naranja",
+      "pager": "05 — 08",
+      "blocks": [
+        {
+          "type": "futura",
+          "text": "Resultados y soluciones concretas.",
+          "size": 105,
+          "color": "blanco",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "aqua",
+      "eyebrow_color": "violeta",
+      "pager": "06 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "Capacidades internas para sostenerlas.",
+          "size": 62,
+          "color": "negro",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "violeta",
+      "eyebrow_color": "aqua",
+      "pager": "07 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "Innovación estratégica para preparar lo que viene.",
+          "size": 62,
+          "color": "blanco",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "naranja",
+      "eyebrow_color": "negro",
+      "pager": "08 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "La tecnología es un medio. La dirección común convierte iniciativas aisladas en transformación.",
+          "size": 49,
+          "color": "negro",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ],
+      "foot": "Lo único permanente<br>es el movimiento",
+      "foot_color": "negro"
+    }
+  ]
+}

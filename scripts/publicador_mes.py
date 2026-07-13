@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Programa un manifiesto mensual aprobado en LinkedIn e Instagram."""
+"""Programa en Blotato el ciclo completo o una semana aprobada."""
 from __future__ import annotations
 
 import argparse
@@ -25,7 +25,13 @@ def media_video(client: B.BlotatoClient, reel: dict, reels_dir: str) -> str:
     return reel["url"]
 
 
-def publicar_mes(manifest: dict, cfg: dict, reels_dir: str, dry: bool) -> list[str]:
+def publicar_mes(
+    manifest: dict,
+    cfg: dict,
+    reels_dir: str,
+    dry: bool,
+    semana: int | None = None,
+) -> list[str]:
     failures: list[str] = []
     client = B.BlotatoClient(dry=dry)
     media_base = os.environ.get(
@@ -33,11 +39,12 @@ def publicar_mes(manifest: dict, cfg: dict, reels_dir: str, dry: bool) -> list[s
     )
     catalog = MES.leer_catalogo()
 
-    for week in manifest["semanas"]:
+    for week in MES.seleccionar_semanas(manifest, semana):
         start = week["fecha_inicio"]
         for day_key in MES.DIAS:
             day = week["dias"][day_key]
-            fmt = day["formato"]
+            original_fmt = day["formato"]
+            fmt = original_fmt
             if fmt == "faltante_video":
                 print(f"\n⚠ {start}/{day_key}: video faltante; se usa fallback")
                 fmt = "post_carousel"
@@ -50,7 +57,15 @@ def publicar_mes(manifest: dict, cfg: dict, reels_dir: str, dry: bool) -> list[s
                     continue
                 video_url = media_video(client, reel, reels_dir)
 
-            for channel in ("linkedin_paulo", "instagram"):
+            # Las newsletters se publican manualmente en LinkedIn. Por defecto,
+            # carousel_news programa solo el carrusel de Instagram y conserva
+            # texto_linkedin para compartir la newsletter una vez publicada.
+            default_channels = ["instagram"] if original_fmt == "carousel_news" else ["linkedin_paulo", "instagram"]
+            channels = day.get("canales", default_channels)
+            for channel in channels:
+                if channel not in HORA:
+                    failures.append(f"{start}/{day_key}/{channel}: canal inválido")
+                    continue
                 if channel not in cfg:
                     failures.append(f"{start}/{day_key}/{channel}: falta configuración")
                     continue
@@ -104,6 +119,7 @@ def publicar_mes(manifest: dict, cfg: dict, reels_dir: str, dry: bool) -> list[s
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--mes", required=True)
+    parser.add_argument("--semana", type=int, choices=(1, 2, 3, 4))
     parser.add_argument("--dry", action="store_true")
     args = parser.parse_args()
 
@@ -113,21 +129,26 @@ def main() -> int:
         print(f"No existe manifiesto mensual para {args.mes}")
         return 1
 
-    errors = MES.validar(manifest, exigir_aprobado=not args.dry)
+    errors = MES.validar(
+        manifest,
+        exigir_aprobado=not args.dry,
+        semana=args.semana,
+    )
     if errors:
-        print("Manifiesto mensual inválido:")
+        print("Manifiesto inválido:")
         for error in errors:
             print(f" - {error}")
         return 1
 
     config = B.load_config()
     reels_dir = os.environ.get("REELS_DIR", "media_repo/reels")
-    print(f"Publicador mensual — {'DRY' if args.dry else 'LIVE'} — {args.mes}")
-    failures = publicar_mes(manifest, config, reels_dir, args.dry)
+    scope = f"semana {args.semana}" if args.semana else "mes completo"
+    print(f"Publicador — {'DRY' if args.dry else 'LIVE'} — {args.mes} · {scope}")
+    failures = publicar_mes(manifest, config, reels_dir, args.dry, args.semana)
     if failures:
         print(f"\n⚠ {len(failures)} error(es): {failures}")
         return 1
-    print("\n✓ Mes completo procesado sin errores")
+    print(f"\n✓ {scope} procesado sin errores")
     return 0
 
 

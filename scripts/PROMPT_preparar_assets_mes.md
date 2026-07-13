@@ -1,22 +1,25 @@
-# PREPARACIÓN DE ASSETS DEL MES
+# PREPARACIÓN DE ASSETS DEL MES O SEMANA
 
 ## Alcance
 
-Tu única responsabilidad es convertir el copy ya aprobado del manifiesto mensual en especificaciones visuales para el sistema de diseño.
+Tu única responsabilidad es convertir el copy ya aprobado del manifiesto en especificaciones visuales para el sistema de diseño.
 
 No redactes, no resumas, no corrijas, no completes y no cambies ninguna palabra del manifiesto.
+
+La unidad estratégica sigue siendo el mes. La ejecución puede recibir una semana específica (`1`, `2`, `3` o `4`) o `todas`.
 
 ## Inputs
 
 1. `manifiestos/mes_<YYYY-MM>.json`.
-2. `design-system/slides/EJEMPLO_HEM_carrusel.json`.
-3. documentación y código del `design-system/`.
+2. El alcance indicado por el workflow en `SEMANA`.
+3. `design-system/slides/EJEMPLO_HEM_carrusel.json`.
+4. documentación y código del `design-system/`.
 
 No leas `archive/**`. No uses archivos estratégicos para inventar contenido. No modifiques el subsistema de video.
 
 ## Output
 
-Por cada día cuyo `formato` sea:
+Por cada día del alcance seleccionado cuyo `formato` sea:
 
 - `carousel_news`;
 - `post_carousel`;
@@ -27,6 +30,8 @@ creá:
 ```text
 design-system/slides/<valor de carrusel>.json
 ```
+
+No generes ni modifiques carruseles de semanas fuera del alcance.
 
 ## Contrato de copy
 
@@ -65,14 +70,22 @@ La paleta puede evolucionar dentro del carrusel cuando el argumento lo requiera.
 
 Antes de terminar:
 
-1. Confirmá que existe un JSON por cada carrusel del manifiesto.
+1. Confirmá que existe un JSON por cada carrusel del alcance seleccionado.
 2. Confirmá que la cantidad de slides coincide.
 3. Confirmá que cada slide tiene la misma cantidad de bloques de texto que líneas de copy.
 4. Confirmá que el copy es idéntico carácter por carácter.
-5. Ejecutá:
+5. Ejecutá la validación correspondiente:
+
+Semana específica:
 
 ```bash
-python scripts/validar_assets_mes.py --mes <YYYY-MM>
+python scripts/validar_assets_mes.py --mes <YYYY-MM> --semana <1-4> --require-approved
+```
+
+Ciclo completo:
+
+```bash
+python scripts/validar_assets_mes.py --mes <YYYY-MM> --require-approved
 ```
 
 El trabajo no está terminado si la validación falla.
