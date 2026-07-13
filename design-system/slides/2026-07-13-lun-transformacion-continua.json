@@ -1,0 +1,145 @@
+{
+  "episodio": "Transformación Continua — el cambio no espera estabilidad",
+  "slides": [
+    {
+      "bg": "negro",
+      "eyebrow_color": "naranja",
+      "pager": "01 — 08",
+      "blocks": [
+        {
+          "type": "futura",
+          "text": "Cuando tu empresa termina de adaptarse a un cambio, ya apareció el siguiente.",
+          "size": 64,
+          "color": "blanco",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "aqua",
+      "eyebrow_color": "violeta",
+      "pager": "02 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "Cambian las herramientas, las expectativas de los clientes, las formas de vender y las capacidades que necesita el equipo.",
+          "size": 49,
+          "color": "negro",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "violeta",
+      "eyebrow_color": "aqua",
+      "pager": "03 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "Sin embargo, solemos administrar cada cambio como un proyecto:",
+          "size": 50,
+          "color": "blanco",
+          "maxw": 900,
+          "mb": 48,
+          "lh2": 1.18
+        },
+        {
+          "type": "eco",
+          "text": "planificación → implementación → cierre",
+          "size": 78,
+          "color": "aqua",
+          "maxw": 900,
+          "lh2": 1.08
+        }
+      ]
+    },
+    {
+      "bg": "naranja",
+      "eyebrow_color": "negro",
+      "pager": "04 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "Esa secuencia ayuda a ordenar, pero supone que después del esfuerzo va a llegar una etapa de estabilidad.",
+          "size": 49,
+          "color": "negro",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "negro",
+      "eyebrow_color": "naranja",
+      "pager": "05 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "Mientras el equipo aprende a usar una nueva tecnología, el mercado, los procesos o las prioridades pueden volver a modificarse.",
+          "size": 49,
+          "color": "blanco",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "aqua",
+      "eyebrow_color": "violeta",
+      "pager": "06 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "La Mejora Continua y la Gestión del Cambio siguen siendo necesarias. Lo que pierde sentido es utilizarlas por separado y solamente en momentos puntuales.",
+          "size": 49,
+          "color": "negro",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ]
+    },
+    {
+      "bg": "violeta",
+      "eyebrow_color": "aqua",
+      "pager": "07 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "Nuestro método de Transformación Continua® desarrolla la capacidad de observar el contexto y decidir qué conviene:",
+          "size": 50,
+          "color": "blanco",
+          "maxw": 900,
+          "mb": 48,
+          "lh2": 1.18
+        },
+        {
+          "type": "eco",
+          "text": "conservar, mejorar o modificar.",
+          "size": 78,
+          "color": "aqua",
+          "maxw": 900,
+          "lh2": 1.08
+        }
+      ]
+    },
+    {
+      "bg": "naranja",
+      "eyebrow_color": "negro",
+      "pager": "08 — 08",
+      "blocks": [
+        {
+          "type": "lyon",
+          "text": "No se trata de cambiar todo permanentemente. Se trata de construir una empresa capaz de adaptarse sin depender siempre de esfuerzos extraordinarios.",
+          "size": 49,
+          "color": "negro",
+          "maxw": 900,
+          "lh2": 1.18
+        }
+      ],
+      "foot": "Lo único permanente<br>es el movimiento",
+      "foot_color": "negro"
+    }
+  ]
+}
