@@ -56,7 +56,11 @@ def publicar_mes(
                     continue
                 video_url = media_video(client, reel, reels_dir)
 
-            for channel in ("linkedin_paulo", "instagram"):
+            channels = day.get("canales", ["linkedin_paulo", "instagram"])
+            for channel in channels:
+                if channel not in HORA:
+                    failures.append(f"{start}/{day_key}/{channel}: canal inválido")
+                    continue
                 if channel not in cfg:
                     failures.append(f"{start}/{day_key}/{channel}: falta configuración")
                     continue
