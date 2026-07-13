@@ -11,13 +11,14 @@ Antes de elegir fragmentos, leé completos:
 
 1. `strategy/ESTRATEGIA_MOTION_CANONICA.md` — única fuente de verdad para posicionamiento, buyer, oferta, tesis, narrativa y evidencia.
 2. `strategy/VOZ_corpus.md` — corpus real para reconstruir cómo habla Paulo.
+3. `docs/AUDITORIA_EDITORIAL.md` — controles editoriales y aprendizajes de voz vigentes.
 
 No uses `strategy/tesis.md`, `strategy/voz-motion.md`, `strategy/buyer-persona.md` ni otros documentos legacy para gobernar decisiones. Si encontrás una contradicción, prevalece la estrategia canónica.
 
 ## JERARQUÍA PARA CADA CORRIDA
 1. Instrucción explícita y `brief_adicional` de la sesión.
 2. Estrategia canónica.
-3. Corpus de voz.
+3. Corpus de voz y auditoría editorial.
 4. Transcripción fuente.
 
 El brief puede enfocar qué buscar o evitar, pero no habilita inventar casos, resultados, capacidades o datos.
