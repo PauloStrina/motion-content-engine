@@ -1,0 +1,70 @@
+{
+  "slug": "2026-07-13-CCU-transformacion-video1",
+  "video_duracion": 3783.8,
+  "reels": [
+    {
+      "n": 1,
+      "slug": "cultura-de-innovacion",
+      "titulo": "El punto más importante",
+      "tesis": 2,
+      "tipo": "resultados",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 89.18, "hasta": 97.88},
+        {"desde": 102.84, "hasta": 117.46}
+      ],
+      "caption_instagram": "En un programa de transformación digital, las soluciones digitales son lo primero que se ve. Pero lo que hace que el cambio se sostenga es la cultura de innovación: que las personas cambien cómo piensan, deciden y colaboran. Por eso la ponemos en el centro del programa desde el arranque, y no como un extra al final. #TransformaciónContinua #TransformaciónDigital"
+    },
+    {
+      "n": 2,
+      "slug": "comunidad-que-conecta",
+      "titulo": "La comunidad que conecta",
+      "tesis": 3,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 233.49, "hasta": 275.81}
+      ],
+      "caption_instagram": "Una transformación no escala desde un solo equipo. Por eso construimos una comunidad de embajadores en cada área: personas curiosas que detectan oportunidades y a las que acompañamos para que resuelvan sus propios desafíos. Cuando esa red conecta a toda la organización aparece algo que sola ninguna área ve: los dolores se repiten, y la solución de una sirve para otra. #TransformaciónContinua #Innovación"
+    },
+    {
+      "n": 3,
+      "slug": "no-se-queden-con-el-ejemplo",
+      "titulo": "No se queden con el ejemplo",
+      "tesis": 4,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 293.81, "hasta": 307.33},
+        {"desde": 349.99, "hasta": 366.75}
+      ],
+      "caption_instagram": "Mostramos un caso de pricing dinámico con IA y siempre aclaramos lo mismo: no se queden con el ejemplo. Un caso puntual sirve para inspirar, pero lo que se traslada de una organización a otra no es la solución, es la lógica: usar la tecnología con criterio para generar valor en el negocio. La herramienta se consigue en cualquier lado; el criterio para orquestarla, no. #TransformaciónContinua #IA"
+    },
+    {
+      "n": 4,
+      "slug": "laboratorio-de-ia",
+      "titulo": "Un laboratorio de IA",
+      "tesis": 2,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 708.97, "hasta": 726.51},
+        {"desde": 741.07, "hasta": 748.91}
+      ],
+      "caption_instagram": "La mejor forma de aprender IA no es un curso: es meter las manos en un desafío real. En el programa armamos un laboratorio donde las personas forman equipos, aprenden la herramienta y desarrollan ellas mismas la solución, más una universidad digital para que quien quiera seguir capacitándose lo haga a su ritmo. Así las capacidades quedan en el equipo y no en un proveedor. #TransformaciónContinua #IA"
+    },
+    {
+      "n": 5,
+      "slug": "prospeccion-de-futuros",
+      "titulo": "Prospección de futuros",
+      "tesis": 3,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 760.15, "hasta": 765.99},
+        {"desde": 769.87, "hasta": 796.39}
+      ],
+      "caption_instagram": "Intentar adivinar un único futuro es un mal negocio. La prospección de futuros parte al revés: identificamos señales de cambio (cómo se mueve el consumidor, hacia dónde va la tecnología), imaginamos qué impacto podrían tener y desde ahí hacemos ingeniería reversa para definir qué conviene empezar a hacer hoy. Lo trabajamos en formato workshop, siempre sobre una necesidad concreta. #TransformaciónContinua #Estrategia"
+    }
+  ]
+}
