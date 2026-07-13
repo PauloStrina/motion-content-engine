@@ -20,6 +20,7 @@ BASE = pathlib.Path(__file__).resolve().parents[2]
 FONTS_DIR = BASE / "design-system" / "fonts"
 FONT_FILE = FONTS_DIR / "FuturaStd-CondensedExtraBd.otf"
 LOGO = BASE / "design-system" / "assets" / "logo-blanco.png"
+FONDO_SIN_PANTALLA = BASE / "design-system" / "assets" / "innpulso-fondo.png"
 
 GAP_MAX = 0.45
 PAD = 0.12
@@ -162,6 +163,15 @@ def render(
     brand=True,
     zonas=None,
 ):
+    """UNA sola decodificación por reel (seek al inicio del reel + duración acotada, nunca desde el
+    segundo 0) y los silencios se saltan adentro con select/aselect sobre ese único stream — no se
+    concatenan clips de decodificadores separados, así video y audio quedan siempre sincronizados.
+    modo "split": la grabación de pantalla (segundo video, mismos cortes) va arriba y la cámara abajo.
+    modo "zonas": video ÚNICO ya compuesto (stream de conferencia) — se recortan dos regiones del
+    mismo frame (zonas.pantalla y zonas.camara, fracciones 0-1 del ancho/alto) y se re-apilan.
+    reel["sin_pantalla"]=true (solo con modo "zonas"): ese reel no tiene contenido de pantalla en
+    este tramo (solo el orador) — la mitad superior usa FONDO_SIN_PANTALLA (imagen fija) en vez de
+    recortar el frame en vivo."""
     overall_a = min(a for a, _ in intervalos)
     overall_b = max(b for _, b in intervalos)
     seek = max(0.0, overall_a - 2)
@@ -199,18 +209,29 @@ def render(
         logo_idx = 2
     elif modo == "zonas":
         zp, zc = zonas["pantalla"], zonas["camara"]
-        filtros.append(f"[0:v]select='{cond}',setpts=N/FRAME_RATE/TB,fps=30,split=2[vza][vzb];")
-        filtros.append(
-            f"[vza]crop=iw*{zp['w']}:ih*{zp['h']}:iw*{zp['x']}:ih*{zp['y']},"
-            "scale=1080:960:force_original_aspect_ratio=decrease,"
-            f"pad=1080:960:(ow-iw)/2:(oh-ih)/2:color=0x{NEGRO}[vpan];"
-        )
+        sin_pantalla = bool(reel.get("sin_pantalla"))
+        if sin_pantalla:
+            entradas += ["-loop", "1", "-i", str(FONDO_SIN_PANTALLA)]
+            fondo_idx = 1
+            filtros.append(f"[0:v]select='{cond}',setpts=N/FRAME_RATE/TB,fps=30[vzb];")
+            filtros.append(
+                f"[{fondo_idx}:v]scale=1080:960:force_original_aspect_ratio=increase,"
+                "crop=1080:960[vpan];"
+            )
+            logo_idx = 2
+        else:
+            filtros.append(f"[0:v]select='{cond}',setpts=N/FRAME_RATE/TB,fps=30,split=2[vza][vzb];")
+            filtros.append(
+                f"[vza]crop=iw*{zp['w']}:ih*{zp['h']}:iw*{zp['x']}:ih*{zp['y']},"
+                "scale=1080:960:force_original_aspect_ratio=decrease,"
+                f"pad=1080:960:(ow-iw)/2:(oh-ih)/2:color=0x{NEGRO}[vpan];"
+            )
+            logo_idx = 1
         filtros.append(
             f"[vzb]crop=iw*{zc['w']}:ih*{zc['h']}:iw*{zc['x']}:ih*{zc['y']},"
             "scale=1080:960:force_original_aspect_ratio=increase,crop=1080:960[vcam];"
         )
         filtros.append("[vpan][vcam]vstack=inputs=2[vf];")
-        logo_idx = 1
     elif modo == "poster":
         entradas += [
             "-loop", "1", "-framerate", "30", "-t", f"{duracion_lectura:.3f}", "-i", str(poster)
