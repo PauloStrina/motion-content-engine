@@ -28,6 +28,11 @@ jobs:
   preview:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      VIDEO_URL: ${{ inputs.video_url }}
+      SLUG: ${{ inputs.slug }}
+      LAYOUT_MODE: ${{ inputs.layout_mode }}
+      POSTER_ASSET: ${{ inputs.poster_asset }}
     steps:
       - uses: actions/checkout@v4
       - name: Dependencias
@@ -35,20 +40,35 @@ jobs:
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           pip install --quiet --force-reinstall "gdown==5.2.0"
           pip install --quiet opencv-python-headless
+      - name: Validar inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$SLUG" || "$SLUG" == *"/"* || "$SLUG" == *".."* ]]; then
+            echo "ERROR: slug inválido" >&2
+            exit 1
+          fi
+          if [[ "$POSTER_ASSET" != design-system/assets/* || "$POSTER_ASSET" == *".."* ]]; then
+            echo "ERROR: poster_asset debe estar dentro de design-system/assets/" >&2
+            exit 1
+          fi
+          test -f "$POSTER_ASSET"
       - name: Descargar video
-        run: python3 pipelines/video/descargar.py "${{ github.event.inputs.video_url }}" _video
+        run: python3 pipelines/video/descargar.py "$VIDEO_URL" _video
       - name: Resolver y previsualizar layouts
         run: |
           python pipelines/video/resolver_layout.py \
             _video/input.mp4 \
-            "pipelines/video/reels/${{ github.event.inputs.slug }}" \
-            --mode "${{ github.event.inputs.layout_mode }}" \
-            --poster "${{ github.event.inputs.poster_asset }}" \
-            --preview-dir layout_preview
+            "pipelines/video/reels/$SLUG" \
+            --mode "$LAYOUT_MODE" \
+            --poster "$POSTER_ASSET" \
+            --preview-dir layout_preview \
+            --output _layout/manifiesto_resuelto.json
           python pipelines/video/validar_manifiesto.py \
-            "pipelines/video/reels/${{ github.event.inputs.slug }}" --stage render
+            "pipelines/video/reels/$SLUG" --stage render \
+            --manifest _layout/manifiesto_resuelto.json
       - uses: actions/upload-artifact@v4
         with:
-          name: layout-preview-${{ github.event.inputs.slug }}
+          name: layout-preview-${{ inputs.slug }}
           path: layout_preview/
           retention-days: 14
