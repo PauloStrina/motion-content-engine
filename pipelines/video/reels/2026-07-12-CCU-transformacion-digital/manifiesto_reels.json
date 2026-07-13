@@ -1,0 +1,84 @@
+{
+  "slug": "2026-07-12-CCU-transformacion-digital",
+  "video_duracion": 2240.88,
+  "reels": [
+    {
+      "n": 1,
+      "slug": "socio-estrategico-motion",
+      "titulo": "Un socio estratégico",
+      "tesis": 4,
+      "tipo": "resultados",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 169.28, "hasta": 186.58},
+        {"desde": 189.86, "hasta": 192.88},
+        {"desde": 203.33, "hasta": 211.63}
+      ],
+      "caption_instagram": "Así presenta CCU el rol de Motion en su programa de innovación: no como proveedor puntual, sino como socio que acompaña la construcción de un programa con tres pilares —mejora continua, cultura digital e innovación—. Así se arma un Programa de Transformación Digital real, con estructura y método. #TransformaciónContinua"
+    },
+    {
+      "n": 2,
+      "slug": "necesitas-un-socio",
+      "titulo": "Necesitás un socio",
+      "tesis": 4,
+      "tipo": "resultados",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 915.15, "hasta": 930.21},
+        {"desde": 975.07, "hasta": 989.35}
+      ],
+      "caption_instagram": "Cuando un equipo interno no puede absorber la velocidad de la tecnología, sumar gente no alcanza: hace falta un socio externo que acompañe el ritmo. Así lo cuenta el equipo de CCU sobre trabajar con Motion. #TransformaciónContinua"
+    },
+    {
+      "n": 3,
+      "slug": "laboratorio-ia-aplicada",
+      "titulo": "Laboratorio de IA aplicada",
+      "tesis": 3,
+      "tipo": "resultados",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 555.69, "hasta": 586.17}
+      ],
+      "caption_instagram": "Un espacio donde distintas áreas se juntan a resolver desafíos reales con herramientas de IA, con mentorías y exposición como en un concurso. Así es el Laboratorio de Inteligencia Artificial Aplicada que CCU construyó dentro de su programa de innovación. #TransformaciónContinua"
+    },
+    {
+      "n": 4,
+      "slug": "red-de-embajadores",
+      "titulo": "Red de embajadores",
+      "tesis": 2,
+      "tipo": "resultados",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 468.01, "hasta": 486.49},
+        {"desde": 490.27, "hasta": 510.87}
+      ],
+      "caption_instagram": "Las buenas soluciones no alcanzan si se quedan encerradas en un área. CCU armó una red de referentes que comparte lo que funciona entre equipos, para que ninguna herramienta pierda fuerza por falta de visibilidad. #TransformaciónContinua"
+    },
+    {
+      "n": 5,
+      "slug": "escalar-con-gobernanza",
+      "titulo": "Escalar con gobernanza",
+      "tesis": 4,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 514.17, "hasta": 527.07},
+        {"desde": 528.19, "hasta": 554.41}
+      ],
+      "caption_instagram": "Resolver algo solo, con lo que hay a mano, sirve en el momento. Escalarlo ya es otra cosa. Así explica el equipo de innovación de CCU por qué la gobernanza —tener un lugar claro donde buscar soluciones— es tan importante como la tecnología misma. #TransformaciónContinua"
+    },
+    {
+      "n": 6,
+      "slug": "pilar-cultura-digital",
+      "titulo": "La cultura sostiene",
+      "tesis": 2,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 375.09, "hasta": 386.79},
+        {"desde": 409.31, "hasta": 424.85}
+      ],
+      "caption_instagram": "El pilar más difícil de medir suele ser el más importante: en el programa de innovación de CCU, la cultura digital sostiene lo que la tecnología por sí sola no puede sostener. Conectar personas y soluciones, no solo implementarlas. #TransformaciónContinua"
+    }
+  ]
+}
