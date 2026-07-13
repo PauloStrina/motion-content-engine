@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Valida que todas las especificaciones visuales mensuales sean renderizables."""
+"""Valida especificaciones visuales de todo el ciclo o de una semana."""
 from __future__ import annotations
 
 import argparse
@@ -14,15 +14,26 @@ TEXT_TYPES = {"futura", "lam", "eco", "lyon", "lyont"}
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--mes", required=True)
+    parser.add_argument("--semana", type=int, choices=(1, 2, 3, 4))
     parser.add_argument("--slides-dir", default="design-system/slides")
     parser.add_argument("--require-approved", action="store_true")
     args = parser.parse_args()
 
     manifest = MES.leer(args.mes)
-    errors = MES.validar(manifest, exigir_aprobado=args.require_approved)
+    errors = MES.validar(
+        manifest,
+        exigir_aprobado=args.require_approved,
+        semana=args.semana,
+    )
     slides_dir = Path(args.slides_dir)
 
-    for week in manifest.get("semanas", []):
+    try:
+        weeks = MES.seleccionar_semanas(manifest, args.semana)
+    except ValueError as exc:
+        errors.append(str(exc))
+        weeks = []
+
+    for week in weeks:
         for day_key in MES.DIAS:
             day = week.get("dias", {}).get(day_key, {})
             if day.get("formato") not in {"carousel_news", "post_carousel", "faltante_video"}:
@@ -55,11 +66,12 @@ def main() -> int:
                     )
 
     if errors:
-        print("Assets mensuales inválidos:")
+        print("Assets inválidos:")
         for error in errors:
             print(f" - {error}")
         return 1
-    print(f"✓ Assets del mes {args.mes} válidos")
+    scope = f"semana {args.semana}" if args.semana else "mes completo"
+    print(f"✓ Assets de {args.mes} · {scope} válidos")
     return 0
 
 
