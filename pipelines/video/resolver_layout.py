@@ -138,20 +138,25 @@ def main() -> int:
     parser.add_argument("--mode", choices=sorted(MODOS), default="auto_per_reel")
     parser.add_argument("--poster", type=pathlib.Path, default=BASE / "design-system/assets/innpulso-fondo.png")
     parser.add_argument("--preview-dir", type=pathlib.Path)
+    parser.add_argument("--output", type=pathlib.Path, help="Salida resuelta; no modifica el manifiesto editorial")
     args = parser.parse_args()
 
-    path = args.sesion_dir / "manifiesto_reels.json"
-    manifiesto = json.loads(path.read_text(encoding="utf-8-sig"))
+    source_path = args.sesion_dir / "manifiesto_reels.json"
+    output_path = args.output or (args.sesion_dir / "manifiesto_layout_resuelto.json")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    manifiesto = json.loads(source_path.read_text(encoding="utf-8-sig"))
+
     if args.mode == "keep_manifest":
-        print("Layout: se conserva el manifiesto sin cambios")
+        output_path.write_text(json.dumps(manifiesto, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"Layout: se conserva el manifiesto sin cambios → {output_path}")
         return 0
 
     if args.mode == "split_two_files":
         for reel in manifiesto["reels"]:
             reel["modo"] = "split"
             reel.pop("zonas", None)
-        path.write_text(json.dumps(manifiesto, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print("Layout: todos los reels configurados como split")
+        output_path.write_text(json.dumps(manifiesto, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"Layout: todos los reels configurados como split → {output_path}")
         return 0
 
     cap = cv2.VideoCapture(str(args.video))
@@ -241,7 +246,7 @@ def main() -> int:
         "poster": str(args.poster),
         "motor": "opencv-haar-v1",
     }
-    path.write_text(json.dumps(manifiesto, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    output_path.write_text(json.dumps(manifiesto, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if preview_dir:
         (preview_dir / "layout_report.json").write_text(
             json.dumps(reporte, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
