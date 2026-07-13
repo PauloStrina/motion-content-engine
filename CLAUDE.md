@@ -18,11 +18,14 @@ Este archivo orienta a los agentes que trabajan dentro del repositorio. No conti
 - Ningún agente puede cambiar copies, tesis, buyer, oferta ni estrategia.
 - Cada canal usa el texto aprobado que figura en el manifiesto.
 - Nada se programa en `live` sin `estado: aprobado`.
+- Antes de revisar una pieza editorial, consultar `docs/AUDITORIA_EDITORIAL.md`.
+- Las correcciones estructurales se registran como pares borrador → versión final, con alcance local, recurrente o general.
 
 ## Archivos principales
 
 - Estrategia: `strategy/ESTRATEGIA_MOTION_CANONICA.md`.
 - Referencia a conocimiento: `knowledge/MASTER_BASE_CONOCIMIENTO.md`.
+- Auditoría editorial: `docs/AUDITORIA_EDITORIAL.md`.
 - Contrato: `docs/CONTRATO_MANIFIESTO_MENSUAL.md`.
 - Operación: `docs/OPERACION_REPOSITORIO.md`.
 - Validador: `scripts/mes.py`.
@@ -37,6 +40,7 @@ Este archivo orienta a los agentes que trabajan dentro del repositorio. No conti
 - No inventar texto para completar campos faltantes: el validador debe fallar.
 - No modificar el manifiesto durante diseño o render.
 - No alterar secretos, cuentas o configuraciones sin instrucción explícita.
+- No convertir una corrección aislada en regla general sin instrucción explícita o evidencia recurrente.
 
 ## Compatibilidad temporal
 
