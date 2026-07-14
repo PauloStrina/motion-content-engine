@@ -34,6 +34,8 @@ jobs:
           ffmpeg -y -ss "${{ github.event.inputs.desde }}" -t "${{ github.event.inputs.duracion }}" \
             -i _video/input.mp4 -vn -ac 1 -ar 16000 -c:a pcm_s16le tramo.wav
       - name: Transcribir tramo (timestamps desplazados al video completo)
+        env:
+          HF_HUB_DISABLE_XET: "1"
         shell: python
         run: |
           import json
