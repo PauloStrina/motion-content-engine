@@ -37,7 +37,7 @@ export type ReelProps = {
 export const Reel: React.FC<ReelProps> = ({video, titulo, tipo, modo, lineas}) => (
   <AbsoluteFill style={{backgroundColor: COLORES.negro}}>
     {video ? <OffthreadVideo src={staticFile(video)} /> : null}
-    <Titulo texto={titulo} tipo={tipo} />
+    {titulo.trim() ? <Titulo texto={titulo} tipo={tipo} /> : null}
     <Captions lineas={lineas} modo={modo} />
     <Img
       src={staticFile('logo-blanco.png')}
