@@ -7,11 +7,7 @@
       "titulo": "",
       "tesis": 4,
       "tipo": "conexion",
-      "modo": "zonas",
-      "zonas": {
-        "pantalla": { "x": 0.0, "y": 0.105, "w": 0.75, "h": 0.75 },
-        "camara": { "x": 0.755, "y": 0.36, "w": 0.245, "h": 0.26 }
-      },
+      "modo": "poster",
       "segmentos": [
         { "desde": 64.82, "hasta": 75.9 },
         { "desde": 41.78, "hasta": 44.94 },

@@ -47,7 +47,8 @@ jobs:
           cp "pipelines/video/reels/$SLUG/manifiesto_reels.json" _runtime/session/manifiesto_reels.json
       - name: Cortar pieza (zonas ya fijas en el manifiesto)
         run: |
-          python pipelines/video/cortar.py _video/input.mp4 _runtime/session media_clean --remotion
+          python pipelines/video/cortar.py _video/input.mp4 _runtime/session media_clean --remotion \
+            --poster design-system/assets/innpulso-fondo.png
       - name: Instalar fuentes Motion
         run: |
           sudo mkdir -p /usr/share/fonts/opentype/motion
