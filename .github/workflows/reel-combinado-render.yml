@@ -1,0 +1,76 @@
+name: reel-combinado-render
+# Job puntual para piezas internas de un reel combinado (varias fuentes concatenadas).
+# No pasa por validar_manifiesto.py: esas piezas no son reels standalone (20-62s),
+# son sub-clips que se concatenan después. No reemplaza a 4-reels-render.yml.
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: "Link de Drive del video fuente de esta pieza."
+        required: true
+      slug:
+        description: "Sesión con transcript.json y manifiesto ya escritos a mano (zonas fijas)."
+        required: true
+permissions:
+  contents: read
+jobs:
+  pieza:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      VIDEO_URL: ${{ inputs.video_url }}
+      SLUG: ${{ inputs.slug }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fontconfig
+          pip install --quiet --force-reinstall "gdown==5.2.0"
+      - name: Validar slug
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$SLUG" || "$SLUG" == *"/"* || "$SLUG" == *".."* ]]; then
+            echo "ERROR: slug inválido" >&2
+            exit 1
+          fi
+          if [ ! -s "pipelines/video/reels/$SLUG/manifiesto_reels.json" ]; then
+            echo "ERROR: falta manifiesto_reels.json en pipelines/video/reels/$SLUG" >&2
+            exit 1
+          fi
+      - name: Descargar video de Drive
+        run: python3 pipelines/video/descargar.py "$VIDEO_URL" _video
+      - name: Preparar sesión efímera de render
+        run: |
+          mkdir -p _runtime/session
+          cp "pipelines/video/reels/$SLUG/transcript.json" _runtime/session/transcript.json
+          cp "pipelines/video/reels/$SLUG/manifiesto_reels.json" _runtime/session/manifiesto_reels.json
+      - name: Cortar pieza (zonas ya fijas en el manifiesto)
+        run: |
+          python pipelines/video/cortar.py _video/input.mp4 _runtime/session media_clean --remotion
+      - name: Instalar fuentes Motion
+        run: |
+          sudo mkdir -p /usr/share/fonts/opentype/motion
+          sudo cp design-system/fonts/*.otf /usr/share/fonts/opentype/motion/
+          sudo fc-cache -f
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: pipelines/video/remotion/package-lock.json
+      - name: Branding con Remotion
+        run: |
+          cd pipelines/video/remotion
+          npm ci --no-audit --no-fund
+          mkdir -p public ../../../media_out
+          cp ../../../design-system/assets/logo-blanco.png public/
+          REEL_NAME=$(ls ../../../media_clean/*.props.json | xargs -n1 basename | sed 's/\.props\.json//')
+          cp "../../../media_clean/$REEL_NAME.mp4" public/
+          npx remotion render src/index.ts Reel "../../../media_out/$REEL_NAME.mp4" \
+            --props="../../../media_clean/$REEL_NAME.props.json" \
+            --chrome-mode=chrome-for-testing --timeout=60000
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pieza-${{ inputs.slug }}
+          path: media_out/*
+          retention-days: 7
