@@ -1,0 +1,28 @@
+{
+  "slug": "2026-07-14-reel-combinado-p3",
+  "reels": [
+    {
+      "n": 1,
+      "slug": "combinado-p3",
+      "titulo": "",
+      "tesis": 4,
+      "tipo": "conexion",
+      "modo": "zonas",
+      "zonas": {
+        "pantalla": { "x": 0.0, "y": 0.125, "w": 0.75, "h": 0.75 },
+        "camara": { "x": 0.752, "y": 0.375, "w": 0.248, "h": 0.247 }
+      },
+      "segmentos": [
+        { "desde": 249.39, "hasta": 256.65 },
+        { "desde": 401.35, "hasta": 405.89 },
+        { "desde": 661.4, "hasta": 672.18 },
+        { "desde": 856.44, "hasta": 869.28 },
+        { "desde": 875.84, "hasta": 882.3 },
+        { "desde": 1133.48, "hasta": 1138.94 },
+        { "desde": 1212.84, "hasta": 1217.44 },
+        { "desde": 1223.48, "hasta": 1228.86 }
+      ],
+      "caption_instagram": "pieza interna del reel combinado, no se publica sola"
+    }
+  ]
+}
