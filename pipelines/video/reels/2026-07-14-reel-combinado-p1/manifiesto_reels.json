@@ -8,6 +8,7 @@
       "tesis": 4,
       "tipo": "conexion",
       "modo": "zonas",
+      "sin_pantalla": true,
       "zonas": {
         "pantalla": { "x": 0.0, "y": 0.105, "w": 0.75, "h": 0.75 },
         "camara": { "x": 0.755, "y": 0.36, "w": 0.245, "h": 0.26 }
