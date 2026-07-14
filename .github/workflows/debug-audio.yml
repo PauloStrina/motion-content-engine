@@ -1,0 +1,48 @@
+name: debug-audio
+# Diagnóstico puntual: extrae un tramo de audio de un video de Drive para
+# verificar si el audio está sano (silencio, repetición, dropout).
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: "Link de Drive del video a inspeccionar."
+        required: true
+      desde:
+        description: "Segundo inicial del tramo."
+        required: true
+        default: "0"
+      duracion:
+        description: "Duración del tramo en segundos (máx. recomendado 300)."
+        required: true
+        default: "120"
+permissions:
+  contents: read
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install --quiet "gdown==5.2.0"
+      - name: Descargar video de Drive
+        run: python3 pipelines/video/descargar.py "${{ github.event.inputs.video_url }}" _video
+      - name: Extraer tramo de audio + diagnóstico
+        run: |
+          ffmpeg -y -ss "${{ github.event.inputs.desde }}" -t "${{ github.event.inputs.duracion }}" \
+            -i _video/input.mp4 -vn -c:a libmp3lame -q:a 4 tramo.mp3
+          ffmpeg -ss "${{ github.event.inputs.desde }}" -t "${{ github.event.inputs.duracion }}" \
+            -i _video/input.mp4 -vn -af "silencedetect=noise=-35dB:d=2" -f null - 2> silencios.txt || true
+          ffmpeg -y -ss "${{ github.event.inputs.desde }}" -t "${{ github.event.inputs.duracion }}" \
+            -i _video/input.mp4 -vn -lavfi "showspectrumpic=s=1920x480:legend=1" espectrograma.png
+          tail -40 silencios.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: audio-debug
+          path: |
+            tramo.mp3
+            silencios.txt
+            espectrograma.png
+          retention-days: 3
