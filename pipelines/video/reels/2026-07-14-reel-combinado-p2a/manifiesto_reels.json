@@ -1,0 +1,17 @@
+{
+  "slug": "2026-07-14-reel-combinado-p2a",
+  "reels": [
+    {
+      "n": 1,
+      "slug": "combinado-p2a",
+      "titulo": "",
+      "tesis": 4,
+      "tipo": "conexion",
+      "modo": "poster",
+      "segmentos": [
+        { "desde": 64.82, "hasta": 75.9 }
+      ],
+      "caption_instagram": "pieza interna del reel combinado, no se publica sola"
+    }
+  ]
+}
