@@ -1,0 +1,68 @@
+name: retranscribir-tramo
+# Re-transcribe un tramo puntual de un video de Drive (para reparar zonas donde
+# whisper entró en loop de repetición). Publica las palabras con timestamps ya
+# desplazados al tiempo real del video, listas para fusionar en transcript.json.
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: "Link de Drive del video."
+        required: true
+      desde:
+        description: "Segundo inicial del tramo."
+        required: true
+      duracion:
+        description: "Duración del tramo en segundos."
+        required: true
+permissions:
+  contents: read
+jobs:
+  tramo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install --quiet faster-whisper
+          pip install --quiet --force-reinstall "gdown==5.2.0"
+      - name: Descargar video de Drive
+        run: python3 pipelines/video/descargar.py "${{ github.event.inputs.video_url }}" _video
+      - name: Extraer tramo de audio
+        run: |
+          ffmpeg -y -ss "${{ github.event.inputs.desde }}" -t "${{ github.event.inputs.duracion }}" \
+            -i _video/input.mp4 -vn -ac 1 -ar 16000 -c:a pcm_s16le tramo.wav
+      - name: Transcribir tramo (timestamps desplazados al video completo)
+        shell: python
+        run: |
+          import json
+          from faster_whisper import WhisperModel
+
+          offset = float("${{ github.event.inputs.desde }}")
+          model = WhisperModel("large-v3", device="cpu", compute_type="int8")
+          segments, info = model.transcribe(
+              "tramo.wav", language="es", word_timestamps=True, vad_filter=True,
+              condition_on_previous_text=False,
+          )
+          words, lines = [], []
+          for seg in segments:
+              for w in seg.words or []:
+                  words.append({
+                      "w": w.word.strip(),
+                      "desde": round(w.start + offset, 2),
+                      "hasta": round(w.end + offset, 2),
+                  })
+              m, s = divmod(int(seg.start + offset), 60)
+              lines.append(f"[{m:02d}:{s:02d} — {seg.start + offset:.1f}s] {seg.text.strip()}")
+          json.dump({"offset": offset, "palabras": words}, open("tramo_words.json", "w", encoding="utf-8"),
+                    ensure_ascii=False, indent=1)
+          open("tramo.md", "w", encoding="utf-8").write("\n".join(lines) + "\n")
+          print(f"OK: {len(words)} palabras en el tramo")
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tramo-transcripto
+          path: |
+            tramo_words.json
+            tramo.md
+          retention-days: 7
