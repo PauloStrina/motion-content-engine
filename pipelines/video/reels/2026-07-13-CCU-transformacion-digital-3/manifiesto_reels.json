@@ -1,0 +1,43 @@
+{
+  "slug": "2026-07-13-CCU-transformacion-digital-3",
+  "video_duracion": 2530.33,
+  "reels": [
+    {
+      "n": 1,
+      "slug": "tecnologia-medio-no-fin",
+      "titulo": "La tecnología es un medio",
+      "tesis": 4,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 144.39, "hasta": 184.67}
+      ],
+      "caption_instagram": "Cuando arranca una transformación, la primera pregunta suele ser qué herramienta comprar. Nosotros la damos vuelta: primero entendemos los objetivos, las necesidades y los procesos de negocio, y recién ahí le aplicamos la tecnología más simple, barata y sustentable que resuelve esa necesidad. Al final del día la tecnología es lo que menos importancia tiene; lo que sostiene el cambio es la cultura y las capacidades que quedan instaladas en las personas. ¿Estás eligiendo una herramienta o diseñando el sistema que tu organización necesita? #TransformaciónDigital #TransformaciónContinua #Motion"
+    },
+    {
+      "n": 2,
+      "slug": "lo-mas-barato-y-rapido",
+      "titulo": "Lo más barato y rápido",
+      "tesis": 4,
+      "tipo": "resultados",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 508.05, "hasta": 539.19},
+        {"desde": 571.75, "hasta": 591.97}
+      ],
+      "caption_instagram": "Una empresa de logística perdía contenedores en el camino y no tenía trazabilidad ni información para decidir. La salida obvia era invertir fuerte en RFID con sensores, pero paramos la pelota y nos preguntamos cuál era la forma más simple y barata de resolverlo. Terminó siendo una app que escanea en dos puntos del proceso y arma por detrás un sistema de gestión. Esa es la lógica que nos importa: la tecnología como medio, no como fin. ¿Cuál es lo más barato y rápido que podés hacer antes de comprar la solución más cara? #TransformaciónDigital #Orquestación #Motion"
+    },
+    {
+      "n": 3,
+      "slug": "conectar-los-puntos",
+      "titulo": "Conectar los puntos",
+      "tesis": 2,
+      "tipo": "conexion",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 353.45, "hasta": 386.49}
+      ],
+      "caption_instagram": "En una empresa grande pasa seguido que un área resuelve algo que otra necesita y nunca se enteran. Por eso armamos una comunidad digital, una red interna de personas curiosas que se cuentan lo que están haciendo. Con esa mirada cross podemos conectar los puntos y traccionar la transformación de manera conectada, con un sentido de pertenencia que la sostiene en el tiempo. La tecnología acompaña, pero lo que vuelve permanente a la mejora son las personas. ¿Tu organización está aprovechando lo que ya sabe hacer en cada área? #Cultura #TransformaciónContinua #Motion"
+    }
+  ]
+}
