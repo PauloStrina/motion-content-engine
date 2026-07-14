@@ -11,7 +11,10 @@ def main(video, outdir):
     out = pathlib.Path(outdir)
     out.mkdir(parents=True, exist_ok=True)
     model = WhisperModel("large-v3", device="cpu", compute_type="int8")
-    segments, info = model.transcribe(video, language="es", word_timestamps=True, vad_filter=True)
+    segments, info = model.transcribe(
+        video, language="es", word_timestamps=True, vad_filter=True,
+        condition_on_previous_text=False,
+    )
 
     words, lines = [], []
     for seg in segments:
