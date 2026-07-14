@@ -1,18 +1,16 @@
 {
-  "slug": "2026-07-14-reel-combinado-p2",
+  "slug": "2026-07-14-reel-combinado-p2c",
   "reels": [
     {
       "n": 1,
-      "slug": "combinado-p2",
+      "slug": "combinado-p2c",
       "titulo": "",
       "tesis": 4,
       "tipo": "conexion",
       "modo": "poster",
       "segmentos": [
-        { "desde": 64.82, "hasta": 75.9 },
-        { "desde": 41.78, "hasta": 44.94 },
         { "desde": 87.96, "hasta": 90.96 },
-        { "desde": 106.06, "hasta": 117.44 }
+        { "desde": 104.4, "hasta": 118.4 }
       ],
       "caption_instagram": "pieza interna del reel combinado, no se publica sola"
     }
