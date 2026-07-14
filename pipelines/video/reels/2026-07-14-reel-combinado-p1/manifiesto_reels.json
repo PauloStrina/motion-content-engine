@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-14-reel-combinado-p1",
+  "reels": [
+    {
+      "n": 1,
+      "slug": "combinado-p1",
+      "titulo": "",
+      "tesis": 4,
+      "tipo": "conexion",
+      "modo": "zonas",
+      "zonas": {
+        "pantalla": { "x": 0.0, "y": 0.105, "w": 0.75, "h": 0.75 },
+        "camara": { "x": 0.755, "y": 0.36, "w": 0.245, "h": 0.26 }
+      },
+      "segmentos": [
+        { "desde": 163.74, "hasta": 171.76 },
+        { "desde": 177.44, "hasta": 187.12 }
+      ],
+      "caption_instagram": "pieza interna del reel combinado, no se publica sola"
+    }
+  ]
+}
