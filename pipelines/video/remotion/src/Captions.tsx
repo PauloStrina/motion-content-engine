@@ -44,9 +44,9 @@ export const Captions: React.FC<{lineas: Linea[]; modo?: string}> = ({lineas, mo
     durationInFrames: 5,
   });
 
-  // en split/zonas el frame se parte en dos mitades (pantalla arriba, cámara abajo); el subtítulo
-  // va centrado en la costura (y=960) para no taparle la cara al que habla.
-  const enLaCostura = modo === 'split' || modo === 'zonas';
+  // en split/zonas/poster el frame se parte en dos mitades (pantalla o poster arriba, cámara
+  // abajo); el subtítulo va centrado en la costura (y=960) para no taparle la cara al que habla.
+  const enLaCostura = modo === 'split' || modo === 'zonas' || modo === 'poster';
 
   return (
     <div
