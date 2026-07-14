@@ -211,12 +211,15 @@ def render(
         zp, zc = zonas["pantalla"], zonas["camara"]
         sin_pantalla = bool(reel.get("sin_pantalla"))
         if sin_pantalla:
-            entradas += ["-loop", "1", "-i", str(FONDO_SIN_PANTALLA)]
+            entradas += [
+                "-loop", "1", "-framerate", "30", "-t", f"{duracion_lectura:.3f}",
+                "-i", str(FONDO_SIN_PANTALLA),
+            ]
             fondo_idx = 1
             filtros.append(f"[0:v]select='{cond}',setpts=N/FRAME_RATE/TB,fps=30[vzb];")
             filtros.append(
-                f"[{fondo_idx}:v]scale=1080:960:force_original_aspect_ratio=increase,"
-                "crop=1080:960[vpan];"
+                f"[{fondo_idx}:v]fps=30,scale=1080:960:force_original_aspect_ratio=increase,"
+                f"crop=1080:960,trim=duration={duracion_lectura:.3f},setpts=N/FRAME_RATE/TB[vpan];"
             )
             logo_idx = 2
         else:
