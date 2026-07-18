@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "piece_id": "EJEMPLO-visual",
+  "status": "draft",
+  "approved_by": null,
+  "approved_at": null,
+  "visual_message": "Ejemplo técnico: una estructura desordenada se convierte en un sistema legible.",
+  "concept": "Un recorrido curvo atraviesa capas dispersas y termina en una forma simple, sin representar una narrativa obligatoria.",
+  "representation": "hybrid",
+  "execution": "code",
+  "brand_resources": [
+    "official_palette",
+    "futura_lyon_contrast",
+    "trajectory",
+    "negative_space"
+  ],
+  "references": [
+    "design-system/references/concepto-2/README.md"
+  ],
+  "approved_preview": null,
+  "generation": null
+}

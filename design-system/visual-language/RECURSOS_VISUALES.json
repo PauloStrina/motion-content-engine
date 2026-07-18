@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "active",
+  "principle": "Seleccionar la forma visual que mejor hace visible la idea; no aplicar una fórmula fija.",
+  "brand": {
+    "colors": {
+      "orange": "#FF5000",
+      "purple": "#50235A",
+      "aqua": "#9DEDE3",
+      "black": "#1A1A1A",
+      "white": "#FFFFFF"
+    },
+    "typography_roles": {
+      "futura": ["estructura", "señal", "acción", "dato", "sistema"],
+      "lyon": ["interpretación", "tesis", "reflexión", "dimensión humana"],
+      "gotham": ["microtexto", "etiqueta", "numeración", "información secundaria"]
+    }
+  },
+  "families": [
+    {"id":"topology","name":"Relaciones y topologías","represents":["actores","conexiones","silos","dependencias","orquestación"],"risks":["usar nodos como decoración","sobrecargar conexiones"]},
+    {"id":"trajectory","name":"Trayectorias y evolución","represents":["aprendizaje","transformación","madurez","estrategia dinámica"],"risks":["convertir todo en una flecha ascendente"]},
+    {"id":"layers","name":"Capas y profundidad","represents":["causas ocultas","efecto cebolla","sistemas superpuestos"],"risks":["complejidad ilegible"]},
+    {"id":"containers","name":"Contenedores y límites","represents":["silos","restricciones","alcance","gobernanza"],"risks":["cajas genéricas sin significado"]},
+    {"id":"forces","name":"Fuerzas y tensiones","represents":["resistencia","presión","incentivos","equilibrio"],"risks":["metáforas físicas confusas"]},
+    {"id":"modules","name":"Sistemas modulares","represents":["arquitectura","capacidades","programas","integración"],"risks":["parecer un catálogo de íconos"]},
+    {"id":"variation","name":"Repetición y variación","represents":["hábitos","escala","propagación","diferenciación"],"risks":["patrón decorativo"]},
+    {"id":"absence","name":"Vacío y ausencia","represents":["falta de ownership","brecha","oportunidad","desconexión"],"risks":["ambigüedad excesiva"]},
+    {"id":"scale","name":"Escala y proporción","represents":["prioridad","impacto","crecimiento","participación"],"risks":["distorsionar datos"]},
+    {"id":"intersection","name":"Intersecciones y superposiciones","represents":["integración","tensión","zona común","trade-off"],"risks":["usar Venn por costumbre"]},
+    {"id":"timeline","name":"Timelines y mapas","represents":["secuencia","horizontes","progreso","decisiones"],"risks":["lista horizontal sin concepto"]},
+    {"id":"object_metaphor","name":"Metáfora objetual","represents":["sistema operativo","radar","puente","orquesta","alacena"],"risks":["literalidad obvia"]},
+    {"id":"typographic","name":"Tipografía conceptual","represents":["contraste","ritmo","jerarquía","deformación"],"risks":["hacer que el diseño dependa de demasiado texto"]},
+    {"id":"photo_intervention","name":"Fotografía editorial intervenida","represents":["experiencia","escena real","escala humana"],"risks":["apariencia de stock corporativo"]},
+    {"id":"generative","name":"Imagen generativa","represents":["escena imposible","objeto conceptual","textura","forma orgánica"],"risks":["branding impreciso","texto defectuoso","variabilidad"]},
+    {"id":"motion","name":"Movimiento conceptual","represents":["cambio de estado","circulación","reorganización","adaptación"],"risks":["animación decorativa"]}
+  ],
+  "execution_modes": {
+    "code": "Geometría, datos, texto, diagramas y composición exacta.",
+    "openai": "Generación o edición de recursos visuales aprobados.",
+    "hybrid": "Recurso generativo más composición determinística.",
+    "reuse": "Uso directo del preview o asset aprobado."
+  }
+}

@@ -1,0 +1,81 @@
+name: visual-contract-ci
+
+on:
+  pull_request:
+    paths:
+      - "design-system/**"
+      - "scripts/**"
+      - "docs/CONTRATO_CONCEPTO_VISUAL.md"
+      - "docs/CONTRATO_MANIFIESTO_MENSUAL.md"
+      - ".github/workflows/1*.yml"
+      - ".github/workflows/2-motor-mensual.yml"
+      - ".github/workflows/visual-contract-ci.yml"
+  push:
+    branches:
+      - "feat/sistema-visual-*"
+    paths:
+      - "design-system/**"
+      - "scripts/**"
+      - ".github/workflows/visual-contract-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar validadores y render
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libpango-1.0-0 libpangoft2-1.0-0 poppler-utils
+          pip install --quiet PyYAML weasyprint
+
+      - name: Compilar Python
+        run: |
+          python -m py_compile \
+            scripts/mes.py \
+            scripts/validar_assets_mes.py \
+            scripts/validar_conceptos_visuales.py \
+            scripts/generar_imagen_conceptual.py \
+            scripts/generar_carrusel_mes.py \
+            design-system/render.py
+
+      - name: Validar JSON y YAML modificados
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          import yaml
+
+          json_paths = [
+              Path("design-system/visual-language/RECURSOS_VISUALES.json"),
+              Path("design-system/concepts/EJEMPLO_CONCEPTO_VISUAL.json"),
+          ]
+          yaml_paths = [
+              Path(".github/workflows/1a-generar-imagen-conceptual.yml"),
+              Path(".github/workflows/1-preparar-assets-mensuales.yml"),
+              Path(".github/workflows/2-motor-mensual.yml"),
+              Path(".github/workflows/visual-contract-ci.yml"),
+          ]
+          for path in json_paths:
+              json.loads(path.read_text(encoding="utf-8"))
+          for path in yaml_paths:
+              yaml.safe_load(path.read_text(encoding="utf-8"))
+          print("JSON y YAML válidos")
+          PY
+
+      - name: Comprobar compatibilidad con manifiesto legacy
+        run: python scripts/validar_conceptos_visuales.py --mes 2026-07 --semana 1 --require-approved
+
+      - name: Render de regresión
+        run: |
+          python design-system/render.py design-system/slides/EJEMPLO_HEM_carrusel.json /tmp/motion-example.pdf
+          test "$(pdfinfo /tmp/motion-example.pdf | awk '/^Pages:/ {print $2}')" = "8"

@@ -1,0 +1,67 @@
+name: 1a-generar-imagen-conceptual
+
+on:
+  workflow_dispatch:
+    inputs:
+      concept_path:
+        description: "Ruta del contrato bajo design-system/concepts/"
+        required: true
+      output_path:
+        description: "Ruta opcional bajo design-system/generated/. Vacío = usar generation.output"
+        required: false
+      force:
+        description: "Regenerar aunque el archivo exista"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validar rutas
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "${{ inputs.concept_path }}" in
+            design-system/concepts/*) ;;
+            *) echo "concept_path debe vivir bajo design-system/concepts/"; exit 1 ;;
+          esac
+          if [ -n "${{ inputs.output_path }}" ]; then
+            case "${{ inputs.output_path }}" in
+              design-system/generated/*) ;;
+              *) echo "output_path debe vivir bajo design-system/generated/"; exit 1 ;;
+            esac
+          fi
+
+      - name: Instalar SDK
+        run: pip install --quiet "openai>=1.0.0"
+
+      - name: Generar o reutilizar recurso
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          ARGS=(--concept "${{ inputs.concept_path }}")
+          if [ -n "${{ inputs.output_path }}" ]; then
+            ARGS+=(--out "${{ inputs.output_path }}")
+          fi
+          if [ "${{ inputs.force }}" = "true" ]; then
+            ARGS+=(--force)
+          fi
+          python scripts/generar_imagen_conceptual.py "${ARGS[@]}"
+
+      - name: Commit de recurso y metadatos
+        run: |
+          git config user.name "motion-engine"
+          git config user.email "engine@motion.local"
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git add design-system/generated/
+          git commit -m "visual: generar recurso conceptual" || echo "sin cambios"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

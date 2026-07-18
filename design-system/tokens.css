@@ -1,21 +1,55 @@
-/* MOTION DESIGN TOKENS — fuente de verdad visual.
-   TODO: reemplazar los hex APROXIMADOS por los oficiales del manual Oficina Robot (Motion_branding.pdf)
-   y copiar las fuentes con licencia web a ./assets/ */
+/* MOTION DESIGN TOKENS — fuente de verdad visual operativa.
+   Colores oficiales del manual Oficina Robot.
+   El crema editorial es un soporte neutro, no un color marcario. */
 :root {
-  --motion-violeta: #5B2A86;   /* APROXIMADO */
-  --motion-aqua:    #8FE3D4;   /* APROXIMADO */
-  --motion-naranja: #FF4D00;   /* APROXIMADO */
-  --motion-crema:   #EFEDE6;   /* APROXIMADO */
+  --motion-violeta: #50235A;
+  --motion-aqua:    #9DEDE3;
+  --motion-naranja: #FF5000;
   --motion-negro:   #1A1A1A;
-  --font-display: 'MotionDisplay', Impact, sans-serif;   /* tipografía intervenida del manual */
+  --motion-blanco:  #FFFFFF;
+  --motion-crema:   #F3F0E9;
+  --font-display: 'MotionDisplay', Impact, sans-serif;
   --font-text: 'MotionText', Georgia, serif;
-  --slide-w: 1080px; --slide-h: 1350px; --pad: 96px;
+  --slide-w: 1080px;
+  --slide-h: 1350px;
+  --pad: 96px;
 }
-.slide { width: var(--slide-w); height: var(--slide-h); padding: var(--pad);
-  background: var(--motion-crema); color: var(--motion-negro);
-  display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; }
-.slide.inverse { background: var(--motion-violeta); color: var(--motion-crema); }
-.slide h1 { font-family: var(--font-display); font-size: 92px; line-height: 1.02; margin: 0 0 32px; text-transform: none; }
-.slide p  { font-family: var(--font-text); font-size: 44px; line-height: 1.25; margin: 0; }
-.accent   { color: var(--motion-naranja); }
-.brand    { position: absolute; bottom: 48px; right: 64px; font-family: var(--font-display); font-size: 36px; letter-spacing: 1px; }
+.slide {
+  width: var(--slide-w);
+  height: var(--slide-h);
+  padding: var(--pad);
+  background: var(--motion-crema);
+  color: var(--motion-negro);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.slide.inverse {
+  background: var(--motion-violeta);
+  color: var(--motion-blanco);
+}
+.slide h1 {
+  font-family: var(--font-display);
+  font-size: 92px;
+  line-height: 1.02;
+  margin: 0 0 32px;
+  text-transform: none;
+}
+.slide p {
+  font-family: var(--font-text);
+  font-size: 44px;
+  line-height: 1.25;
+  margin: 0;
+}
+.accent {
+  color: var(--motion-naranja);
+}
+.brand {
+  position: absolute;
+  bottom: 48px;
+  right: 64px;
+  font-family: var(--font-display);
+  font-size: 36px;
+  letter-spacing: 1px;
+}
