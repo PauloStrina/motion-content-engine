@@ -1,8 +1,7 @@
 name: 2-motor
 
 # Renderiza y programa una semana aprobada o el ciclo completo.
-# dry simula. live exige aprobación del alcance seleccionado.
-
+# dry simula. live exige aprobación editorial y visual.
 on:
   workflow_dispatch:
     inputs:
@@ -42,7 +41,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Validar manifiesto
+      - name: Validar manifiesto y conceptos
         shell: bash
         run: |
           set -euo pipefail
@@ -55,6 +54,7 @@ jobs:
             APPROVAL_ARGS=(--require-approved)
           fi
           python scripts/mes.py --mes "${{ inputs.mes }}" "${SEMANA_ARGS[@]}" "${APPROVAL_ARGS[@]}"
+          python scripts/validar_conceptos_visuales.py --mes "${{ inputs.mes }}" "${SEMANA_ARGS[@]}" "${APPROVAL_ARGS[@]}"
 
       - name: Validar especificaciones visuales
         shell: bash
