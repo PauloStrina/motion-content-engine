@@ -17,11 +17,14 @@ El manifiesto es el input operativo aprobado. La unidad estratégica sigue siend
   "estado": "borrador_para_aprobacion",
   "aprobado_por": null,
   "aprobado_en": null,
+  "contrato_visual_version": 1,
   "semanas": []
 }
 ```
 
 La aprobación raíz gobierna una ejecución del ciclo completo. Mientras el mes se construye progresivamente puede permanecer en `borrador_para_aprobacion`.
+
+`contrato_visual_version` es opcional para compatibilidad. Cuando vale `1`, el sistema exige un contrato visual aprobado en cada pieza no-video del alcance.
 
 ## Estructura de semana
 
@@ -38,7 +41,7 @@ La aprobación raíz gobierna una ejecución del ciclo completo. Mientras el mes
 
 La aprobación semanal habilita `dry` y `live` únicamente para esa semana. Las demás semanas pueden no existir todavía o permanecer en borrador.
 
-## Reglas
+## Reglas editoriales vigentes
 
 - El ciclo completo contiene exactamente 4 semanas.
 - Una operación semanal puede ejecutarse con un manifiesto progresivo que contenga entre 1 y 4 semanas.
@@ -52,6 +55,29 @@ La aprobación semanal habilita `dry` y `live` únicamente para esa semana. Las 
 - `carousel_news` incluye la ruta del newsletter aprobado.
 - `live` semanal exige aprobación de la semana seleccionada.
 - `live` de `todas` exige las 4 semanas y aprobación completa en la raíz.
+
+## Contrato visual por día
+
+Cuando `contrato_visual_version` vale `1`, cada formato no-video incluye:
+
+```json
+"visual": {
+  "estado": "aprobado",
+  "aprobado_por": "Paulo",
+  "aprobado_en": "2026-07-30T18:00:00-03:00",
+  "concept_path": "design-system/concepts/2026-08/2026-08-05-linkedin/concept.json",
+  "execution": "code"
+}
+```
+
+Valores permitidos para `execution`:
+
+- `code`
+- `openai`
+- `hybrid`
+- `reuse`
+
+El bloque visual no contiene el concepto completo. Solo registra aprobación, modo de ejecución y ruta al contrato.
 
 ## Formatos permitidos
 
@@ -77,6 +103,13 @@ La aprobación semanal habilita `dry` y `live` únicamente para esa semana. Las 
   ],
   "texto_linkedin": "Texto final aprobado.",
   "caption_instagram": "Caption final aprobado.",
-  "newsletter": "newsletters/newsletter_2026-08-03.md"
+  "newsletter": "newsletters/newsletter_2026-08-03.md",
+  "visual": {
+    "estado": "aprobado",
+    "aprobado_por": "Paulo",
+    "aprobado_en": "2026-07-30T18:00:00-03:00",
+    "concept_path": "design-system/concepts/2026-08/2026-08-03-mar/concept.json",
+    "execution": "hybrid"
+  }
 }
 ```
