@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "piece_id": "2026-07-20-lun-software-proceso",
+  "status": "approved",
+  "approved_by": "Paulo",
+  "approved_at": "2026-07-20T13:22:00-03:00",
+  "visual_message": "La compra tecnológica está avanzada, pero el proceso que debería resolver todavía no está comprendido.",
+  "concept": "Una secuencia tipográfica muestra una decisión de software adelantada y luego invierte el orden: primero sistema, después tecnología. Los USD 30.000 funcionan como tensión económica visible.",
+  "representation": "diagram",
+  "execution": "code",
+  "brand_resources": [
+    "black_background",
+    "aqua_system_line",
+    "orange_economic_tension",
+    "violet_method"
+  ],
+  "references": [
+    "design-system/slides/EJEMPLO_HEM_carrusel.json"
+  ],
+  "approved_preview": null,
+  "generation": null
+}

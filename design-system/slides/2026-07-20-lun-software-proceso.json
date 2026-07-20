@@ -1,0 +1,88 @@
+{
+  "episodio": "La tecnología se elige antes de entender el proceso",
+  "slides": [
+    {
+      "bg": "negro",
+      "eyebrow_color": "naranja",
+      "pager": "01 — 08",
+      "blocks": [
+        {"type": "futura", "text": "YA ELIGIERON", "size": 98, "lh": 94, "color": "blanco"},
+        {"type": "eco", "text": "EL SOFTWARE", "size": 158, "color": "naranja", "mt": 20, "mb": 50},
+        {"type": "lyon", "text": "pero todavía nadie puede explicar el proceso.", "size": 58, "lh2": 1.18, "color": "aqua", "maxw": 900}
+      ]
+    },
+    {
+      "bg": "naranja",
+      "eyebrow_color": "negro",
+      "pager": "02 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "Una compañía estaba a punto de invertir", "size": 52, "color": "negro", "mb": 38},
+        {"type": "eco", "text": "USD 30.000", "size": 182, "color": "blanco", "mb": 34},
+        {"type": "lyont", "text": "en una nueva plataforma.", "size": 46, "color": "negro"}
+      ]
+    },
+    {
+      "bg": "aqua",
+      "eyebrow_color": "violeta",
+      "pager": "03 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "Antes de comprar, relevamos cómo funcionaba realmente", "size": 54, "color": "negro", "maxw": 900, "mb": 46},
+        {"type": "futura", "text": "LA GESTIÓN", "size": 110, "color": "violeta"},
+        {"type": "eco", "text": "DE SUS ENVASES", "size": 122, "color": "naranja", "mt": 8}
+      ]
+    },
+    {
+      "bg": "violeta",
+      "eyebrow_color": "aqua",
+      "pager": "04 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "Revisamos", "size": 54, "color": "blanco", "mb": 38},
+        {"type": "futura", "text": "PROCESO", "size": 112, "color": "aqua"},
+        {"type": "futura", "text": "PERSONAS", "size": 112, "color": "blanco"},
+        {"type": "futura", "text": "INFORMACIÓN", "size": 112, "color": "naranja"},
+        {"type": "lyont", "text": "y las herramientas disponibles.", "size": 42, "color": "blanco", "mt": 46}
+      ]
+    },
+    {
+      "bg": "negro",
+      "eyebrow_color": "naranja",
+      "pager": "05 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "La solución podía desarrollarse con tecnología de Microsoft", "size": 54, "color": "blanco", "maxw": 900, "mb": 46},
+        {"type": "eco", "text": "YA LICENCIADA", "size": 142, "color": "aqua"},
+        {"type": "lyont", "text": "sin costo adicional de licencias.", "size": 42, "color": "naranja", "mt": 42}
+      ]
+    },
+    {
+      "bg": "naranja",
+      "eyebrow_color": "negro",
+      "pager": "06 — 08",
+      "blocks": [
+        {"type": "futura", "text": "NO ERA NECESARIO", "size": 104, "lh": 100, "color": "negro"},
+        {"type": "eco", "text": "OTRO SOFTWARE", "size": 152, "color": "blanco", "mt": 20}
+      ]
+    },
+    {
+      "bg": "aqua",
+      "eyebrow_color": "violeta",
+      "pager": "07 — 08",
+      "blocks": [
+        {"type": "lyon", "text": "Primero comprendé", "size": 54, "color": "negro", "mb": 24},
+        {"type": "eco", "text": "EL SISTEMA", "size": 150, "color": "violeta", "mb": 50},
+        {"type": "lyon", "text": "Después definí", "size": 54, "color": "negro", "mb": 24},
+        {"type": "eco", "text": "LA TECNOLOGÍA", "size": 132, "color": "naranja"}
+      ]
+    },
+    {
+      "bg": "negro",
+      "eyebrow_color": "aqua",
+      "pager": "08 — 08",
+      "foot": "Lo único permanente<br>es el movimiento",
+      "foot_color": "naranja",
+      "blocks": [
+        {"type": "lyon", "text": "El Programa de Transformación Digital ordena estas decisiones dentro de", "size": 52, "color": "blanco", "maxw": 900, "mb": 42},
+        {"type": "eco", "text": "UNA ARQUITECTURA COMÚN", "size": 118, "color": "aqua"}
+      ]
+    }
+  ]
+}
