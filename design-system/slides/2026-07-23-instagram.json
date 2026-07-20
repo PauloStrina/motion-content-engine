@@ -1,0 +1,36 @@
+{
+  "episodio": "Resultados medibles",
+  "slides": [
+    {
+      "bg": "blanco", "logo": "violeta", "eyebrow_color": "naranja", "pager": "01 — 03",
+      "mid": {"top": 155, "bottom": 180, "left": 70, "width": 520, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [{"type": "image", "src": "design-system/generated/2026-07/rock-vs-solution.jpg", "x": 540, "y": 190, "w": 500, "h": 900, "fit": "contain", "z": 1}],
+      "blocks": [
+        {"type": "futura", "text": "USD 30.000", "size": 150, "lh": 140, "color": "naranja", "mb": 30},
+        {"type": "lyon", "text": "de inversión evitada", "size": 58, "lh2": 1.1, "color": "violeta"}
+      ],
+      "foot": "Una semana de relevamiento cambió la solución.", "foot_color": "aqua"
+    },
+    {
+      "bg": "violeta", "logo": "blanco", "eyebrow_color": "aqua", "pager": "02 — 03",
+      "mid": {"top": 160, "bottom": 180, "left": 84, "width": 912, "justify": "center", "align": "center", "z": 10},
+      "layers": [{"type": "image", "src": "design-system/generated/2026-07/rock-vs-solution.jpg", "x": 690, "y": 620, "w": 290, "h": 500, "fit": "contain", "z": 1, "opacity": 0.18}],
+      "blocks": [
+        {"type": "futura", "text": "PROCESO 100% TRACKEADO", "size": 108, "lh": 102, "color": "aqua", "mb": 48},
+        {"type": "lyon", "text": "Visibilidad en tiempo real y excedente de envases identificado y vendido.", "size": 56, "lh2": 1.15, "color": "blanco", "maxw": 800}
+      ],
+      "foot": "La tecnología acompañó al proceso real.", "foot_color": "naranja"
+    },
+    {
+      "bg": "blanco", "logo": "violeta", "eyebrow_color": "naranja", "pager": "03 — 03",
+      "mid": {"top": 160, "bottom": 180, "left": 70, "width": 520, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [{"type": "image", "src": "design-system/generated/2026-07/rock-vs-solution.jpg", "x": 535, "y": 205, "w": 510, "h": 910, "fit": "contain", "z": 1}],
+      "blocks": [
+        {"type": "futura", "text": "USD 40.000", "size": 145, "lh": 136, "color": "naranja", "mb": 30},
+        {"type": "lyon", "text": "de ahorro anual", "size": 60, "lh2": 1.1, "color": "violeta", "mb": 65},
+        {"type": "lyon", "text": "El resultado de comprender el proceso antes de comprar la herramienta.", "size": 47, "lh2": 1.16, "color": "negro", "maxw": 500}
+      ],
+      "foot": "Programa de Transformación Digital", "foot_color": "aqua"
+    }
+  ]
+}
