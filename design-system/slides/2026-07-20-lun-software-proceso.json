@@ -2,87 +2,159 @@
   "episodio": "La tecnología se elige antes de entender el proceso",
   "slides": [
     {
-      "bg": "negro",
-      "eyebrow_color": "naranja",
+      "bg": "blanco",
+      "logo": "negro",
+      "eyebrow_color": "violeta",
       "pager": "01 — 08",
+      "mid": {"top": 150, "bottom": 180, "left": 70, "width": 940, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "rect", "x": 575, "y": 205, "w": 380, "h": 700, "fill": "naranja", "radius": 0, "z": 2},
+        {"type": "svg_path", "d": "M 55 1035 C 190 1035 230 930 355 930 C 480 930 510 1060 635 1060 C 760 1060 790 940 910 940 C 965 940 995 970 1035 1010", "viewBox": "0 0 1080 1350", "fill": "transparent", "stroke": "aqua", "stroke_width": 28, "linecap": "round", "linejoin": "round", "z": 1}
+      ],
       "blocks": [
-        {"type": "futura", "text": "YA ELIGIERON", "size": 98, "lh": 94, "color": "blanco"},
-        {"type": "eco", "text": "EL SOFTWARE", "size": 158, "color": "naranja", "mt": 20, "mb": 50},
-        {"type": "lyon", "text": "pero todavía nadie puede explicar el proceso.", "size": 58, "lh2": 1.18, "color": "aqua", "maxw": 900}
-      ]
+        {"type": "rows", "ops": [1.0], "gap": 0, "html": "<div style='display:grid;grid-template-columns:470px 380px;column-gap:55px;align-items:center'><div><div class='lyon' style='font-size:70px;line-height:1.08;color:#1A1A1A'>Ya eligieron el software,</div><div class='futura' style='font-size:92px;line-height:86px;color:#50235A;margin-top:42px'>PERO TODAVÍA NADIE PUEDE EXPLICAR EL PROCESO.</div></div><div style='height:700px;padding:55px 38px;display:flex;flex-direction:column;justify-content:space-between'><div style=\"font-family:'GothamM';font-size:24px;letter-spacing:3px;color:#1A1A1A\">DECISIÓN PREVIA</div><div><div class='futura' style='font-size:100px;line-height:92px;color:#FFFFFF'>SOFTWARE</div><div class='futura' style='font-size:115px;line-height:108px;color:#1A1A1A;margin-top:60px'>USD 30.000</div></div><div class='lyon' style='font-size:43px;line-height:1.15;color:#1A1A1A'>antes de relevar.</div></div></div>"}
+      ],
+      "foot": "Primero el sistema.<br>Después la tecnología.",
+      "foot_color": "violeta"
     },
     {
-      "bg": "naranja",
-      "eyebrow_color": "negro",
+      "bg": "negro",
+      "logo": "blanco",
+      "eyebrow_color": "naranja",
       "pager": "02 — 08",
+      "mid": {"top": 165, "bottom": 180, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "rect", "x": 80, "y": 360, "w": 920, "h": 390, "fill": "transparent", "stroke": "violeta", "stroke_width": 12, "radius": 0, "z": 1},
+        {"type": "rect", "x": 705, "y": 215, "w": 220, "h": 220, "fill": "aqua", "radius": 110, "z": 2, "opacity": 0.9}
+      ],
       "blocks": [
-        {"type": "lyon", "text": "Una compañía estaba a punto de invertir", "size": 52, "color": "negro", "mb": 38},
-        {"type": "eco", "text": "USD 30.000", "size": 182, "color": "blanco", "mb": 34},
-        {"type": "lyont", "text": "en una nueva plataforma.", "size": 46, "color": "negro"}
-      ]
+        {"type": "lyon", "text": "Una compañía estaba a punto de invertir", "size": 58, "color": "blanco", "maxw": 850, "mb": 24},
+        {"type": "lam", "text": "USD 30.000", "size": 245, "color": "naranja", "shadow": "violeta", "depth": 12},
+        {"type": "lyont", "text": "en una nueva plataforma.", "size": 50, "color": "aqua", "mt": 40}
+      ],
+      "foot": "La cifra era concreta.<br>El proceso todavía no.",
+      "foot_color": "aqua"
     },
     {
       "bg": "aqua",
+      "logo": "negro",
       "eyebrow_color": "violeta",
       "pager": "03 — 08",
+      "mid": {"top": 170, "bottom": 185, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "line", "x1": 150, "y1": 790, "x2": 930, "y2": 790, "stroke": "violeta", "stroke_width": 12, "z": 1},
+        {"type": "circle", "x": 120, "y": 760, "w": 60, "h": 60, "fill": "naranja", "z": 2},
+        {"type": "circle", "x": 315, "y": 760, "w": 60, "h": 60, "fill": "naranja", "z": 2},
+        {"type": "circle", "x": 510, "y": 760, "w": 60, "h": 60, "fill": "naranja", "z": 2},
+        {"type": "circle", "x": 705, "y": 760, "w": 60, "h": 60, "fill": "naranja", "z": 2},
+        {"type": "circle", "x": 900, "y": 760, "w": 60, "h": 60, "fill": "violeta", "z": 2}
+      ],
       "blocks": [
-        {"type": "lyon", "text": "Antes de comprar, relevamos cómo funcionaba realmente", "size": 54, "color": "negro", "maxw": 900, "mb": 46},
-        {"type": "futura", "text": "LA GESTIÓN", "size": 110, "color": "violeta"},
-        {"type": "eco", "text": "DE SUS ENVASES", "size": 122, "color": "naranja", "mt": 8}
-      ]
+        {"type": "lyon", "text": "Antes de comprar, relevamos cómo funcionaba realmente", "size": 60, "color": "negro", "maxw": 850, "mb": 40},
+        {"type": "futura", "text": "LA GESTIÓN DE SUS ENVASES", "size": 104, "lh": 98, "color": "violeta"},
+        {"type": "rows", "ops": [1.0], "gap": 0, "html": "<div style='display:flex;justify-content:space-between;margin-top:250px;padding:0 30px;font-family:GothamM;font-size:24px;letter-spacing:2px;color:#50235A'><span>LUN</span><span>MAR</span><span>MIÉ</span><span>JUE</span><span>VIE</span></div>"}
+      ],
+      "foot": "Una semana para cambiar<br>la decisión tecnológica.",
+      "foot_color": "violeta"
     },
     {
-      "bg": "violeta",
-      "eyebrow_color": "aqua",
+      "bg": "blanco",
+      "logo": "negro",
+      "eyebrow_color": "naranja",
       "pager": "04 — 08",
+      "mid": {"top": 145, "bottom": 175, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "svg_path", "d": "M 180 450 L 510 450 L 510 690 L 850 690", "viewBox": "0 0 1080 1350", "fill": "transparent", "stroke": "aqua", "stroke_width": 30, "linecap": "square", "linejoin": "miter", "z": 1},
+        {"type": "rect", "x": 130, "y": 370, "w": 300, "h": 170, "fill": "violeta", "radius": 0, "z": 2},
+        {"type": "rect", "x": 650, "y": 370, "w": 300, "h": 170, "fill": "naranja", "radius": 0, "z": 2},
+        {"type": "rect", "x": 130, "y": 640, "w": 300, "h": 170, "fill": "negro", "radius": 0, "z": 2},
+        {"type": "rect", "x": 650, "y": 640, "w": 300, "h": 170, "fill": "aqua", "stroke": "violeta", "stroke_width": 8, "radius": 0, "z": 2}
+      ],
       "blocks": [
-        {"type": "lyon", "text": "Revisamos", "size": 54, "color": "blanco", "mb": 38},
-        {"type": "futura", "text": "PROCESO", "size": 112, "color": "aqua"},
-        {"type": "futura", "text": "PERSONAS", "size": 112, "color": "blanco"},
-        {"type": "futura", "text": "INFORMACIÓN", "size": 112, "color": "naranja"},
-        {"type": "lyont", "text": "y las herramientas disponibles.", "size": 42, "color": "blanco", "mt": 46}
-      ]
+        {"type": "lyon", "text": "Revisamos", "size": 60, "color": "negro", "mb": 65},
+        {"type": "rows", "ops": [1.0], "gap": 0, "html": "<div style='height:500px;position:relative'><div class='futura' style='position:absolute;left:78px;top:45px;font-size:70px;color:#FFFFFF'>PROCESO</div><div class='futura' style='position:absolute;right:30px;top:45px;font-size:70px;color:#1A1A1A'>PERSONAS</div><div class='futura' style='position:absolute;left:50px;top:315px;font-size:66px;color:#FFFFFF'>INFORMACIÓN</div><div class='futura' style='position:absolute;right:5px;top:315px;font-size:58px;color:#50235A'>HERRAMIENTAS</div></div>"},
+        {"type": "lyont", "text": "y las herramientas disponibles.", "size": 44, "color": "violeta", "mt": 10}
+      ],
+      "foot": "No eran cuatro temas.<br>Eran un mismo sistema.",
+      "foot_color": "naranja"
     },
     {
       "bg": "negro",
-      "eyebrow_color": "naranja",
+      "logo": "blanco",
+      "eyebrow_color": "aqua",
       "pager": "05 — 08",
+      "mid": {"top": 160, "bottom": 185, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "rect", "x": 140, "y": 665, "w": 800, "h": 250, "fill": "aqua", "radius": 0, "z": 1},
+        {"type": "rect", "x": 205, "y": 585, "w": 180, "h": 150, "fill": "violeta", "radius": 0, "z": 2},
+        {"type": "rect", "x": 450, "y": 520, "w": 180, "h": 215, "fill": "naranja", "radius": 0, "z": 2},
+        {"type": "rect", "x": 695, "y": 610, "w": 180, "h": 125, "fill": "blanco", "radius": 0, "z": 2}
+      ],
       "blocks": [
-        {"type": "lyon", "text": "La solución podía desarrollarse con tecnología de Microsoft", "size": 54, "color": "blanco", "maxw": 900, "mb": 46},
-        {"type": "eco", "text": "YA LICENCIADA", "size": 142, "color": "aqua"},
-        {"type": "lyont", "text": "sin costo adicional de licencias.", "size": 42, "color": "naranja", "mt": 42}
-      ]
+        {"type": "lyon", "text": "La solución podía desarrollarse con tecnología de Microsoft", "size": 58, "color": "blanco", "maxw": 850, "mb": 70},
+        {"type": "futura", "text": "YA LICENCIADA", "size": 130, "lh": 120, "color": "aqua"},
+        {"type": "lyont", "text": "sin costo adicional de licencias.", "size": 48, "color": "naranja", "mt": 250}
+      ],
+      "foot": "Los recursos ya existían.<br>Faltaba organizarlos.",
+      "foot_color": "aqua"
     },
     {
       "bg": "naranja",
+      "logo": "blanco",
       "eyebrow_color": "negro",
       "pager": "06 — 08",
+      "mid": {"top": 170, "bottom": 180, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "rect", "x": 145, "y": 360, "w": 790, "h": 390, "fill": "transparent", "stroke": "blanco", "stroke_width": 16, "radius": 0, "z": 1, "opacity": 0.55},
+        {"type": "line", "x1": 175, "y1": 720, "x2": 905, "y2": 390, "stroke": "negro", "stroke_width": 24, "z": 2}
+      ],
       "blocks": [
-        {"type": "futura", "text": "NO ERA NECESARIO", "size": 104, "lh": 100, "color": "negro"},
-        {"type": "eco", "text": "OTRO SOFTWARE", "size": 152, "color": "blanco", "mt": 20}
-      ]
+        {"type": "futura", "text": "NO ERA NECESARIO", "size": 112, "lh": 106, "color": "negro"},
+        {"type": "rows", "ops": [1.0], "gap": 0, "html": "<div class='futura' style='font-size:138px;line-height:126px;color:#FFFFFF;margin-top:180px;text-align:center'>INCORPORAR<br>OTRO SOFTWARE</div>"}
+      ],
+      "foot": "La mejor compra<br>fue la que no se hizo.",
+      "foot_color": "negro"
     },
     {
       "bg": "aqua",
+      "logo": "negro",
       "eyebrow_color": "violeta",
       "pager": "07 — 08",
+      "mid": {"top": 155, "bottom": 180, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "svg_path", "d": "M 160 740 C 300 740 320 560 480 560 C 640 560 660 740 820 740", "viewBox": "0 0 1080 1350", "fill": "transparent", "stroke": "naranja", "stroke_width": 34, "linecap": "round", "linejoin": "round", "z": 1},
+        {"type": "circle", "x": 115, "y": 695, "w": 90, "h": 90, "fill": "violeta", "z": 2},
+        {"type": "circle", "x": 775, "y": 695, "w": 90, "h": 90, "fill": "naranja", "z": 2}
+      ],
       "blocks": [
-        {"type": "lyon", "text": "Primero comprendé", "size": 54, "color": "negro", "mb": 24},
-        {"type": "eco", "text": "EL SISTEMA", "size": 150, "color": "violeta", "mb": 50},
-        {"type": "lyon", "text": "Después definí", "size": 54, "color": "negro", "mb": 24},
-        {"type": "eco", "text": "LA TECNOLOGÍA", "size": 132, "color": "naranja"}
-      ]
+        {"type": "lyon", "text": "Primero comprendé", "size": 58, "color": "negro", "mb": 20},
+        {"type": "futura", "text": "EL SISTEMA", "size": 135, "lh": 125, "color": "violeta"},
+        {"type": "rows", "ops": [1.0], "gap": 0, "html": "<div style='height:280px'></div>"},
+        {"type": "lyon", "text": "Después definí", "size": 58, "color": "negro", "mb": 20},
+        {"type": "futura", "text": "QUÉ TECNOLOGÍA NECESITA", "size": 98, "lh": 92, "color": "naranja"}
+      ],
+      "foot": "El orden de la decisión<br>cambia el resultado.",
+      "foot_color": "violeta"
     },
     {
       "bg": "negro",
-      "eyebrow_color": "aqua",
+      "logo": "blanco",
+      "eyebrow_color": "naranja",
       "pager": "08 — 08",
-      "foot": "Lo único permanente<br>es el movimiento",
-      "foot_color": "naranja",
+      "mid": {"top": 150, "bottom": 185, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "rect", "x": 100, "y": 635, "w": 285, "h": 205, "fill": "violeta", "radius": 0, "z": 1},
+        {"type": "rect", "x": 397, "y": 635, "w": 285, "h": 205, "fill": "naranja", "radius": 0, "z": 1},
+        {"type": "rect", "x": 694, "y": 635, "w": 285, "h": 205, "fill": "aqua", "radius": 0, "z": 1},
+        {"type": "rect", "x": 100, "y": 840, "w": 879, "h": 170, "fill": "blanco", "radius": 0, "z": 1}
+      ],
       "blocks": [
-        {"type": "lyon", "text": "El Programa de Transformación Digital ordena estas decisiones dentro de", "size": 52, "color": "blanco", "maxw": 900, "mb": 42},
-        {"type": "eco", "text": "UNA ARQUITECTURA COMÚN", "size": 118, "color": "aqua"}
-      ]
+        {"type": "lyon", "text": "El Programa de Transformación Digital ordena estas decisiones dentro de", "size": 58, "color": "blanco", "maxw": 850, "mb": 80},
+        {"type": "futura", "text": "UNA ARQUITECTURA COMÚN", "size": 112, "lh": 104, "color": "aqua"},
+        {"type": "rows", "ops": [1.0], "gap": 0, "html": "<div style='height:270px;position:relative'><div class='futura' style='position:absolute;left:46px;top:126px;font-size:48px;color:#FFFFFF'>NEGOCIO</div><div class='futura' style='position:absolute;left:345px;top:126px;font-size:48px;color:#1A1A1A'>TECNOLOGÍA</div><div class='futura' style='position:absolute;left:665px;top:126px;font-size:48px;color:#50235A'>CULTURA</div><div style=\"position:absolute;left:210px;top:330px;font-family:'GothamM';font-size:28px;letter-spacing:3px;color:#1A1A1A\">PROGRAMA DE TRANSFORMACIÓN DIGITAL</div></div>"}
+      ],
+      "foot": "Lo único permanente<br>es el movimiento",
+      "foot_color": "naranja"
     }
   ]
 }
