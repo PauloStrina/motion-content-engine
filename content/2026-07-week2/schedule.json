@@ -1,0 +1,73 @@
+{
+  "timezone": "America/Argentina/Buenos_Aires",
+  "media_base": "https://ops-motionco.github.io/motion-media/carruseles",
+  "posts": [
+    {
+      "id": "2026-07-21-problema-linkedin",
+      "channel": "linkedin_paulo",
+      "scheduled_at": "2026-07-21T09:00:00-03:00",
+      "text": "Ya eligieron el software, pero todavía nadie puede explicar el proceso.\n\nEso fue lo que encontramos en una compañía que estaba a punto de invertir USD 30.000 en una plataforma para gestionar y monitorear sus envases.\n\nLa necesidad era real. Había poca visibilidad sobre su ubicación y disponibilidad, dificultades para coordinar su movimiento y problemas operativos que la organización necesitaba resolver. La compra parecía lógica y el proveedor ya tenía una solución preparada.\n\nAntes de avanzar, propusimos detener la decisión durante una semana y relevar cómo funcionaba realmente el proceso.\n\nMapeamos el movimiento de los envases, las personas involucradas, los puntos de control, la información que necesitaban y las herramientas que la compañía ya tenía disponibles.\n\nLa conclusión cambió por completo la solución: no era necesario incorporar otro software. La necesidad podía resolverse utilizando herramientas de Microsoft que la organización ya tenía licenciadas, sin costo adicional de licencias.\n\nEsto ocurre con más frecuencia de lo que parece. La conversación tecnológica comienza cuando la herramienta ya está seleccionada, pero todavía no están claras las decisiones que debería mejorar, las personas que la van a utilizar ni el proceso que debería sostener.\n\nEn Motion trabajamos en el orden inverso: primero comprendemos el sistema y después definimos la tecnología.\n\nEste análisis forma parte de nuestro Programa de Transformación Digital, porque permite ordenar las decisiones tecnológicas dentro de una arquitectura que integra Negocio, Tecnología y Cultura.\n\nCuando la herramienta ya está elegida, pero el proceso todavía no puede explicarse, el siguiente paso no es comprar. Es relevar.",
+      "media": ["2026-07-21-linkedin-1.png"]
+    },
+    {
+      "id": "2026-07-21-problema-instagram",
+      "channel": "instagram",
+      "scheduled_at": "2026-07-21T12:00:00-03:00",
+      "text": "Antes de comprar otro software, revisá el proceso y las herramientas que tu empresa ya tiene disponibles.",
+      "media": [
+        "2026-07-21-instagram-1.png",
+        "2026-07-21-instagram-2.png",
+        "2026-07-21-instagram-3.png",
+        "2026-07-21-instagram-4.png",
+        "2026-07-21-instagram-5.png",
+        "2026-07-21-instagram-6.png"
+      ]
+    },
+    {
+      "id": "2026-07-22-service-linkedin",
+      "channel": "linkedin_paulo",
+      "scheduled_at": "2026-07-22T09:00:00-03:00",
+      "text": "No adaptes tu proceso a un software, adaptá el software a tu proceso.\n\nDurante años, el modelo dominante fue comprar una herramienta estándar y modificar la operación para hacerla entrar dentro de sus funcionalidades. Ese modelo puede funcionar muy bien cuando la necesidad también es estándar.\n\nEl problema aparece cuando el proceso tiene particularidades relevantes para el negocio. La organización empieza a acumular excepciones, tareas manuales, planillas paralelas y desarrollos periféricos para sostener un sistema que no acompaña su forma real de trabajar.\n\nLa velocidad actual de desarrollo permite invertir ese orden. A esa lógica la llamamos Service as a Software: primero comprendemos la necesidad, diseñamos el proceso deseado, identificamos los usuarios, la información y las decisiones, definimos la arquitectura y recién después elegimos, configuramos o desarrollamos la tecnología adecuada.\n\nLa respuesta puede ser una solución estándar, una integración, una automatización, una aplicación Low-Code o un desarrollo específico. No se trata de construir todo desde cero, sino de evitar que la herramienta defina prematuramente el problema.\n\nEn el caso que estamos compartiendo esta semana, una organización estaba a punto de invertir USD 30.000 en un nuevo software. Después de relevar el proceso, descubrimos que la necesidad podía resolverse utilizando herramientas de Microsoft que ya formaban parte de su arquitectura.\n\nNo buscamos una alternativa más barata. Comprendimos mejor el sistema.\n\nDentro de nuestro Programa de Transformación Digital, Service as a Software conecta el desarrollo de soluciones con los procesos, los usuarios, la adopción y la evolución esperada del negocio.",
+      "reel_id": "2026-07-03-conceptos_2"
+    },
+    {
+      "id": "2026-07-22-service-instagram",
+      "channel": "instagram",
+      "scheduled_at": "2026-07-22T12:00:00-03:00",
+      "text": "No adaptes tu proceso a un software. Adaptá el software a tu proceso.\n\nEn nuestro Programa de Transformación Digital empezamos por la necesidad y después definimos la tecnología.",
+      "reel_id": "2026-07-03-conceptos_2"
+    },
+    {
+      "id": "2026-07-23-resultados-linkedin",
+      "channel": "linkedin_paulo",
+      "scheduled_at": "2026-07-23T09:00:00-03:00",
+      "text": "Cómo reemplazamos una inversión de USD 30.000 por una solución de Microsoft sin costo adicional de licencias.\n\nLa compañía necesitaba mejorar la gestión y el monitoreo de sus envases. La situación inicial generaba consecuencias concretas: faltaba transparencia sobre su ubicación y disponibilidad, se producían interrupciones por falta de envases y los costos de reposición eran elevados.\n\nLa primera respuesta había sido cotizar una plataforma externa por USD 30.000.\n\nAntes de avanzar, realizamos una semana de relevamiento. Mapeamos el recorrido completo de los envases, identificamos a las personas involucradas, definimos qué información necesitaba cada una y revisamos las herramientas que la organización ya tenía disponibles.\n\nA partir de ese análisis diseñamos una solución utilizando tecnología de Microsoft que ya formaba parte de su arquitectura, sin incorporar nuevas licencias.\n\nUn año después de la implementación, el proceso estaba 100% trackeado, la organización contaba con visibilidad en tiempo real, se identificó un excedente de envases que pudo venderse y el resultado económico alcanzó USD 40.000 de ahorro anual.\n\nLa diferencia no estuvo en encontrar un software más sofisticado. Estuvo en comprender el proceso antes de decidir la tecnología.\n\nEse es el recorrido que desarrollamos dentro de nuestro Programa de Transformación Digital: convertir una necesidad puntual en una solución de negocio medible, conectada con la arquitectura tecnológica y con la forma real de trabajar.",
+      "media": ["2026-07-23-linkedin-1.png"]
+    },
+    {
+      "id": "2026-07-23-resultados-instagram",
+      "channel": "instagram",
+      "scheduled_at": "2026-07-23T12:00:00-03:00",
+      "text": "USD 30.000 de inversión evitada. Proceso 100% trackeado. USD 40.000 de ahorro anual.\n\nEl resultado de comprender el proceso antes de comprar la herramienta.",
+      "media": [
+        "2026-07-23-instagram-1.png",
+        "2026-07-23-instagram-2.png",
+        "2026-07-23-instagram-3.png"
+      ]
+    },
+    {
+      "id": "2026-07-24-orquestadores-linkedin",
+      "channel": "linkedin_paulo",
+      "scheduled_at": "2026-07-24T09:00:00-03:00",
+      "text": "¿Por qué tenés que desarrollar Orquestadores en tu organización?\n\nPorque los problemas de transformación rara vez pertenecen a una única función. Negocio puede comprender el resultado que necesita. IT puede conocer la arquitectura tecnológica. Operaciones puede dominar el proceso. Personas puede entender las capacidades y los comportamientos necesarios.\n\nCada área puede tomar una decisión correcta desde su propia perspectiva y, aun así, producir un sistema fragmentado.\n\nLo vimos en una organización donde distintas áreas contrataban soluciones y proveedores diferentes. Cada iniciativa respondía a una necesidad legítima, pero el conjunto no tenía una dirección ni una arquitectura compartida.\n\nPor eso desarrollamos el rol de los Orquestadores. Un Orquestador no reemplaza a los especialistas. Conecta lo que cada especialista ve por separado.\n\nSu función es detectar oportunidades, comprender las relaciones entre procesos, tecnología y personas, traducir necesidades entre áreas y evitar que una mejora local produzca un problema en otra parte del sistema.\n\nDentro de nuestros Programas, este rol forma parte de la Comunidad Digital. Los Orquestadores trabajan junto con Coordinadores y Líderes, cuentan con roadmaps por área, espacios de experimentación, mentoría y mecanismos para compartir soluciones y aprendizajes.\n\nLa Comunidad Digital forma parte de nuestro Programa de Transformación Digital y permite transformar una visión transversal en una capacidad distribuida de ejecución.",
+      "reel_id": "2026-07-03-conceptos_6"
+    },
+    {
+      "id": "2026-07-24-orquestadores-instagram",
+      "channel": "instagram",
+      "scheduled_at": "2026-07-24T12:00:00-03:00",
+      "text": "¿Por qué tenés que desarrollar Orquestadores?\n\nPorque alguien necesita conectar procesos, tecnología y personas cuando cada área solamente puede ver una parte.",
+      "reel_id": "2026-07-03-conceptos_6"
+    }
+  ]
+}
