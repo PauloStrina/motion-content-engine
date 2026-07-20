@@ -3,7 +3,7 @@ name: run-week2-shifted
 on:
   push:
     branches:
-      - content/2026-07-semana-2-shifted
+      - main
     paths:
       - automation/run-week2-shifted-live.json
 
