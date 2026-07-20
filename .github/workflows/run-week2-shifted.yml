@@ -90,13 +90,21 @@ jobs:
         run: python scripts/schedule_week2_shifted.py
 
       - name: Guardar IDs de programación
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HEAD_BRANCH: ${{ github.event.pull_request.head.ref }}
         run: |
+          git clone "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" results_repo
+          cd results_repo
+          git checkout "${HEAD_BRANCH}"
+          mkdir -p content/2026-07-week2 design-system/generated/2026-07
+          cp ../content/2026-07-week2/scheduled.json content/2026-07-week2/scheduled.json
+          cp ../design-system/generated/2026-07/rock-vs-solution.jpg design-system/generated/2026-07/rock-vs-solution.jpg
           git config user.name "motion-engine"
           git config user.email "engine@motion.local"
-          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           git add content/2026-07-week2/scheduled.json design-system/generated/2026-07/rock-vs-solution.jpg
           git commit -m "schedule: registrar semana 2 desplazada" || echo "sin cambios"
-          git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
+          git push origin "${HEAD_BRANCH}"
 
       - name: Publicar evidencia
         uses: actions/upload-artifact@v4
