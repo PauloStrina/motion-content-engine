@@ -1,14 +1,22 @@
-name: 1-preparar-assets-mensuales
-
-# Recibe un manifiesto mensual ya escrito y aprobado.
-# Solo genera especificaciones visuales; no redacta ni modifica el contenido.
+name: 1-preparar-assets
 
 on:
   workflow_dispatch:
     inputs:
       mes:
-        description: "Mes a preparar (YYYY-MM). Debe existir manifiestos/mes_<YYYY-MM>.json aprobado."
+        description: "Ciclo editorial (YYYY-MM)."
         required: true
+      semana:
+        description: "Semana a preparar. 'todas' exige el ciclo completo aprobado."
+        required: true
+        default: "1"
+        type: choice
+        options:
+          - "1"
+          - "2"
+          - "3"
+          - "4"
+          - todas
 
 permissions:
   contents: write
@@ -20,32 +28,48 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Validar manifiesto aprobado
-        run: python scripts/mes.py --mes "${{ github.event.inputs.mes }}" --require-approved
+      - name: Validar contenido aprobado
+        shell: bash
+        run: |
+          set -euo pipefail
+          SEMANA_ARGS=()
+          if [ "${{ inputs.semana }}" != "todas" ]; then
+            SEMANA_ARGS=(--semana "${{ inputs.semana }}")
+          fi
+          python scripts/mes.py --mes "${{ inputs.mes }}" "${SEMANA_ARGS[@]}" --require-approved
+          python scripts/validar_conceptos_visuales.py --mes "${{ inputs.mes }}" "${SEMANA_ARGS[@]}" --require-approved
 
-      - name: Diseñar carruseles sin alterar copy
+      - name: Diseñar carruseles sin alterar copy ni concepto
         uses: anthropics/claude-code-action@v1
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           claude_args: "--model claude-opus-4-8 --allowedTools Read,Write,Edit,Glob,Grep,Bash"
           show_full_output: true
           prompt: |
-            MES: "${{ github.event.inputs.mes }}"
+            CICLO: "${{ inputs.mes }}"
+            SEMANA: "${{ inputs.semana }}"
             Leé scripts/PROMPT_preparar_assets_mes.md y ejecutalo exactamente.
-            El manifiesto ya está aprobado: no cambies una sola palabra ni ningún campo.
-            No leas archive/** y no modifiques ningún archivo relacionado con creación o edición de video.
-            Éxito = todos los JSON visuales existen y `python scripts/validar_assets_mes.py --mes "${{ github.event.inputs.mes }}" --require-approved` finaliza sin errores.
+            El contenido y el concepto visual ya están aprobados.
+            No cambies una sola palabra ni inventes una representación.
+            No leas archive/** y no modifiques el subsistema de video.
+            Si SEMANA no es "todas", diseñá únicamente esa semana.
+            Éxito = JSON visuales completos y validaciones sin errores.
 
-      - name: Validar assets
-        run: python scripts/validar_assets_mes.py --mes "${{ github.event.inputs.mes }}" --require-approved
+      - name: Validar assets y trazabilidad
+        shell: bash
+        run: |
+          set -euo pipefail
+          SEMANA_ARGS=()
+          if [ "${{ inputs.semana }}" != "todas" ]; then
+            SEMANA_ARGS=(--semana "${{ inputs.semana }}")
+          fi
+          python scripts/validar_conceptos_visuales.py --mes "${{ inputs.mes }}" "${SEMANA_ARGS[@]}" --require-approved
+          python scripts/validar_assets_mes.py --mes "${{ inputs.mes }}" "${SEMANA_ARGS[@]}" --require-approved
 
       - name: Commit de especificaciones visuales
         run: |
           git config user.name "motion-engine"
           git config user.email "engine@motion.local"
-          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           git add design-system/slides/
-          git commit -m "assets: preparar mes ${{ github.event.inputs.mes }}" || echo "sin cambios"
+          git commit -m "assets: preparar ${{ inputs.mes }} semana ${{ inputs.semana }}" || echo "sin cambios"
           git push origin "HEAD:${GITHUB_REF_NAME}"
