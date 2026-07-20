@@ -38,7 +38,17 @@ jobs:
 
       - name: Restaurar recurso conceptual aprobado
         run: |
-          base64 -d design-system/generated/2026-07/rock-vs-solution.jpg.b64 > design-system/generated/2026-07/rock-vs-solution.jpg
+          python - <<'PY'
+          import base64
+          import re
+          from pathlib import Path
+          source = Path('design-system/generated/2026-07/rock-vs-solution.jpg.b64')
+          target = Path('design-system/generated/2026-07/rock-vs-solution.jpg')
+          payload = ''.join(re.findall(r'[A-Za-z0-9+/=]', source.read_text(encoding='utf-8')))
+          payload += '=' * (-len(payload) % 4)
+          target.write_bytes(base64.b64decode(payload, validate=False))
+          print(target, target.stat().st_size)
+          PY
           file design-system/generated/2026-07/rock-vs-solution.jpg
 
       - name: Renderizar assets finales
