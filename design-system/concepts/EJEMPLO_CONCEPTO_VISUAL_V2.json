@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "piece_id": "ejemplo-line-system",
+  "status": "draft",
+  "approved_by": null,
+  "approved_at": null,
+  "visual_message": "Dos áreas avanzan por separado hasta que una relación las conecta.",
+  "concept": "Dos trayectorias aisladas convergen en un nodo compartido.",
+  "conceptual_rationale": "La idea depende de una relación entre trayectorias y se expresa mejor mediante un diagrama plano.",
+  "visual_family": "line_system",
+  "family_lock": true,
+  "representation": "diagram",
+  "execution": "code",
+  "visual_resources": ["topology", "trajectory", "absence"],
+  "exclusions": ["shadows", "3d_ribbons", "volumetric_objects"],
+  "quality_target": "reference_grade",
+  "quality_checks": {
+    "single_family": true,
+    "single_dominant_idea": true,
+    "mobile_legibility": true,
+    "reference_consistency": true
+  },
+  "brand_resources": ["motion_palette", "motion_typography", "motion_logo"],
+  "references": ["design-system/references/line-system/README.md"],
+  "approved_preview": null,
+  "generation": null
+}
