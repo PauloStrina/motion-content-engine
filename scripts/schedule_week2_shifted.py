@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -31,7 +32,7 @@ def main() -> int:
     config = B.load_config()
     catalog = MES.leer_catalogo()
     reels = {item["id"]: item for item in catalog.get("reels", [])}
-    media_base = schedule["media_base"].rstrip("/")
+    media_base = os.environ.get("MEDIA_BASE", schedule["media_base"]).rstrip("/")
     client = B.BlotatoClient(dry=args.dry)
     now = dt.datetime.now(dt.timezone.utc)
     results = []
