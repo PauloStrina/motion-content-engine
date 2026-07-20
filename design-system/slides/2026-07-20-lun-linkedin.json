@@ -8,7 +8,7 @@
       "pager": "CASO REAL",
       "mid": {
         "top": 150,
-        "bottom": 180,
+        "bottom": 185,
         "left": 70,
         "width": 940,
         "justify": "center",
@@ -18,7 +18,7 @@
       "layers": [
         {
           "type": "svg_path",
-          "d": "M 70 1050 C 210 1050 230 930 350 930 C 470 930 490 1060 610 1060 C 735 1060 755 940 875 940 C 930 940 970 970 1010 1010",
+          "d": "M 70 1040 C 210 1040 235 930 350 930 C 470 930 500 1055 620 1055 C 745 1055 770 940 885 940 C 945 940 985 980 1025 1015",
           "viewBox": "0 0 1080 1350",
           "fill": "transparent",
           "stroke": "aqua",
@@ -27,53 +27,6 @@
           "linejoin": "round",
           "z": 1,
           "opacity": 1
-        },
-        {
-          "type": "rect",
-          "x": 90,
-          "y": 270,
-          "w": 410,
-          "h": 570,
-          "fill": "naranja",
-          "radius": 0,
-          "z": 2
-        },
-        {
-          "type": "rect",
-          "x": 590,
-          "y": 390,
-          "w": 330,
-          "h": 110,
-          "fill": "transparent",
-          "stroke": "violeta",
-          "stroke_width": 8,
-          "radius": 0,
-          "z": 2
-        },
-        {
-          "type": "rect",
-          "x": 590,
-          "y": 545,
-          "w": 250,
-          "h": 110,
-          "fill": "transparent",
-          "stroke": "violeta",
-          "stroke_width": 8,
-          "radius": 0,
-          "z": 2
-        },
-        {
-          "type": "rect",
-          "x": 590,
-          "y": 700,
-          "w": 170,
-          "h": 110,
-          "fill": "transparent",
-          "stroke": "violeta",
-          "stroke_width": 8,
-          "radius": 0,
-          "z": 2,
-          "opacity": 0.35
         }
       ],
       "blocks": [
@@ -81,7 +34,7 @@
           "type": "rows",
           "ops": [1.0],
           "gap": 0,
-          "html": "<div style='display:grid;grid-template-columns:410px 1fr;column-gap:90px;align-items:center;min-height:700px'><div style='height:570px;padding:52px 42px;display:flex;flex-direction:column;justify-content:space-between'><div><div style=\"font-family:'GothamM';font-size:25px;letter-spacing:3px;color:#1A1A1A;text-transform:uppercase\">DECISIÓN YA TOMADA</div><div class='futura' style='font-size:104px;line-height:94px;color:#FFFFFF;margin-top:36px'>SOFTWARE</div></div><div><div class='futura' style='font-size:122px;line-height:112px;color:#1A1A1A'>USD 30.000</div></div></div><div style='padding-top:35px'><div style=\"font-family:'GothamM';font-size:25px;letter-spacing:3px;color:#50235A;text-transform:uppercase\">PROCESO REAL</div><div class='lyon' style='font-size:62px;line-height:1.08;color:#1A1A1A;margin-top:24px;max-width:390px'>Todavía nadie podía explicarlo.</div><div style='margin-top:62px;font-family:GothamM;font-size:25px;letter-spacing:2px;color:#50235A'>¿QUIÉN?</div><div style='margin-top:72px;font-family:GothamM;font-size:25px;letter-spacing:2px;color:#50235A'>¿CÓMO?</div><div style='margin-top:72px;font-family:GothamM;font-size:25px;letter-spacing:2px;color:#50235A;opacity:.45'>¿CON QUÉ INFORMACIÓN?</div></div></div><div class='lyon' style='font-size:48px;line-height:1.2;color:#50235A;margin-top:42px;max-width:900px'>Una semana de relevamiento cambió la solución.</div>"
+          "html": "<div style='display:grid;grid-template-columns:430px 1fr;column-gap:70px;align-items:center'><div style='height:570px;background:#FF5000;padding:48px 36px;display:flex;flex-direction:column;justify-content:space-between'><div><div style=\"font-family:'GothamM';font-size:24px;letter-spacing:3px;color:#1A1A1A;text-transform:uppercase\">DECISIÓN YA TOMADA</div><div class='futura' style='font-size:84px;line-height:80px;color:#FFFFFF;margin-top:40px'>SOFTWARE</div></div><div class='futura' style='font-size:92px;line-height:88px;color:#1A1A1A'>USD<br>30.000</div></div><div><div style=\"font-family:'GothamM';font-size:24px;letter-spacing:3px;color:#50235A;text-transform:uppercase\">PROCESO REAL</div><div class='lyon' style='font-size:52px;line-height:1.08;color:#1A1A1A;margin-top:22px;max-width:400px'>Todavía nadie podía explicarlo.</div><div style='display:flex;flex-direction:column;gap:22px;margin-top:48px'><div style='border:7px solid #50235A;padding:18px 20px;font-family:GothamM;font-size:23px;letter-spacing:2px;color:#50235A'>¿QUIÉN?</div><div style='border:7px solid #50235A;padding:18px 20px;font-family:GothamM;font-size:23px;letter-spacing:2px;color:#50235A;width:78%'>¿CÓMO?</div><div style='border:7px solid #BCAFC0;padding:18px 20px;font-family:GothamM;font-size:22px;letter-spacing:1px;color:#A896AE;width:58%'>¿CON QUÉ INFORMACIÓN?</div></div></div></div><div class='lyon' style='font-size:46px;line-height:1.18;color:#50235A;margin-top:46px;max-width:900px'>Una semana de relevamiento cambió la solución.</div>"
         }
       ],
       "foot": "Primero comprender el sistema.<br>Después definir la tecnología.",
