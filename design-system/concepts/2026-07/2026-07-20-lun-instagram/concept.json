@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "piece_id": "2026-07-20-lun-instagram",
+  "status": "draft",
+  "approved_by": null,
+  "approved_at": null,
+  "visual_message": "La semana de relevamiento cambia el orden de la decisión: primero comprender el sistema, después definir la tecnología.",
+  "concept": "Carrusel editorial de ocho placas basado en una misma transformación visual. La historia comienza con un bloque rígido naranja —software e inversión— que domina un proceso incompleto. A medida que avanza el relevamiento, el bloque pierde centralidad y aparecen módulos, recorridos y relaciones. El cierre integra Negocio, Tecnología y Cultura en una arquitectura común.",
+  "representation": "diagram",
+  "execution": "code",
+  "brand_resources": [
+    "scale_and_proportion",
+    "layers",
+    "modules",
+    "trajectory",
+    "folded_shapes",
+    "active_negative_space"
+  ],
+  "references": [
+    "design-system/visual-language/PRINCIPIOS.md",
+    "design-system/visual-language/RECURSOS_VISUALES.json",
+    "design-system/references/concepto-2/README.md"
+  ],
+  "approved_preview": null,
+  "generation": null
+}
