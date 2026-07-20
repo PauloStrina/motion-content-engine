@@ -1,9 +1,12 @@
 name: run-week2-shifted
 
 on:
-  push:
+  pull_request:
     branches:
       - main
+    types:
+      - opened
+      - synchronize
     paths:
       - automation/run-week2-shifted-live.json
 
@@ -80,7 +83,7 @@ jobs:
           git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           git add content/2026-07-week2/scheduled.json design-system/generated/2026-07/rock-vs-solution.jpg
           git commit -m "schedule: registrar semana 2 desplazada" || echo "sin cambios"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
 
       - name: Publicar evidencia
         uses: actions/upload-artifact@v4
