@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "families": {
+    "line_system": {
+      "name": "Sistema de líneas y nodos",
+      "reference_root": "design-system/references/line-system/",
+      "allowed_executions": ["code", "hybrid", "reuse"],
+      "allowed_resources": [
+        "topology",
+        "trajectory",
+        "containers",
+        "modules",
+        "variation",
+        "absence",
+        "scale",
+        "intersection",
+        "timeline",
+        "typographic",
+        "motion"
+      ],
+      "forbidden_resources": [
+        "layers",
+        "forces",
+        "object_metaphor",
+        "photo_intervention",
+        "generative"
+      ],
+      "quality_requirements": [
+        "single_relation",
+        "vector_precision",
+        "high_negative_space",
+        "few_elements",
+        "mobile_legibility"
+      ]
+    },
+    "conceptual_art": {
+      "name": "Arte conceptual y esquemático",
+      "reference_root": "design-system/references/conceptual-art/",
+      "allowed_executions": ["openai", "hybrid", "reuse"],
+      "allowed_resources": [
+        "layers",
+        "forces",
+        "absence",
+        "scale",
+        "intersection",
+        "object_metaphor",
+        "typographic",
+        "photo_intervention",
+        "generative",
+        "motion"
+      ],
+      "forbidden_resources": [
+        "topology",
+        "trajectory",
+        "timeline",
+        "modules"
+      ],
+      "quality_requirements": [
+        "single_metaphor",
+        "reference_grade",
+        "controlled_depth",
+        "material_coherence",
+        "mobile_legibility"
+      ]
+    }
+  }
+}

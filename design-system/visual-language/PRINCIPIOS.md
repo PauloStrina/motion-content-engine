@@ -1,20 +1,35 @@
 # LENGUAJE VISUAL OPERATIVO DE MOTION
 
 **Estado:** vigente para ejecución visual  
-**Precedencia:** subordinado a `strategy/ESTRATEGIA_MOTION_CANONICA.md` y al concepto visual aprobado de cada pieza  
+**Precedencia:** subordinado a `strategy/ESTRATEGIA_MOTION_CANONICA.md`, a `FAMILIAS_VISUALES.md` y al concepto visual aprobado de cada pieza  
 **Función:** traducir mensajes aprobados a recursos gráficos sin definir la narrativa editorial.
 
 ## 1. Principio central
 
-Motion no utiliza una plantilla visual única.
+Motion no utiliza una plantilla visual única, pero tampoco mezcla lenguajes incompatibles dentro de una misma pieza.
 
-Cada pieza debe encontrar la representación más simple y potente para hacer visible su idea. La consistencia surge de la calidad de conceptualización, la paleta, la tipografía, el uso del espacio, la precisión del sistema y el repertorio de marca; no de repetir líneas, puntos o una composición fija.
+Cada pieza debe encontrar la representación más simple y potente para hacer visible su idea y elegir una sola familia visual:
+
+- `line_system`;
+- `conceptual_art`.
+
+La consistencia surge de la calidad de conceptualización, la elección correcta de familia, la paleta, la tipografía, el uso del espacio, la precisión del sistema y el repertorio de marca.
 
 Pregunta de trabajo:
 
-> ¿Cuál es la forma visual más simple de hacer visible esta idea?
+> ¿Cuál es la forma visual más simple de hacer visible esta idea y qué familia puede expresarla sin contaminación?
 
-## 2. Criterios obligatorios
+## 2. Regla de familia única
+
+- una pieza utiliza una sola familia;
+- todas las placas de un carrusel utilizan la misma familia;
+- los recursos de la otra familia quedan explícitamente excluidos;
+- tipografía, paleta y logotipo son capas de identidad comunes;
+- una pieza no se aprueba porque “se vea Motion”: debe tener claridad conceptual y calidad comparable con sus referencias.
+
+La definición completa vive en `design-system/visual-language/FAMILIAS_VISUALES.md`.
+
+## 3. Criterios obligatorios
 
 - limpieza y legibilidad móvil;
 - una idea visual dominante;
@@ -24,11 +39,15 @@ Pregunta de trabajo:
 - movimiento con significado;
 - correspondencia entre forma y mensaje;
 - variedad suficiente para no quemar un recurso;
-- trazabilidad entre concepto aprobado y asset final.
+- trazabilidad entre concepto aprobado y asset final;
+- fidelidad a una única familia;
+- calidad de ejecución equivalente a la referencia seleccionada.
 
-## 3. Repertorio abierto
+## 4. Repertorio de recursos
 
-Las familias visuales son recursos, no categorías rígidas:
+Los recursos se organizan bajo las dos familias visuales. No son intercambiables libremente.
+
+Recursos disponibles:
 
 - relaciones y topologías;
 - trayectorias y evolución;
@@ -49,9 +68,9 @@ Las familias visuales son recursos, no categorías rígidas:
 - imágenes generativas;
 - diagramas animados.
 
-Líneas, nodos y círculos se utilizan cuando explican conexiones, actores, silos, flujos, trayectorias u orquestación. No constituyen la firma obligatoria de Motion.
+`FAMILIAS_VISUALES.json` define qué recursos puede utilizar cada familia y cuáles están prohibidos.
 
-## 4. Branding
+## 5. Branding
 
 Paleta oficial:
 
@@ -67,56 +86,50 @@ Tipografías:
 - Lyon: interpretación, tesis, reflexión, dimensión humana;
 - Gotham Narrow: información secundaria, numeración y microtexto.
 
-Recursos prioritarios del branding:
-
-- formas continuas y plegadas;
-- deformación y cambio de plano;
-- estrías, ecos y huellas;
-- superposición y gradiente;
-- bloques cromáticos intensos;
-- serialidad y repetición;
-- fotografía editorial intervenida;
-- ondas y campos concéntricos.
-
 No es obligatorio utilizar todos los colores ni todos los recursos en una pieza.
 
-## 5. Modos de ejecución
+## 6. Modos de ejecución
 
 ### `code`
 
-Para diagramas, mapas, tipografía, relaciones exactas, datos y geometrías controladas.
+Para diagramas, mapas, tipografía, relaciones exactas, datos y geometrías controladas. Es el modo principal de `line_system`.
 
 ### `openai`
 
-Para escenas, objetos, texturas, formas orgánicas o recursos que no conviene construir manualmente.
+Para objetos, escenas, texturas, volumen, formas orgánicas y recursos de `conceptual_art` que requieren alta calidad material.
 
 ### `hybrid`
 
-Modo recomendado cuando una imagen generativa se combina con tipografía, diagramas, branding y composición determinística.
+Recurso generativo más tipografía, logo y composición determinística. Es el modo principal cuando `conceptual_art` necesita precisión de marca.
 
 ### `reuse`
 
 La imagen aprobada se utiliza sin regeneración.
 
-## 6. Reglas de fidelidad
+Los modos permitidos se validan por familia.
 
-- Una imagen validada no se vuelve a generar desde texto si se requiere el mismo resultado.
-- El preview aprobado se conserva como asset o como referencia de edición.
-- Logos, copy, diagramas exactos y composición final se resuelven en código.
-- El modelo generativo no debe incluir texto final de publicación salvo una decisión explícita.
-- Los prompts y parámetros quedan versionados.
-- Los recursos de terceros son referencia, no material final, salvo licencia verificada.
+## 7. Reglas de fidelidad
 
-## 7. Fuentes principales de inspiración
+- una imagen validada no se vuelve a generar desde texto si se requiere el mismo resultado;
+- el preview aprobado se conserva como asset o como referencia de edición;
+- logos, copy y composición final se resuelven con precisión determinística;
+- el modelo generativo no incluye texto final de publicación ni logo;
+- los prompts y parámetros quedan versionados;
+- las referencias de terceros no se publican salvo licencia verificada;
+- no se marca un contrato como `approved` antes de mostrar y aprobar el preview.
+
+## 8. Fuentes principales de inspiración
 
 1. Branding original de Motion.
-2. Referencias esquemáticas minimalistas compartidas por Paulo.
-3. Colección `Concepto 2`, documentada en `design-system/references/concepto-2/README.md`.
+2. Referencias `line_system` compartidas por Paulo.
+3. Referencias `conceptual_art` compartidas y aprobadas por Paulo.
+4. Colección `Concepto 2` cuando sea coherente con la familia seleccionada.
 
 La jerarquía es siempre:
 
 1. mensaje aprobado;
 2. estrategia y branding Motion;
-3. concepto visual aprobado;
-4. referencias;
-5. capacidad técnica de ejecución.
+3. familia visual seleccionada;
+4. concepto visual aprobado;
+5. referencias de la misma familia;
+6. capacidad técnica de ejecución.
