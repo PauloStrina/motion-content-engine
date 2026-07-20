@@ -27,16 +27,16 @@ jobs:
           print(marker)
           PY
 
-      - name: Instalar generación y render
+      - name: Instalar render
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq libpango-1.0-0 libpangoft2-1.0-0 poppler-utils
-          pip install --quiet weasyprint "openai>=1.0.0"
+          pip install --quiet weasyprint
 
-      - name: Generar recurso conceptual
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python scripts/generar_imagen_conceptual.py --concept design-system/concepts/2026-07/2026-07-21-problema/concept.json --force
+      - name: Restaurar recurso conceptual aprobado
+        run: |
+          base64 -d design-system/generated/2026-07/rock-vs-solution.jpg.b64 > design-system/generated/2026-07/rock-vs-solution.jpg
+          file design-system/generated/2026-07/rock-vs-solution.jpg
 
       - name: Renderizar assets finales
         run: |
@@ -78,7 +78,7 @@ jobs:
           git config user.name "motion-engine"
           git config user.email "engine@motion.local"
           git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
-          git add content/2026-07-week2/scheduled.json design-system/generated/2026-07/
+          git add content/2026-07-week2/scheduled.json design-system/generated/2026-07/rock-vs-solution.jpg
           git commit -m "schedule: registrar semana 2 desplazada" || echo "sin cambios"
           git push origin "HEAD:${GITHUB_REF_NAME}"
 
