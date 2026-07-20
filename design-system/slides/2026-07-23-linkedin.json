@@ -1,0 +1,19 @@
+{
+  "episodio": "Resultados del caso de envases",
+  "slides": [
+    {
+      "bg": "blanco", "logo": "violeta", "eyebrow_color": "naranja", "pager": "RESULTADOS",
+      "mid": {"top": 145, "bottom": 175, "left": 70, "width": 520, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [{"type": "image", "src": "design-system/generated/2026-07/rock-vs-solution.jpg", "x": 540, "y": 160, "w": 500, "h": 930, "fit": "contain", "z": 1, "opacity": 0.92}],
+      "blocks": [
+        {"type": "futura", "text": "USD 30.000", "size": 128, "lh": 118, "color": "naranja"},
+        {"type": "lyon", "text": "de inversión evitada", "size": 45, "lh2": 1.08, "color": "violeta", "mb": 45},
+        {"type": "futura", "text": "100%", "size": 128, "lh": 118, "color": "aqua"},
+        {"type": "lyon", "text": "del proceso trackeado", "size": 45, "lh2": 1.08, "color": "violeta", "mb": 45},
+        {"type": "futura", "text": "USD 40.000", "size": 112, "lh": 106, "color": "naranja"},
+        {"type": "lyon", "text": "de ahorro anual", "size": 45, "lh2": 1.08, "color": "violeta"}
+      ],
+      "foot": "Comprender el proceso produjo más valor que la compra.", "foot_color": "violeta"
+    }
+  ]
+}

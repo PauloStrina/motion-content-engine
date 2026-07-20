@@ -1,0 +1,92 @@
+name: run-week2-shifted
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - automation/run-week2-shifted-live.json
+
+permissions:
+  contents: write
+
+jobs:
+  render-and-schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validar disparador
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          marker=json.loads(Path('automation/run-week2-shifted-live.json').read_text())
+          assert marker.get('mode') == 'live'
+          assert marker.get('week') == 2
+          print(marker)
+          PY
+
+      - name: Instalar generación y render
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libpango-1.0-0 libpangoft2-1.0-0 poppler-utils
+          pip install --quiet weasyprint "openai>=1.0.0"
+
+      - name: Generar recurso conceptual
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/generar_imagen_conceptual.py --concept design-system/concepts/2026-07/2026-07-21-problema/concept.json --force
+
+      - name: Renderizar assets finales
+        run: |
+          mkdir -p media_out
+          python design-system/render.py design-system/slides/2026-07-21-linkedin.json media_out --png
+          python design-system/render.py design-system/slides/2026-07-21-instagram.json media_out --png
+          python design-system/render.py design-system/slides/2026-07-23-linkedin.json media_out --png
+          python design-system/render.py design-system/slides/2026-07-23-instagram.json media_out --png
+          test "$(find media_out -name '*.png' | wc -l)" -eq 11
+          ls -lah media_out
+
+      - name: Publicar medios en motion-media
+        env:
+          TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}
+        run: |
+          git clone "https://x-access-token:${TOKEN}@github.com/ops-motionco/motion-media.git" media_repo
+          mkdir -p media_repo/carruseles
+          cp media_out/*.png media_repo/carruseles/
+          cd media_repo
+          git config user.name "motion-engine"
+          git config user.email "engine@motion.local"
+          git add carruseles/
+          git commit -m "media: semana 2 desplazada 2026-07" || echo "sin cambios"
+          git push
+
+      - name: Esperar GitHub Pages
+        run: sleep 90
+
+      - name: Dry run
+        run: python scripts/schedule_week2_shifted.py --dry
+
+      - name: Programar en Blotato
+        env:
+          BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
+        run: python scripts/schedule_week2_shifted.py
+
+      - name: Guardar IDs de programación
+        run: |
+          git config user.name "motion-engine"
+          git config user.email "engine@motion.local"
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git add content/2026-07-week2/scheduled.json design-system/generated/2026-07/
+          git commit -m "schedule: registrar semana 2 desplazada" || echo "sin cambios"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Publicar evidencia
+        uses: actions/upload-artifact@v4
+        with:
+          name: week2-shifted-evidence
+          path: |
+            media_out/
+            content/2026-07-week2/scheduled.json
+          retention-days: 14

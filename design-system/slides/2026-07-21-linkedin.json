@@ -1,0 +1,22 @@
+{
+  "episodio": "Software elegido antes de comprender el proceso",
+  "slides": [
+    {
+      "bg": "blanco",
+      "logo": "violeta",
+      "eyebrow_color": "naranja",
+      "pager": "CASO REAL",
+      "mid": {"top": 150, "bottom": 175, "left": 70, "width": 500, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "image", "src": "design-system/generated/2026-07/rock-vs-solution.jpg", "x": 500, "y": 120, "w": 560, "h": 1040, "fit": "contain", "z": 1}
+      ],
+      "blocks": [
+        {"type": "lyon", "text": "Ya eligieron el software,", "size": 67, "lh2": 1.04, "color": "violeta", "mb": 22},
+        {"type": "futura", "text": "PERO TODAVÍA NADIE PUEDE EXPLICAR EL PROCESO.", "size": 76, "lh": 72, "color": "naranja", "mb": 38},
+        {"type": "lyont", "text": "Estaban por invertir USD 30.000 en una solución que no necesitaban.", "size": 38, "color": "violeta", "mt": 0}
+      ],
+      "foot": "La respuesta estaba<br>en lo que ya tenían.",
+      "foot_color": "aqua"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "piece_id": "2026-07-21-problema",
+  "status": "approved",
+  "approved_by": "Paulo",
+  "approved_at": "2026-07-20T16:36:00-03:00",
+  "visual_message": "Una solución sobredimensionada de USD 30.000 pesa sobre una necesidad que podía resolverse con un recurso pequeño ya disponible.",
+  "concept": "Una roca monumental representa la compra externa; un pequeño módulo aqua sostiene la solución real.",
+  "conceptual_rationale": "La diferencia de escala vuelve visible la desproporción entre la inversión prevista y la solución necesaria.",
+  "visual_family": "conceptual_art",
+  "family_lock": true,
+  "representation": "single_concept",
+  "execution": "hybrid",
+  "visual_resources": ["scale", "object_metaphor", "absence", "typographic", "generative"],
+  "exclusions": ["nodes", "trajectory", "timeline", "technical_diagrams"],
+  "quality_target": "reference_grade",
+  "quality_checks": {
+    "single_family": true,
+    "single_dominant_idea": true,
+    "mobile_legibility": true,
+    "reference_consistency": true
+  },
+  "brand_resources": ["motion_palette", "motion_typography", "motion_logo"],
+  "references": ["design-system/references/conceptual-art/README.md"],
+  "approved_preview": "design-system/generated/2026-07/rock-vs-solution.jpg",
+  "generation": {
+    "model": "gpt-image-2-2026-04-21",
+    "prompt": "High-end editorial conceptual art, vertical 4:5 composition, off-white studio background. A monumental, extremely heavy dark stone monolith represents an unnecessary USD 30,000 software purchase; the scale must feel excessive and intimidating. Under one edge of the monolith, a very small precise mint-aqua modular connector or compact toolbox effortlessly solves the actual problem and supports the system. Strong contrast of scale: huge expensive solution versus tiny adequate solution. Refined sculptural object, controlled realistic shadow, premium art-direction, minimal composition, lots of negative space, Motion color accents in orange, deep purple and mint aqua. No people, no screens, no dashboards, no lines-and-nodes diagrams, no text, no letters, no logos, no numbers embedded in the image.",
+    "output": "design-system/generated/2026-07/rock-vs-solution.jpg",
+    "size": "1024x1536",
+    "quality": "high",
+    "background": "opaque",
+    "output_format": "jpeg"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "episodio": "Comprender antes de comprar",
+  "slides": [
+    {
+      "bg": "blanco", "logo": "violeta", "eyebrow_color": "naranja", "pager": "01 — 06",
+      "mid": {"top": 140, "bottom": 175, "left": 70, "width": 520, "justify": "flex-start", "align": "stretch", "z": 10},
+      "layers": [{"type": "image", "src": "design-system/generated/2026-07/rock-vs-solution.jpg", "x": 470, "y": 210, "w": 570, "h": 980, "fit": "contain", "z": 1}],
+      "blocks": [
+        {"type": "lyon", "text": "Ya eligieron el software,", "size": 65, "lh2": 1.05, "color": "violeta", "mb": 20},
+        {"type": "futura", "text": "PERO NADIE PODÍA EXPLICAR EL PROCESO.", "size": 72, "lh": 68, "color": "naranja"}
+      ],
+      "foot": "USD 30.000 antes de relevar.", "foot_color": "violeta"
+    },
+    {
+      "bg": "blanco", "logo": "violeta", "eyebrow_color": "naranja", "pager": "02 — 06",
+      "mid": {"top": 155, "bottom": 180, "left": 84, "width": 912, "justify": "flex-start", "align": "stretch", "z": 10},
+      "layers": [{"type": "image", "src": "design-system/generated/2026-07/rock-vs-solution.jpg", "x": 610, "y": 350, "w": 390, "h": 650, "fit": "contain", "z": 1, "opacity": 0.92}],
+      "blocks": [
+        {"type": "futura", "text": "ANTES DE COMPRAR,", "size": 86, "lh": 82, "color": "violeta", "mb": 28},
+        {"type": "lyon", "text": "relevamos cómo funcionaba realmente.", "size": 66, "lh2": 1.12, "color": "negro", "maxw": 590}
+      ],
+      "foot": "Una semana cambió la decisión.", "foot_color": "naranja"
+    },
+    {
+      "bg": "violeta", "logo": "blanco", "eyebrow_color": "aqua", "pager": "03 — 06",
+      "mid": {"top": 155, "bottom": 180, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [{"type": "image", "src": "design-system/generated/2026-07/rock-vs-solution.jpg", "x": 620, "y": 420, "w": 360, "h": 600, "fit": "contain", "z": 1, "opacity": 0.18}],
+      "blocks": [
+        {"type": "lyon", "text": "Mapeamos el proceso, las personas y la información.", "size": 68, "lh2": 1.1, "color": "blanco", "mb": 46},
+        {"type": "futura", "text": "TAMBIÉN REVISAMOS LAS HERRAMIENTAS QUE YA ESTABAN DISPONIBLES.", "size": 74, "lh": 70, "color": "aqua"}
+      ],
+      "foot": "El sistema era más amplio que la compra.", "foot_color": "naranja"
+    },
+    {
+      "bg": "blanco", "logo": "violeta", "eyebrow_color": "naranja", "pager": "04 — 06",
+      "mid": {"top": 155, "bottom": 180, "left": 84, "width": 560, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [{"type": "image", "src": "design-system/generated/2026-07/rock-vs-solution.jpg", "x": 580, "y": 250, "w": 430, "h": 790, "fit": "contain", "z": 1}],
+      "blocks": [
+        {"type": "futura", "text": "LA SOLUCIÓN YA ESTABA AL ALCANCE.", "size": 82, "lh": 78, "color": "naranja", "mb": 36},
+        {"type": "lyon", "text": "Usamos herramientas de Microsoft que la empresa ya tenía licenciadas.", "size": 54, "lh2": 1.15, "color": "violeta", "maxw": 520}
+      ],
+      "foot": "Sin costo adicional de licencias.", "foot_color": "aqua"
+    },
+    {
+      "bg": "naranja", "logo": "blanco", "eyebrow_color": "negro", "pager": "05 — 06",
+      "mid": {"top": 170, "bottom": 180, "left": 84, "width": 912, "justify": "center", "align": "center", "z": 10},
+      "layers": [{"type": "image", "src": "design-system/generated/2026-07/rock-vs-solution.jpg", "x": 350, "y": 300, "w": 380, "h": 640, "fit": "contain", "z": 1, "opacity": 0.14}],
+      "blocks": [
+        {"type": "futura", "text": "NO ERA NECESARIO INCORPORAR OTRO SOFTWARE.", "size": 112, "lh": 104, "color": "negro"}
+      ],
+      "foot": "La mejor compra fue la que no se hizo.", "foot_color": "blanco"
+    },
+    {
+      "bg": "blanco", "logo": "violeta", "eyebrow_color": "naranja", "pager": "06 — 06",
+      "mid": {"top": 155, "bottom": 180, "left": 84, "width": 580, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [{"type": "image", "src": "design-system/generated/2026-07/rock-vs-solution.jpg", "x": 610, "y": 320, "w": 390, "h": 690, "fit": "contain", "z": 1}],
+      "blocks": [
+        {"type": "lyon", "text": "Primero comprendé el sistema.", "size": 66, "lh2": 1.08, "color": "violeta", "mb": 32},
+        {"type": "futura", "text": "DESPUÉS DEFINÍ QUÉ TECNOLOGÍA NECESITA.", "size": 86, "lh": 80, "color": "naranja"}
+      ],
+      "foot": "Programa de Transformación Digital", "foot_color": "aqua"
+    }
+  ]
+}
