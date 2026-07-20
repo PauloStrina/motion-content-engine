@@ -26,6 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -79,3 +81,31 @@ jobs:
         run: |
           python design-system/render.py design-system/slides/EJEMPLO_HEM_carrusel.json /tmp/motion-example.pdf
           test "$(pdfinfo /tmp/motion-example.pdf | awk '/^Pages:/ {print $2}')" = "8"
+
+      - name: Renderizar previews modificados
+        if: ${{ github.event_name == 'pull_request' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/visual-preview
+          BASE_SHA="${{ github.event.pull_request.base.sha }}"
+          mapfile -t SPECS < <(git diff --name-only "$BASE_SHA" "$GITHUB_SHA" -- 'design-system/slides/*.json')
+          if [ "${#SPECS[@]}" -eq 0 ]; then
+            echo "No hay especificaciones visuales modificadas."
+            exit 0
+          fi
+          for spec in "${SPECS[@]}"; do
+            base="$(basename "$spec" .json)"
+            python design-system/render.py "$spec" "/tmp/visual-preview/${base}.pdf"
+            python design-system/render.py "$spec" /tmp/visual-preview --png
+          done
+          ls -lah /tmp/visual-preview
+
+      - name: Publicar previews como artifact
+        if: ${{ github.event_name == 'pull_request' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-preview
+          path: /tmp/visual-preview/
+          if-no-files-found: warn
+          retention-days: 7
