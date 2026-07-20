@@ -1,0 +1,161 @@
+{
+  "episodio": "La tecnología se elige antes de entender el proceso — v2",
+  "slides": [
+    {
+      "bg": "blanco",
+      "logo": "negro",
+      "eyebrow_color": "violeta",
+      "pager": "01 — 08",
+      "mid": {"top": 165, "bottom": 185, "left": 75, "width": 500, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "rect", "x": 610, "y": 220, "w": 350, "h": 690, "fill": "naranja", "radius": 0, "z": 1},
+        {"type": "svg_path", "d": "M 60 1030 C 200 1030 230 930 350 930 C 480 930 510 1050 640 1050 C 760 1050 790 945 910 945 C 960 945 1000 980 1030 1015", "viewBox": "0 0 1080 1350", "fill": "transparent", "stroke": "aqua", "stroke_width": 28, "linecap": "round", "linejoin": "round", "z": 0}
+      ],
+      "blocks": [
+        {"type": "lyon", "text": "Ya eligieron el software,", "size": 70, "color": "negro", "maxw": 480, "mb": 38},
+        {"type": "futura", "text": "PERO TODAVÍA NADIE PUEDE EXPLICAR EL PROCESO.", "size": 78, "lh": 74, "color": "violeta"},
+        {"type": "lyont", "text": "USD 30.000 antes de relevar.", "size": 42, "color": "naranja", "mt": 58}
+      ],
+      "foot": "Primero el sistema.<br>Después la tecnología.",
+      "foot_color": "violeta"
+    },
+    {
+      "bg": "negro",
+      "logo": "blanco",
+      "eyebrow_color": "naranja",
+      "pager": "02 — 08",
+      "mid": {"top": 200, "bottom": 220, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "circle", "x": 800, "y": 185, "w": 150, "h": 150, "fill": "aqua", "z": 1},
+        {"type": "rect", "x": 100, "y": 500, "w": 880, "h": 300, "fill": "transparent", "stroke": "violeta", "stroke_width": 10, "radius": 0, "z": 1}
+      ],
+      "blocks": [
+        {"type": "lyon", "text": "Una compañía estaba a punto de invertir", "size": 54, "color": "blanco", "maxw": 820, "mb": 45},
+        {"type": "lam", "text": "USD 30.000", "size": 210, "color": "naranja", "shadow": "violeta", "depth": 12},
+        {"type": "lyont", "text": "en una nueva plataforma.", "size": 48, "color": "aqua", "mt": 50}
+      ],
+      "foot": "La cifra era concreta.<br>El proceso todavía no.",
+      "foot_color": "aqua"
+    },
+    {
+      "bg": "aqua",
+      "logo": "negro",
+      "eyebrow_color": "violeta",
+      "pager": "03 — 08",
+      "mid": {"top": 175, "bottom": 185, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "line", "x1": 150, "y1": 820, "x2": 930, "y2": 820, "stroke": "violeta", "stroke_width": 12, "z": 1},
+        {"type": "circle", "x": 120, "y": 790, "w": 60, "h": 60, "fill": "naranja", "z": 2},
+        {"type": "circle", "x": 315, "y": 790, "w": 60, "h": 60, "fill": "naranja", "z": 2},
+        {"type": "circle", "x": 510, "y": 790, "w": 60, "h": 60, "fill": "naranja", "z": 2},
+        {"type": "circle", "x": 705, "y": 790, "w": 60, "h": 60, "fill": "naranja", "z": 2},
+        {"type": "circle", "x": 900, "y": 790, "w": 60, "h": 60, "fill": "violeta", "z": 2}
+      ],
+      "blocks": [
+        {"type": "lyon", "text": "Antes de comprar, relevamos cómo funcionaba realmente", "size": 58, "color": "negro", "maxw": 850, "mb": 40},
+        {"type": "futura", "text": "LA GESTIÓN DE SUS ENVASES", "size": 102, "lh": 96, "color": "violeta"},
+        {"type": "lyont", "text": "Una semana cambió la decisión tecnológica.", "size": 42, "color": "violeta", "mt": 310}
+      ],
+      "foot": "Lunes a viernes:<br>comprender antes de comprar.",
+      "foot_color": "violeta"
+    },
+    {
+      "bg": "blanco",
+      "logo": "negro",
+      "eyebrow_color": "naranja",
+      "pager": "04 — 08",
+      "mid": {"top": 155, "bottom": 180, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "rect", "x": 110, "y": 420, "w": 390, "h": 220, "fill": "violeta", "radius": 0, "z": 1},
+        {"type": "rect", "x": 580, "y": 420, "w": 390, "h": 220, "fill": "naranja", "radius": 0, "z": 1},
+        {"type": "rect", "x": 110, "y": 700, "w": 390, "h": 220, "fill": "negro", "radius": 0, "z": 1},
+        {"type": "rect", "x": 580, "y": 700, "w": 390, "h": 220, "fill": "aqua", "stroke": "violeta", "stroke_width": 8, "radius": 0, "z": 1}
+      ],
+      "blocks": [
+        {"type": "lyon", "text": "Revisamos", "size": 60, "color": "negro", "mb": 60},
+        {"type": "futura", "text": "PROCESO · PERSONAS", "size": 86, "lh": 82, "color": "violeta"},
+        {"type": "futura", "text": "INFORMACIÓN · HERRAMIENTAS", "size": 72, "lh": 70, "color": "naranja", "mb": 330},
+        {"type": "lyont", "text": "y las herramientas disponibles.", "size": 42, "color": "violeta", "mt": 20}
+      ],
+      "foot": "No eran cuatro temas.<br>Eran un mismo sistema.",
+      "foot_color": "naranja"
+    },
+    {
+      "bg": "negro",
+      "logo": "blanco",
+      "eyebrow_color": "aqua",
+      "pager": "05 — 08",
+      "mid": {"top": 175, "bottom": 185, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "rect", "x": 160, "y": 660, "w": 760, "h": 250, "fill": "aqua", "radius": 0, "z": 1},
+        {"type": "rect", "x": 220, "y": 585, "w": 170, "h": 150, "fill": "violeta", "radius": 0, "z": 2},
+        {"type": "rect", "x": 455, "y": 520, "w": 170, "h": 215, "fill": "naranja", "radius": 0, "z": 2},
+        {"type": "rect", "x": 690, "y": 610, "w": 170, "h": 125, "fill": "blanco", "radius": 0, "z": 2}
+      ],
+      "blocks": [
+        {"type": "lyon", "text": "La solución podía desarrollarse con tecnología de Microsoft", "size": 58, "color": "blanco", "maxw": 850, "mb": 55},
+        {"type": "futura", "text": "YA LICENCIADA", "size": 124, "lh": 116, "color": "aqua"},
+        {"type": "lyont", "text": "sin costo adicional de licencias.", "size": 46, "color": "naranja", "mt": 260}
+      ],
+      "foot": "Los recursos ya existían.<br>Faltaba organizarlos.",
+      "foot_color": "aqua"
+    },
+    {
+      "bg": "naranja",
+      "logo": "blanco",
+      "eyebrow_color": "negro",
+      "pager": "06 — 08",
+      "mid": {"top": 175, "bottom": 185, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "rect", "x": 150, "y": 405, "w": 780, "h": 390, "fill": "transparent", "stroke": "blanco", "stroke_width": 16, "radius": 0, "z": 1, "opacity": 0.55},
+        {"type": "line", "x1": 180, "y1": 770, "x2": 900, "y2": 425, "stroke": "negro", "stroke_width": 24, "z": 2}
+      ],
+      "blocks": [
+        {"type": "futura", "text": "NO ERA NECESARIO", "size": 108, "lh": 102, "color": "negro", "mb": 240},
+        {"type": "futura", "text": "INCORPORAR OTRO SOFTWARE", "size": 112, "lh": 104, "color": "blanco"}
+      ],
+      "foot": "La mejor compra<br>fue la que no se hizo.",
+      "foot_color": "negro"
+    },
+    {
+      "bg": "aqua",
+      "logo": "negro",
+      "eyebrow_color": "violeta",
+      "pager": "07 — 08",
+      "mid": {"top": 160, "bottom": 180, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "svg_path", "d": "M 160 755 C 300 755 320 575 480 575 C 640 575 660 755 820 755", "viewBox": "0 0 1080 1350", "fill": "transparent", "stroke": "naranja", "stroke_width": 34, "linecap": "round", "linejoin": "round", "z": 1},
+        {"type": "circle", "x": 115, "y": 710, "w": 90, "h": 90, "fill": "violeta", "z": 2},
+        {"type": "circle", "x": 775, "y": 710, "w": 90, "h": 90, "fill": "naranja", "z": 2}
+      ],
+      "blocks": [
+        {"type": "lyon", "text": "Primero comprendé", "size": 58, "color": "negro", "mb": 18},
+        {"type": "futura", "text": "EL SISTEMA", "size": 132, "lh": 124, "color": "violeta", "mb": 330},
+        {"type": "lyon", "text": "Después definí", "size": 58, "color": "negro", "mb": 18},
+        {"type": "futura", "text": "QUÉ TECNOLOGÍA NECESITA", "size": 94, "lh": 88, "color": "naranja"}
+      ],
+      "foot": "El orden de la decisión<br>cambia el resultado.",
+      "foot_color": "violeta"
+    },
+    {
+      "bg": "negro",
+      "logo": "blanco",
+      "eyebrow_color": "naranja",
+      "pager": "08 — 08",
+      "mid": {"top": 160, "bottom": 185, "left": 84, "width": 912, "justify": "center", "align": "stretch", "z": 10},
+      "layers": [
+        {"type": "rect", "x": 120, "y": 705, "w": 250, "h": 170, "fill": "violeta", "radius": 0, "z": 1},
+        {"type": "rect", "x": 415, "y": 705, "w": 250, "h": 170, "fill": "naranja", "radius": 0, "z": 1},
+        {"type": "rect", "x": 710, "y": 705, "w": 250, "h": 170, "fill": "aqua", "radius": 0, "z": 1},
+        {"type": "rect", "x": 120, "y": 875, "w": 840, "h": 150, "fill": "blanco", "radius": 0, "z": 1}
+      ],
+      "blocks": [
+        {"type": "lyon", "text": "El Programa de Transformación Digital ordena estas decisiones dentro de", "size": 54, "color": "blanco", "maxw": 850, "mb": 42},
+        {"type": "futura", "text": "UNA ARQUITECTURA COMÚN", "size": 92, "lh": 87, "color": "aqua", "mb": 350},
+        {"type": "futura", "text": "NEGOCIO · TECNOLOGÍA · CULTURA", "size": 56, "lh": 54, "color": "blanco"}
+      ],
+      "foot": "Lo único permanente<br>es el movimiento",
+      "foot_color": "naranja"
+    }
+  ]
+}
