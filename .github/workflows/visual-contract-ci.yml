@@ -62,6 +62,7 @@ jobs:
               Path("design-system/visual-language/RECURSOS_VISUALES.json"),
               Path("design-system/visual-language/FAMILIAS_VISUALES.json"),
               Path("design-system/concepts/EJEMPLO_CONCEPTO_VISUAL.json"),
+              Path("design-system/concepts/EJEMPLO_CONCEPTO_VISUAL_V2.json"),
           ]
           yaml_paths = [
               Path(".github/workflows/1a-generar-imagen-conceptual.yml"),
@@ -74,6 +75,28 @@ jobs:
           for path in yaml_paths:
               yaml.safe_load(path.read_text(encoding="utf-8"))
           print("JSON y YAML válidos")
+          PY
+
+      - name: Probar pureza de familias visuales
+        run: |
+          python - <<'PY'
+          import copy
+          import json
+          from pathlib import Path
+          from scripts.validar_conceptos_visuales import _validate_v2
+
+          families = json.loads(Path("design-system/visual-language/FAMILIAS_VISUALES.json").read_text())["families"]
+          contract = json.loads(Path("design-system/concepts/EJEMPLO_CONCEPTO_VISUAL_V2.json").read_text())
+          errors = []
+          _validate_v2(contract, contract["execution"], "ejemplo", families, errors)
+          assert not errors, errors
+
+          contaminated = copy.deepcopy(contract)
+          contaminated["visual_resources"].append("generative")
+          errors = []
+          _validate_v2(contaminated, contaminated["execution"], "contaminado", families, errors)
+          assert any("contaminación" in error or "no admitidos" in error for error in errors), errors
+          print("Familias visuales validadas")
           PY
 
       - name: Comprobar compatibilidad con manifiesto legacy
