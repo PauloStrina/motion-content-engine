@@ -5,6 +5,7 @@ on:
     paths:
       - "design-system/**"
       - "scripts/**"
+      - "skills/03-disenador.md"
       - "docs/CONTRATO_CONCEPTO_VISUAL.md"
       - "docs/CONTRATO_MANIFIESTO_MENSUAL.md"
       - ".github/workflows/1*.yml"
@@ -13,9 +14,11 @@ on:
   push:
     branches:
       - "feat/sistema-visual-*"
+      - "feat/visual-families-*"
     paths:
       - "design-system/**"
       - "scripts/**"
+      - "skills/03-disenador.md"
       - ".github/workflows/visual-contract-ci.yml"
 
 permissions:
@@ -47,7 +50,7 @@ jobs:
             scripts/generar_carrusel_mes.py \
             design-system/render.py
 
-      - name: Validar JSON y YAML modificados
+      - name: Validar JSON y YAML del sistema
         shell: bash
         run: |
           python - <<'PY'
@@ -57,6 +60,7 @@ jobs:
 
           json_paths = [
               Path("design-system/visual-language/RECURSOS_VISUALES.json"),
+              Path("design-system/visual-language/FAMILIAS_VISUALES.json"),
               Path("design-system/concepts/EJEMPLO_CONCEPTO_VISUAL.json"),
           ]
           yaml_paths = [
