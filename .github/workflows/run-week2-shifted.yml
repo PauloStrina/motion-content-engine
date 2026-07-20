@@ -16,6 +16,8 @@ permissions:
 jobs:
   render-and-schedule:
     runs-on: ubuntu-latest
+    env:
+      MEDIA_BASE: https://raw.githubusercontent.com/PauloStrina/motion-content-engine/main/public/2026-07-week2
     steps:
       - uses: actions/checkout@v4
 
@@ -61,22 +63,23 @@ jobs:
           test "$(find media_out -name '*.png' | wc -l)" -eq 11
           ls -lah media_out
 
-      - name: Publicar medios en motion-media
+      - name: Publicar medios en el repositorio primario
         env:
-          TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git clone "https://x-access-token:${TOKEN}@github.com/ops-motionco/motion-media.git" media_repo
-          mkdir -p media_repo/carruseles
-          cp media_out/*.png media_repo/carruseles/
-          cd media_repo
+          git clone "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" publish_repo
+          cd publish_repo
+          git checkout main
+          mkdir -p public/2026-07-week2
+          cp ../media_out/*.png public/2026-07-week2/
           git config user.name "motion-engine"
           git config user.email "engine@motion.local"
-          git add carruseles/
+          git add public/2026-07-week2/
           git commit -m "media: semana 2 desplazada 2026-07" || echo "sin cambios"
-          git push
+          git push origin main
 
-      - name: Esperar GitHub Pages
-        run: sleep 90
+      - name: Esperar disponibilidad pública
+        run: sleep 20
 
       - name: Dry run
         run: python scripts/schedule_week2_shifted.py --dry
