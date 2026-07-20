@@ -1,0 +1,96 @@
+{
+  "mes": "2026-07",
+  "primer_lunes": "2026-07-13",
+  "estado": "borrador_para_aprobacion",
+  "aprobado_por": null,
+  "aprobado_en": null,
+  "semanas": [
+    {
+      "numero": 1,
+      "fecha_inicio": "2026-07-13",
+      "tesis": 3,
+      "tesis_nombre": "Transformación Continua",
+      "estado": "aprobado",
+      "aprobado_por": "Paulo",
+      "aprobado_en": "2026-07-12T23:06:29-03:00",
+      "dias": {
+        "lun": {
+          "tipo": "problema",
+          "tema": "La transformación administrada como proyecto",
+          "lente_buyer": "direccion",
+          "objetivo": "instalar la necesidad de una capacidad de adaptación permanente",
+          "formato": "post_carousel",
+          "carrusel": "2026-07-13-lun-transformacion-continua",
+          "carrusel_slides": 8,
+          "slides": [
+            {"lineas": ["Cuando tu empresa termina de adaptarse a un cambio, ya apareció el siguiente."]},
+            {"lineas": ["Cambian las herramientas, las expectativas de los clientes, las formas de vender y las capacidades que necesita el equipo."]},
+            {"lineas": ["Sin embargo, solemos administrar cada cambio como un proyecto:", "planificación → implementación → cierre"]},
+            {"lineas": ["Esa secuencia ayuda a ordenar, pero supone que después del esfuerzo va a llegar una etapa de estabilidad."]},
+            {"lineas": ["Mientras el equipo aprende a usar una nueva tecnología, el mercado, los procesos o las prioridades pueden volver a modificarse."]},
+            {"lineas": ["La Mejora Continua y la Gestión del Cambio siguen siendo necesarias. Lo que pierde sentido es utilizarlas por separado y solamente en momentos puntuales."]},
+            {"lineas": ["Nuestro método de Transformación Continua® desarrolla la capacidad de observar el contexto y decidir qué conviene:", "conservar, mejorar o modificar."]},
+            {"lineas": ["No se trata de cambiar todo permanentemente. Se trata de construir una empresa capaz de adaptarse sin depender siempre de esfuerzos extraordinarios."]}
+          ],
+          "texto_linkedin": "Convengamos que en una organización multinacional la transformación rara vez avanza de forma ordenada. Cada área tiene sus prioridades, sus sistemas y sus tiempos.\n\nY es común tender a gestionar la transformación de la misma forma que administramos un proyecto: planificación, implementación y cierre. Esa secuencia es necesaria para ordenar, pero también instala una expectativa difícil de sostener: que después del esfuerzo va a llegar la estabilidad.\n\nLa realidad es que, mientras un equipo termina de incorporar una tecnología, ya cambiaron algunas capacidades, las expectativas del mercado o la manera de trabajar. La Mejora Continua sigue siendo fundamental para optimizar lo que existe, y la Gestión del Cambio es necesaria para acompañar las transiciones. Lo que hoy pierde sentido es tratarlas como disciplinas separadas, que aparecen solamente en momentos puntuales.\n\nDe esa necesidad nace nuestro framework de Transformación Continua®. No significa vivir cambiando todo ni mantener un estado de urgencia permanente. Se trata de desarrollar la capacidad de observar el contexto, revisar prioridades y distinguir qué conviene conservar, mejorar o modificar.\n\nPara lograrlo no alcanza con combinar estrategia y tecnología. Hay que diseñar dinámicas de trabajo que hagan que la adaptación no dependa de esfuerzos extraordinarios, sino de una práctica consciente.\n\nEsa es la forma de ser de @Motion. Y durante esta semana voy a compartir cómo estamos llevando este concepto a organizaciones de alta complejidad: multinacionales, multinegocio y con una fuerte tendencia a operar en silos. Es justamente en esos entornos donde el desafío deja de ser ejecutar proyectos aislados y pasa a ser integrar Negocio, Tecnología y Cultura dentro de un mismo sistema de gestión.",
+          "caption_instagram": "Transformación Continua® integra Mejora Continua, Gestión del Cambio y Diseño Organizacional para desarrollar la capacidad de adaptación permanente en las organizaciones."
+        },
+        "mar": {
+          "tipo": "metodo",
+          "tema": "Framework de Transformación Continua",
+          "lente_buyer": "direccion",
+          "objetivo": "explicar cómo se integran las disciplinas del método",
+          "formato": "video",
+          "reel_id": "2026-07-03-conceptos_4",
+          "texto_linkedin": "El contexto actual está exigiendo algo que los métodos tradicionales de gestión no pueden resolver.\n\nLa tecnología cambia mientras se la implementa. Las capacidades que una organización necesita se modifican antes de terminar de desarrollarse. Y las decisiones que parecían adecuadas al iniciar un proyecto pueden necesitar una revisión pocos meses después.\n\nEl framework de Transformación Continua® integra Mejora Continua, Gestión del Cambio y Diseño de Comportamientos para desarrollar la capacidad de adaptación permanente en las organizaciones.",
+          "caption_instagram": "La Mejora Continua optimiza. La Gestión del Cambio acompaña transiciones.\nLa Transformación Continua® integra ambas disciplinas junto con Diseño Organizacional para desarrollar organizaciones dinámicas."
+        },
+        "mie": {
+          "tipo": "resultados",
+          "tema": "De iniciativas aisladas a una arquitectura de transformación",
+          "lente_buyer": "direccion",
+          "objetivo": "mostrar una aplicación anonimizada del método sin exponer información confidencial",
+          "formato": "faltante_video",
+          "grabar": "Grabar un reel anónimo basado exclusivamente en el guion aprobado. No nombrar al cliente, áreas, diagnósticos, resultados económicos ni proyectos identificables.",
+          "guion_video": "Una organización puede tener tableros, automatizaciones, aplicaciones y entrenamientos, y aun así no haber construido un programa de transformación.\n\nLo que cambia la escala no es la cantidad de iniciativas, sino la arquitectura que las conecta.\n\nEn un trabajo reciente organizamos el programa alrededor de tres frentes: resultados y soluciones concretas, desarrollo de capacidades internas e innovación estratégica.\n\nLa tecnología fue un medio. La transformación empezó a tomar forma cuando cada proyecto dejó de avanzar por separado y pasó a responder a una misma dirección.",
+          "carrusel": "2026-07-15-mie-arquitectura-transformacion",
+          "carrusel_slides": 8,
+          "slides": [
+            {"lineas": ["Tener más proyectos digitales no significa tener una transformación."]},
+            {"lineas": ["Un tablero, una automatización o una aplicación pueden resolver problemas concretos."]},
+            {"lineas": ["Pero si cada iniciativa avanza por separado, el resultado sigue siendo fragmentado."]},
+            {"lineas": ["En un programa reciente organizamos el trabajo alrededor de tres frentes."]},
+            {"lineas": ["Resultados y soluciones concretas."]},
+            {"lineas": ["Capacidades internas para sostenerlas."]},
+            {"lineas": ["Innovación estratégica para preparar lo que viene."]},
+            {"lineas": ["La tecnología es un medio. La dirección común convierte iniciativas aisladas en transformación."]}
+          ],
+          "texto_linkedin": "En una organización compleja, un tablero, una automatización, una aplicación o una capacitación pueden generar valor por separado. El desafío aparece cuando cada iniciativa avanza con su propia lógica y ninguna termina de construir una capacidad común.\n\nEn un trabajo reciente, el punto de partida fue ordenar iniciativas muy diferentes dentro de una misma arquitectura. La estructura se organizó alrededor de tres frentes: resultados operativos y soluciones concretas, desarrollo de capacidades internas e innovación estratégica para preparar decisiones futuras.\n\nLa tecnología fue parte de la respuesta, no el centro. Lo importante fue conectar los proyectos, definir una dirección compartida y evitar que cada solución quedara aislada del resto.\n\nAhí es donde una colección de iniciativas empieza a convertirse en un programa de transformación.",
+          "caption_instagram": "Una empresa no se transforma por sumar herramientas. Se transforma cuando los proyectos, los procesos y las capacidades del equipo avanzan en la misma dirección."
+        },
+        "jue": {
+          "tipo": "conexion",
+          "tema": "La transformación como capacidad instalada",
+          "lente_buyer": "direccion",
+          "objetivo": "cerrar la semana conectando el método con una práctica permanente de gestión",
+          "formato": "carousel_news",
+          "carrusel": "2026-07-16-jue-capacidad-transformacion",
+          "carrusel_slides": 8,
+          "slides": [
+            {"lineas": ["Que termine el proyecto no significa que termine la transformación."]},
+            {"lineas": ["Una herramienta puede implementarse."]},
+            {"lineas": ["Un proceso puede mejorarse."]},
+            {"lineas": ["Una capacitación puede terminar."]},
+            {"lineas": ["Lo que tiene que quedar es la capacidad de observar, decidir y adaptarse."]},
+            {"lineas": ["Esa capacidad se construye en los hábitos, las prioridades y la forma de trabajar."]},
+            {"lineas": ["Transformación Continua® convierte la adaptación en una práctica de gestión."]},
+            {"lineas": ["El mejor resultado es quedar mejor preparados para el siguiente cambio."]}
+          ],
+          "texto_linkedin": "Hay una pregunta que aparece tarde o temprano en casi todos los programas de transformación: ¿cuándo termina?\n\nLos proyectos necesitan fechas, responsables y cierres. La dificultad aparece cuando confundimos el final de una implementación con el final de la transformación.\n\nUna herramienta puede quedar funcionando y una capacitación puede terminar. Lo que debería permanecer es la capacidad de la organización para observar el contexto, revisar prioridades y volver a adaptarse cuando sea necesario.\n\nEn la newsletter de esta semana desarrollo por qué la transformación empieza a ser sostenible cuando deja de depender de esfuerzos extraordinarios y se convierte en una práctica de gestión.",
+          "caption_instagram": "Una transformación es sostenible cuando la capacidad de adaptarse queda instalada en la empresa.",
+          "newsletter": "newsletters/newsletter_2026-07-16.md"
+        }
+      }
+    }
+  ]
+}
