@@ -1,18 +1,32 @@
-name: 2-motor-mensual
+name: 2-motor
 
-# Renderiza y programa el manifiesto mensual existente.
-# dry simula. live exige aprobación y programa en Blotato.
-
+# Renderiza y programa una semana aprobada o el ciclo completo.
+# dry simula. live exige aprobación editorial y visual.
 on:
   workflow_dispatch:
     inputs:
       mes:
-        description: "Mes a procesar (YYYY-MM)."
+        description: "Ciclo editorial (YYYY-MM)."
         required: true
+      semana:
+        description: "Semana a procesar. 'todas' procesa el ciclo completo."
+        required: true
+        default: "1"
+        type: choice
+        options:
+          - "1"
+          - "2"
+          - "3"
+          - "4"
+          - todas
       modo:
         description: "dry = simular; live = programar en Blotato"
         required: true
         default: "dry"
+        type: choice
+        options:
+          - dry
+          - live
 
 permissions:
   contents: write
@@ -27,21 +41,34 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Validar manifiesto
+      - name: Validar manifiesto y conceptos
+        shell: bash
         run: |
-          if [ "${{ github.event.inputs.modo }}" = "live" ]; then
-            python scripts/mes.py --mes "${{ github.event.inputs.mes }}" --require-approved
-          else
-            python scripts/mes.py --mes "${{ github.event.inputs.mes }}"
+          set -euo pipefail
+          SEMANA_ARGS=()
+          if [ "${{ inputs.semana }}" != "todas" ]; then
+            SEMANA_ARGS=(--semana "${{ inputs.semana }}")
           fi
+          APPROVAL_ARGS=()
+          if [ "${{ inputs.modo }}" = "live" ]; then
+            APPROVAL_ARGS=(--require-approved)
+          fi
+          python scripts/mes.py --mes "${{ inputs.mes }}" "${SEMANA_ARGS[@]}" "${APPROVAL_ARGS[@]}"
+          python scripts/validar_conceptos_visuales.py --mes "${{ inputs.mes }}" "${SEMANA_ARGS[@]}" "${APPROVAL_ARGS[@]}"
 
       - name: Validar especificaciones visuales
+        shell: bash
         run: |
-          if [ "${{ github.event.inputs.modo }}" = "live" ]; then
-            python scripts/validar_assets_mes.py --mes "${{ github.event.inputs.mes }}" --require-approved
-          else
-            python scripts/validar_assets_mes.py --mes "${{ github.event.inputs.mes }}"
+          set -euo pipefail
+          SEMANA_ARGS=()
+          if [ "${{ inputs.semana }}" != "todas" ]; then
+            SEMANA_ARGS=(--semana "${{ inputs.semana }}")
           fi
+          APPROVAL_ARGS=()
+          if [ "${{ inputs.modo }}" = "live" ]; then
+            APPROVAL_ARGS=(--require-approved)
+          fi
+          python scripts/validar_assets_mes.py --mes "${{ inputs.mes }}" "${SEMANA_ARGS[@]}" "${APPROVAL_ARGS[@]}"
 
       - name: Instalar dependencias de render
         run: |
@@ -50,10 +77,16 @@ jobs:
           pip install weasyprint --quiet
 
       - name: Renderizar carruseles
+        shell: bash
         run: |
+          set -euo pipefail
           RP=$(find . -name render.py -path "*design-system*" | head -1)
           RD=$(dirname "$RP")
-          python scripts/generar_carrusel_mes.py "${{ github.event.inputs.mes }}" media_out "$RP" "$RD/slides"
+          SEMANA_ARGS=()
+          if [ "${{ inputs.semana }}" != "todas" ]; then
+            SEMANA_ARGS=(--semana "${{ inputs.semana }}")
+          fi
+          python scripts/generar_carrusel_mes.py "${{ inputs.mes }}" media_out "$RP" "$RD/slides" "${SEMANA_ARGS[@]}"
 
       - name: Clonar motion-media y copiar medios
         env:
@@ -66,22 +99,30 @@ jobs:
           git config user.name "motion-engine"
           git config user.email "engine@motion.local"
           git add -A
-          git commit -m "media mes ${{ github.event.inputs.mes }}" || echo "sin cambios"
-          if [ "${{ github.event.inputs.modo }}" = "live" ]; then
+          git commit -m "media ${{ inputs.mes }} semana ${{ inputs.semana }}" || echo "sin cambios"
+          if [ "${{ inputs.modo }}" = "live" ]; then
             git push
           else
             echo "[DRY] no se pushea motion-media"
           fi
 
       - name: Esperar GitHub Pages
-        if: ${{ github.event.inputs.modo == 'live' }}
+        if: ${{ inputs.modo == 'live' }}
         run: sleep 90
 
-      - name: Programar el mes
+      - name: Programar alcance seleccionado
         env:
           BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
           REELS_DIR: media_repo/reels
+        shell: bash
         run: |
-          FLAG=""
-          if [ "${{ github.event.inputs.modo }}" = "dry" ]; then FLAG="--dry"; fi
-          python scripts/publicador_mes.py --mes "${{ github.event.inputs.mes }}" $FLAG
+          set -euo pipefail
+          SEMANA_ARGS=()
+          if [ "${{ inputs.semana }}" != "todas" ]; then
+            SEMANA_ARGS=(--semana "${{ inputs.semana }}")
+          fi
+          MODE_ARGS=()
+          if [ "${{ inputs.modo }}" = "dry" ]; then
+            MODE_ARGS=(--dry)
+          fi
+          python scripts/publicador_mes.py --mes "${{ inputs.mes }}" "${SEMANA_ARGS[@]}" "${MODE_ARGS[@]}"
