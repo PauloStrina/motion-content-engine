@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "piece_id": "2026-07-20-lun-linkedin",
+  "status": "draft",
+  "approved_by": null,
+  "approved_at": null,
+  "visual_message": "La decisión de compra de software está sobredimensionada frente a un proceso que todavía no fue comprendido.",
+  "concept": "Contraste de escala y ausencia. Un bloque rígido naranja representa el software ya elegido y la inversión de USD 30.000. A su lado, el proceso aparece como una secuencia incompleta, con módulos vacíos y preguntas pendientes. Una línea plegada aqua intenta conectar ambas zonas, pero queda interrumpida por la decisión tecnológica prematura.",
+  "representation": "hybrid",
+  "execution": "code",
+  "brand_resources": [
+    "scale_and_proportion",
+    "absence",
+    "folded_system_line",
+    "orange_economic_tension",
+    "active_negative_space"
+  ],
+  "references": [
+    "design-system/visual-language/PRINCIPIOS.md",
+    "design-system/visual-language/RECURSOS_VISUALES.json",
+    "design-system/references/concepto-2/README.md"
+  ],
+  "approved_preview": null,
+  "generation": null
+}
