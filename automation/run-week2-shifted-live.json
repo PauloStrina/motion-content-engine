@@ -2,7 +2,8 @@
   "mode": "live",
   "week": 2,
   "requested_by": "Paulo",
-  "requested_at": "2026-07-20T17:15:00-03:00",
+  "requested_at": "2026-07-20T17:18:00-03:00",
   "schedule": "2026-07-21/2026-07-24",
-  "run_nonce": "2026-07-20T17:15:00-03:00"
+  "run_nonce": "2026-07-20T17:18:00-03:00",
+  "execution": "pr-controlled"
 }
