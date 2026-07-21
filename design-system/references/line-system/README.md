@@ -39,6 +39,13 @@ La pieza debería poder comprenderse antes de leer una explicación extensa.
 - las curvas excesivamente perfectas o genéricas deben evitarse;
 - la pieza no debe parecer un gráfico técnico de PowerPoint.
 
+### Nodos e hitos
+
+- los nodos de inicio, contexto o sistema pueden utilizar aqua Motion;
+- los hitos clave, resultados puntuales y puntos de inflexión utilizan naranja Motion `#FF5000`;
+- no utilizar amarillo, lima ni colores sustitutos para los hitos;
+- cada nodo debe representar una etapa, decisión o relación real.
+
 ### Texto
 
 - máximo un título breve o una etiqueta conceptual;
@@ -52,14 +59,16 @@ La pieza debería poder comprenderse antes de leer una explicación extensa.
 - la identidad Motion se expresa mediante fondo, color de acento, tipografía y un logotipo discreto;
 - no agregar pager, eyebrow, footer editorial ni marcos de slide cuando el asset es una ilustración;
 - no utilizar todos los colores de Motion simultáneamente;
-- el branding no debe competir con la idea.
+- el branding no debe competir con la idea;
+- utilizar exclusivamente logos oficiales del repositorio; nunca recrearlos ni generarlos.
 
 ## 4. Referencias conceptuales
 
 - estilo Matt Gray / Henso adaptado a Motion;
 - esquema comparativo de Mejora Continua, Gestión del Cambio y Transformación Continua compartido por Paulo;
 - ejemplos donde una línea conecta, se enreda, se simplifica, se bifurca, converge o cambia de dimensión;
-- ilustraciones con apariencia meticulosa, divertida, llamativa, reconocible, compartible y con significado detrás de la forma.
+- ilustraciones con apariencia meticulosa, divertida, llamativa, reconocible, compartible y con significado detrás de la forma;
+- carruseles aprobados de Curva del Cambio y Comunidad Digital como referencias de aplicación narrativa.
 
 ## 5. Indicadores de desvío
 
@@ -69,6 +78,7 @@ La pieza está fuera de familia cuando:
 - necesita muchas etiquetas para explicar el concepto;
 - combina título, subtítulo, ejes, leyenda, notas, footer y pager;
 - utiliza varios colores de acento sin función;
+- utiliza amarillo o lima para hitos que deberían ser naranja Motion;
 - la línea podría reemplazarse por cualquier gráfico genérico sin perder significado;
 - el resultado es prolijo, pero no memorable;
 - la composición se sostiene por tipografía y no por la ilustración;
@@ -84,6 +94,8 @@ La pieza está fuera de familia cuando:
 - redes de nodos decorativas;
 - estética de dashboard o consultoría;
 - exceso de explicación dentro del asset;
+- amarillo o lima como sustituto del naranja de marca;
+- logos recreados o generados;
 - mezcla con arte conceptual volumétrico.
 
 ## 7. Control de calidad
@@ -94,7 +106,9 @@ Antes de aprobar una versión, responder:
 2. ¿La imagen puede detener el scroll sin depender de un título enorme?
 3. ¿Hay una sola relación visual dominante?
 4. ¿La composición tiene la simplicidad, organicidad y profundidad de las referencias?
-5. ¿Se eliminó todo elemento que no agregue significado?
+5. ¿Los hitos utilizan naranja Motion?
+6. ¿Se utilizaron logos oficiales?
+7. ¿Se eliminó todo elemento que no agregue significado?
 
 Si alguna respuesta es negativa, el preview no es seleccionable.
 
