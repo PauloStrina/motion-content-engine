@@ -12,7 +12,7 @@
       "piece_id": "2026-07-27-problema-curva-cambio-linkedin",
       "channel_scope": ["linkedin_paulo"],
       "visual_family": "line_system",
-      "selected_version": "final-v1",
+      "selected_version": "final-v2",
       "candidate_set_status": "valid",
       "candidate_set_reason": "La composición final reproduce la dirección aprobada y ubica Diseño de Comportamientos completamente a la derecha de la curva.",
       "candidates": [
@@ -24,11 +24,11 @@
           "rationale": "Versión descartada por gramática de infografía corporativa."
         },
         {
-          "version": "final-v1",
-          "name": "Curva del Cambio · LinkedIn final",
+          "version": "final-v2",
+          "name": "Curva del Cambio · LinkedIn final v2",
           "status": "selected",
           "spec": "design-system/reviews/2026-07-semana-3/specs/lunes-final-linkedin.json",
-          "rationale": "Curva aprobada, eje ADOPCIÓN, hitos naranja Motion, adopción acompañada en aqua y caja vertical de Diseño de Comportamientos sin interrumpir la curva."
+          "rationale": "Curva aprobada, eje ADOPCIÓN, hitos naranja Motion, adopción acompañada en aqua, branding oficial y caja vertical de Diseño de Comportamientos sin interrumpir la curva."
         }
       ]
     },
@@ -36,7 +36,7 @@
       "piece_id": "2026-07-27-problema-curva-cambio-instagram",
       "channel_scope": ["instagram"],
       "visual_family": "line_system",
-      "selected_version": "final-v1",
+      "selected_version": "final-v2",
       "candidate_set_status": "valid",
       "candidate_set_reason": "El carrusel reproduce la secuencia exacta aprobada por Paulo y solo corrige branding, tipografías, legibilidad y amarillo por naranja Motion.",
       "candidates": [
@@ -48,11 +48,11 @@
           "rationale": "Versión descartada por no representar el carrusel aprobado."
         },
         {
-          "version": "final-v1",
-          "name": "Curva del Cambio · Instagram final",
+          "version": "final-v2",
+          "name": "Curva del Cambio · Instagram final v2",
           "status": "selected",
-          "spec": "design-system/reviews/2026-07-semana-3/specs/lunes-final-instagram.json",
-          "rationale": "Diez placas que desarrollan expectativa, esfuerzo, valle, curso aislado, Diseño de Comportamientos y adopción sostenida."
+          "spec": "design-system/reviews/2026-07-semana-3/specs/lunes-final-instagram-v2.bundle.json",
+          "rationale": "Diez placas con lectura narrativa, hitos en naranja Motion y evolución desde expectativa hasta adopción sostenida."
         }
       ]
     },
@@ -60,7 +60,7 @@
       "piece_id": "2026-07-29-resultados-comunidad-digital",
       "channel_scope": ["linkedin_paulo", "instagram"],
       "visual_family": "line_system",
-      "selected_version": "final-v1",
+      "selected_version": "final-v2",
       "candidate_set_status": "valid",
       "candidate_set_reason": "Paulo aprobó el formato narrative_schematic_carousel y el concepto visual que respeta el copy literal de Comunidad Digital.",
       "candidates": [
@@ -72,11 +72,11 @@
           "rationale": "Versión descartada por interpretar journaling como estética editorial y no como carrusel narrativo esquemático."
         },
         {
-          "version": "final-v1",
-          "name": "Comunidad Digital · carrusel final",
+          "version": "final-v2",
+          "name": "Comunidad Digital · carrusel final v2",
           "status": "selected",
-          "spec": "design-system/reviews/2026-07-semana-3/specs/miercoles-final-comunidad.bundle.json",
-          "rationale": "Diez placas con copy literal, una idea y un esquema simple por placa, cifras e hitos en naranja Motion y continuidad narrativa."
+          "spec": "design-system/reviews/2026-07-semana-3/specs/miercoles-final-comunidad-v2.bundle.json",
+          "rationale": "Diez placas con copy literal, una idea y un esquema simple por placa, cifras e hitos en naranja Motion, tipografía legible y continuidad narrativa."
         }
       ]
     }
