@@ -20,6 +20,50 @@ ALLOWED_FAMILIES = {"line_system", "conceptual_art"}
 ALLOWED_CANDIDATE_STATUS = {None, "valid", "invalid", "rejected", "selected"}
 
 
+def validate_spec(
+    spec_path: Path,
+    repo_root: Path,
+    label: str,
+    errors: list[str],
+) -> None:
+    try:
+        spec_json = json.loads(spec_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        errors.append(f"{label}: JSON inválido: {exc}")
+        return
+
+    if spec_path.name.endswith(".bundle.json"):
+        slide_files = spec_json.get("slide_files")
+        if not isinstance(slide_files, list) or not slide_files:
+            errors.append(f"{label}: el bundle no contiene slide_files")
+            return
+        for index, raw_path in enumerate(slide_files, 1):
+            if not isinstance(raw_path, str) or not raw_path:
+                errors.append(f"{label}: slide_files[{index}] inválido")
+                continue
+            slide_path = (repo_root / raw_path).resolve()
+            try:
+                slide_path.relative_to(repo_root)
+            except ValueError:
+                errors.append(f"{label}: placa sale del repositorio: {raw_path}")
+                continue
+            if not slide_path.exists():
+                errors.append(f"{label}: no existe la placa {raw_path}")
+                continue
+            try:
+                slide = json.loads(slide_path.read_text(encoding="utf-8"))
+            except json.JSONDecodeError as exc:
+                errors.append(f"{label}: placa JSON inválida {raw_path}: {exc}")
+                continue
+            if not isinstance(slide, dict) or not isinstance(slide.get("layers"), list):
+                errors.append(f"{label}: placa inválida {raw_path}")
+        return
+
+    slides = spec_json.get("slides")
+    if not isinstance(slides, list) or not slides:
+        errors.append(f"{label}: el spec no contiene slides")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("review", help="Ruta a review.json")
@@ -45,11 +89,12 @@ def main() -> int:
     if status not in ALLOWED_STATUS:
         errors.append(f"status inválido: {status!r}")
 
-    if status == "invalidated_reference_mismatch":
+    if status in {"awaiting_selection", "selected", "invalidated_reference_mismatch"}:
         if review.get("publication_blocked") is not True:
-            errors.append("una revisión invalidada debe mantener publication_blocked=true")
-        if not review.get("invalidation_reason"):
-            errors.append("una revisión invalidada exige invalidation_reason")
+            errors.append(f"status={status} exige publication_blocked=true")
+
+    if status == "invalidated_reference_mismatch" and not review.get("invalidation_reason"):
+        errors.append("una revisión invalidada exige invalidation_reason")
 
     pieces = review.get("pieces")
     if not isinstance(pieces, list) or not pieces:
@@ -80,12 +125,14 @@ def main() -> int:
             candidates = []
 
         versions: set[str] = set()
+        candidate_by_version: dict[str, dict] = {}
         for candidate in candidates:
             version = candidate.get("version")
             if not version or version in versions:
                 errors.append(f"{piece_id}: versión faltante o duplicada {version!r}")
                 continue
             versions.add(version)
+            candidate_by_version[version] = candidate
 
             candidate_status = candidate.get("status")
             if candidate_status not in ALLOWED_CANDIDATE_STATUS:
@@ -108,20 +155,17 @@ def main() -> int:
             if not spec_path.exists():
                 errors.append(f"{piece_id}/{version}: no existe {spec}")
                 continue
-            try:
-                spec_json = json.loads(spec_path.read_text(encoding="utf-8"))
-            except json.JSONDecodeError as exc:
-                errors.append(f"{piece_id}/{version}: JSON inválido: {exc}")
-                continue
-            slides = spec_json.get("slides")
-            if not isinstance(slides, list) or not slides:
-                errors.append(f"{piece_id}/{version}: el spec no contiene slides")
+            validate_spec(spec_path, repo_root, f"{piece_id}/{version}", errors)
 
         selected = piece.get("selected_version")
         if selected is not None and selected not in versions:
             errors.append(f"{piece_id}: selected_version no existe: {selected!r}")
         if status in {"selected", "approved"} and selected is None:
             errors.append(f"{piece_id}: falta selected_version para status={status}")
+        if status == "selected" and selected is not None:
+            selected_candidate = candidate_by_version.get(selected, {})
+            if selected_candidate.get("status") != "selected":
+                errors.append(f"{piece_id}: el candidato seleccionado debe tener status=selected")
         if status == "invalidated_reference_mismatch" and selected is not None:
             errors.append(f"{piece_id}: una revisión invalidada no puede tener selected_version")
 
