@@ -114,7 +114,25 @@ Antes de aprobar una pieza, verificar:
 
 `Convengamos que...` queda registrado como un ejemplo positivo de apertura conversacional en esta pieza, no como una fórmula obligatoria para futuros posts.
 
-### CE-003 — Usar un concepto que ordene y eliminar extensión sin valor
+### CE-003 — Diferenciar la audiencia real de LinkedIn e Instagram
+
+- Estado: activo.
+- Alcance: general.
+- Origen: instrucción explícita de Paulo del 12 de julio de 2026.
+
+Antes de aprobar una pieza, verificar:
+
+- que LinkedIn se redacte para una audiencia compuesta principalmente por contactos de organizaciones multinacionales y de mayor complejidad;
+- que Instagram se redacte para una audiencia compuesta principalmente por empresas pequeñas y medianas;
+- que las referencias a multinacionales, estructuras multinegocio, silos, gobernanza corporativa o complejidad matricial no se trasladen automáticamente a Instagram;
+- que Instagram use situaciones reconocibles para dueños, líderes y equipos de PyMEs, sin reducir el rigor conceptual;
+- que una misma tesis pueda conservarse entre canales, pero con contexto, ejemplos, profundidad y extensión adaptados a cada audiencia;
+- que los captions de Instagram sean breves, complementen la pieza visual y no repitan el carrusel;
+- que Instagram no utilice hashtags, salvo instrucción explícita posterior.
+
+Esta segmentación por canal es operativa y responde a la composición real de las audiencias actuales. No redefine el ICP general de Motion ni obliga a que todos los contenidos de un canal adopten el mismo ejemplo.
+
+### CE-004 — Usar un concepto que ordene y eliminar extensión sin valor
 
 - Estado: activo.
 - Alcance: general.
@@ -189,7 +207,61 @@ El resto de la pieza utilizaba frases breves, párrafos de una sola oración y s
 
 Aplicar `CE-001` a todas las piezas y `CE-002` cuando el contenido permita partir de una situación observable del ICP o de una experiencia concreta de Motion. Antes de aprobar, verificar además que ningún concepto del método haya sido simplificado de manera incorrecta para mejorar el ritmo del texto.
 
-### AE-2026-07-21-002 — Curva del Cambio aplicada a la adopción de IA
+### AE-2026-07-12-002 — Adaptación de Transformación Continua a Instagram
+
+- Fecha: 2026-07-12.
+- Pieza: carrusel y copy del reel de Transformación Continua.
+- Canal: Instagram.
+- Estado: cerrada.
+- Alcance: general.
+- Disparador: el primer borrador trasladó a Instagram el contexto de multinacionales utilizado para LinkedIn, aunque la audiencia real de Instagram está compuesta principalmente por pequeñas y medianas empresas.
+
+#### Borrador observado
+
+> Cuando una multinacional termina de implementar un cambio, el contexto ya volvió a cambiar.
+
+#### Devolución del usuario
+
+- LinkedIn concentra contactos vinculados con organizaciones multinacionales.
+- Instagram concentra principalmente empresas pequeñas y medianas.
+- Las referencias a multinacionales no deben trasladarse a Instagram.
+- Los copys de Instagram deben ser más breves, sin hashtags y sin repetir el contenido del carrusel.
+- La portada del carrusel debe contener una tensión reconocible y atractiva, no una descripción neutra del tema.
+- El concepto propietario debe presentarse como `nuestro método de Transformación Continua®` cuando la pieza explica su aplicación.
+
+#### Versión final aprobada
+
+**Portada del carrusel:**
+
+> Cuando tu empresa termina de adaptarse a un cambio, ya apareció el siguiente.
+
+**Caption del carrusel:**
+
+> Transformación Continua® integra Mejora Continua, Gestión del Cambio y Diseño Organizacional para desarrollar la capacidad de adaptación permanente en las organizaciones.
+
+**Copy del reel:**
+
+> La Mejora Continua optimiza. La Gestión del Cambio acompaña transiciones.
+> La Transformación Continua® integra ambas disciplinas junto con Diseño Organizacional para desarrollar organizaciones dinámicas.
+
+#### Análisis del cambio
+
+- La situación de entrada pasó de una organización multinacional a una experiencia transversal y reconocible para una PyME: terminar de adaptarse cuando ya aparece el siguiente cambio.
+- El carrusel conserva el rigor del método sin depender de referencias a complejidad corporativa, silos o estructuras multinegocio.
+- El caption dejó de resumir las ocho placas y quedó limitado a una definición complementaria.
+- El copy del reel se redujo a dos ideas y eliminó hashtags.
+- La mayor brevedad de Instagram no implica usar frases vacías: cada oración debe sostener una función conceptual clara.
+- No debe generalizarse la portada literal ni la estructura de dos frases. El aprendizaje aplicable es la adecuación de audiencia, escala, extensión y función del caption.
+
+#### Conclusión estratégica
+
+- Compartir una tesis entre canales no implica reutilizar el mismo texto: el contexto y la profundidad deben reconstruirse desde la audiencia real.
+
+#### Control editorial derivado
+
+Aplicar `CE-003` antes de adaptar cualquier contenido entre LinkedIn e Instagram. La adaptación debe rehacerse desde la audiencia y no limitarse a recortar el mismo texto.
+
+### AE-2026-07-21-003 — Curva del Cambio aplicada a la adopción de IA
 
 - Fecha: 2026-07-21.
 - Pieza: Problema de la semana Cultura Digital.
@@ -234,4 +306,4 @@ El desarrollo posterior dedicaba numerosos párrafos a describir el regreso a la
 
 #### Control editorial derivado
 
-Aplicar `CE-003`. Antes de aprobar la versión final, verificar que ningún párrafo se limite a describir algo que el lector ya sabe sin avanzar la explicación, y que el mecanismo de Motion aparezca como consecuencia directa del concepto presentado.
+Aplicar `CE-004`. Antes de aprobar la versión final, verificar que ningún párrafo se limite a describir algo que el lector ya sabe sin avanzar la explicación, y que el mecanismo de Motion aparezca como consecuencia directa del concepto presentado.
