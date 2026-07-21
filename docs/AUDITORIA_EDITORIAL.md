@@ -33,6 +33,7 @@ borrador
 → devolución del usuario
 → versión final aprobada
 → análisis de cambios
+→ conclusión estratégica
 → clasificación del alcance
 → incorporación como control editorial
 ```
@@ -67,6 +68,10 @@ borrador
 - Qué cambió.
 - Por qué cambió.
 - Qué no debe generalizarse.
+
+#### Conclusión estratégica
+
+- Principio que mejora futuras piezas.
 
 #### Control editorial derivado
 
@@ -108,6 +113,22 @@ Antes de aprobar una pieza, verificar:
 - que una expresión eficaz de una pieza no se convierta en una muletilla para las siguientes.
 
 `Convengamos que...` queda registrado como un ejemplo positivo de apertura conversacional en esta pieza, no como una fórmula obligatoria para futuros posts.
+
+### CE-003 — Usar un concepto que ordene y eliminar extensión sin valor
+
+- Estado: activo.
+- Alcance: general.
+- Origen: instrucción explícita de Paulo del 21 de julio de 2026.
+
+Antes de aprobar una pieza, verificar:
+
+- que después del hook se introduzca rápidamente la lente conceptual que explica el fenómeno;
+- que el texto no se demore describiendo rutinas o situaciones que el lector ya reconoce y que no agregan una distinción nueva;
+- que cada párrafo cumpla una función: explicar el concepto, mostrar el mecanismo, aportar evidencia, volverlo aplicable o conectar con la oferta;
+- que la teoría no se explique de forma enciclopédica, sino únicamente en la medida necesaria para interpretar el problema;
+- que el concepto elegido conduzca naturalmente hacia el método de Motion;
+- que la pieza visual y el copy compartan el mismo modelo explicativo;
+- que la síntesis no elimine el razonamiento: menos extensión debe producir mayor claridad, no una sucesión de slogans.
 
 ## 6. Entradas de auditoría
 
@@ -160,6 +181,57 @@ El resto de la pieza utilizaba frases breves, párrafos de una sola oración y s
 - Se corrigió una imprecisión conceptual: no presentar el diagnóstico como parte de una secuencia genérica de proyectos cuando tiene una función específica dentro del Programa de Transformación Continua.
 - No debe generalizarse el uso literal de `Convengamos que`, la mención `Esa es la forma de ser de @Motion` ni la misma estructura de cierre. Son expresiones válidas en esta pieza, no una plantilla nueva.
 
+#### Conclusión estratégica
+
+- La voz gana credibilidad cuando parte de una observación específica, desarrolla una idea completa y reduce recursos típicos de la escritura algorítmica.
+
 #### Control editorial derivado
 
 Aplicar `CE-001` a todas las piezas y `CE-002` cuando el contenido permita partir de una situación observable del ICP o de una experiencia concreta de Motion. Antes de aprobar, verificar además que ningún concepto del método haya sido simplificado de manera incorrecta para mejorar el ritmo del texto.
+
+### AE-2026-07-21-002 — Curva del Cambio aplicada a la adopción de IA
+
+- Fecha: 2026-07-21.
+- Pieza: Problema de la semana Cultura Digital.
+- Canal: LinkedIn e Instagram.
+- Estado: abierta.
+- Alcance: general para compresión editorial; local para el uso de la Curva del Cambio en esta pieza.
+- Disparador: Paulo identificó que el borrador describía de manera extensa y genérica lo que ocurre después de un curso de IA, sin introducir rápidamente una explicación que agregara valor.
+
+#### Borrador observado
+
+> Porque el curso suele ocurrir en la parte más fácil de la curva del cambio: cuando todo parece posible.
+>
+> Durante la capacitación, la IA resume documentos, ordena información, escribe, analiza y resuelve en pocos minutos cosas que antes llevaban horas. La expectativa sube rápido.
+
+El desarrollo posterior dedicaba numerosos párrafos a describir el regreso a la rutina, la agenda, los archivos, la presión y las dificultades cotidianas.
+
+#### Devolución del usuario
+
+- Después del hook debe aparecer de inmediato: `Para entenderlo es muy útil conocer la Curva del Cambio`.
+- La teoría debe explicar el paralelismo entre el curso, el regreso al trabajo y el valle de la curva.
+- No debe agregarse extensión describiendo detalles de la rutina que el lector ya conoce.
+- El Diseño de Comportamientos debe aparecer como la forma de gestionar el valle, haciendo que los hábitos deseados sean los más fáciles de realizar.
+- La recuperación de la curva debe vincularse con mayor adopción y productividad en la nueva realidad.
+- El eje vertical de la pieza visual debe ser `ADOPCIÓN`.
+- Instagram también debe nombrar expresamente la Curva del Cambio.
+
+#### Versión final aprobada
+
+> Pendiente de validación.
+
+#### Análisis del cambio
+
+- El texto cambia de una narración genérica sobre la rutina a una explicación guiada por un concepto reconocible.
+- La Curva del Cambio pasa a realizar el trabajo explicativo principal.
+- El Diseño de Comportamientos aparece como mecanismo concreto para atravesar el valle, no como un agregado posterior.
+- La pieza reduce detalles previsibles y conserva solo los que ayudan a comprender el recorrido de adopción.
+- Copy y visual se alinean sobre un mismo modelo: Tiempo en el eje horizontal y Adopción en el vertical.
+
+#### Conclusión estratégica
+
+- Cuando existe un concepto capaz de explicar el fenómeno, conviene introducirlo inmediatamente y usarlo para comprimir la narrativa. El contenido gana valor cuando transforma una experiencia conocida en una distinción nueva y accionable.
+
+#### Control editorial derivado
+
+Aplicar `CE-003`. Antes de aprobar la versión final, verificar que ningún párrafo se limite a describir algo que el lector ya sabe sin avanzar la explicación, y que el mecanismo de Motion aparezca como consecuencia directa del concepto presentado.
