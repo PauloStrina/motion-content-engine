@@ -4,24 +4,30 @@
 
 El sistema separa:
 
-1. **aprendizaje y conocimiento:** actualiza situaciones, artefactos, evidencias, hooks y auditoría;
+1. **aprendizaje y conocimiento:** actualiza estrategia, situaciones, artefactos, conceptos, evidencias, hooks y auditoría;
 2. **producción semanal:** convierte contenido aprobado en manifiestos, conceptos visuales, assets y programación.
 
-La conversación con Paulo define criterio y copy. GitHub conserva trazabilidad y ejecuta.
+La conversación con Paulo define criterio, correcciones y aprobación. GitHub es la memoria persistente y gobernada del sistema. No es necesario descargar y volver a cargar documentos para actualizar las reglas activas.
+
+Los documentos adjuntos al proyecto o copias locales pueden servir como referencia histórica, pero no gobiernan cuando contradicen los archivos vigentes del repositorio.
 
 ## 2. Actualización de conocimiento desde el chat
 
 Cuando Paulo aporta o corrige información:
 
 1. identificar el aprendizaje;
-2. clasificarlo como estrategia, situación, artefacto, evidencia, hook o corrección editorial;
-3. verificar fuente, alcance y autorización;
-4. actualizar únicamente el archivo correspondiente;
-5. mantener IDs estables y referencias cruzadas;
-6. replicar la modificación en los dos repositorios;
-7. abrir PRs equivalentes;
-8. comparar los archivos relevantes;
-9. mergear ambos PRs después de aprobación.
+2. formular la **conclusión estratégica del feedback**: qué principio mejora la calidad y qué cambia en futuras piezas;
+3. clasificarlo como estrategia, situación, artefacto, concepto, evidencia, hook o corrección editorial;
+4. clasificar su alcance como `local`, `recurrente` o `general`;
+5. verificar fuente, alcance, origen y autorización;
+6. actualizar únicamente el archivo correspondiente;
+7. mantener IDs estables y referencias cruzadas;
+8. replicar la modificación en los dos repositorios;
+9. abrir PRs equivalentes;
+10. comparar los archivos relevantes;
+11. mergear ambos PRs después de aprobación.
+
+La conclusión estratégica debe explicitarse al usuario después de una corrección relevante, incluso cuando el cambio todavía no se haya incorporado al repositorio.
 
 ### Repositorios
 
@@ -52,7 +58,7 @@ Paulo corrige o aprueba:
 - tema;
 - hooks;
 - situación;
-- artefacto;
+- concepto o artefacto;
 - evidencia;
 - CTA;
 - secuencia semanal.
@@ -71,15 +77,28 @@ Se escriben versiones separadas para:
 
 El copy publicable se lee como storytelling continuo. No muestra los rótulos `Hook`, `Bajada`, `Contenido` o `CTA`.
 
+Cada párrafo debe justificar su presencia. Debe aportar al menos una de estas funciones:
+
+- introducir la tensión;
+- explicar un concepto;
+- mostrar un mecanismo;
+- aportar evidencia;
+- volver la idea aplicable;
+- conectar con el Programa.
+
+Los detalles obvios o previsibles no se desarrollan si no agregan una distinción nueva.
+
 ### Paso 4 — Aprobar y aprender
 
 Después de la aprobación:
 
 - el copy queda congelado;
 - los hooks se registran en el Banco de Hooks;
+- los conceptos nuevos o adaptados se registran en el Banco de Conceptos;
 - los hechos y cifras se registran en Evidencias;
 - situaciones o artefactos nuevos se incorporan a sus bancos;
-- las correcciones de voz relevantes se registran en la Auditoría Editorial.
+- las correcciones de voz relevantes se registran en la Auditoría Editorial;
+- se explicita la conclusión estratégica del feedback y se actualiza el archivo de GitHub que corresponda.
 
 ## 4. Carga en GitHub
 
