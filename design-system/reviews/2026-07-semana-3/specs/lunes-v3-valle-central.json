@@ -10,8 +10,8 @@
       "foot_color": "violeta",
       "blocks": [],
       "layers": [
-        {"type":"text","x":84,"y":90,"w":780,"h":90,"font":"futura","size":66,"line_height":64,"color":"violeta","text":"LA ADOPCIÓN SE DEFINE EN EL VALLE","z":8},
-        {"type":"text","x":84,"y":190,"w":800,"h":95,"font":"lyon","size":35,"line_height":44,"color":"negro","text":"El curso impulsa la expectativa. El entorno sostiene la práctica cuando aparece el esfuerzo.","z":8},
+        {"type":"text","x":84,"y":90,"w":780,"h":135,"font":"futura","size":56,"line_height":55,"color":"violeta","text":"LA ADOPCIÓN SE DEFINE EN EL VALLE","z":8},
+        {"type":"text","x":84,"y":220,"w":800,"h":95,"font":"lyon","size":33,"line_height":41,"color":"negro","text":"El curso impulsa la expectativa. El entorno sostiene la práctica cuando aparece el esfuerzo.","z":8},
         {"type":"line","x1":140,"y1":1080,"x2":970,"y2":1080,"stroke":"negro","stroke_width":5,"z":2},
         {"type":"line","x1":140,"y1":1080,"x2":140,"y2":360,"stroke":"negro","stroke_width":5,"z":2},
         {"type":"text","x":0,"y":665,"w":250,"h":44,"font":"futura","size":28,"line_height":31,"color":"negro","text":"ADOPCIÓN","rotate":-90,"align":"center","z":4},
@@ -56,8 +56,8 @@
       "foot_color": "aqua",
       "blocks": [],
       "layers": [
-        {"type":"text","x":84,"y":105,"w":850,"h":90,"font":"futura","size":68,"line_height":65,"color":"blanco","text":"HACER MÁS FÁCIL EL HÁBITO DESEADO","z":8},
-        {"type":"text","x":84,"y":215,"w":820,"h":100,"font":"lyon","size":36,"line_height":45,"color":"aqua","text":"Ese es el trabajo del Diseño de Comportamientos durante el valle.","z":8},
+        {"type":"text","x":84,"y":105,"w":850,"h":145,"font":"futura","size":56,"line_height":55,"color":"blanco","text":"HACER MÁS FÁCIL EL HÁBITO DESEADO","z":8},
+        {"type":"text","x":84,"y":245,"w":820,"h":100,"font":"lyon","size":34,"line_height":43,"color":"aqua","text":"Ese es el trabajo del Diseño de Comportamientos durante el valle.","z":8},
         {"type":"svg_path","d":"M 120 520 C 300 520 310 1010 540 1010 C 770 1010 790 520 970 520","stroke":"blanco","stroke_width":12,"fill":"transparent","z":3},
         {"type":"line","x1":345,"y1":900,"x2":850,"y2":900,"stroke":"aqua","stroke_width":18,"z":4},
         {"type":"circle","x":380,"y":875,"w":50,"h":50,"fill":"aqua","stroke":"blanco","stroke_width":4,"z":6},
@@ -68,7 +68,7 @@
         {"type":"text","x":455,"y":950,"w":180,"h":70,"font":"gotham","size":22,"line_height":27,"color":"blanco","text":"RECURSOS","align":"center","z":8},
         {"type":"text","x":595,"y":950,"w":180,"h":70,"font":"gotham","size":22,"line_height":27,"color":"blanco","text":"FEEDBACK","align":"center","z":8},
         {"type":"text","x":735,"y":950,"w":180,"h":70,"font":"gotham","size":22,"line_height":27,"color":"blanco","text":"COMUNIDAD","align":"center","z":8},
-        {"type":"text","x":145,"y":1090,"w":790,"h":70,"font":"lyon","size":38,"line_height":46,"color":"aqua","text":"Menos fricción. Más repetición. Mayor adopción.","align":"center","z":8}
+        {"type":"text","x":145,"y":1080,"w":790,"h":80,"font":"lyon","size":34,"line_height":42,"color":"aqua","text":"Menos fricción. Más repetición. Mayor adopción.","align":"center","z":8}
       ]
     }
   ]
