@@ -14,15 +14,24 @@ Este archivo orienta a los agentes que trabajan dentro del repositorio. No conti
 
 Ante contradicciones se aplica la fuente de mayor jerarquía y se señala el archivo que debe corregirse.
 
+## Fuente persistente de verdad
+
+- La conversación con Paulo es el canal de decisión, corrección y aprobación.
+- GitHub es la memoria persistente y gobernada del sistema.
+- Una decisión estratégica, editorial o metodológica confirmada por Paulo debe incorporarse al archivo canónico correspondiente en GitHub para que gobierne iteraciones futuras.
+- Los documentos adjuntos al proyecto, copias descargadas o versiones históricas no gobiernan el flujo activo cuando contradicen los archivos vigentes de GitHub.
+- No es necesario que Paulo descargue, edite y vuelva a cargar documentos para actualizar el sistema: la actualización se realiza en GitHub con trazabilidad.
+
 ## Modelo operativo vigente
 
 - La estrategia y el plan editorial se definen mediante conversación estratégica y aprobación humana.
-- Los bancos de situaciones, artefactos, evidencias y hooks se actualizan de forma acumulativa desde las interacciones con Paulo.
-- Antes de redactar se consulta: estrategia → situación → artefacto → evidencia → guía y banco de hooks → auditoría.
+- Los bancos de situaciones, artefactos, conceptos, evidencias y hooks se actualizan de forma acumulativa desde las interacciones con Paulo.
+- Antes de redactar se consulta: estrategia → situación → concepto o artefacto → evidencia → guía y banco de hooks → auditoría.
 - Para cada pieza se proponen tres hooks con mecanismos diferentes.
 - El copy final integra por qué importa, qué hace Motion, caso real, cómo y CTA dentro de un storytelling continuo.
 - Todo CTA conecta con el Programa de Transformación Digital.
 - LinkedIn e Instagram reciben textos propios y adaptados a sus audiencias.
+- Después de una corrección relevante de Paulo, el agente debe explicitar la conclusión estratégica del aprendizaje, clasificar su alcance como local, recurrente o general y proponer o ejecutar la actualización del archivo correspondiente.
 - El input de producción es `manifiestos/mes_<YYYY-MM>.json`.
 - GitHub valida, diseña, renderiza y programa.
 - Ningún workflow puede reescribir copies, tesis, buyer, oferta o estrategia.
@@ -35,6 +44,7 @@ Ante contradicciones se aplica la fuente de mayor jerarquía y se señala el arc
 - Índice del Master: `knowledge/MASTER_BASE_CONOCIMIENTO.md`.
 - Situaciones: `knowledge/banks/BANCO_SITUACIONES_MOTION.md`.
 - Artefactos: `knowledge/banks/BANCO_ARTEFACTOS_MOTION.md`.
+- Conceptos: `knowledge/banks/BANCO_CONCEPTOS_MOTION.md`.
 - Evidencias: `knowledge/banks/BANCO_EVIDENCIAS_MOTION.md`.
 - Hooks: `knowledge/banks/BANCO_HOOKS_MOTION.md`.
 - Guía de hooks: `knowledge/guides/GUIA_OPERATIVA_HOOKS.md`.
