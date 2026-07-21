@@ -16,11 +16,11 @@
         {"type":"line","x1":120,"y1":490,"x2":930,"y2":490,"stroke":"aqua","stroke_width":3,"z":3},
         {"type":"line","x1":120,"y1":610,"x2":930,"y2":610,"stroke":"aqua","stroke_width":3,"z":3},
         {"type":"text","x":125,"y":155,"w":250,"h":40,"font":"gotham","size":22,"line_height":25,"color":"naranja","text":"JOURNAL · 29.07.26","letter_spacing":2,"z":8},
-        {"type":"text","x":125,"y":285,"w":800,"h":310,"font":"lyon","size":68,"line_height":78,"color":"negro","text":"30 embajadores digitales. 66 proyectos. Nuevas capacidades.","z":8},
-        {"type":"text","x":125,"y":665,"w":760,"h":190,"font":"futura","size":62,"line_height":61,"color":"violeta","text":"UNA COMUNIDAD DIGITAL CAMBIA QUIÉN PUEDE TRANSFORMAR LA ORGANIZACIÓN","z":8},
+        {"type":"text","x":125,"y":285,"w":800,"h":300,"font":"lyon","size":56,"line_height":66,"color":"negro","text":"30 embajadores digitales. 66 proyectos. Nuevas capacidades.","z":8},
+        {"type":"text","x":125,"y":650,"w":760,"h":230,"font":"futura","size":52,"line_height":51,"color":"violeta","text":"UNA COMUNIDAD DIGITAL CAMBIA QUIÉN PUEDE TRANSFORMAR LA ORGANIZACIÓN","z":8},
         {"type":"rect","x":690,"y":895,"w":250,"h":130,"fill":"aqua","stroke":"violeta","stroke_width":4,"radius":18,"rotate":3,"z":5},
         {"type":"text","x":715,"y":920,"w":200,"h":90,"font":"gotham","size":22,"line_height":27,"color":"violeta","text":"NO ES SOLO\nUN GRUPO.\nES UNA RED.","align":"center","z":8},
-        {"type":"text","x":125,"y":1060,"w":620,"h":70,"font":"lyont","size":31,"line_height":40,"color":"negro","text":"El resultado visible fueron los proyectos. El estructural fue la capacidad distribuida.","z":8}
+        {"type":"text","x":125,"y":1040,"w":620,"h":90,"font":"lyont","size":29,"line_height":38,"color":"negro","text":"El resultado visible fueron los proyectos. El estructural fue la capacidad distribuida.","z":8}
       ]
     },
     {
