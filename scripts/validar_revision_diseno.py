@@ -9,8 +9,15 @@ import argparse
 import json
 from pathlib import Path
 
-ALLOWED_STATUS = {"awaiting_selection", "selected", "approved", "rejected"}
+ALLOWED_STATUS = {
+    "awaiting_selection",
+    "selected",
+    "approved",
+    "rejected",
+    "invalidated_reference_mismatch",
+}
 ALLOWED_FAMILIES = {"line_system", "conceptual_art"}
+ALLOWED_CANDIDATE_STATUS = {None, "valid", "invalid", "rejected", "selected"}
 
 
 def main() -> int:
@@ -34,8 +41,15 @@ def main() -> int:
 
     if review.get("schema_version") != 1:
         errors.append("schema_version debe ser 1")
-    if review.get("status") not in ALLOWED_STATUS:
-        errors.append(f"status inválido: {review.get('status')!r}")
+    status = review.get("status")
+    if status not in ALLOWED_STATUS:
+        errors.append(f"status inválido: {status!r}")
+
+    if status == "invalidated_reference_mismatch":
+        if review.get("publication_blocked") is not True:
+            errors.append("una revisión invalidada debe mantener publication_blocked=true")
+        if not review.get("invalidation_reason"):
+            errors.append("una revisión invalidada exige invalidation_reason")
 
     pieces = review.get("pieces")
     if not isinstance(pieces, list) or not pieces:
@@ -54,6 +68,12 @@ def main() -> int:
         if family not in ALLOWED_FAMILIES:
             errors.append(f"{piece_id}: visual_family inválida {family!r}")
 
+        if status == "invalidated_reference_mismatch":
+            if piece.get("candidate_set_status") != "invalid":
+                errors.append(f"{piece_id}: candidate_set_status debe ser invalid")
+            if not piece.get("candidate_set_reason"):
+                errors.append(f"{piece_id}: falta candidate_set_reason")
+
         candidates = piece.get("candidates")
         if not isinstance(candidates, list) or len(candidates) < 2:
             errors.append(f"{piece_id}: se requieren al menos dos candidatos")
@@ -66,6 +86,15 @@ def main() -> int:
                 errors.append(f"{piece_id}: versión faltante o duplicada {version!r}")
                 continue
             versions.add(version)
+
+            candidate_status = candidate.get("status")
+            if candidate_status not in ALLOWED_CANDIDATE_STATUS:
+                errors.append(
+                    f"{piece_id}/{version}: status de candidato inválido {candidate_status!r}"
+                )
+            if status == "invalidated_reference_mismatch" and candidate_status != "invalid":
+                errors.append(f"{piece_id}/{version}: debe estar marcado invalid")
+
             spec = candidate.get("spec")
             if not isinstance(spec, str) or not spec:
                 errors.append(f"{piece_id}/{version}: falta spec")
@@ -91,8 +120,10 @@ def main() -> int:
         selected = piece.get("selected_version")
         if selected is not None and selected not in versions:
             errors.append(f"{piece_id}: selected_version no existe: {selected!r}")
-        if review.get("status") in {"selected", "approved"} and selected is None:
-            errors.append(f"{piece_id}: falta selected_version para status={review.get('status')}")
+        if status in {"selected", "approved"} and selected is None:
+            errors.append(f"{piece_id}: falta selected_version para status={status}")
+        if status == "invalidated_reference_mismatch" and selected is not None:
+            errors.append(f"{piece_id}: una revisión invalidada no puede tener selected_version")
 
     if errors:
         print("Revisión de diseño inválida:")
