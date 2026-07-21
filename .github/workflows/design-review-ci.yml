@@ -6,6 +6,7 @@ on:
       - "design-system/reviews/**"
       - "design-system/render.py"
       - "scripts/validar_revision_diseno.py"
+      - "scripts/ensamblar_spec_bundle.py"
       - ".github/workflows/design-review-ci.yml"
 
 permissions:
@@ -27,6 +28,13 @@ jobs:
           sudo apt-get install -y -qq libpango-1.0-0 libpangoft2-1.0-0 poppler-utils
           pip install --quiet weasyprint pillow
 
+      - name: Compilar scripts
+        run: |
+          python -m py_compile \
+            scripts/validar_revision_diseno.py \
+            scripts/ensamblar_spec_bundle.py \
+            design-system/render.py
+
       - name: Validar paquetes de revisión
         run: |
           set -euo pipefail
@@ -36,19 +44,58 @@ jobs:
             python scripts/validar_revision_diseno.py "$review"
           done
 
-      - name: Renderizar todas las versiones
+      - name: Seleccionar specs activas
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          rows = []
+          for review_path in sorted(Path('design-system/reviews').glob('**/review.json')):
+              review = json.loads(review_path.read_text(encoding='utf-8'))
+              status = review.get('status')
+              if status in {'invalidated_reference_mismatch', 'rejected'}:
+                  continue
+              for piece in review.get('pieces', []):
+                  candidates = piece.get('candidates', [])
+                  if status in {'selected', 'approved'}:
+                      selected = piece.get('selected_version')
+                      candidates = [c for c in candidates if c.get('version') == selected]
+                  else:
+                      candidates = [
+                          c for c in candidates
+                          if c.get('status') not in {'invalid', 'rejected'}
+                      ]
+                  for candidate in candidates:
+                      name = f"{piece['piece_id']}--{candidate['version']}"
+                      rows.append((name, candidate['spec']))
+
+          if not rows:
+              raise SystemExit('No hay specs activas para renderizar')
+
+          output = Path('/tmp/design-review-specs.tsv')
+          output.write_text(
+              ''.join(f'{name}\t{spec}\n' for name, spec in rows),
+              encoding='utf-8',
+          )
+          print(output.read_text(encoding='utf-8'))
+          PY
+
+      - name: Renderizar versiones activas
         run: |
           set -euo pipefail
-          mkdir -p /tmp/design-review
-          mapfile -t SPECS < <(find design-system/reviews -path '*/specs/*.json' -type f | sort)
-          test "${#SPECS[@]}" -gt 0
-          for spec in "${SPECS[@]}"; do
-            name="$(basename "$spec" .json)"
+          mkdir -p /tmp/design-review /tmp/design-review-assembled
+          while IFS=$'\t' read -r name spec; do
+            input="$spec"
+            if [[ "$spec" == *.bundle.json ]]; then
+              input="/tmp/design-review-assembled/$name.json"
+              python scripts/ensamblar_spec_bundle.py "$spec" "$input"
+            fi
             out="/tmp/design-review/$name"
             mkdir -p "$out"
-            python design-system/render.py "$spec" "$out/$name.pdf"
+            python design-system/render.py "$input" "$out/$name.pdf"
             pdftoppm -png -r 84 "$out/$name.pdf" "$out/$name"
-          done
+          done < /tmp/design-review-specs.tsv
 
       - name: Crear contact sheets
         run: |
@@ -61,7 +108,7 @@ jobs:
               images = [Image.open(path).convert('RGB') for path in sorted(folder.glob('*.png'))]
               if not images:
                   continue
-              thumb_w = 360
+              thumb_w = 300
               thumbs = []
               for image in images:
                   ratio = thumb_w / image.width
@@ -69,15 +116,18 @@ jobs:
                   thumbs.append(thumb)
               gap = 18
               title_h = 54
-              width = len(thumbs) * thumb_w + (len(thumbs) + 1) * gap
-              height = max(t.height for t in thumbs) + title_h + 2 * gap
+              columns = 5 if len(thumbs) > 5 else len(thumbs)
+              rows = (len(thumbs) + columns - 1) // columns
+              width = columns * thumb_w + (columns + 1) * gap
+              height = rows * max(t.height for t in thumbs) + title_h + (rows + 1) * gap
               sheet = Image.new('RGB', (width, height), 'white')
               draw = ImageDraw.Draw(sheet)
               draw.text((gap, 14), folder.name, fill='black')
-              x = gap
-              for thumb in thumbs:
-                  sheet.paste(thumb, (x, title_h + gap))
-                  x += thumb_w + gap
+              for index, thumb in enumerate(thumbs):
+                  row, col = divmod(index, columns)
+                  x = gap + col * (thumb_w + gap)
+                  y = title_h + gap + row * (thumb.height + gap)
+                  sheet.paste(thumb, (x, y))
               sheet.save(folder / f'{folder.name}-contact-sheet.png')
           PY
 
