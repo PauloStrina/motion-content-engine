@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-07-semana-3",
+  "status": "awaiting_selection",
+  "created_at": "2026-07-21T16:50:00-03:00",
+  "publication_blocked": true,
+  "pieces": [
+    {
+      "piece_id": "2026-07-27-problema-curva-cambio",
+      "channel_scope": ["linkedin_paulo", "instagram"],
+      "visual_family": "line_system",
+      "selected_version": null,
+      "candidates": [
+        {
+          "version": "v1",
+          "name": "Curva bifurcada",
+          "spec": "design-system/reviews/2026-07-semana-3/specs/lunes-v1-curva-bifurcada.json",
+          "rationale": "Una curva única se divide después del valle entre uso esporádico y adopción sostenida."
+        },
+        {
+          "version": "v2",
+          "name": "Dos curvas comparadas",
+          "spec": "design-system/reviews/2026-07-semana-3/specs/lunes-v2-dos-curvas.json",
+          "rationale": "Compara en el mismo sistema el recorrido de un curso aislado con el de una adopción acompañada."
+        },
+        {
+          "version": "v3",
+          "name": "Valle central",
+          "spec": "design-system/reviews/2026-07-semana-3/specs/lunes-v3-valle-central.json",
+          "rationale": "Hace del valle el elemento principal y muestra el Diseño de Comportamientos como puente de recuperación."
+        }
+      ]
+    },
+    {
+      "piece_id": "2026-07-29-resultados-comunidad-digital",
+      "channel_scope": ["linkedin_paulo", "instagram"],
+      "visual_family": "conceptual_art",
+      "selected_version": null,
+      "candidates": [
+        {
+          "version": "v1",
+          "name": "Journaling editorial",
+          "spec": "design-system/reviews/2026-07-semana-3/specs/miercoles-v1-journaling-editorial.json",
+          "rationale": "Página editorial limpia con notas marginales, subrayados y jerarquía tipográfica."
+        },
+        {
+          "version": "v2",
+          "name": "Journaling cuaderno",
+          "spec": "design-system/reviews/2026-07-semana-3/specs/miercoles-v2-journaling-cuaderno.json",
+          "rationale": "Simula páginas físicas de un cuaderno con anotaciones, tarjetas y mayor materialidad."
+        }
+      ]
+    }
+  ],
+  "approval_rule": "Ningún contrato visual pasa a approved y ningún workflow de publicación puede ejecutarse hasta que selected_version esté definido para todas las piezas y Paulo apruebe los previews."
+}
