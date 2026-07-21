@@ -29,7 +29,25 @@ Pregunta de trabajo:
 
 La definición completa vive en `design-system/visual-language/FAMILIAS_VISUALES.md`.
 
-## 3. Criterios obligatorios
+## 3. Formato dominante para carruseles largos
+
+El formato dominante de Motion para carruseles largos es `narrative_schematic_carousel`.
+
+Este formato:
+
+- cuenta una historia completa a lo largo de 8 a 12 placas;
+- mantiene lectura fácil y rápida;
+- utiliza un esquema simple por placa para reforzar la idea principal;
+- respeta literalmente el copy aprobado;
+- evita estética handwritten, de cuaderno o presentación corporativa;
+- utiliza principalmente la familia `line_system`;
+- permite variar la distribución de colores según Problema, Método, Resultado o Conexión;
+- utiliza naranja Motion `#FF5000` para hitos clave y resultados puntuales;
+- no utiliza amarillo o lima como sustituto del naranja de marca.
+
+La gramática completa vive en `design-system/visual-language/CARRUSEL_NARRATIVO_ESQUEMATICO.md`.
+
+## 4. Criterios obligatorios
 
 - limpieza y legibilidad móvil;
 - una idea visual dominante;
@@ -43,7 +61,7 @@ La definición completa vive en `design-system/visual-language/FAMILIAS_VISUALES
 - fidelidad a una única familia;
 - calidad de ejecución equivalente a la referencia seleccionada.
 
-## 4. Repertorio de recursos
+## 5. Repertorio de recursos
 
 Los recursos se organizan bajo las dos familias visuales. No son intercambiables libremente.
 
@@ -70,7 +88,7 @@ Recursos disponibles:
 
 `FAMILIAS_VISUALES.json` define qué recursos puede utilizar cada familia y cuáles están prohibidos.
 
-## 5. Branding
+## 6. Branding
 
 Paleta oficial:
 
@@ -88,7 +106,9 @@ Tipografías:
 
 No es obligatorio utilizar todos los colores ni todos los recursos en una pieza.
 
-## 6. Modos de ejecución
+Los hitos clave utilizan naranja Motion. No se sustituyen por amarillo, lima ni colores no pertenecientes al branding.
+
+## 7. Modos de ejecución
 
 ### `code`
 
@@ -108,7 +128,7 @@ La imagen aprobada se utiliza sin regeneración.
 
 Los modos permitidos se validan por familia.
 
-## 7. Reglas de fidelidad
+## 8. Reglas de fidelidad
 
 - una imagen validada no se vuelve a generar desde texto si se requiere el mismo resultado;
 - el preview aprobado se conserva como asset o como referencia de edición;
@@ -116,20 +136,23 @@ Los modos permitidos se validan por familia.
 - el modelo generativo no incluye texto final de publicación ni logo;
 - los prompts y parámetros quedan versionados;
 - las referencias de terceros no se publican salvo licencia verificada;
-- no se marca un contrato como `approved` antes de mostrar y aprobar el preview.
+- no se marca un contrato como `approved` antes de mostrar y aprobar el preview;
+- el diseño no puede reescribir ni resumir el copy aprobado sin una nueva validación editorial.
 
-## 8. Fuentes principales de inspiración
+## 9. Fuentes principales de inspiración
 
 1. Branding original de Motion.
 2. Referencias `line_system` compartidas por Paulo.
 3. Referencias `conceptual_art` compartidas y aprobadas por Paulo.
-4. Colección `Concepto 2` cuando sea coherente con la familia seleccionada.
+4. Carruseles narrativos esquemáticos aprobados para Curva del Cambio y Comunidad Digital.
+5. Colección `Concepto 2` cuando sea coherente con la familia seleccionada.
 
 La jerarquía es siempre:
 
 1. mensaje aprobado;
 2. estrategia y branding Motion;
 3. familia visual seleccionada;
-4. concepto visual aprobado;
-5. referencias de la misma familia;
-6. capacidad técnica de ejecución.
+4. formato dominante cuando corresponda;
+5. concepto visual aprobado;
+6. referencias de la misma familia;
+7. capacidad técnica de ejecución.
