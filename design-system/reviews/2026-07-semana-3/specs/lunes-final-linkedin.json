@@ -1,0 +1,39 @@
+{
+  "episodio": "Semana 3 · Lunes · LinkedIn final",
+  "slides": [
+    {
+      "bg": "blanco",
+      "logo": "violeta",
+      "pager": "",
+      "blocks": [],
+      "layers": [
+        {"type":"text","x":72,"y":58,"w":820,"h":160,"font":"futura","size":56,"color":"violeta","text":"¿POR QUÉ MUCHAS\nPERSONAS NO CAMBIAN\nSU FORMA DE TRABAJAR\nDESPUÉS DE TOMAR UN\nCURSO DE IA?","align":"left","z":8,"line_height":55},
+        {"type":"line","x1":74,"y1":305,"x2":122,"y2":305,"stroke":"naranja","stroke_width":5,"z":8},
+        {"type":"text","x":74,"y":340,"w":540,"h":82,"font":"gotham","size":29,"color":"violeta","text":"El curso inicia el cambio.\nEl entorno define si se sostiene.","align":"left","z":8,"line_height":34},
+        {"type":"line","x1":86,"y1":1120,"x2":846,"y2":1120,"stroke":"violeta","stroke_width":5,"z":2},
+        {"type":"line","x1":86,"y1":1120,"x2":86,"y2":560,"stroke":"violeta","stroke_width":5,"z":2},
+        {"type":"text","x":10,"y":770,"w":240,"h":44,"font":"futura","size":25,"color":"aqua","text":"ADOPCIÓN","align":"center","z":7,"rotate":-90,"line_height":28},
+        {"type":"text","x":698,"y":1132,"w":145,"h":40,"font":"futura","size":24,"color":"violeta","text":"TIEMPO","align":"right","z":7},
+        {"type":"svg_path","d":"M 88 1020 C 170 980 210 765 315 735 C 430 700 485 1000 605 1025","stroke":"violeta","stroke_width":8,"fill":"transparent","z":3},
+        {"type":"svg_path","d":"M 605 1025 C 710 1025 765 975 835 940","stroke":"naranja","stroke_width":7,"fill":"transparent","z":3,"dasharray":"17 15"},
+        {"type":"svg_path","d":"M 605 1025 C 710 1015 728 790 805 575","stroke":"aqua","stroke_width":9,"fill":"transparent","z":4},
+        {"type":"circle","x":75,"y":1007,"w":26,"h":26,"fill":"aqua","stroke":"violeta","stroke_width":3,"z":5},
+        {"type":"circle","x":302,"y":722,"w":26,"h":26,"fill":"naranja","stroke":"violeta","stroke_width":3,"z":5},
+        {"type":"circle","x":592,"y":1012,"w":26,"h":26,"fill":"naranja","stroke":"violeta","stroke_width":3,"z":5},
+        {"type":"circle","x":822,"y":927,"w":26,"h":26,"fill":"blanco","stroke":"naranja","stroke_width":4,"z":5},
+        {"type":"circle","x":792,"y":562,"w":26,"h":26,"fill":"blanco","stroke":"aqua","stroke_width":4,"z":5},
+        {"type":"text","x":105,"y":1035,"w":180,"h":72,"font":"gotham","size":23,"color":"violeta","text":"1. CURSO DE IA\nSe descubre\nel potencial.","align":"left","z":8,"line_height":26},
+        {"type":"text","x":285,"y":650,"w":190,"h":72,"font":"futura","size":26,"color":"aqua","text":"2.\nAlta expectativa","align":"left","z":8,"line_height":28},
+        {"type":"text","x":470,"y":800,"w":190,"h":110,"font":"futura","size":26,"color":"aqua","text":"3.\nAparece el\nesfuerzo real","align":"left","z":8,"line_height":29},
+        {"type":"text","x":520,"y":1052,"w":240,"h":100,"font":"gotham","size":23,"color":"violeta","text":"4. VALLE DE ADOPCIÓN\nEs más fácil volver\na hacerlo como antes.","align":"left","z":8,"line_height":27},
+        {"type":"text","x":745,"y":470,"w":240,"h":110,"font":"futura","size":28,"color":"aqua","text":"5.\nAdopción sostenida","align":"left","z":8,"line_height":30},
+        {"type":"text","x":748,"y":588,"w":230,"h":92,"font":"gotham","size":22,"color":"violeta","text":"La nueva práctica\nse consolida y la\nproductividad crece.","align":"left","z":8,"line_height":26},
+        {"type":"text","x":858,"y":900,"w":180,"h":40,"font":"futura","size":22,"color":"naranja","text":"CURSO AISLADO","align":"left","z":8},
+        {"type":"text","x":858,"y":948,"w":170,"h":95,"font":"gotham","size":20,"color":"violeta","text":"Sin intervenciones,\nla adopción se estanca\ny el uso se diluye.","align":"left","z":8,"line_height":25},
+        {"type":"rect","x":850,"y":510,"w":185,"h":320,"fill":"transparent","stroke":"aqua","stroke_width":2,"radius":14,"z":3},
+        {"type":"text","x":872,"y":535,"w":140,"h":58,"font":"futura","size":20,"color":"aqua","text":"DISEÑO DE\nCOMPORTAMIENTOS","align":"center","z":6,"line_height":22},
+        {"type":"text","x":875,"y":610,"w":130,"h":180,"font":"gotham","size":16,"color":"violeta","text":"USO CONCRETO\n\nRECURSOS AL ALCANCE\n\nTIEMPO PARA EXPERIMENTAR\n\nACOMPAÑAMIENTO\n\nFEEDBACK","align":"center","z":6,"line_height":21}
+      ]
+    }
+  ]
+}
