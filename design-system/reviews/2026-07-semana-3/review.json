@@ -1,67 +1,85 @@
 {
   "schema_version": 1,
   "review_id": "2026-07-semana-3",
-  "status": "invalidated_reference_mismatch",
+  "status": "selected",
   "created_at": "2026-07-21T16:50:00-03:00",
-  "invalidated_at": "2026-07-21T17:22:00-03:00",
+  "selected_at": "2026-07-21T19:25:00-03:00",
+  "selected_by": "Paulo",
   "publication_blocked": true,
-  "invalidation_reason": "Las versiones renderizadas respetan algunos componentes superficiales, pero no la gramática visual de las referencias: se comportan como infografías o slides corporativas, no como ilustraciones conceptuales mínimas, orgánicas, reconocibles y scroll-stopping.",
+  "selection_reason": "Paulo aprobó la Curva del Cambio para LinkedIn y el carrusel del lunes sin nuevas reinterpretaciones. También aprobó el carrusel narrativo esquemático de Comunidad Digital como estilo dominante. Los assets finales deben usar naranja Motion para los hitos y branding oficial.",
   "pieces": [
     {
-      "piece_id": "2026-07-27-problema-curva-cambio",
-      "channel_scope": ["linkedin_paulo", "instagram"],
+      "piece_id": "2026-07-27-problema-curva-cambio-linkedin",
+      "channel_scope": ["linkedin_paulo"],
       "visual_family": "line_system",
-      "selected_version": null,
-      "candidate_set_status": "invalid",
-      "candidate_set_reason": "Las tres alternativas usan títulos, subtítulos, múltiples etiquetas, ejes, pager, footer y geometría de infografía. Ninguna alcanza la gramática Matt Gray / Henso adaptada a Motion.",
+      "selected_version": "final-v1",
+      "candidate_set_status": "valid",
+      "candidate_set_reason": "La composición final reproduce la dirección aprobada y ubica Diseño de Comportamientos completamente a la derecha de la curva.",
       "candidates": [
         {
-          "version": "v1",
-          "name": "Curva bifurcada",
+          "version": "legacy-invalid",
+          "name": "Curva bifurcada anterior",
           "status": "invalid",
           "spec": "design-system/reviews/2026-07-semana-3/specs/lunes-v1-curva-bifurcada.json",
-          "rationale": "Una curva única se divide después del valle entre uso esporádico y adopción sostenida."
+          "rationale": "Versión descartada por gramática de infografía corporativa."
         },
         {
-          "version": "v2",
-          "name": "Dos curvas comparadas",
+          "version": "final-v1",
+          "name": "Curva del Cambio · LinkedIn final",
+          "status": "selected",
+          "spec": "design-system/reviews/2026-07-semana-3/specs/lunes-final-linkedin.json",
+          "rationale": "Curva aprobada, eje ADOPCIÓN, hitos naranja Motion, adopción acompañada en aqua y caja vertical de Diseño de Comportamientos sin interrumpir la curva."
+        }
+      ]
+    },
+    {
+      "piece_id": "2026-07-27-problema-curva-cambio-instagram",
+      "channel_scope": ["instagram"],
+      "visual_family": "line_system",
+      "selected_version": "final-v1",
+      "candidate_set_status": "valid",
+      "candidate_set_reason": "El carrusel reproduce la secuencia exacta aprobada por Paulo y solo corrige branding, tipografías, legibilidad y amarillo por naranja Motion.",
+      "candidates": [
+        {
+          "version": "legacy-invalid",
+          "name": "Carrusel previo de exploración",
           "status": "invalid",
           "spec": "design-system/reviews/2026-07-semana-3/specs/lunes-v2-dos-curvas.json",
-          "rationale": "Compara en el mismo sistema el recorrido de un curso aislado con el de una adopción acompañada."
+          "rationale": "Versión descartada por no representar el carrusel aprobado."
         },
         {
-          "version": "v3",
-          "name": "Valle central",
-          "status": "invalid",
-          "spec": "design-system/reviews/2026-07-semana-3/specs/lunes-v3-valle-central.json",
-          "rationale": "Hace del valle el elemento principal y muestra el Diseño de Comportamientos como puente de recuperación."
+          "version": "final-v1",
+          "name": "Curva del Cambio · Instagram final",
+          "status": "selected",
+          "spec": "design-system/reviews/2026-07-semana-3/specs/lunes-final-instagram.json",
+          "rationale": "Diez placas que desarrollan expectativa, esfuerzo, valle, curso aislado, Diseño de Comportamientos y adopción sostenida."
         }
       ]
     },
     {
       "piece_id": "2026-07-29-resultados-comunidad-digital",
       "channel_scope": ["linkedin_paulo", "instagram"],
-      "visual_family": "conceptual_art",
-      "selected_version": null,
-      "candidate_set_status": "invalid",
-      "candidate_set_reason": "Las opciones son maquetas editoriales genéricas. No existe todavía una referencia operativa suficientemente precisa del carrusel journaling aprobado para validar similitud y calidad.",
+      "visual_family": "line_system",
+      "selected_version": "final-v1",
+      "candidate_set_status": "valid",
+      "candidate_set_reason": "Paulo aprobó el formato narrative_schematic_carousel y el concepto visual que respeta el copy literal de Comunidad Digital.",
       "candidates": [
         {
-          "version": "v1",
-          "name": "Journaling editorial",
+          "version": "legacy-invalid",
+          "name": "Journaling editorial anterior",
           "status": "invalid",
           "spec": "design-system/reviews/2026-07-semana-3/specs/miercoles-v1-journaling-editorial.json",
-          "rationale": "Página editorial limpia con notas marginales, subrayados y jerarquía tipográfica."
+          "rationale": "Versión descartada por interpretar journaling como estética editorial y no como carrusel narrativo esquemático."
         },
         {
-          "version": "v2",
-          "name": "Journaling cuaderno",
-          "status": "invalid",
-          "spec": "design-system/reviews/2026-07-semana-3/specs/miercoles-v2-journaling-cuaderno.json",
-          "rationale": "Simula páginas físicas de un cuaderno con anotaciones, tarjetas y mayor materialidad."
+          "version": "final-v1",
+          "name": "Comunidad Digital · carrusel final",
+          "status": "selected",
+          "spec": "design-system/reviews/2026-07-semana-3/specs/miercoles-final-comunidad.bundle.json",
+          "rationale": "Diez placas con copy literal, una idea y un esquema simple por placa, cifras e hitos en naranja Motion y continuidad narrativa."
         }
       ]
     }
   ],
-  "approval_rule": "No se puede elegir la menos mala. Cuando todas las versiones comparten una gramática visual incorrecta, la revisión se invalida completa. Ningún contrato pasa a approved y ningún workflow de publicación puede ejecutarse hasta crear nuevas hipótesis alineadas con referencias concretas y obtener aprobación explícita de Paulo."
+  "approval_rule": "La selección habilita el render final y el dry run, pero la publicación live permanece bloqueada hasta que Paulo revise el paquete renderizado completo y autorice explícitamente la programación en Blotato."
 }
