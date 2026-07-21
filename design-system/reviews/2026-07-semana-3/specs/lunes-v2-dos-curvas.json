@@ -58,8 +58,8 @@
       "foot_color": "violeta",
       "blocks": [],
       "layers": [
-        {"type":"text","x":84,"y":100,"w":850,"h":90,"font":"futura","size":68,"line_height":66,"color":"violeta","text":"MISMO CURSO. DOS RESULTADOS POSIBLES.","z":8},
-        {"type":"text","x":84,"y":215,"w":850,"h":90,"font":"lyon","size":34,"line_height":43,"color":"negro","text":"La diferencia está en cómo se gestiona el valle de adopción.","z":8},
+        {"type":"text","x":84,"y":100,"w":850,"h":135,"font":"futura","size":56,"line_height":55,"color":"violeta","text":"MISMO CURSO. DOS RESULTADOS POSIBLES.","z":8},
+        {"type":"text","x":84,"y":245,"w":850,"h":90,"font":"lyon","size":32,"line_height":40,"color":"negro","text":"La diferencia está en cómo se gestiona el valle de adopción.","z":8},
         {"type":"line","x1":120,"y1":690,"x2":950,"y2":690,"stroke":"negro","stroke_width":4,"z":2},
         {"type":"svg_path","d":"M 120 670 C 260 610 330 450 470 500 C 620 555 590 795 730 810 C 825 820 885 790 950 760","stroke":"naranja","stroke_width":10,"fill":"transparent","dasharray":"16 14","z":3},
         {"type":"svg_path","d":"M 120 670 C 260 610 330 450 470 500 C 620 555 590 795 730 810 C 835 800 850 570 950 450","stroke":"violeta","stroke_width":12,"fill":"transparent","z":4},
