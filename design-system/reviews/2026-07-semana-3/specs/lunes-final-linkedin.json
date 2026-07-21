@@ -32,9 +32,9 @@
         {"type":"text","x":710,"y":530,"w":145,"h":75,"font":"gotham","size":18,"color":"violeta","text":"Nueva forma de\ntrabajar y mayor\nproductividad.","align":"left","z":8,"line_height":22},
         {"type":"text","x":832,"y":880,"w":180,"h":32,"font":"gotham","size":20,"color":"naranja","text":"Curso aislado","align":"left","z":8},
         {"type":"text","x":832,"y":920,"w":175,"h":92,"font":"gotham","size":17,"color":"violeta","text":"Sin intervenciones,\nla adopción se estanca\ny el uso esporádico\nse diluye.","align":"left","z":8,"line_height":21},
-        {"type":"rect","x":858,"y":535,"w":170,"h":315,"fill":"blanco","stroke":"aqua","stroke_width":2,"radius":14,"z":3},
-        {"type":"text","x":873,"y":553,"w":140,"h":52,"font":"futura","size":18,"color":"aqua","text":"DISEÑO DE\nCOMPORTAMIENTOS","align":"center","z":6,"line_height":20},
-        {"type":"text","x":875,"y":623,"w":135,"h":200,"font":"gotham","size":14,"color":"violeta","text":"Uso concreto\n\nRecursos al alcance\n\nTiempo para experimentar\n\nAcompañamiento y comunidad\n\nFeedback y medición","align":"center","z":6,"line_height":19},
+        {"type":"rect","x":848,"y":515,"w":190,"h":350,"fill":"blanco","stroke":"aqua","stroke_width":2,"radius":14,"z":3},
+        {"type":"text","x":862,"y":535,"w":162,"h":48,"font":"gotham","size":15,"color":"aqua","text":"DISEÑO DE\nCOMPORTAMIENTOS","align":"center","z":6,"line_height":18},
+        {"type":"text","x":860,"y":605,"w":165,"h":235,"font":"gotham","size":13,"color":"violeta","text":"Uso concreto\n\nRecursos al alcance\n\nTiempo para experimentar\n\nAcompañamiento y comunidad\n\nFeedback y medición","align":"center","z":6,"line_height":17},
         {"type":"image","x":60,"y":1220,"w":180,"h":55,"src":"design-system/assets/logo-violeta.png","fit":"contain","z":20},
         {"type":"text","x":255,"y":1225,"w":250,"h":48,"font":"gotham","size":15,"color":"violeta","text":"PROGRAMA DE\nTRANSFORMACIÓN DIGITAL","align":"left","z":8,"line_height":18}
       ]
