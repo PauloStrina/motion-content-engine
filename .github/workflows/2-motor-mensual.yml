@@ -1,7 +1,7 @@
 name: 2-motor
 
-# Renderiza y programa una semana aprobada o el ciclo completo.
-# dry simula. live exige aprobación editorial y visual.
+# Procesa una semana aprobada o el ciclo completo.
+# Los masters aprobados se reutilizan byte por byte: el motor no los rediseña.
 on:
   workflow_dispatch:
     inputs:
@@ -27,88 +27,202 @@ on:
         options:
           - dry
           - live
+  push:
+    branches:
+      - main
+    paths:
+      - "ops/live-trigger.json"
 
 permissions:
   contents: write
   id-token: write
+
+concurrency:
+  group: motion-content-motor-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: false
 
 jobs:
   publicar:
     runs-on: ubuntu-latest
     env:
       MOTION_TIMEZONE: America/Argentina/Buenos_Aires
+      MEDIA_BASE: https://ops-motionco.github.io/motion-media/carruseles
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Resolver operación y autorización
+        id: operation
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            MES='${{ inputs.mes }}'
+            SEMANA='${{ inputs.semana }}'
+            MODO='${{ inputs.modo }}'
+            APPROVAL_FILE=""
+          else
+            TRIGGER="ops/live-trigger.json"
+            test -f "$TRIGGER"
+            test "$(jq -r '.status' "$TRIGGER")" = "execute"
+            MES="$(jq -r '.mes' "$TRIGGER")"
+            SEMANA="$(jq -r '.semana | tostring' "$TRIGGER")"
+            MODO="$(jq -r '.modo' "$TRIGGER")"
+            APPROVAL_FILE="$(jq -r '.approval_file // empty' "$TRIGGER")"
+          fi
+
+          if [ "$MODO" = "live" ] && [ "$SEMANA" != "todas" ]; then
+            if [ -z "$APPROVAL_FILE" ]; then
+              APPROVAL_FILE="approvals/${MES}-week${SEMANA}.json"
+            fi
+            test -f "$APPROVAL_FILE"
+            test "$(jq -r '.status' "$APPROVAL_FILE")" = "approved_for_live"
+            test "$(jq -r '.live_authorized' "$APPROVAL_FILE")" = "true"
+            PACKAGE_CONFIG="$(jq -r '.package_config // empty' "$APPROVAL_FILE")"
+          else
+            PACKAGE_CONFIG=""
+          fi
+
+          case "$MODO" in dry|live) ;; *) echo "modo inválido: $MODO"; exit 1 ;; esac
+          case "$SEMANA" in 1|2|3|4|todas) ;; *) echo "semana inválida: $SEMANA"; exit 1 ;; esac
+          [[ "$MES" =~ ^[0-9]{4}-[0-9]{2}$ ]]
+
+          {
+            echo "mes=$MES"
+            echo "semana=$SEMANA"
+            echo "modo=$MODO"
+            echo "approval_file=$APPROVAL_FILE"
+            echo "package_config=$PACKAGE_CONFIG"
+          } >> "$GITHUB_OUTPUT"
+          echo "Operación: $MES · semana $SEMANA · $MODO"
+
+      - name: Aplicar aprobación registrada
+        if: ${{ steps.operation.outputs.modo == 'live' && steps.operation.outputs.semana != 'todas' }}
+        run: |
+          python scripts/aplicar_aprobacion_semana.py \
+            --approval "${{ steps.operation.outputs.approval_file }}" \
+            --manifest "manifiestos/mes_${{ steps.operation.outputs.mes }}.json"
+
+      - name: Compilar scripts operativos
+        run: |
+          python -m py_compile \
+            scripts/mes.py \
+            scripts/aplicar_aprobacion_semana.py \
+            scripts/preparar_assets_aprobados.py \
+            scripts/validar_assets_mes.py \
+            scripts/validar_conceptos_visuales.py \
+            scripts/generar_carrusel_mes.py \
+            scripts/publicador_mes.py \
+            scripts/blotato_client.py
 
       - name: Validar manifiesto y conceptos
         shell: bash
         run: |
           set -euo pipefail
           SEMANA_ARGS=()
-          if [ "${{ inputs.semana }}" != "todas" ]; then
-            SEMANA_ARGS=(--semana "${{ inputs.semana }}")
+          if [ "${{ steps.operation.outputs.semana }}" != "todas" ]; then
+            SEMANA_ARGS=(--semana "${{ steps.operation.outputs.semana }}")
           fi
           APPROVAL_ARGS=()
-          if [ "${{ inputs.modo }}" = "live" ]; then
+          if [ "${{ steps.operation.outputs.modo }}" = "live" ]; then
             APPROVAL_ARGS=(--require-approved)
           fi
-          python scripts/mes.py --mes "${{ inputs.mes }}" "${SEMANA_ARGS[@]}" "${APPROVAL_ARGS[@]}"
-          python scripts/validar_conceptos_visuales.py --mes "${{ inputs.mes }}" "${SEMANA_ARGS[@]}" "${APPROVAL_ARGS[@]}"
+          python scripts/mes.py --mes "${{ steps.operation.outputs.mes }}" "${SEMANA_ARGS[@]}" "${APPROVAL_ARGS[@]}"
+          python scripts/validar_conceptos_visuales.py --mes "${{ steps.operation.outputs.mes }}" "${SEMANA_ARGS[@]}" "${APPROVAL_ARGS[@]}"
 
       - name: Validar especificaciones visuales
         shell: bash
         run: |
           set -euo pipefail
           SEMANA_ARGS=()
-          if [ "${{ inputs.semana }}" != "todas" ]; then
-            SEMANA_ARGS=(--semana "${{ inputs.semana }}")
+          if [ "${{ steps.operation.outputs.semana }}" != "todas" ]; then
+            SEMANA_ARGS=(--semana "${{ steps.operation.outputs.semana }}")
           fi
           APPROVAL_ARGS=()
-          if [ "${{ inputs.modo }}" = "live" ]; then
+          if [ "${{ steps.operation.outputs.modo }}" = "live" ]; then
             APPROVAL_ARGS=(--require-approved)
           fi
-          python scripts/validar_assets_mes.py --mes "${{ inputs.mes }}" "${SEMANA_ARGS[@]}" "${APPROVAL_ARGS[@]}"
+          python scripts/validar_assets_mes.py --mes "${{ steps.operation.outputs.mes }}" "${SEMANA_ARGS[@]}" "${APPROVAL_ARGS[@]}"
 
-      - name: Instalar dependencias de render
+      - name: Instalar dependencias de medios
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq libpango-1.0-0 libpangoft2-1.0-0 poppler-utils
-          pip install weasyprint --quiet
+          pip install --quiet weasyprint pillow gdown
 
-      - name: Renderizar carruseles
+      - name: Preparar medios exactos
         shell: bash
         run: |
           set -euo pipefail
-          RP=$(find . -name render.py -path "*design-system*" | head -1)
-          RD=$(dirname "$RP")
-          SEMANA_ARGS=()
-          if [ "${{ inputs.semana }}" != "todas" ]; then
-            SEMANA_ARGS=(--semana "${{ inputs.semana }}")
+          mkdir -p media_out
+          PACKAGE_CONFIG='${{ steps.operation.outputs.package_config }}'
+          if [ -n "$PACKAGE_CONFIG" ]; then
+            python scripts/preparar_assets_aprobados.py \
+              --config "$PACKAGE_CONFIG" \
+              --out-dir media_out
+          else
+            RP=$(find . -name render.py -path "*design-system*" | head -1)
+            RD=$(dirname "$RP")
+            SEMANA_ARGS=()
+            if [ "${{ steps.operation.outputs.semana }}" != "todas" ]; then
+              SEMANA_ARGS=(--semana "${{ steps.operation.outputs.semana }}")
+            fi
+            python scripts/generar_carrusel_mes.py \
+              "${{ steps.operation.outputs.mes }}" media_out "$RP" "$RD/slides" \
+              "${SEMANA_ARGS[@]}"
           fi
-          python scripts/generar_carrusel_mes.py "${{ inputs.mes }}" media_out "$RP" "$RD/slides" "${SEMANA_ARGS[@]}"
+          echo "PNG preparados: $(find media_out -maxdepth 1 -name '*.png' | wc -l)"
 
       - name: Clonar motion-media y copiar medios
         env:
           TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}
         run: |
+          set -euo pipefail
           git clone "https://x-access-token:${TOKEN}@github.com/ops-motionco/motion-media.git" media_repo
           mkdir -p media_repo/carruseles
-          cp media_out/*.png media_repo/carruseles/ 2>/dev/null || true
+          cp media_out/*.png media_repo/carruseles/
           cd media_repo
           git config user.name "motion-engine"
           git config user.email "engine@motion.local"
           git add -A
-          git commit -m "media ${{ inputs.mes }} semana ${{ inputs.semana }}" || echo "sin cambios"
-          if [ "${{ inputs.modo }}" = "live" ]; then
+          git commit -m "media ${{ steps.operation.outputs.mes }} semana ${{ steps.operation.outputs.semana }}" || echo "sin cambios"
+          if [ "${{ steps.operation.outputs.modo }}" = "live" ]; then
             git push
           else
             echo "[DRY] no se pushea motion-media"
           fi
 
-      - name: Esperar GitHub Pages
-        if: ${{ inputs.modo == 'live' }}
-        run: sleep 90
+      - name: Verificar publicación de medios en GitHub Pages
+        if: ${{ steps.operation.outputs.modo == 'live' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY' > /tmp/media-urls.txt
+          import json
+          from pathlib import Path
+          config_path = '${{ steps.operation.outputs.package_config }}'
+          if config_path:
+              package = json.loads(Path(config_path).read_text(encoding='utf-8'))
+              for mapping in package['mappings']:
+                  print('https://ops-motionco.github.io/motion-media/carruseles/' + mapping['target'])
+          PY
+          for attempt in $(seq 1 18); do
+            missing=0
+            while IFS= read -r url; do
+              [ -z "$url" ] && continue
+              if ! curl --silent --fail --head "$url" >/dev/null; then
+                missing=$((missing + 1))
+              fi
+            done < /tmp/media-urls.txt
+            if [ "$missing" -eq 0 ]; then
+              echo "✓ Todos los masters están disponibles en GitHub Pages"
+              exit 0
+            fi
+            echo "Intento $attempt: faltan $missing medios; espero 10 segundos"
+            sleep 10
+          done
+          echo "Los medios no quedaron disponibles dentro del tiempo esperado"
+          exit 1
 
       - name: Programar alcance seleccionado
         env:
@@ -118,11 +232,50 @@ jobs:
         run: |
           set -euo pipefail
           SEMANA_ARGS=()
-          if [ "${{ inputs.semana }}" != "todas" ]; then
-            SEMANA_ARGS=(--semana "${{ inputs.semana }}")
+          if [ "${{ steps.operation.outputs.semana }}" != "todas" ]; then
+            SEMANA_ARGS=(--semana "${{ steps.operation.outputs.semana }}")
           fi
           MODE_ARGS=()
-          if [ "${{ inputs.modo }}" = "dry" ]; then
+          if [ "${{ steps.operation.outputs.modo }}" = "dry" ]; then
             MODE_ARGS=(--dry)
           fi
-          python scripts/publicador_mes.py --mes "${{ inputs.mes }}" "${SEMANA_ARGS[@]}" "${MODE_ARGS[@]}"
+          python scripts/publicador_mes.py \
+            --mes "${{ steps.operation.outputs.mes }}" \
+            "${SEMANA_ARGS[@]}" \
+            "${MODE_ARGS[@]}" \
+            --plan-output /tmp/blotato-result.json
+
+      - name: Validar resultado de programación
+        if: ${{ steps.operation.outputs.modo == 'live' }}
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          result = json.loads(Path('/tmp/blotato-result.json').read_text(encoding='utf-8'))
+          if len(result) != 8:
+              raise SystemExit(f'Se esperaban 8 publicaciones y se registraron {len(result)}')
+          failed = [item for item in result if item.get('status') != 'scheduled']
+          if failed:
+              raise SystemExit(f'Publicaciones no programadas: {failed}')
+          print('✓ 8 publicaciones programadas en Blotato')
+          for item in result:
+              print(item['day'], item['channel'], item.get('blotato_id'), item['scheduledTime'])
+          PY
+
+      - name: Preparar evidencia de operación
+        if: ${{ always() }}
+        run: |
+          mkdir -p operation_out
+          cp /tmp/blotato-result.json operation_out/blotato-result.json 2>/dev/null || true
+          cp media_out/approved-package-report.json operation_out/approved-package-report.json 2>/dev/null || true
+          find media_out -maxdepth 1 -name '*.png' -printf '%f\n' | sort > operation_out/media-files.txt 2>/dev/null || true
+          cp "${{ steps.operation.outputs.approval_file }}" operation_out/approval.json 2>/dev/null || true
+          cp "${{ steps.operation.outputs.package_config }}" operation_out/package.json 2>/dev/null || true
+
+      - name: Publicar evidencia como artifact
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: motor-${{ steps.operation.outputs.mes }}-week-${{ steps.operation.outputs.semana }}-${{ steps.operation.outputs.modo }}
+          path: operation_out
+          retention-days: 30
