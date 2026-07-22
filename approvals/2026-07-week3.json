@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "approval_id": "2026-07-week3-live-v1",
+  "mes": "2026-07",
+  "semana": 3,
+  "status": "approved_for_live",
+  "content_approved": true,
+  "visual_approved": true,
+  "live_authorized": true,
+  "approved_by": "Paulo",
+  "approved_at": "2026-07-22T13:33:36-03:00",
+  "package_config": "assets/approved/2026-07-week3/package.json",
+  "authorization_context": "Aprobación explícita del paquete V4 completo en MOTION MKT Copilot."
+}
