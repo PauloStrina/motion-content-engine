@@ -46,7 +46,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MOTION_TIMEZONE: America/Argentina/Buenos_Aires
-      MEDIA_BASE: https://ops-motionco.github.io/motion-media/carruseles
 
     steps:
       - uses: actions/checkout@v4
@@ -61,6 +60,7 @@ jobs:
             SEMANA='${{ inputs.semana }}'
             MODO='${{ inputs.modo }}'
             APPROVAL_FILE=""
+            REQUEST_ID="manual-${GITHUB_RUN_ID}"
           else
             TRIGGER="ops/live-trigger.json"
             test -f "$TRIGGER"
@@ -69,6 +69,7 @@ jobs:
             SEMANA="$(jq -r '.semana | tostring' "$TRIGGER")"
             MODO="$(jq -r '.modo' "$TRIGGER")"
             APPROVAL_FILE="$(jq -r '.approval_file // empty' "$TRIGGER")"
+            REQUEST_ID="$(jq -r '.request_id' "$TRIGGER")"
           fi
 
           if [ "$MODO" = "live" ] && [ "$SEMANA" != "todas" ]; then
@@ -93,8 +94,9 @@ jobs:
             echo "modo=$MODO"
             echo "approval_file=$APPROVAL_FILE"
             echo "package_config=$PACKAGE_CONFIG"
+            echo "request_id=$REQUEST_ID"
           } >> "$GITHUB_OUTPUT"
-          echo "Operación: $MES · semana $SEMANA · $MODO"
+          echo "Operación: $REQUEST_ID · $MES · semana $SEMANA · $MODO"
 
       - name: Aplicar aprobación registrada
         if: ${{ steps.operation.outputs.modo == 'live' && steps.operation.outputs.semana != 'todas' }}
@@ -129,28 +131,12 @@ jobs:
           fi
           python scripts/mes.py --mes "${{ steps.operation.outputs.mes }}" "${SEMANA_ARGS[@]}" "${APPROVAL_ARGS[@]}"
           python scripts/validar_conceptos_visuales.py --mes "${{ steps.operation.outputs.mes }}" "${SEMANA_ARGS[@]}" "${APPROVAL_ARGS[@]}"
-
-      - name: Validar especificaciones visuales
-        shell: bash
-        run: |
-          set -euo pipefail
-          SEMANA_ARGS=()
-          if [ "${{ steps.operation.outputs.semana }}" != "todas" ]; then
-            SEMANA_ARGS=(--semana "${{ steps.operation.outputs.semana }}")
-          fi
-          APPROVAL_ARGS=()
-          if [ "${{ steps.operation.outputs.modo }}" = "live" ]; then
-            APPROVAL_ARGS=(--require-approved)
-          fi
           python scripts/validar_assets_mes.py --mes "${{ steps.operation.outputs.mes }}" "${SEMANA_ARGS[@]}" "${APPROVAL_ARGS[@]}"
 
       - name: Instalar dependencias de medios
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq libpango-1.0-0 libpangoft2-1.0-0 poppler-utils
-          pip install --quiet weasyprint pillow gdown
+        run: pip install --quiet pillow gdown
 
-      - name: Preparar medios exactos
+      - name: Preparar masters exactos
         shell: bash
         run: |
           set -euo pipefail
@@ -171,63 +157,14 @@ jobs:
               "${{ steps.operation.outputs.mes }}" media_out "$RP" "$RD/slides" \
               "${SEMANA_ARGS[@]}"
           fi
-          echo "PNG preparados: $(find media_out -maxdepth 1 -name '*.png' | wc -l)"
-
-      - name: Clonar motion-media y copiar medios
-        env:
-          TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}
-        run: |
-          set -euo pipefail
-          git clone "https://x-access-token:${TOKEN}@github.com/ops-motionco/motion-media.git" media_repo
-          mkdir -p media_repo/carruseles
-          cp media_out/*.png media_repo/carruseles/
-          cd media_repo
-          git config user.name "motion-engine"
-          git config user.email "engine@motion.local"
-          git add -A
-          git commit -m "media ${{ steps.operation.outputs.mes }} semana ${{ steps.operation.outputs.semana }}" || echo "sin cambios"
-          if [ "${{ steps.operation.outputs.modo }}" = "live" ]; then
-            git push
-          else
-            echo "[DRY] no se pushea motion-media"
-          fi
-
-      - name: Verificar publicación de medios en GitHub Pages
-        if: ${{ steps.operation.outputs.modo == 'live' }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          python - <<'PY' > /tmp/media-urls.txt
-          import json
-          from pathlib import Path
-          config_path = '${{ steps.operation.outputs.package_config }}'
-          if config_path:
-              package = json.loads(Path(config_path).read_text(encoding='utf-8'))
-              for mapping in package['mappings']:
-                  print('https://ops-motionco.github.io/motion-media/carruseles/' + mapping['target'])
-          PY
-          for attempt in $(seq 1 18); do
-            missing=0
-            while IFS= read -r url; do
-              [ -z "$url" ] && continue
-              if ! curl --silent --fail --head "$url" >/dev/null; then
-                missing=$((missing + 1))
-              fi
-            done < /tmp/media-urls.txt
-            if [ "$missing" -eq 0 ]; then
-              echo "✓ Todos los masters están disponibles en GitHub Pages"
-              exit 0
-            fi
-            echo "Intento $attempt: faltan $missing medios; espero 10 segundos"
-            sleep 10
-          done
-          echo "Los medios no quedaron disponibles dentro del tiempo esperado"
-          exit 1
+          test "$(find media_out -maxdepth 1 -name '*.png' | wc -l)" -eq 21
+          echo "✓ 21 masters exactos preparados"
 
       - name: Programar alcance seleccionado
         env:
           BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
-          REELS_DIR: media_repo/reels
+          MEDIA_DIR: media_out
+          REELS_DIR: ""
         shell: bash
         run: |
           set -euo pipefail
@@ -276,6 +213,71 @@ jobs:
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: motor-${{ steps.operation.outputs.mes }}-week-${{ steps.operation.outputs.semana }}-${{ steps.operation.outputs.modo }}
+          name: motor-${{ steps.operation.outputs.mes }}-week-${{ steps.operation.outputs.semana }}-${{ steps.operation.outputs.modo }}-${{ github.run_id }}
           path: operation_out
           retention-days: 30
+
+      - name: Registrar resultado en el repositorio
+        if: ${{ always() }}
+        env:
+          JOB_STATUS: ${{ job.status }}
+          REQUEST_ID: ${{ steps.operation.outputs.request_id }}
+          MES: ${{ steps.operation.outputs.mes }}
+          SEMANA: ${{ steps.operation.outputs.semana }}
+          MODO: ${{ steps.operation.outputs.modo }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          posts = []
+          result_path = Path('/tmp/blotato-result.json')
+          if result_path.exists():
+              result = json.loads(result_path.read_text(encoding='utf-8'))
+              posts = [
+                  {
+                      'day': item.get('day'),
+                      'channel': item.get('channel'),
+                      'status': item.get('status'),
+                      'blotato_id': item.get('blotato_id'),
+                      'scheduled_time': item.get('scheduledTime'),
+                  }
+                  for item in result
+              ]
+
+          successful = (
+              os.environ['JOB_STATUS'] == 'success'
+              and len(posts) == 8
+              and all(item.get('status') == 'scheduled' for item in posts)
+          )
+          status = {
+              'schema_version': 1,
+              'request_id': os.environ.get('REQUEST_ID'),
+              'status': 'success' if successful else 'failure',
+              'job_status': os.environ['JOB_STATUS'],
+              'mes': os.environ.get('MES'),
+              'semana': int(os.environ['SEMANA']) if os.environ.get('SEMANA', '').isdigit() else os.environ.get('SEMANA'),
+              'modo': os.environ.get('MODO'),
+              'run_id': os.environ.get('GITHUB_RUN_ID'),
+              'run_url': f"https://github.com/{os.environ.get('GITHUB_REPOSITORY')}/actions/runs/{os.environ.get('GITHUB_RUN_ID')}",
+              'commit_sha': os.environ.get('GITHUB_SHA'),
+              'posts': posts,
+          }
+          Path('/tmp/live-status.json').write_text(
+              json.dumps(status, ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8',
+          )
+          PY
+
+          git config user.name "motion-engine"
+          git config user.email "engine@motion.local"
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
+          cp /tmp/live-status.json ops/live-status.json
+          git add ops/live-status.json
+          git commit -m "ops: registrar resultado $REQUEST_ID" || exit 0
+          git push origin main
