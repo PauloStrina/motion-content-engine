@@ -5,6 +5,8 @@ on:
     paths:
       - "design-system/**"
       - "manifiestos/**"
+      - "approvals/**"
+      - "assets/approved/**"
       - "scripts/**"
       - "skills/03-disenador.md"
       - "docs/CONTRATO_CONCEPTO_VISUAL.md"
@@ -45,6 +47,7 @@ jobs:
         run: |
           python -m py_compile \
             scripts/mes.py \
+            scripts/aplicar_aprobacion_semana.py \
             scripts/validar_assets_mes.py \
             scripts/validar_conceptos_visuales.py \
             scripts/generar_imagen_conceptual.py \
@@ -66,6 +69,8 @@ jobs:
               Path("design-system/visual-language/FAMILIAS_VISUALES.json"),
               Path("design-system/concepts/EJEMPLO_CONCEPTO_VISUAL.json"),
               Path("design-system/concepts/EJEMPLO_CONCEPTO_VISUAL_V2.json"),
+              Path("approvals/2026-07-week3.json"),
+              Path("assets/approved/2026-07-week3/package.json"),
           ]
           yaml_paths = [
               Path(".github/workflows/1a-generar-imagen-conceptual.yml"),
@@ -102,8 +107,14 @@ jobs:
           print("Familias visuales validadas")
           PY
 
+      - name: Aplicar aprobación de la semana 3
+        run: |
+          python scripts/aplicar_aprobacion_semana.py \
+            --approval approvals/2026-07-week3.json \
+            --manifest manifiestos/mes_2026-07.json
+
       - name: Validar contratos de la semana 3
-        run: python scripts/validar_conceptos_visuales.py --mes 2026-07 --semana 3
+        run: python scripts/validar_conceptos_visuales.py --mes 2026-07 --semana 3 --require-approved
 
       - name: Render de regresión
         run: |
