@@ -23,7 +23,7 @@ def media_video(client: B.BlotatoClient, reel: dict, reels_dir: str) -> str:
             print(f"  [DRY] upload de {local}")
             return reel["url"]
         return client.upload_presigned(local)
-    print(f"  ⚠ {reel['archivo']} no está local; uso URL de Pages")
+    print(f"  ⚠ {reel['archivo']} no está local; uso URL aprobada del banco")
     return reel["url"]
 
 
@@ -64,10 +64,53 @@ def write_plan(path: str | None, plan: list[dict[str, Any]]) -> None:
     output.write_text(json.dumps(plan, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def prepare_image_media(
+    client: B.BlotatoClient,
+    media_dir: str,
+) -> dict[str, str]:
+    """Sube todos los PNG antes de crear el primer post y devuelve filename→URL."""
+    if not media_dir:
+        return {}
+    root = Path(media_dir)
+    if not root.is_dir():
+        raise RuntimeError(f"MEDIA_DIR no existe: {root}")
+
+    pngs = sorted(root.glob("*.png"))
+    if not pngs:
+        raise RuntimeError(f"MEDIA_DIR no contiene PNG: {root}")
+
+    uploaded: dict[str, str] = {}
+    print(f"\n▶ Preparando {len(pngs)} masters visuales en Blotato")
+    for path in pngs:
+        if client.dry:
+            uploaded[path.name] = f"dry://{path.name}"
+        else:
+            uploaded[path.name] = client.upload_presigned(str(path))
+    print(f"✓ {len(uploaded)} masters disponibles para programación")
+    return uploaded
+
+
+def image_urls(
+    filenames: list[str],
+    uploaded: dict[str, str],
+    media_base: str,
+) -> list[str]:
+    urls: list[str] = []
+    for filename in filenames:
+        if uploaded:
+            if filename not in uploaded:
+                raise RuntimeError(f"Falta master local aprobado: {filename}")
+            urls.append(uploaded[filename])
+        else:
+            urls.append(f"{media_base}/{filename}")
+    return urls
+
+
 def publicar(
     manifest: dict,
     cfg: dict,
     reels_dir: str,
+    media_dir: str,
     dry: bool,
     semana: int | None,
     plan_output: str | None = None,
@@ -79,6 +122,10 @@ def publicar(
         "MEDIA_BASE", "https://ops-motionco.github.io/motion-media/carruseles"
     )
     catalog = MES.leer_catalogo()
+
+    # Carga atómica de medios: ningún post se crea hasta que los 21 masters
+    # aprobados hayan sido cargados correctamente.
+    uploaded_images = prepare_image_media(client, media_dir)
 
     for week in MES.seleccionar_semanas(manifest, semana):
         start = week["fecha_inicio"]
@@ -107,16 +154,19 @@ def publicar(
                 )
                 name = f"mes{manifest['mes']}_{start}_{day_key}_{channel}"
                 media: list[str] = []
+
                 if fmt == "video":
                     media = [video_url]
                 elif channel == "linkedin_paulo" and day.get("imagen_linkedin"):
-                    media = [f"{media_base}/{day['imagen_linkedin']}-1.png"]
+                    filename = f"{day['imagen_linkedin']}-1.png"
+                    media = image_urls([filename], uploaded_images, media_base)
                 elif not (fmt == "post_carousel" and channel == "linkedin_paulo"):
                     base = day["carrusel"]
-                    media = [
-                        f"{media_base}/{base}-{i}.png"
+                    filenames = [
+                        f"{base}-{i}.png"
                         for i in range(1, day["carrusel_slides"] + 1)
                     ]
+                    media = image_urls(filenames, uploaded_images, media_base)
 
                 item: dict[str, Any] = {
                     "week": week.get("numero"),
@@ -154,7 +204,10 @@ def publicar(
                     if dry:
                         print("  ✓ dry validado")
                     else:
-                        print(f"  ✓ programado · Blotato ID: {item['blotato_id'] or 'no informado'}")
+                        print(
+                            "  ✓ programado · Blotato ID: "
+                            f"{item['blotato_id'] or 'no informado'}"
+                        )
                 except Exception as exc:
                     item["status"] = "failed"
                     item["error"] = str(exc)
@@ -188,7 +241,8 @@ def main() -> int:
     failures, plan = publicar(
         manifest,
         cfg,
-        os.environ.get("REELS_DIR", "media_repo/reels"),
+        os.environ.get("REELS_DIR", ""),
+        os.environ.get("MEDIA_DIR", ""),
         args.dry,
         args.semana,
         args.plan_output,
