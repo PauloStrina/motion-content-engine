@@ -28,15 +28,32 @@ def media_video(client: B.BlotatoClient, reel: dict, reels_dir: str) -> str:
 
 
 def response_id(result: dict[str, Any]) -> str | None:
-    direct = result.get("id") or result.get("postId")
-    if direct is not None:
-        return str(direct)
-    post = result.get("post")
-    if isinstance(post, dict):
-        nested = post.get("id") or post.get("postId")
-        if nested is not None:
-            return str(nested)
-    return None
+    preferred = {
+        "id",
+        "postid",
+        "post_id",
+        "postsubmissionid",
+        "submissionid",
+        "submission_id",
+    }
+
+    def walk(value: Any) -> str | None:
+        if isinstance(value, dict):
+            for key, nested in value.items():
+                if key.lower() in preferred and nested not in (None, ""):
+                    return str(nested)
+            for nested in value.values():
+                found = walk(nested)
+                if found:
+                    return found
+        elif isinstance(value, list):
+            for nested in value:
+                found = walk(nested)
+                if found:
+                    return found
+        return None
+
+    return walk(result)
 
 
 def write_plan(path: str | None, plan: list[dict[str, Any]]) -> None:
