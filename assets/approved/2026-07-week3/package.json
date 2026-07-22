@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "package_id": "2026-07-week3-v4",
+  "status": "approved",
+  "approved_by": "Paulo",
+  "approved_at": "2026-07-22T13:33:36-03:00",
+  "production_rule": "Los PNG del paquete son masters inmutables. GitHub valida, renombra, distribuye y publica; no los rediseña ni vuelve a renderizar.",
+  "source": {
+    "provider": "google_drive",
+    "file_id": "11j1pnzPo6wBICwuVwotn8alrCnleaThV",
+    "public_download_url": "https://drive.google.com/uc?export=download&id=11j1pnzPo6wBICwuVwotn8alrCnleaThV",
+    "zip_sha256": "fe8e1b6c37efab64684e0520c1003adf21523d8e47c64e4d41a43aeccdef480e",
+    "zip_bytes": 2945811
+  },
+  "expected_png_count": 21,
+  "mappings": [
+    {
+      "source": "01_lunes_linkedin.png",
+      "target": "2026-07-27-curva-cambio-linkedin-1.png"
+    },
+    {
+      "source": "lunes_instagram/lunes_instagram_01.png",
+      "target": "2026-07-27-curva-cambio-instagram-1.png"
+    },
+    {
+      "source": "lunes_instagram/lunes_instagram_02.png",
+      "target": "2026-07-27-curva-cambio-instagram-2.png"
+    },
+    {
+      "source": "lunes_instagram/lunes_instagram_03.png",
+      "target": "2026-07-27-curva-cambio-instagram-3.png"
+    },
+    {
+      "source": "lunes_instagram/lunes_instagram_04.png",
+      "target": "2026-07-27-curva-cambio-instagram-4.png"
+    },
+    {
+      "source": "lunes_instagram/lunes_instagram_05.png",
+      "target": "2026-07-27-curva-cambio-instagram-5.png"
+    },
+    {
+      "source": "lunes_instagram/lunes_instagram_06.png",
+      "target": "2026-07-27-curva-cambio-instagram-6.png"
+    },
+    {
+      "source": "lunes_instagram/lunes_instagram_07.png",
+      "target": "2026-07-27-curva-cambio-instagram-7.png"
+    },
+    {
+      "source": "lunes_instagram/lunes_instagram_08.png",
+      "target": "2026-07-27-curva-cambio-instagram-8.png"
+    },
+    {
+      "source": "lunes_instagram/lunes_instagram_09.png",
+      "target": "2026-07-27-curva-cambio-instagram-9.png"
+    },
+    {
+      "source": "lunes_instagram/lunes_instagram_10.png",
+      "target": "2026-07-27-curva-cambio-instagram-10.png"
+    },
+    {
+      "source": "miercoles_comunidad/miercoles_comunidad_01.png",
+      "target": "2026-07-29-comunidad-digital-1.png"
+    },
+    {
+      "source": "miercoles_comunidad/miercoles_comunidad_02.png",
+      "target": "2026-07-29-comunidad-digital-2.png"
+    },
+    {
+      "source": "miercoles_comunidad/miercoles_comunidad_03.png",
+      "target": "2026-07-29-comunidad-digital-3.png"
+    },
+    {
+      "source": "miercoles_comunidad/miercoles_comunidad_04.png",
+      "target": "2026-07-29-comunidad-digital-4.png"
+    },
+    {
+      "source": "miercoles_comunidad/miercoles_comunidad_05.png",
+      "target": "2026-07-29-comunidad-digital-5.png"
+    },
+    {
+      "source": "miercoles_comunidad/miercoles_comunidad_06.png",
+      "target": "2026-07-29-comunidad-digital-6.png"
+    },
+    {
+      "source": "miercoles_comunidad/miercoles_comunidad_07.png",
+      "target": "2026-07-29-comunidad-digital-7.png"
+    },
+    {
+      "source": "miercoles_comunidad/miercoles_comunidad_08.png",
+      "target": "2026-07-29-comunidad-digital-8.png"
+    },
+    {
+      "source": "miercoles_comunidad/miercoles_comunidad_09.png",
+      "target": "2026-07-29-comunidad-digital-9.png"
+    },
+    {
+      "source": "miercoles_comunidad/miercoles_comunidad_10.png",
+      "target": "2026-07-29-comunidad-digital-10.png"
+    }
+  ]
+}
