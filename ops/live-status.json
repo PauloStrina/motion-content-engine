@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "request_id": "2026-07-week3-live-v3",
+  "status": "success",
+  "job_status": "success",
+  "mes": "2026-07",
+  "semana": 3,
+  "modo": "live",
+  "run_id": "29941355361",
+  "run_url": "https://github.com/PauloStrina/motion-content-engine/actions/runs/29941355361",
+  "commit_sha": "240a24a99af189dd373b0287d85643c07080dd01",
+  "posts": [
+    {
+      "day": "lun",
+      "channel": "linkedin_paulo",
+      "status": "scheduled",
+      "blotato_id": "629ff50a-a1b6-4ae9-ad09-a6c4d25db298",
+      "scheduled_time": "2026-07-27T12:00:00Z"
+    },
+    {
+      "day": "lun",
+      "channel": "instagram",
+      "status": "scheduled",
+      "blotato_id": "aea3a2e5-f5fe-4cdb-92af-4437ff6c52ec",
+      "scheduled_time": "2026-07-27T15:00:00Z"
+    },
+    {
+      "day": "mar",
+      "channel": "linkedin_paulo",
+      "status": "scheduled",
+      "blotato_id": "35ae0162-fe51-4454-beac-d3c882a37bc2",
+      "scheduled_time": "2026-07-28T12:00:00Z"
+    },
+    {
+      "day": "mar",
+      "channel": "instagram",
+      "status": "scheduled",
+      "blotato_id": "a125f8b0-c042-46b3-a305-64b382987656",
+      "scheduled_time": "2026-07-28T15:00:00Z"
+    },
+    {
+      "day": "mie",
+      "channel": "linkedin_paulo",
+      "status": "scheduled",
+      "blotato_id": "f7a3d92c-39ff-4fa9-a65b-5e80df657f67",
+      "scheduled_time": "2026-07-29T12:00:00Z"
+    },
+    {
+      "day": "mie",
+      "channel": "instagram",
+      "status": "scheduled",
+      "blotato_id": "14454568-caa3-4f32-be18-e69b4a0264c0",
+      "scheduled_time": "2026-07-29T15:00:00Z"
+    },
+    {
+      "day": "jue",
+      "channel": "linkedin_paulo",
+      "status": "scheduled",
+      "blotato_id": "3f13e73c-bb0f-4467-ae16-359a3a7ac053",
+      "scheduled_time": "2026-07-30T12:00:00Z"
+    },
+    {
+      "day": "jue",
+      "channel": "instagram",
+      "status": "scheduled",
+      "blotato_id": "80ac5424-7e4f-4d83-9d53-ae35a97556f1",
+      "scheduled_time": "2026-07-30T15:00:00Z"
+    }
+  ]
+}
