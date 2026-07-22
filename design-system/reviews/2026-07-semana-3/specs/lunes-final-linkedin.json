@@ -1,0 +1,43 @@
+{
+  "episodio": "Semana 3 · Lunes · LinkedIn final v2",
+  "slides": [
+    {
+      "bg": "blanco",
+      "logo": "blanco",
+      "pager": "",
+      "foot": "​",
+      "foot_color": "blanco",
+      "blocks": [],
+      "layers": [
+        {"type":"text","x":58,"y":52,"w":760,"h":290,"font":"gotham","size":50,"color":"violeta","text":"¿Por qué muchas\npersonas no cambian\nsu forma de trabajar\ndespués de tomar un\ncurso de IA?","align":"left","z":8,"line_height":53},
+        {"type":"line","x1":60,"y1":330,"x2":108,"y2":330,"stroke":"naranja","stroke_width":5,"z":8},
+        {"type":"text","x":60,"y":365,"w":570,"h":80,"font":"gotham","size":29,"color":"violeta","text":"El curso inicia el cambio.\nEl entorno define si se sostiene.","align":"left","z":8,"line_height":34},
+        {"type":"line","x1":76,"y1":1110,"x2":820,"y2":1110,"stroke":"violeta","stroke_width":4,"z":3},
+        {"type":"line","x1":76,"y1":1110,"x2":76,"y2":570,"stroke":"violeta","stroke_width":4,"z":3},
+        {"type":"text","x":4,"y":760,"w":190,"h":44,"font":"gotham","size":23,"color":"aqua","text":"ADOPCIÓN","align":"center","z":7,"rotate":-90,"line_height":26},
+        {"type":"text","x":700,"y":1124,"w":120,"h":34,"font":"gotham","size":20,"color":"violeta","text":"TIEMPO","align":"right","z":8},
+        {"type":"svg_path","d":"M 78 1010 C 170 970 210 760 305 730 C 410 700 475 965 595 985","stroke":"violeta","stroke_width":7,"fill":"transparent","z":3},
+        {"type":"svg_path","d":"M 595 985 C 690 988 755 960 818 925","stroke":"naranja","stroke_width":6,"fill":"transparent","z":3,"dasharray":"15 13"},
+        {"type":"svg_path","d":"M 595 985 C 680 975 710 790 792 565","stroke":"aqua","stroke_width":8,"fill":"transparent","z":4},
+        {"type":"circle","x":66,"y":998,"w":24,"h":24,"fill":"aqua","stroke":"violeta","stroke_width":3,"z":5},
+        {"type":"circle","x":293,"y":718,"w":24,"h":24,"fill":"naranja","stroke":"violeta","stroke_width":3,"z":5},
+        {"type":"circle","x":583,"y":973,"w":24,"h":24,"fill":"naranja","stroke":"violeta","stroke_width":3,"z":5},
+        {"type":"circle","x":806,"y":913,"w":24,"h":24,"fill":"blanco","stroke":"naranja","stroke_width":3,"z":5},
+        {"type":"circle","x":780,"y":553,"w":24,"h":24,"fill":"blanco","stroke":"aqua","stroke_width":3,"z":5},
+        {"type":"text","x":92,"y":1024,"w":160,"h":70,"font":"gotham","size":20,"color":"violeta","text":"1. Curso de IA\nSe descubre\nel potencial.","align":"left","z":8,"line_height":23},
+        {"type":"text","x":260,"y":632,"w":170,"h":75,"font":"gotham","size":23,"color":"aqua","text":"2.\nAlta expectativa","align":"left","z":8,"line_height":26},
+        {"type":"text","x":445,"y":770,"w":170,"h":90,"font":"gotham","size":23,"color":"aqua","text":"3.\nAparece el\nesfuerzo real","align":"left","z":8,"line_height":26},
+        {"type":"text","x":485,"y":1008,"w":240,"h":80,"font":"gotham","size":19,"color":"violeta","text":"4. Valle de adopción\nEs más fácil volver\na hacerlo como antes.","align":"left","z":8,"line_height":23},
+        {"type":"text","x":710,"y":458,"w":150,"h":65,"font":"gotham","size":22,"color":"aqua","text":"5.\nAdopción sostenida","align":"left","z":8,"line_height":24},
+        {"type":"text","x":710,"y":530,"w":145,"h":75,"font":"gotham","size":18,"color":"violeta","text":"Nueva forma de\ntrabajar y mayor\nproductividad.","align":"left","z":8,"line_height":22},
+        {"type":"text","x":832,"y":880,"w":180,"h":32,"font":"gotham","size":20,"color":"naranja","text":"Curso aislado","align":"left","z":8},
+        {"type":"text","x":832,"y":920,"w":175,"h":92,"font":"gotham","size":17,"color":"violeta","text":"Sin intervenciones,\nla adopción se estanca\ny el uso esporádico\nse diluye.","align":"left","z":8,"line_height":21},
+        {"type":"rect","x":848,"y":515,"w":190,"h":350,"fill":"blanco","stroke":"aqua","stroke_width":2,"radius":14,"z":3},
+        {"type":"text","x":862,"y":535,"w":162,"h":48,"font":"gotham","size":15,"color":"aqua","text":"DISEÑO DE\nCOMPORTAMIENTOS","align":"center","z":6,"line_height":18},
+        {"type":"text","x":860,"y":605,"w":165,"h":235,"font":"gotham","size":13,"color":"violeta","text":"Uso concreto\n\nRecursos al alcance\n\nTiempo para experimentar\n\nAcompañamiento y comunidad\n\nFeedback y medición","align":"center","z":6,"line_height":17},
+        {"type":"image","x":60,"y":1220,"w":180,"h":55,"src":"design-system/assets/logo-violeta.png","fit":"contain","z":20},
+        {"type":"text","x":255,"y":1225,"w":250,"h":48,"font":"gotham","size":15,"color":"violeta","text":"PROGRAMA DE\nTRANSFORMACIÓN DIGITAL","align":"left","z":8,"line_height":18}
+      ]
+    }
+  ]
+}

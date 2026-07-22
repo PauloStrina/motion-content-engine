@@ -206,13 +206,36 @@ def layer_html(layer):
     if kind == "svg_path":
         path_data = html.escape(str(layer.get("d", "")), quote=True)
         view_box = html.escape(str(layer.get("viewBox", "0 0 1080 1350")), quote=True)
+        dasharray = html.escape(str(layer.get("dasharray", "")), quote=True)
+        dash_attr = f' stroke-dasharray="{dasharray}"' if dasharray else ""
         return (
             f'<svg style="position:absolute;inset:0;width:1080px;height:1350px;'
             f'z-index:{int(css_num(layer.get("z"), 1))};opacity:{css_num(layer.get("opacity"), 1)};" '
             f'viewBox="{view_box}" preserveAspectRatio="none">'
             f'<path d="{path_data}" fill="{fill}" stroke="{stroke}" '
             f'stroke-width="{stroke_width}" stroke-linecap="{layer.get("linecap", "round")}" '
-            f'stroke-linejoin="{layer.get("linejoin", "round")}"/></svg>'
+            f'stroke-linejoin="{layer.get("linejoin", "round")}"{dash_attr}/></svg>'
+        )
+
+    if kind == "text":
+        fonts = {
+            "futura": "FuturaM",
+            "gotham": "GothamM",
+            "lyon": "LyonD",
+            "lyont": "LyonT",
+        }
+        font_family = fonts.get(layer.get("font", "gotham"), "GothamM")
+        text = html.escape(str(layer.get("text", ""))).replace("\n", "<br>")
+        text_transform = "uppercase" if layer.get("uppercase") or layer.get("font") == "futura" else "none"
+        align = layer.get("align", "left")
+        line_height = css_num(layer.get("line_height"), css_num(layer.get("size"), 32) * 1.15)
+        letter_spacing = css_num(layer.get("letter_spacing"), 0)
+        return (
+            f'<div style="{base}{transform}width:{width}px;height:{height}px;'
+            f'font-family:{font_family};font-size:{css_num(layer.get("size"), 32)}px;'
+            f'line-height:{line_height}px;color:{color(layer.get("color"), "#1A1A1A")};'
+            f'text-align:{align};letter-spacing:{letter_spacing}px;text-transform:{text_transform};'
+            f'overflow:hidden;">{text}</div>'
         )
 
     if kind == "image":

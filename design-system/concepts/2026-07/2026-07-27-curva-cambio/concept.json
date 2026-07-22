@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "piece_id": "2026-07-27-curva-cambio",
+  "status": "approved",
+  "approved_by": "Paulo",
+  "approved_at": "2026-07-22T13:33:36-03:00",
+  "visual_message": "El curso eleva la expectativa, pero la adopción se define al atravesar el valle del cambio.",
+  "concept": "Una curva muestra la expectativa, el esfuerzo, el valle y dos salidas: curso aislado o adopción sostenida mediante Diseño de Comportamientos.",
+  "conceptual_rationale": "La tesis depende de una trayectoria temporal y una bifurcación, por lo que se expresa mediante el sistema de líneas y nodos.",
+  "visual_family": "line_system",
+  "family_lock": true,
+  "representation": "diagram",
+  "execution": "reuse",
+  "visual_resources": ["trajectory", "timeline", "intersection", "typographic"],
+  "exclusions": ["shadows", "3d_ribbons", "volumetric_objects", "yellow_milestones"],
+  "quality_target": "reference_grade",
+  "quality_checks": {
+    "single_family": true,
+    "single_dominant_idea": true,
+    "mobile_legibility": true,
+    "reference_consistency": true
+  },
+  "brand_resources": ["motion_palette", "motion_typography", "motion_logo"],
+  "references": ["design-system/references/line-system/README.md"],
+  "approved_preview": "assets/approved/2026-07-week3/package.json",
+  "generation": null
+}

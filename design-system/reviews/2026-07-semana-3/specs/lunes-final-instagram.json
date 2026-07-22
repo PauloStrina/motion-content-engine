@@ -1,0 +1,93 @@
+{
+  "episodio": "Semana 3 · Lunes · Instagram final",
+  "slides": [
+    {"bg":"blanco","logo":"violeta","pager":"1","blocks":[],"layers":[
+      {"type":"text","x":76,"y":90,"w":860,"h":255,"font":"futura","size":56,"color":"violeta","text":"¿POR QUÉ MUCHAS\nPERSONAS NO CAMBIAN\nSU FORMA DE TRABAJAR\nDESPUÉS DE TOMAR\nUN CURSO DE IA?","align":"left","z":8,"line_height":54},
+      {"type":"line","x1":76,"y1":365,"x2":124,"y2":365,"stroke":"naranja","stroke_width":5,"z":8},
+      {"type":"svg_path","d":"M 90 1050 C 240 1010 310 720 470 700 C 630 680 650 1010 790 1015 C 890 1015 910 760 1000 610","stroke":"violeta","stroke_width":10,"fill":"transparent","z":3},
+      {"type":"circle","x":78,"y":1036,"w":28,"h":28,"fill":"aqua","stroke":"violeta","stroke_width":3,"z":5},
+      {"type":"circle","x":456,"y":686,"w":28,"h":28,"fill":"naranja","stroke":"violeta","stroke_width":3,"z":5},
+      {"type":"circle","x":776,"y":1001,"w":28,"h":28,"fill":"naranja","stroke":"violeta","stroke_width":3,"z":5},
+      {"type":"circle","x":986,"y":596,"w":28,"h":28,"fill":"blanco","stroke":"aqua","stroke_width":4,"z":5},
+      {"type":"text","x":76,"y":1135,"w":700,"h":50,"font":"gotham","size":28,"color":"violeta","text":"La Curva del Cambio ayuda a entenderlo.","align":"left","z":8,"line_height":32}
+    ]},
+    {"bg":"blanco","logo":"blanco","pager":"2","blocks":[],"layers":[
+      {"type":"text","x":76,"y":90,"w":840,"h":170,"font":"futura","size":54,"color":"violeta","text":"PARA ENTENDERLO ES MUY ÚTIL CONOCER LA CURVA DEL CAMBIO.","align":"left","z":8,"line_height":55},
+      {"type":"svg_path","d":"M 100 1040 C 270 970 300 690 475 680 C 630 670 670 1000 805 1000 C 915 1000 930 760 1005 630","stroke":"violeta","stroke_width":10,"fill":"transparent","z":3},
+      {"type":"circle","x":88,"y":1026,"w":28,"h":28,"fill":"aqua","stroke":"violeta","stroke_width":3,"z":5},
+      {"type":"circle","x":461,"y":666,"w":28,"h":28,"fill":"naranja","stroke":"violeta","stroke_width":3,"z":5},
+      {"type":"circle","x":791,"y":986,"w":28,"h":28,"fill":"naranja","stroke":"violeta","stroke_width":3,"z":5}
+    ]},
+    {"bg":"blanco","logo":"blanco","pager":"3","blocks":[],"layers":[
+      {"type":"text","x":76,"y":90,"w":820,"h":120,"font":"futura","size":54,"color":"violeta","text":"AL COMIENZO, LA EXPECTATIVA CRECE RÁPIDAMENTE.","align":"left","z":8,"line_height":55},
+      {"type":"svg_path","d":"M 110 1020 C 300 960 360 650 560 610","stroke":"violeta","stroke_width":10,"fill":"transparent","z":3},
+      {"type":"circle","x":98,"y":1006,"w":28,"h":28,"fill":"aqua","stroke":"violeta","stroke_width":3,"z":5},
+      {"type":"circle","x":544,"y":594,"w":32,"h":32,"fill":"naranja","stroke":"violeta","stroke_width":4,"z":5},
+      {"type":"line","x1":560,"y1":540,"x2":560,"y2":500,"stroke":"aqua","stroke_width":4,"z":5},
+      {"type":"line","x1":505,"y1":575,"x2":475,"y2":550,"stroke":"aqua","stroke_width":4,"z":5},
+      {"type":"line","x1":615,"y1":575,"x2":645,"y2":550,"stroke":"aqua","stroke_width":4,"z":5},
+      {"type":"text","x":110,"y":1090,"w":760,"h":55,"font":"gotham","size":28,"color":"violeta","text":"El curso muestra todo lo que la IA podría hacer.","align":"left","z":8}
+    ]},
+    {"bg":"blanco","logo":"blanco","pager":"4","blocks":[],"layers":[
+      {"type":"text","x":76,"y":90,"w":850,"h":180,"font":"futura","size":54,"color":"violeta","text":"DESPUÉS HAY QUE INCORPORARLA AL TRABAJO REAL.","align":"left","z":8,"line_height":55},
+      {"type":"text","x":76,"y":270,"w":720,"h":90,"font":"gotham","size":30,"color":"violeta","text":"La nueva práctica requiere más esfuerzo.","align":"left","z":8,"line_height":35},
+      {"type":"svg_path","d":"M 120 590 C 290 610 380 1020 675 1040","stroke":"violeta","stroke_width":10,"fill":"transparent","z":3},
+      {"type":"circle","x":660,"y":1025,"w":30,"h":30,"fill":"naranja","stroke":"violeta","stroke_width":4,"z":5},
+      {"type":"line","x1":745,"y1":560,"x2":745,"y2":915,"stroke":"naranja","stroke_width":6,"z":5},
+      {"type":"line","x1":745,"y1":915,"x2":710,"y2":875,"stroke":"naranja","stroke_width":6,"z":5},
+      {"type":"line","x1":745,"y1":915,"x2":780,"y2":875,"stroke":"naranja","stroke_width":6,"z":5}
+    ]},
+    {"bg":"blanco","logo":"blanco","pager":"5","blocks":[],"layers":[
+      {"type":"text","x":76,"y":90,"w":840,"h":170,"font":"futura","size":54,"color":"violeta","text":"LA ADOPCIÓN CAE.\nESE ES EL VALLE DE LA CURVA DEL CAMBIO.","align":"left","z":8,"line_height":55},
+      {"type":"svg_path","d":"M 110 620 C 270 650 350 1040 620 1040 C 770 1040 830 900 960 760","stroke":"violeta","stroke_width":10,"fill":"transparent","z":3},
+      {"type":"circle","x":604,"y":1024,"w":32,"h":32,"fill":"naranja","stroke":"violeta","stroke_width":4,"z":5},
+      {"type":"line","x1":620,"y1":875,"x2":620,"y2":970,"stroke":"aqua","stroke_width":5,"z":5},
+      {"type":"line","x1":620,"y1":970,"x2":595,"y2":945,"stroke":"aqua","stroke_width":5,"z":5},
+      {"type":"line","x1":620,"y1":970,"x2":645,"y2":945,"stroke":"aqua","stroke_width":5,"z":5}
+    ]},
+    {"bg":"blanco","logo":"blanco","pager":"6","blocks":[],"layers":[
+      {"type":"text","x":76,"y":90,"w":840,"h":180,"font":"futura","size":54,"color":"violeta","text":"MUCHOS CURSOS TERMINAN ANTES DE ENTRAR EN ESE VALLE.","align":"left","z":8,"line_height":55},
+      {"type":"svg_path","d":"M 120 640 C 300 680 390 1030 620 1030","stroke":"violeta","stroke_width":10,"fill":"transparent","z":3},
+      {"type":"svg_path","d":"M 620 1030 C 760 1025 850 995 980 950","stroke":"naranja","stroke_width":8,"fill":"transparent","z":3,"dasharray":"17 14"},
+      {"type":"circle","x":605,"y":1015,"w":30,"h":30,"fill":"naranja","stroke":"violeta","stroke_width":4,"z":5},
+      {"type":"circle","x":965,"y":935,"w":30,"h":30,"fill":"blanco","stroke":"naranja","stroke_width":4,"z":5},
+      {"type":"text","x":690,"y":1090,"w":260,"h":65,"font":"futura","size":28,"color":"naranja","text":"CURSO AISLADO","align":"right","z":8}
+    ]},
+    {"bg":"blanco","logo":"blanco","pager":"7","blocks":[],"layers":[
+      {"type":"text","x":76,"y":90,"w":850,"h":190,"font":"futura","size":54,"color":"violeta","text":"EL DISEÑO DE COMPORTAMIENTOS INTERVIENE EN LA PARTE MÁS DIFÍCIL.","align":"left","z":8,"line_height":55},
+      {"type":"svg_path","d":"M 110 615 C 290 660 370 1030 615 1030 C 760 1030 810 820 940 630","stroke":"violeta","stroke_width":10,"fill":"transparent","z":3},
+      {"type":"line","x1":520,"y1":1110,"x2":890,"y2":1110,"stroke":"aqua","stroke_width":4,"z":4,"dash":true},
+      {"type":"line","x1":520,"y1":1080,"x2":520,"y2":1140,"stroke":"aqua","stroke_width":4,"z":4},
+      {"type":"line","x1":890,"y1":1080,"x2":890,"y2":1140,"stroke":"aqua","stroke_width":4,"z":4},
+      {"type":"text","x":540,"y":1030,"w":330,"h":52,"font":"futura","size":22,"color":"aqua","text":"DISEÑO DE COMPORTAMIENTOS","align":"center","z":8}
+    ]},
+    {"bg":"blanco","logo":"blanco","pager":"8","blocks":[],"layers":[
+      {"type":"text","x":76,"y":90,"w":840,"h":190,"font":"futura","size":52,"color":"violeta","text":"SU OBJETIVO ES HACER QUE LOS HÁBITOS DESEADOS SEAN LOS MÁS FÁCILES DE REALIZAR.","align":"left","z":8,"line_height":54},
+      {"type":"circle","x":148,"y":618,"w":84,"h":84,"fill":"blanco","stroke":"aqua","stroke_width":4,"z":5},
+      {"type":"circle","x":353,"y":618,"w":84,"h":84,"fill":"blanco","stroke":"aqua","stroke_width":4,"z":5},
+      {"type":"circle","x":558,"y":618,"w":84,"h":84,"fill":"blanco","stroke":"aqua","stroke_width":4,"z":5},
+      {"type":"circle","x":763,"y":618,"w":84,"h":84,"fill":"blanco","stroke":"aqua","stroke_width":4,"z":5},
+      {"type":"text","x":125,"y":730,"w":130,"h":92,"font":"gotham","size":22,"color":"violeta","text":"USO\nCONCRETO","align":"center","z":8,"line_height":26},
+      {"type":"text","x":330,"y":730,"w":130,"h":92,"font":"gotham","size":22,"color":"violeta","text":"RECURSOS\nAL ALCANCE","align":"center","z":8,"line_height":26},
+      {"type":"text","x":535,"y":730,"w":130,"h":92,"font":"gotham","size":22,"color":"violeta","text":"TIEMPO PARA\nEXPERIMENTAR","align":"center","z":8,"line_height":26},
+      {"type":"text","x":740,"y":730,"w":130,"h":92,"font":"gotham","size":22,"color":"violeta","text":"COMUNIDAD Y\nFEEDBACK","align":"center","z":8,"line_height":26},
+      {"type":"line","x1":190,"y1":660,"x2":805,"y2":660,"stroke":"aqua","stroke_width":4,"z":2,"dash":true}
+    ]},
+    {"bg":"blanco","logo":"blanco","pager":"9","blocks":[],"layers":[
+      {"type":"text","x":76,"y":90,"w":850,"h":190,"font":"futura","size":52,"color":"violeta","text":"CUANDO DISMINUYE EL ESFUERZO Y LA PRÁCTICA SE REPITE, LA ADOPCIÓN VUELVE A CRECER.","align":"left","z":8,"line_height":54},
+      {"type":"svg_path","d":"M 120 1040 C 390 1035 520 980 620 830 C 710 695 790 555 965 435","stroke":"aqua","stroke_width":10,"fill":"transparent","z":3},
+      {"type":"circle","x":105,"y":1025,"w":30,"h":30,"fill":"blanco","stroke":"aqua","stroke_width":4,"z":5},
+      {"type":"circle","x":948,"y":418,"w":34,"h":34,"fill":"naranja","stroke":"aqua","stroke_width":4,"z":5},
+      {"type":"line","x1":965,"y1":370,"x2":965,"y2":325,"stroke":"aqua","stroke_width":4,"z":5},
+      {"type":"line","x1":910,"y1":410,"x2":875,"y2":385,"stroke":"aqua","stroke_width":4,"z":5},
+      {"type":"line","x1":1020,"y1":410,"x2":1050,"y2":385,"stroke":"aqua","stroke_width":4,"z":5}
+    ]},
+    {"bg":"blanco","logo":"violeta","pager":"10","blocks":[],"layers":[
+      {"type":"text","x":76,"y":90,"w":840,"h":150,"font":"futura","size":60,"color":"violeta","text":"NUEVA FORMA DE TRABAJAR.","align":"left","z":8,"line_height":60},
+      {"type":"text","x":76,"y":250,"w":700,"h":90,"font":"gotham","size":38,"color":"aqua","text":"Más productividad.","align":"left","z":8},
+      {"type":"svg_path","d":"M 120 1060 C 390 1050 540 970 665 780 C 760 635 835 500 980 400","stroke":"aqua","stroke_width":11,"fill":"transparent","z":3},
+      {"type":"circle","x":962,"y":382,"w":36,"h":36,"fill":"naranja","stroke":"aqua","stroke_width":4,"z":5},
+      {"type":"text","x":76,"y":1140,"w":700,"h":55,"font":"gotham","size":30,"color":"violeta","text":"El entorno define si el cambio se sostiene.","align":"left","z":8}
+    ]}
+  ]
+}

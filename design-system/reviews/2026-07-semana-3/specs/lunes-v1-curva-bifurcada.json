@@ -1,0 +1,76 @@
+{
+  "episodio": "Semana 3 · Lunes · V1 Curva bifurcada",
+  "slides": [
+    {
+      "bg": "blanco",
+      "logo": "violeta",
+      "eyebrow_color": "violeta",
+      "pager": "V1 · 01 — 03",
+      "foot": "VALIDACIÓN DE DISEÑO · NO PUBLICAR",
+      "foot_color": "violeta",
+      "blocks": [],
+      "layers": [
+        {"type":"text","x":84,"y":92,"w":720,"h":80,"font":"futura","size":58,"line_height":58,"color":"violeta","text":"CURVA DEL CAMBIO DE LA IA"},
+        {"type":"text","x":84,"y":172,"w":800,"h":100,"font":"lyon","size":34,"line_height":43,"color":"negro","text":"El curso eleva la expectativa. La adopción se decide en el valle."},
+        {"type":"line","x1":160,"y1":1070,"x2":970,"y2":1070,"stroke":"negro","stroke_width":5,"z":2},
+        {"type":"line","x1":160,"y1":1070,"x2":160,"y2":350,"stroke":"negro","stroke_width":5,"z":2},
+        {"type":"text","x":18,"y":650,"w":260,"h":46,"font":"futura","size":29,"line_height":32,"color":"negro","text":"ADOPCIÓN","rotate":-90,"align":"center","z":4},
+        {"type":"text","x":820,"y":1085,"w":150,"h":40,"font":"futura","size":28,"line_height":30,"color":"negro","text":"TIEMPO","align":"right","z":4},
+        {"type":"svg_path","d":"M 165 970 C 255 930 295 610 420 535 C 525 475 545 995 675 995","stroke":"violeta","stroke_width":10,"fill":"transparent","z":3},
+        {"type":"svg_path","d":"M 675 995 C 790 985 865 935 955 900","stroke":"naranja","stroke_width":9,"fill":"transparent","dasharray":"18 16","z":3},
+        {"type":"svg_path","d":"M 675 995 C 790 900 770 665 955 500","stroke":"aqua","stroke_width":12,"fill":"transparent","z":4},
+        {"type":"circle","x":238,"y":750,"w":34,"h":34,"fill":"aqua","stroke":"violeta","stroke_width":5,"z":6},
+        {"type":"circle","x":403,"y":518,"w":34,"h":34,"fill":"blanco","stroke":"violeta","stroke_width":5,"z":6},
+        {"type":"circle","x":658,"y":978,"w":34,"h":34,"fill":"naranja","stroke":"violeta","stroke_width":5,"z":6},
+        {"type":"circle","x":938,"y":483,"w":34,"h":34,"fill":"aqua","stroke":"violeta","stroke_width":5,"z":6},
+        {"type":"text","x":210,"y":792,"w":190,"h":76,"font":"gotham","size":24,"line_height":29,"color":"violeta","text":"CURSO\nDE IA","z":7},
+        {"type":"text","x":350,"y":430,"w":220,"h":70,"font":"gotham","size":24,"line_height":29,"color":"violeta","text":"ALTA\nEXPECTATIVA","z":7},
+        {"type":"text","x":565,"y":1018,"w":230,"h":60,"font":"gotham","size":23,"line_height":28,"color":"naranja","text":"VALLE DE ADOPCIÓN","z":7},
+        {"type":"text","x":760,"y":430,"w":235,"h":70,"font":"gotham","size":23,"line_height":28,"color":"violeta","text":"ADOPCIÓN\nSOSTENIDA","align":"right","z":7},
+        {"type":"text","x":720,"y":888,"w":235,"h":60,"font":"gotham","size":22,"line_height":27,"color":"naranja","text":"CURSO AISLADO","align":"right","z":7}
+      ]
+    },
+    {
+      "bg": "aqua",
+      "logo": "violeta",
+      "eyebrow_color": "violeta",
+      "pager": "V1 · 02 — 03",
+      "foot": "PORTADA DE CARRUSEL · NO PUBLICAR",
+      "foot_color": "violeta",
+      "blocks": [],
+      "layers": [
+        {"type":"text","x":84,"y":110,"w":820,"h":330,"font":"futura","size":64,"line_height":63,"color":"violeta","text":"¿POR QUÉ MUCHAS PERSONAS NO CAMBIAN DESPUÉS DE UN CURSO DE IA?","z":8},
+        {"type":"svg_path","d":"M 90 980 C 260 915 330 480 500 540 C 650 595 600 1020 760 995 C 875 975 885 720 1010 535","stroke":"violeta","stroke_width":13,"fill":"transparent","z":3},
+        {"type":"circle","x":302,"y":635,"w":42,"h":42,"fill":"naranja","stroke":"violeta","stroke_width":5,"z":5},
+        {"type":"circle","x":735,"y":972,"w":42,"h":42,"fill":"naranja","stroke":"violeta","stroke_width":5,"z":5},
+        {"type":"circle","x":986,"y":510,"w":42,"h":42,"fill":"blanco","stroke":"violeta","stroke_width":5,"z":5},
+        {"type":"text","x":84,"y":1080,"w":720,"h":70,"font":"lyon","size":32,"line_height":40,"color":"negro","text":"La Curva del Cambio ayuda a entenderlo.","z":8}
+      ]
+    },
+    {
+      "bg": "blanco",
+      "logo": "violeta",
+      "eyebrow_color": "naranja",
+      "pager": "V1 · 03 — 03",
+      "foot": "ZOOM DEL VALLE · NO PUBLICAR",
+      "foot_color": "violeta",
+      "blocks": [],
+      "layers": [
+        {"type":"text","x":84,"y":100,"w":850,"h":140,"font":"futura","size":55,"line_height":55,"color":"violeta","text":"EL CURSO TERMINA. EL VALLE EMPIEZA.","z":8},
+        {"type":"text","x":84,"y":230,"w":790,"h":90,"font":"lyon","size":32,"line_height":40,"color":"negro","text":"El Diseño de Comportamientos acompaña la parte más difícil de la curva.","z":8},
+        {"type":"svg_path","d":"M 100 520 C 260 520 250 1000 520 1000 C 785 1000 785 520 1010 520","stroke":"violeta","stroke_width":12,"fill":"transparent","z":3},
+        {"type":"line","x1":310,"y1":890,"x2":885,"y2":890,"stroke":"aqua","stroke_width":16,"z":4},
+        {"type":"text","x":350,"y":820,"w":510,"h":48,"font":"futura","size":35,"line_height":38,"color":"violeta","text":"DISEÑO DE COMPORTAMIENTOS","align":"center","z":8},
+        {"type":"circle","x":365,"y":866,"w":42,"h":42,"fill":"aqua","stroke":"violeta","stroke_width":4,"z":6},
+        {"type":"circle","x":505,"y":866,"w":42,"h":42,"fill":"aqua","stroke":"violeta","stroke_width":4,"z":6},
+        {"type":"circle","x":645,"y":866,"w":42,"h":42,"fill":"aqua","stroke":"violeta","stroke_width":4,"z":6},
+        {"type":"circle","x":785,"y":866,"w":42,"h":42,"fill":"aqua","stroke":"violeta","stroke_width":4,"z":6},
+        {"type":"text","x":300,"y":930,"w":150,"h":72,"font":"gotham","size":21,"line_height":26,"color":"negro","text":"USO\nCONCRETO","align":"center","z":8},
+        {"type":"text","x":440,"y":930,"w":150,"h":72,"font":"gotham","size":21,"line_height":26,"color":"negro","text":"RECURSOS\nACCESIBLES","align":"center","z":8},
+        {"type":"text","x":580,"y":930,"w":150,"h":72,"font":"gotham","size":21,"line_height":26,"color":"negro","text":"FEEDBACK Y\nPRÁCTICA","align":"center","z":8},
+        {"type":"text","x":720,"y":930,"w":150,"h":72,"font":"gotham","size":21,"line_height":26,"color":"negro","text":"COMUNIDAD","align":"center","z":8},
+        {"type":"text","x":145,"y":1065,"w":790,"h":95,"font":"lyon","size":32,"line_height":40,"color":"naranja","text":"Hacer que el hábito deseado sea el más fácil de realizar.","align":"center","z":8}
+      ]
+    }
+  ]
+}

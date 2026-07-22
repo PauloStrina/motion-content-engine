@@ -1,0 +1,56 @@
+{
+  "episodio": "Semana 3 · Miércoles · V1 Journaling editorial",
+  "slides": [
+    {
+      "bg": "blanco",
+      "logo": "violeta",
+      "eyebrow_color": "naranja",
+      "pager": "V1 · 01 — 03",
+      "foot": "JOURNALING · VALIDACIÓN · NO PUBLICAR",
+      "foot_color": "violeta",
+      "blocks": [],
+      "layers": [
+        {"type":"text","x":84,"y":105,"w":220,"h":45,"font":"gotham","size":23,"line_height":26,"color":"naranja","text":"NOTA DE CAMPO 03","letter_spacing":2,"z":8},
+        {"type":"text","x":84,"y":205,"w":850,"h":260,"font":"lyon","size":70,"line_height":82,"color":"negro","text":"30 embajadores digitales, 66 proyectos y nuevas capacidades.","z":8},
+        {"type":"line","x1":84,"y1":500,"x2":720,"y2":500,"stroke":"aqua","stroke_width":18,"z":3},
+        {"type":"text","x":84,"y":570,"w":780,"h":170,"font":"futura","size":58,"line_height":58,"color":"violeta","text":"EL RESULTADO DE CONSTRUIR UNA COMUNIDAD DIGITAL","z":8},
+        {"type":"text","x":820,"y":810,"w":170,"h":130,"font":"gotham","size":22,"line_height":28,"color":"naranja","text":"NO FUE SOLO\nFORMACIÓN.\nFUE RED.","rotate":-5,"align":"center","z":8},
+        {"type":"line","x1":760,"y1":855,"x2":650,"y2":820,"stroke":"naranja","stroke_width":4,"z":4},
+        {"type":"text","x":84,"y":1000,"w":760,"h":100,"font":"lyont","size":32,"line_height":41,"color":"negro","text":"Una reflexión sobre lo que cambia cuando la transformación deja de depender de un equipo central.","z":8}
+      ]
+    },
+    {
+      "bg": "blanco",
+      "logo": "violeta",
+      "eyebrow_color": "violeta",
+      "pager": "V1 · 02 — 03",
+      "foot": "CUERPO · VALIDACIÓN · NO PUBLICAR",
+      "foot_color": "violeta",
+      "blocks": [],
+      "layers": [
+        {"type":"text","x":84,"y":110,"w":240,"h":40,"font":"gotham","size":22,"line_height":25,"color":"violeta","text":"LO QUE APRENDIMOS","letter_spacing":2,"z":8},
+        {"type":"text","x":84,"y":220,"w":820,"h":340,"font":"lyon","size":58,"line_height":72,"color":"negro","text":"Las oportunidades no estaban concentradas en Innovación o Tecnología. Estaban distribuidas por toda la organización.","z":8},
+        {"type":"rect","x":84,"y":610,"w":910,"h":210,"fill":"aqua","stroke":"transparent","radius":0,"z":2},
+        {"type":"text","x":120,"y":655,"w":830,"h":120,"font":"futura","size":54,"line_height":55,"color":"violeta","text":"LA COMUNIDAD CONVIRTIÓ ESA DISTRIBUCIÓN EN CAPACIDAD","z":8},
+        {"type":"text","x":84,"y":900,"w":690,"h":170,"font":"lyont","size":34,"line_height":45,"color":"negro","text":"Personas que conocían los problemas reales empezaron a detectar oportunidades, compartir aprendizajes y participar en el diseño de soluciones.","z":8},
+        {"type":"text","x":800,"y":920,"w":170,"h":120,"font":"gotham","size":21,"line_height":27,"color":"naranja","text":"DE\nCONSUMIDORES\nA PROTAGONISTAS","rotate":4,"align":"center","z":8}
+      ]
+    },
+    {
+      "bg": "violeta",
+      "logo": "blanco",
+      "eyebrow_color": "aqua",
+      "pager": "V1 · 03 — 03",
+      "foot": "CIERRE · VALIDACIÓN · NO PUBLICAR",
+      "foot_color": "aqua",
+      "blocks": [],
+      "layers": [
+        {"type":"text","x":84,"y":120,"w":260,"h":40,"font":"gotham","size":22,"line_height":25,"color":"aqua","text":"CONCLUSIÓN","letter_spacing":3,"z":8},
+        {"type":"text","x":84,"y":225,"w":850,"h":360,"font":"lyon","size":62,"line_height":74,"color":"blanco","text":"Una Comunidad Digital convierte la curiosidad individual en capacidad organizacional.","z":8},
+        {"type":"line","x1":84,"y1":620,"x2":920,"y2":620,"stroke":"naranja","stroke_width":10,"z":3},
+        {"type":"text","x":84,"y":690,"w":820,"h":230,"font":"futura","size":60,"line_height":59,"color":"aqua","text":"30 EMBAJADORES\n66 PROYECTOS\nUNA RED QUE QUEDA","z":8},
+        {"type":"text","x":84,"y":1030,"w":720,"h":80,"font":"lyont","size":31,"line_height":40,"color":"blanco","text":"Programa de Transformación Digital · Motion","z":8}
+      ]
+    }
+  ]
+}

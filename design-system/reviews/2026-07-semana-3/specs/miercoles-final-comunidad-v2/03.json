@@ -1,0 +1,17 @@
+{
+  "bg": "blanco",
+  "logo": "blanco",
+  "pager": "",
+  "foot": "​",
+  "foot_color": "blanco",
+  "blocks": [],
+  "layers": [
+    {"type":"circle","x":36,"y":36,"w":44,"h":44,"fill":"aqua","stroke":"aqua","stroke_width":0,"z":20},
+    {"type":"text","x":38,"y":39,"w":40,"h":38,"font":"futura","size":22,"color":"violeta","text":"3","align":"center","z":21,"line_height":24},
+    {"type":"text","x":76,"y":120,"w":830,"h":270,"font":"gotham","size":39,"color":"negro","text":"Pero las oportunidades no aparecen solamente en Innovación, Tecnología o Transformación.\n\nEstán distribuidas por toda la organización.","align":"left","z":8,"line_height":46},
+    {"type":"circle","x":285,"y":715,"w":210,"h":210,"fill":"transparent","stroke":"violeta","stroke_width":3,"z":5},
+    {"type":"circle","x":525,"y":715,"w":210,"h":210,"fill":"transparent","stroke":"violeta","stroke_width":3,"z":5},
+    {"type":"circle","x":405,"y":905,"w":210,"h":210,"fill":"transparent","stroke":"violeta","stroke_width":3,"z":5},
+    {"type":"circle","x":495,"y":865,"w":30,"h":30,"fill":"naranja","stroke":"naranja","stroke_width":0,"z":5}
+  ]
+}

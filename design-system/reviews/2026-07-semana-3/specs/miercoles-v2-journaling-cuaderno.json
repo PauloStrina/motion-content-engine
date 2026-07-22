@@ -1,0 +1,62 @@
+{
+  "episodio": "Semana 3 · Miércoles · V2 Journaling cuaderno",
+  "slides": [
+    {
+      "bg": "violeta",
+      "logo": "blanco",
+      "eyebrow_color": "aqua",
+      "pager": "V2 · 01 — 03",
+      "foot": "JOURNALING · VALIDACIÓN · NO PUBLICAR",
+      "foot_color": "aqua",
+      "blocks": [],
+      "layers": [
+        {"type":"rect","x":68,"y":110,"w":930,"h":1080,"fill":"blanco","stroke":"transparent","radius":8,"shadow":"12px 14px 0 rgba(0,0,0,.22)","rotate":-1.2,"z":2},
+        {"type":"line","x1":120,"y1":250,"x2":930,"y2":250,"stroke":"aqua","stroke_width":3,"z":3},
+        {"type":"line","x1":120,"y1":370,"x2":930,"y2":370,"stroke":"aqua","stroke_width":3,"z":3},
+        {"type":"line","x1":120,"y1":490,"x2":930,"y2":490,"stroke":"aqua","stroke_width":3,"z":3},
+        {"type":"line","x1":120,"y1":610,"x2":930,"y2":610,"stroke":"aqua","stroke_width":3,"z":3},
+        {"type":"text","x":125,"y":155,"w":250,"h":40,"font":"gotham","size":22,"line_height":25,"color":"naranja","text":"JOURNAL · 29.07.26","letter_spacing":2,"z":8},
+        {"type":"text","x":125,"y":285,"w":800,"h":300,"font":"lyon","size":56,"line_height":66,"color":"negro","text":"30 embajadores digitales. 66 proyectos. Nuevas capacidades.","z":8},
+        {"type":"text","x":125,"y":650,"w":760,"h":230,"font":"futura","size":52,"line_height":51,"color":"violeta","text":"UNA COMUNIDAD DIGITAL CAMBIA QUIÉN PUEDE TRANSFORMAR LA ORGANIZACIÓN","z":8},
+        {"type":"rect","x":690,"y":895,"w":250,"h":130,"fill":"aqua","stroke":"violeta","stroke_width":4,"radius":18,"rotate":3,"z":5},
+        {"type":"text","x":715,"y":920,"w":200,"h":90,"font":"gotham","size":22,"line_height":27,"color":"violeta","text":"NO ES SOLO\nUN GRUPO.\nES UNA RED.","align":"center","z":8},
+        {"type":"text","x":125,"y":1040,"w":620,"h":90,"font":"lyont","size":29,"line_height":38,"color":"negro","text":"El resultado visible fueron los proyectos. El estructural fue la capacidad distribuida.","z":8}
+      ]
+    },
+    {
+      "bg": "violeta",
+      "logo": "blanco",
+      "eyebrow_color": "naranja",
+      "pager": "V2 · 02 — 03",
+      "foot": "CUERPO · VALIDACIÓN · NO PUBLICAR",
+      "foot_color": "aqua",
+      "blocks": [],
+      "layers": [
+        {"type":"rect","x":76,"y":105,"w":920,"h":1090,"fill":"blanco","stroke":"transparent","radius":8,"shadow":"12px 14px 0 rgba(0,0,0,.22)","rotate":1,"z":2},
+        {"type":"text","x":125,"y":155,"w":300,"h":40,"font":"gotham","size":22,"line_height":25,"color":"naranja","text":"ANOTACIÓN CENTRAL","letter_spacing":2,"z":8},
+        {"type":"text","x":125,"y":255,"w":800,"h":330,"font":"lyon","size":57,"line_height":70,"color":"negro","text":"Las oportunidades estaban distribuidas por toda la organización. La comunidad creó una forma de encontrarlas y hacerlas avanzar.","z":8},
+        {"type":"line","x1":125,"y1":620,"x2":895,"y2":620,"stroke":"violeta","stroke_width":7,"z":3},
+        {"type":"text","x":125,"y":690,"w":770,"h":230,"font":"futura","size":58,"line_height":57,"color":"violeta","text":"DETECTAR\nCONECTAR\nACOMPAÑAR\nCOMPARTIR","z":8},
+        {"type":"text","x":650,"y":705,"w":250,"h":180,"font":"gotham","size":23,"line_height":31,"color":"naranja","text":"LOS VERBOS\nQUE CONVIERTEN\nUNA COMUNIDAD\nEN CAPACIDAD","rotate":-3,"align":"center","z":8},
+        {"type":"text","x":125,"y":1000,"w":760,"h":100,"font":"lyont","size":33,"line_height":43,"color":"negro","text":"La tecnología fue parte del proceso. La red permitió que el aprendizaje circulara.","z":8}
+      ]
+    },
+    {
+      "bg": "naranja",
+      "logo": "blanco",
+      "eyebrow_color": "blanco",
+      "pager": "V2 · 03 — 03",
+      "foot": "CIERRE · VALIDACIÓN · NO PUBLICAR",
+      "foot_color": "blanco",
+      "blocks": [],
+      "layers": [
+        {"type":"rect","x":75,"y":105,"w":920,"h":1090,"fill":"blanco","stroke":"transparent","radius":8,"shadow":"12px 14px 0 rgba(0,0,0,.2)","rotate":-0.8,"z":2},
+        {"type":"text","x":125,"y":165,"w":250,"h":40,"font":"gotham","size":22,"line_height":25,"color":"violeta","text":"LO QUE QUEDA","letter_spacing":3,"z":8},
+        {"type":"text","x":125,"y":280,"w":800,"h":330,"font":"lyon","size":66,"line_height":79,"color":"negro","text":"Una Comunidad Digital convierte la curiosidad individual en capacidad organizacional.","z":8},
+        {"type":"rect","x":125,"y":670,"w":770,"h":250,"fill":"aqua","stroke":"transparent","radius":0,"z":3},
+        {"type":"text","x":170,"y":720,"w":680,"h":160,"font":"futura","size":66,"line_height":65,"color":"violeta","text":"30 EMBAJADORES\n66 PROYECTOS","align":"center","z":8},
+        {"type":"text","x":125,"y":995,"w":760,"h":100,"font":"lyont","size":34,"line_height":44,"color":"negro","text":"El verdadero resultado fue que la transformación dejó de depender de pocas personas.","align":"center","z":8}
+      ]
+    }
+  ]
+}

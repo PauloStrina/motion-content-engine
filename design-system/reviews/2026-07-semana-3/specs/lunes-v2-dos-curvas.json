@@ -1,0 +1,72 @@
+{
+  "episodio": "Semana 3 · Lunes · V2 Dos curvas",
+  "slides": [
+    {
+      "bg": "blanco",
+      "logo": "violeta",
+      "eyebrow_color": "violeta",
+      "pager": "V2 · 01 — 03",
+      "foot": "VALIDACIÓN DE DISEÑO · NO PUBLICAR",
+      "foot_color": "violeta",
+      "blocks": [],
+      "layers": [
+        {"type":"text","x":84,"y":92,"w":720,"h":80,"font":"futura","size":58,"line_height":58,"color":"violeta","text":"CURVA DEL CAMBIO DE LA IA"},
+        {"type":"text","x":84,"y":172,"w":830,"h":100,"font":"lyon","size":34,"line_height":43,"color":"negro","text":"El curso puede iniciar el cambio. El diseño del entorno define qué curva sigue."},
+        {"type":"line","x1":160,"y1":1080,"x2":970,"y2":1080,"stroke":"negro","stroke_width":5,"z":2},
+        {"type":"line","x1":160,"y1":1080,"x2":160,"y2":360,"stroke":"negro","stroke_width":5,"z":2},
+        {"type":"text","x":18,"y":660,"w":260,"h":46,"font":"futura","size":29,"line_height":32,"color":"negro","text":"ADOPCIÓN","rotate":-90,"align":"center","z":4},
+        {"type":"text","x":820,"y":1095,"w":150,"h":40,"font":"futura","size":28,"line_height":30,"color":"negro","text":"TIEMPO","align":"right","z":4},
+        {"type":"svg_path","d":"M 165 990 C 265 955 300 560 435 525 C 545 500 560 1005 680 1010 C 790 1015 865 955 955 925","stroke":"naranja","stroke_width":9,"fill":"transparent","dasharray":"17 15","z":3},
+        {"type":"svg_path","d":"M 165 990 C 265 955 300 560 435 525 C 545 500 560 1005 680 1010 C 790 1000 800 690 955 515","stroke":"aqua","stroke_width":12,"fill":"transparent","z":4},
+        {"type":"circle","x":245,"y":785,"w":34,"h":34,"fill":"blanco","stroke":"violeta","stroke_width":5,"z":6},
+        {"type":"circle","x":418,"y":508,"w":34,"h":34,"fill":"blanco","stroke":"violeta","stroke_width":5,"z":6},
+        {"type":"circle","x":663,"y":993,"w":34,"h":34,"fill":"naranja","stroke":"violeta","stroke_width":5,"z":6},
+        {"type":"circle","x":938,"y":498,"w":34,"h":34,"fill":"aqua","stroke":"violeta","stroke_width":5,"z":6},
+        {"type":"text","x":220,"y":825,"w":170,"h":60,"font":"gotham","size":23,"line_height":28,"color":"violeta","text":"CURSO DE IA","z":7},
+        {"type":"text","x":352,"y":425,"w":240,"h":70,"font":"gotham","size":23,"line_height":28,"color":"violeta","text":"EXPECTATIVA\nINICIAL","z":7},
+        {"type":"text","x":565,"y":1020,"w":230,"h":50,"font":"gotham","size":23,"line_height":28,"color":"naranja","text":"VALLE","z":7},
+        {"type":"text","x":744,"y":458,"w":245,"h":70,"font":"gotham","size":23,"line_height":28,"color":"violeta","text":"ADOPCIÓN\nSOSTENIDA","align":"right","z":7},
+        {"type":"text","x":730,"y":900,"w":230,"h":50,"font":"gotham","size":22,"line_height":27,"color":"naranja","text":"CURSO AISLADO","align":"right","z":7},
+        {"type":"rect","x":710,"y":700,"w":250,"h":92,"fill":"blanco","stroke":"aqua","stroke_width":5,"radius":22,"z":5},
+        {"type":"text","x":730,"y":716,"w":210,"h":70,"font":"gotham","size":21,"line_height":26,"color":"violeta","text":"DISEÑO DE\nCOMPORTAMIENTOS","align":"center","z":7}
+      ]
+    },
+    {
+      "bg": "violeta",
+      "logo": "blanco",
+      "eyebrow_color": "aqua",
+      "pager": "V2 · 02 — 03",
+      "foot": "PORTADA DE CARRUSEL · NO PUBLICAR",
+      "foot_color": "aqua",
+      "blocks": [],
+      "layers": [
+        {"type":"text","x":84,"y":110,"w":830,"h":240,"font":"futura","size":78,"line_height":75,"color":"blanco","text":"¿POR QUÉ UN CURSO DE IA NO GARANTIZA ADOPCIÓN?","z":8},
+        {"type":"text","x":84,"y":375,"w":700,"h":100,"font":"lyon","size":37,"line_height":46,"color":"aqua","text":"La Curva del Cambio muestra dónde empieza la parte difícil.","z":8},
+        {"type":"svg_path","d":"M 85 1000 C 245 960 300 560 470 540 C 640 520 600 1020 760 1010 C 865 1000 895 700 1015 540","stroke":"aqua","stroke_width":14,"fill":"transparent","z":3},
+        {"type":"svg_path","d":"M 760 1010 C 860 1005 920 965 1015 925","stroke":"naranja","stroke_width":10,"fill":"transparent","dasharray":"16 14","z":4},
+        {"type":"circle","x":278,"y":690,"w":42,"h":42,"fill":"naranja","stroke":"blanco","stroke_width":5,"z":5},
+        {"type":"circle","x":738,"y":988,"w":42,"h":42,"fill":"naranja","stroke":"blanco","stroke_width":5,"z":5},
+        {"type":"circle","x":992,"y":518,"w":42,"h":42,"fill":"aqua","stroke":"blanco","stroke_width":5,"z":5}
+      ]
+    },
+    {
+      "bg": "aqua",
+      "logo": "violeta",
+      "eyebrow_color": "violeta",
+      "pager": "V2 · 03 — 03",
+      "foot": "COMPARACIÓN · NO PUBLICAR",
+      "foot_color": "violeta",
+      "blocks": [],
+      "layers": [
+        {"type":"text","x":84,"y":100,"w":850,"h":135,"font":"futura","size":56,"line_height":55,"color":"violeta","text":"MISMO CURSO. DOS RESULTADOS POSIBLES.","z":8},
+        {"type":"text","x":84,"y":245,"w":850,"h":90,"font":"lyon","size":32,"line_height":40,"color":"negro","text":"La diferencia está en cómo se gestiona el valle de adopción.","z":8},
+        {"type":"line","x1":120,"y1":690,"x2":950,"y2":690,"stroke":"negro","stroke_width":4,"z":2},
+        {"type":"svg_path","d":"M 120 670 C 260 610 330 450 470 500 C 620 555 590 795 730 810 C 825 820 885 790 950 760","stroke":"naranja","stroke_width":10,"fill":"transparent","dasharray":"16 14","z":3},
+        {"type":"svg_path","d":"M 120 670 C 260 610 330 450 470 500 C 620 555 590 795 730 810 C 835 800 850 570 950 450","stroke":"violeta","stroke_width":12,"fill":"transparent","z":4},
+        {"type":"text","x":650,"y":850,"w":300,"h":60,"font":"futura","size":38,"line_height":40,"color":"naranja","text":"USO ESPORÁDICO","align":"right","z":8},
+        {"type":"text","x":650,"y":385,"w":300,"h":60,"font":"futura","size":38,"line_height":40,"color":"violeta","text":"ADOPCIÓN SOSTENIDA","align":"right","z":8},
+        {"type":"text","x":140,"y":990,"w":800,"h":110,"font":"lyon","size":42,"line_height":52,"color":"negro","text":"El curso inicia el cambio. El entorno define si se sostiene.","align":"center","z":8}
+      ]
+    }
+  ]
+}
