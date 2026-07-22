@@ -1,0 +1,167 @@
+name: content-dry-run-ci
+
+on:
+  pull_request:
+    paths:
+      - "manifiestos/**"
+      - "newsletters/**"
+      - "design-system/reviews/2026-07-semana-3/**"
+      - "design-system/concepts/2026-07/**"
+      - "design-system/render.py"
+      - "scripts/mes.py"
+      - "scripts/validar_assets_mes.py"
+      - "scripts/validar_conceptos_visuales.py"
+      - "scripts/generar_carrusel_mes.py"
+      - "scripts/ensamblar_spec_bundle.py"
+      - "scripts/publicador_mes.py"
+      - "scripts/blotato_client.py"
+      - "config.yaml"
+      - ".github/workflows/content-dry-run-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar render
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libpango-1.0-0 libpangoft2-1.0-0 poppler-utils
+          pip install --quiet weasyprint pillow
+
+      - name: Compilar scripts operativos
+        run: |
+          python -m py_compile \
+            scripts/mes.py \
+            scripts/validar_assets_mes.py \
+            scripts/validar_conceptos_visuales.py \
+            scripts/generar_carrusel_mes.py \
+            scripts/ensamblar_spec_bundle.py \
+            scripts/publicador_mes.py \
+            scripts/blotato_client.py \
+            design-system/render.py
+
+      - name: Validar manifiesto, contratos y assets
+        run: |
+          python scripts/mes.py --mes 2026-07 --semana 3
+          python scripts/validar_conceptos_visuales.py --mes 2026-07 --semana 3
+          python scripts/validar_assets_mes.py --mes 2026-07 --semana 3
+
+      - name: Renderizar assets seleccionados
+        run: |
+          mkdir -p media_out
+          python scripts/generar_carrusel_mes.py \
+            2026-07 media_out design-system/render.py design-system/slides \
+            --semana 3
+          test "$(find media_out -maxdepth 1 -name '*.png' | wc -l)" -eq 21
+
+      - name: Generar plan dry de Blotato
+        env:
+          REELS_DIR: ""
+          MOTION_TIMEZONE: America/Argentina/Buenos_Aires
+        run: |
+          python scripts/publicador_mes.py \
+            --mes 2026-07 \
+            --semana 3 \
+            --dry \
+            --plan-output /tmp/blotato-plan.json
+
+      - name: Validar plan de publicación
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          plan = json.loads(Path('/tmp/blotato-plan.json').read_text(encoding='utf-8'))
+          assert len(plan) == 8, f'se esperaban 8 publicaciones, hay {len(plan)}'
+
+          expected = {
+              ('lun', 'linkedin_paulo'): 1,
+              ('lun', 'instagram'): 10,
+              ('mar', 'linkedin_paulo'): 1,
+              ('mar', 'instagram'): 1,
+              ('mie', 'linkedin_paulo'): 10,
+              ('mie', 'instagram'): 10,
+              ('jue', 'linkedin_paulo'): 1,
+              ('jue', 'instagram'): 1,
+          }
+          actual = {(item['day'], item['channel']): len(item['media']) for item in plan}
+          assert actual == expected, (actual, expected)
+
+          expected_times = {
+              'linkedin_paulo': 'T12:00:00Z',
+              'instagram': 'T15:00:00Z',
+          }
+          for item in plan:
+              assert expected_times[item['channel']] in item['scheduledTime'], item
+              assert item['text'].strip(), item
+              assert all(url for url in item['media']), item
+
+          names = [item['name'] for item in plan]
+          assert len(names) == len(set(names)), 'hay nombres de publicación duplicados'
+          print('✓ Plan Blotato: 8 publicaciones, fechas, medios y textos válidos')
+          PY
+
+      - name: Crear contact sheet operativo
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image, ImageDraw
+
+          paths = sorted(Path('media_out').glob('*.png'))
+          thumbs = []
+          for path in paths:
+              image = Image.open(path).convert('RGB')
+              ratio = 240 / image.width
+              thumbs.append((path.name, image.resize((240, int(image.height * ratio)))))
+
+          columns = 7
+          gap = 16
+          label_h = 42
+          cell_h = max(image.height for _, image in thumbs) + label_h
+          rows = (len(thumbs) + columns - 1) // columns
+          sheet = Image.new('RGB', (
+              columns * 240 + (columns + 1) * gap,
+              rows * cell_h + (rows + 1) * gap,
+          ), 'white')
+          draw = ImageDraw.Draw(sheet)
+          for index, (name, image) in enumerate(thumbs):
+              row, col = divmod(index, columns)
+              x = gap + col * (240 + gap)
+              y = gap + row * cell_h
+              sheet.paste(image, (x, y + label_h))
+              draw.text((x, y + 4), name[:34], fill='black')
+          sheet.save('media_out/week3-final-contact-sheet.png')
+          PY
+
+      - name: Preparar reporte
+        run: |
+          cp /tmp/blotato-plan.json media_out/blotato-plan.json
+          cp newsletters/newsletter_2026-07-29.md media_out/newsletter_2026-07-29.md
+          cat > media_out/README.txt <<'EOF'
+          Semana 3 — paquete previo a publicación live
+
+          Incluye:
+          - 1 imagen de LinkedIn para el lunes
+          - 10 placas de Instagram para el lunes
+          - 10 placas compartidas LinkedIn/Instagram para el miércoles
+          - plan dry de 8 publicaciones en Blotato
+          - newsletter del miércoles
+
+          Este artifact no publica ni programa contenido.
+          EOF
+
+      - name: Publicar paquete dry como artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: week3-dry-run
+          path: media_out
+          retention-days: 14
