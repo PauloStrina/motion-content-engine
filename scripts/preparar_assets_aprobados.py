@@ -7,6 +7,9 @@ import hashlib
 import json
 import shutil
 import tempfile
+import urllib.error
+import urllib.parse
+import urllib.request
 import zipfile
 from pathlib import Path
 from typing import Any
@@ -29,15 +32,70 @@ def read_json(path: Path) -> dict[str, Any]:
     return value
 
 
-def download_drive(file_id: str, output: Path) -> None:
+def valid_download(path: Path, expected_bytes: int, expected_sha: str) -> bool:
+    return (
+        path.is_file()
+        and path.stat().st_size == expected_bytes
+        and sha256(path) == expected_sha
+    )
+
+
+def download_drive(
+    file_id: str,
+    output: Path,
+    expected_bytes: int,
+    expected_sha: str,
+) -> None:
+    encoded_id = urllib.parse.quote(file_id, safe="")
+    urls = [
+        f"https://drive.usercontent.google.com/download?id={encoded_id}&export=download&confirm=t",
+        f"https://drive.google.com/uc?export=download&id={encoded_id}&confirm=t",
+    ]
+    errors: list[str] = []
+
+    for url in urls:
+        try:
+            request = urllib.request.Request(
+                url,
+                headers={
+                    "User-Agent": "Mozilla/5.0 (compatible; MotionContentEngine/1.0)",
+                    "Accept": "application/zip,application/octet-stream,*/*",
+                },
+            )
+            with urllib.request.urlopen(request, timeout=120) as response, output.open("wb") as target:
+                shutil.copyfileobj(response, target)
+            if valid_download(output, expected_bytes, expected_sha):
+                print(f"✓ Paquete descargado desde {urllib.parse.urlparse(url).netloc}")
+                return
+            errors.append(
+                f"{urllib.parse.urlparse(url).netloc}: bytes={output.stat().st_size}, "
+                f"sha256={sha256(output)}"
+            )
+        except (OSError, urllib.error.URLError) as exc:
+            errors.append(f"{urllib.parse.urlparse(url).netloc}: {exc}")
+        output.unlink(missing_ok=True)
+
     try:
         import gdown
-    except ImportError as exc:
-        raise RuntimeError("Falta gdown; instalá la dependencia antes de preparar assets") from exc
 
-    result = gdown.download(id=file_id, output=str(output), quiet=False, fuzzy=False)
-    if not result or not output.exists():
-        raise RuntimeError(f"No se pudo descargar el paquete público de Drive: {file_id}")
+        result = gdown.download(id=file_id, output=str(output), quiet=False, fuzzy=False)
+        if result and valid_download(output, expected_bytes, expected_sha):
+            print("✓ Paquete descargado mediante gdown")
+            return
+        if output.exists():
+            errors.append(
+                f"gdown: bytes={output.stat().st_size}, sha256={sha256(output)}"
+            )
+    except Exception as exc:  # gdown expone excepciones distintas según la respuesta de Drive
+        errors.append(f"gdown: {exc}")
+    finally:
+        if output.exists() and not valid_download(output, expected_bytes, expected_sha):
+            output.unlink()
+
+    raise RuntimeError(
+        "No se pudo descargar exactamente el paquete público aprobado. "
+        + " | ".join(errors)
+    )
 
 
 def safe_extract(archive: Path, destination: Path) -> None:
@@ -109,6 +167,11 @@ def main() -> int:
     if not isinstance(mappings, list) or len(mappings) != expected_count:
         raise ValueError("La cantidad de mappings no coincide con expected_png_count")
 
+    expected_bytes = source.get("zip_bytes")
+    expected_sha = source.get("zip_sha256")
+    if not isinstance(expected_bytes, int) or not isinstance(expected_sha, str):
+        raise ValueError("Faltan tamaño o SHA-256 aprobados del ZIP")
+
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     for old_png in out_dir.glob("*.png"):
@@ -120,13 +183,12 @@ def main() -> int:
         extracted = tmp / "extracted"
         extracted.mkdir()
 
-        download_drive(str(source["file_id"]), zip_path)
-        if zip_path.stat().st_size != source.get("zip_bytes"):
-            raise ValueError("El tamaño del ZIP descargado no coincide con el aprobado")
-        actual_zip_sha = sha256(zip_path)
-        if actual_zip_sha != source.get("zip_sha256"):
-            raise ValueError("El SHA-256 del ZIP descargado no coincide con el aprobado")
-
+        download_drive(
+            str(source["file_id"]),
+            zip_path,
+            expected_bytes,
+            expected_sha,
+        )
         safe_extract(zip_path, extracted)
         indexed = validate_internal_manifest(extracted)
         if len(indexed) != expected_count:
@@ -174,7 +236,7 @@ def main() -> int:
         "status": "validated_and_reused",
         "approved_by": config.get("approved_by"),
         "approved_at": config.get("approved_at"),
-        "zip_sha256": source.get("zip_sha256"),
+        "zip_sha256": expected_sha,
         "asset_count": len(outputs),
         "assets": outputs,
     }
