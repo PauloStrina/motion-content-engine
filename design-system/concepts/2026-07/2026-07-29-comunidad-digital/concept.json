@@ -1,16 +1,16 @@
 {
   "schema_version": 2,
   "piece_id": "2026-07-29-comunidad-digital",
-  "status": "draft",
-  "approved_by": null,
-  "approved_at": null,
+  "status": "approved",
+  "approved_by": "Paulo",
+  "approved_at": "2026-07-22T13:33:36-03:00",
   "visual_message": "Una Comunidad Digital convierte oportunidades distribuidas y curiosidad individual en proyectos y capacidades organizacionales.",
   "concept": "Diez placas narrativas desarrollan el paso desde un equipo central limitado hacia una red de embajadores, 66 proyectos y nuevas capacidades.",
   "conceptual_rationale": "El caso necesita una secuencia de relaciones y resultados, representada mediante el carrusel narrativo esquemático dominante de Motion.",
   "visual_family": "line_system",
   "family_lock": true,
   "representation": "concept_map",
-  "execution": "code",
+  "execution": "reuse",
   "visual_resources": ["topology", "trajectory", "modules", "variation", "typographic"],
   "exclusions": ["handwritten_style", "notebook_style", "corporate_slide", "yellow_milestones"],
   "quality_target": "reference_grade",
@@ -22,6 +22,6 @@
   },
   "brand_resources": ["motion_palette", "motion_typography", "motion_logo"],
   "references": ["design-system/references/line-system/README.md"],
-  "approved_preview": null,
+  "approved_preview": "assets/approved/2026-07-week3/package.json",
   "generation": null
 }
