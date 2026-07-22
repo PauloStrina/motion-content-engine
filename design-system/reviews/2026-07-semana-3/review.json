@@ -1,12 +1,15 @@
 {
   "schema_version": 1,
   "review_id": "2026-07-semana-3",
-  "status": "selected",
+  "status": "approved",
   "created_at": "2026-07-21T16:50:00-03:00",
   "selected_at": "2026-07-21T19:25:00-03:00",
   "selected_by": "Paulo",
-  "publication_blocked": true,
-  "selection_reason": "Paulo aprobó la Curva del Cambio para LinkedIn y el carrusel del lunes sin nuevas reinterpretaciones. También aprobó el carrusel narrativo esquemático de Comunidad Digital como estilo dominante. Los assets finales deben usar naranja Motion para los hitos y branding oficial.",
+  "approved_at": "2026-07-22T13:33:36-03:00",
+  "approved_by": "Paulo",
+  "publication_blocked": false,
+  "approved_asset_package": "assets/approved/2026-07-week3/package.json",
+  "selection_reason": "Paulo aprobó el paquete V4 completo de 21 PNG como master exacto. Las especificaciones conservan la trazabilidad conceptual, pero la publicación utiliza exclusivamente los PNG inmutables registrados en el paquete aprobado.",
   "pieces": [
     {
       "piece_id": "2026-07-27-problema-curva-cambio-linkedin",
@@ -14,7 +17,7 @@
       "visual_family": "line_system",
       "selected_version": "final-v2",
       "candidate_set_status": "valid",
-      "candidate_set_reason": "La composición final reproduce la dirección aprobada y ubica Diseño de Comportamientos completamente a la derecha de la curva.",
+      "candidate_set_reason": "La composición aprobada ubica Diseño de Comportamientos completamente a la derecha de la curva y se publica desde el master V4.",
       "candidates": [
         {
           "version": "legacy-invalid",
@@ -28,7 +31,7 @@
           "name": "Curva del Cambio · LinkedIn final v2",
           "status": "selected",
           "spec": "design-system/reviews/2026-07-semana-3/specs/lunes-final-linkedin.json",
-          "rationale": "Curva aprobada, eje ADOPCIÓN, hitos naranja Motion, adopción acompañada en aqua, branding oficial y caja vertical de Diseño de Comportamientos sin interrumpir la curva."
+          "rationale": "Referencia conceptual de la pieza aprobada. La publicación usa el PNG exacto del paquete V4."
         }
       ]
     },
@@ -38,7 +41,7 @@
       "visual_family": "line_system",
       "selected_version": "final-v2",
       "candidate_set_status": "valid",
-      "candidate_set_reason": "El carrusel reproduce la secuencia exacta aprobada por Paulo y solo corrige branding, tipografías, legibilidad y amarillo por naranja Motion.",
+      "candidate_set_reason": "El carrusel reproduce la secuencia exacta aprobada y se publica desde los diez masters V4.",
       "candidates": [
         {
           "version": "legacy-invalid",
@@ -52,7 +55,7 @@
           "name": "Curva del Cambio · Instagram final v2",
           "status": "selected",
           "spec": "design-system/reviews/2026-07-semana-3/specs/lunes-final-instagram-v2.bundle.json",
-          "rationale": "Diez placas con lectura narrativa, hitos en naranja Motion y evolución desde expectativa hasta adopción sostenida."
+          "rationale": "Referencia conceptual del carrusel. La publicación usa los diez PNG exactos del paquete V4."
         }
       ]
     },
@@ -62,7 +65,7 @@
       "visual_family": "line_system",
       "selected_version": "final-v2",
       "candidate_set_status": "valid",
-      "candidate_set_reason": "Paulo aprobó el formato narrative_schematic_carousel y el concepto visual que respeta el copy literal de Comunidad Digital.",
+      "candidate_set_reason": "Paulo aprobó el carrusel narrativo esquemático y sus diez masters V4 como archivos finales.",
       "candidates": [
         {
           "version": "legacy-invalid",
@@ -76,10 +79,10 @@
           "name": "Comunidad Digital · carrusel final v2",
           "status": "selected",
           "spec": "design-system/reviews/2026-07-semana-3/specs/miercoles-final-comunidad-v2.bundle.json",
-          "rationale": "Diez placas con copy literal, una idea y un esquema simple por placa, cifras e hitos en naranja Motion, tipografía legible y continuidad narrativa."
+          "rationale": "Referencia conceptual del carrusel. La publicación usa los diez PNG exactos del paquete V4, incluida la placa 4 corregida."
         }
       ]
     }
   ],
-  "approval_rule": "La selección habilita el render final y el dry run, pero la publicación live permanece bloqueada hasta que Paulo revise el paquete renderizado completo y autorice explícitamente la programación en Blotato."
+  "approval_rule": "La publicación live queda habilitada únicamente cuando el motor descarga, valida por SHA-256 y reutiliza sin rediseño los masters del paquete aprobado."
 }
