@@ -4,6 +4,7 @@
   "estado": "borrador_para_aprobacion",
   "aprobado_por": null,
   "aprobado_en": null,
+  "contrato_visual_version": 2,
   "semanas": [
     {
       "numero": 1,
@@ -89,6 +90,104 @@
           "texto_linkedin": "Hay una pregunta que aparece tarde o temprano en casi todos los programas de transformación: ¿cuándo termina?\n\nLos proyectos necesitan fechas, responsables y cierres. La dificultad aparece cuando confundimos el final de una implementación con el final de la transformación.\n\nUna herramienta puede quedar funcionando y una capacitación puede terminar. Lo que debería permanecer es la capacidad de la organización para observar el contexto, revisar prioridades y volver a adaptarse cuando sea necesario.\n\nEn la newsletter de esta semana desarrollo por qué la transformación empieza a ser sostenible cuando deja de depender de esfuerzos extraordinarios y se convierte en una práctica de gestión.",
           "caption_instagram": "Una transformación es sostenible cuando la capacidad de adaptarse queda instalada en la empresa.",
           "newsletter": "newsletters/newsletter_2026-07-16.md"
+        }
+      }
+    },
+    {
+      "numero": 3,
+      "fecha_inicio": "2026-07-27",
+      "tesis": 2,
+      "tesis_nombre": "La cultura es el sistema operativo",
+      "estado": "borrador_para_aprobacion",
+      "aprobado_por": null,
+      "aprobado_en": null,
+      "dias": {
+        "lun": {
+          "tipo": "problema",
+          "tema": "La Curva del Cambio aplicada a la adopción de IA",
+          "lente_buyer": "cultura",
+          "objetivo": "explicar por qué un curso no alcanza para sostener una nueva forma de trabajar",
+          "formato": "post_carousel",
+          "imagen_linkedin": "2026-07-27-curva-cambio-linkedin",
+          "imagen_linkedin_spec": "design-system/reviews/2026-07-semana-3/specs/lunes-final-linkedin.json",
+          "carrusel": "2026-07-27-curva-cambio-instagram",
+          "carrusel_slides": 10,
+          "visual_spec": "design-system/reviews/2026-07-semana-3/specs/lunes-final-instagram-v2.bundle.json",
+          "copy_locked": true,
+          "slides": [
+            {"lineas": ["¿Por qué muchas personas no cambian su forma de trabajar después de tomar un curso de IA?"]},
+            {"lineas": ["Para entenderlo es muy útil conocer la Curva del Cambio."]},
+            {"lineas": ["Al comienzo, la expectativa crece rápidamente."]},
+            {"lineas": ["Después hay que incorporarla al trabajo real.", "La nueva práctica requiere más esfuerzo."]},
+            {"lineas": ["La adopción cae. Ese es el valle de la Curva del Cambio."]},
+            {"lineas": ["Muchos cursos terminan antes de entrar en ese valle."]},
+            {"lineas": ["El Diseño de Comportamientos interviene en la parte más difícil."]},
+            {"lineas": ["Su objetivo es hacer que los hábitos deseados sean los más fáciles de realizar."]},
+            {"lineas": ["Cuando disminuye el esfuerzo y la práctica se repite, la adopción vuelve a crecer."]},
+            {"lineas": ["Nueva forma de trabajar. Más productividad."]}
+          ],
+          "texto_linkedin": "¿Por qué muchas personas no cambian su forma de trabajar después de tomar un curso de IA?\n\nPara entenderlo es muy útil conocer la Curva del Cambio.\n\nLa curva muestra que, cuando aparece una nueva posibilidad, la expectativa suele crecer antes de que comprendamos el esfuerzo real que implica incorporarla.\n\nEn un curso de IA esto se ve claramente. En pocas horas, las personas descubren herramientas que resumen documentos, analizan información o resuelven tareas que antes llevaban mucho más tiempo. La expectativa sube rápido.\n\nLa adopción empieza a caer después, cuando hay que integrar esas posibilidades en la forma habitual de trabajar. La nueva práctica todavía requiere más atención y esfuerzo que el hábito anterior.\n\nEse es el valle de la curva.\n\nMuchos programas de capacitación terminan justo antes de entrar ahí. Enseñan la herramienta, miden la asistencia y esperan que la adopción ocurra naturalmente.\n\nPero conocer una herramienta no significa haber construido un nuevo hábito.\n\nPara atravesar ese valle aparece el Diseño de Comportamientos: diseñar el entorno para que la forma deseada de trabajar sea también la más fácil de realizar.\n\nEso puede implicar:\n\n1. definir usos concretos de IA dentro de procesos reales;\n2. dejar prompts, plantillas y recursos al alcance de las personas;\n3. crear tiempo y permiso para experimentar;\n4. acompañar las primeras aplicaciones;\n5. compartir aprendizajes dentro de una comunidad.\n\nA medida que disminuye el esfuerzo y la práctica empieza a repetirse, la adopción vuelve a crecer. La IA deja de ser algo que la persona aprendió en un curso y comienza a formar parte de una nueva manera de trabajar.\n\nAhí también empieza a crecer la productividad dentro de esa nueva realidad.\n\nPor eso, en nuestro Programa de Transformación Digital, un curso no funciona como una intervención aislada. Se conecta con Laboratorios Digitales, Diseño de Comportamientos y una Comunidad Digital que ayuda a atravesar el valle y convertir el aprendizaje en una capacidad instalada.",
+          "caption_instagram": "La Curva del Cambio ayuda a entender por qué aprender una herramienta no alcanza para incorporarla al trabajo.\n\nLa adopción se construye después del curso.",
+          "visual": {
+            "estado": "borrador_para_aprobacion",
+            "aprobado_por": null,
+            "aprobado_en": null,
+            "execution": "code",
+            "concept_path": "design-system/concepts/2026-07/2026-07-27-curva-cambio/concept.json"
+          }
+        },
+        "mar": {
+          "tipo": "metodo",
+          "tema": "Diseño de Comportamientos",
+          "lente_buyer": "cultura",
+          "objetivo": "mostrar cómo facilitar la adopción mediante el diseño del entorno",
+          "formato": "video",
+          "reel_id": "2026-07-03-conceptos_5",
+          "texto_linkedin": "No exigas adopción. Diseñá el entorno para que adoptar sea la opción más fácil.\n\nEn muchos casos, la nueva forma de trabajar requiere más tiempo, más pasos, más decisiones o más esfuerzo que la anterior. Y cuando el día se complica, las personas vuelven al camino conocido.\n\nNo siempre es resistencia.\n\nA veces el proceso, las herramientas y los incentivos siguen haciendo que la forma anterior sea la opción más rápida y segura.\n\nEl Diseño de Comportamientos empieza ahí: en lugar de depender únicamente de la voluntad, modifica el entorno para facilitar la acción que la organización necesita.\n\nEl proceso puede comenzar con cinco decisiones:\n\n1. Definir el comportamiento observable. “Adoptar IA” es demasiado amplio. “Utilizar IA para preparar el primer análisis del reporte semanal” es algo que se puede observar, probar y mejorar.\n\n2. Detectar las fricciones. Falta de tiempo, permisos, accesos, confianza, información, ejemplos o acompañamiento.\n\n3. Reducir el esfuerzo inicial. Plantillas, prompts, flujos simples, casos aplicados y herramientas disponibles dentro del lugar donde la persona ya trabaja.\n\n4. Crear señales y feedback. Recordatorios, espacios de revisión, reconocimiento y aprendizaje compartido.\n\n5. Medir el comportamiento real. No solamente cuántas personas participaron, sino qué empezaron a hacer diferente.\n\nUna organización puede comunicar durante meses que necesita adoptar una herramienta. Pero si la nueva práctica continúa siendo más difícil que la anterior, el comportamiento difícilmente cambie.\n\nPor eso usamos Diseño de Comportamientos dentro del Programa de Transformación Digital: para conectar la estrategia con las decisiones cotidianas y diseñar condiciones que permitan sostenerlas.\n\nLa cultura no cambia cuando una organización repite qué espera. Cambia cuando el sistema empieza a facilitarlo.",
+          "caption_instagram": "La adopción no depende solamente de convencer.\n\nTambién depende de qué tan fácil o difícil sea incorporar el nuevo comportamiento en el trabajo cotidiano."
+        },
+        "mie": {
+          "tipo": "resultados",
+          "tema": "Comunidad Digital: de curiosidad individual a capacidad organizacional",
+          "lente_buyer": "cultura",
+          "objetivo": "mostrar el alcance y la capacidad distribuida construida por una Comunidad Digital",
+          "formato": "carousel_news",
+          "carrusel": "2026-07-29-comunidad-digital",
+          "carrusel_slides": 10,
+          "visual_spec": "design-system/reviews/2026-07-semana-3/specs/miercoles-final-comunidad-v2.bundle.json",
+          "copy_locked": true,
+          "slides": [
+            {"lineas": ["30 embajadores digitales. 66 proyectos. Nuevas capacidades."]},
+            {"lineas": ["Cuando la transformación depende de un equipo central, avanza hasta donde llega ese equipo."]},
+            {"lineas": ["Pero las oportunidades no aparecen solamente en Innovación, Tecnología o Transformación.", "Están distribuidas por toda la organización."]},
+            {"lineas": ["En los procesos. En los datos. En las tareas que se repiten. En los problemas que cada área conoce mejor que nadie."]},
+            {"lineas": ["Por eso construimos una Comunidad Digital con 30 embajadores de distintas áreas."]},
+            {"lineas": ["Personas capaces de detectar oportunidades, compartir aprendizajes y conectar problemas con posibles soluciones."]},
+            {"lineas": ["La comunidad no funcionó solamente como un espacio de capacitación.", "Activó desafíos reales, acompañamiento, metodología y colaboración."]},
+            {"lineas": ["El resultado visible fueron 66 proyectos."]},
+            {"lineas": ["El resultado más importante fue desarrollar nuevas capacidades dentro de la organización."]},
+            {"lineas": ["Una Comunidad Digital convierte la curiosidad individual en capacidad organizacional.", "Programa de Transformación Digital · Motion"]}
+          ],
+          "texto_linkedin": "30 embajadores digitales, 66 proyectos y nuevas capacidades: el resultado de construir una Comunidad Digital.\n\nCuando la transformación depende exclusivamente de un área central, su alcance queda limitado por el tiempo, el conocimiento y la capacidad de ejecución de ese equipo.\n\nLas oportunidades, en cambio, están distribuidas por toda la organización.\n\nUna Comunidad Digital conecta a las personas que conocen los dolores de cada área, tienen curiosidad por resolverlos y pueden convertirse en protagonistas de la transformación.\n\nEn una experiencia que acompañamos, la comunidad reunió a 30 embajadores digitales e impulsó 66 proyectos.\n\nEl número de proyectos fue el resultado visible.\n\nEl resultado estructural fue desarrollar una red capaz de detectar oportunidades, compartir soluciones, aplicar metodologías y construir nuevas capacidades desde adentro.\n\nEse es el verdadero valor de una Comunidad Digital: convertir la curiosidad individual en capacidad organizacional.\n\nForma parte del pilar de Cultura Digital de nuestro Programa de Transformación Digital.",
+          "caption_instagram": "Una Comunidad Digital conecta a las personas que conocen los problemas reales con el método, el acompañamiento y la tecnología necesarios para resolverlos.",
+          "newsletter": "newsletters/newsletter_2026-07-29.md",
+          "visual": {
+            "estado": "borrador_para_aprobacion",
+            "aprobado_por": null,
+            "aprobado_en": null,
+            "execution": "code",
+            "concept_path": "design-system/concepts/2026-07/2026-07-29-comunidad-digital/concept.json"
+          }
+        },
+        "jue": {
+          "tipo": "conexion",
+          "tema": "El KPI del liderazgo",
+          "lente_buyer": "liderazgo",
+          "objetivo": "conectar autonomía, experimentación y capacidad distribuida con el rol del liderazgo",
+          "formato": "video",
+          "reel_id": "2026-07-03-conceptos_1",
+          "texto_linkedin": "¿Cuántas veces te sorprendió alguien de tu equipo este año?\n\nEs una pregunta que me gusta usar como indicador de liderazgo.\n\nNo porque una sorpresa sea siempre positiva ni porque un equipo tenga que estar inventando algo nuevo permanentemente.\n\nLa pregunta obliga a revisar cuánto espacio real estamos creando para que otras personas piensen, decidan, experimenten y propongan algo que nosotros no habíamos imaginado.\n\nUn equipo difícilmente sorprenda a su líder cuando:\n\n- todas las decisiones tienen que escalar;\n- equivocarse tiene un costo demasiado alto;\n- las ideas deben llegar completamente resueltas;\n- experimentar compite con una agenda sin espacio;\n- el líder ya definió de antemano cuál es la respuesta correcta.\n\nEn esos contextos, las personas pueden ejecutar muy bien. Pero rara vez van más allá de lo esperado.\n\nPara que aparezca algo distinto, el liderazgo tiene que diseñar ciertas condiciones:\n\n1. entregar desafíos reales, no solamente tareas;\n2. definir con claridad qué decisiones puede tomar el equipo;\n3. permitir experimentos pequeños y reversibles;\n4. revisar aprendizajes, incluso cuando el resultado no fue el esperado;\n5. reconocer las ideas que mejoran la estrategia original.\n\nLa sorpresa aparece cuando una persona combina autonomía, conocimiento del problema y confianza suficiente para probar.\n\nPor eso una buena pregunta para la próxima conversación con tu equipo podría ser:\n\n¿Qué harías diferente si no necesitaras que yo te dijera cómo resolverlo?\n\nEn el Programa de Transformación Digital trabajamos con los líderes para que la transformación no dependa de que ellos tengan todas las respuestas, sino de su capacidad para habilitar a otras personas.",
+          "caption_instagram": "Un equipo puede cumplir todas las instrucciones y, aun así, no desarrollar autonomía.\n\n¿Cuánto espacio estás creando para que otras personas hagan algo que no habías imaginado?"
         }
       }
     }
