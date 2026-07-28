@@ -1,8 +1,8 @@
 # BANCO DE CONCEPTOS MOTION
 
 **Estado:** vigente  
-**Versión:** 1.1  
-**Fecha:** 22 de julio de 2026  
+**Versión:** 1.2  
+**Fecha:** 28 de julio de 2026  
 **Precedencia:** subordinado a `strategy/ESTRATEGIA_MOTION_CANONICA.md`.  
 **Propósito:** registrar los conceptos que Motion busca instalar, desarrollar o reinterpretar en su comunicación, conectándolos con la estrategia, el método y los artefactos sin duplicar sus definiciones operativas.
 
@@ -38,6 +38,7 @@ En este Banco aparecen porque también poseen valor narrativo y pueden organizar
 
 - **Canónico:** definido explícitamente en la estrategia vigente.
 - **Consolidado:** utilizado de forma consistente en el corpus y los activos de Motion, aunque todavía pueda requerir mayor desarrollo conceptual.
+- **Registrado:** formulación incorporada explícitamente por Paulo al Banco para su desarrollo y aplicación editorial, sin convertirla todavía en tesis estratégica ni afirmar que está consolidada.
 
 ## 2.2 Origen
 
@@ -107,6 +108,14 @@ La interpretación de Motion se concentra en la adopción de nuevas tecnologías
 | C021 | **Adopción como cambio de práctica** | Consolidado | Formulación Motion | Una tecnología se adopta cuando modifica tareas, decisiones, procesos o resultados, no cuando se activa una licencia. | Uso, adopción y transformación son niveles diferentes. | Laboratorio, Comunidad y Business Intelligence. |
 | C022 | **Organizaciones Deliberadamente Desarrolladoras (DDO)** | Consolidado | Concepto externo adaptado | Modelo organizacional desarrollado por Robert Kegan, Lisa Lahey y colaboradores, en el que el crecimiento personal y profesional se integra deliberadamente al trabajo cotidiano y al desarrollo de la organización. | El desarrollo no ocurre solamente en capacitaciones separadas del trabajo: el propio sistema de trabajo se convierte en un entorno permanente de aprendizaje, feedback y evolución. | Cultura Digital, Comunidad Digital, liderazgo habilitador y Transformación Continua®. |
 
+## 4.1 Aplicaciones registradas de Diseño de Comportamientos
+
+Estas aplicaciones no constituyen conceptos separados. Son casos y mecanismos que permiten volver observable el concepto C016:
+
+- **Reuniones efectivas:** incorporar tableros visuales, reglas de facilitación, responsables, decisiones explícitas y cierres accionables para que la conducta deseada esté incorporada al ritual. La referencia al correo de Vanessa queda pendiente de recuperación; no se registra todavía como caso validado.
+- **Retrospectivas:** utilizar una dinámica estructurada para separar el análisis del trabajo de la evaluación personal, habilitar feedback seguro y convertir aprendizajes en cambios concretos.
+- **Gamificación:** emplear reconocimiento, progresión, desafíos, símbolos o recompensas para aumentar la visibilidad y la repetición de comportamientos alineados con la transformación.
+
 ---
 
 # 5. CONCEPTOS DE SOLUCIONES Y TECNOLOGÍA
@@ -134,7 +143,34 @@ La interpretación de Motion se concentra en la adopción de nuevas tecnologías
 
 ---
 
-# 7. PRIORIZACIÓN RECOMENDADA
+# 7. CONCEPTOS REGISTRADOS PARA DESARROLLO
+
+| ID | Concepto | Estado | Origen | Definición conceptual | Distinción que instala | Conexión principal |
+|---|---|---|---|---|---|---|
+| C034 | **El conocimiento del negocio y la cultura precede al conocimiento de IA** | Registrado | Formulación Motion | Para identificar y transformar oportunidades relevantes con IA, el punto de partida es comprender profundamente el negocio, sus procesos, decisiones, lenguaje y cultura. La capacidad técnica de IA puede desarrollarse o complementarse; el contexto organizacional no se reemplaza con conocimiento genérico de herramientas. | No alcanza con formar especialistas que sepan usar IA pero no entiendan el sistema que deben transformar. | Orquestadores, Laboratorio Digital, Inteligencia Híbrida y adopción de IA. |
+| C035 | **Rodamientos y poleas: una startup puede traccionar una multinacional** | Registrado | Metáfora Motion | Una organización pequeña, veloz y especializada puede funcionar como mecanismo de tracción para mover una estructura mucho mayor, siempre que exista un punto de acople, dirección compartida y capacidad de transmisión. | El tamaño no determina por sí solo la capacidad de movilizar una transformación; importan el diseño de la relación, la velocidad y el apalancamiento. | Rol de Motion como aceleradora, Sprint de Transformación Digital y relación corporación–ecosistema. |
+| C036 | **Storytelling como infraestructura de transformación** | Registrado | Formulación Motion | Una transformación necesita una narrativa que conecte propósito, decisiones, comportamientos, avances y resultados para que distintos actores comprendan el movimiento y encuentren su lugar dentro de él. | Una estrategia técnicamente correcta puede perder legitimidad y capacidad de movilización si no puede ser comprendida, recordada y transmitida. | Capacidad transversal de Comunicación, Golden Circle, Comunidad Digital y liderazgo. |
+| C037 | **Harmonia organizacional** | Registrado | Metáfora Motion basada en un rol externo | Inspirado en la dirección de Harmonia de las escuelas de samba: un rol que cuida la organización de los componentes y la evolución del desfile para que múltiples grupos mantengan coordinación, ritmo y continuidad. Aplicado a una transformación, representa la función que protege el flujo integral sin ejecutar cada parte. | Los grandes movimientos colectivos necesitan alguien que observe el conjunto, anticipe cortes y sostenga el ritmo entre equipos especializados. | Orquestadores, Comunidad Digital, gobernanza y Comunicación. |
+| C038 | **Metacognición organizacional** | Registrado | Formulación Motion sobre un concepto externo | Capacidad colectiva de observar cómo la organización piensa, interpreta, decide y aprende; identificar patrones, supuestos y automatismos; y ajustar deliberadamente esos procesos. | Una organización no aprende solo acumulando información: aprende cuando puede observar y revisar la forma en que produce sus decisiones. | DDO, retrospectivas, Diseño de Comportamientos, aprendizaje y Transformación Continua®. |
+| C039 | **La transformación es multidisciplinaria** | Registrado | Formulación Motion | Los desafíos de transformación combinan simultáneamente dimensiones estratégicas, operativas, tecnológicas, conductuales, culturales y comunicacionales. Por eso no pueden resolverse desde una única disciplina o función. | El problema no es sumar especialidades aisladas, sino integrarlas alrededor de un sistema y un resultado compartido. | Diferencial de Motion y arquitectura Negocio, Tecnología y Cultura. |
+| C040 | **La IA como espejo para el autoconocimiento** | Registrado | Formulación Motion | Una interacción sostenida con IA puede ayudar a una persona a identificar patrones de lenguaje, hábitos, preguntas recurrentes y formas de diálogo interno presentes en el historial compartido. Sus respuestas deben tratarse como hipótesis de reflexión, no como diagnóstico psicológico. | La IA no solo produce respuestas: también puede devolver patrones observables de la interacción y ampliar la capacidad de autoobservación. | Inteligencia Híbrida, liderazgo, aprendizaje y Diseño de Comportamientos. |
+| C041 | **Expansión de consciencia organizacional asistida por IA** | Registrado | Formulación Motion | Uso de IA para analizar conversaciones, decisiones, rituales y narrativas organizacionales, haciendo visibles patrones colectivos, tensiones y supuestos que normalmente permanecen implícitos. Debe aplicarse con gobernanza, privacidad, contexto y validación humana. | Una organización puede transformar mejor aquello que logra observar y nombrar sobre su propia forma de operar. | Metacognición organizacional, DDO, Diagnóstico, Comunidad Digital y charlas in-company. |
+| C042 | **Afinidad estratégica entre consultora y cliente** | Registrado | Formulación Motion | Las relaciones de consultoría generan más valor cuando existe compatibilidad entre la ambición del cliente, su disposición a transformar, su forma de trabajar y la perspectiva de la consultora. Motion no necesita trabajar con cualquier organización, sino con aquellas que resuenan con una transformación integral y están dispuestas a sostenerla. | Elegir mutuamente la relación no reduce el mercado: aumenta la posibilidad de confianza, trabajo genuino y crecimiento compartido. | ICP, Visionario de la Transformación, contenidos de Conexión y proceso comercial. |
+
+## 7.1 Formulaciones originales registradas
+
+- “No busques o formes gente que conozca de IA: conocé gente que conozca tu negocio y tu cultura.”
+- “Una startup es ideal para traccionar una multinacional.”
+- “¿Sin un buen storytelling, podrías transformar tu organización?”
+- “La transformación es multidisciplinaria.”
+- “Cómo la interacción con IA puede contribuir al proceso de autoconocimiento.”
+- “Cómo la interacción con IA puede contribuir al proceso de expansión de consciencia organizacional.”
+
+Las formulaciones originales funcionan como materia prima editorial. Las definiciones de la tabla introducen los matices necesarios para evitar afirmaciones absolutas, diagnósticos impropios o generalizaciones sin evidencia.
+
+---
+
+# 8. PRIORIZACIÓN RECOMENDADA
 
 ## Nivel 1 — Conceptos que Motion debe instalar de manera consistente
 
@@ -165,9 +201,21 @@ La interpretación de Motion se concentra en la adopción de nuevas tecnologías
 12. Organizaciones Deliberadamente Desarrolladoras (DDO).
 13. Golden Circle (Why–How–What).
 
+## Nivel 3 — Conceptos registrados para desarrollar y validar
+
+1. El conocimiento del negocio y la cultura precede al conocimiento de IA.
+2. Rodamientos y poleas: una startup puede traccionar una multinacional.
+3. Storytelling como infraestructura de transformación.
+4. Harmonia organizacional.
+5. Metacognición organizacional.
+6. La transformación es multidisciplinaria.
+7. La IA como espejo para el autoconocimiento.
+8. Expansión de consciencia organizacional asistida por IA.
+9. Afinidad estratégica entre consultora y cliente.
+
 ---
 
-# 8. REGLA EDITORIAL
+# 9. REGLA EDITORIAL
 
 Un concepto no debe convertirse automáticamente en un contenido abstracto o académico.
 
@@ -188,7 +236,7 @@ El concepto debe permitir comprender mejor una situación. No debe aparecer como
 
 ---
 
-# 9. GOBERNANZA
+# 10. GOBERNANZA
 
 1. Los conceptos canónicos solo se modifican primero en `strategy/ESTRATEGIA_MOTION_CANONICA.md`.
 2. Las definiciones operativas de artefactos y roles se mantienen únicamente en `knowledge/banks/BANCO_ARTEFACTOS_MOTION.md`.
@@ -196,3 +244,6 @@ El concepto debe permitir comprender mejor una situación. No debe aparecer como
 4. Los conceptos externos deben conservar su atribución y no presentarse como propiedad de Motion. En particular, DDO debe atribuirse a Robert Kegan, Lisa Lahey y colaboradores; Golden Circle, a Simon Sinek.
 5. Cada concepto debe conectarse con situaciones, artefactos y evidencia real.
 6. La repetición de un término no lo convierte por sí sola en una idea diferenciadora: debe existir una distinción, mecanismo o aplicación propia de Motion.
+7. El estado **Registrado** confirma que Paulo decidió conservar la formulación en el Banco, pero no la transforma en tesis canónica ni en afirmación validada por evidencia externa.
+8. Los usos de IA para autoconocimiento o consciencia organizacional deben presentarse como mecanismos de reflexión y generación de hipótesis, nunca como diagnóstico psicológico, evaluación clínica ni lectura objetiva de intenciones.
+9. La metáfora de Harmonia debe distinguir entre el **quesito Harmonia** del desfile y la función de la **dirección/equipo de Harmonia** que organiza componentes y cuida la evolución del conjunto.
