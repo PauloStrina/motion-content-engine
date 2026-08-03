@@ -1,31 +1,34 @@
 {
   "schema_version": 1,
   "piece_id": "2026-08-04-adopcion-ia-transformacion",
-  "status": "candidate_v4",
+  "status": "candidate_v5",
   "formats": {
     "linkedin_carousel": {
       "size": [1080, 1350],
       "slides": 13,
       "folder": "tuesday_linkedin",
-      "final_slide": "linkedin"
+      "final_slide": "linkedin",
+      "version": 5
     },
     "instagram_carousel": {
       "size": [1080, 1350],
       "slides": 13,
       "folder": "tuesday_instagram",
-      "final_slide": "instagram"
+      "final_slide": "instagram",
+      "version": 5
     }
   },
   "copy_locked": true,
   "source_of_truth": "editorial/2026-08/semana-1/martes-metodo.md",
-  "supersedes": ["candidate_v1", "candidate_v2", "candidate_v3"],
-  "visual_rules_v4": [
+  "supersedes": ["candidate_v1", "candidate_v2", "candidate_v3", "candidate_v4"],
+  "visual_rules_v5": [
     "Fondo claro y lenguaje visual de la primera versión.",
     "Zonas rígidas y separadas para texto, diagrama y firma.",
-    "Ninguna línea, nodo, rótulo o gráfico puede entrar en el área de texto.",
+    "Ninguna línea, nodo, rótulo o gráfico puede entrar en el área de texto ni en su margen de seguridad.",
     "Cada placa representa la idea específica del copy, no una curva decorativa genérica.",
     "Trayectorias curvas con dirección semántica y nodos rellenos.",
-    "La firma usa el logo oficial acompañado por `Lo complejo, simple.`.",
+    "La primera frase de la portada utiliza Futura Extra Bold Condensed.",
+    "La firma usa el logo oficial acompañado por `Lo complejo,` y `simple.` en dos líneas.",
     "Las placas 1 a 12 son comunes; la placa 13 tiene variantes LinkedIn e Instagram."
   ],
   "slide_text_common": [
@@ -59,5 +62,5 @@
     "Programa organiza resultado, práctica, condiciones y escala",
     "Mapa de Transformación y CTA por canal"
   ],
-  "candidate_package": "assets/candidates/2026-08-week1-v4/package.json"
+  "candidate_package": "assets/candidates/2026-08-week1-v5/package.json"
 }
