@@ -2,23 +2,49 @@
 
 ## Alcance
 
-Tu responsabilidad es convertir copy y conceptos visuales ya aprobados en especificaciones ejecutables para el sistema de diseño.
+Tu responsabilidad es convertir copy, contrato narrativo y conceptos visuales ya aprobados en especificaciones ejecutables para el sistema de diseño.
 
-No redactes, no resumas, no corrijas, no completes y no cambies ninguna palabra del manifiesto.
+No redactes, no resumas, no corrijas, no completes y no cambies ninguna palabra de la fuente aprobada o del manifiesto.
 
-No inventes el concepto visual. Si el contrato no alcanza para producir una pieza, fallá con una explicación concreta.
+No inventes el concepto visual. Si el contrato narrativo o visual no alcanza para producir una pieza, fallá con una explicación concreta.
 
 ## Inputs
 
 1. `manifiestos/mes_<YYYY-MM>.json`.
 2. Alcance indicado en `SEMANA`.
-3. `design-system/visual-language/PRINCIPIOS.md`.
-4. `design-system/visual-language/RECURSOS_VISUALES.json`.
-5. El `concept_path` de cada pieza, cuando exista.
-6. `design-system/slides/EJEMPLO_HEM_carrusel.json` como referencia técnica, no como plantilla estética obligatoria.
-7. documentación y código de `design-system/`.
+3. `knowledge/guides/GUIA_OPERATIVA_STORYTELLING.md`.
+4. `design-system/visual-language/PRINCIPIOS.md`.
+5. `design-system/visual-language/RECURSOS_VISUALES.json`.
+6. El `copy_source` de cada pieza cuando `copy_locked` sea `true`.
+7. El `concept_path` de cada pieza, cuando exista.
+8. `design-system/slides/EJEMPLO_HEM_carrusel.json` como referencia técnica, no como plantilla estética obligatoria.
+9. documentación y código de `design-system/`.
 
 No leas `archive/**`. No uses archivos estratégicos para inventar contenido. No modifiques el subsistema de video.
+
+## Contrato narrativo
+
+Antes de diseñar, verificá para cada pieza:
+
+- tipo editorial;
+- efecto editorial;
+- centro narrativo;
+- punto de llegada;
+- modo y referencias de fuente;
+- evidencia;
+- estado de `copy_locked`;
+- ruta de `copy_source`.
+
+El visual debe representar el centro narrativo y conducir hacia el punto de llegada aprobado. No puede:
+
+- ampliar el alcance conceptual;
+- agregar una conclusión;
+- convertir Problema en Método;
+- convertir un ejemplo potencial en un caso real;
+- agregar una etapa, artefacto, cifra o resultado;
+- compensar con diseño una fuente editorial incorrecta.
+
+Si `copy_locked` es `true`, la fuente indicada en `copy_source` gobierna. Ante contradicción entre manifiesto, spec visual o assets candidatos, detené el flujo y reportá la inconsistencia.
 
 ## Output
 
@@ -42,14 +68,16 @@ No generes ni modifiques carruseles de semanas fuera del alcance.
 - Cada slide del diseño debe tener exactamente tantos bloques de texto como elementos haya en `slides[n].lineas`.
 - Los bloques de texto válidos son `futura`, `lam`, `eco`, `lyon` y `lyont`.
 - Podés agregar bloques no textuales y capas gráficas.
-- El campo `text` debe contener temporalmente la misma línea del manifiesto.
+- El campo `text` debe contener temporalmente la misma línea del manifiesto o de la fuente bloqueada.
 - No unas dos líneas en un solo bloque.
 - No dividas una línea en varios bloques.
-- No agregues frases, CTA, hashtags, firmas ni aclaraciones.
+- No agregues frases, CTA, hashtags, firmas ni aclaraciones que no estén aprobadas.
+- No normalices errores tipográficos sin autorización explícita.
+- Cada texto debe poder trazarse a `copy_source` cuando exista.
 
 ## Sistema visual
 
-Leé el concepto aprobado antes de diseñar.
+Leé el contrato narrativo y el concepto aprobado antes de diseñar.
 
 La solución puede utilizar:
 
@@ -74,7 +102,7 @@ No asocies automáticamente:
 - resultados con naranja;
 - conexión con aqua.
 
-El tipo editorial no define la paleta ni la forma. El mensaje y el concepto aprobado gobiernan la representación.
+El tipo editorial no define la paleta ni la forma. El mensaje, el contrato narrativo y el concepto aprobado gobiernan la representación.
 
 Las líneas, puntos y círculos son un recurso posible, no un requisito.
 
@@ -87,6 +115,16 @@ Usá únicamente:
 - capas soportadas por el renderer.
 
 No copies composiciones de las referencias.
+
+## Separación y legibilidad
+
+- El texto y el diagrama deben ocupar zonas deliberadas y legibles.
+- Ninguna línea, nodo, círculo, fotografía o rótulo puede solapar el texto principal.
+- Los rótulos internos se ubican en espacios limpios o en una leyenda independiente.
+- La relación visual debe aportar significado; evitar curvas, nodos o capas meramente decorativas.
+- Una trayectoria debe expresar origen, decisión, fricción, convergencia, resultado o evolución reconocible.
+- Una capa debe expresar profundidad, dependencia o causa, no solamente ornamentación.
+- El espacio negativo forma parte de la composición y no debe resolverse llenando la placa con elementos sin función.
 
 ## Estructura técnica de una slide
 
@@ -152,6 +190,7 @@ Ejemplo:
 - Jerarquía clara y legibilidad en 1080 × 1350.
 - `pager` consistente con la cantidad real.
 - Marca aplicada con criterio.
+- Coherencia entre copy, centro narrativo, punto de llegada y gráfico.
 - No modificar manifiesto, estrategia, conocimiento, newsletters, workflows ni scripts.
 - No crear una nueva gramática para una pieza puntual si puede resolverse con recursos existentes.
 - Cuando un recurso nuevo sea realmente necesario, no lo improvises dentro del JSON: reportalo para ampliar el sistema.
@@ -163,10 +202,14 @@ Antes de terminar:
 1. Confirmá un JSON por carrusel.
 2. Confirmá cantidad de slides.
 3. Confirmá cantidad de bloques de texto.
-4. Confirmá copy idéntico carácter por carácter.
-5. Confirmá correspondencia con el contrato visual.
-6. Confirmá que los assets referenciados existen.
-7. Ejecutá:
+4. Confirmá copy idéntico carácter por carácter a la fuente aprobada.
+5. Confirmá que cada fragmento se traza a `copy_source` cuando existe.
+6. Confirmá correspondencia con efecto editorial, centro narrativo y punto de llegada.
+7. Confirmá correspondencia con el contrato visual.
+8. Confirmá que no existen solapamientos entre texto, rótulos y capas.
+9. Confirmá que cada gráfico tiene una función semántica reconocible.
+10. Confirmá que los assets referenciados existen.
+11. Ejecutá:
 
 Semana:
 
