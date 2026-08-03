@@ -1,70 +1,87 @@
 # GUÍA OPERATIVA DE HOOKS — PAULO Y MOTION
 
 **Estado:** vigente  
-**Versión:** 1.1  
-**Fecha:** 20 de julio de 2026  
-**Precedencia:** estrategia canónica → bancos activos → esta guía → auditoría editorial.
+**Versión:** 1.2  
+**Fecha:** 3 de agosto de 2026  
+**Precedencia:** estrategia canónica → bancos activos → guía operativa de storytelling → esta guía → auditoría editorial.
 
 ## 1. Objetivo
 
 Los hooks no buscan la máxima cantidad de atención. Buscan reconocimiento inmediato y curiosidad calificada dentro del Visionario de la Transformación y su buying committee.
 
-> El hook habla como habla el problema. El cuerpo puede hablar como habla el método.
+> El hook abre la historia. No define por sí solo el tipo editorial ni debe revelar todo el desenlace.
 
-## 2. Anatomía completa de una pieza
+El tipo de contenido determina qué cambio debe producir la pieza. El storytelling determina cómo avanza. El hook es únicamente la puerta de entrada.
 
-Toda pieza debe contener estas funciones, aunque el texto final se lea como un storytelling continuo y no muestre los rótulos.
+## 2. Relación con la pieza completa
+
+El hook debe ser coherente con:
+
+- tesis;
+- tipo editorial;
+- efecto buscado;
+- centro narrativo;
+- punto de llegada;
+- fuente y evidencia;
+- canal y emisor.
+
+La pieza puede utilizar los siguientes bloques narrativos:
+
+- situación;
+- intento;
+- fricción;
+- reencuadre;
+- mecanismo;
+- evidencia;
+- conclusión;
+- CTA.
+
+Son un repertorio, no una lista obligatoria. No toda pieza debe incluir problema, método, caso, cómo y oferta completos.
 
 ### 2.1 Hook
 
-Detiene al lector correcto mediante una situación reconocible y una tensión simple.
+Detiene al lector correcto mediante una situación, decisión, contradicción, resultado o tensión simple.
 
-### 2.2 Por qué importa
+### 2.2 Desarrollo
 
-Amplía la tensión y explica la consecuencia de negocio, operativa, tecnológica o cultural. Debe responder por qué la situación merece atención ahora.
+El cuerpo entrega la promesa abierta por el hook según el tipo editorial:
 
-No debe aparecer como un bloque escolar separado en el copy final: se integra naturalmente al relato.
+- Problema profundiza la tensión y termina en una nueva comprensión;
+- Método muestra una decisión y un mecanismo concreto;
+- Resultados demuestra experiencia mediante evidencia real;
+- Conexión genera afinidad desde una postura o experiencia concreta.
 
-### 2.3 Contenido
+### 2.3 CTA
 
-Desarrolla la lectura de Motion y debe incluir, cuando el material lo permita:
+El CTA surge del argumento y se ajusta al canal y al grado de confianza construido.
 
-1. el problema y su causa menos visible;
-2. qué hace Motion para resolverlo;
-3. el método o artefacto utilizado;
-4. evidencia o referencia a un caso real;
-5. el mecanismo concreto;
-6. claridad sobre cómo empezar o aplicarlo.
+Puede:
 
-Un contenido de Método no puede limitarse a nombrar un artefacto. Un contenido de Resultados no puede limitarse a mostrar una cifra sin explicar intervención y alcance.
-
-### 2.4 CTA
-
-Siempre conecta la pieza con el Programa de Transformación Digital.
-
-La conexión debe ser proporcional a la confianza construida y al contenido. Puede:
-
-- mostrar dónde se integra el artefacto;
+- mostrar dónde se integra un artefacto;
 - explicar qué capacidad instala el Programa;
 - proponer revisar una decisión o situación;
+- conducir al Mapa de Transformación;
 - invitar a conocer el Programa cuando corresponda.
 
 No debe convertir todas las piezas en una oferta idéntica ni condicionar prematuramente el hook.
 
 ## 3. Unidad de diseño editorial
 
-Antes de redactar el copy completo se construye un esqueleto con:
+Antes de redactar hooks se consulta el contrato narrativo definido en `knowledge/guides/GUIA_OPERATIVA_STORYTELLING.md`.
 
 | Campo | Pregunta |
 |---|---|
-| Hook | ¿Qué situación, decisión, contradicción o resultado detiene al buyer? |
-| Por qué | ¿Qué costo, riesgo, consecuencia o posibilidad está en juego? |
-| Qué hace Motion | ¿Qué decisión, artefacto o capacidad aporta Motion? |
-| Caso real | ¿Qué evidencia autorizada demuestra que no es teoría? |
-| Cómo | ¿Qué pasos, componentes o criterios puede comprender el buyer? |
-| CTA | ¿Cómo se conecta con el Programa de Transformación Digital? |
+| Tesis | ¿Desde qué perspectiva estratégica interpreta Motion el tema? |
+| Tipo | ¿Es Problema, Método, Resultados o Conexión? |
+| Efecto editorial | ¿Qué debe cambiar en la cabeza del lector? |
+| Centro narrativo | ¿Qué elemento recibe el mayor peso? |
+| Punto de llegada | ¿Dónde debe terminar la pieza? |
+| Fuente | ¿Es situación potencial, caso real, concepto, artefacto o experiencia? |
+| Evidencia | ¿Qué hecho autorizado sostiene el argumento? |
+| Hook | ¿Qué situación, decisión, contradicción o resultado abre la lectura? |
+| CTA | ¿Cuál es el siguiente paso proporcional y coherente? |
 
-El copy final integra estos elementos en una narración continua. No se publican como secciones mecánicas salvo que el formato lo justifique.
+El hook se aprueba dentro de este sistema. No se optimiza aisladamente por potencial de engagement.
 
 ## 4. Tres alternativas obligatorias
 
@@ -74,7 +91,9 @@ Para cada pieza se proponen tres hooks con mecanismos diferentes, no tres paráf
 2. **Decisión o acción:** práctica que debe revisarse o movimiento concreto.
 3. **Resultado, número o capacidad:** valor visible o pregunta específica.
 
-Después se recomienda uno y se explica por qué es el más adecuado para el tipo, canal y evidencia.
+Después se recomienda uno y se explica por qué es el más adecuado para el tipo, canal, punto de llegada y evidencia.
+
+Cuando el copy ya está aprobado o `copy_locked: true`, no se vuelven a generar hooks ni se reemplaza la apertura salvo instrucción explícita de Paulo.
 
 ## 5. Características de un hook Motion
 
@@ -85,6 +104,7 @@ Después se recomienda uno y se explica por qué es el más adecuado para el tip
 - tensión real, no dramatización;
 - selectivo para el buyer correcto;
 - sostenible por el cuerpo y la evidencia;
+- coherente con el punto de llegada;
 - con valor visible: costo, riesgo, plazo, decisión, capacidad o resultado cuando corresponda.
 
 Evitar hooks que:
@@ -93,6 +113,7 @@ Evitar hooks que:
 - comienzan por conceptos abstractos;
 - podrían pertenecer a cualquier consultora;
 - condensan toda la pieza;
+- adelantan el método completo en una pieza de Problema;
 - fabrican misterio;
 - usan sofisticación para compensar falta de especificidad;
 - atacan la inteligencia o el compromiso del lector;
@@ -118,6 +139,8 @@ Patrón validado:
 
 Funciona porque nombra una decisión concreta y la condición todavía ausente.
 
+El cuerpo debe terminar en una nueva comprensión. El hook no habilita a explicar automáticamente todo el método.
+
 ### 6.2 Método
 
 Debe lograr: “Motion hace algo concreto y diferente que quiero entender.”
@@ -135,6 +158,8 @@ Patrón validado:
 > No adaptes tu proceso a un software, adaptá el software a tu proceso.
 
 El contraste `no X, Y` es válido cuando delimita una diferencia metodológica real y el cuerpo explica el mecanismo.
+
+El problema inicial puede aparecer, pero no debe ocupar el centro narrativo.
 
 ### 6.3 Resultados
 
@@ -172,7 +197,8 @@ Puede partir de:
 - una postura;
 - un no negociable;
 - una capacidad que la organización debe desarrollar;
-- una pregunta directa y específica.
+- una pregunta directa y específica;
+- una experiencia o símbolo concreto.
 
 Patrón validado:
 
@@ -182,31 +208,37 @@ La pregunta es válida porque nombra una capacidad concreta y promete explicar s
 
 ## 7. Bajada y storytelling
 
-La bajada no se presenta como una explicación externa al contenido. Debe hacer avanzar la escena.
+La bajada no se presenta como una explicación externa al contenido. Debe hacer avanzar la pieza.
 
-Orden recomendado:
+Una secuencia posible es:
 
 1. hook;
-2. consecuencia o tensión que explica por qué importa;
-3. escena o caso;
-4. lectura de Motion;
-5. método y mecanismo;
-6. cómo empezar;
-7. conexión con el Programa.
+2. situación;
+3. intento;
+4. fricción;
+5. reencuadre;
+6. desarrollo compatible con el tipo;
+7. conclusión;
+8. CTA.
+
+No es una plantilla obligatoria. El tipo editorial define qué bloques se utilizan, cuál recibe mayor peso y dónde termina la pieza.
 
 Evitar:
 
 - rótulos visibles `Hook`, `Bajada`, `Contenido`, `CTA` en el copy publicable;
 - párrafos que repiten el hook con más palabras;
 - transición escolar del tipo “Esto es importante porque…”;
-- separar artificialmente la evidencia del argumento.
+- separar artificialmente la evidencia del argumento;
+- usar siempre la misma arquitectura narrativa;
+- forzar una historia completa cuando una distinción breve funciona mejor.
 
 ## 8. Evidencia y coherencia
 
-- Todo caso, cifra o cita debe existir en `BANCO_EVIDENCIAS_MOTION.md`.
-- La situación de origen debe existir en `BANCO_SITUACIONES_MOTION.md`.
+- Todo caso, cifra o cita debe existir en `BANCO_EVIDENCIAS_MOTION.md` o en una fuente explícitamente autorizada.
+- La situación de origen debe existir en `BANCO_SITUACIONES_MOTION.md` cuando se presenta como real.
 - El artefacto debe existir en `BANCO_ARTEFACTOS_MOTION.md`.
-- El contenido de Resultados debe demostrar el Método trabajado en la misma secuencia semanal.
+- Una situación potencial debe formularse como posibilidad y no como hecho.
+- El contenido de Resultados debe demostrar un aprendizaje, capacidad o intervención real.
 - No usar un buen caso si rompe la tesis o el recorrido de la semana.
 - Cada cifra debe conservar punto de partida, intervención, período y alcance.
 
@@ -227,7 +259,9 @@ Evitar:
 - no usar hashtags;
 - una idea visual central.
 
-La tesis puede ser la misma. La situación, el ejemplo, la densidad y el emisor deben reconstruirse para cada canal.
+La tesis, el tipo, el efecto editorial y el punto de llegada se conservan. La situación, el ejemplo, la densidad, el emisor y el CTA pueden reconstruirse para cada canal antes de que el copy quede bloqueado.
+
+Con `copy_locked: true`, la adaptación posterior se limita a las transformaciones autorizadas por la guía de storytelling.
 
 ## 10. Tests de validación
 
@@ -238,26 +272,30 @@ La tesis puede ser la misma. La situación, el ejemplo, la densidad y el emisor 
 5. **Propiedad:** ¿podría publicarlo cualquier consultora?
 6. **Curiosidad:** ¿hay una razón genuina para continuar?
 7. **Promesa:** ¿el cuerpo entrega lo que el hook abre?
-8. **Valor visible:** ¿se entiende qué decisión, costo, riesgo, capacidad o resultado está en juego?
-9. **Evidencia:** ¿los hechos están autorizados y bien formulados?
-10. **Coherencia semanal:** ¿el caso demuestra el método y la tesis?
-11. **Voz:** ¿suena a Paulo o Motion, o a contenido B2B estandarizado?
+8. **Tipo:** ¿el hook y el cuerpo producen el efecto editorial correcto?
+9. **Punto de llegada:** ¿la pieza se detiene donde corresponde?
+10. **Valor visible:** ¿se entiende qué decisión, costo, riesgo, capacidad o resultado está en juego?
+11. **Evidencia:** ¿los hechos están autorizados y bien formulados?
+12. **Autonomía:** ¿la publicación se entiende sin leer el resto de la semana?
+13. **Voz:** ¿suena a Paulo o Motion, o a contenido B2B estandarizado?
+14. **Fuente bloqueada:** ¿la apertura sigue siendo la aprobada cuando `copy_locked` es `true`?
 
 ## 11. Proceso de creación
 
 1. seleccionar tesis, tipo, canal y emisor;
-2. elegir situación del banco;
-3. elegir artefacto o lectura Motion;
-4. verificar evidencia;
-5. construir el esqueleto `por qué / qué / caso / cómo / CTA`;
+2. definir efecto editorial, centro narrativo y punto de llegada;
+3. elegir situación, concepto o artefacto;
+4. verificar fuente y evidencia;
+5. construir el esqueleto narrativo compatible con el tipo;
 6. proponer tres hooks con mecanismos diferentes;
 7. elegir uno;
 8. redactar storytelling continuo;
 9. adaptar cada canal de forma independiente;
-10. aplicar tests;
+10. aplicar tests de storytelling, hooks, voz y evidencia;
 11. obtener aprobación humana;
-12. registrar hooks y correcciones;
-13. cargar el copy aprobado en el manifiesto.
+12. marcar `copy_locked: true` y registrar la fuente;
+13. registrar hooks y correcciones;
+14. cargar el copy aprobado en el manifiesto.
 
 ## 12. Aprendizaje
 
@@ -266,6 +304,10 @@ Cada corrección de Paulo registra:
 - borrador;
 - versión aprobada;
 - situación;
+- tipo editorial;
+- efecto buscado;
+- centro narrativo;
+- punto de llegada;
 - artefacto;
 - evidencia;
 - mecanismo del hook;
