@@ -4,7 +4,9 @@
   "status": "candidate",
   "created_at": "2026-08-03T16:59:00-03:00",
   "publication_rule": "Candidate only. Requires explicit approval by Paulo.",
-  "expected_png_count": 52,
+  "production_png_count": 52,
+  "preview_png_count": 3,
+  "zip_png_count": 55,
   "changes": [
     "La imagen de LinkedIn del lunes pasa a formato 4:5 y reconstruye el preview aprobado como secuencia vertical de cinco etapas.",
     "El carrusel del lunes se reconstruye desde el contact sheet aprobado, conserva su gramática visual y utiliza literalmente el copy bloqueado.",
