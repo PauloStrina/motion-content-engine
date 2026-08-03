@@ -1,30 +1,39 @@
 {
   "schema_version": 1,
   "piece_id": "2026-08-03-autoridad-transversal",
-  "status": "candidate_v2",
+  "status": "candidate_v4",
   "formats": {
     "linkedin_image": {
       "size": [1600, 1280],
-      "file": "monday_linkedin_v2.png",
-      "version": 2,
-      "decision_v1": "rejected"
+      "file": "monday_linkedin_v4.png",
+      "version": 4
     },
     "instagram_carousel": {
       "size": [1080, 1350],
       "slides": 10,
       "folder": "monday_carousel",
-      "version": 1,
-      "decision_v1": "accepted_unchanged"
+      "version": 4,
+      "base_design": "accepted_v1",
+      "change": "firma con tagline"
     }
   },
   "copy_locked": true,
-  "visual_rules_v2": [
-    "Fondo aqua y contraste violeta/naranja.",
-    "Líneas curvas, vivas y direccionales.",
-    "Nodos rellenos; no utilizar círculos huecos como recurso dominante.",
-    "Texto y esquema centrados como una unidad con aire arriba y abajo.",
-    "Ningún rótulo se superpone con las trayectorias.",
-    "Las áreas convergen sobre un sistema concreto y el recorrido continúa hacia el hito de 16 semanas."
+  "visual_rules_v4": [
+    "La imagen de LinkedIn utiliza una única secuencia semántica: Visión → Sistema concreto → 16 semanas → Aliados internos → Transformación.",
+    "La capilarización aparece únicamente después de Aliados internos.",
+    "No agregar áreas, comités o recorridos paralelos dentro de esta imagen.",
+    "Texto y gráfico ocupan zonas independientes y no se superponen.",
+    "Las líneas son curvas, los nodos están rellenos y el hito de 16 semanas utiliza naranja Motion.",
+    "La firma usa el logo oficial acompañado por `Lo complejo, simple.`.",
+    "El carrusel de Instagram conserva el diseño aceptado y solo incorpora la nueva firma."
+  ],
+  "linkedin_visual_sequence": [
+    "Visión",
+    "Sistema concreto",
+    "16 semanas",
+    "Aliados internos",
+    "Capilarización",
+    "Transformación"
   ],
   "slide_text": [
     "Ves la transformación, pero no podés decidir por todas las áreas.",
@@ -38,20 +47,5 @@
     "El resultado no es solo evidencia. Son protagonistas que validan la visión y se convierten en aliados internos.",
     "La legitimidad también se construye transformando. Escribí MAPA y recibí el link para construir tu Mapa de Transformación."
   ],
-  "visual_sequence": [
-    "visión con conexiones incompletas",
-    "prioridades paralelas",
-    "comité transversal",
-    "retorno a decisiones aisladas",
-    "alcance excesivo",
-    "foco en resultado rápido",
-    "sistema concreto + 16 semanas",
-    "proceso + solución + comportamientos",
-    "evidencia + aliados",
-    "Mapa de Transformación"
-  ],
-  "references": [
-    "assets/approved/2026-07-week3/package.json",
-    "design-system/reviews/2026-08-semana-1/feedback-v2.md"
-  ]
+  "candidate_package": "assets/candidates/2026-08-week1-v4/package.json"
 }
