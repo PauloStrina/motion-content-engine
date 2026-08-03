@@ -51,6 +51,65 @@ Los esquemas pueden utilizar:
 
 La imagen no decora. Debe aclarar, sintetizar o agregar una segunda lectura.
 
+## 4.1 Separación obligatoria
+
+> **Texto y elementos gráficos nunca se solapan.**
+
+Cada placa debe definir:
+
+- zona de texto;
+- margen de seguridad;
+- zona visual;
+- zona de firma.
+
+Ninguna línea, trayectoria, nodo, círculo, rótulo, imagen o textura puede ingresar al área de texto o dificultar su lectura.
+
+Los rótulos del gráfico:
+
+- se ubican dentro de espacios limpios;
+- pueden utilizar una leyenda externa;
+- no se colocan encima de líneas o nodos;
+- no compiten con el copy principal.
+
+Si el esquema no cabe, debe simplificarse o redistribuirse. Una superposición nunca se considera un recurso expresivo válido para este formato.
+
+## 4.2 Balance vertical
+
+- texto y gráfico se agrupan cerca del centro óptico de la placa;
+- deben percibirse relacionados y no como dos bloques demasiado distantes;
+- el espacio vacío dominante se conserva preferentemente en la parte superior;
+- el pie mantiene aire suficiente para logo, descriptor y paginación;
+- ninguna pieza debe quedar aplastada contra el borde inferior o lateral.
+
+## 4.3 Portada
+
+- la primera frase o headline principal se compone en **Futura Extra Bold Condensed**;
+- la portada puede incorporar una segunda frase con una jerarquía tipográfica diferente;
+- el esquema visual debe anticipar la idea sin explicar todo el carrusel;
+- headline y gráfico se ubican cerca del centro óptico, con espacio negativo superior;
+- la portada no puede parecer una diapositiva corporativa ni una placa exclusivamente tipográfica.
+
+## 4.4 Preview aprobado como master del carrusel
+
+Cuando Paulo identifica una vista conjunta o preview como la versión visual correcta:
+
+- la composición mostrada gobierna la producción de las placas individuales;
+- se conservan trayectoria, iconos, tamaños relativos, densidad, jerarquía y relación entre texto y gráfico;
+- no se reemplaza por otro carrusel “inspirado” en el preview;
+- cualquier ajuste se limita a legibilidad, resolución, adaptación de formato y aplicación determinística de branding;
+- el contact sheet deja de ser una referencia exploratoria y pasa a ser master hasta nueva aprobación.
+
+## 4.5 Esquema canónico para Negocio, Tecnología y Cultura
+
+Cuando una placa menciona un Programa de Transformación Digital que integra las tres dimensiones:
+
+- utilizar un núcleo central para el Programa;
+- utilizar un anillo exterior dividido en tres sectores equivalentes;
+- rotular los sectores `NEGOCIO`, `TECNOLOGÍA` y `CULTURA`;
+- representar integración simultánea, no tres recorridos independientes;
+- conservar legibilidad de los rótulos y divisiones claras;
+- evitar una convergencia de tres líneas cuando la idea es un sistema integrado.
+
 ## 5. Color
 
 Paleta oficial:
@@ -82,7 +141,15 @@ Orientación habitual por tipo de mensaje:
 - el logo se inserta de manera determinística; nunca se genera dentro de una imagen;
 - utilizar las tipografías oficiales de Motion;
 - el branding debe ser reconocible, pero no competir con la historia;
-- no agregar colores, íconos o recursos ajenos a la identidad aprobada.
+- no agregar colores, íconos o recursos ajenos a la identidad aprobada;
+- la firma utiliza el logo `MOTION` y el descriptor en dos líneas:
+
+```text
+Lo complejo,
+simple.
+```
+
+- el descriptor no se presenta en una única línea.
 
 ## 7. Lo que no es
 
@@ -96,7 +163,9 @@ No utilizar:
 - una ilustración diferente y desconectada en cada placa;
 - hitos amarillos;
 - logos recreados o generados;
-- reescrituras silenciosas del copy.
+- reescrituras silenciosas del copy;
+- solapamientos entre texto, líneas, nodos, rótulos o imágenes;
+- reinterpretaciones de un preview que Paulo ya señaló como correcto.
 
 ## 8. Referencias aprobadas
 
@@ -108,6 +177,14 @@ Carrusel de diez placas aprobado para el lunes. La misma curva evoluciona durant
 
 Carrusel de diez placas aprobado para el miércoles. Cada placa respeta el copy validado y utiliza un esquema simple para representar equipo central, oportunidades distribuidas, problemas reales, comunidad, metodología, proyectos y nuevas capacidades.
 
+### Autoridad transversal — agosto 2026
+
+El preview aprobado establece un recorrido continuo de líneas e iconos para representar visión, sistema concreto, 16 semanas, aliados internos, legitimidad y expansión. Las placas individuales deben conservar esa gramática.
+
+### Programa de Transformación Digital
+
+El patrón circular con núcleo central y tres sectores exteriores es la representación canónica de la integración entre Negocio, Tecnología y Cultura.
+
 ## 9. Gate de calidad
 
 Antes de presentar el carrusel:
@@ -118,6 +195,12 @@ Antes de presentar el carrusel:
 4. ¿La secuencia cuenta una historia y no una colección de slides?
 5. ¿Los hitos usan naranja Motion y no amarillo?
 6. ¿Se utilizaron logos y tipografías oficiales?
-7. ¿El conjunto se lee rápido y mantiene profundidad conceptual?
+7. ¿La primera frase de la portada está en Futura Extra Bold Condensed?
+8. ¿Texto y elementos gráficos están completamente separados?
+9. ¿El conjunto principal se siente centrado y conserva espacio negativo superior?
+10. ¿La firma dice `Lo complejo,` / `simple.` en dos líneas?
+11. Si existe un preview aprobado, ¿la pieza reproduce su composición y gramática sin reinterpretarla?
+12. Cuando se menciona integración de Negocio, Tecnología y Cultura, ¿se utiliza el esquema circular de núcleo + tres sectores?
+13. ¿El conjunto se lee rápido y mantiene profundidad conceptual?
 
 Si alguna respuesta es negativa, el carrusel no está listo para aprobación.

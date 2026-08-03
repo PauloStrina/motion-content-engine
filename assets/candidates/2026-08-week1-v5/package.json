@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "package_id": "2026-08-week1-candidate-v5",
+  "status": "candidate",
+  "created_at": "2026-08-03T15:33:00-03:00",
+  "publication_rule": "Candidate only. Requires explicit approval by Paulo.",
+  "expected_png_count": 52,
+  "changes": [
+    "La imagen de LinkedIn del lunes redistribuye el diagrama para evitar compresión lateral y todo solapamiento con el texto.",
+    "Las tres líneas que conectan Aliados internos con Transformación utilizan el mismo estilo, color, grosor y continuidad.",
+    "El carrusel del lunes agrupa texto y gráfico cerca del centro óptico y conserva el espacio vacío dominante en la parte superior.",
+    "La primera frase de cada portada utiliza Futura Extra Bold Condensed.",
+    "La firma de todas las piezas utiliza `MOTION` y `Lo complejo,` / `simple.` en dos líneas.",
+    "Se conserva el copy bloqueado sin reescrituras."
+  ],
+  "items": [
+    {
+      "file": "motion_semana_2026-08-03_assets_v5.zip",
+      "sha256": "63ccc1394639f02da9ecba6638926a8820ec594f8a051d8084b5245b2ac19e61",
+      "bytes": 4030458
+    },
+    {
+      "file": "monday_linkedin_v5.png",
+      "sha256": "ae9f6986c02ad5bb77465a6cb23c0e62e9109c849816e4f26cf5b89439316410",
+      "bytes": 77487
+    },
+    {
+      "file": "contact_monday_v5.png",
+      "sha256": "10cf1a4da978e95c72ba29d35469acad276ca232b5d171a64a63eb189620e68c",
+      "bytes": 225767
+    },
+    {
+      "file": "contact_tuesday_linkedin_v5.png",
+      "sha256": "108e82923fbe3caccf01d6300a933bf7dea20baf4c68338bf5ddc756c373c76e",
+      "bytes": 371066
+    },
+    {
+      "file": "contact_tuesday_instagram_v5.png",
+      "sha256": "cc30a4988888ceebfe27416d3cff17f1313d00504a9990d92dbcbb4b85bd5bdc",
+      "bytes": 371182
+    },
+    {
+      "file": "contact_wednesday_v5.png",
+      "sha256": "0693559672bfa8c2dbbd5072b0137a4a5fa7f9c634d2ed430d47b501574aaeba",
+      "bytes": 396589
+    },
+    {
+      "file": "contact_week_v5.png",
+      "sha256": "d5245af5dd71d617bf94423747b5674c1f0c2a50c6d9f1625ff04700dfb8705a",
+      "bytes": 123795
+    }
+  ]
+}

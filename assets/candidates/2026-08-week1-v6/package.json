@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "package_id": "2026-08-week1-candidate-v6",
+  "status": "candidate",
+  "created_at": "2026-08-03T16:59:00-03:00",
+  "publication_rule": "Candidate only. Requires explicit approval by Paulo.",
+  "production_png_count": 52,
+  "preview_png_count": 3,
+  "zip_png_count": 55,
+  "changes": [
+    "La imagen de LinkedIn del lunes pasa a formato 4:5 y reconstruye el preview aprobado como secuencia vertical de cinco etapas.",
+    "El carrusel del lunes se reconstruye desde el contact sheet aprobado, conserva su gramática visual y utiliza literalmente el copy bloqueado.",
+    "El slide 5 del miércoles reemplaza áreas por DATOS, PROCESOS y RUTINAS.",
+    "El slide 7 del miércoles elimina la línea que atravesaba el gráfico y representa capas retiradas mediante arcos desplazados.",
+    "El slide 8 utiliza NUEVO TABLERO y alinea los dos gráficos.",
+    "El slide 10 representa el nuevo tablero como capa visible sobre DATOS, PROCESOS y RUTINAS.",
+    "El slide 11 utiliza el esquema circular de Programa central con Negocio, Tecnología y Cultura en sectores equivalentes.",
+    "Martes se conserva sin cambios desde V5.",
+    "Todos los assets continúan bloqueados para publicación."
+  ],
+  "items": [
+    {
+      "file": "motion_semana_2026-08-03_assets_v6.zip",
+      "sha256": "e4e764d49c097d66e5b32d7766dc68ad5b0063d725277c97cf1032d9ff5f9848",
+      "bytes": 4533750
+    },
+    {
+      "file": "monday_linkedin_v6.png",
+      "sha256": "75aec37e8e687d6892e243e13fc6c4539d3a6d4ec58ee1c83a247490dce8a3f4",
+      "bytes": 238898
+    },
+    {
+      "file": "contact_monday_v6.png",
+      "sha256": "025f66c5c696dff2f8f46c6c6ce4b5055a244faea44b9cae842f179a83d08d64",
+      "bytes": 117132
+    },
+    {
+      "file": "contact_wednesday_v6.png",
+      "sha256": "fce431440181738eaffc2393069ee71df9dd0d36b224281ece0c40c2b6961549",
+      "bytes": 286998
+    },
+    {
+      "file": "contact_week_v6.png",
+      "sha256": "fe3d71d857dfeddf8e080a8bed80d8805614f8d60c4d52a55870fb76c3032040",
+      "bytes": 339246
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "package_id": "2026-08-week1-candidate-v2",
+  "status": "candidate",
+  "created_at": "2026-08-03T13:54:00-03:00",
+  "publication_rule": "Candidate only. Requires Paulo approval.",
+  "expected_png_count": 42,
+  "changes_from_v1": [
+    "Se conserva sin cambios el carrusel de Instagram del lunes.",
+    "Se reemplaza la imagen de LinkedIn del lunes.",
+    "Se rediseña completamente el carrusel del martes.",
+    "Se rediseña el carrusel del miércoles conservando el concepto de círculos concéntricos y eliminando solapamientos entre texto y líneas."
+  ],
+  "visual_rules": [
+    "Líneas curvas, vivas y con dirección.",
+    "Nodos circulares rellenos.",
+    "Composición alegre y con tensión positiva.",
+    "Texto y esquema centrados como una unidad; el aire principal queda arriba y abajo.",
+    "El texto no se superpone con líneas o nodos.",
+    "Cada esquema representa literalmente la idea de su placa."
+  ],
+  "items": [
+    {
+      "file": "motion_semana_2026-08-03_assets_v2.zip",
+      "sha256": "3f831507c8ea0e5ab849972c8d17d99e22bdaf7fa06deb8e217f40682309bf5b",
+      "bytes": 52423613
+    },
+    {
+      "file": "contact_week_v2.png",
+      "sha256": "ba936a0998e7e01e6406775c64bbffb47dadb2b3071e83432b2bd1ce498aff1d",
+      "bytes": 1152527
+    },
+    {
+      "file": "monday_linkedin_v2.png",
+      "sha256": "64631ee2282e2f49a1454ce51c9cd482e4966939f2b6dda74a2f128bc6732ba3",
+      "bytes": 2116624
+    },
+    {
+      "file": "contact_monday_sin_cambios.png",
+      "status": "accepted_from_v1"
+    },
+    {
+      "file": "contact_tuesday_v2.png",
+      "sha256": "780cea269df794d4a677cb9e810d133f1e7152ebea86c0a7f8c266479740c590",
+      "bytes": 1164231
+    },
+    {
+      "file": "contact_wednesday_v2.png",
+      "sha256": "47f81dfee1e2c299954b22011a7743f213c60560c9f530dae373e80077e5a405",
+      "bytes": 1095110
+    }
+  ]
+}

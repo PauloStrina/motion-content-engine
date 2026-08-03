@@ -1,0 +1,105 @@
+{
+  "mes": "2026-08",
+  "primer_lunes": "2026-08-03",
+  "estado": "en_revision_visual",
+  "contrato_visual_version": 2,
+  "contrato_storytelling_version": 1,
+  "semanas": [
+    {
+      "numero": 1,
+      "fecha_inicio": "2026-08-03",
+      "tesis": 1,
+      "tesis_nombre": "Cambio no es Transformación",
+      "estado": "copys_aprobados_visual_pendiente",
+      "aprobado_por": "Paulo",
+      "aprobado_en": "2026-08-03T11:45:00-03:00",
+      "copy_source": "editorial/2026-08/semana-1/copys-aprobados.md",
+      "dias": {
+        "lun": {
+          "tipo": "problema",
+          "tema": "Autoridad transversal y legitimidad construida",
+          "formato": "post_largo_imagen_carousel_instagram",
+          "utm_content": "2026_08_03_cambio_no_es_transformacion",
+          "copy_locked": true,
+          "narrativa": {
+            "efecto_editorial": "reconocimiento_y_nueva_comprension",
+            "centro_narrativo": "tensión de autoridad transversal y coordinación que no modifica decisiones",
+            "punto_de_llegada": "la legitimidad puede construirse al producir resultados concretos y aliados internos",
+            "source_mode": "situacion_potencial",
+            "source_refs": [
+              "editorial/2026-08/semana-1/lunes-problema.md"
+            ],
+            "evidence_id": null,
+            "copy_locked": true,
+            "copy_source": "editorial/2026-08/semana-1/lunes-problema.md"
+          },
+          "visual_family": "line_system",
+          "visual_spec": "design-system/reviews/2026-08-semana-1/specs/lunes-autoridad-transversal.json"
+        },
+        "mar": {
+          "tipo": "metodo",
+          "tema": "Adopción de IA como transformación del trabajo",
+          "formato": "carousel_newsletter",
+          "utm_content": "2026_08_04_adopcion_ia_transformacion",
+          "copy_locked": true,
+          "narrativa": {
+            "efecto_editorial": "comprension_del_mecanismo",
+            "centro_narrativo": "elegir una práctica, observarla, rediseñarla, acompañarla y medir el cambio real",
+            "punto_de_llegada": "la adopción ocurre cuando la IA modifica la forma de operar",
+            "source_mode": "situacion_potencial",
+            "source_refs": [
+              "editorial/2026-08/semana-1/martes-metodo.md",
+              "editorial/2026-08/semana-1/newsletter-adopcion-ia.md"
+            ],
+            "evidence_id": null,
+            "copy_locked": true,
+            "copy_source": "editorial/2026-08/semana-1/martes-metodo.md"
+          },
+          "visual_family": "line_system",
+          "visual_spec": "design-system/reviews/2026-08-semana-1/specs/martes-adopcion-ia.json"
+        },
+        "mie": {
+          "tipo": "resultados",
+          "tema": "Power BI y efecto cebolla",
+          "formato": "carousel",
+          "utm_content": "2026_08_05_power_bi_efecto_cebolla",
+          "copy_locked": true,
+          "narrativa": {
+            "efecto_editorial": "prueba_de_experiencia_y_criterio",
+            "centro_narrativo": "un pedido de Power BI revela capas sucesivas de datos, procesos, rutinas y cultura",
+            "punto_de_llegada": "una necesidad puntual puede convertirse en la puerta de entrada a una transformación más amplia",
+            "source_mode": "caso_real_anonimizado",
+            "source_refs": [
+              "editorial/2026-08/semana-1/miercoles-resultados.md"
+            ],
+            "evidence_id": "E1",
+            "copy_locked": true,
+            "copy_source": "editorial/2026-08/semana-1/miercoles-resultados.md"
+          },
+          "visual_family": "line_system",
+          "evidence": "E1",
+          "visual_spec": "design-system/reviews/2026-08-semana-1/specs/miercoles-power-bi-cebolla.json"
+        },
+        "jue": {
+          "tipo": "conexion",
+          "tema": "Sustracción de SIT",
+          "formato": "reel_manual",
+          "managed_by_engine": false,
+          "publication_owner": "Paulo",
+          "narrativa": {
+            "efecto_editorial": "afinidad_con_la_perspectiva_motion",
+            "centro_narrativo": "el método de Sustracción muestra que no todo se resuelve agregando tecnología",
+            "punto_de_llegada": "simplificar también puede ser una decisión de transformación",
+            "source_mode": "referencia_externa",
+            "source_refs": [
+              "SIT:Sustracción"
+            ],
+            "evidence_id": null,
+            "copy_locked": false,
+            "copy_source": null
+          }
+        }
+      }
+    }
+  ]
+}

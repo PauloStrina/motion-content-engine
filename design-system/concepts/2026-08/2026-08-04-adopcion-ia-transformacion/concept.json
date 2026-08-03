@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "piece_id": "2026-08-04-adopcion-ia-transformacion",
+  "status": "candidate",
+  "visual_message": "La adopción no nace de sumar herramientas y cursos: avanza cuando una práctica real se observa, rediseña, acompaña y mide.",
+  "concept": "Una trayectoria única evoluciona desde dos intervenciones aisladas hacia un método secuencial: práctica, observación, rediseño, integración, acompañamiento y medición.",
+  "conceptual_rationale": "El método necesita mostrar orden, dependencia entre pasos y continuidad operativa.",
+  "visual_family": "line_system",
+  "family_lock": true,
+  "representation": "diagram",
+  "execution": "code",
+  "visual_resources": ["trajectory", "process", "nodes", "feedback_loop", "measurement"],
+  "exclusions": ["handwritten", "corporate_slide", "3d", "decorative_icons", "yellow_milestones"],
+  "quality_target": "reference_grade",
+  "brand_resources": ["motion_palette", "motion_typography", "motion_logo"]
+}
