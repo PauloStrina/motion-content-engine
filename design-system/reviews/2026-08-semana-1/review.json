@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-08-semana-1",
+  "status": "pending_approval",
+  "created_at": "2026-08-03T11:45:00-03:00",
+  "publication_blocked": true,
+  "copy_source": "editorial/2026-08/semana-1/copys-aprobados.md",
+  "candidate_package": "assets/candidates/2026-08-week1/package.json",
+  "pieces": [
+    {
+      "piece_id": "2026-08-03-autoridad-transversal",
+      "visual_family": "line_system",
+      "status": "candidate",
+      "spec": "design-system/reviews/2026-08-semana-1/specs/lunes-autoridad-transversal.json"
+    },
+    {
+      "piece_id": "2026-08-04-adopcion-ia-transformacion",
+      "visual_family": "line_system",
+      "status": "candidate",
+      "spec": "design-system/reviews/2026-08-semana-1/specs/martes-adopcion-ia.json"
+    },
+    {
+      "piece_id": "2026-08-05-power-bi-efecto-cebolla",
+      "visual_family": "line_system",
+      "status": "candidate",
+      "spec": "design-system/reviews/2026-08-semana-1/specs/miercoles-power-bi-cebolla.json"
+    }
+  ],
+  "approval_rule": "No mover a assets/approved ni habilitar publicación antes de aprobación visual explícita de Paulo."
+}
