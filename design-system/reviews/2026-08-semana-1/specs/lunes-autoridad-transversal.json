@@ -1,33 +1,37 @@
 {
   "schema_version": 1,
   "piece_id": "2026-08-03-autoridad-transversal",
-  "status": "candidate_v5",
+  "status": "candidate_v6",
   "formats": {
     "linkedin_image": {
-      "size": [1600, 1280],
-      "file": "monday_linkedin_v5.png",
-      "version": 5
+      "size": [1080, 1350],
+      "file": "monday_linkedin_v6.png",
+      "version": 6,
+      "layout": "portrait_vertical_sequence"
     },
     "instagram_carousel": {
       "size": [1080, 1350],
       "slides": 10,
       "folder": "monday_carousel",
-      "version": 5,
-      "base_design": "accepted_v1",
-      "change": "balance vertical, portada tipográfica y firma"
+      "version": 6,
+      "base_design": "preview_master_2026-08-03",
+      "change": "reconstrucción individual desde el preview aprobado"
     }
   },
   "copy_locked": true,
-  "visual_rules_v5": [
-    "La imagen de LinkedIn utiliza una única secuencia semántica: Visión → Sistema concreto → 16 semanas → Aliados internos → Transformación.",
-    "El diagrama se distribuye en el centro derecho de la composición y no queda aplastado contra el borde.",
-    "Texto, etiquetas y gráfico ocupan zonas independientes. No se admite ningún solapamiento entre texto y elementos gráficos.",
-    "Las tres líneas que conectan Aliados internos con Transformación utilizan exactamente el mismo estilo, color, grosor y continuidad.",
-    "La capilarización aparece únicamente después de Aliados internos.",
-    "No agregar áreas, comités o recorridos paralelos dentro de la imagen de LinkedIn.",
-    "Las líneas son curvas, los nodos están rellenos y el hito de 16 semanas utiliza naranja Motion.",
+  "visual_master": {
+    "linkedin_reference": "preview de cinco etapas aprobado por Paulo el 3 de agosto de 2026",
+    "instagram_reference": "contact sheet de diez placas aprobado por Paulo el 3 de agosto de 2026",
+    "rule": "El preview gobierna composición, jerarquía, iconografía y gramática visual. No reinterpretar."
+  },
+  "visual_rules_v6": [
+    "La imagen de LinkedIn utiliza formato 4:5 y una secuencia vertical: Visión → Sistema concreto → 16 semanas → Aliados internos → Transformación.",
+    "Cada etapa utiliza nodo circular relleno, icono lineal, título y descripción legible.",
+    "El diseño aprovecha el ancho completo del formato y evita compresión lateral.",
+    "Texto, etiquetas, líneas, nodos, firma y descripciones ocupan zonas independientes y no se solapan.",
+    "Las tres líneas desde Aliados internos hacia Transformación son iguales en color, grosor, continuidad y terminación.",
     "La primera frase de la portada del carrusel utiliza Futura Extra Bold Condensed.",
-    "En el carrusel de Instagram, texto y gráfico se agrupan cerca del centro óptico y el espacio vacío dominante queda en la parte superior.",
+    "El carrusel de Instagram reproduce el preview aprobado: titulares centrados, trayectoria continua, iconos simples y espacio vacío superior.",
     "La firma usa el logo oficial acompañado por `Lo complejo,` y `simple.` en dos líneas."
   ],
   "linkedin_visual_sequence": [
@@ -35,7 +39,7 @@
     "Sistema concreto",
     "16 semanas",
     "Aliados internos",
-    "Transformación"
+    "Transformación que se expande"
   ],
   "slide_text": [
     "Ves la transformación, pero no podés decidir por todas las áreas.",
@@ -49,5 +53,5 @@
     "El resultado no es solo evidencia. Son protagonistas que validan la visión y se convierten en aliados internos.",
     "La legitimidad también se construye transformando. Escribí MAPA y recibí el link para construir tu Mapa de Transformación."
   ],
-  "candidate_package": "assets/candidates/2026-08-week1-v5/package.json"
+  "candidate_package": "assets/candidates/2026-08-week1-v6/package.json"
 }
