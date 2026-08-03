@@ -1,26 +1,34 @@
 {
   "schema_version": 1,
   "piece_id": "2026-08-05-power-bi-efecto-cebolla",
-  "status": "candidate_v5",
+  "status": "candidate_v6",
   "formats": {
     "linkedin_instagram_carousel": {
       "size": [1080, 1350],
       "slides": 15,
       "folder": "wednesday_carousel",
-      "version": 5,
-      "base_design": "candidate_v4"
+      "version": 6,
+      "base_design": "candidate_v5_with_conceptual_corrections"
     }
   },
   "copy_locked": true,
-  "visual_rules_v5": [
+  "visual_rules_v6": [
     "Mantener círculos concéntricos como metáfora del efecto cebolla.",
     "Fondo claro y zonas rígidas: texto arriba, diagrama abajo y firma en el pie.",
     "Ninguna línea, nodo, rótulo o círculo puede entrar en el área de texto ni en su margen de seguridad.",
     "Los rótulos de las capas se ubican dentro de espacios limpios o en una leyenda externa.",
     "La primera frase de la portada utiliza Futura Extra Bold Condensed.",
     "La firma usa el logo oficial acompañado por `Lo complejo,` y `simple.` en dos líneas.",
-    "Preservar el copy aprobado y la secuencia conceptual del caso."
+    "Preservar el copy aprobado y la secuencia conceptual del caso.",
+    "Cuando se representa el Programa que integra Negocio, Tecnología y Cultura, utilizar el esquema circular de núcleo central y tres sectores equivalentes."
   ],
+  "conceptual_corrections_v6": {
+    "slide_5": "La leyenda de colores debe indicar DATOS, PROCESOS y RUTINAS; no áreas.",
+    "slide_7": "Las capas se retiran mediante arcos desplazados. No utilizar una línea que atraviese el gráfico.",
+    "slide_8": "El rótulo es NUEVO TABLERO. Los dos gráficos tienen igual tamaño, alineación y línea de base.",
+    "slide_10": "El tablero se representa como capa visible sobre un sistema compuesto por DATOS, PROCESOS y RUTINAS. No mezclar tablero, decisiones y formas de trabajar como categorías equivalentes.",
+    "slide_11": "El Programa ocupa el núcleo; Negocio, Tecnología y Cultura ocupan tres sectores equivalentes del anillo exterior."
+  },
   "slide_text": [
     "Nos pidieron un tablero de Power BI. Pero no todo es lo que parece.",
     "Parecía un proyecto claro: reunir la información, construir los indicadores y diseñar las visualizaciones.",
@@ -43,22 +51,23 @@
     "proyecto claro",
     "capa datos",
     "capa procesos",
-    "capa rutinas",
+    "capas DATOS-PROCESOS-RUTINAS",
     "núcleo cultura",
-    "capas removidas",
-    "tablero correcto sobre sistema incorrecto",
+    "capas retiradas mediante arcos desplazados",
+    "nuevo tablero versus mismo sistema, alineados",
     "expansión de alcance",
-    "tablero como capa visible con leyenda externa",
-    "Negocio-Tecnología-Cultura",
+    "nuevo tablero como capa visible sobre datos, procesos y rutinas",
+    "Programa circular integrado por Negocio, Tecnología y Cultura",
     "aprendizaje",
     "necesidad → programa",
     "tablero como puerta",
     "Mapa de Transformación"
   ],
-  "candidate_package": "assets/candidates/2026-08-week1-v5/package.json",
+  "candidate_package": "assets/candidates/2026-08-week1-v6/package.json",
   "qa_notes": [
     "Preservar literalmente `Enntonces` en placa 5 hasta autorización explícita.",
     "Verificar en 1080 × 1350 que el área visual comience debajo de la última línea de texto.",
-    "La portada debe conservar una única firma en el pie."
+    "La portada debe conservar una única firma en el pie.",
+    "Verificar que los sectores de Negocio, Tecnología y Cultura sean equivalentes y legibles."
   ]
 }
