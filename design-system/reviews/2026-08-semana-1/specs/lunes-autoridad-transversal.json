@@ -1,38 +1,40 @@
 {
   "schema_version": 1,
   "piece_id": "2026-08-03-autoridad-transversal",
-  "status": "candidate_v4",
+  "status": "candidate_v5",
   "formats": {
     "linkedin_image": {
       "size": [1600, 1280],
-      "file": "monday_linkedin_v4.png",
-      "version": 4
+      "file": "monday_linkedin_v5.png",
+      "version": 5
     },
     "instagram_carousel": {
       "size": [1080, 1350],
       "slides": 10,
       "folder": "monday_carousel",
-      "version": 4,
+      "version": 5,
       "base_design": "accepted_v1",
-      "change": "firma con tagline"
+      "change": "balance vertical, portada tipográfica y firma"
     }
   },
   "copy_locked": true,
-  "visual_rules_v4": [
+  "visual_rules_v5": [
     "La imagen de LinkedIn utiliza una única secuencia semántica: Visión → Sistema concreto → 16 semanas → Aliados internos → Transformación.",
+    "El diagrama se distribuye en el centro derecho de la composición y no queda aplastado contra el borde.",
+    "Texto, etiquetas y gráfico ocupan zonas independientes. No se admite ningún solapamiento entre texto y elementos gráficos.",
+    "Las tres líneas que conectan Aliados internos con Transformación utilizan exactamente el mismo estilo, color, grosor y continuidad.",
     "La capilarización aparece únicamente después de Aliados internos.",
-    "No agregar áreas, comités o recorridos paralelos dentro de esta imagen.",
-    "Texto y gráfico ocupan zonas independientes y no se superponen.",
+    "No agregar áreas, comités o recorridos paralelos dentro de la imagen de LinkedIn.",
     "Las líneas son curvas, los nodos están rellenos y el hito de 16 semanas utiliza naranja Motion.",
-    "La firma usa el logo oficial acompañado por `Lo complejo, simple.`.",
-    "El carrusel de Instagram conserva el diseño aceptado y solo incorpora la nueva firma."
+    "La primera frase de la portada del carrusel utiliza Futura Extra Bold Condensed.",
+    "En el carrusel de Instagram, texto y gráfico se agrupan cerca del centro óptico y el espacio vacío dominante queda en la parte superior.",
+    "La firma usa el logo oficial acompañado por `Lo complejo,` y `simple.` en dos líneas."
   ],
   "linkedin_visual_sequence": [
     "Visión",
     "Sistema concreto",
     "16 semanas",
     "Aliados internos",
-    "Capilarización",
     "Transformación"
   ],
   "slide_text": [
@@ -47,5 +49,5 @@
     "El resultado no es solo evidencia. Son protagonistas que validan la visión y se convierten en aliados internos.",
     "La legitimidad también se construye transformando. Escribí MAPA y recibí el link para construir tu Mapa de Transformación."
   ],
-  "candidate_package": "assets/candidates/2026-08-week1-v4/package.json"
+  "candidate_package": "assets/candidates/2026-08-week1-v5/package.json"
 }
