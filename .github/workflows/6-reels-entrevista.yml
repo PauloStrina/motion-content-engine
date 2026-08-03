@@ -1,4 +1,4 @@
-﻿name: 6-reels-entrevista
+name: 6-reels-entrevista
 # Formato entrevista: un solo archivo con las dos personas en cuadro.
 # El plano conmuta entre quien pregunta y quien responde segun el campo "hablante"
 # de cada segmento. No reemplaza a 3-reels-guion / 4-reels-render, que siguen
@@ -97,6 +97,34 @@ jobs:
         if: ${{ steps.decidir.outputs.transcribir == 'true' }}
         run: python pipelines/video/transcribir.py _video/input.mp4 "pipelines/video/reels/$SLUG"
 
+      - name: Commit del transcript (antes del editor)
+        if: ${{ steps.decidir.outputs.transcribir == 'true' }}
+        shell: bash
+        # Transcribir cuesta ~45 min de runner. Si se commitea recien despues del
+        # editor, cualquier fallo editorial (API caida, sin credito, manifiesto
+        # invalido) tira ese trabajo a la basura y hay que rehacerlo entero.
+        run: |
+          set -euo pipefail
+          TARGET_BRANCH="${GITHUB_REF_NAME:-main}"
+          DIR="pipelines/video/reels/$SLUG"
+          git config user.name "motion-engine"
+          git config user.email "engine@motion.local"
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git add "$DIR/transcript.json" "$DIR/transcript.md"
+          git commit -m "reels: transcript de $SLUG" || echo "sin cambios locales"
+
+          for intento in 1 2 3 4; do
+            git fetch origin "$TARGET_BRANCH"
+            git rebase "origin/$TARGET_BRANCH"
+            if git push origin "HEAD:$TARGET_BRANCH"; then
+              exit 0
+            fi
+            echo "Push rechazado por actualizacion concurrente; reintento $intento/4" >&2
+            sleep $((intento * 5))
+          done
+          echo "ERROR: no se pudo guardar el transcript" >&2
+          exit 1
+
       - name: Editor de Video (Claude elige los reels)
         uses: anthropics/claude-code-action@v1
         env:
@@ -168,7 +196,7 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fontconfig
           pip install --quiet --force-reinstall "gdown==5.2.0"
-          pip install --quiet "opencv-python-headless<5"
+          pip install --quiet opencv-python-headless==4.10.0.84
       - name: Descargar video de Drive
         run: python3 pipelines/video/descargar.py "$VIDEO_URL" _video
       - name: Resolver zonas de las dos personas
