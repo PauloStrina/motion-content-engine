@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "piece_id": "2026-08-05-power-bi-efecto-cebolla",
+  "status": "candidate",
+  "formats": {
+    "linkedin_instagram_carousel": {"size": [1080, 1350], "slides": 15, "folder": "wednesday_carousel"}
+  },
+  "copy_locked": true,
+  "slide_text": [
+    "Nos pidieron un tablero de Power BI. Pero no todo es lo que parece.",
+    "Parecía un proyecto claro: reunir la información, construir los indicadores y diseñar las visualizaciones.",
+    "Pero los datos no estaban disponibles. Entonces preguntamos: ¿Por qué no hay datos?",
+    "Y ahí apareció el segundo problema. No había procesos estandarizados para gestionar la información. ¿Por qué no hay procesos?",
+    "Tercer problema. Cada área tenía sus propias rutinas, criterios y formas de trabajar. Enntonces preguntamos: ¿Por qué no hay rutinas claras?",
+    "Y nos encontramos con la causa raíz: no había una cultura de alta performance.",
+    "Cada vez que retirábamos una capa del pedido original, aparecía otra dimensión de la organización que también necesitaba transformarse.",
+    "Podíamos haber construido un tablero visualmente correcto sobre ese sistema. Pero el resultado habría sido una mejor visualización de los mismos problemas.",
+    "Por eso el trabajo dejó de ser solamente un proyecto de Power BI.",
+    "El tablero siguió siendo parte de la solución, pero pasó a ocupar el lugar que le correspondía: una primera capa visible dentro de una transformación más amplia sobre datos, decisiones y formas de trabajar.",
+    "Lo que comenzó como una necesidad puntual terminó mostrando la necesidad de integrar Negocio, Tecnología y Cultura dentro de un Programa de Transformación Digital.",
+    "Ese caso nos confirmó algo que hoy forma parte de nuestra manera de trabajar:",
+    "Muchas transformaciones no empiezan con un gran programa. Empiezan con una necesidad concreta que alguien decide mirar con suficiente profundidad.",
+    "Un tablero puede ser solamente un tablero. O puede convertirse en la puerta de entrada para comprender qué necesita transformar realmente una organización.",
+    "El Mapa de Transformación te ayuda a identificar qué proceso, capacidad o sistema puede convertirse en ese primer movimiento. Escribí MAPA en los comentarios y recibí el link para construirlo."
+  ],
+  "visual_sequence": [
+    "pedido visible",
+    "proyecto claro",
+    "capa datos",
+    "capa procesos",
+    "capa rutinas",
+    "núcleo cultura",
+    "capas removidas",
+    "tablero correcto sobre sistema incorrecto",
+    "expansión de alcance",
+    "tablero como capa visible",
+    "Negocio-Tecnología-Cultura",
+    "aprendizaje",
+    "necesidad → programa",
+    "tablero como puerta",
+    "Mapa de Transformación"
+  ],
+  "reference": "assets/approved/2026-07-week3/package.json",
+  "qa_notes": ["Preservar literalmente `Enntonces` en placa 5 hasta autorización explícita."]
+}
