@@ -114,16 +114,35 @@ Usá únicamente:
 - assets aprobados;
 - capas soportadas por el renderer.
 
+Reglas de portada y firma:
+
+- la primera frase o headline principal de una portada de carrusel utiliza Futura Extra Bold Condensed;
+- una segunda frase puede utilizar otra jerarquía aprobada;
+- la firma utiliza el logo oficial y el descriptor exactamente en dos líneas:
+
+```text
+Lo complejo,
+simple.
+```
+
+- el descriptor nunca se compone en una única línea.
+
 No copies composiciones de las referencias.
 
 ## Separación y legibilidad
 
+> **No se admite ningún solapamiento entre texto y elementos gráficos.**
+
 - El texto y el diagrama deben ocupar zonas deliberadas y legibles.
-- Ninguna línea, nodo, círculo, fotografía o rótulo puede solapar el texto principal.
+- Ninguna línea, nodo, círculo, fotografía, textura, forma o rótulo puede ingresar al bounding box del texto ni a su margen de seguridad.
 - Los rótulos internos se ubican en espacios limpios o en una leyenda independiente.
+- Los rótulos no se colocan encima de líneas o nodos.
+- Si el diagrama no cabe, debe simplificarse o redistribuirse; nunca se reduce la legibilidad.
 - La relación visual debe aportar significado; evitar curvas, nodos o capas meramente decorativas.
 - Una trayectoria debe expresar origen, decisión, fricción, convergencia, resultado o evolución reconocible.
 - Una capa debe expresar profundidad, dependencia o causa, no solamente ornamentación.
+- Texto y gráfico deben agruparse cerca del centro óptico cuando el formato lo permita.
+- Cuando exista espacio vacío dominante, se conserva preferentemente en la parte superior.
 - El espacio negativo forma parte de la composición y no debe resolverse llenando la placa con elementos sin función.
 
 ## Estructura técnica de una slide
@@ -206,10 +225,12 @@ Antes de terminar:
 5. Confirmá que cada fragmento se traza a `copy_source` cuando existe.
 6. Confirmá correspondencia con efecto editorial, centro narrativo y punto de llegada.
 7. Confirmá correspondencia con el contrato visual.
-8. Confirmá que no existen solapamientos entre texto, rótulos y capas.
+8. Confirmá que no existen solapamientos entre texto, rótulos y capas, incluyendo el margen de seguridad.
 9. Confirmá que cada gráfico tiene una función semántica reconocible.
-10. Confirmá que los assets referenciados existen.
-11. Ejecutá:
+10. Confirmá la tipografía de la primera frase de la portada.
+11. Confirmá el descriptor `Lo complejo,` / `simple.` en dos líneas.
+12. Confirmá que los assets referenciados existen.
+13. Ejecutá:
 
 Semana:
 
