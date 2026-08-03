@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "piece_id": "2026-08-04-adopcion-ia-transformacion",
+  "status": "candidate",
+  "formats": {
+    "linkedin_instagram_carousel": {"size": [1080, 1350], "slides": 16, "folder": "tuesday_carousel"}
+  },
+  "copy_locked": true,
+  "slide_text": [
+    "Tu objetivo dice “adopción de IA”. Pero, para hacerlo realidad, primero tenés que definir qué forma de trabajar querés transformar.",
+    "Tal vez ya implementaste un chatbot y casi nadie lo usó.",
+    "Después organizaste una capacitación. Las personas probaron nuevas herramientas y aprendieron algunos prompts, pero cuando volvieron a sus tareas siguieron trabajando de la misma manera.",
+    "El chatbot podía funcionar y el curso podía ser bueno. El problema era esperar que esas dos intervenciones, por sí solas, produjeran adopción.",
+    "Por eso, cuando trabajamos sobre adopción de IA, no empezamos preguntando qué herramienta incorporar ni cuántas personas capacitar.",
+    "Empezamos eligiendo una tarea, una decisión o un proceso en el que la IA pueda producir un resultado concreto.",
+    "Primero observamos cómo se trabaja hoy: qué información se utiliza, dónde aparecen demoras y qué decisiones dependen del criterio de una persona.",
+    "También revisamos qué pasos existen simplemente porque siempre se hicieron así.",
+    "Después diseñamos la nueva forma de trabajar.",
+    "Ahí recién definimos qué función debe cumplir la tecnología, qué parte del proceso necesita rediseñarse y qué capacidades necesitan desarrollar las personas que van a sostenerlo.",
+    "La implementación tampoco termina cuando la solución está disponible.",
+    "Hay que acompañar al equipo mientras la incorpora a su trabajo real, identificar las fricciones que aparecen y ajustar el proceso. Hasta que la nueva práctica resulte más clara, útil y sostenible que la anterior.",
+    "La adopción no se mide solamente por licencias activas, asistentes a una capacitación o cantidad de consultas realizadas. Se mide observando si cambiaron las tareas, las decisiones, los procesos o los resultados.",
+    "Esa es la diferencia entre sumar una intervención y diseñar una transformación. La herramienta deja de ser el punto de partida y pasa a ocupar el lugar que le corresponde dentro de un sistema que integra Negocio, Tecnología y Cultura.",
+    "El Programa de Transformación Digital organiza ese recorrido: parte de un resultado de negocio, transforma una práctica concreta y desarrolla las condiciones para que la organización pueda sostenerla y escalarla.",
+    "Para empezar, necesitás identificar qué proceso, capacidad o sistema tiene mayor potencial de transformación. Escribí MAPA y recibí el link para construir tu Mapa de Transformación."
+  ],
+  "visual_sequence": [
+    "objetivo amplio → práctica",
+    "chatbot aislado",
+    "curso aislado",
+    "intervenciones sin adopción",
+    "cambio de pregunta",
+    "tarea/decisión/proceso",
+    "observación del sistema",
+    "siempre se hizo así",
+    "rediseño",
+    "tecnología + proceso + capacidades",
+    "solución disponible → trabajo real",
+    "ciclo probar-fricción-ajustar-sostener",
+    "actividad vs adopción",
+    "intervención vs transformación",
+    "Programa organiza recorrido",
+    "Mapa de Transformación"
+  ],
+  "reference": "assets/approved/2026-07-week3/package.json"
+}
