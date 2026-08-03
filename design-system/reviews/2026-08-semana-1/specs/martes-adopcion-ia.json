@@ -1,11 +1,28 @@
 {
   "schema_version": 1,
   "piece_id": "2026-08-04-adopcion-ia-transformacion",
-  "status": "candidate",
+  "status": "candidate_v2",
   "formats": {
-    "linkedin_instagram_carousel": {"size": [1080, 1350], "slides": 16, "folder": "tuesday_carousel"}
+    "linkedin_instagram_carousel": {
+      "size": [1080, 1350],
+      "slides": 16,
+      "folder": "tuesday_carousel",
+      "version": 2,
+      "decision_v1": "rejected"
+    }
   },
   "copy_locked": true,
+  "visual_rules_v2": [
+    "Rediseño completo dentro de la familia line_system.",
+    "Trayectoria orgánica y continua como recurso dominante.",
+    "Líneas curvas, alegres y con dirección; evitar esquemas lineales rígidos.",
+    "Nodos circulares rellenos con contraste claro.",
+    "Secuencia cromática por etapas: tensión, método, incorporación y transformación.",
+    "Texto y gráfico centrados verticalmente como una unidad.",
+    "Aire arriba y abajo; no pegar el texto al borde superior.",
+    "No solapar texto, rótulos, líneas o nodos.",
+    "Cada visual representa literalmente la idea de la placa."
+  ],
   "slide_text": [
     "Tu objetivo dice “adopción de IA”. Pero, para hacerlo realidad, primero tenés que definir qué forma de trabajar querés transformar.",
     "Tal vez ya implementaste un chatbot y casi nadie lo usó.",
@@ -42,5 +59,8 @@
     "Programa organiza recorrido",
     "Mapa de Transformación"
   ],
-  "reference": "assets/approved/2026-07-week3/package.json"
+  "references": [
+    "assets/approved/2026-07-week3/package.json",
+    "design-system/reviews/2026-08-semana-1/feedback-v2.md"
+  ]
 }
