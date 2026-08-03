@@ -1,8 +1,8 @@
 # ESTRATEGIA CANÓNICA DE MOTION
 
 **Estado:** vigente  
-**Versión:** 1.0  
-**Fecha:** 12 de julio de 2026  
+**Versión:** 1.2  
+**Fecha:** 18 de julio de 2026  
 **Propósito:** ser la fuente única de verdad estratégica para el proyecto MOTION MKT Copilot y el repositorio `motion-content-engine`.
 
 ---
@@ -267,7 +267,7 @@ No se prometen métricas genéricas ni resultados no respaldados.
 
 # 5. PERSPECTIVA ÚNICA
 
-> **Ayudamos a líderes que ya saben que su organización necesita transformarse, pero todavía no encuentran cómo hacerlo, a convertir esa visión en resultados mediante un Programa de Transformación Digital que integra Negocio, Tecnología y Cultura.**
+> **Ayudamos a organizaciones a transformar su forma de operar mediante un Programa que integra Negocio, Tecnología y Cultura, con resultados medibles en 16 semanas.**
 
 El contenido no intenta convencer a personas que no reconocen la necesidad. Busca atraer y equipar a quienes ya sienten la incomodidad de no haber logrado materializarla.
 
@@ -404,64 +404,153 @@ Una pieza puede mezclar ingredientes de más de un tipo. El tipo principal se de
 
 # 10. VOZ CANÓNICA
 
-## 10.1 Fuente de voz
+## 10.1 Fuente, precedencia y criterio
 
-Todas las transcripciones y publicaciones de Paulo incorporadas a la base representan su voz y son corpus válido.
+La voz se construye a partir de cuatro fuentes, en este orden:
 
-La voz no debe reducirse a un único patrón. Tiene diferentes registros según el formato:
+1. instrucciones explícitas más recientes de Paulo;
+2. esta estrategia canónica;
+3. corpus real de transcripciones, publicaciones y piezas aprobadas;
+4. patrones inferidos de borradores, correcciones y versiones finales.
 
-- **Conversacional y experiencial:** para posts, escenas, aprendizajes y casos.
-- **Didáctico y estructurado:** para newsletters, frameworks y explicación de metodologías.
-- **Personal y reflexivo:** para liderazgo, visión y conexión.
-- **Institucional pero vivo:** para Instagram de Motion y comunicaciones de marca.
+La voz no es una colección de muletillas. Incluye la forma de observar, distinguir, argumentar, explicar, elegir ejemplos y decidir qué vale la pena decir.
 
-## 10.2 Rasgos principales
+Las reglas se clasifican en tres niveles:
 
-- pensamiento estructurado mediante contrastes;
-- capacidad de simplificar ideas complejas;
-- lenguaje de negocio, procesos, cultura y tecnología;
-- ejemplos cotidianos y analogías;
-- uso frecuente de preguntas;
-- foco en método y aplicación;
-- entusiasmo por el potencial de las personas y organizaciones;
-- voseo rioplatense profesional;
-- combinación natural de primera persona singular, “nosotros” Motion y conversación directa con “vos”.
+- **Reglas duras:** no se violan, salvo instrucción explícita.
+- **Tendencias fuertes:** aparecen con frecuencia, pero el formato y el contenido pueden justificar otra decisión.
+- **Preferencias contextuales:** son recursos disponibles, no obligaciones.
 
-## 10.3 Recursos válidos
+La versión operativa y los ejemplos de calibración se conservan en `MASTER_BASE_CONOCIMIENTO.md`. Este documento gobierna los principios.
 
-Son parte legítima de la voz, cuando sirven al contenido:
+## 10.2 ADN compartido de Paulo y Motion
+
+- conclusión o tensión central al comienzo, sin introducciones genéricas;
+- pensamiento estructurado mediante contrastes, distinciones y relaciones de causa;
+- capacidad de simplificar ideas complejas sin vaciarlas;
+- lenguaje concreto de negocio, procesos, tecnología, cultura y personas;
+- ejemplos reales, escenas reconocibles y analogías funcionales;
+- postura clara, con matices cuando la evidencia no permite afirmar más;
+- foco en método, aplicación y consecuencias organizacionales;
+- entusiasmo por el potencial de las personas y las organizaciones, sin grandilocuencia;
+- precisión por encima de volumen;
+- cierre cuando la idea está completa, sin repetirla en forma de resumen.
+
+## 10.3 Perfil personal de Paulo
+
+La voz de Paulo puede combinar primera persona singular, “nosotros” Motion y conversación directa con “vos”.
+
+Sus registros principales son:
+
+- **Conversacional y experiencial:** parte de una situación, una observación o algo ocurrido en un proyecto.
+- **Didáctico y estructurado:** introduce una distinción, explica por qué importa y muestra cómo se aplica.
+- **Personal y reflexivo:** conecta liderazgo, aprendizaje, futuro y transformación con una postura propia.
+- **Crítico y propositivo:** cuestiona una práctica sin quedarse en la crítica; ofrece una lectura o un camino mejor.
+
+El tono puede ser firme sin volverse agresivo, entusiasta sin sonar promocional y técnico sin alejarse del lenguaje de negocio.
+
+## 10.4 Perfil institucional de Motion
+
+Motion conserva el criterio y la energía de Paulo, con una voz más sintética, colectiva y orientada a capacidades y ejecución.
+
+- usa primera persona plural o formulación institucional directa;
+- explica qué observa, qué integra, qué diseña y qué implementa;
+- habla desde experiencia y método, no desde superioridad de marca;
+- evita autobiografía personal cuando el emisor es Motion;
+- evita el tono corporativo abstracto y las declaraciones de liderazgo sin evidencia;
+- muestra a Motion como socio que articula Negocio, Tecnología y Cultura y convierte decisiones en ejecución.
+
+La voz institucional no debe parecer una versión despersonalizada de Paulo ni una consultora genérica. Debe conservar criterio, claridad y escenas reales.
+
+## 10.5 Mecánica de escritura
+
+Son tendencias fuertes, no una plantilla obligatoria:
+
+- alternar frases breves con otras más desarrolladas;
+- usar párrafos con extensión desigual y funcional al contenido;
+- priorizar voz activa y verbos concretos;
+- repetir el término preciso antes que reemplazarlo con sinónimos forzados;
+- utilizar preguntas cuando abren una distinción real, no como decoración;
+- usar títulos, listas y secciones solo cuando ordenan mejor la idea;
+- escribir números como dígitos cuando se presentan datos o cantidades;
+- adaptar la densidad al formato: reel, caption, carrusel, post, newsletter o documento comercial;
+- evitar que cada oración quede aislada en una línea por una decisión puramente estética.
+
+Son recursos válidos cuando aportan:
 
 - títulos del tipo “¿Qué es…?” para instalar conceptos nuevos;
 - secciones como “POR QUÉ IMPORTA”, “CÓMO FUNCIONA”, “EN LA PRÁCTICA” y “CONCLUSIÓN”;
-- listas numeradas;
 - expresiones como “Acá está la clave”;
-- palabras destacadas en mayúsculas;
+- listas numeradas;
 - analogías;
 - apartes con personalidad;
-- emojis funcionales y moderados;
-- definiciones, siempre que sean claras y aplicadas.
+- palabras destacadas en mayúsculas;
+- emojis funcionales y moderados.
 
-Ninguno debe convertirse en una plantilla repetida mecánicamente.
+Ninguno debe repetirse hasta convertirse en fórmula.
 
-## 10.4 Lo que debe evitarse
+## 10.6 Protocolo anti-IA
 
-- clichés digitales y lenguaje de gurú;
-- frases infladas sin contenido;
-- tono apocalíptico;
-- exceso de jerga corporativa;
-- afirmaciones sin respaldo;
-- estructuras idénticas repetidas en todas las piezas;
-- fragmentación artificial de cada oración en una línea;
-- metáforas o analogías decorativas;
-- copy que parezca escrito para “funcionar en LinkedIn” antes que para expresar una idea real.
+El objetivo no es engañar detectores ni eliminar palabras asociadas a modelos generativos. El objetivo es evitar escritura genérica, inflada, predecible o desconectada de una experiencia real.
 
-## 10.5 Regla anti-IA
+### Fallas duras
 
-El criterio no es cumplir un checklist estilístico. La pregunta final es:
+- inventar casos, cifras, testimonios, capacidades o resultados;
+- escribir una pieza que podría publicar cualquier consultora cambiando el logo;
+- usar introducciones vacías antes de llegar al punto;
+- inflar la importancia de una idea sin demostrarla;
+- usar jerga, adjetivos o conceptos para aparentar profundidad;
+- anunciar lo que el texto va a decir en lugar de decirlo;
+- repetir al final lo que ya quedó claro;
+- usar engagement bait, urgencia artificial o promesas desproporcionadas;
+- filtrar al texto publicable frases propias de una conversación con el asistente;
+- aplicar una misma estructura a todas las piezas.
 
-> **¿Esto parece una idea que Paulo realmente diría y sostendría en una conversación, un workshop o una reunión con un cliente?**
+### Señales de alerta
 
-Para responderla, el sistema debe apoyarse en el corpus real, el contexto específico de la pieza y las correcciones que Paulo vaya haciendo durante el trabajo conjunto.
+Deben revisarse, pero no constituyen prohibiciones automáticas:
+
+- contrastes del tipo “no es X, es Y”;
+- listas de tres elementos;
+- preguntas retóricas;
+- secciones repetidas;
+- palabras habituales del sector como “transformación”, “innovación”, “integración”, “paradigma”, “acelerar” o “ecosistema”;
+- frases breves consecutivas;
+- metáforas.
+
+Un contraste es válido cuando expresa una distinción sustantiva de Paulo o Motion. Debe eliminarse cuando solo intenta hacer que una idea superficial parezca profunda.
+
+No se adopta ninguna lista universal de palabras prohibidas. El problema es el uso vacío, no la palabra aislada.
+
+## 10.7 Control final de autenticidad
+
+Antes de aprobar una pieza, verificar:
+
+1. ¿La idea está sostenida por estrategia, experiencia o evidencia real?
+2. ¿Hay una situación concreta o una observación que le dé vida?
+3. ¿La pieza toma una postura o solo ordena lugares comunes?
+4. ¿Podría pertenecer a cualquier consultora?
+5. ¿Hay frases que existen únicamente para sonar inteligentes?
+6. ¿La estructura responde al contenido o repite una plantilla?
+7. ¿El emisor es claramente Paulo o Motion?
+8. ¿El texto agrega algo distinto del carrusel, reel o newsletter asociado?
+9. ¿La última parte aporta una consecuencia o un siguiente paso, o repite?
+10. ¿Paulo diría y sostendría esta idea en una conversación, un workshop o una reunión con un cliente?
+
+## 10.8 Aprendizaje y actualización
+
+La voz se actualiza por evidencia, no por calendario obligatorio.
+
+Cuando Paulo corrige una pieza:
+
+1. se conserva el borrador y la versión aprobada;
+2. se registra qué cambió y por qué;
+3. se distingue entre regla dura, tendencia fuerte y preferencia contextual;
+4. una corrección aislada no se universaliza;
+5. un patrón se incorpora cuando aparece de forma repetida o Paulo lo declara explícitamente;
+6. las actualizaciones deben ser quirúrgicas: no reescribir todo el perfil por un cambio puntual.
+
+La estrategia y la veracidad se validan antes que la imitación estilística.
 
 ---
 
@@ -491,6 +580,14 @@ Rol principal:
 - construcción de una identidad reconocible.
 
 Emisor: Motion, en primera persona plural o desde una voz institucional directa.
+
+Reglas específicas vigentes:
+
+- la audiencia principal está compuesta por empresas pequeñas y medianas;
+- no utilizar referencias a multinacionales como marco habitual del canal;
+- no usar hashtags;
+- el caption debe complementar la pieza visual, no repetirla;
+- priorizar una idea central, síntesis y legibilidad.
 
 ## 11.3 Canales no activos en esta primera etapa
 
@@ -634,6 +731,6 @@ Estas definiciones se construirán durante el trabajo conjunto y no deben resolv
 - **Canales iniciales:** LinkedIn de Paulo e Instagram de Motion.
 - **Modelo editorial:** mensual, cuatro tesis, cuatro semanas, cuatro tipos por semana.
 - **Modelo operativo:** la estrategia y los textos se definen mediante trabajo humano; GitHub valida, produce assets y programa el manifiesto aprobado.
-- **Voz:** corpus completo de transcripciones y publicaciones de Paulo, adaptado al formato y al emisor.
+- **Voz:** perfiles diferenciados de Paulo y Motion, gobernados por el corpus real, las correcciones aprobadas y un protocolo anti-IA basado en autenticidad, evidencia y variación.
 - **Regla de evidencia:** solo datos y casos validados por Motion.
 - **Gobernanza:** aprobación humana obligatoria y aprendizaje continuo a partir de las correcciones de Paulo.
