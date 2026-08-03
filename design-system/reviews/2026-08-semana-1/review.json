@@ -1,39 +1,46 @@
 {
   "schema_version": 1,
   "review_id": "2026-08-semana-1",
-  "status": "pending_approval_v2",
+  "status": "pending_approval_v4",
   "created_at": "2026-08-03T11:45:00-03:00",
-  "updated_at": "2026-08-03T13:54:00-03:00",
+  "updated_at": "2026-08-03T14:34:00-03:00",
   "publication_blocked": true,
   "copy_source": "editorial/2026-08/semana-1/copys-aprobados.md",
-  "candidate_package": "assets/candidates/2026-08-week1/package.json",
-  "feedback_source": "design-system/reviews/2026-08-semana-1/feedback-v2.md",
+  "candidate_package": "assets/candidates/2026-08-week1-v4/package.json",
   "pieces": [
     {
       "piece_id": "2026-08-03-autoridad-transversal-linkedin",
       "visual_family": "line_system",
-      "status": "candidate_v2",
-      "decision": "v1_rejected",
+      "status": "candidate_v4",
+      "decision": "pending",
       "spec": "design-system/reviews/2026-08-semana-1/specs/lunes-autoridad-transversal.json"
     },
     {
       "piece_id": "2026-08-03-autoridad-transversal-instagram",
       "visual_family": "line_system",
-      "status": "accepted_v1_unchanged",
+      "status": "candidate_v4",
+      "decision": "accepted_design_plus_new_signature",
       "spec": "design-system/reviews/2026-08-semana-1/specs/lunes-autoridad-transversal.json"
     },
     {
-      "piece_id": "2026-08-04-adopcion-ia-transformacion",
+      "piece_id": "2026-08-04-adopcion-ia-transformacion-linkedin",
       "visual_family": "line_system",
-      "status": "candidate_v2",
-      "decision": "v1_rejected",
+      "status": "candidate_v4",
+      "decision": "pending",
+      "spec": "design-system/reviews/2026-08-semana-1/specs/martes-adopcion-ia.json"
+    },
+    {
+      "piece_id": "2026-08-04-adopcion-ia-transformacion-instagram",
+      "visual_family": "line_system",
+      "status": "candidate_v4",
+      "decision": "pending",
       "spec": "design-system/reviews/2026-08-semana-1/specs/martes-adopcion-ia.json"
     },
     {
       "piece_id": "2026-08-05-power-bi-efecto-cebolla",
       "visual_family": "line_system",
-      "status": "candidate_v2",
-      "decision": "v1_acceptable_but_revised",
+      "status": "candidate_v4",
+      "decision": "acceptable_base_plus_new_signature",
       "spec": "design-system/reviews/2026-08-semana-1/specs/miercoles-power-bi-cebolla.json"
     }
   ],
