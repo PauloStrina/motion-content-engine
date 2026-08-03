@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "package_id": "2026-08-week1-candidate-v4",
+  "status": "candidate",
+  "created_at": "2026-08-03T14:34:00-03:00",
+  "publication_rule": "Candidate only. Requires explicit approval by Paulo.",
+  "expected_png_count": 52,
+  "changes": [
+    "Se incluye y se vuelve a entregar el carrusel del lunes para Instagram.",
+    "La imagen de LinkedIn del lunes se simplifica a Visión → Sistema concreto → 16 semanas → Aliados internos → Transformación.",
+    "El carrusel del martes se reconstruye desde la versión aprobada de 13 placas, con variantes de CTA para LinkedIn e Instagram.",
+    "El carrusel del miércoles conserva su secuencia y agrega la firma completa.",
+    "Todas las piezas utilizan zonas independientes para texto, visual y firma.",
+    "La firma de todas las imágenes es `MOTION · Lo complejo, simple.`."
+  ],
+  "items": [
+    {
+      "file": "motion_semana_2026-08-03_assets_v4.zip",
+      "sha256": "b41e8785ee078d649023ec90a5d5a732550d2479e294fc6c96d66fe386bae0d5",
+      "bytes": 4859983
+    },
+    {
+      "file": "monday_linkedin_v4.png",
+      "sha256": "b0d90261b37866187281dae047fb3907863e18039230a6b02dc563ad3da2a844",
+      "bytes": 170222
+    },
+    {
+      "file": "contact_monday_v4.png",
+      "sha256": "575c873e8337811f8aa9cdd6655e0f98f6bac32aa0ce0f201fa8d86f882f6e59",
+      "bytes": 203303
+    },
+    {
+      "file": "contact_tuesday_linkedin_v4.png",
+      "sha256": "05594bdda71391f664bc8ec83d1fe00710ec6a89f38d792e04992b39dc74be77",
+      "bytes": 344707
+    },
+    {
+      "file": "contact_tuesday_instagram_v4.png",
+      "sha256": "924d8703d0961fbfb284a8e698e6758d69d188bd529037326404e3cb2872387c",
+      "bytes": 345269
+    },
+    {
+      "file": "contact_wednesday_v4.png",
+      "sha256": "e063bc889c01e0c9995d6038673c5b8c46a7eda36abf47ca8ea246ed268c7074",
+      "bytes": 368557
+    },
+    {
+      "file": "contact_week_v4.png",
+      "sha256": "f71e2134b7dac532a7d23e15d48c9d4b0770d540c5e27bfe09441a85f842b5fe",
+      "bytes": 386685
+    }
+  ]
+}
