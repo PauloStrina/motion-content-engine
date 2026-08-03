@@ -1,28 +1,39 @@
 {
   "schema_version": 1,
   "review_id": "2026-08-semana-1",
-  "status": "pending_approval",
+  "status": "pending_approval_v2",
   "created_at": "2026-08-03T11:45:00-03:00",
+  "updated_at": "2026-08-03T13:54:00-03:00",
   "publication_blocked": true,
   "copy_source": "editorial/2026-08/semana-1/copys-aprobados.md",
   "candidate_package": "assets/candidates/2026-08-week1/package.json",
+  "feedback_source": "design-system/reviews/2026-08-semana-1/feedback-v2.md",
   "pieces": [
     {
-      "piece_id": "2026-08-03-autoridad-transversal",
+      "piece_id": "2026-08-03-autoridad-transversal-linkedin",
       "visual_family": "line_system",
-      "status": "candidate",
+      "status": "candidate_v2",
+      "decision": "v1_rejected",
+      "spec": "design-system/reviews/2026-08-semana-1/specs/lunes-autoridad-transversal.json"
+    },
+    {
+      "piece_id": "2026-08-03-autoridad-transversal-instagram",
+      "visual_family": "line_system",
+      "status": "accepted_v1_unchanged",
       "spec": "design-system/reviews/2026-08-semana-1/specs/lunes-autoridad-transversal.json"
     },
     {
       "piece_id": "2026-08-04-adopcion-ia-transformacion",
       "visual_family": "line_system",
-      "status": "candidate",
+      "status": "candidate_v2",
+      "decision": "v1_rejected",
       "spec": "design-system/reviews/2026-08-semana-1/specs/martes-adopcion-ia.json"
     },
     {
       "piece_id": "2026-08-05-power-bi-efecto-cebolla",
       "visual_family": "line_system",
-      "status": "candidate",
+      "status": "candidate_v2",
+      "decision": "v1_acceptable_but_revised",
       "spec": "design-system/reviews/2026-08-semana-1/specs/miercoles-power-bi-cebolla.json"
     }
   ],
