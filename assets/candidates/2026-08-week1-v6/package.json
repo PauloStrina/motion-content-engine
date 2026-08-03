@@ -7,7 +7,7 @@
   "expected_png_count": 52,
   "changes": [
     "La imagen de LinkedIn del lunes pasa a formato 4:5 y reconstruye el preview aprobado como secuencia vertical de cinco etapas.",
-    "El carrusel del lunes se reconstruye desde el contact sheet aprobado y conserva su gramática de trayectoria continua e iconos.",
+    "El carrusel del lunes se reconstruye desde el contact sheet aprobado, conserva su gramática visual y utiliza literalmente el copy bloqueado.",
     "El slide 5 del miércoles reemplaza áreas por DATOS, PROCESOS y RUTINAS.",
     "El slide 7 del miércoles elimina la línea que atravesaba el gráfico y representa capas retiradas mediante arcos desplazados.",
     "El slide 8 utiliza NUEVO TABLERO y alinea los dos gráficos.",
@@ -19,8 +19,8 @@
   "items": [
     {
       "file": "motion_semana_2026-08-03_assets_v6.zip",
-      "sha256": "1c37382117f8b7766375772e98d11b05f8536d51a83423559be86f93e533082e",
-      "bytes": 4357805
+      "sha256": "e4e764d49c097d66e5b32d7766dc68ad5b0063d725277c97cf1032d9ff5f9848",
+      "bytes": 4533750
     },
     {
       "file": "monday_linkedin_v6.png",
@@ -29,8 +29,8 @@
     },
     {
       "file": "contact_monday_v6.png",
-      "sha256": "f894369fead4c786a59dc29e6567f59ddc0ea0f181656631e2a5a4eaf1d382af",
-      "bytes": 98338
+      "sha256": "025f66c5c696dff2f8f46c6c6ce4b5055a244faea44b9cae842f179a83d08d64",
+      "bytes": 117132
     },
     {
       "file": "contact_wednesday_v6.png",
@@ -39,8 +39,8 @@
     },
     {
       "file": "contact_week_v6.png",
-      "sha256": "c0432e965ab2c002a06cec3a47eb0385f380c50987566be6f5368fd808c160f2",
-      "bytes": 336143
+      "sha256": "fe3d71d857dfeddf8e080a8bed80d8805614f8d60c4d52a55870fb76c3032040",
+      "bytes": 339246
     }
   ]
 }
