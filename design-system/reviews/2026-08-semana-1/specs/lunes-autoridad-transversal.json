@@ -1,12 +1,31 @@
 {
   "schema_version": 1,
   "piece_id": "2026-08-03-autoridad-transversal",
-  "status": "candidate",
+  "status": "candidate_v2",
   "formats": {
-    "linkedin_image": {"size": [1600, 1280], "file": "monday_linkedin.png"},
-    "instagram_carousel": {"size": [1080, 1350], "slides": 10, "folder": "monday_carousel"}
+    "linkedin_image": {
+      "size": [1600, 1280],
+      "file": "monday_linkedin_v2.png",
+      "version": 2,
+      "decision_v1": "rejected"
+    },
+    "instagram_carousel": {
+      "size": [1080, 1350],
+      "slides": 10,
+      "folder": "monday_carousel",
+      "version": 1,
+      "decision_v1": "accepted_unchanged"
+    }
   },
   "copy_locked": true,
+  "visual_rules_v2": [
+    "Fondo aqua y contraste violeta/naranja.",
+    "Líneas curvas, vivas y direccionales.",
+    "Nodos rellenos; no utilizar círculos huecos como recurso dominante.",
+    "Texto y esquema centrados como una unidad con aire arriba y abajo.",
+    "Ningún rótulo se superpone con las trayectorias.",
+    "Las áreas convergen sobre un sistema concreto y el recorrido continúa hacia el hito de 16 semanas."
+  ],
   "slide_text": [
     "Ves la transformación, pero no podés decidir por todas las áreas.",
     "La dirección aprobó el rumbo. Pero cada área conserva sus presupuestos, prioridades e indicadores.",
@@ -31,5 +50,8 @@
     "evidencia + aliados",
     "Mapa de Transformación"
   ],
-  "reference": "assets/approved/2026-07-week3/package.json"
+  "references": [
+    "assets/approved/2026-07-week3/package.json",
+    "design-system/reviews/2026-08-semana-1/feedback-v2.md"
+  ]
 }
