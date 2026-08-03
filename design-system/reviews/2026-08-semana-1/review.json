@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
   "review_id": "2026-08-semana-1",
-  "status": "pending_approval_v5",
+  "status": "pending_approval_v6",
   "created_at": "2026-08-03T11:45:00-03:00",
-  "updated_at": "2026-08-03T15:33:00-03:00",
+  "updated_at": "2026-08-03T16:59:00-03:00",
   "publication_blocked": true,
   "copy_source": "editorial/2026-08/semana-1/copys-aprobados.md",
-  "candidate_package": "assets/candidates/2026-08-week1-v5/package.json",
+  "candidate_package": "assets/candidates/2026-08-week1-v6/package.json",
   "pieces": [
     {
       "piece_id": "2026-08-03-autoridad-transversal-linkedin",
       "visual_family": "line_system",
-      "status": "candidate_v5",
+      "status": "candidate_v6",
       "decision": "pending",
       "spec": "design-system/reviews/2026-08-semana-1/specs/lunes-autoridad-transversal.json"
     },
     {
       "piece_id": "2026-08-03-autoridad-transversal-instagram",
       "visual_family": "line_system",
-      "status": "candidate_v5",
-      "decision": "pending_final_layout",
+      "status": "candidate_v6",
+      "decision": "pending",
       "spec": "design-system/reviews/2026-08-semana-1/specs/lunes-autoridad-transversal.json"
     },
     {
@@ -39,8 +39,8 @@
     {
       "piece_id": "2026-08-05-power-bi-efecto-cebolla",
       "visual_family": "line_system",
-      "status": "candidate_v5",
-      "decision": "pending_final_typography_and_signature",
+      "status": "candidate_v6",
+      "decision": "pending",
       "spec": "design-system/reviews/2026-08-semana-1/specs/miercoles-power-bi-cebolla.json"
     }
   ],
