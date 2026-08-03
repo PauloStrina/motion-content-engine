@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "piece_id": "2026-08-05-power-bi-efecto-cebolla",
+  "status": "candidate",
+  "visual_message": "Un pedido visible de Power BI revela capas sucesivas de datos, procesos, rutinas y cultura.",
+  "concept": "Arcos y círculos concéntricos se abren progresivamente. El tablero ocupa la capa visible y el recorrido termina en una transformación integrada.",
+  "conceptual_rationale": "El caso se comprende como profundidad y causa raíz; la metáfora de capas se expresa geométricamente sin ilustrar una cebolla literal.",
+  "visual_family": "line_system",
+  "family_lock": true,
+  "representation": "diagram",
+  "execution": "code",
+  "visual_resources": ["layers", "depth", "trajectory", "nodes", "threshold"],
+  "exclusions": ["literal_onion", "handwritten", "corporate_slide", "3d", "decorative_icons", "yellow_milestones"],
+  "quality_target": "reference_grade",
+  "brand_resources": ["motion_palette", "motion_typography", "motion_logo"]
+}
