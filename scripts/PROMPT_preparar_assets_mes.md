@@ -17,8 +17,9 @@ No inventes el concepto visual. Si el contrato narrativo o visual no alcanza par
 5. `design-system/visual-language/RECURSOS_VISUALES.json`.
 6. El `copy_source` de cada pieza cuando `copy_locked` sea `true`.
 7. El `concept_path` de cada pieza, cuando exista.
-8. `design-system/slides/EJEMPLO_HEM_carrusel.json` como referencia técnica, no como plantilla estética obligatoria.
-9. documentación y código de `design-system/`.
+8. El preview o contact sheet aprobado cuando exista un `visual_master`.
+9. `design-system/slides/EJEMPLO_HEM_carrusel.json` como referencia técnica, no como plantilla estética obligatoria.
+10. documentación y código de `design-system/`.
 
 No leas `archive/**`. No uses archivos estratégicos para inventar contenido. No modifiques el subsistema de video.
 
@@ -33,7 +34,8 @@ Antes de diseñar, verificá para cada pieza:
 - modo y referencias de fuente;
 - evidencia;
 - estado de `copy_locked`;
-- ruta de `copy_source`.
+- ruta de `copy_source`;
+- existencia de `visual_master`.
 
 El visual debe representar el centro narrativo y conducir hacia el punto de llegada aprobado. No puede:
 
@@ -45,6 +47,14 @@ El visual debe representar el centro narrativo y conducir hacia el punto de lleg
 - compensar con diseño una fuente editorial incorrecta.
 
 Si `copy_locked` es `true`, la fuente indicada en `copy_source` gobierna. Ante contradicción entre manifiesto, spec visual o assets candidatos, detené el flujo y reportá la inconsistencia.
+
+Si existe un `visual_master` aprobado:
+
+- reproducí su composición y gramática;
+- no regeneres una alternativa conceptual;
+- conservá jerarquía, trayectorias, iconos, relaciones y distribución;
+- limitá los cambios a resolución, legibilidad, formato y branding;
+- compará el asset final con el master antes de entregar.
 
 ## Output
 
@@ -77,7 +87,7 @@ No generes ni modifiques carruseles de semanas fuera del alcance.
 
 ## Sistema visual
 
-Leé el contrato narrativo y el concepto aprobado antes de diseñar.
+Leé el contrato narrativo, el concepto aprobado y el visual master antes de diseñar.
 
 La solución puede utilizar:
 
@@ -127,7 +137,17 @@ simple.
 
 - el descriptor nunca se compone en una única línea.
 
-No copies composiciones de las referencias.
+No copies composiciones de referencias externas. Sí debés reproducir la composición de un preview aprobado de Motion cuando fue declarado master.
+
+## Patrón para Negocio, Tecnología y Cultura
+
+Cuando el copy menciona un Programa de Transformación Digital que integra Negocio, Tecnología y Cultura:
+
+- representar el Programa en un núcleo central;
+- dividir un anillo exterior en tres sectores equivalentes;
+- rotular `NEGOCIO`, `TECNOLOGÍA` y `CULTURA`;
+- comunicar integración simultánea;
+- no utilizar tres líneas independientes convergiendo en un punto salvo que el concepto aprobado indique otra relación.
 
 ## Separación y legibilidad
 
@@ -229,8 +249,10 @@ Antes de terminar:
 9. Confirmá que cada gráfico tiene una función semántica reconocible.
 10. Confirmá la tipografía de la primera frase de la portada.
 11. Confirmá el descriptor `Lo complejo,` / `simple.` en dos líneas.
-12. Confirmá que los assets referenciados existen.
-13. Ejecutá:
+12. Si existe un preview aprobado, compará el resultado con el master y explicá toda diferencia.
+13. Cuando corresponda, confirmá el esquema circular de Programa + Negocio, Tecnología y Cultura.
+14. Confirmá que los assets referenciados existen.
+15. Ejecutá:
 
 Semana:
 
