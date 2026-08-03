@@ -1,0 +1,267 @@
+﻿name: 6-reels-entrevista
+# Formato entrevista: un solo archivo con las dos personas en cuadro.
+# El plano conmuta entre quien pregunta y quien responde segun el campo "hablante"
+# de cada segmento. No reemplaza a 3-reels-guion / 4-reels-render, que siguen
+# resolviendo el flujo de una sola persona.
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: "Link de Drive del video con las dos personas en cuadro. Debe estar compartido como 'cualquiera con el enlace'."
+        required: true
+      slug:
+        description: "Nombre de la sesion (ej: 2026-07-28-entrevista)."
+        required: true
+      entrevistador:
+        description: "De que lado del cuadro esta quien pregunta."
+        required: true
+        default: "izquierda"
+        type: choice
+        options:
+          - izquierda
+          - derecha
+      modo_ejecucion:
+        description: "auto reutiliza el transcript existente; solo_generar nunca vuelve a transcribir."
+        required: true
+        default: "auto"
+        type: choice
+        options:
+          - auto
+          - transcribir_y_generar
+          - solo_generar
+      muletillas:
+        description: "Borrar muletillas aisladas ademas de los silencios."
+        required: true
+        default: "on"
+        type: choice
+        options:
+          - "on"
+          - "off"
+      brief_adicional:
+        description: "OPCIONAL: foco especifico de esta sesion (que buscar y que evitar)."
+        required: false
+        default: ""
+permissions:
+  contents: write
+  id-token: write
+jobs:
+  guion:
+    runs-on: ubuntu-latest
+    # Transcribir ~30 min de audio con large-v3 en un runner de 2 cores puede
+    # pasar largo de 2 horas. El techo alto solo cuesta si algo se cuelga.
+    timeout-minutes: 330
+    env:
+      VIDEO_URL: ${{ inputs.video_url }}
+      SLUG: ${{ inputs.slug }}
+      MODO_EJECUCION: ${{ inputs.modo_ejecucion }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Decidir si hay que transcribir
+        id: decidir
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$SLUG" || "$SLUG" == *"/"* || "$SLUG" == *".."* ]]; then
+            echo "ERROR: slug invalido" >&2
+            exit 1
+          fi
+
+          DIR="pipelines/video/reels/$SLUG"
+          EXISTE=false
+          if [ -s "$DIR/transcript.json" ] && [ -s "$DIR/transcript.md" ]; then EXISTE=true; fi
+
+          if [ "$MODO_EJECUCION" = "solo_generar" ] && [ "$EXISTE" != "true" ]; then
+            echo "ERROR: solo_generar requiere transcript.json y transcript.md en $DIR" >&2
+            exit 1
+          fi
+
+          TRANSCRIBIR=true
+          if [ "$MODO_EJECUCION" = "solo_generar" ]; then TRANSCRIBIR=false; fi
+          if [ "$MODO_EJECUCION" = "auto" ] && [ "$EXISTE" = "true" ]; then TRANSCRIBIR=false; fi
+          echo "transcribir=$TRANSCRIBIR" >> "$GITHUB_OUTPUT"
+          echo "Transcript existente: $EXISTE - transcribir: $TRANSCRIBIR"
+
+      - name: Dependencias de transcripcion
+        if: ${{ steps.decidir.outputs.transcribir == 'true' }}
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install --quiet faster-whisper
+          pip install --quiet --force-reinstall "gdown==5.2.0"
+
+      - name: Descargar video de Drive
+        if: ${{ steps.decidir.outputs.transcribir == 'true' }}
+        run: python3 pipelines/video/descargar.py "$VIDEO_URL" _video
+
+      - name: Transcribir (whisper, timestamps por palabra)
+        if: ${{ steps.decidir.outputs.transcribir == 'true' }}
+        run: python pipelines/video/transcribir.py _video/input.mp4 "pipelines/video/reels/$SLUG"
+
+      - name: Editor de Video (Claude elige los reels)
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: "--model claude-opus-4-8 --allowedTools Read,Write,Glob,Grep"
+          show_full_output: true
+          prompt: |
+            Sos el Editor de Video de Motion. Tu trabajo es de CRITERIO editorial, no mecanico.
+            SESION: pipelines/video/reels/${{ inputs.slug }}/ (ya tiene transcript.md y transcript.json).
+            Lee pipelines/video/PROMPT_editor_video.md y seguilo AL PIE DE LA LETRA, incluido el PASO 0.
+
+            FORMATO: entrevista. Aplica la seccion FORMATO ENTREVISTA del prompt, que manda sobre
+            las reglas generales. En concreto: escribi "formato": "entrevista" en la raiz del
+            manifiesto, cada reel abre con la pregunta del entrevistador, cada segmento declara
+            "hablante" ("entrevistador" o "entrevistado"), la duracion llega hasta 90s y NO se
+            deduplican conceptos: si el mismo concepto aparece en tres momentos distintos, salen
+            tres reels. El objetivo es cobertura completa de lo extraible.
+
+            Escribi pipelines/video/reels/${{ inputs.slug }}/manifiesto_reels.json con la estructura exacta.
+            El layout y las coordenadas se resuelven despues en el render. No inventes coordenadas.
+            BRIEF ADICIONAL para ESTA sesion (se suma a las reglas canonicas; nunca las reemplaza):
+            "${{ inputs.brief_adicional }}"
+            Exito = existe el manifiesto, cada reel dura 20-90s segun timestamps, abre con la
+            pregunta, marca hablante en todos los segmentos y los captions pasan la auto-critica de voz.
+
+      - name: Validar salida editorial
+        run: python pipelines/video/validar_manifiesto.py "pipelines/video/reels/$SLUG" --stage guion --max-seconds 90
+
+      - name: Commit seguro (transcript + manifiesto)
+        shell: bash
+        run: |
+          set -euo pipefail
+          TARGET_BRANCH="${GITHUB_REF_NAME:-main}"
+          DIR="pipelines/video/reels/$SLUG"
+          git config user.name "motion-engine"
+          git config user.email "engine@motion.local"
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git add "$DIR"
+          git commit -m "reels: guion de entrevista $SLUG" || echo "sin cambios locales"
+
+          for intento in 1 2 3 4; do
+            git fetch origin "$TARGET_BRANCH"
+            git rebase "origin/$TARGET_BRANCH"
+            if git push origin "HEAD:$TARGET_BRANCH"; then
+              exit 0
+            fi
+            echo "Push rechazado por actualizacion concurrente; reintento $intento/4" >&2
+            sleep $((intento * 5))
+          done
+          echo "ERROR: no se pudo integrar el resultado sin pisar cambios concurrentes" >&2
+          exit 1
+
+  cortar:
+    needs: guion
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    outputs:
+      reels: ${{ steps.lista.outputs.reels }}
+    env:
+      VIDEO_URL: ${{ inputs.video_url }}
+      SLUG: ${{ inputs.slug }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fontconfig
+          pip install --quiet --force-reinstall "gdown==5.2.0"
+          pip install --quiet "opencv-python-headless<5"
+      - name: Descargar video de Drive
+        run: python3 pipelines/video/descargar.py "$VIDEO_URL" _video
+      - name: Resolver zonas de las dos personas
+        run: |
+          python pipelines/video/resolver_layout.py \
+            _video/input.mp4 \
+            "pipelines/video/reels/$SLUG" \
+            --mode entrevista \
+            --entrevistador "${{ inputs.entrevistador }}" \
+            --preview-dir layout_preview \
+            --output _layout/manifiesto_resuelto.json
+      - name: Validar manifiesto para render
+        run: |
+          python pipelines/video/validar_manifiesto.py \
+            "pipelines/video/reels/$SLUG" --stage render --max-seconds 90 \
+            --manifest _layout/manifiesto_resuelto.json
+      - name: Subir diagnostico de encuadre
+        uses: actions/upload-artifact@v4
+        with:
+          name: layout-preview-${{ inputs.slug }}
+          path: layout_preview/
+          retention-days: 14
+      - name: Preparar sesion efimera de render
+        run: |
+          mkdir -p _runtime/session
+          cp "pipelines/video/reels/$SLUG/transcript.json" _runtime/session/transcript.json
+          cp _layout/manifiesto_resuelto.json _runtime/session/manifiesto_reels.json
+      - name: Cortar reels (conmutacion de plano + timestamps para Remotion)
+        run: |
+          python pipelines/video/cortar.py _video/input.mp4 _runtime/session media_clean \
+            --muletillas "${{ inputs.muletillas }}" --remotion
+      - name: Listar reels para la matriz de render
+        id: lista
+        run: echo "reels=$(ls media_clean/*.props.json | xargs -n1 basename | sed 's/\.props\.json//' | jq -R . | jq -sc .)" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: media-clean-${{ inputs.slug }}
+          path: media_clean/
+          retention-days: 3
+
+  render:
+    needs: cortar
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        reel: ${{ fromJson(needs.cortar.outputs.reels) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: media-clean-${{ inputs.slug }}
+          path: media_clean
+      - name: Instalar fuentes Motion
+        run: |
+          sudo mkdir -p /usr/share/fonts/opentype/motion
+          sudo cp design-system/fonts/*.otf /usr/share/fonts/opentype/motion/
+          sudo fc-cache -f
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: pipelines/video/remotion/package-lock.json
+      - name: Branding con Remotion
+        env:
+          REEL_NAME: ${{ matrix.reel }}
+        run: |
+          cd pipelines/video/remotion
+          npm ci --no-audit --no-fund
+          mkdir -p public ../../../media_out
+          cp ../../../design-system/assets/logo-blanco.png public/
+          cp "../../../media_clean/$REEL_NAME.mp4" public/
+          npx remotion render src/index.ts Reel "../../../media_out/$REEL_NAME.mp4" \
+            --props="../../../media_clean/$REEL_NAME.props.json" \
+            --chrome-mode=chrome-for-testing --timeout=60000
+          npx remotion still src/index.ts Reel "../../../media_out/_control_$REEL_NAME.png" \
+            --props="../../../media_clean/$REEL_NAME.props.json" \
+            --frame=45 --chrome-mode=chrome-for-testing
+      - uses: actions/upload-artifact@v4
+        with:
+          name: parcial-${{ inputs.slug }}-${{ matrix.reel }}
+          path: media_out/*
+          retention-days: 3
+
+  empaquetar:
+    needs: render
+    runs-on: ubuntu-latest
+    steps:
+      - name: Unir los reels en un solo artifact
+        uses: actions/upload-artifact/merge@v4
+        with:
+          name: reels-${{ inputs.slug }}
+          pattern: parcial-${{ inputs.slug }}-*
+          delete-merged: true
+          retention-days: 14

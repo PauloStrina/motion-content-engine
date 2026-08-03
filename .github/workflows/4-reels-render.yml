@@ -1,4 +1,4 @@
-name: 4-reels-render
+﻿name: 4-reels-render
 on:
   workflow_dispatch:
     inputs:
@@ -6,7 +6,7 @@ on:
         description: "El mismo video largo usado en el guion."
         required: true
       slug:
-        description: "Slug de la sesión con transcript y manifiesto válidos."
+        description: "Slug de la sesiÃ³n con transcript y manifiesto vÃ¡lidos."
         required: true
       layout_mode:
         description: "El motor resuelve el layout por reel; keep_manifest conserva coordenadas manuales existentes."
@@ -24,7 +24,7 @@ on:
         required: true
         default: "design-system/assets/innpulso-fondo.png"
       video_pantalla_url:
-        description: "Solo para split_two_files: grabación de pantalla sincronizada."
+        description: "Solo para split_two_files: grabaciÃ³n de pantalla sincronizada."
         required: false
         default: ""
 permissions:
@@ -47,13 +47,13 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fontconfig
           pip install --quiet --force-reinstall "gdown==5.2.0"
-          pip install --quiet opencv-python-headless
+          pip install --quiet "opencv-python-headless<5"
       - name: Validar inputs de layout
         shell: bash
         run: |
           set -euo pipefail
           if [[ -z "$SLUG" || "$SLUG" == *"/"* || "$SLUG" == *".."* ]]; then
-            echo "ERROR: slug inválido" >&2
+            echo "ERROR: slug invÃ¡lido" >&2
             exit 1
           fi
           if [[ "$POSTER_ASSET" != design-system/assets/* || "$POSTER_ASSET" == *".."* ]]; then
@@ -89,13 +89,13 @@ jobs:
           python pipelines/video/validar_manifiesto.py \
             "pipelines/video/reels/$SLUG" --stage render \
             --manifest _layout/manifiesto_resuelto.json
-      - name: Subir diagnóstico de layout
+      - name: Subir diagnÃ³stico de layout
         uses: actions/upload-artifact@v4
         with:
           name: layout-preview-${{ inputs.slug }}
           path: layout_preview/
           retention-days: 14
-      - name: Preparar sesión efímera de render
+      - name: Preparar sesiÃ³n efÃ­mera de render
         run: |
           mkdir -p _runtime/session
           cp "pipelines/video/reels/$SLUG/transcript.json" _runtime/session/transcript.json

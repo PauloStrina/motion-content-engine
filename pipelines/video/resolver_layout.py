@@ -12,7 +12,10 @@ import cv2
 import numpy as np
 
 BASE = pathlib.Path(__file__).resolve().parents[2]
-MODOS = {"auto_per_reel", "zones_single_file", "camera_only", "split_two_files", "keep_manifest"}
+MODOS = {
+    "auto_per_reel", "zones_single_file", "camera_only", "split_two_files", "keep_manifest",
+    "entrevista",
+}
 
 
 def clamp(v: float, lo: float, hi: float) -> float:
@@ -70,6 +73,73 @@ def union_caras(frame: np.ndarray, detector: cv2.CascadeClassifier) -> tuple[flo
     x2 = max(x + cw for x, _, cw, _ in cajas)
     y2 = max(y + ch for _, y, _, ch in cajas)
     return x1, y1, x2 - x1, y2 - y1
+
+
+def caras_individuales(
+    frame: np.ndarray, detector: cv2.CascadeClassifier
+) -> list[tuple[float, float, float, float]]:
+    """Igual que union_caras pero devuelve cada rostro por separado, normalizado 0-1."""
+    h, w = frame.shape[:2]
+    gris = cv2.equalizeHist(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY))
+    escala = 1.5
+    grande = cv2.resize(gris, None, fx=escala, fy=escala, interpolation=cv2.INTER_LINEAR)
+    minimo = max(28, int(min(h, w) * 0.035 * escala))
+    detectadas = detector.detectMultiScale(
+        grande, scaleFactor=1.08, minNeighbors=5, minSize=(minimo, minimo),
+        flags=cv2.CASCADE_SCALE_IMAGE,
+    )
+    cajas = []
+    for x, y, cw, ch in detectadas:
+        x, y, cw, ch = (v / escala for v in (x, y, cw, ch))
+        if cw * ch < w * h * 0.0007:
+            continue
+        cajas.append((x / w, y / h, cw / w, ch / h))
+    return cajas
+
+
+def dos_grupos(cajas: list[tuple[float, float, float, float]]) -> tuple[list, list] | None:
+    """Parte los rostros en izquierda/derecha por el hueco más grande entre centros x."""
+    if len(cajas) < 2:
+        return None
+    ordenadas = sorted(cajas, key=lambda c: c[0] + c[2] / 2)
+    centros = [c[0] + c[2] / 2 for c in ordenadas]
+    huecos = [(centros[i + 1] - centros[i], i) for i in range(len(centros) - 1)]
+    hueco, corte = max(huecos)
+    if hueco < 0.12:
+        return None
+    return ordenadas[: corte + 1], ordenadas[corte + 1 :]
+
+
+def expandir_a_9_16(
+    caja: tuple[float, float, float, float],
+    frame_w: int,
+    frame_h: int,
+    limites: tuple[float, float] = (0.0, 1.0),
+) -> dict[str, float]:
+    """Encuadre vertical de una persona: el rostro arriba, con aire para el torso.
+
+    Usa toda la altura del cuadro: en una fuente 1080p cualquier recorte vertical menor
+    tira resolución que después hay que reponer escalando. Lo único que se decide es el
+    centro horizontal de la franja.
+
+    `limites` acota el recorte al lado del cuadro que le corresponde. En una grabación
+    compuesta lado a lado, cruzar la frontera mete la costura y media cara de la otra
+    persona dentro del reel.
+    """
+    x, _, w, _ = caja
+    cx = x + w / 2
+    x0, x1 = limites
+    alto = 1.0
+    ancho = alto * frame_h * (9 / 16) / frame_w
+    if ancho > x1 - x0:
+        ancho = x1 - x0
+        alto = ancho * frame_w * (16 / 9) / frame_h
+    return {
+        "x": round(clamp(cx - ancho / 2, x0, max(x0, x1 - ancho)), 5),
+        "y": round((1.0 - alto) / 2, 5),
+        "w": round(ancho, 5),
+        "h": round(alto, 5),
+    }
 
 
 def caja_mediana(cajas: list[tuple[float, float, float, float]]) -> tuple[float, float, float, float] | None:
@@ -138,6 +208,10 @@ def main() -> int:
     parser.add_argument("--mode", choices=sorted(MODOS), default="auto_per_reel")
     parser.add_argument("--poster", type=pathlib.Path, default=BASE / "design-system/assets/innpulso-fondo.png")
     parser.add_argument("--preview-dir", type=pathlib.Path)
+    parser.add_argument(
+        "--entrevistador", choices=("izquierda", "derecha"), default="izquierda",
+        help="Solo modo entrevista: de qué lado del cuadro está quien pregunta.",
+    )
     parser.add_argument("--output", type=pathlib.Path, help="Salida resuelta; no modifica el manifiesto editorial")
     args = parser.parse_args()
 
@@ -173,6 +247,80 @@ def main() -> int:
         preview_dir.mkdir(parents=True, exist_ok=True)
     poster = poster_o_fallback(args.poster)
     reporte: list[dict[str, Any]] = []
+
+    if args.mode == "entrevista":
+        tiempos: list[float] = []
+        for reel in manifiesto["reels"]:
+            tiempos.extend(tiempos_representativos(reel))
+        tiempos = sorted(tiempos)
+        if len(tiempos) > 80:
+            indices = np.linspace(0, len(tiempos) - 1, 80).round().astype(int)
+            tiempos = [tiempos[i] for i in indices]
+
+        izquierda: list[tuple[float, float, float, float]] = []
+        derecha: list[tuple[float, float, float, float]] = []
+        analizados = 0
+        muestra = None
+        for t in tiempos:
+            frame = leer_frame(cap, t)
+            if frame is None:
+                continue
+            analizados += 1
+            if muestra is None:
+                muestra = frame
+            grupos = dos_grupos(caras_individuales(frame, detector))
+            if not grupos:
+                continue
+            izq, der = grupos
+            izquierda.append(caja_mediana(izq))
+            derecha.append(caja_mediana(der))
+        cap.release()
+
+        if len(izquierda) < max(3, analizados * 0.2):
+            raise SystemExit(
+                f"No se detectaron dos personas estables ({len(izquierda)}/{analizados} frames). "
+                "Revisar el encuadre o usar el plan B con CAM1/CAM3."
+            )
+
+        caja_izq, caja_der = caja_mediana(izquierda), caja_mediana(derecha)
+        frontera = (
+            (caja_izq[0] + caja_izq[2] / 2) + (caja_der[0] + caja_der[2] / 2)
+        ) / 2
+        zona_izq = expandir_a_9_16(caja_izq, frame_w, frame_h, (0.0, frontera))
+        zona_der = expandir_a_9_16(caja_der, frame_w, frame_h, (frontera, 1.0))
+        if args.entrevistador == "izquierda":
+            zonas_personas = {"entrevistador": zona_izq, "entrevistado": zona_der}
+        else:
+            zonas_personas = {"entrevistador": zona_der, "entrevistado": zona_izq}
+
+        manifiesto["zonas_personas"] = zonas_personas
+        for reel in manifiesto["reels"]:
+            reel["modo"] = "entrevista"
+            reel.pop("zonas", None)
+        manifiesto["layout_resuelto"] = {
+            "modo_solicitado": "entrevista",
+            "entrevistador": args.entrevistador,
+            "frames_analizados": analizados,
+            "frames_con_dos_personas": len(izquierda),
+            "frontera": round(frontera, 5),
+            "motor": "opencv-haar-v1",
+        }
+        output_path.write_text(
+            json.dumps(manifiesto, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        print(json.dumps(manifiesto["layout_resuelto"], ensure_ascii=False))
+        print(json.dumps(zonas_personas, ensure_ascii=False))
+
+        if preview_dir and muestra is not None:
+            lado = [cover(crop_norm(muestra, z), 540, 960) for z in (zona_izq, zona_der)]
+            cv2.imwrite(
+                str(preview_dir / "entrevista_zonas.jpg"),
+                np.hstack(lado), [cv2.IMWRITE_JPEG_QUALITY, 90],
+            )
+            (preview_dir / "manifiesto_resuelto.json").write_text(
+                json.dumps(manifiesto, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+            )
+        return 0
 
     for reel in manifiesto["reels"]:
         tiempos = tiempos_representativos(reel)

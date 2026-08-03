@@ -25,9 +25,9 @@ El brief puede enfocar qué buscar o evitar, pero no habilita inventar casos, re
 
 ## REGLAS DE SELECCIÓN
 1. **Retomas: gana la última versión completa.** Descartá versiones anteriores, falsos arranques y frases truncas.
-2. **Descartar basura:** charla técnica, indicaciones de grabación, preguntas sin valor editorial y comentarios privados.
+2. **Descartar basura:** charla técnica, indicaciones de grabación, preguntas sin valor editorial y comentarios privados. Entran acá los off-cameras: coordinación de producción, "cortá", "¿arrancamos?", chequeos de audio, chistes internos y todo lo dicho fuera de registro. `cortar.py` no puede distinguirlos del contenido bueno; el filtro sos vos.
 3. **Hook en los primeros 3 segundos:** arrancá en la frase más fuerte, sin preámbulo innecesario.
-4. **Duración: 20 a 60 segundos hablados; máximo técnico 62.** Cortá repeticiones, muletillas y silencios, nunca nexos, datos o matices.
+4. **Duración: 20 a 60 segundos hablados; máximo técnico 62** (90 en formato entrevista, ver más abajo). Cortá repeticiones, muletillas y silencios, nunca nexos, datos o matices.
 5. **Cada reel cierra una idea.** No termines a mitad de razonamiento. Podés unir segmentos distantes si el audio sigue siendo natural.
 6. **No omitir conceptos encadenados:** si Paulo enumera A, B y C, no cortes C para entrar artificialmente en duración.
 7. **Sin límite de cantidad:** cada idea completa y publicable es un reel. No fuerces material débil.
@@ -35,6 +35,17 @@ El brief puede enfocar qué buscar o evitar, pero no habilita inventar casos, re
 9. Asigná **tesis 1-4** y **tipo** (`problema`, `metodo`, `resultados`, `conexion`) según la estrategia canónica.
 10. **Confidencialidad:** no expongas datos internos, nombres de clientes no autorizados, falencias estructurales, cifras no validadas ni comentarios que puedan perjudicar a una organización.
 11. **Evidencia:** casos, números y resultados solo pueden salir de lo dicho explícitamente en la fuente y de evidencia autorizada. No completes huecos.
+
+## FORMATO ENTREVISTA
+Aplica solo cuando la sesión lo declara (input `formato: entrevista`). Cuando aplica, estas reglas mandan sobre las de arriba.
+
+1. **La pregunta del entrevistador es parte del reel.** El primer segmento de todo reel es la pregunta, no la respuesta. La regla 2 no la descarta: acá la pregunta es lo que le da sentido a la respuesta y lo que instala el tema.
+2. **La pregunta es el hook.** Recortala a su núcleo —lo que hace falta para entender la respuesta— y sacale el preámbulo. Si el entrevistador tarda 20 segundos en llegar a la pregunta, quedate con los últimos 4.
+3. **Marcá el hablante en cada segmento** con `"hablante": "entrevistador"` o `"hablante": "entrevistado"`. De esto depende el cambio de plano: un segmento mal marcado muestra a la persona equivocada. Un segmento no puede mezclar a los dos: si en un tramo se pisan, partilo en dos segmentos.
+4. **Todo reel necesita al menos una respuesta.** Un reel que es solo pregunta no existe.
+5. **Duración: hasta 90 segundos hablados**, para que la pregunta no ahogue la respuesta. El piso sigue siendo 20.
+6. **No deduplicar conceptos.** Si el mismo concepto se explica en tres momentos distintos de la charla, salen tres reels. Cada uno se juzga solo: ¿esta versión, por sí sola, se sostiene y cierra la idea? Si sí, va. No descartes una versión por parecerse a otra, y no las fusiones en un reel Frankenstein.
+7. **Sacá todo lo extraíble.** El objetivo es cobertura, no una selección corta. Un fragmento débil se descarta por débil, nunca por redundante.
 
 ## LAYOUT
 El layout no es una decisión editorial. El workflow de render lo resuelve por reel mediante `resolver_layout.py`.
@@ -50,7 +61,8 @@ No definas coordenadas. El render podrá convertir cada reel en:
 - `zonas`: contenido arriba y cámara abajo dentro de un único video compuesto;
 - `poster`: imagen institucional arriba y orador abajo;
 - `split`: pantalla y cámara provenientes de dos archivos;
-- `crop` o `marco` cuando se conserve explícitamente un manifiesto manual.
+- `crop` o `marco` cuando se conserve explícitamente un manifiesto manual;
+- `entrevista`: dos recortes verticales del mismo cuadro, conmutando según el `hablante` de cada segmento.
 
 ## CAPTION
 `caption_instagram` debe sonar a Motion y a Paulo: situación concreta, idea clara, sin clichés ni tono de gurú. Hashtags al final. Cada caption debe sostener la pieza sin inventar información que no esté en el fragmento.
@@ -83,15 +95,41 @@ No definas coordenadas. El render podrá convertir cada reel en:
 - `slug`: kebab-case.
 - Ordená del reel más fuerte al más débil.
 
+En formato entrevista, agregá `"formato": "entrevista"` en la raíz y `hablante` en cada segmento:
+
+```json
+{
+  "slug": "<slug de la sesión>",
+  "formato": "entrevista",
+  "reels": [
+    {
+      "n": 1,
+      "slug": "cambio-no-es-transformacion",
+      "titulo": "Cambio no es transformación",
+      "tesis": 1,
+      "tipo": "problema",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 412.30, "hasta": 418.75, "hablante": "entrevistador"},
+        {"desde": 419.10, "hasta": 466.40, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "..."
+    }
+  ]
+}
+```
+
 ## AUTOCONTROL
 Antes de terminar, verificá:
 
 - ¿Cada reel abre con un hook real?
 - ¿Cada reel cierra la idea?
 - ¿Cada hueco entre segmentos conserva sentido y continuidad?
-- ¿No hay retomas descartadas ni charla técnica?
+- ¿No hay retomas descartadas, charla técnica ni off-cameras?
 - ¿Todos los timestamps existen en `transcript.json`?
-- ¿La duración está entre 20 y 62 segundos?
+- ¿La duración está entre 20 y 62 segundos (90 en entrevista)?
+- En entrevista: ¿cada reel abre con la pregunta, tiene al menos una respuesta y todos los segmentos declaran `hablante`?
+- En entrevista: ¿quedó afuera algún concepto extraíble por parecerse a otro reel ya elegido?
 - ¿No se expone información confidencial o no autorizada?
 - ¿No se inventa evidencia?
 - ¿El caption parece escrito por Paulo y no por una plantilla de IA?

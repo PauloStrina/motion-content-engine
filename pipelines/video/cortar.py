@@ -27,6 +27,16 @@ PAD = 0.12
 PAD_IN = 0.15
 PAD_OUT = 0.30
 
+DURACION_MAX = 90
+
+# Solo se borra la muletilla aislada: pegada al habla, el empalme suena peor que la muletilla.
+MULETILLAS = {
+    "eh", "ehh", "ehhh", "em", "mmm", "mm", "este", "esteee",
+    "digamos", "viste", "tipo", "nada", "bueno",
+}
+MULETILLAS_FRASE = {("o", "sea"), ("es", "decir"), ("no", "sé")}
+PAUSA_MULETILLA = 0.15
+
 NEGRO, VIOLETA, NARANJA, AQUA = "1A1A1A", "50235A", "FF5000", "9DEDE3"
 COLOR_TIPO = {"problema": NEGRO, "metodo": VIOLETA, "resultados": NARANJA, "conexion": AQUA}
 
@@ -56,25 +66,59 @@ def palabras_en(words, desde, hasta):
     return [w for w in words if w["desde"] >= desde - 0.05 and w["hasta"] <= hasta + 0.05]
 
 
-def cortes_sin_silencio(reel, words):
+def _aislada(ws, i, largo):
+    """La muletilla se borra si arranca el segmento o si tiene pausa de los dos lados."""
+    antes = ws[i]["desde"] - ws[i - 1]["hasta"] if i > 0 else PAUSA_MULETILLA
+    j = i + largo
+    despues = ws[j]["desde"] - ws[j - 1]["hasta"] if j < len(ws) else PAUSA_MULETILLA
+    return i == 0 or (antes >= PAUSA_MULETILLA and despues >= PAUSA_MULETILLA)
+
+
+def sin_muletillas(ws):
+    """Devuelve (palabras, cortar_antes) donde cortar_antes[k] marca que hubo un borrado."""
+    salida, cortar, pendiente = [], [], False
+    i = 0
+    while i < len(ws):
+        n = _normal(ws[i]["w"])
+        par = (n, _normal(ws[i + 1]["w"])) if i + 1 < len(ws) else None
+        largo = 2 if par in MULETILLAS_FRASE else (1 if n in MULETILLAS else 0)
+        if largo and _aislada(ws, i, largo):
+            pendiente = True
+            i += largo
+            continue
+        salida.append(ws[i])
+        cortar.append(pendiente)
+        pendiente = False
+        i += 1
+    return salida, cortar
+
+
+def cortes_sin_silencio(reel, words, muletillas=True):
     keep, sub_words = [], []
     for seg in reel["segmentos"]:
         ws = palabras_en(words, seg["desde"], seg["hasta"])
         if not ws:
             print(f"  AVISO: segmento {seg} sin palabras en transcript.json — se omite")
             continue
+        cortar = [False] * len(ws)
+        if muletillas:
+            ws, cortar = sin_muletillas(ws)
+            if not ws:
+                print(f"  AVISO: segmento {seg} quedó vacío tras quitar muletillas — se omite")
+                continue
+        hablante = seg.get("hablante")
         a = max(0.0, ws[0]["desde"] - PAD_IN)
         grupo = [ws[0]]
-        for w in ws[1:]:
-            if w["desde"] - grupo[-1]["hasta"] > GAP_MAX:
-                keep.append((a, grupo[-1]["hasta"] + PAD, grupo))
+        for w, corte in zip(ws[1:], cortar[1:]):
+            if corte or w["desde"] - grupo[-1]["hasta"] > GAP_MAX:
+                keep.append((a, grupo[-1]["hasta"] + PAD, grupo, hablante))
                 a, grupo = w["desde"] - PAD, [w]
             else:
                 grupo.append(w)
-        keep.append((a, grupo[-1]["hasta"] + PAD_OUT, grupo))
+        keep.append((a, grupo[-1]["hasta"] + PAD_OUT, grupo, hablante))
 
-    intervalos, inicios, t = [], [], 0.0
-    for a, b, grupo in keep:
+    intervalos, inicios, tramos, t = [], [], [], 0.0
+    for a, b, grupo, hablante in keep:
         intervalos.append((a, b))
         inicios.append(round(t, 3))
         for w in grupo:
@@ -86,8 +130,22 @@ def cortes_sin_silencio(reel, words):
                     "orig": w["desde"],
                 }
             )
+        tramos.append((round(t, 3), round(t + (b - a), 3), hablante))
         t += b - a
-    return intervalos, sub_words, t, inicios
+    return intervalos, sub_words, t, inicios, tramos
+
+
+def tramos_de(tramos, hablante, epsilon=0.02):
+    """Une los tramos contiguos del mismo hablante en rangos de tiempo de salida."""
+    unidos = []
+    for a, b, quien in tramos:
+        if quien != hablante:
+            continue
+        if unidos and a - unidos[-1][1] <= epsilon:
+            unidos[-1][1] = b
+        else:
+            unidos.append([a, b])
+    return [(a, b) for a, b in unidos]
 
 
 def lineas_subtitulo(sub_words):
@@ -162,6 +220,8 @@ def render(
     offset_pantalla=0.0,
     brand=True,
     zonas=None,
+    zonas_personas=None,
+    tramos=None,
 ):
     """UNA sola decodificación por reel (seek al inicio del reel + duración acotada, nunca desde el
     segundo 0) y los silencios se saltan adentro con select/aselect sobre ese único stream — no se
@@ -171,7 +231,11 @@ def render(
     mismo frame (zonas.pantalla y zonas.camara, fracciones 0-1 del ancho/alto) y se re-apilan.
     reel["sin_pantalla"]=true (solo con modo "zonas"): ese reel no tiene contenido de pantalla en
     este tramo (solo el orador) — la mitad superior usa FONDO_SIN_PANTALLA (imagen fija) en vez de
-    recortar el frame en vivo."""
+    recortar el frame en vivo.
+    modo "entrevista": video ÚNICO con las dos personas en cuadro. Se recortan dos zonas 9:16 del
+    mismo frame (zonas_personas.entrevistador y .entrevistado) y se conmuta entre ellas con overlay
+    habilitado en los tramos del entrevistador. Las dos ramas salen del mismo decode y del mismo
+    select, así que comparten timeline y el corte no puede desincronizar el audio."""
     overall_a = min(a for a, _ in intervalos)
     overall_b = max(b for _, b in intervalos)
     seek = max(0.0, overall_a - 2)
@@ -187,6 +251,8 @@ def render(
         raise ValueError(f"{reel.get('slug')}: modo zonas requiere coordenadas")
     if modo == "poster" and (not poster or not pathlib.Path(poster).exists()):
         raise ValueError(f"{reel.get('slug')}: modo poster requiere --poster válido")
+    if modo == "entrevista" and not zonas_personas:
+        raise ValueError(f"{reel.get('slug')}: modo entrevista requiere zonas_personas")
 
     entradas = ["-ss", f"{seek:.3f}", "-t", f"{duracion_lectura:.3f}", "-i", str(video)]
     filtros = [f"[0:a]aselect='{cond}',asetpts=N/SR/TB[ac];"]
@@ -235,6 +301,26 @@ def render(
             "scale=1080:960:force_original_aspect_ratio=increase,crop=1080:960[vcam];"
         )
         filtros.append("[vpan][vcam]vstack=inputs=2[vf];")
+    elif modo == "entrevista":
+        def recorte(entrada, zona, salida):
+            return (
+                f"[{entrada}]crop=iw*{zona['w']}:ih*{zona['h']}:iw*{zona['x']}:ih*{zona['y']},"
+                f"scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920[{salida}];"
+            )
+
+        preguntas = tramos_de(tramos or [], "entrevistador")
+        base = f"[0:v]select='{cond}',setpts=N/FRAME_RATE/TB,fps=30"
+        if preguntas:
+            filtros.append(f"{base},split=2[vea][vei];")
+            filtros.append(recorte("vea", zonas_personas["entrevistado"], "vbase"))
+            filtros.append(recorte("vei", zonas_personas["entrevistador"], "vover"))
+            enable = "+".join(f"between(t\\,{a:.3f}\\,{b:.3f})" for a, b in preguntas)
+            filtros.append(f"[vbase][vover]overlay=0:0:enable='{enable}'[vf];")
+        else:
+            print("  AVISO: ningún segmento marcado como entrevistador — plano fijo del entrevistado")
+            filtros.append(f"{base}[vea];")
+            filtros.append(recorte("vea", zonas_personas["entrevistado"], "vf"))
+        logo_idx = 1
     elif modo == "poster":
         entradas += [
             "-loop", "1", "-framerate", "30", "-t", f"{duracion_lectura:.3f}", "-i", str(poster)
@@ -322,7 +408,8 @@ def props_remotion(reel, sub_words, duracion, nombre, inicios):
     }
 
 
-def main(video, sesion_dir, out_dir="media_out", pantalla=None, poster=None, remotion=False):
+def main(video, sesion_dir, out_dir="media_out", pantalla=None, poster=None, remotion=False,
+         muletillas=True):
     sesion = pathlib.Path(sesion_dir)
     manifiesto = json.loads((sesion / "manifiesto_reels.json").read_text(encoding="utf-8-sig"))
     words = json.loads((sesion / "transcript.json").read_text(encoding="utf-8-sig"))["palabras"]
@@ -339,12 +426,15 @@ def main(video, sesion_dir, out_dir="media_out", pantalla=None, poster=None, rem
     for reel in manifiesto["reels"]:
         nombre = f"reel_{reel['n']}_{reel['slug']}"
         print(f"\n== {nombre} ({reel.get('tipo')}, tesis {reel.get('tesis')}, modo {reel.get('modo')}) ==")
-        intervalos, sub_words, duracion, inicios = cortes_sin_silencio(reel, words)
+        intervalos, sub_words, duracion, inicios, tramos = cortes_sin_silencio(
+            reel, words, muletillas=muletillas
+        )
         if not intervalos:
             raise ValueError(f"{nombre}: sin intervalos válidos")
         print(
-            f"  {len(intervalos)} cortes (silencios quitados), duración final {duracion:.1f}s"
-            + ("  ⚠ PASA DE 62s" if duracion > 62 else "")
+            f"  {len(intervalos)} cortes ({'silencios y muletillas' if muletillas else 'silencios'}"
+            f" quitados), duración final {duracion:.1f}s"
+            + (f"  ⚠ PASA DE {DURACION_MAX}s" if duracion > DURACION_MAX else "")
         )
         ass_path = out / f"{nombre}.ass"
         if remotion:
@@ -355,10 +445,11 @@ def main(video, sesion_dir, out_dir="media_out", pantalla=None, poster=None, rem
         else:
             escribir_ass(ass_path, reel, sub_words, duracion, familia)
         zonas = reel.get("zonas") or manifiesto.get("zonas")
+        zonas_personas = reel.get("zonas_personas") or manifiesto.get("zonas_personas")
         render(
             video, reel, intervalos, ass_path, out / f"{nombre}.mp4",
             pantalla=pantalla, poster=poster, offset_pantalla=offset_pantalla,
-            brand=not remotion, zonas=zonas,
+            brand=not remotion, zonas=zonas, zonas_personas=zonas_personas, tramos=tramos,
         )
         print(f"  OK → {out / (nombre + '.mp4')}")
 
@@ -371,10 +462,12 @@ def cli():
     parser.add_argument("--pantalla")
     parser.add_argument("--poster")
     parser.add_argument("--remotion", action="store_true")
+    parser.add_argument("--muletillas", choices=("on", "off"), default="on")
     args = parser.parse_args()
     main(
         args.video, args.sesion_dir, args.out_dir,
         pantalla=args.pantalla, poster=args.poster, remotion=args.remotion,
+        muletillas=args.muletillas == "on",
     )
 
 

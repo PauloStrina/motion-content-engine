@@ -14,7 +14,8 @@ import sys
 from typing import Any
 
 TIPOS = {"problema", "metodo", "resultados", "conexion"}
-MODOS = {"auto", "crop", "marco", "split", "zonas", "poster"}
+MODOS = {"auto", "crop", "marco", "split", "zonas", "poster", "entrevista"}
+HABLANTES = {"entrevistador", "entrevistado"}
 
 
 def cargar_json(path: pathlib.Path) -> Any:
@@ -79,6 +80,10 @@ def validar(
     vistos_n: set[int] = set()
     vistos_slug: set[str] = set()
     zonas_raiz = manifiesto.get("zonas")
+    personas_raiz = manifiesto.get("zonas_personas")
+    entrevista = any(
+        isinstance(r, dict) and r.get("modo") == "entrevista" for r in reels
+    ) or manifiesto.get("formato") == "entrevista"
 
     for i, reel in enumerate(reels, start=1):
         pref = f"reel[{i}]"
@@ -119,6 +124,14 @@ def validar(
         if stage == "render" and modo == "auto":
             errores.append(f"{pref}.modo: quedó en 'auto'; resolver_layout.py no lo resolvió")
 
+        if modo == "entrevista":
+            personas = reel.get("zonas_personas") or personas_raiz
+            if not isinstance(personas, dict) or set(personas) < HABLANTES:
+                errores.append(f"{pref}: modo entrevista sin zonas_personas para ambos hablantes")
+            else:
+                for quien in sorted(HABLANTES):
+                    validar_zona(personas.get(quien), f"{pref}.zonas_personas.{quien}", errores)
+
         zonas = reel.get("zonas") or zonas_raiz
         if modo == "zonas":
             if not isinstance(zonas, dict):
@@ -131,6 +144,19 @@ def validar(
         if not isinstance(segmentos, list) or not segmentos:
             errores.append(f"{pref}.segmentos: lista no vacía requerida")
             continue
+
+        if entrevista:
+            hablantes = [s.get("hablante") if isinstance(s, dict) else None for s in segmentos]
+            invalidos = [k for k, h in enumerate(hablantes, start=1) if h not in HABLANTES]
+            if invalidos:
+                errores.append(
+                    f"{pref}: segmentos sin hablante válido ({sorted(HABLANTES)}): "
+                    + ", ".join(str(k) for k in invalidos)
+                )
+            elif hablantes[0] != "entrevistador":
+                errores.append(f"{pref}: el reel debe abrir con la pregunta del entrevistador")
+            elif "entrevistado" not in hablantes:
+                errores.append(f"{pref}: no hay respuesta; todos los segmentos son del entrevistador")
 
         duracion = 0.0
         ultimo_hasta = -1.0
@@ -172,7 +198,7 @@ def main() -> int:
         help="Manifiesto alternativo; default: <sesion>/manifiesto_reels.json",
     )
     parser.add_argument("--min-seconds", type=float, default=20)
-    parser.add_argument("--max-seconds", type=float, default=62)
+    parser.add_argument("--max-seconds", type=float, default=90)
     args = parser.parse_args()
 
     manifiesto_path = args.manifest or (args.sesion_dir / "manifiesto_reels.json")

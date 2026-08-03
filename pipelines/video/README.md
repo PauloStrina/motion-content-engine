@@ -35,6 +35,26 @@ Cuando el video tiene una cámara pequeña superpuesta, `resolver_layout.py` det
 
 El layout resuelto se guarda en `_layout/manifiesto_resuelto.json` dentro del runner. El render copia ese archivo y la transcripción a una sesión efímera bajo `_runtime/`. El manifiesto editorial aprobado permanece inmutable.
 
+## Formato entrevista
+
+Workflow: `6-reels-entrevista`
+
+Para grabaciones con las dos personas en un mismo cuadro. Cubre guion, corte y render en una sola corrida; no reemplaza a `3-reels-guion` / `4-reels-render`, que siguen resolviendo el flujo de una sola persona.
+
+Diferencias con el flujo estándar:
+
+- cada reel abre con la pregunta del entrevistador y cada segmento declara `hablante`;
+- `resolver_layout.py --mode entrevista` agrupa los rostros en dos clusters horizontales y escribe `zonas_personas` en la raíz del manifiesto, una vez para toda la sesión;
+- `cortar.py` recorta las dos zonas del mismo frame y conmuta entre ellas con `overlay ... enable`. Las dos ramas salen del mismo `select`, así que comparten timeline y el corte no puede desincronizar el audio;
+- la duración llega a 90s, para que la pregunta no ahogue la respuesta;
+- el editor no deduplica conceptos: si el mismo concepto aparece en varios momentos, salen varios reels.
+
+El input `entrevistador` dice de qué lado del cuadro está quien pregunta; no se infiere del video. Si `resolver_layout.py` no encuentra dos personas estables, falla en vez de adivinar un encuadre.
+
+## Muletillas
+
+`cortar.py --muletillas on|off` (default `on`). Borra la muletilla **aislada** —la que tiene pausa de 0.15s a cada lado, o la que arranca el segmento—. La muletilla pegada al habla se conserva a propósito: sacarla produce un empalme audible peor que la muletilla. Cada borrado fuerza un corte, igual que un silencio largo.
+
 ## Imagen superior
 
 El valor por defecto es:
