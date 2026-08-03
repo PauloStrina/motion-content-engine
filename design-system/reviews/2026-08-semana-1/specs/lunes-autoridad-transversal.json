@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "piece_id": "2026-08-03-autoridad-transversal",
+  "status": "candidate",
+  "formats": {
+    "linkedin_image": {"size": [1600, 1280], "file": "monday_linkedin.png"},
+    "instagram_carousel": {"size": [1080, 1350], "slides": 10, "folder": "monday_carousel"}
+  },
+  "copy_locked": true,
+  "slide_text": [
+    "Ves la transformación, pero no podés decidir por todas las áreas.",
+    "La dirección aprobó el rumbo. Pero cada área conserva sus presupuestos, prioridades e indicadores.",
+    "Intentaste crear un comité transversal. Todos participaron. Todos estuvieron de acuerdo.",
+    "Después de la reunión, cada área volvió a tomar las mismas decisiones de antes.",
+    "No necesariamente falta compromiso. Tampoco falta visión. Pero a veces “el que mucho abarca, poco aprieta”.",
+    "Al comienzo, la clave es conseguir resultados profundos pero rápidos.",
+    "Elegí un sistema concreto, reuní a las áreas involucradas y definí un resultado medible en 16 semanas.",
+    "Transformá el proceso, las soluciones que lo sostienen y los comportamientos necesarios.",
+    "El resultado no es solo evidencia. Son protagonistas que validan la visión y se convierten en aliados internos.",
+    "La legitimidad también se construye transformando. Escribí MAPA y recibí el link para construir tu Mapa de Transformación."
+  ],
+  "visual_sequence": [
+    "visión con conexiones incompletas",
+    "prioridades paralelas",
+    "comité transversal",
+    "retorno a decisiones aisladas",
+    "alcance excesivo",
+    "foco en resultado rápido",
+    "sistema concreto + 16 semanas",
+    "proceso + solución + comportamientos",
+    "evidencia + aliados",
+    "Mapa de Transformación"
+  ],
+  "reference": "assets/approved/2026-07-week3/package.json"
+}
