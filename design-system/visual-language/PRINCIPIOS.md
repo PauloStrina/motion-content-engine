@@ -93,6 +93,21 @@ Una pieza con texto y elementos gráficos solapados no puede pasar a estado apro
 - cuando exista espacio vacío dominante, se prioriza la parte superior antes que comprimir texto, gráfico y firma en el pie;
 - la distancia entre texto y gráfico debe ser menor que la distancia entre cualquiera de ellos y los bordes exteriores, salvo decisión conceptual explícita.
 
+## 4.3 Preview aprobado como master
+
+Cuando Paulo identifica expresamente un preview, contact sheet o composición de revisión como la solución correcta, ese preview pasa a ser **master visual de producción**.
+
+A partir de esa decisión:
+
+- no se vuelve a interpretar el concepto desde cero;
+- se conserva la composición, jerarquía, gramática de líneas, iconografía, relaciones y distribución aprobadas;
+- se adapta únicamente lo necesario para producir cada formato con calidad final;
+- no se reemplaza por una solución “equivalente” o por una nueva versión más genérica;
+- los assets finales deben poder compararse directamente con el master y explicar cualquier diferencia;
+- si el master proviene de una vista conjunta, se reconstruyen las piezas individuales manteniendo el mismo lenguaje y las mismas relaciones.
+
+Un preview aprobado no es solo una referencia de inspiración: gobierna la ejecución hasta que Paulo apruebe otra dirección.
+
 ## 5. Repertorio de recursos
 
 Los recursos se organizan bajo las dos familias visuales. No son intercambiables libremente.
@@ -119,6 +134,20 @@ Recursos disponibles:
 - diagramas animados.
 
 `FAMILIAS_VISUALES.json` define qué recursos puede utilizar cada familia y cuáles están prohibidos.
+
+## 5.1 Patrón canónico — Programa que integra Negocio, Tecnología y Cultura
+
+Cuando una pieza menciona un **Programa de Transformación Digital que integra Negocio, Tecnología y Cultura**, la representación preferente es un sistema circular:
+
+- el Programa ocupa el núcleo central;
+- el anillo exterior se divide en tres sectores equivalentes;
+- los sectores se rotulan `NEGOCIO`, `TECNOLOGÍA` y `CULTURA`;
+- el esquema comunica integración simultánea, no una secuencia ni tres inputs desconectados;
+- las divisiones deben ser claras y los rótulos legibles;
+- evitar tres líneas independientes que convergen en un punto si la idea central es integración sistémica;
+- los colores se adaptan al branding Motion sin alterar la equivalencia entre los tres componentes.
+
+Este patrón puede simplificarse para tamaños pequeños, pero debe conservar siempre la relación **núcleo común + tres dimensiones integradas**.
 
 ## 6. Branding
 
@@ -178,6 +207,7 @@ Los modos permitidos se validan por familia.
 
 - una imagen validada no se vuelve a generar desde texto si se requiere el mismo resultado;
 - el preview aprobado se conserva como asset o como referencia de edición;
+- si Paulo aprueba la composición del preview, se aplica la regla de master visual de la sección 4.3;
 - logos, copy y composición final se resuelven con precisión determinística;
 - el modelo generativo no incluye texto final de publicación ni logo;
 - los prompts y parámetros quedan versionados;
@@ -200,5 +230,6 @@ La jerarquía es siempre:
 3. familia visual seleccionada;
 4. formato dominante cuando corresponda;
 5. concepto visual aprobado;
-6. referencias de la misma familia;
-7. capacidad técnica de ejecución.
+6. preview aprobado como master, cuando exista;
+7. referencias de la misma familia;
+8. capacidad técnica de ejecución.
