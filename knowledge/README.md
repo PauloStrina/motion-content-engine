@@ -29,6 +29,7 @@ knowledge/
 │   ├── BANCO_EVIDENCIAS_MOTION.md
 │   └── BANCO_HOOKS_MOTION.md
 └── guides/
+    ├── GUIA_OPERATIVA_STORYTELLING.md
     └── GUIA_OPERATIVA_HOOKS.md
 ```
 
@@ -52,9 +53,26 @@ Conserva únicamente casos, cifras, citas y resultados con fuente, alcance, auto
 
 Conserva hooks aprobados y rechazados, el mecanismo utilizado, la situación de origen, el tipo de contenido, el canal y el aprendizaje derivado.
 
+### Guía operativa de Storytelling
+
+Define cómo avanza una pieza sin alterar su función estratégica. Establece la relación entre tesis, tipo editorial, efecto buscado, centro narrativo, punto de llegada, fuente, canal, formato y traducción visual.
+
+También gobierna:
+
+- autonomía de cada publicación;
+- uso de situaciones potenciales y casos reales;
+- contrato narrativo;
+- bloqueo y trazabilidad del copy aprobado;
+- límites de adaptación por canal y formato;
+- controles previos a la aprobación.
+
+### Guía operativa de Hooks
+
+Define cómo abrir una pieza después de haber establecido su contrato narrativo. El hook genera reconocimiento o curiosidad calificada, pero no define por sí solo el tipo editorial ni el desenlace.
+
 ### Guías
 
-Transforman las definiciones estratégicas y los aprendizajes de los bancos en criterios de creación y revisión. No redefinen estrategia.
+Transforman las definiciones estratégicas y los aprendizajes de los bancos en criterios de creación y revisión. No redefinen estrategia ni sustituyen el criterio humano.
 
 ## 3. Repositorios sincronizados
 
@@ -71,6 +89,8 @@ Una actualización de conocimiento no se considera terminada hasta que:
 4. se validaron los diffs;
 5. ambos PRs fueron aprobados y mergeados.
 
+Los manifiestos, assets y workflows de publicación pueden permanecer únicamente en el repositorio operativo primario. La ejecución `live` nunca se duplica en el espejo.
+
 No se realizan cambios independientes en uno de los espejos sin registrar y corregir la divergencia.
 
 ## 4. Proceso de actualización desde el chat
@@ -79,13 +99,13 @@ Cada interacción puede producir uno o varios cambios. El flujo obligatorio es:
 
 1. **Detectar el aprendizaje.** Identificar si Paulo confirmó un hecho, corrigió una formulación, aprobó un hook, aportó un caso, introdujo un concepto, redefinió un artefacto o tomó una decisión estratégica.
 2. **Explicitar la conclusión estratégica.** Después de una corrección relevante, resumir qué principio mejora la calidad del contenido y qué cambia en futuras piezas.
-3. **Clasificar la capa.** Estrategia, situación, artefacto, concepto, evidencia, hook o auditoría editorial.
+3. **Clasificar la capa.** Estrategia, situación, artefacto, concepto, evidencia, storytelling, hook o auditoría editorial.
 4. **Clasificar el alcance.** Local, recurrente o general.
-5. **Aplicar precedencia.** Una decisión estratégica se actualiza primero y únicamente en la estrategia canónica. Los bancos la referencian, no la duplican.
+5. **Aplicar precedencia.** Una decisión estratégica se actualiza primero y únicamente en la estrategia canónica. Los bancos y guías la referencian, no la duplican.
 6. **Verificar evidencia y origen.** No convertir una situación o recuerdo en caso público sin confirmar fuente, alcance y autorización. No presentar un concepto externo como propietario.
 7. **Actualizar de forma quirúrgica.** Modificar solo las entradas afectadas; conservar IDs y trazabilidad.
 8. **Registrar el aprendizaje editorial.** Guardar borrador, versión aprobada, motivo y alcance cuando exista una corrección relevante.
-9. **Replicar en ambos repositorios.** Misma rama temática, mismos archivos y contenido equivalente.
+9. **Replicar el conocimiento en ambos repositorios.** Misma rama temática, mismos archivos y contenido equivalente.
 10. **Validar.** Revisar links, IDs, referencias cruzadas, contradicciones y ausencia de datos no autorizados.
 11. **Abrir PRs equivalentes.** Describir qué cambió, por qué, fuente y archivos afectados.
 12. **Mergear después de aprobación.** Ningún cambio de conocimiento se declara vigente antes del merge en ambos repositorios.
@@ -116,7 +136,20 @@ Antes de redactar una pieza se consultan, en este orden:
 2. situación elegida;
 3. concepto o artefacto que organiza la explicación;
 4. evidencia disponible;
-5. guía de hooks y banco de hooks;
-6. auditoría editorial.
+5. guía operativa de storytelling;
+6. guía de hooks y banco de hooks;
+7. auditoría editorial.
 
-Después de la aprobación humana, el contenido se carga en `manifiestos/mes_<YYYY-MM>.json`. El repositorio valida, compone, renderiza y programa; no redefine el copy aprobado.
+Después se define el contrato narrativo:
+
+- tipo editorial;
+- efecto buscado;
+- centro narrativo;
+- punto de llegada;
+- modo y referencias de fuente;
+- evidencia;
+- estado de bloqueo.
+
+Después de la aprobación humana, la fuente se registra con `copy_locked: true` y se referencia desde `manifiestos/mes_<YYYY-MM>.json`.
+
+El repositorio valida, compone, renderiza y programa; no redefine el contrato narrativo ni el copy aprobado.
