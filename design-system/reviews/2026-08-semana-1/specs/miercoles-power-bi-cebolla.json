@@ -1,25 +1,24 @@
 {
   "schema_version": 1,
   "piece_id": "2026-08-05-power-bi-efecto-cebolla",
-  "status": "candidate_v2",
+  "status": "candidate_v4",
   "formats": {
     "linkedin_instagram_carousel": {
       "size": [1080, 1350],
       "slides": 15,
       "folder": "wednesday_carousel",
-      "version": 2,
-      "decision_v1": "acceptable_but_revised"
+      "version": 4,
+      "base_design": "candidate_v3"
     }
   },
   "copy_locked": true,
-  "visual_rules_v2": [
+  "visual_rules_v4": [
     "Mantener círculos concéntricos como metáfora del efecto cebolla.",
-    "Usar arcos abiertos, trayectorias curvas y nodos rellenos para transmitir movimiento.",
-    "Texto y esquema centrados verticalmente como una unidad.",
-    "El texto principal queda siempre separado del esquema.",
-    "Los rótulos internos se ubican en espacios limpios o en una leyenda externa.",
-    "No solapar texto, líneas, arcos o nodos.",
-    "Fondos plenos de marca y contraste alegre."
+    "Fondo claro y zonas rígidas: texto arriba, diagrama abajo y firma en el pie.",
+    "Ninguna línea, nodo, rótulo o círculo puede entrar en el área de texto.",
+    "Los rótulos de las capas se ubican dentro de espacios limpios o en una leyenda externa.",
+    "La firma usa el logo oficial acompañado por `Lo complejo, simple.`.",
+    "Preservar el copy aprobado y la secuencia conceptual del caso."
   ],
   "slide_text": [
     "Nos pidieron un tablero de Power BI. Pero no todo es lo que parece.",
@@ -55,12 +54,9 @@
     "tablero como puerta",
     "Mapa de Transformación"
   ],
-  "references": [
-    "assets/approved/2026-07-week3/package.json",
-    "design-system/reviews/2026-08-semana-1/feedback-v2.md"
-  ],
+  "candidate_package": "assets/candidates/2026-08-week1-v4/package.json",
   "qa_notes": [
     "Preservar literalmente `Enntonces` en placa 5 hasta autorización explícita.",
-    "La placa 10 utiliza leyenda externa para evitar superposición entre rótulos y círculos."
+    "Verificar en 1080 × 1350 que el área visual comience debajo de la última línea de texto."
   ]
 }
