@@ -61,6 +61,38 @@ La gramática completa vive en `design-system/visual-language/CARRUSEL_NARRATIVO
 - fidelidad a una única familia;
 - calidad de ejecución equivalente a la referencia seleccionada.
 
+## 4.1 Regla dura de no solapamiento
+
+> **El texto y los elementos gráficos no se solapan.**
+
+Esta regla aplica a:
+
+- títulos y subtítulos;
+- texto principal y microtexto;
+- líneas y trayectorias;
+- nodos, círculos y contenedores;
+- rótulos internos;
+- fotografías, formas y texturas;
+- logos, firma y paginación.
+
+Controles obligatorios:
+
+- cada placa define una zona de texto, una zona visual y una zona de firma;
+- ninguna línea, nodo, círculo, rótulo o imagen puede ingresar al bounding box del texto ni a su margen de seguridad;
+- los rótulos del gráfico deben ubicarse dentro de espacios limpios o en una leyenda externa;
+- si la relación conceptual no cabe sin superposición, se redistribuye o simplifica el gráfico;
+- nunca se reduce la legibilidad para conservar una composición;
+- es preferible conservar espacio vacío antes que llenar la placa con elementos sin función.
+
+Una pieza con texto y elementos gráficos solapados no puede pasar a estado aprobado.
+
+## 4.2 Balance vertical
+
+- texto y gráfico deben sentirse parte de una misma composición, no dos bloques desconectados;
+- en carruseles, el conjunto principal debe ubicarse cerca del centro óptico de la placa;
+- cuando exista espacio vacío dominante, se prioriza la parte superior antes que comprimir texto, gráfico y firma en el pie;
+- la distancia entre texto y gráfico debe ser menor que la distancia entre cualquiera de ellos y los bordes exteriores, salvo decisión conceptual explícita.
+
 ## 5. Repertorio de recursos
 
 Los recursos se organizan bajo las dos familias visuales. No son intercambiables libremente.
@@ -103,6 +135,20 @@ Tipografías:
 - Futura Extra Bold Condensed: estructura, sistema, señal, dato, acción;
 - Lyon: interpretación, tesis, reflexión, dimensión humana;
 - Gotham Narrow: información secundaria, numeración y microtexto.
+
+Reglas de aplicación:
+
+- la primera frase o headline principal de una portada de carrusel se compone en **Futura Extra Bold Condensed**;
+- una segunda frase puede utilizar Lyon, Gotham Narrow u otra jerarquía aprobada cuando cumple una función distinta;
+- la firma utiliza el logo oficial `MOTION` y el descriptor en dos líneas exactamente así:
+
+```text
+Lo complejo,
+simple.
+```
+
+- el descriptor no se presenta en una única línea;
+- logo y descriptor mantienen una separación clara y no compiten con el contenido.
 
 No es obligatorio utilizar todos los colores ni todos los recursos en una pieza.
 
