@@ -89,6 +89,27 @@ Si el esquema no cabe, debe simplificarse o redistribuirse. Una superposición n
 - headline y gráfico se ubican cerca del centro óptico, con espacio negativo superior;
 - la portada no puede parecer una diapositiva corporativa ni una placa exclusivamente tipográfica.
 
+## 4.4 Preview aprobado como master del carrusel
+
+Cuando Paulo identifica una vista conjunta o preview como la versión visual correcta:
+
+- la composición mostrada gobierna la producción de las placas individuales;
+- se conservan trayectoria, iconos, tamaños relativos, densidad, jerarquía y relación entre texto y gráfico;
+- no se reemplaza por otro carrusel “inspirado” en el preview;
+- cualquier ajuste se limita a legibilidad, resolución, adaptación de formato y aplicación determinística de branding;
+- el contact sheet deja de ser una referencia exploratoria y pasa a ser master hasta nueva aprobación.
+
+## 4.5 Esquema canónico para Negocio, Tecnología y Cultura
+
+Cuando una placa menciona un Programa de Transformación Digital que integra las tres dimensiones:
+
+- utilizar un núcleo central para el Programa;
+- utilizar un anillo exterior dividido en tres sectores equivalentes;
+- rotular los sectores `NEGOCIO`, `TECNOLOGÍA` y `CULTURA`;
+- representar integración simultánea, no tres recorridos independientes;
+- conservar legibilidad de los rótulos y divisiones claras;
+- evitar una convergencia de tres líneas cuando la idea es un sistema integrado.
+
 ## 5. Color
 
 Paleta oficial:
@@ -143,7 +164,8 @@ No utilizar:
 - hitos amarillos;
 - logos recreados o generados;
 - reescrituras silenciosas del copy;
-- solapamientos entre texto, líneas, nodos, rótulos o imágenes.
+- solapamientos entre texto, líneas, nodos, rótulos o imágenes;
+- reinterpretaciones de un preview que Paulo ya señaló como correcto.
 
 ## 8. Referencias aprobadas
 
@@ -154,6 +176,14 @@ Carrusel de diez placas aprobado para el lunes. La misma curva evoluciona durant
 ### Comunidad Digital
 
 Carrusel de diez placas aprobado para el miércoles. Cada placa respeta el copy validado y utiliza un esquema simple para representar equipo central, oportunidades distribuidas, problemas reales, comunidad, metodología, proyectos y nuevas capacidades.
+
+### Autoridad transversal — agosto 2026
+
+El preview aprobado establece un recorrido continuo de líneas e iconos para representar visión, sistema concreto, 16 semanas, aliados internos, legitimidad y expansión. Las placas individuales deben conservar esa gramática.
+
+### Programa de Transformación Digital
+
+El patrón circular con núcleo central y tres sectores exteriores es la representación canónica de la integración entre Negocio, Tecnología y Cultura.
 
 ## 9. Gate de calidad
 
@@ -169,6 +199,8 @@ Antes de presentar el carrusel:
 8. ¿Texto y elementos gráficos están completamente separados?
 9. ¿El conjunto principal se siente centrado y conserva espacio negativo superior?
 10. ¿La firma dice `Lo complejo,` / `simple.` en dos líneas?
-11. ¿El conjunto se lee rápido y mantiene profundidad conceptual?
+11. Si existe un preview aprobado, ¿la pieza reproduce su composición y gramática sin reinterpretarla?
+12. Cuando se menciona integración de Negocio, Tecnología y Cultura, ¿se utiliza el esquema circular de núcleo + tres sectores?
+13. ¿El conjunto se lee rápido y mantiene profundidad conceptual?
 
 Si alguna respuesta es negativa, el carrusel no está listo para aprobación.
