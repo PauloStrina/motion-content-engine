@@ -12,69 +12,80 @@ Mostrar cómo Motion convierte “adopción de IA” en una transformación conc
 
 ## Carrusel aprobado
 
+> Fuente bloqueada: versión editada y aprobada por Paulo el 3 de agosto de 2026. No reemplazar por versiones intermedias de 16 placas.
+
 ### Placa 1
 
-Tu objetivo dice “adopción de IA”. Pero, para hacerlo realidad, primero tenés que definir qué forma de trabajar querés transformar.
+“Adopción de IA” está en tus objetivos 2026.
+
+Pero, ¿Qué estás haciendo al respecto?
 
 ### Placa 2
 
-Tal vez ya implementaste un chatbot y casi nadie lo usó.
+Tal vez ya implementaste un chatbot y casi nadie lo usó. Después organizaste una capacitación, pero las personas siguen trabajando de la misma manera.
 
 ### Placa 3
 
-Después organizaste una capacitación. Las personas probaron nuevas herramientas y aprendieron algunos prompts, pero cuando volvieron a sus tareas siguieron trabajando de la misma manera.
+Adoptar algo, implica convertirlo en tu forma de operar. Y para eso las intervenciones aisladas no funcionan.
 
 ### Placa 4
 
-El chatbot podía funcionar y el curso podía ser bueno. El problema era esperar que esas dos intervenciones, por sí solas, produjeran adopción.
+En Motion hacemos esto:
+Empezamos eligiendo una tarea o un proceso en el que la IA pueda producir un resultado REAL.
 
 ### Placa 5
 
-Por eso, cuando trabajamos sobre adopción de IA, no empezamos preguntando qué herramienta incorporar ni cuántas personas capacitar.
+Primero observamos cómo se trabaja hoy y qué pasos existen simplemente porque siempre se hicieron así.
 
 ### Placa 6
 
-Empezamos eligiendo una tarea, una decisión o un proceso en el que la IA pueda producir un resultado concreto.
+Después diseñamos la nueva forma de trabajar.
 
 ### Placa 7
 
-Primero observamos cómo se trabaja hoy: qué información se utiliza, dónde aparecen demoras y qué decisiones dependen del criterio de una persona.
+Ahí recién definimos qué función debe cumplir la tecnología, qué parte del proceso necesita rediseñarse y qué capacidades necesitan desarrollar las personas que van a sostenerlo.
 
 ### Placa 8
 
-También revisamos qué pasos existen simplemente porque siempre se hicieron así.
+Pero la implementación tampoco termina cuando la solución está disponible.
 
 ### Placa 9
 
-Después diseñamos la nueva forma de trabajar.
+Hay que acompañar al equipo mientras la incorpora a su trabajo real, identificar las fricciones que aparecen y ajustar el proceso.
+
+Hasta que la nueva práctica resulte más clara, útil y sostenible que la anterior.
 
 ### Placa 10
 
-Ahí recién definimos qué función debe cumplir la tecnología, qué parte del proceso necesita rediseñarse y qué capacidades necesitan desarrollar las personas que van a sostenerlo.
+La adopción no se mide solamente por licencias activas, asistentes a una capacitación o cantidad de consultas realizadas.
+
+Se mide observando si cambiaron las tareas, las decisiones, los procesos o los resultados.
 
 ### Placa 11
 
-La implementación tampoco termina cuando la solución está disponible.
+Esa es la diferencia entre sumar una intervención y diseñar una transformación.
+
+La herramienta deja de ser el FIN y pasa a ser el MEDIO,  dentro de un sistema que integra Negocio, Tecnología y Cultura.
 
 ### Placa 12
 
-Hay que acompañar al equipo mientras la incorpora a su trabajo real, identificar las fricciones que aparecen y ajustar el proceso. Hasta que la nueva práctica resulte más clara, útil y sostenible que la anterior.
+El Programa de Transformación Digital organiza ese recorrido:
 
-### Placa 13
+parte de un resultado de negocio, transforma una práctica concreta y desarrolla las condiciones para que la organización pueda sostenerla y escalarla.
 
-La adopción no se mide solamente por licencias activas, asistentes a una capacitación o cantidad de consultas realizadas. Se mide observando si cambiaron las tareas, las decisiones, los procesos o los resultados.
+### Placa 13 — LinkedIn
 
-### Placa 14
+Para empezar, podes identificar qué proceso, capacidad o sistema tiene mayor potencial de transformación.
 
-Esa es la diferencia entre sumar una intervención y diseñar una transformación. La herramienta deja de ser el punto de partida y pasa a ocupar el lugar que le corresponde dentro de un sistema que integra Negocio, Tecnología y Cultura.
+El Mapa de Transformación te ayuda a ordenar esa primera decisión y entender cuál podría ser el próximo movimiento de tu organización.
 
-### Placa 15
+Link en el texto de la publicación.
 
-El Programa de Transformación Digital organiza ese recorrido: parte de un resultado de negocio, transforma una práctica concreta y desarrolla las condiciones para que la organización pueda sostenerla y escalarla.
+### Placa 13 — Instagram
 
-### Placa 16
+Para empezar, podes  identificar qué proceso, capacidad o sistema tiene mayor potencial de transformación.
 
-Para empezar, necesitás identificar qué proceso, capacidad o sistema tiene mayor potencial de transformación. Escribí MAPA y recibí el link para construir tu Mapa de Transformación.
+Escribí MAPA en los comentarios y recibí el link para construir el Mapa de Transformación de tu organización.
 
 ## LinkedIn — caption aprobado
 
