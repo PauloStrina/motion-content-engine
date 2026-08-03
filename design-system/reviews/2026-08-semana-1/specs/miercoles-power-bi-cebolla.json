@@ -1,23 +1,24 @@
 {
   "schema_version": 1,
   "piece_id": "2026-08-05-power-bi-efecto-cebolla",
-  "status": "candidate_v4",
+  "status": "candidate_v5",
   "formats": {
     "linkedin_instagram_carousel": {
       "size": [1080, 1350],
       "slides": 15,
       "folder": "wednesday_carousel",
-      "version": 4,
-      "base_design": "candidate_v3"
+      "version": 5,
+      "base_design": "candidate_v4"
     }
   },
   "copy_locked": true,
-  "visual_rules_v4": [
+  "visual_rules_v5": [
     "Mantener círculos concéntricos como metáfora del efecto cebolla.",
     "Fondo claro y zonas rígidas: texto arriba, diagrama abajo y firma en el pie.",
-    "Ninguna línea, nodo, rótulo o círculo puede entrar en el área de texto.",
+    "Ninguna línea, nodo, rótulo o círculo puede entrar en el área de texto ni en su margen de seguridad.",
     "Los rótulos de las capas se ubican dentro de espacios limpios o en una leyenda externa.",
-    "La firma usa el logo oficial acompañado por `Lo complejo, simple.`.",
+    "La primera frase de la portada utiliza Futura Extra Bold Condensed.",
+    "La firma usa el logo oficial acompañado por `Lo complejo,` y `simple.` en dos líneas.",
     "Preservar el copy aprobado y la secuencia conceptual del caso."
   ],
   "slide_text": [
@@ -54,9 +55,10 @@
     "tablero como puerta",
     "Mapa de Transformación"
   ],
-  "candidate_package": "assets/candidates/2026-08-week1-v4/package.json",
+  "candidate_package": "assets/candidates/2026-08-week1-v5/package.json",
   "qa_notes": [
     "Preservar literalmente `Enntonces` en placa 5 hasta autorización explícita.",
-    "Verificar en 1080 × 1350 que el área visual comience debajo de la última línea de texto."
+    "Verificar en 1080 × 1350 que el área visual comience debajo de la última línea de texto.",
+    "La portada debe conservar una única firma en el pie."
   ]
 }
