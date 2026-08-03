@@ -1,0 +1,55 @@
+{
+  "mes": "2026-08",
+  "primer_lunes": "2026-08-03",
+  "estado": "en_revision_visual",
+  "contrato_visual_version": 2,
+  "semanas": [
+    {
+      "numero": 1,
+      "fecha_inicio": "2026-08-03",
+      "tesis": 1,
+      "tesis_nombre": "Cambio no es Transformación",
+      "estado": "copys_aprobados_visual_pendiente",
+      "aprobado_por": "Paulo",
+      "aprobado_en": "2026-08-03T11:45:00-03:00",
+      "copy_source": "editorial/2026-08/semana-1/copys-aprobados.md",
+      "dias": {
+        "lun": {
+          "tipo": "problema",
+          "tema": "Autoridad transversal y legitimidad construida",
+          "formato": "post_largo_imagen_carousel_instagram",
+          "utm_content": "2026_08_03_cambio_no_es_transformacion",
+          "copy_locked": true,
+          "visual_family": "line_system",
+          "visual_spec": "design-system/reviews/2026-08-semana-1/specs/lunes-autoridad-transversal.json"
+        },
+        "mar": {
+          "tipo": "metodo",
+          "tema": "Adopción de IA como transformación del trabajo",
+          "formato": "carousel_newsletter",
+          "utm_content": "2026_08_04_adopcion_ia_transformacion",
+          "copy_locked": true,
+          "visual_family": "line_system",
+          "visual_spec": "design-system/reviews/2026-08-semana-1/specs/martes-adopcion-ia.json"
+        },
+        "mie": {
+          "tipo": "resultados",
+          "tema": "Power BI y efecto cebolla",
+          "formato": "carousel",
+          "utm_content": "2026_08_05_power_bi_efecto_cebolla",
+          "copy_locked": true,
+          "visual_family": "line_system",
+          "evidence": "E1",
+          "visual_spec": "design-system/reviews/2026-08-semana-1/specs/miercoles-power-bi-cebolla.json"
+        },
+        "jue": {
+          "tipo": "conexion",
+          "tema": "Sustracción de SIT",
+          "formato": "reel_manual",
+          "managed_by_engine": false,
+          "publication_owner": "Paulo"
+        }
+      }
+    }
+  ]
+}
