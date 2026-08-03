@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "package_id": "2026-08-week1-candidate-v6",
+  "status": "candidate",
+  "created_at": "2026-08-03T16:59:00-03:00",
+  "publication_rule": "Candidate only. Requires explicit approval by Paulo.",
+  "expected_png_count": 52,
+  "changes": [
+    "La imagen de LinkedIn del lunes pasa a formato 4:5 y reconstruye el preview aprobado como secuencia vertical de cinco etapas.",
+    "El carrusel del lunes se reconstruye desde el contact sheet aprobado y conserva su gramática de trayectoria continua e iconos.",
+    "El slide 5 del miércoles reemplaza áreas por DATOS, PROCESOS y RUTINAS.",
+    "El slide 7 del miércoles elimina la línea que atravesaba el gráfico y representa capas retiradas mediante arcos desplazados.",
+    "El slide 8 utiliza NUEVO TABLERO y alinea los dos gráficos.",
+    "El slide 10 representa el nuevo tablero como capa visible sobre DATOS, PROCESOS y RUTINAS.",
+    "El slide 11 utiliza el esquema circular de Programa central con Negocio, Tecnología y Cultura en sectores equivalentes.",
+    "Martes se conserva sin cambios desde V5.",
+    "Todos los assets continúan bloqueados para publicación."
+  ],
+  "items": [
+    {
+      "file": "motion_semana_2026-08-03_assets_v6.zip",
+      "sha256": "1c37382117f8b7766375772e98d11b05f8536d51a83423559be86f93e533082e",
+      "bytes": 4357805
+    },
+    {
+      "file": "monday_linkedin_v6.png",
+      "sha256": "75aec37e8e687d6892e243e13fc6c4539d3a6d4ec58ee1c83a247490dce8a3f4",
+      "bytes": 238898
+    },
+    {
+      "file": "contact_monday_v6.png",
+      "sha256": "f894369fead4c786a59dc29e6567f59ddc0ea0f181656631e2a5a4eaf1d382af",
+      "bytes": 98338
+    },
+    {
+      "file": "contact_wednesday_v6.png",
+      "sha256": "fce431440181738eaffc2393069ee71df9dd0d36b224281ece0c40c2b6961549",
+      "bytes": 286998
+    },
+    {
+      "file": "contact_week_v6.png",
+      "sha256": "c0432e965ab2c002a06cec3a47eb0385f380c50987566be6f5368fd808c160f2",
+      "bytes": 336143
+    }
+  ]
+}
