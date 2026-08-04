@@ -28,18 +28,24 @@ Ante contradicciones se aplica la fuente de mayor jerarquía y se señala el arc
 - Los bancos de situaciones, artefactos, conceptos, evidencias y hooks se actualizan de forma acumulativa desde las interacciones con Paulo.
 - Antes de redactar se consulta: estrategia → situación → concepto o artefacto → evidencia → guía de storytelling → guía y banco de hooks → auditoría.
 - La tesis gobierna la perspectiva semanal. Cada publicación debe funcionar de forma autónoma y no como un capítulo incompleto de una historia serial.
-- Storytelling define cómo avanza la pieza. Problema, Método, Resultados o Conexión definen qué efecto debe producir.
-- Antes de redactar se declaran `efecto_editorial`, `centro_narrativo`, `punto_de_llegada`, fuente y evidencia.
+- Storytelling define cómo avanza la pieza. Problema, Método, Resultados o Conexión definen qué efecto debe producir. La arquitectura de comprensión define cómo el lector pasa de lo que reconoce a la idea nueva.
+- Antes de redactar se declaran `efecto_editorial`, `centro_narrativo`, `punto_de_llegada`, fuente, evidencia y `arquitectura_cognitiva`.
+- `arquitectura_cognitiva` contiene `conocimiento_inicial`, `idea_nueva`, `puente` y `arco_principal`.
+- Claridad no significa explicar más: se eliminan pasos, párrafos o placas que no produzcan una comprensión nueva.
+- Cada bloque debe tener una relación reconocible con el anterior: secuencia, causa, consecuencia, contraste, ejemplo, elaboración o generalización.
 - Para cada pieza se proponen tres hooks con mecanismos diferentes, salvo que el copy ya esté aprobado o bloqueado.
 - No toda pieza debe incluir por qué importa, qué hace Motion, caso real, cómo y oferta completos. El tipo editorial define qué bloques se utilizan y dónde termina la pieza.
+- Los conceptos estratégicos centrales conservan su nombre y jerarquía. No se diluyen en paráfrasis secundarias cuando constituyen el descubrimiento de la pieza.
+- No usar estructuras numéricas de párrafos, frases aisladas o listas como fórmula narrativa obligatoria.
+- No reproducir estilos reconocibles de escritura algorítmica o genérica de LinkedIn.
 - Todo CTA surge del argumento y se adapta al canal.
 - LinkedIn e Instagram reciben textos propios y adaptados a sus audiencias antes del bloqueo del copy.
 - Cuando Paulo aprueba o pide mantener literalmente una versión, se registra `copy_locked: true` y la ruta de la fuente.
-- Con copy bloqueado se puede segmentar y adaptar el CTA; no se puede regenerar, reordenar, cambiar la persona narrativa ni agregar conceptos.
+- Con copy bloqueado se puede segmentar y adaptar el CTA; no se puede regenerar, reordenar, cambiar la persona narrativa, modificar el arco de coherencia ni agregar conceptos.
 - Después de una corrección relevante de Paulo, el agente debe explicitar la conclusión estratégica del aprendizaje, clasificar su alcance como local, recurrente o general y proponer o ejecutar la actualización del archivo correspondiente.
 - El input de producción es `manifiestos/mes_<YYYY-MM>.json`.
 - GitHub valida, diseña, renderiza y programa.
-- Ningún workflow puede reescribir copies, tesis, buyer, oferta, contrato narrativo o estrategia.
+- Ningún workflow puede reescribir copies, tesis, buyer, oferta, contrato narrativo, arquitectura cognitiva o estrategia.
 - Nada se programa en `live` sin aprobación explícita.
 
 ## Archivos principales
@@ -52,7 +58,7 @@ Ante contradicciones se aplica la fuente de mayor jerarquía y se señala el arc
 - Conceptos: `knowledge/banks/BANCO_CONCEPTOS_MOTION.md`.
 - Evidencias: `knowledge/banks/BANCO_EVIDENCIAS_MOTION.md`.
 - Hooks: `knowledge/banks/BANCO_HOOKS_MOTION.md`.
-- Storytelling: `knowledge/guides/GUIA_OPERATIVA_STORYTELLING.md`.
+- Storytelling y arquitectura de comprensión: `knowledge/guides/GUIA_OPERATIVA_STORYTELLING.md`.
 - Guía de hooks: `knowledge/guides/GUIA_OPERATIVA_HOOKS.md`.
 - Auditoría editorial: `docs/AUDITORIA_EDITORIAL.md`.
 - Proceso editorial: `docs/PROCESO_CONTENIDOS_Y_CONOCIMIENTO.md`.
@@ -72,6 +78,8 @@ La arquitectura de conocimiento se mantiene de manera idéntica en:
 
 Una actualización no se considera terminada hasta que existen PRs equivalentes, se validaron los diffs y ambos cambios fueron mergeados.
 
+Los manifiestos, fuentes editoriales semanales, specs y assets operativos permanecen únicamente en el repositorio primario.
+
 ## Límites
 
 - No leer ni reutilizar `archive/**` para generar contenido.
@@ -83,6 +91,7 @@ Una actualización no se considera terminada hasta que existen PRs equivalentes,
 - No convertir una corrección aislada en regla general sin declaración explícita o evidencia recurrente.
 - No cargar información confidencial o identificable sin autorización explícita.
 - No usar el formato como permiso para reescribir una fuente aprobada.
+- No confundir claridad con extensión ni agregar explicaciones para completar una plantilla.
 
 ## Compatibilidad temporal
 
