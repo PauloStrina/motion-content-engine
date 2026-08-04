@@ -24,11 +24,10 @@ def _key() -> str:
 
 
 def _call(path: str, method: str = "GET") -> object:
-    request = urllib.request.Request(
-        API + path,
-        method=method,
-        headers={"blotato-api-key": _key(), "Content-Type": "application/json"},
-    )
+    headers = {"blotato-api-key": _key()}
+    if method not in ("GET", "DELETE"):
+        headers["Content-Type"] = "application/json"
+    request = urllib.request.Request(API + path, method=method, headers=headers)
     try:
         with urllib.request.urlopen(request) as response:
             body = response.read().decode()
