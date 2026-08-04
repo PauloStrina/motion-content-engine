@@ -2,112 +2,90 @@
 
 ## Objetivo editorial
 
-Usar el caso real anonimizado del pedido de Power BI para demostrar el efecto cebolla: datos → procesos → rutinas → cultura → Programa de Transformación Digital.
+Usar el caso real anonimizado del pedido de Power BI para demostrar experiencia y criterio de diagnóstico mediante el efecto cebolla: tablero → datos → procesos → rutinas → CULTURA → transformación.
+
+La pieza no presenta un resultado cuantitativo. La prueba está en la capacidad de mirar una necesidad puntual con suficiente profundidad para descubrir la causa raíz y ampliar correctamente el alcance.
+
+## Arquitectura de comprensión aprobada
+
+- **Conocimiento inicial:** el pedido parece ser un proyecto claro de Power BI.
+- **Idea nueva:** una necesidad tecnológica visible puede revelar una causa cultural más profunda.
+- **Puente:** preguntas causales sucesivas sobre datos, procesos y rutinas.
+- **Arco:** pedido → preguntas causales → capas → CULTURA como causa raíz → implicación.
+- **Regla de economía:** la cadena debe ser breve; no agregar explicaciones entre todas las capas.
 
 ## Formatos
 
 - LinkedIn e Instagram: carrusel narrativo esquemático.
-- Copy madre aprobado.
+- Carrusel aprobado.
 - Captions: pendientes de validación.
-
-## Copy madre aprobado — conservar literalmente
-
-**Nos pidieron un tablero de Power BI.**
-
-Parecía un proyecto claro: reunir la información, construir los indicadores y diseñar las visualizaciones.
-
-Pero los datos no estaban disponibles. Entonces preguntamos **¿Por qué no hay datos?**
-
-Y ahí apareció el segundo problema. No había procesos estandarizados para gestionar la información. **¿Por qué no hay procesos?**
-
-Tercer problema. Cada área tenía sus propias rutinas, criterios y formas de trabajar. Rntonces preguntamos **¿Por qué no hay rutinas claras?**
-
-Y nos encontramos con la causa raíz: **no había una cultura de alta performance**.
-
-Cada vez que retirábamos una capa del pedido original, aparecía otra dimensión de la organización que también necesitaba transformarse.
-
-Podíamos haber construido un tablero visualmente correcto sobre ese sistema. Pero el resultado habría sido una mejor visualización de los mismos problemas.
-
-Por eso el trabajo dejó de ser solamente un proyecto de Power BI.
-
-El tablero siguió siendo parte de la solución, pero pasó a ocupar el lugar que le correspondía: una primera capa visible dentro de una transformación más amplia sobre datos, decisiones y formas de trabajar.
-
-Lo que comenzó como una necesidad puntual terminó mostrando la necesidad de integrar Negocio, Tecnología y Cultura dentro de un Programa de Transformación Digital.
-
-Ese caso nos confirmó algo que hoy forma parte de nuestra manera de trabajar:
-
-**muchas transformaciones no empiezan con un gran programa. Empiezan con una necesidad concreta que alguien decide mirar con suficiente profundidad.**
-
-Un tablero puede ser solamente un tablero.
-
-O puede convertirse en la puerta de entrada para comprender qué necesita transformar realmente una organización.
-
-El Mapa de Transformación te ayuda a identificar qué proceso, capacidad o sistema puede convertirse en ese primer movimiento:
-
-https://mapa.motion-co.com/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=mapa_transformacion&utm_content=2026_08_05_power_bi_efecto_cebolla
 
 ## Carrusel aprobado — conservar literalmente
 
 ### Placa 1
 
-Nos pidieron un tablero de Power BI. Pero no todo es lo que parece.
+Nos pidieron un tablero de Power BI.
+
+Pero no todo era lo que parecía.
 
 ### Placa 2
 
-Parecía un proyecto claro: reunir la información, construir los indicadores y diseñar las visualizaciones.
+El proyecto parecía claro:
+
+reunir la información, construir los indicadores y diseñar las visualizaciones.
 
 ### Placa 3
 
-Pero los datos no estaban disponibles. Entonces preguntamos: ¿Por qué no hay datos?
+Pero los datos no estaban disponibles.
+
+Entonces preguntamos:
+
+¿Por qué no hay datos?
 
 ### Placa 4
 
-Y ahí apareció el segundo problema. No había procesos estandarizados para gestionar la información. ¿Por qué no hay procesos?
+Porque no había procesos estandarizados para producir y gestionar la información.
+
+¿Por qué no había procesos?
 
 ### Placa 5
 
-Tercer problema. Cada área tenía sus propias rutinas, criterios y formas de trabajar. Enntonces preguntamos: ¿Por qué no hay rutinas claras?
+Porque cada área tenía sus propias rutinas, criterios y formas de trabajar.
 
 ### Placa 6
 
-Y nos encontramos con la causa raíz: no había una cultura de alta performance.
+Ahí apareció la causa raíz:
+
+**CULTURA.**
+
+No había una forma compartida de producir información, sostener los procesos y tomar decisiones.
 
 ### Placa 7
 
-Cada vez que retirábamos una capa del pedido original, aparecía otra dimensión de la organización que también necesitaba transformarse.
+Podíamos construir un nuevo tablero.
+
+Pero habría mostrado mejor los mismos problemas.
 
 ### Placa 8
 
-Podíamos haber construido un tablero visualmente correcto sobre ese sistema. Pero el resultado habría sido una mejor visualización de los mismos problemas.
+Por eso el tablero siguió siendo parte de la solución, pero la transformación tenía que alcanzar:
+
+**DATOS · PROCESOS · RUTINAS · CULTURA**
 
 ### Placa 9
 
-Por eso el trabajo dejó de ser solamente un proyecto de Power BI.
+Lo que comenzó como un proyecto de Power BI reveló la necesidad de integrar Negocio, Tecnología y Cultura dentro de un Programa de Transformación Digital.
 
 ### Placa 10
 
-El tablero siguió siendo parte de la solución, pero pasó a ocupar el lugar que le correspondía: una primera capa visible dentro de una transformación más amplia sobre datos, decisiones y formas de trabajar.
+Muchas transformaciones no empiezan con un gran programa.
+
+Empiezan con una necesidad concreta que alguien decide mirar con suficiente profundidad.
 
 ### Placa 11
 
-Lo que comenzó como una necesidad puntual terminó mostrando la necesidad de integrar Negocio, Tecnología y Cultura dentro de un Programa de Transformación Digital.
+Un tablero puede ser solamente un tablero.
 
-### Placa 12
+O puede mostrarte qué necesita transformar realmente tu organización.
 
-Ese caso nos confirmó algo que hoy forma parte de nuestra manera de trabajar:
-
-### Placa 13
-
-Muchas transformaciones no empiezan con un gran programa. Empiezan con una necesidad concreta que alguien decide mirar con suficiente profundidad.
-
-### Placa 14
-
-Un tablero puede ser solamente un tablero. O puede convertirse en la puerta de entrada para comprender qué necesita transformar realmente una organización.
-
-### Placa 15
-
-El Mapa de Transformación te ayuda a identificar qué proceso, capacidad o sistema puede convertirse en ese primer movimiento. Escribí MAPA en los comentarios y recibí el link para construirlo.
-
-## Nota de QA
-
-La fuente aprobada contiene `Rntonces` en el copy madre y `Enntonces` en la placa 5. Se preservan porque Paulo pidió mantener literalmente la versión editada. Corregir únicamente con autorización explícita.
+Escribí **MAPA** en los comentarios y recibí el enlace para construir tu Mapa de Transformación.
