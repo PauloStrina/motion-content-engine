@@ -1,0 +1,31 @@
+name: Blotato admin
+
+on:
+  workflow_dispatch:
+    inputs:
+      accion:
+        description: "listar | borrar"
+        type: choice
+        options: ["listar", "borrar"]
+        default: "listar"
+      prefijo:
+        description: "Prefijo de name para borrar"
+        default: ""
+      endpoint:
+        description: "Endpoint a consultar"
+        default: "/posts"
+
+jobs:
+  admin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - env:
+          BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
+        run: |
+          python scripts/blotato_admin.py "${{ inputs.accion }}" \
+            --prefijo "${{ inputs.prefijo }}" \
+            --endpoint "${{ inputs.endpoint }}"
