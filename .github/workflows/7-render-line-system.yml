@@ -1,0 +1,70 @@
+name: 7-render-line-system
+
+on:
+  workflow_dispatch:
+    inputs:
+      spec:
+        description: "Spec bajo design-system/slides/ (vacío = todas las piezas de la semana)"
+        required: false
+  pull_request:
+    paths:
+      - "design-system/line_system/**"
+      - "design-system/slides/*.json"
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: |
+          set -euo pipefail
+          pip install --quiet -r design-system/line_system/requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Validar ruta del spec
+        if: inputs.spec != ''
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "${{ inputs.spec }}" in
+            design-system/slides/*.json) ;;
+            *) echo "spec debe vivir bajo design-system/slides/ y ser .json"; exit 1 ;;
+          esac
+
+      - name: Renderizar
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -n "${{ inputs.spec }}" ]; then
+            SPECS=("${{ inputs.spec }}")
+          else
+            SPECS=(
+              design-system/slides/linkedin-autoridad-transversal.json
+              design-system/slides/2026-08-04-mar-autoridad-transversal.json
+              design-system/slides/2026-08-05-mie-adopcion-ia.json
+              design-system/slides/2026-08-06-jue-tablero-power-bi.json
+            )
+          fi
+          for S in "${SPECS[@]}"; do
+            PIEZA="$(basename "$S" .json)"
+            python design-system/line_system/render_lineas.py \
+              "$S" "design-system/generated/$PIEZA"
+          done
+
+      - name: Subir PNG como artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: line-system-png
+          path: |
+            design-system/generated/**/png/*.png
+            design-system/generated/**/contact-sheet.png
+          if-no-files-found: error

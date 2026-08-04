@@ -1,0 +1,66 @@
+{
+  "pieza": "2026-08-04-mar-autoridad-transversal",
+  "titulo": "MARTES · INSTAGRAM",
+  "formato": [1080, 1350],
+  "familia_visual": "line_system",
+  "layout": "carrusel",
+  "align": "center",
+  "onda": true,
+  "sheet_cols": 5,
+  "placas": [
+    {
+      "n": 1,
+      "texto": [{"texto": "Ves la transformación, pero no podés decidir por todas las áreas.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "trayectoria", "dash": true, "color": "violeta",
+        "nodos": [{"color": "violeta"}, {"color": "aqua"}, {"color": "naranja"}]}
+    },
+    {
+      "n": 2,
+      "texto": [{"texto": "La dirección aprobó el rumbo. Pero cada área conserva sus presupuestos, prioridades e indicadores.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "ojo_desconectado", "label": "Rumbo aprobado"}
+    },
+    {
+      "n": 3,
+      "texto": [{"texto": "Intentaste crear un comité transversal. Todos participaron. Todos estuvieron de acuerdo.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "nodos_a_contenedor", "label": "Comité transversal"}
+    },
+    {
+      "n": 4,
+      "texto": [{"texto": "Después de la reunión, cada área volvió a tomar las mismas decisiones de antes.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "orbita", "label_centro": "Mismas decisiones", "label_satelite": "Reunión"}
+    },
+    {
+      "n": 5,
+      "texto": [{"texto": "No necesariamente falta compromiso. Tampoco falta visión. Pero a veces \"el que mucho abarca, poco aprieta\".", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "dispersion", "label": "Sin converger"}
+    },
+    {
+      "n": 6,
+      "texto": [{"texto": "Al comienzo, la clave es conseguir resultados profundos pero rápidos.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "diana", "label": "Resultado profundo"}
+    },
+    {
+      "n": 7,
+      "texto": [{"texto": "Elegí un sistema concreto, reuní a las áreas involucradas y definí un resultado medible en 16 semanas.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "cubo_a_calendario", "label_izq": "Sistema concreto", "label_der": "16 semanas"}
+    },
+    {
+      "n": 8,
+      "texto": [{"texto": "Transformá el proceso, las soluciones que lo sostienen y los comportamientos necesarios.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "tres_nodos_pico", "nodos": [
+        {"color": "violeta", "label": "Proceso"},
+        {"color": "naranja", "label": "Soluciones"},
+        {"color": "aqua", "label": "Comportamientos"}]}
+    },
+    {
+      "n": 9,
+      "texto": [{"texto": "El resultado no es solo evidencia. Son protagonistas que validan la visión y se convierten en aliados internos.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "radial", "n": 8, "core_color": "violeta", "spoke_color": "aqua", "label": "Aliados internos"}
+    },
+    {
+      "n": 10,
+      "texto": [{"texto": "La legitimidad también se construye transformando. Escribí MAPA y recibí el link para construir tu Mapa de Transformación.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "estrella_a_nodo", "label_izq": "Legitimidad", "label_der": "Mapa"}
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "pieza": "2026-08-06-jue-tablero-power-bi",
+  "titulo": "JUEVES · RESULTADOS",
+  "formato": [1080, 1350],
+  "familia_visual": "line_system",
+  "layout": "carrusel",
+  "align": "center",
+  "onda": false,
+  "alto_texto": 400,
+  "sheet_cols": 5,
+  "placas": [
+    {
+      "n": 1,
+      "texto": [
+        {"texto": "Nos pidieron un tablero de Power BI.", "estilo": "destacada", "color": "violeta"},
+        {"texto": "Pero no todo es lo que parece.", "estilo": "cuerpo_negro"}
+      ],
+      "esquema": {"tipo": "anillo_nucleo", "label": "Power BI"}
+    },
+    {
+      "n": 2,
+      "texto": [{"texto": "Parecía un proyecto claro: reunir la información, construir los indicadores y diseñar las visualizaciones.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "trayectoria", "color": "aqua", "label_size": 20, "nodos": [
+        {"color": "aqua", "label": "Inicio"},
+        {"color": "violeta", "label": "Indicadores"},
+        {"color": "naranja", "label": "Visualización"},
+        {"color": "aqua", "label": "Tablero"}]}
+    },
+    {
+      "n": 3,
+      "texto": [{"texto": "Pero los datos no estaban disponibles. Entonces preguntamos: ¿Por qué no hay datos?", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "anillo_hueco", "label": "¿Por qué no hay datos?"}
+    },
+    {
+      "n": 4,
+      "texto": [{"texto": "Y ahí apareció el segundo problema. No había procesos estandarizados para gestionar la información. ¿Por qué no hay procesos?", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "anillos", "radios": [82, 126], "colores": ["aqua", "violeta"],
+        "leyenda": [["Datos", "aqua"], ["Procesos", "violeta"]]}
+    },
+    {
+      "n": 5,
+      "texto": [{"texto": "Tercer problema. Cada área tenía sus propias rutinas, criterios y formas de trabajar. Enntonces preguntamos: ¿Por qué no hay rutinas claras?", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "anillos", "radios": [78, 118, 158], "colores": ["aqua", "violeta", "naranja"],
+        "centro_label": "Rutinas", "centro_color": "naranja",
+        "leyenda": [["Datos", "aqua"], ["Procesos", "violeta"], ["Rutinas", "naranja"]]}
+    },
+    {
+      "n": 6,
+      "texto": [{"texto": "Y nos encontramos con la causa raíz: no había una cultura de alta performance.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "anillos", "radios": [78, 118, 158], "colores": ["aqua", "violeta", "aqua"],
+        "centro_r": 30, "centro_color": "naranja",
+        "leyenda": [["Causa raíz", "naranja"]]}
+    },
+    {
+      "n": 7,
+      "texto": [{"texto": "Cada vez que retirábamos una capa del pedido original, aparecía otra dimensión de la organización que también necesitaba transformarse.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "anillos_capa_suelta", "label": "Otra capa"}
+    },
+    {
+      "n": 8,
+      "texto": [{"texto": "Podíamos haber construido un tablero visualmente correcto sobre ese sistema. Pero el resultado habría sido una mejor visualización de los mismos problemas.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "dos_contenedores", "contenedores": [
+        {"label": "Nuevo tablero", "color": "aqua", "mini": "grafico"},
+        {"label": "Mismo sistema", "color": "violeta", "mini": "grafico"}]}
+    },
+    {
+      "n": 9,
+      "texto": [{"texto": "Por eso el trabajo dejó de ser solamente un proyecto de Power BI.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "contenedor_a_nodo", "color_contenedor": "aqua", "mini": "grafico",
+        "label_contenedor": "Power BI", "label_nodo": "Transformación"}
+    },
+    {
+      "n": 10,
+      "texto": [{"texto": "El tablero siguió siendo parte de la solución, pero pasó a ocupar el lugar que le correspondía: una primera capa visible dentro de una transformación más amplia sobre datos, decisiones y formas de trabajar.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "contenedor_sobre_anillos", "label_size": 20,
+        "label_contenedor": "Capa visible\nNuevo tablero",
+        "leyenda": [["Datos", "aqua"], ["Procesos", "violeta"], ["Rutinas", "naranja"]]}
+    },
+    {
+      "n": 11,
+      "texto": [{"texto": "Lo que comenzó como una necesidad puntual terminó mostrando la necesidad de integrar Negocio, Tecnología y Cultura dentro de un Programa de Transformación Digital.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "anillo_programa"}
+    },
+    {
+      "n": 12,
+      "texto": [{"texto": "Ese caso nos confirmó algo que hoy forma parte de nuestra manera de trabajar.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "trayectoria", "color": "violeta", "nodos": [
+        {"color": "violeta"},
+        {"color": "naranja", "label": "Aprendizaje"},
+        {"color": "aqua"}]}
+    },
+    {
+      "n": 13,
+      "texto": [
+        {"texto": "Muchas transformaciones no empiezan con un gran programa.", "estilo": "destacada", "color": "violeta"},
+        {"texto": "Empiezan con una necesidad concreta que alguien decide mirar con suficiente profundidad.", "estilo": "cuerpo_negro"}
+      ],
+      "esquema": {"tipo": "curva_atraviesa_anillos", "color": "aqua", "color_inicio": "aqua",
+        "label_inicio": "Necesidad", "label_fin": "Programa"}
+    },
+    {
+      "n": 14,
+      "texto": [{"texto": "Un tablero puede ser solamente un tablero. O puede convertirse en la puerta de entrada para comprender qué necesita transformar realmente una organización.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "contenedor_a_nodo", "color_contenedor": "aqua", "mini": "grafico",
+        "label_contenedor": "Tablero\nPuerta de entrada", "label_nodo": ""}
+    },
+    {
+      "n": 15,
+      "texto": [{"texto": "El Mapa de Transformación te ayuda a identificar qué proceso, capacidad o sistema puede convertirse en ese primer movimiento. Escribí MAPA en los comentarios y recibí el link para construirlo.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "curva_atraviesa_anillos", "color": "violeta", "color_inicio": "violeta",
+        "label_fin": "Mapa de Transformación"}
+    }
+  ]
+}

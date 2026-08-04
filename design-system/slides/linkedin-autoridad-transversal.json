@@ -1,0 +1,52 @@
+{
+  "pieza": "linkedin-autoridad-transversal",
+  "titulo": "MARTES · LINKEDIN",
+  "formato": [1080, 1350],
+  "familia_visual": "line_system",
+  "layout": "linkedin_static",
+  "placa": {
+    "headline": [
+      "Ves la transformación,",
+      "pero no podés decidir",
+      "por todas las áreas."
+    ],
+    "bajada": [
+      "La autoridad no siempre nace de un cargo.",
+      "Se construye generando resultados que otros necesitan."
+    ],
+    "pasos": [
+      {
+        "color": "violeta",
+        "icono": "ojo",
+        "titulo": ["Visión"],
+        "desc": "Ves el futuro que la organización necesita alcanzar."
+      },
+      {
+        "color": "violeta",
+        "icono": "cubo",
+        "titulo": ["Sistema concreto"],
+        "desc": "Elegís un proceso, capacidad o sistema con impacto real."
+      },
+      {
+        "color": "naranja",
+        "icono": "calendario",
+        "icono_texto": "16",
+        "titulo": ["16 semanas"],
+        "desc": "Generás resultados visibles y medibles en un plazo claro."
+      },
+      {
+        "color": "aqua",
+        "icono": "personas",
+        "titulo": ["Aliados internos"],
+        "desc": "Sumás a quienes tienen influencia y voluntad de cambio."
+      },
+      {
+        "color": "violeta",
+        "icono": "expansion",
+        "conector": "propagacion",
+        "titulo": ["Transformación", "que se expande"],
+        "desc": "La transformación se vuelve parte de la forma de operar."
+      }
+    ]
+  }
+}

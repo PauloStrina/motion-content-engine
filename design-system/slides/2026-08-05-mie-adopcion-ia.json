@@ -1,0 +1,130 @@
+{
+  "pieza": "2026-08-05-mie-adopcion-ia",
+  "titulo": "MIÉRCOLES · LINKEDIN",
+  "formato": [1080, 1350],
+  "familia_visual": "line_system",
+  "layout": "carrusel",
+  "align": "left",
+  "onda": false,
+  "alto_texto": 460,
+  "sheet_cols": 5,
+  "placas": [
+    {
+      "n": 1,
+      "texto": [
+        {"texto": "\"Adopción de IA\" está en tus objetivos 2026.", "estilo": "destacada", "color": "violeta"},
+        {"texto": "Pero, ¿Qué estás haciendo al respecto?", "estilo": "cuerpo_negro"}
+      ],
+      "esquema": {"tipo": "secuencia_horizontal", "nodos": [
+        {"color": "violeta", "label": "Objetivo 2026"},
+        {"color": "naranja", "label": "Adopción de IA", "tramo": {"color": "violeta"}},
+        {"color": "gris", "label": "¿Acción?", "hueco": true, "tramo": {"color": "aqua", "dash": true}}]}
+    },
+    {
+      "n": 2,
+      "texto": [{"texto": "Tal vez ya implementaste un chatbot y casi nadie lo usó. Después organizaste una capacitación, pero las personas siguen trabajando de la misma manera.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "dos_jorobas", "labels": ["Chatbot", "Capacitación", "Misma forma"]}
+    },
+    {
+      "n": 3,
+      "texto": [{"texto": "Adoptar algo, implica convertirlo en tu forma de operar. Y para eso las intervenciones aisladas no funcionan.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "aislados_vs_anillo", "label_izq": "Intervenciones aisladas", "label_der": "Forma de operar"}
+    },
+    {
+      "n": 4,
+      "texto": [
+        {"texto": "En Motion hacemos esto:", "estilo": "destacada", "color": "violeta"},
+        {"texto": "Empezamos eligiendo una tarea o un proceso en el que la IA pueda producir un resultado REAL.", "estilo": "cuerpo"}
+      ],
+      "esquema": {"tipo": "convergencia", "hub_label": "Foco", "hub_color": "violeta",
+        "entradas": [
+          {"label": "Tarea", "color": "violeta"},
+          {"label": "Proceso", "color": "aqua"},
+          {"label": "Otra idea", "color": "gris", "dash": true}],
+        "salida": {"label": "Resultado real", "color": "naranja"}}
+    },
+    {
+      "n": 5,
+      "texto": [{"texto": "Primero observamos cómo se trabaja hoy y qué pasos existen simplemente porque siempre se hicieron así.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "onda_inflexion", "label": "\"Siempre se hizo así\""}
+    },
+    {
+      "n": 6,
+      "texto": [{"texto": "Después diseñamos la nueva forma de trabajar.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "despegue", "label_base": "Forma actual", "label_nueva": "Nueva forma"}
+    },
+    {
+      "n": 7,
+      "texto": [{"texto": "Ahí recién definimos qué función debe cumplir la tecnología, qué parte del proceso necesita rediseñarse y qué capacidades necesitan desarrollar las personas que van a sostenerlo.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "convergencia", "hub_color": "violeta", "label_size": 20,
+        "entradas": [
+          {"label": "Función de la tecnología", "color": "aqua"},
+          {"label": "Rediseño del proceso", "color": "violeta"},
+          {"label": "Capacidades", "color": "naranja"}],
+        "salida": {"label": "Práctica sostenible", "color": "naranja"}}
+    },
+    {
+      "n": 8,
+      "texto": [{"texto": "Pero la implementación tampoco termina cuando la solución está disponible.", "estilo": "cuerpo"}],
+      "esquema": {"tipo": "curva_hito", "label_medio": "Solución disponible", "label_fin": "No es el final"}
+    },
+    {
+      "n": 9,
+      "texto": [
+        {"texto": "Hay que acompañar al equipo mientras la incorpora a su trabajo real, identificar las fricciones que aparecen y ajustar el proceso.", "estilo": "cuerpo"},
+        {"texto": "Hasta que la nueva práctica resulte más clara, útil y sostenible que la anterior.", "estilo": "cuerpo_negro"}
+      ],
+      "esquema": {"tipo": "curva_s", "label_size": 20, "nodos": [
+        {"color": "aqua", "label": "Incorporar"},
+        {"color": "naranja", "label": "Fricción"},
+        {"color": "violeta", "label": "Ajustar"},
+        {"color": "aqua", "label": "Sostener"}]}
+    },
+    {
+      "n": 10,
+      "texto": [
+        {"texto": "La adopción no se mide solamente por licencias activas, asistentes a una capacitación o cantidad de consultas realizadas.", "estilo": "cuerpo"},
+        {"texto": "Se mide observando si cambiaron las tareas, las decisiones, los procesos o los resultados.", "estilo": "cuerpo_negro"}
+      ],
+      "esquema": {"tipo": "barras_vs_curva", "label_size": 20,
+        "barras": ["Licencias", "Asistentes", "Consultas"],
+        "curva": [
+          {"color": "gris", "label": "Vanidad"},
+          {"color": "violeta", "label": "Decisiones"},
+          {"color": "naranja", "label": "Resultados"}]}
+    },
+    {
+      "n": 11,
+      "texto": [
+        {"texto": "Esa es la diferencia entre sumar una intervención y diseñar una transformación.", "estilo": "cuerpo"},
+        {"texto": "La herramienta deja de ser el FIN y pasa a ser el MEDIO, dentro de un sistema que integra Negocio, Tecnología y Cultura.", "estilo": "cuerpo_negro"}
+      ],
+      "esquema": {"tipo": "fin_vs_medio", "label_fin": "Fin", "label_medio": "Medio", "label_size": 20,
+        "entradas": [
+          {"label": "Negocio", "color": "violeta"},
+          {"label": "Tecnología", "color": "aqua"},
+          {"label": "Cultura", "color": "naranja"}]}
+    },
+    {
+      "n": 12,
+      "texto": [
+        {"texto": "El Programa de Transformación Digital organiza ese recorrido:", "estilo": "cuerpo"},
+        {"texto": "parte de un resultado de negocio, transforma una práctica concreta y desarrolla las condiciones para que la organización pueda sostenerla y escalarla.", "estilo": "cuerpo_negro"}
+      ],
+      "esquema": {"tipo": "trayectoria", "color": "violeta", "label_size": 20, "nodos": [
+        {"color": "naranja", "label": "Resultado"},
+        {"color": "aqua", "label": "Práctica"},
+        {"color": "violeta", "label": "Condiciones"},
+        {"color": "naranja", "label": "Escala"}]}
+    },
+    {
+      "n": 13,
+      "texto": [
+        {"texto": "Para empezar, podes identificar qué proceso, capacidad o sistema tiene mayor potencial de transformación.", "estilo": "cuerpo"},
+        {"texto": "El Mapa de Transformación te ayuda a ordenar esa primera decisión y entender cuál podría ser el próximo movimiento de tu organización.", "estilo": "cuerpo_negro"},
+        {"texto": "Link en el texto de la publicación.", "estilo": "cuerpo_negro"}
+      ],
+      "esquema": {"tipo": "mapa_curva", "label": "Mapa de Transformación"}
+    }
+  ]
+}
