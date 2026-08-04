@@ -18,7 +18,7 @@ El manifiesto es el input operativo aprobado. La unidad estratégica sigue siend
   "aprobado_por": null,
   "aprobado_en": null,
   "contrato_visual_version": 1,
-  "contrato_storytelling_version": 1,
+  "contrato_storytelling_version": 2,
   "semanas": []
 }
 ```
@@ -27,7 +27,10 @@ La aprobación raíz gobierna una ejecución del ciclo completo. Mientras el mes
 
 `contrato_visual_version` es opcional para compatibilidad. Cuando vale `1`, el sistema exige un contrato visual aprobado en cada pieza no-video del alcance.
 
-`contrato_storytelling_version` es opcional para compatibilidad. Cuando vale `1`, cada día debe declarar el contrato narrativo que gobierna la redacción y la adaptación.
+`contrato_storytelling_version` es opcional para compatibilidad:
+
+- `1`: exige efecto editorial, centro narrativo, punto de llegada, fuente y evidencia;
+- `2`: además exige arquitectura cognitiva: conocimiento inicial, idea nueva, puente y arco principal.
 
 ## Estructura de semana
 
@@ -58,18 +61,31 @@ La aprobación semanal habilita `dry` y `live` únicamente para esa semana. Las 
 - `slides` contiene el copy final. Diseño y render no pueden modificarlo.
 - `carousel_news` incluye la ruta del newsletter aprobado.
 - `copy_locked: true` bloquea reescritura, reordenamiento argumental y agregados conceptuales.
+- La arquitectura cognitiva aprobada tampoco puede modificarse durante diseño, render o publicación.
 - `live` semanal exige aprobación de la semana seleccionada.
 - `live` de `todas` exige las 4 semanas y aprobación completa en la raíz.
 
 ## Contrato narrativo por día
 
-Cuando `contrato_storytelling_version` vale `1`, cada día incluye:
+Cuando `contrato_storytelling_version` vale `2`, cada día incluye:
 
 ```json
 "narrativa": {
   "efecto_editorial": "reconocimiento",
   "centro_narrativo": "tensión de autoridad transversal",
   "punto_de_llegada": "la legitimidad puede construirse produciendo evidencia",
+  "arquitectura_cognitiva": {
+    "conocimiento_inicial": "la visión está aprobada, pero cada área sigue tomando decisiones por separado",
+    "idea_nueva": "la legitimidad puede construirse mediante evidencia",
+    "puente": "un comité transversal que no modifica decisiones cotidianas",
+    "arco_principal": [
+      "situacion",
+      "intento",
+      "contraste",
+      "explicacion",
+      "nueva_comprension"
+    ]
+  },
   "source_mode": "situacion_potencial",
   "source_refs": [],
   "evidence_id": null,
@@ -78,7 +94,7 @@ Cuando `contrato_storytelling_version` vale `1`, cada día incluye:
 }
 ```
 
-### Campos
+### Campos narrativos
 
 - `efecto_editorial`: cambio que la pieza debe producir en el lector.
 - `centro_narrativo`: elemento que recibe el mayor peso.
@@ -88,6 +104,32 @@ Cuando `contrato_storytelling_version` vale `1`, cada día incluye:
 - `evidence_id`: ID de evidencia cuando la pieza utiliza un caso o resultado.
 - `copy_locked`: indica si el texto ya fue aprobado y no puede reescribirse.
 - `copy_source`: ruta a la fuente aprobada cuando `copy_locked` es `true`.
+
+### Arquitectura cognitiva
+
+- `conocimiento_inicial`: situación, problema o lenguaje que el lector ya puede reconocer al comenzar.
+- `idea_nueva`: comprensión principal que la pieza debe construir. Debe existir una sola idea nueva dominante.
+- `puente`: situación, contraste, ejemplo, pregunta o mecanismo que conecta lo conocido con lo nuevo.
+- `arco_principal`: secuencia de funciones o relaciones lógicas que hace avanzar la pieza.
+
+Valores recomendados para `arco_principal`:
+
+- `situacion`;
+- `intento`;
+- `friccion`;
+- `contraste`;
+- `causa`;
+- `consecuencia`;
+- `ejemplo`;
+- `elaboracion`;
+- `secuencia`;
+- `mecanismo`;
+- `evidencia`;
+- `generalizacion`;
+- `nueva_comprension`;
+- `implicacion`.
+
+No se exige utilizar todos los valores. La lista representa el recorrido específico de la pieza, no una plantilla universal.
 
 ### Valores permitidos para `source_mode`
 
@@ -105,25 +147,39 @@ Cuando `contrato_storytelling_version` vale `1`, cada día incluye:
 
 - el efecto editorial principal es reconocimiento o nueva comprensión;
 - el centro narrativo es una tensión, contradicción o punto ciego;
-- el punto de llegada no debe incluir el método completo.
+- el punto de llegada no debe incluir el método completo;
+- el arco suele terminar en `nueva_comprension`, no en una secuencia metodológica extensa.
 
 #### Método
 
 - el efecto editorial principal es comprensión del mecanismo;
 - el centro narrativo es una decisión, secuencia, artefacto o dinámica concreta;
-- el problema inicial funciona como contexto y no debe dominar la pieza.
+- el problema inicial funciona como contexto y no debe dominar la pieza;
+- el arco debe permitir reconocer qué se hace primero, qué sigue y cómo se mide.
 
 #### Resultados
 
 - requiere `source_mode` real y evidencia autorizada cuando se presentan hechos, resultados o aprendizajes de un caso;
 - debe diferenciar hecho, intervención, resultado e interpretación;
-- no puede completar vacíos narrativos con información inventada.
+- no puede completar vacíos narrativos con información inventada;
+- cuando demuestra criterio de diagnóstico y no un resultado cuantitativo, debe declararlo en el efecto editorial y el punto de llegada.
 
 #### Conexión
 
 - el efecto editorial principal es afinidad con la perspectiva de Motion;
 - debe anclarse en una experiencia, decisión, símbolo, método o referencia concreta;
 - no necesita desarrollar toda la oferta.
+
+## Regla de economía explicativa
+
+La arquitectura cognitiva no autoriza a extender el copy.
+
+- claridad significa que el lector puede avanzar sin retroceder;
+- una relación evidente no necesita explicación adicional;
+- una cadena causal puede expresarse en capas o preguntas breves;
+- un carrusel debe comprimir y jerarquizar;
+- si una placa no aporta situación, tensión, causa, contraste, mecanismo, evidencia, consecuencia o llegada, debe eliminarse o integrarse;
+- cuando un concepto estratégico canónico es la conclusión central, debe conservar su nombre y jerarquía.
 
 ## Regla de copy bloqueado
 
@@ -132,7 +188,7 @@ Cuando `copy_locked` es `true`:
 - `copy_source` es obligatorio;
 - `slides`, `texto_linkedin`, `caption_instagram` y newsletter deben trazarse a la fuente aprobada;
 - se permite segmentar, jerarquizar, adaptar densidad y crear CTA por canal;
-- no se permite regenerar desde un resumen, cambiar la persona narrativa, alterar el orden argumental ni agregar conceptos no aprobados;
+- no se permite regenerar desde un resumen, cambiar la persona narrativa, alterar el orden argumental, modificar el arco de coherencia ni agregar conceptos no aprobados;
 - un error tipográfico se conserva hasta recibir autorización explícita para corregirlo.
 
 ## Contrato visual por día
@@ -158,7 +214,7 @@ Valores permitidos para `execution`:
 
 El bloque visual no contiene el concepto completo. Solo registra aprobación, modo de ejecución y ruta al contrato.
 
-El contrato visual no puede modificar el contrato narrativo ni el copy bloqueado.
+El contrato visual no puede modificar el contrato narrativo, la arquitectura cognitiva ni el copy bloqueado.
 
 ## Formatos permitidos
 
@@ -182,6 +238,18 @@ Los manifiestos progresivos o de revisión pueden utilizar nombres de formato ad
     "efecto_editorial": "comprension_del_mecanismo",
     "centro_narrativo": "elegir una práctica, observarla, rediseñarla, acompañarla y medirla",
     "punto_de_llegada": "la adopción ocurre cuando cambia la forma de operar",
+    "arquitectura_cognitiva": {
+      "conocimiento_inicial": "la organización implementó IA y capacitó personas, pero el trabajo sigue igual",
+      "idea_nueva": "adoptar IA significa modificar una práctica",
+      "puente": "contrastar disponibilidad de la herramienta con cambios observables en tareas, decisiones, procesos y resultados",
+      "arco_principal": [
+        "situacion",
+        "contraste",
+        "definicion",
+        "mecanismo",
+        "criterio_de_medicion"
+      ]
+    },
     "source_mode": "situacion_potencial",
     "source_refs": [
       "knowledge/guides/GUIA_OPERATIVA_STORYTELLING.md"
@@ -215,8 +283,12 @@ Antes de preparar assets o ejecutar un dry run, verificar:
 
 1. tesis, tipo y audiencia correctos;
 2. efecto editorial, centro narrativo y punto de llegada definidos;
-3. fuentes y evidencia autorizadas;
-4. copy aprobado y ruta correcta;
-5. ausencia de reescrituras posteriores al bloqueo;
-6. coherencia entre copy, visual y CTA;
-7. autonomía de cada publicación.
+3. conocimiento inicial, idea nueva, puente y arco principal definidos;
+4. una sola idea nueva dominante;
+5. relaciones lógicas reconocibles entre bloques;
+6. ausencia de explicaciones que amplíen innecesariamente la pieza;
+7. fuentes y evidencia autorizadas;
+8. copy aprobado y ruta correcta;
+9. ausencia de reescrituras posteriores al bloqueo;
+10. coherencia entre copy, arquitectura cognitiva, visual y CTA;
+11. autonomía de cada publicación.
