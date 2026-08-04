@@ -2,7 +2,14 @@
 
 ## Objetivo editorial
 
-Mostrar cómo Motion convierte “adopción de IA” en una transformación concreta del trabajo: elegir una práctica, observar el sistema actual, rediseñar, acompañar y medir adopción.
+Mostrar cómo Motion convierte “adopción de IA” en una transformación concreta del trabajo: elegir una práctica, observar el sistema actual, diseñar la nueva forma de operar, acompañar y medir adopción.
+
+## Arquitectura de comprensión aprobada
+
+- **Conocimiento inicial:** la organización implementó herramientas y capacitó personas, pero el trabajo sigue funcionando igual.
+- **Idea nueva:** adoptar IA significa modificar una práctica de trabajo.
+- **Puente:** contrastar disponibilidad de la herramienta con cambios observables en tareas, decisiones, procesos o resultados.
+- **Arco:** situación → contraste → definición → secuencia metodológica → criterio de medición.
 
 ## Formatos
 
@@ -12,80 +19,87 @@ Mostrar cómo Motion convierte “adopción de IA” en una transformación conc
 
 ## Carrusel aprobado
 
-> Fuente bloqueada: versión editada y aprobada por Paulo el 3 de agosto de 2026. No reemplazar por versiones intermedias de 16 placas.
+> Fuente bloqueada: versión aprobada por Paulo el 4 de agosto de 2026.
 
 ### Placa 1
 
-“Adopción de IA” está en tus objetivos 2026.
+Tu organización quiere adoptar IA.
 
-Pero, ¿Qué estás haciendo al respecto?
+Pero el trabajo sigue funcionando de la misma manera.
 
 ### Placa 2
 
-Tal vez ya implementaste un chatbot y casi nadie lo usó. Después organizaste una capacitación, pero las personas siguen trabajando de la misma manera.
+Tal vez ya implementaste un chatbot que casi nadie utilizó.
+
+Después organizaste una capacitación, pero las personas volvieron a ejecutar las mismas tareas y tomar las mismas decisiones.
 
 ### Placa 3
 
-Adoptar algo, implica convertirlo en tu forma de operar. Y para eso las intervenciones aisladas no funcionan.
+Eso muestra una diferencia importante:
+
+tener una herramienta disponible no significa haberla adoptado.
 
 ### Placa 4
 
-En Motion hacemos esto:
-Empezamos eligiendo una tarea o un proceso en el que la IA pueda producir un resultado REAL.
+Adoptar IA significa incorporarla a una tarea, una decisión o un proceso hasta que forme parte de la manera de operar.
 
 ### Placa 5
 
-Primero observamos cómo se trabaja hoy y qué pasos existen simplemente porque siempre se hicieron así.
+Por eso, en Motion no empezamos eligiendo una herramienta.
+
+Empezamos eligiendo un resultado concreto que la organización necesita producir.
 
 ### Placa 6
 
-Después diseñamos la nueva forma de trabajar.
+Después observamos cómo se realiza hoy la tarea:
+
+qué pasos agregan valor, dónde aparecen esperas, qué decisiones se toman y qué actividades existen simplemente porque siempre se hicieron así.
 
 ### Placa 7
 
-Ahí recién definimos qué función debe cumplir la tecnología, qué parte del proceso necesita rediseñarse y qué capacidades necesitan desarrollar las personas que van a sostenerlo.
+Con esa información diseñamos una nueva forma de trabajar.
+
+Recién entonces definimos qué función debe cumplir la IA.
 
 ### Placa 8
 
-Pero la implementación tampoco termina cuando la solución está disponible.
+El nuevo sistema debe integrar tres dimensiones:
+
+qué cambia en el proceso, qué capacidad aporta la tecnología y qué necesitan aprender o modificar las personas.
 
 ### Placa 9
 
-Hay que acompañar al equipo mientras la incorpora a su trabajo real, identificar las fricciones que aparecen y ajustar el proceso.
+La adopción tampoco termina cuando la solución queda disponible.
 
-Hasta que la nueva práctica resulte más clara, útil y sostenible que la anterior.
+Hay que acompañar al equipo mientras la utiliza en situaciones reales, detectar fricciones y ajustar el sistema.
 
 ### Placa 10
 
-La adopción no se mide solamente por licencias activas, asistentes a una capacitación o cantidad de consultas realizadas.
-
-Se mide observando si cambiaron las tareas, las decisiones, los procesos o los resultados.
+El objetivo es que la nueva práctica resulte más clara, útil y sostenible que la anterior.
 
 ### Placa 11
 
-Esa es la diferencia entre sumar una intervención y diseñar una transformación.
+Por eso no medimos la adopción solamente por licencias, capacitaciones o cantidad de consultas.
 
-La herramienta deja de ser el FIN y pasa a ser el MEDIO,  dentro de un sistema que integra Negocio, Tecnología y Cultura.
+Observamos si cambiaron las tareas, las decisiones, los procesos o los resultados.
 
 ### Placa 12
 
-El Programa de Transformación Digital organiza ese recorrido:
+Cuando eso ocurre, la IA deja de ser una intervención aislada.
 
-parte de un resultado de negocio, transforma una práctica concreta y desarrolla las condiciones para que la organización pueda sostenerla y escalarla.
+Se convierte en parte de una nueva forma de operar que integra Negocio, Tecnología y Cultura.
 
 ### Placa 13 — LinkedIn
 
-Para empezar, podes identificar qué proceso, capacidad o sistema tiene mayor potencial de transformación.
-
-El Mapa de Transformación te ayuda a ordenar esa primera decisión y entender cuál podría ser el próximo movimiento de tu organización.
+El Mapa de Transformación te ayuda a identificar qué proceso, capacidad o sistema tiene mayor potencial para iniciar ese recorrido.
 
 Link en el texto de la publicación.
 
 ### Placa 13 — Instagram
 
-Para empezar, podes  identificar qué proceso, capacidad o sistema tiene mayor potencial de transformación.
+El Mapa de Transformación te ayuda a identificar qué proceso, capacidad o sistema tiene mayor potencial para iniciar ese recorrido.
 
-Escribí MAPA en los comentarios y recibí el link para construir el Mapa de Transformación de tu organización.
+Escribí MAPA en los comentarios y recibí el link para construirlo.
 
 ## LinkedIn — caption aprobado
 
