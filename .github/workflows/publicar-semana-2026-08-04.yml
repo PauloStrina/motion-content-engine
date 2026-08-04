@@ -1,0 +1,33 @@
+name: Publicar semana 2026-08-04
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry:
+        description: "Modo dry-run (no programa nada en Blotato)"
+        type: boolean
+        default: true
+      dia:
+        description: "Dia a publicar (vacio = los tres)"
+        type: choice
+        options: ["", "mar", "mie", "jue"]
+        default: ""
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Programar en Blotato
+        env:
+          BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}
+        run: |
+          ARGS=""
+          if [ "${{ inputs.dry }}" = "true" ]; then ARGS="$ARGS --dry"; fi
+          if [ -n "${{ inputs.dia }}" ]; then ARGS="$ARGS --dia ${{ inputs.dia }}"; fi
+          python scripts/publicar_semana_2026_08_04.py $ARGS
