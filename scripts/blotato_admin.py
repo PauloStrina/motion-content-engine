@@ -70,6 +70,9 @@ def main() -> int:
         print(f"  {pid}  {when}  {name}")
 
     if args.accion == "listar":
+        print("--- crudo ---")
+        for post in posts:
+            print(json.dumps(post, ensure_ascii=False)[:700])
         if not posts:
             print(json.dumps(payload, ensure_ascii=False)[:1500])
         return 0
