@@ -1,0 +1,228 @@
+{
+  "slug": "2026-07-28-entrevista",
+  "formato": "entrevista",
+  "video_duracion": 1755.14,
+  "reels": [
+    {
+      "n": 1,
+      "slug": "cambio-no-es-transformacion",
+      "titulo": "Cambio no es transformación",
+      "tesis": 1,
+      "tipo": "problema",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 276.14, "hasta": 283.64, "hablante": "entrevistador"},
+        {"desde": 284.88, "hasta": 339.04, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Un cambio arranca de un dolor: algo urgente que hay que resolver. Una transformación arranca de una visión de hacia dónde querés llevar la organización. Parece una distinción menor, pero define todo lo que viene después: qué priorizás, qué esperás y cómo lo medís. ¿Lo que tenés entre manos es un dolor puntual o una visión?"
+    },
+    {
+      "n": 2,
+      "slug": "tablero-power-bi-caso",
+      "titulo": "El tablero escondía otra cosa",
+      "tesis": 1,
+      "tipo": "resultados",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 1194.36, "hasta": 1200.82, "hablante": "entrevistador"},
+        {"desde": 1210.15, "hasta": 1274.59, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Hace unas semanas un cliente nos pidió un tablero de Power BI. Fuimos a buscar los datos y no estaban bien registrados; los procesos no los sostenían; y abajo de todo faltaba una forma de trabajo que los hiciera hábito. El dashboard era apenas lo que se veía. Muchas veces el pedido puntual es lo que deja ver la necesidad de fondo."
+    },
+    {
+      "n": 3,
+      "slug": "detras-del-pedido-puntual",
+      "titulo": "Detrás del pedido puntual",
+      "tesis": 1,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 1194.36, "hasta": 1200.82, "hablante": "entrevistador"},
+        {"desde": 1275.09, "hasta": 1311.49, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Empezó como un pedido concreto: un dashboard. Terminó mostrando algo más grande, la forma en que la organización venía operando. Resolvés lo urgente, claro, pero el valor real aparece cuando ese tablero pasa a ser la última consecuencia de una organización que ya trabaja distinto."
+    },
+    {
+      "n": 4,
+      "slug": "no-busques-al-hiperexperto",
+      "titulo": "No busques al híper experto",
+      "tesis": 4,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 567.68, "hasta": 573.42, "hablante": "entrevistador"},
+        {"desde": 575.54, "hasta": 652.88, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Cuando todo se mueve rápido, el reflejo es salir a buscar al híper experto en la última tecnología. Nosotros lo damos vuelta: buscá a quien entiende tu negocio, sus reglas, sus tensiones y cómo se toman las decisiones adentro. La tecnología es el medio; lo que escasea es el criterio para usarla donde de verdad agrega valor."
+    },
+    {
+      "n": 5,
+      "slug": "vision-sin-el-como",
+      "titulo": "Tenés la visión, falta el cómo",
+      "tesis": 1,
+      "tipo": "problema",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 340.14, "hasta": 348.12, "hablante": "entrevistador"},
+        {"desde": 349.36, "hasta": 403.20, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Casi siempre la visión está. La persona ve clarísimo que su organización tiene que transformarse y hacia dónde. Lo que falta es el cómo: un método para ordenarlo y los aliados internos para que la transformación traccione y no dependa de una sola persona. ¿Tenés la visión y te falta el mapa?"
+    },
+    {
+      "n": 6,
+      "slug": "desbloquear-potencial-oculto",
+      "titulo": "Desbloquear el potencial oculto",
+      "tesis": 2,
+      "tipo": "conexion",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 1699.10, "hasta": 1706.66, "hablante": "entrevistador"},
+        {"desde": 1709.90, "hasta": 1738.32, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Si tuviera que resumir un programa de transformación en una idea: desbloquear el potencial que ya está adentro y nadie está aprovechando. En cada área hay gente con capacidad y ganas de mejorar que hoy no tiene el espacio para hacerlo. Un programa que llega a todas esas áreas despierta ese potencial, y con él, el de toda la organización."
+    },
+    {
+      "n": 7,
+      "slug": "sprint-16-semanas",
+      "titulo": "16 semanas para transformar",
+      "tesis": 3,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 426.14, "hasta": 428.02, "hablante": "entrevistador"},
+        {"desde": 473.18, "hasta": 537.70, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Un sprint de transformación dura 16 semanas y toma un sistema concreto: un área, una unidad, un proceso. En ese tiempo rediseñamos procesos, implementamos soluciones e instalamos capacidades. Lo que más mueve la aguja no es la tecnología: es que los líderes de esa área vivan la transformación en primera persona y cambien cómo deciden."
+    },
+    {
+      "n": 8,
+      "slug": "comunidad-digital",
+      "titulo": "Qué es una comunidad digital",
+      "tesis": 3,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 1524.86, "hasta": 1534.30, "hablante": "entrevistador"},
+        {"desde": 1541.54, "hasta": 1617.80, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Primero el alineamiento estratégico, después el plan, y siempre atado a una metodología que haga circular la información. Una forma concreta de lograrlo es la comunidad digital: un core team chico que dirige el rumbo y, más importante, embajadores en cada área (personas curiosas, con ganas de mejorar) que hacen que las buenas prácticas y las herramientas lleguen a todos."
+    },
+    {
+      "n": 9,
+      "slug": "tecnologia-se-acopla-al-negocio",
+      "titulo": "La tecnología se acopla",
+      "tesis": 4,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 1412.54, "hasta": 1422.72, "hablante": "entrevistador"},
+        {"desde": 1425.46, "hasta": 1468.08, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Las reglas las pone el negocio: el mercado, la estrategia, los procesos que hay que sostener. La tecnología viene después, a acoplarse a eso. Cuando no hay un driver claro del negocio, la estrategia tecnológica termina corriendo detrás de la moda de turno. La pregunta no es qué herramienta comprar, sino para qué la vas a usar."
+    },
+    {
+      "n": 10,
+      "slug": "tres-actores-en-la-mesa",
+      "titulo": "Tres actores en la misma mesa",
+      "tesis": 4,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 1412.54, "hasta": 1422.72, "hablante": "entrevistador"},
+        {"desde": 1483.16, "hasta": 1519.76, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Vemos organizaciones que trabajan con Google y a la vez contratan cursos de Power BI, que es de Microsoft. No es culpa de nadie: es que falta una mirada integral. Un programa de transformación sienta en la misma mesa a tres que rara vez se hablan: el que dirige el negocio, el que maneja la tecnología y el que desarrolla las capacidades de la gente."
+    },
+    {
+      "n": 11,
+      "slug": "por-donde-se-empieza",
+      "titulo": "¿Por dónde se empieza?",
+      "tesis": 3,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 426.14, "hasta": 428.02, "hablante": "entrevistador"},
+        {"desde": 429.24, "hasta": 472.54, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Cuando la visión está clara pero no sabés por dónde arrancar, hay dos caminos. Uno es un diagnóstico integral: dónde estás en tecnología, en objetivos de negocio y en madurez digital de la cultura. El otro, cuando ya tenés claridad, es un sprint de transformación sobre un sistema concreto. Empezar no es comprar una herramienta; es elegir el punto de entrada."
+    },
+    {
+      "n": 12,
+      "slug": "el-tamano-no-mueve",
+      "titulo": "El tamaño no es lo que mueve",
+      "tesis": 4,
+      "tipo": "conexion",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 827.60, "hasta": 834.42, "hablante": "entrevistador"},
+        {"desde": 835.94, "hasta": 898.44, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "La física lo explica mejor que cualquier teoría de gestión. Una bici de montaña sube usando el piñón más chico: gira más rápido y así hace mover la rueda grande. Con la transformación pasa lo mismo. La velocidad, la flexibilidad y una visión integral pueden hacer que una estructura mucho más grande empiece a moverse. El tamaño no es lo que tracciona."
+    },
+    {
+      "n": 13,
+      "slug": "de-proyecto-a-movimiento",
+      "titulo": "De proyecto a movimiento",
+      "tesis": 2,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 663.18, "hasta": 668.12, "hablante": "entrevistador"},
+        {"desde": 778.70, "hasta": 823.52, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Una transformación no se sostiene solo con soluciones digitales y procesos nuevos. Necesita que la gente entienda de qué se trata y quiera ser parte. Por eso usamos branding, roles y hasta merchandising: para que deje de ser un proyecto que baja desde arriba y se vuelva un movimiento interno del que da ganas de participar."
+    },
+    {
+      "n": 14,
+      "slug": "la-gente-necesita-el-porque",
+      "titulo": "La gente necesita el porqué",
+      "tesis": 2,
+      "tipo": "conexion",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 663.18, "hasta": 668.12, "hablante": "entrevistador"},
+        {"desde": 702.02, "hasta": 752.14, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Las personas necesitan entender hacia dónde va la organización y, sobre todo, por qué. Ese propósito es lo que las moviliza. Cuando la comunicación crea comunidad, reparte roles y hace que cada uno se sienta reconocido, la transformación deja de imponerse y empieza a contagiarse."
+    },
+    {
+      "n": 15,
+      "slug": "comunicacion-no-es-adorno",
+      "titulo": "La comunicación no es un adorno",
+      "tesis": 2,
+      "tipo": "conexion",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 663.18, "hasta": 668.12, "hablante": "entrevistador"},
+        {"desde": 669.98, "hasta": 698.92, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Mejorar un proceso en un área no alcanza si nadie más se entera. La comunicación es la que hace que una buena práctica de un equipo llegue a los otros y se vuelva aprendizaje de toda la organización. No es el adorno de la transformación: es parte de cómo funciona."
+    },
+    {
+      "n": 16,
+      "slug": "cuando-el-lider-se-sorprende",
+      "titulo": "Cuando el líder se sorprende",
+      "tesis": 2,
+      "tipo": "conexion",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 663.18, "hasta": 668.12, "hablante": "entrevistador"},
+        {"desde": 752.14, "hasta": 778.70, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "Cuando la gente empieza a hacer realidad sus propias soluciones y eso se hace visible, pasa algo con el liderazgo: se sorprende con su propia organización. Ver a los equipos trabajar de una forma que no imaginaba es una de las mejores señales de que la transformación está pasando de verdad."
+    },
+    {
+      "n": 17,
+      "slug": "la-necesidad-de-uno-es-la-de-otro",
+      "titulo": "La necesidad de uno es la de otro",
+      "tesis": 2,
+      "tipo": "conexion",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 663.18, "hasta": 668.12, "hablante": "entrevistador"},
+        {"desde": 1660.34, "hasta": 1689.34, "hablante": "entrevistado"}
+      ],
+      "caption_instagram": "En una comunidad digital alguien resuelve un problema de su área, lo cuenta, y descubre que su necesidad era también la de otro. Un mismo proyecto termina resolviendo dos dolores. A la gente le gusta crear y que se lo reconozcan; darle ese espacio es lo que hace que las soluciones circulen en vez de quedar encerradas en un equipo."
+    }
+  ]
+}
