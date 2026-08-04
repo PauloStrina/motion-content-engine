@@ -23,6 +23,8 @@ jobs:
         with:
           python-version: "3.12"
 
+      - run: pip install --quiet Pillow
+
       - name: Programar en Blotato
         env:
           BLOTATO_API_KEY: ${{ secrets.BLOTATO_API_KEY }}

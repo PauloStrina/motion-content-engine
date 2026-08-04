@@ -39,6 +39,9 @@ def cuando(fecha: str, hhmm: str) -> str:
     return local.astimezone(dt.timezone.utc).isoformat().replace("+00:00", "Z")
 
 
+MAX_CARRUSEL = 10
+
+
 def medias(day: dict, canal: str) -> list[str]:
     if canal == "linkedin_paulo" and day.get("linkedin_media"):
         return [f"{MEDIA_BASE}/{name}" for name in day["linkedin_media"]]
@@ -47,6 +50,28 @@ def medias(day: dict, canal: str) -> list[str]:
     if canal == "instagram" and day.get("instagram_slides"):
         count = day["instagram_slides"]
     return [f"{MEDIA_BASE}/{base}-{index}.png" for index in range(1, count + 1)]
+
+
+def pdf_documento(client: B.BlotatoClient, day: dict, urls: list[str]) -> str:
+    """Arma un PDF con las placas y lo sube al CDN de Blotato.
+
+    LinkedIn acepta hasta 10 imagenes en un carrusel, pero admite documentos
+    PDF de mas paginas. Los carruseles largos van por esta via.
+    """
+    import io
+    import urllib.request as _req
+
+    from PIL import Image
+
+    paginas = []
+    for url in urls:
+        with _req.urlopen(url) as response:
+            paginas.append(Image.open(io.BytesIO(response.read())).convert("RGB"))
+
+    destino = Path(f"/tmp/{day['carrusel']}.pdf")
+    paginas[0].save(destino, save_all=True, append_images=paginas[1:], format="PDF")
+    print(f"  PDF armado: {destino} ({len(paginas)} paginas)")
+    return client.upload_presigned(str(destino))
 
 
 def main() -> int:
@@ -78,6 +103,12 @@ def main() -> int:
                 continue
             text = day["texto_linkedin"] if canal == "linkedin_paulo" else day["caption_instagram"]
             urls = medias(day, canal)
+            if canal == "linkedin_paulo" and len(urls) > MAX_CARRUSEL:
+                if args.dry:
+                    print(f"  [DRY] {len(urls)} placas → PDF para LinkedIn")
+                    urls = [f"dry://{day['carrusel']}.pdf"]
+                else:
+                    urls = [pdf_documento(client, day, urls)]
             name = f"semana2026-08-04_{day['fecha']}_{key}_{canal}"
             print(f"\n▶ {day['fecha']} {key} [{day['tema']}] {canal} → {when} ({len(urls)} img)")
             try:
