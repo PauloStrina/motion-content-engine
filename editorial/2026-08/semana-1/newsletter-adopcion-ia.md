@@ -1,109 +1,95 @@
 # La adopción de IA no empieza por la herramienta
 
+## Arquitectura de comprensión aprobada
+
+- **Conocimiento inicial:** la organización implementó herramientas y capacitó personas, pero el trabajo no cambió.
+- **Idea nueva:** adoptar IA significa transformar una práctica de trabajo.
+- **Puente:** contrastar actividad tecnológica con cambios observables en tareas, decisiones, procesos y resultados.
+- **Árbol:** situación reconocida → nueva definición → elegir → observar → diseñar y acompañar → medir → implicación.
+
+---
+
 “Adopción de IA” aparece cada vez con más frecuencia entre los objetivos estratégicos de las organizaciones.
 
-Sin embargo, cuando llega el momento de convertir ese objetivo en acciones concretas, muchas iniciativas comienzan de la misma manera: se contrata una plataforma, se implementa un chatbot o se organiza una capacitación para que las personas aprendan a usar nuevas herramientas.
+Por eso se implementan plataformas, chatbots y programas de capacitación. Sin embargo, después de esas iniciativas, muchas personas continúan realizando las mismas tareas, tomando las mismas decisiones y siguiendo los mismos procesos.
 
-Todas esas intervenciones pueden ser necesarias. El problema aparece cuando se espera que, por sí solas, produzcan adopción.
+La tecnología está disponible, pero el trabajo no cambió.
 
-Una solución puede estar técnicamente disponible y no formar parte del trabajo cotidiano. Una capacitación puede despertar interés y no modificar ninguna práctica. Las personas pueden aprender a utilizar IA y, al día siguiente, volver a ejecutar las mismas tareas, tomar las mismas decisiones y seguir los mismos procesos.
+Esa diferencia permite entender qué significa realmente adoptar IA: no alcanza con que las personas tengan acceso a una herramienta o sepan utilizarla. La IA debe incorporarse a una práctica hasta formar parte de la manera de operar.
 
-Porque adoptar una tecnología no significa solamente tener acceso a ella. Significa incorporarla a la forma de operar.
+Para conseguirlo, el recorrido debe comenzar en otro lugar.
 
-## De un objetivo amplio a una transformación concreta
+## 1. Elegir qué tiene que cambiar
 
-“Adoptar IA” es una dirección estratégica, pero todavía no define qué tiene que cambiar.
+“Adoptar IA” marca una dirección, pero todavía no define una transformación concreta.
 
-Por eso, en Motion no empezamos preguntando qué herramienta debería incorporar la organización ni cuántas personas necesita capacitar.
+En Motion empezamos identificando una tarea, una decisión o un proceso en el que la IA pueda contribuir a un resultado de negocio.
 
-Empezamos eligiendo una tarea o un proceso en el que la IA pueda producir un resultado REAL.
+Puede ser una actividad que consume demasiado tiempo, una decisión que depende de información dispersa o un proceso con múltiples pasos manuales.
 
-Puede ser una actividad que consume demasiado tiempo, una decisión que depende de información dispersa, un proceso con múltiples pasos manuales o una tarea en la que una persona necesita revisar grandes volúmenes de información antes de actuar.
+Primero definimos qué resultado necesitamos producir. Después analizamos qué capacidad tecnológica podría ayudarnos a conseguirlo.
 
-La tecnología aparece después de haber definido qué resultado necesitamos producir.
+Cuando la herramienta es el punto de partida, la organización busca lugares donde utilizarla. Cuando el punto de partida es el resultado, la tecnología ocupa el lugar de un medio.
 
-Este cambio en el punto de partida es importante. Cuando la herramienta es el fin, la organización intenta encontrar lugares donde utilizarla. Cuando el resultado de negocio es el punto de partida, la tecnología se convierte en un medio dentro de una transformación más amplia.
+## 2. Entender cómo funciona el trabajo actual
 
-## Observar antes de diseñar
+Antes de diseñar una nueva solución hay que comprender cómo se trabaja hoy.
 
-Una vez elegido el proceso, el siguiente paso es entender cómo funciona hoy.
+No alcanza con leer un procedimiento o dibujar un flujo formal. Es necesario observar qué hacen realmente las personas, qué información utilizan, dónde esperan, qué excepciones resuelven y qué decisiones toman fuera del proceso definido.
 
-No alcanza con revisar un procedimiento o dibujar un flujo. Hay que observar qué hacen realmente las personas, qué información utilizan, dónde esperan, qué decisiones toman y qué excepciones resuelven por fuera del proceso formal.
+Esta observación permite distinguir:
 
-También es necesario desafiar pasos que siguen existiendo simplemente porque siempre se hicieron así.
+- qué actividades agregan valor y deben mantenerse;
+- qué pasos existen por costumbre y pueden eliminarse;
+- qué parte del trabajo necesita rediseñarse;
+- qué capacidad nueva puede aportar la tecnología.
 
-Esta observación permite distinguir tres cosas:
+Recién entonces podemos definir el papel de la IA.
 
-qué debería mantenerse porque agrega valor;
+## 3. Diseñar y acompañar una nueva práctica
 
-qué debería eliminarse o rediseñarse;
+La pregunta deja de ser “¿dónde agregamos IA?” y pasa a ser:
 
-y qué nueva capacidad podría aportar la tecnología.
+“¿Cómo debería funcionar este proceso a partir de ahora?”
 
-Solo entonces tiene sentido definir el rol de la IA.
+La respuesta debe definir qué cambia en el proceso, qué decisiones permanecen en las personas, qué función cumple la tecnología y qué capacidades necesita desarrollar el equipo.
 
-## Diseñar una nueva forma de trabajar
+Pero una solución disponible todavía no es una solución adoptada.
 
-La pregunta ya no es “¿dónde podemos agregar IA?”, sino “¿cómo debería funcionar este proceso a partir de ahora?”.
+Cuando la nueva práctica entra en contacto con el trabajo cotidiano aparecen dudas, excepciones y fricciones que no podían anticiparse completamente durante el diseño.
 
-En algunos casos, la IA puede analizar información y producir una primera recomendación. En otros, puede automatizar una actividad, asistir una decisión o permitir que una persona concentre su tiempo en las excepciones que realmente requieren criterio.
+Por eso acompañamos al equipo mientras utiliza la solución, observamos qué sucede en situaciones reales y ajustamos tanto la tecnología como el proceso.
 
-Pero el diseño no termina en la solución tecnológica.
+El objetivo no es obligar a las personas a utilizar una herramienta. Es construir una forma de trabajo que resulte más clara, útil y sostenible que la anterior.
 
-También hay que definir qué parte del proceso cambia, qué decisiones permanecen en las personas y qué capacidades necesita desarrollar el equipo para trabajar dentro del nuevo sistema.
+## 4. Medir cambios, no solamente actividad
 
-Ahí se vuelve evidente por qué la adopción no puede resolverse exclusivamente desde Tecnología.
+Las licencias activas, las personas capacitadas y la cantidad de consultas muestran que hubo actividad.
 
-La nueva forma de operar necesita responder a un objetivo de Negocio, aprovechar una capacidad tecnológica y modificar comportamientos concretos dentro de la organización.
+No demuestran necesariamente que ocurrió una transformación.
 
-## Implementar no significa que ya se terminó
-
-Otro error frecuente es considerar que la adopción termina cuando la solución queda disponible.
-
-En realidad, ahí comienza una etapa crítica.
-
-Cuando la nueva práctica entra en contacto con el trabajo cotidiano aparecen dudas, excepciones, resistencias y fricciones que no podían anticiparse completamente durante el diseño.
-
-Por eso hay que acompañar al equipo mientras incorpora la solución, observar qué ocurre en situaciones reales y ajustar tanto la tecnología como el proceso.
-
-El objetivo no es obligar a las personas a usar una herramienta. Es construir una forma de trabajo que resulte más clara, útil y sostenible que la anterior.
-
-Cuando eso ocurre, la adopción deja de depender de la insistencia de un líder o de una campaña interna. La nueva práctica empieza a sostenerse porque produce valor.
-
-## Cómo saber si la adopción ocurrió
-
-Las métricas de actividad pueden aportar información, pero no alcanzan.
-
-La cantidad de licencias activas, personas capacitadas o consultas realizadas muestra que hubo movimiento. No demuestra necesariamente que la organización haya transformado su forma de operar.
-
-La pregunta central es otra:
+Para saber si la IA fue adoptada hay que observar otra cosa:
 
 ¿cambiaron las tareas, las decisiones, los procesos o los resultados?
 
-Una adopción real debería poder observarse en alguno de esos niveles.
+Una actividad puede necesitar menos tiempo. Una decisión puede utilizar información que antes no estaba disponible. Un proceso puede eliminar pasos manuales. Un equipo puede responder más rápido o concentrarse en tareas que requieren mayor criterio.
 
-Tal vez una actividad ahora requiere menos tiempo. Una decisión utiliza información que antes no estaba disponible. Un proceso elimina pasos manuales. Un equipo puede responder más rápido. Una persona puede concentrarse en tareas de mayor valor.
+Esos cambios muestran que la tecnología dejó de ser una intervención aislada y pasó a formar parte del sistema de trabajo.
 
-Esos cambios muestran que la tecnología ya no es una intervención aislada. Se convirtió en parte del sistema de trabajo.
-
-## La diferencia entre implementar y transformar
+## De implementar IA a transformar una forma de operar
 
 Implementar una herramienta puede ser un proyecto tecnológico.
 
-Transformar la forma de operar exige integrar Negocio, Tecnología y Cultura.
+Transformar una práctica exige conectar tres dimensiones:
 
-El Negocio define qué resultado necesita alcanzar.
-
-La Tecnología aporta las capacidades para diseñar una solución diferente.
-
-La Cultura permite que las personas incorporen nuevas decisiones, comportamientos y formas de trabajo.
-
-El Programa de Transformación Digital organiza ese recorrido. Parte de un resultado concreto, transforma una práctica y desarrolla las condiciones necesarias para que la organización pueda sostenerla y escalarla.
+- el Negocio define el resultado;
+- la Tecnología aporta nuevas capacidades;
+- la Cultura permite incorporar nuevas decisiones y comportamientos.
 
 La adopción de IA no comienza eligiendo una herramienta.
 
 Comienza identificando qué forma de trabajar vale la pena transformar.
 
-Para ordenar esa primera decisión, construí el Mapa de Transformación de tu organización:
+El Mapa de Transformación te ayuda a ordenar esa primera decisión:
 
 https://mapa.motion-co.com/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=mapa_transformacion&utm_content=2026_08_04_adopcion_ia_transformacion_newsletter
