@@ -11,6 +11,9 @@ on:
       prefijo:
         description: "Prefijo de name para borrar"
         default: ""
+      ids:
+        description: "IDs a borrar, separados por coma"
+        default: ""
       endpoint:
         description: "Endpoint a consultar"
         default: "/posts"
@@ -28,4 +31,4 @@ jobs:
         run: |
           python scripts/blotato_admin.py "${{ inputs.accion }}" \
             --prefijo "${{ inputs.prefijo }}" \
-            --endpoint "${{ inputs.endpoint }}"
+            --endpoint "${{ inputs.endpoint }}" --ids "${{ inputs.ids }}"

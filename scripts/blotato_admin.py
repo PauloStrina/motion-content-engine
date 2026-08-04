@@ -53,6 +53,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("accion", choices=("listar", "borrar"))
     parser.add_argument("--prefijo", default="")
+    parser.add_argument("--ids", default="")
     parser.add_argument("--endpoint", default="/posts")
     args = parser.parse_args()
 
@@ -77,16 +78,20 @@ def main() -> int:
             print(json.dumps(payload, ensure_ascii=False)[:1500])
         return 0
 
-    if not args.prefijo:
-        print("borrar exige --prefijo")
+    ids = [i.strip() for i in args.ids.split(",") if i.strip()]
+    if not ids and not args.prefijo:
+        print("borrar exige --ids o --prefijo")
         return 1
 
     fallos = 0
     for post in posts:
+        pid = str(post.get("id") or post.get("postId") or post.get("_id"))
         name = post.get("name", "")
-        if not name.startswith(args.prefijo):
+        if ids:
+            if pid not in ids:
+                continue
+        elif not name.startswith(args.prefijo):
             continue
-        pid = post.get("id") or post.get("postId") or post.get("_id")
         result = _call(f"/posts/{pid}", method="DELETE")
         if isinstance(result, dict) and result.get("_http_error"):
             print(f"  ✗ {pid} {name}: HTTP {result['_http_error']} {result['_detail'][:200]}")
