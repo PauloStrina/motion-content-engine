@@ -78,6 +78,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry", action="store_true")
     parser.add_argument("--dia", choices=("mar", "mie", "jue"))
+    parser.add_argument("--canal", choices=("linkedin_paulo", "instagram"))
     args = parser.parse_args()
 
     spec = json.loads(COPYS.read_text(encoding="utf-8"))
@@ -92,7 +93,7 @@ def main() -> int:
 
     for key in dias:
         day = spec["dias"][key]
-        for canal in CANALES:
+        for canal in ([args.canal] if args.canal else CANALES):
             if canal not in config:
                 fallos.append(f"{key}/{canal}: falta configuracion")
                 continue

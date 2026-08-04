@@ -7,6 +7,11 @@ on:
         description: "Modo dry-run (no programa nada en Blotato)"
         type: boolean
         default: true
+      canal:
+        description: "Canal (vacio = ambos)"
+        type: choice
+        options: ["", "linkedin_paulo", "instagram"]
+        default: ""
       dia:
         description: "Dia a publicar (vacio = los tres)"
         type: choice
@@ -32,4 +37,5 @@ jobs:
           ARGS=""
           if [ "${{ inputs.dry }}" = "true" ]; then ARGS="$ARGS --dry"; fi
           if [ -n "${{ inputs.dia }}" ]; then ARGS="$ARGS --dia ${{ inputs.dia }}"; fi
+          if [ -n "${{ inputs.canal }}" ]; then ARGS="$ARGS --canal ${{ inputs.canal }}"; fi
           python scripts/publicar_semana_2026_08_04.py $ARGS
