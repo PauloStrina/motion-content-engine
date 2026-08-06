@@ -1,0 +1,90 @@
+{
+  "slug": "2026-08-06-tecnologia-motor-de-cambio",
+  "video_duracion": 3528.96,
+  "reels": [
+    {
+      "n": 1,
+      "slug": "puente-a-la-nada",
+      "titulo": "El puente a la nada",
+      "tesis": 4,
+      "tipo": "problema",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 323.02, "hasta": 353.14}
+      ],
+      "caption_instagram": "Hay proyectos de IA que arrancan solo porque había un presupuesto para gastar. Se invierte, se construye, y termina siendo un puente que conecta nada con nada: nadie lo usa. Antes de elegir la herramienta, la pregunta es si hay una estrategia atrás. ¿La tuya la tiene?"
+    },
+    {
+      "n": 2,
+      "slug": "valle-de-la-productividad",
+      "titulo": "El valle de la productividad",
+      "tesis": 3,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 742.64, "hasta": 764.98}
+      ],
+      "caption_instagram": "Cuando empezás a usar IA, lo más probable es que al principio seas menos productivo que antes. No es que lo estés haciendo mal: es el valle que trae cualquier cambio. El error es abandonar justo ahí. Hay que transitarlo para después crecer."
+    },
+    {
+      "n": 3,
+      "slug": "iniciativas-vs-terminativas",
+      "titulo": "Iniciativas vs terminativas",
+      "tesis": 4,
+      "tipo": "conexion",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 3079.99, "hasta": 3109.51}
+      ],
+      "caption_instagram": "Sobran las iniciativas. Se arranca con energía y en el camino aparecen la burocracia, los desalineamientos, las cosas que se disipan. Por eso nos gusta hablar de terminativas: no alcanza con empezar, hay que hacer que las cosas sucedan. Negocio, tecnología y cultura, juntas."
+    },
+    {
+      "n": 4,
+      "slug": "paradoja-de-la-ia",
+      "titulo": "La paradoja de la IA",
+      "tesis": 2,
+      "tipo": "problema",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 265.92, "hasta": 303.74}
+      ],
+      "caption_instagram": "Nunca tuvimos tanta capacidad tecnológica al alcance de la mano, y sin embargo cuesta muchísimo que las organizaciones la adopten de verdad. Esa distancia entre lo que la herramienta puede y lo que la empresa logra usar no se cierra comprando más tecnología. La pregunta es por qué."
+    },
+    {
+      "n": 5,
+      "slug": "la-tecnologia-no-basta",
+      "titulo": "La tecnología no basta",
+      "tesis": 2,
+      "tipo": "conexion",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 623.8, "hasta": 650.18}
+      ],
+      "caption_instagram": "La tecnología tiene un poder enorme, pero sola no transforma nada. Es un medio, no un fin. Si no hay un resultado de negocio atrás —crecer, ganar eficiencia, ahorrar—, la inversión no se sostiene. La herramienta no reemplaza el criterio de para qué la usás."
+    },
+    {
+      "n": 6,
+      "slug": "sin-porque-no-hay-cambio",
+      "titulo": "Sin un porqué no hay cambio",
+      "tesis": 2,
+      "tipo": "conexion",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 1411.25, "hasta": 1450.87}
+      ],
+      "caption_instagram": "Pedirle a alguien que cambie la forma en que trabaja es pedirle que atraviese frustraciones, que revise sus hábitos, que se incomode. Nadie hace ese esfuerzo porque sí. Si no podés explicar con claridad el porqué, no hay manera de movilizar a una organización."
+    },
+    {
+      "n": 7,
+      "slug": "el-lider-abre-la-puerta",
+      "titulo": "El líder abre la puerta",
+      "tesis": 2,
+      "tipo": "metodo",
+      "modo": "auto",
+      "segmentos": [
+        {"desde": 2005.95, "hasta": 2042.91}
+      ],
+      "caption_instagram": "Podés tener en tu equipo a la persona más entusiasmada con una nueva tecnología, que si el líder no abre la puerta, no pasa nada. Al principio la productividad baja: estamos aprendiendo. Eso pide permiso, no juzgamiento, y espacio real para entrenar. Con la agenda explotada, nadie aprende nada nuevo."
+    }
+  ]
+}
