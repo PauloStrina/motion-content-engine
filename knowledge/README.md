@@ -30,6 +30,7 @@ knowledge/
 │   └── BANCO_HOOKS_MOTION.md
 └── guides/
     ├── GUIA_OPERATIVA_STORYTELLING.md
+    ├── CONTRATO_COGNITIVO_STORYTELLING.md
     └── GUIA_OPERATIVA_HOOKS.md
 ```
 
@@ -57,18 +58,26 @@ Conserva hooks aprobados y rechazados, el mecanismo utilizado, la situación de 
 
 Define cómo avanza una pieza sin alterar su función estratégica. Establece la relación entre tesis, tipo editorial, efecto buscado, centro narrativo, punto de llegada, fuente, canal, formato y traducción visual.
 
-También gobierna:
+También gobierna autonomía de cada publicación, uso de situaciones potenciales y casos reales, contrato narrativo, bloqueo y trazabilidad del copy aprobado, límites de adaptación por canal y formato y controles previos a la aprobación.
 
-- autonomía de cada publicación;
-- uso de situaciones potenciales y casos reales;
-- contrato narrativo;
-- bloqueo y trazabilidad del copy aprobado;
-- límites de adaptación por canal y formato;
-- controles previos a la aprobación.
+### Contrato cognitivo de Storytelling
+
+`CONTRATO_COGNITIVO_STORYTELLING.md` es una extensión obligatoria de la guía operativa. Define la arquitectura de comprensión que debe resolverse **antes de hooks y copy**:
+
+- conocimiento inicial del lector;
+- idea nueva dominante;
+- puente cognitivo;
+- jerarquía de ideas;
+- secuencia conocido → nuevo;
+- economía explicativa;
+- estado mental del lector;
+- comprensión final.
+
+Si ese preflight está incompleto, la pieza no pasa a redacción final. Esta regla es general y gobierna también en conversaciones nuevas: el agente debe releer el contrato vigente en GitHub en lugar de depender de memoria conversacional.
 
 ### Guía operativa de Hooks
 
-Define cómo abrir una pieza después de haber establecido su contrato narrativo. El hook genera reconocimiento o curiosidad calificada, pero no define por sí solo el tipo editorial ni el desenlace.
+Define cómo abrir una pieza después de haber establecido su contrato narrativo **y su arquitectura cognitiva**. El hook genera reconocimiento o curiosidad calificada, pero no define por sí solo el tipo editorial ni el desenlace.
 
 ### Guías
 
@@ -99,7 +108,7 @@ Cada interacción puede producir uno o varios cambios. El flujo obligatorio es:
 
 1. **Detectar el aprendizaje.** Identificar si Paulo confirmó un hecho, corrigió una formulación, aprobó un hook, aportó un caso, introdujo un concepto, redefinió un artefacto o tomó una decisión estratégica.
 2. **Explicitar la conclusión estratégica.** Después de una corrección relevante, resumir qué principio mejora la calidad del contenido y qué cambia en futuras piezas.
-3. **Clasificar la capa.** Estrategia, situación, artefacto, concepto, evidencia, storytelling, hook o auditoría editorial.
+3. **Clasificar la capa.** Estrategia, situación, artefacto, concepto, evidencia, hook, storytelling o corrección editorial.
 4. **Clasificar el alcance.** Local, recurrente o general.
 5. **Aplicar precedencia.** Una decisión estratégica se actualiza primero y únicamente en la estrategia canónica. Los bancos y guías la referencian, no la duplican.
 6. **Verificar evidencia y origen.** No convertir una situación o recuerdo en caso público sin confirmar fuente, alcance y autorización. No presentar un concepto externo como propietario.
@@ -137,10 +146,12 @@ Antes de redactar una pieza se consultan, en este orden:
 3. concepto o artefacto que organiza la explicación;
 4. evidencia disponible;
 5. guía operativa de storytelling;
-6. guía de hooks y banco de hooks;
-7. auditoría editorial.
+6. **contrato cognitivo de storytelling**;
+7. guía de hooks y banco de hooks;
+8. corpus de voz correspondiente;
+9. auditoría editorial.
 
-Después se define el contrato narrativo:
+Después se define el contrato editorial:
 
 - tipo editorial;
 - efecto buscado;
@@ -150,6 +161,19 @@ Después se define el contrato narrativo:
 - evidencia;
 - estado de bloqueo.
 
+Y antes de generar hooks o copy se define obligatoriamente la arquitectura cognitiva:
+
+- conocimiento inicial;
+- idea nueva dominante;
+- puente cognitivo;
+- jerarquía de ideas;
+- secuencia conocido → nuevo;
+- qué explicar y qué omitir;
+- estado mental del lector en apertura, desarrollo y cierre;
+- comprensión final.
+
+**No se genera copy final con un preflight cognitivo incompleto.**
+
 Después de la aprobación humana, la fuente se registra con `copy_locked: true` y se referencia desde `manifiestos/mes_<YYYY-MM>.json`.
 
-El repositorio valida, compone, renderiza y programa; no redefine el contrato narrativo ni el copy aprobado.
+El repositorio valida, compone, renderiza y programa; no redefine el contrato editorial, la arquitectura cognitiva ni el copy aprobado.
