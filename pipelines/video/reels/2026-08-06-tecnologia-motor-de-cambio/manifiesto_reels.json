@@ -8,7 +8,7 @@
       "titulo": "¿IA sin estrategia?",
       "tesis": 4,
       "tipo": "problema",
-      "modo": "auto",
+      "modo": "marco",
       "segmentos": [
         {"desde": 323.02, "hasta": 353.14}
       ],
@@ -20,7 +20,7 @@
       "titulo": "¿Conocés la curva del cambio?",
       "tesis": 3,
       "tipo": "metodo",
-      "modo": "auto",
+      "modo": "marco",
       "segmentos": [
         {"desde": 742.64, "hasta": 764.98}
       ],
@@ -32,7 +32,7 @@
       "titulo": "Iniciativas vs terminativas",
       "tesis": 4,
       "tipo": "conexion",
-      "modo": "auto",
+      "modo": "marco",
       "segmentos": [
         {"desde": 3079.99, "hasta": 3109.51}
       ],
@@ -44,7 +44,7 @@
       "titulo": "La paradoja de Adopción de IA",
       "tesis": 2,
       "tipo": "problema",
-      "modo": "auto",
+      "modo": "marco",
       "segmentos": [
         {"desde": 265.92, "hasta": 303.74}
       ],
@@ -56,7 +56,7 @@
       "titulo": "La tecnología es el medio, no el fin",
       "tesis": 2,
       "tipo": "conexion",
-      "modo": "auto",
+      "modo": "marco",
       "segmentos": [
         {"desde": 623.8, "hasta": 650.18}
       ],
@@ -68,7 +68,7 @@
       "titulo": "Sin un porqué no hay cambio",
       "tesis": 2,
       "tipo": "conexion",
-      "modo": "auto",
+      "modo": "marco",
       "segmentos": [
         {"desde": 1411.25, "hasta": 1450.87}
       ],
@@ -80,7 +80,7 @@
       "titulo": "Permití a tu equipo experimentar",
       "tesis": 2,
       "tipo": "metodo",
-      "modo": "auto",
+      "modo": "marco",
       "segmentos": [
         {"desde": 2005.95, "hasta": 2042.91}
       ],
