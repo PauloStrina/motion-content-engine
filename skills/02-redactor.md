@@ -18,7 +18,8 @@ No redactar desde memoria de conversaciones anteriores. Para cada pieza nueva re
 4. `knowledge/guides/CONTRATO_COGNITIVO_STORYTELLING.md`;
 5. `knowledge/guides/GUIA_OPERATIVA_HOOKS.md` y `knowledge/banks/BANCO_HOOKS_MOTION.md`;
 6. `strategy/VOZ_corpus.md` cuando el emisor sea Paulo o se redacte caption de Instagram;
-7. `docs/AUDITORIA_EDITORIAL.md` cuando exista aprendizaje relevante para el tipo de pieza.
+7. `knowledge/guides/GATE_LENGUAJE_PAULO.md` cuando el emisor sea Paulo;
+8. `docs/AUDITORIA_EDITORIAL.md` cuando exista aprendizaje relevante para el tipo de pieza.
 
 Ante contradicciones, aplicar la precedencia definida por el repositorio y no resolver silenciosamente entre versiones.
 
@@ -53,7 +54,7 @@ Como mínimo deben estar definidos:
 5. Elegir la apertura.
 6. Redactar en párrafos continuos desde la voz real.
 7. Adaptar por canal sin alterar tesis, comprensión dominante ni evidencia.
-8. Aplicar gate cognitivo, storytelling, hooks, voz y evidencia.
+8. Aplicar gate cognitivo, storytelling, hooks, voz, lenguaje y evidencia.
 9. Entregar para aprobación humana.
 10. Después de aprobación, respetar `copy_locked: true`.
 
@@ -69,9 +70,13 @@ No entregar una pieza cuando:
 - el ritmo depende de una oración por línea o de cortes artificiales;
 - el cierre repite la apertura en vez de producir una nueva comprensión;
 - la pieza pasa los controles conceptuales pero no suena a Paulo o Motion;
-- se usa una plantilla reconocible de storytelling externo como sustituto del criterio editorial.
+- se usa una plantilla reconocible de storytelling externo como sustituto del criterio editorial;
+- en voz de Paulo se usa `Negocio` como sujeto organizacional sin artículo de una forma artificial (`Negocio trae...` en lugar de `El Negocio trae...`);
+- en voz de Paulo aparece `El problema aparece cuando...` o una variante cercana como transición causal prefabricada;
+- en voz de Paulo se usa `Quienes...` como apertura colectiva genérica cuando una formulación conversacional como `Los que...` resulta natural;
+- el CTA rompe la continuidad del cierre en vez de retomar su sujeto, tensión y persona gramatical.
 
-Si falla alguno de estos puntos, corregir la arquitectura cognitiva antes que el estilo superficial.
+Si falla alguno de estos puntos, corregir la arquitectura cognitiva o la expresión antes de entregar; no compensar con retoques superficiales.
 
 ## Regla de persistencia
 
