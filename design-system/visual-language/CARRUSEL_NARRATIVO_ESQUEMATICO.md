@@ -23,7 +23,7 @@ Solo se reemplaza por otro formato cuando el concepto aprobado exige expresament
 
 ## 3. Estructura narrativa
 
-- entre 8 y 12 placas; 10 es la referencia habitual;
+- entre 8 y 10 placas; 10 es el maximo absoluto (tope de Instagram y LinkedIn);
 - una sola idea principal por placa;
 - cada placa debe poder leerse rápidamente en móvil;
 - el relato avanza; no repite la misma afirmación con palabras diferentes;

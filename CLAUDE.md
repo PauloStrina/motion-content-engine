@@ -48,6 +48,33 @@ Ante contradicciones se aplica la fuente de mayor jerarquía y se señala el arc
 - Ningún workflow puede reescribir copies, tesis, buyer, oferta, contrato narrativo o estrategia.
 - Nada se programa en `live` sin aprobación explícita.
 
+## Generación visual
+
+- Toda pieza visual se produce en cuatro direcciones: **A** compuesta en la gramática del repositorio, y **B, C y D** generadas con Claude Design. La regla completa vive en `design-system/visual-language/GENERACION_ALTERNATIVAS.md`.
+- A se publica por defecto: la exploración nunca bloquea la producción.
+- Cada alternativa parte de una lectura conceptual distinta de la misma frase y declara su hipótesis por escrito. Una alternativa sin hipótesis no se presenta.
+- Las alternativas se comparan a nivel de dirección visual de la pieza, sobre tres placas: portada, desarrollo y cierre.
+- Cuando Paulo elige una alternativa se promueve el principio compositivo, nunca la forma. El sistema amplía su rango expresivo, no su inventario.
+- Las alternativas descartadas se registran con hipótesis y motivo, para no repetir propuestas y para detectar patrones de rechazo.
+- El brief para Claude Design se acompaña siempre de `design-system/claude-design/CONTRATO_CLAUDE_DESIGN.md`.
+
+## Límites de plataforma en publicación
+
+Estos límites son duros y se validan antes de programar. Una pieza que los infrinja no se agenda.
+
+- **Carruseles: máximo 10 imágenes**, tanto en Instagram como en LinkedIn. Blotato acepta agendar carruseles de Instagram con más de 10 y la publicación falla después de forma silenciosa: el post figura como publicado y nunca llega a la plataforma.
+- Un carrusel se diseña con 10 placas como tope. Si el relato necesita más, se divide en piezas o se recorta antes de renderizar, nunca después de agendar.
+- **No se adjuntan PDF como `mediaUrls`.** LinkedIn los rechaza al publicar aunque Blotato acepte el upload al CDN.
+- La respuesta de Blotato al agendar **no es evidencia de publicación**. El estado real se verifica después de la hora de publicación.
+- La API de Blotato v2 no expone `GET /posts/{id}` ni `DELETE /posts/{id}`. Solo el listado. Corregir un post agendado exige borrado manual desde la interfaz.
+
+## Horarios de publicación
+
+- LinkedIn: **07:45**.
+- Instagram: **16:00**.
+
+Zona horaria `America/Argentina/Buenos_Aires`. Definidos en `scripts/publicador_mes.py`.
+
 ## Archivos principales
 
 - Estrategia: `strategy/ESTRATEGIA_MOTION_CANONICA.md`.

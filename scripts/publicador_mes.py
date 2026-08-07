@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import blotato_client as B
 import mes as MES
 
-HORA = {"linkedin_paulo": "09:00", "instagram": "12:00"}
+HORA = {"linkedin_paulo": "07:45", "instagram": "16:00"}
 
 
 def media_video(client: B.BlotatoClient, reel: dict, reels_dir: str) -> str:
